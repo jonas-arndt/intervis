@@ -240,7 +240,7 @@
       </ul>
     </div>
 
-    <div class="project_information_and_sources">
+    <div class="chapter project-information-and-sources">
       <h2>Projektinformation &amp; Quellen</h2>
       <p>
         Dieses Projekt versucht Intersektionalität zugänglicher zu machen, das zentrale Anliegen zu kommunizieren und einen Einstieg zu ermöglichen. Im Rahmen dieses Projektes ist es nicht möglich, Intersektionalität allumfassend in ihren detaillierten Methoden, theoretischen Ansätzen, Analyseebenen etc. zu behandeln. Auch sind die genannten Beispiele lediglich ein kleiner Ausschnitt der zahlreichen, intersektionalen Diskriminierungsformen und -erfahrungen.
@@ -362,6 +362,54 @@ export default {
 </script>
 
 <style lang="scss">
-.page {
+@import "../styles/_variables";
+
+.chapter.project-information-and-sources {
+  background-color: #E8EAF4;
+  padding: 3rem 20% 5rem 20%;
+
+  h2 {
+    font-size: $font-size-title;
+    margin-bottom: 1.8rem;
+  }
+
+  p {
+    margin-bottom: 1.2rem;
+  }
+
+  .disclosure-link {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+
+    a {
+      color: white;
+      border-radius: 1.7em;
+      background: $color-red;
+      display: inline-block;
+      padding: 0.8em 1.2em 0.8em 1.2em;
+    }
+  }
+
+  .references {
+    font-size: $font-size-small;
+    overflow-wrap: break-word;
+    margin-bottom: 2rem;
+
+    ul {
+      // TODO: Add IE workaround (https://stackoverflow.com/a/14745429)
+      columns: 2;
+      -webkit-columns: 2;
+      -moz-columns: 2;
+
+      column-gap: 3em;
+      -webkit-column-gap: 3em;
+      -moz-column-gap: 3em;
+
+      li {
+        margin-bottom: 1em;
+      }
+    }
+  }
 }
 </style>
