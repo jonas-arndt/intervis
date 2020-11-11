@@ -4,16 +4,12 @@
   </div>
 </template>
 
-<style>
+<style lang="scss">
+@import "../styles/_fonts";
+
 html {
   font-family:
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
+    'PT Serif',
     sans-serif;
   font-size: 16px;
   word-spacing: 1px;
@@ -29,6 +25,10 @@ html {
 *::after {
   box-sizing: border-box;
   margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Signika', sans-serif;
 }
 
 ul {
