@@ -25,7 +25,7 @@
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "../../styles/_variables";
 
 .chapter.case_studies_from_germany {

@@ -19,7 +19,7 @@
       </p>
     </div>
 
-    <div class="step">
+    <div class="step" scoped>
       <p class="highlight">
         Denn ihre Befreiung erfordert den vollständigen Abbau und die Überwindung aller Macht- und Herrschaftsstrukturen in ihrer Verwobenheit.
       </p>
