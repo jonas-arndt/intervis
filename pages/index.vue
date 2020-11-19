@@ -1,6 +1,6 @@
 <template>
   <div ref="page" class="page">
-    <div class="title">
+    <div class="chapter title">
       <div class="language-switcher">
         <ul>
           <li><a href="#">DE</a></li>
@@ -23,7 +23,7 @@
       <span>Scrolle nach unten, um antworten darauf zu finden</span>
     </div>
 
-    <div class="grid-visualization">
+    <div class="chapter grid-visualization">
       <div class="visualization">
         <ul>
           <li>Zugang</li>
@@ -58,7 +58,7 @@
       </div>
     </div>
 
-    <div class="what-is-intersectionality">
+    <div class="chapter what-is-intersectionality">
       <div class="step">
         <h2>Was ist Intersektionalität?</h2>
         <p>
@@ -78,7 +78,7 @@
       </div>
     </div>
 
-    <div class="discrimination_and_privilege">
+    <div class="chapter discrimination_and_privilege">
       <div class="step">
         <h2>Diskriminierung &amp; Privilegierung</h2>
         <p>
@@ -101,7 +101,7 @@
       </div>
     </div>
 
-    <div class="case_studies_from_germany">
+    <div class="chapter case_studies_from_germany">
       <div class="step">
         <h2>Fallbeispiele aus Deutschland</h2>
         <p>
@@ -126,7 +126,7 @@
       </div>
     </div>
 
-    <div class="intersectional_measures">
+    <div class="chapter intersectional_measures">
       <div class="step">
         <h2>Intersektionale Maßnahmen</h2>
         <p>
@@ -367,6 +367,100 @@ export default {
 
 <style lang="scss">
 @import "../styles/_variables";
+
+.chapter.title {
+  position: relative;
+
+  &:after {
+    content: "";
+    background: url('~assets/lines/lines-grey.jpg');
+    background-size: cover;
+    opacity: 0.25;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+.chapter.grid-visualization {
+  position: relative;
+
+  &:after {
+    content: "";
+    background: url('~assets/lines/lines-grey.jpg');
+    background-size: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+.chapter.what-is-intersectionality {
+  position: relative;
+
+  &:after {
+    content: "";
+    background: url('~assets/lines/lines-orange.jpg');
+    background-size: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+.chapter.discrimination_and_privilege {
+  position: relative;
+
+  &:after {
+    content: "";
+    background: url('~assets/lines/lines-small.jpg');
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+.chapter.case_studies_from_germany {
+  position: relative;
+
+  &:after {
+    content: "";
+    background: url('~assets/lines/lines-small.jpg');
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+.chapter.intersectional_measures {
+  position: relative;
+
+  &:after {
+    content: "";
+    background: url('~assets/lines/lines-small.jpg');
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+}
 
 .chapter.and-now {
   background-color: $color-red;
