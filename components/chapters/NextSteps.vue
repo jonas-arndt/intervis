@@ -168,7 +168,7 @@
       left: 33%;
 
       li:before {
-        background: url('~assets/icons/arrow.svg') center no-repeat;
+        background: url('~assets/icons/white-arrow-right.svg') center no-repeat;
         background-size: 60% auto;
       }
     }
