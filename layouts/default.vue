@@ -60,15 +60,6 @@ li {
   list-style: none;
 }
 
-.narrative .step {
-  position: relative;
-  width: 40%;
-  background: white;
-
-  font-size: $font-size-small;
-  padding: $font-size-small 1em $font-size-small 1em;
-}
-
 .quote {
   font-style: italic;
 

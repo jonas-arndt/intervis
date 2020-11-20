@@ -67,6 +67,7 @@
     padding-bottom: 100vh;
 
     .step {
+      @include white-boxed-narrative-step;
       margin-bottom: 150vh;
 
       &:last-child {

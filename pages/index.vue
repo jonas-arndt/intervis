@@ -6,7 +6,7 @@
 
     <Intersectionality />
 
-    <DescriminationAndPrivilege />
+    <DiscriminationAndPrivilege />
 
     <CaseStudies />
 

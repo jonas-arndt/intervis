@@ -22,3 +22,12 @@ $font-size-smaller: 0.58rem; // 14px
 
   background: $color-red;
 }
+
+@mixin white-boxed-narrative-step {
+  position: relative;
+  width: 40%;
+  background: white;
+
+  font-size: $font-size-small;
+  padding: $font-size-small 1em $font-size-small 1em;
+}
