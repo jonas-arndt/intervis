@@ -189,7 +189,6 @@
   }
 
   h2 {
-    font-size: $font-size-title;
     margin-bottom: 1.8rem;
     color: $color-black;
   }

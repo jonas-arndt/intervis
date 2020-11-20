@@ -34,6 +34,10 @@ h1 {
   font-size: $font-size-title;
 }
 
+h2 {
+  font-size: $font-size-title;
+}
+
 p {
   margin-bottom: 1.2em;
 }
@@ -54,6 +58,15 @@ ul {
 
 li {
   list-style: none;
+}
+
+.narrative .step {
+  position: relative;
+  width: 40%;
+  background: white;
+
+  font-size: $font-size-small;
+  padding: $font-size-small 1em $font-size-small 1em;
 }
 
 .quote {

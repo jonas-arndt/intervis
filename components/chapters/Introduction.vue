@@ -67,14 +67,7 @@
     padding-bottom: 100vh;
 
     .step {
-      position: relative;
-      width: 40%;
       margin-bottom: 150vh;
-
-      background: white;
-
-      font-size: $font-size-small;
-      padding: $font-size-small 1em $font-size-small 1em;
 
       &:last-child {
         margin-bottom: inherit;

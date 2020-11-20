@@ -12,3 +12,13 @@ $font-size-title-caption: 1.33rem; // 32px
 $font-size-default: 1rem; // 24px
 $font-size-small: 0.75rem; // 18px
 $font-size-smaller: 0.58rem; // 14px
+
+@mixin red-button {
+  display: inline-block;
+  padding: 0.8em 1.2em 0.8em 1.2em;
+
+  border-radius: 1.7em;
+  color: white;
+
+  background: $color-red;
+}

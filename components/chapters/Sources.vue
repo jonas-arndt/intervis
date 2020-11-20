@@ -108,11 +108,8 @@
     text-align: center;
 
     a {
-      color: white;
-      border-radius: 1.7em;
-      background: $color-red;
+      @include red-button;
       display: inline-block;
-      padding: 0.8em 1.2em 0.8em 1.2em;
     }
   }
 
