@@ -41,16 +41,45 @@
 .chapter.grid-visualization {
   position: relative;
 
-  &:after {
-    content: "";
+  & > .visualization, & > .narrative {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .visualization {
+    position: sticky;
+    top: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    font-family: $font-family-signika;
+    font-weight: 700;
+    color: $color-red;
+    font-size: 20vh;
+
     background: url('~assets/lines/lines-grey.jpg');
     background-size: cover;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
+  }
+
+  .narrative {
+    padding-top: 10rem;
+    padding-bottom: 100vh;
+
+    .step {
+      position: relative;
+      width: 40%;
+      margin-bottom: 150vh;
+
+      background: white;
+
+      font-size: $font-size-small;
+      padding: $font-size-small 1em $font-size-small 1em;
+
+      &:last-child {
+        margin-bottom: inherit;
+      }
+    }
   }
 }
 </style>
