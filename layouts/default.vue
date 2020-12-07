@@ -45,6 +45,7 @@ p {
 
 a {
   text-decoration: none;
+  color: $color-black;
 
   &.cross-reference {
     &:before {
