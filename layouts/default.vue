@@ -39,6 +39,7 @@ h2 {
 }
 
 p {
+  line-height: 1.6em;
   margin-bottom: 1.2em;
 }
 
