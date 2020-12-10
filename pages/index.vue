@@ -1,5 +1,7 @@
 <template>
   <div ref="page" class="page">
+    <DebugControl class="debug-control" />
+
     <Title />
 
     <Introduction />
@@ -49,5 +51,13 @@ export default {
 
 <style lang="scss">
 @import "../styles/_variables";
+
+.debug-control {
+  position: fixed;
+  right: 2rem;
+  top: 1.5rem;
+
+  z-index: 1000;
+}
 
 </style>
