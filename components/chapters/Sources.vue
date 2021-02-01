@@ -2,10 +2,13 @@
   <div class="chapter project-information-and-sources">
     <h2>Projektinformation &amp; Quellen</h2>
     <p>
-      Dieses Projekt versucht Intersektionalität zugänglicher zu machen, das zentrale Anliegen zu kommunizieren und einen Einstieg zu ermöglichen. Im Rahmen dieses Projektes ist es nicht möglich, Intersektionalität allumfassend in ihren detaillierten Methoden, theoretischen Ansätzen, Analyseebenen etc. zu behandeln. Auch sind die genannten Beispiele lediglich ein kleiner Ausschnitt der zahlreichen, intersektionalen Diskriminierungsformen und -erfahrungen.
+      Dieses Projekt versucht, Intersektionalität zugänglicher zu machen, das zentrale Anliegen zu kommunizieren und einen Einstieg zu ermöglichen. Im Rahmen dieses Projektes ist es nicht möglich, Intersektionalität vollständig in ihren detaillierten Methoden, theoretischen Ansätzen, Analyseebenen etc. zu behandeln. Auch sind die genannten Beispiele lediglich ein kleiner Ausschnitt der zahlreichen, intersektionalen Diskriminierungsformen und -erfahrungen.
     </p>
     <p>
-      Kurze Einleitung was Projektoffenlegung ist und warum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo.
+      Dieses Projekt ist geprägt von den subjektiven und partiellen Perspektiven der Projektbeteiligten.
+    </p>
+    <p>
+      In diesem Teil, der »Projektoffenlegung«, werden bestimmte Visualisierungsentscheidungen transparent und involvierte Personen sichtbar gemacht. Der Projektprozess wird offengelegt, die Perspektiven und Positionen der Autor*innen kommuniziert und das Projekt reflektiert.
     </p>
     <div class="disclosure-link">
       <a href="#">Zur Projektoffenlegung</a>
@@ -16,7 +19,7 @@
           Allgemeines Gleichbehandlungsgesetz (AGG) (2013), https://www.gesetze-im-internet.de/agg/BJNR189710006.html (08.04.20)
         </li>
         <li>
-          Antidiskriminierungsstelle des Bundes (Hg.) (2017). Diskriminierung in Deutschland. Dritter Gemeinsamer Bericht der Antidiskriminierungsstelle des Bundes und der in ihrem Zuständigkeitsbereich betroffenen Beauftragten der Bundesregierung und des Deutschen Bundestages. Abgerufen von https://www.antidiskriminierungsstelle.de/SharedDocs/Downloads/DE/publikationen/BT_Bericht/Gemeinsamer_Bericht_dritter_2017.html (29.03.20)
+          Antidiskriminierungsstelle des Bundes (Hg.) (2017). Diskriminierung in Deutschland. Dritter Gemeinsamer Bericht der Antidiskriminierungsstelle des Bundes und der in ihrem Zuständigkeitsbereich betroffenen Beauftragten der Bundesregierung und des Deutschen Bundestages. Abgerufen von https://www.antidiskriminierungsstelle.de/SharedDocs/Downloads/DE/publikationen/BT_Bericht/gemeinsamer_bericht_dritter_2017.html?nn=6569158 (28.01.21)
         </li>
         <li>
           Beauftragte der Bundesregierung für die Belange von Menschen mit Behinderungen (Hg.) (2017). Die UN-Behindertenrechtskonvention. Übereinkommen über die Rechte von Menschen mit Behinderungen. Abgerufen von https://www.behindertenbeauftragte.de/SharedDocs/Publikationen/UN_Konvention_deutsch.pdf?__blob=publicationFile&v=2 (22.04.20)
@@ -53,6 +56,9 @@
         </li>
         <li>
           European Network Against Racism (Hg.) (2016b). Forgotten women: The impact of Islamophobia on Muslim women. Abgerufen von https://www.enar-eu.org/Forgotten-Women-the-impact-of-Islamophobia-on-Muslim-women (29.03.20)
+        </li>
+        <li>
+          European Network Against Racism (Hg.) (2019). Intersectional discrimination in Europe: relevance, challenges and ways forward. Abgerufen von https://www.enar-eu.org/intersectionalityreport (16.10.20)
         </li>
         <li>
           Gunda-Werner-Institut (Hg.). (2019). „Reach Everyone on the Planet …“ – Kimberlé Crenshaw und die Intersektionalität. Abgerufen von https://www.gwi-boell.de/de/2019/04/28/reach-everyone-planet-kimberle-crenshaw-und-die-intersektionalitaet (27.03.20)

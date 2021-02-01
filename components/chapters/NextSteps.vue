@@ -1,17 +1,18 @@
 <template>
   <div class="chapter and-now">
-    <h2>Und jetzt?</h2>
+    <h2>5 Und jetzt?</h2>
     <p>
-      Intersektionalität ist bislang in allgemein gesellschaftlichen Diskursen und im Alltagswortschatz in Deutschland nicht fundiert und effektiv verbreitet und das politische und transformative Potenzial wird weitestgehend ausgeblendet.
+      Intersektionalität ist bislang weder Gegenstand von gesellschaftlichen Diskursen, noch hat der Begriff Eingang in den Alltagswortschatz in Deutschland gefunden. Das politische und transformative Potenzial, das einige Autor*innen in einer intersektionalen Perspektive sehen, ist demnach noch ungenutzt.
     </p>
     <p>
       <span class="quote">Das ist zu bedauern, denn es ist wünschenswert, dass sich Intersektionalität als kritische Perspektive auf Machtverhältnisse im allgemein gesellschaftlichen Diskurs durchsetzt und in selbstverständlicher Weise einbezogen wird, wann immer es um Macht, Ungleichheit und diskursive Ausschlüsse geht.</span> (Meyer, 2017, S.155)
     </p>
+
     <p>
-      Intersektionalität kann analysieren und uns ermöglichen zu begreifen, wie Macht- und Herrschaftsstrukturen komplex zusammenhängen und zusammenwirken, sich gegenseitig stabilisieren und verstärken, ohne dabei subjektive, erlebte Erfahrungen von Individuen und Gruppen aus dem Blick zu verlieren. Intersektionale Ansätze konzentrieren sich also nicht nur auf die individuelle Dimension von Diskriminierung, sondern gleichermaßen auf die institutionelle und strukturelle Diskriminierung, was die Art und Weise von Maßnahmen, die Diskriminierung entgegenwirken können, erweitert. Sie bieten das Potenzial, Personen und Gruppen, die in herkömmlichen Anti-Diskriminierungsrahmen tendenziell unsichtbar gemacht werden, einzuschließen.
+      Intersektionale Ansätze konzentrieren sich nicht nur auf die individuelle Dimension von Diskriminierung, sondern gleichermaßen auf die institutionelle, strukturelle und historische Dimension, was das Spektrum von Maßnahmen, die Diskriminierung entgegenwirken können, erweitert.
     </p>
     <p>
-      Europäische rechtliche und politische Rahmenbedingungen konzeptualisieren Diskriminierung aus einer eindimensionalen Perpsketive. Das Center for Intersectional Justice in Berlin gibt einige <a href="#" class="cross-reference">Handlungsempfehlungen</a>, um die notwendige intersektionelle Perspektive in den Antidiskriminierungsbemühungen in Europa voranzubringen.
+      Europäische rechtliche und politische Rahmenbedingungen konzeptualisieren Diskriminierung tendenziell eher aus einer eindimensionalen Perspektive. Intersektionale Perspektiven bieten das Potenzial, Personen und Gruppen, die in herkömmlichen, eindimensionalen Herangehensweisen unsichtbar bleiben, einzuschließen. Das Center for Intersectional Justice in Berlin gibt einige <a href="#" class="cross-reference">Handlungsempfehlungen</a>, um die notwendige intersektionale Perspektive in die europäischen Antidiskriminierungsarbeit zu integrieren.
     </p>
 
     <h3>Und was kann ich da jetzt machen?</h3>
@@ -49,41 +50,197 @@
     </ul>
 
     <h3>Weiterführende Quellen für Dich</h3>
+    <p>
+      Die folgenden Quellen sind keine vollständige oder abschließende Sammlung. Sie sind vielmehr eine Liste von Literatur, Personen etc. die uns Autor*innen dabei geholfen haben, Intersektionalität, Diskriminierung und Privilegierung (besser) zu verstehen.
+    </p>
 
     <div class="books">
-      <h4>Artikel &amp; Bücher</h4>
+      <h4>Bücher</h4>
       <ul>
-        <li>Theorien der Intersektionalität zur Einführung</li>
-        <li>Intersektionalität in Deutschland. Chancen, Lücken und Herausforderungen</li>
-        <li>„Reach Everyone on the Planet …“ – Kimberlé Crenshaw und die Intersektionalität</li>
+        <li>
+          Die Kategorie Behinderung in der Intersektionalitätsforschung: Theoretische Grundlagen und empirische Befunde
+          <br>Ulrike Schildmann, Sabrina Schramme &amp; Astrid Libuda-Köster, 2018
+        </li>
+        <li>
+          Die letzten Tage des Patriarchats
+          <br>Margarete Stokowski, 2018
+        </li>
+        <li>
+          Eure Heimat ist unser Albtraum
+          <br>Fatma Aydemir &amp; Hengameh Yaghoobifarah, 2019
+        </li>
+        <li>
+          exit RACISM: rassismuskritisch denken lernen
+          <br>Tupoka Ogette, 2019
+        </li>
+        <li>
+          Feminist Disability Studies
+          <br>Kim Q. Hall, 2011
+        </li>
+        <li>
+          Fokus Intersektionalität: Bewegungen und Verortungen eines vielschichtigen Konzeptes
+          <br>Helma Lutz, 2013
+        </li>
+        <li>
+          Hallo, hört mich jemand?
+          <br>Sibel Schick, 2020
+        </li>
+        <li>
+          Intersektionalität: Geschichte, Theorie und Praxis
+          <br>Kerstin Bronner &amp; Stefan Paulus, 2017
+        </li>
+        <li>
+          Islamische Feminismen
+          <br>Zahra Ali, 2017
+        </li>
+        <li>
+          Lebensweltgestaltung junger Frauen mit türkischem Migrationshintergrund in der dritten Generation
+          <br>Sevnur Bülbül-Emanet, 2015
+        </li>
+        <li>
+          Rückkehr nach Reims
+          <br>Didier Eribon, 2016
+        </li>
+        <li>
+          Schwarzer Feminismus: Grundlagentexte
+          <br>Natasha A. Kelly, 2019
+        </li>
+        <li>
+          Theorien der Intersektionalität zur Einführung
+          <br>Katrin Meyer, 2017
+        </li>
+        <li>
+          (Un-)Sichtbare Erfolge: Bildungswege von Romnja und Sintize in Deutschland
+          <br>Elizabeta Jonuz &amp; Jane Weiß, 2020
+        </li>
+        <li>
+          Untenrum frei
+          <br>Margarete Stokowski, 2018
+        </li>
+        <li>
+          Was weiße Menschen nicht über Rassismus hören wollen aber wissen sollten
+          <br>Alice Hasters, 2019
+        </li>
+        <li>
+          Yalla, Feminismus!
+          <br>Reyhan Sahin, 2019
+        </li>
+        <li>
+          Zeige deine Klasse: Die Geschichte meiner sozialen Herkunft
+          <br>Daniela Dröscher, 2018
+        </li>
+      </ul>
+    </div>
+
+    <div class="articles">
+      <h4>Artikel</h4>
+      <ul>
+        <li>
+          CIJ Factsheet: Intersectionality at a Glance in Europe
+          <br>Center for Intersectional Justice, 2020
+        </li>
+        <li>
+          Forgotten women: The impact of Islamophobia on Muslim women
+          <br>European Network Against Racism, 2016
+        </li>
+        <li>
+          Gesundheitsversorgung für alle. Ohne Diskriminierung
+          <br>Women in Exile, 2020
+        </li>
+        <li>
+          Intersektionalität in Deutschland. Chancen, Lücken und Herausforderungen
+          <br>Center for Intersectional Justice, 2019
+        </li>
+        <li>
+          Intersectional discrimination in Europe: relevance, challenges and ways forward
+          <br>Center for Intersectional Justice, 2020
+        </li>
+        <li>
+          „Reach Everyone on the Planet …“ – Kimberlé Crenshaw und die Intersektionalität
+          <br>Gunda-Werner-Institut, 2019
+        </li>
       </ul>
     </div>
 
     <div class="links">
-      <h4>Websiten</h4>
+      <h4>Webseiten, Talks, Soziale Medien, Podcasts</h4>
       <ul>
-        <li>Portal Intersektionalität</li>
-        <li>Center for Intersectional Justice</li>
-        <li>European Network Against Racism</li>
-        <li>Antidiskriminierungsstelle des Bundes</li>
-        <li>European Union Agency for Fundamental Rights</li>
+        <li>
+          Center for Intersectional Justice (https://www.intersectionaljustice.org/)
+        </li>
+        <li>
+          Missy Magazine (https://missy-magazine.de/)
+        </li>
+        <li>
+          Portal Intersektionalität (http://portal-intersektionalitaet.de/startseite/)
+        </li>
       </ul>
-    </div>
-
-    <div class="social-media">
-      <h4>Soziale Medien</h4>
       <ul>
-        <li class="instagram">
-          Tupoka Ogette (@tupoka.o)
+        <li>
+          TED Talk Confessions of a bad feminist
+          <br>(https://www.youtube.com/watch?v=Fxt_MZKMdes)
+          <br>Roxane Gay
         </li>
-        <li class="instagram">
-          Tupoka Ogette (@tupoka.o)
+        <li>
+          TED Talk Effective Allyship: A Transgender Take on Intersectionality
+          <br>(https://www.youtube.com/watch?v=3EcuDfDjUd8)
+          <br>Ashlee Marie Preston
+        </li>
+        <li>
+          TED Talk: Rethinking Privilege
+          <br>(https://www.youtube.com/watch?v=0rFXhLDgLnc&t)
+          <br>Mariam Veiszadeh
+        </li>
+        <li>
+          TED Talk: The urgency of intersectionality
+          <br>(https://www.youtube.com/watch?v=akOe5-UsQ2o&t)
+          <br>Kimberlé Crenshaw
+        </li>
+      </ul>
+      <ul>
+        <li class="twitter">
+          @alicehasters
+          <br>Twitter Alice Hasters
         </li>
         <li class="twitter">
-          Kimberlé Crenshaw (@sandylocks)
+          @EmiliaZenzile
+          <br>Twitter Emilia Roig
         </li>
         <li class="twitter">
-          Emilia Roig (@EmiliaZenzile)
+          @LadyBitchRay1
+          <br>Twitter Lady Bitch Ray
+        </li>
+        <li class="twitter">
+          @marga_owski
+          <br>Twitter Margarete Stokowski
+        </li>
+        <li class="twitter">
+          @modekoerper
+          <br>Twitter Dr.*in phil Mahret Ifeoma Kupka
+        </li>
+        <li class="twitter">
+          @sandylocks
+          <br>Twitter Kimberlé Crenshaw
+        </li>
+        <li class="twitter">
+          @sibelschick
+          <br>Twitter Sibel Schick
+        </li>
+        <li class="twitter">
+          @teresabuecker
+          <br>Twitter Teresa Bücker
+        </li>
+        <li class="instagram">
+          @tupoka.o
+          <br>Instagram Tupoka Ogette
+        </li>
+      </ul>
+      <ul>
+        <li>
+          Lila Podcast (https://lila-podcast.de/)
+        </li>
+        <li>
+          Podcast Feuer &amp; Brot (https://feuerundbrot.de/)
         </li>
       </ul>
     </div>
@@ -128,7 +285,7 @@
     margin-bottom: 0.7em;
   }
 
-  .books, .links, .social-media {
+  .books, .articles, .links {
     $icon-width: 1.2em;
     $multiplier: 1.5;
 
@@ -164,17 +321,22 @@
       }
     }
 
-    &.links {
+    &.articles {
       left: 33%;
+
+      li:before {
+        background: url('~assets/icons/book.svg') center no-repeat;
+        background-size: contain;
+      }
+    }
+
+    &.links {
+      left: 66%;
 
       li:before {
         background: url('~assets/icons/white-arrow-right.svg') center no-repeat;
         background-size: 60% auto;
       }
-    }
-
-    &.social-media {
-      left: 66%;
 
       li.instagram:before {
         background: url('~assets/icons/instagram.svg') center no-repeat;

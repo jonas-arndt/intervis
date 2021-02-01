@@ -26,7 +26,7 @@
         <br>Warum wird Sandra zum Vorstellungsgespräch eingeladen,
         <br>Meyrem aber nicht?
       </p>
-      <span class="instruction">Scrolle nach unten, um antworten darauf zu finden</span>
+      <span class="instruction">Scrolle nach unten, um Antworten darauf zu finden.</span>
     </div>
   </div>
 </template>

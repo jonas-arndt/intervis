@@ -3,17 +3,17 @@
     <div class="background" />
     <div class="narrative">
       <div class="step">
-        <h2>Was ist Intersektionalität?</h2>
+        <h2>1 Intersektionalität – Eine erste Definition</h2>
         <p>
-          Wir leben in einer Gesellschaft, in der bestimmte Macht- und Herrschaftsstrukturen vorherrschen, wie Rassismus, Sexismus, Ableismus, Klassismus, Homo- und Transphobie, Cis- und Heterosexismus, Anti-muslimischer Rassismus, Antisemitismus, Anti-Roma Rassismus etc. Diese sind aus intersektionaler Perspektive nicht eindimensional und getrennt voneinander zu betrachten und existieren nicht unabhängig voneinander. Auch können sie nicht einfach addiert werden.
+          Wir sind alle unterschiedliche Individuen, mit ganz unterschiedlichen Interessen, Stärken, Zielen etc. Darüber hinaus prägen uns mehrere sogenannte soziale Kategorien, wie Geschlecht (einschließlich Geschlechtsidentität, sexuelle Orientierung), ›Rasse‹ (einschließlich Ethnizität, Nationalität, Hautfarbe, Migrationsstatus, Sprache, Kultur, Religion), Klasse (einschließlich sozio-ökonomische Position und Herkunft), Behinderung, Alter etc. Diese sozialen Kategorien sind Dimensionen sozialer Machtverhältnisse: Personen und Gruppen werden im Rahmen vorherrschender Gesellschaftssysteme (Kapitalismus, Kolonialismus/weiße Vorherrschaft und Patriarchat) basierend auf diesen sozialen Kategorien unterschiedlich benachteiligt, also diskriminiert, und bevorteilt, also privilegiert. Das führt zu sozialer Ungleichheit und asymmetrischer Machtverteilung in unserer Gesellschaft.
         </p>
       </div>
       <div class="step">
         <p>
-          Sie sind ineinander verwoben und verflochten, wirken gleichzeitig zusammen und stehen in einer ständigen Wechselwirkung zueinander.
+          Aus intersektionaler Perspektive sind diese sozialen Kategorien bzw. Machtverhältnisse nicht isoliert voneinander zu betrachten und existieren nie unabhängig voneinander. Intersektionalität beschreibt die Verflechtung und Verwobenheit mehrerer sozialer Kategorien bzw. Machtverhältnisse. Sie wirken stetig gleichzeitig zusammen und stehen in einer ständigen Wechselwirkung zueinander.
         </p>
         <p>
-          Jede Person ist durch mehrere und gleichzeitig zusammenwirkende soziale Kategorien, wie ›Rasse‹, Ethnizität, Klassenzugehörigkeit, Geschlecht, sexuelle Orientierung, Geschlechtsidentität, Behinderung, Alter, Religion und anderen Identitätsachsen, intersektional geprägt. Im Rahmen der genannten Herrschaftsstrukturen werden Personen und Gruppen aufgrund dieser sozialen Kategorien unterschiedlich diskriminiert und privilegiert. Dies führt zu sozialer Ungleichheit in unserer Gesellschaft.
+          In den folgenden Kapiteln findest du dazu anschauliche Erklärungen und Beispiele.
         </p>
         <div class="detour">
           <a href="#">Exkurs zur Begriffsentwicklung von Intersektionalität</a>

@@ -11,7 +11,7 @@
     <div class="narrative">
       <div class="step">
         <p>
-          Zugang zu Ressourcen wie zum Arbeitsmarkt und zu Wohnraum, gesellschaftlicher Einschluss, soziale und politische Teilhabe, gesellschaftliche Anerkennung. Als Person A kannst Du diese Wörter ohne Probleme lesen.
+          Zugang zu Ressourcen wie zum Arbeitsmarkt und zu Wohnraum, gesellschaftliche Integration, soziale und politische Teilhabe, gesellschaftliche Anerkennung. Als Person A kannst Du diese Wörter ohne Probleme lesen.
         </p>
         <p>
           Was passiert, wenn du in andere Personen schlüpfst und aus ihrer Sicht auf diese Wörter schaust?
@@ -25,10 +25,10 @@
       </div>
       <div class="step">
         <p>
-          Verschiedene Personen haben ungleiche Bedingungen, wenn es um Zugang zu Ressourcen, gesellschaftlichen Einschluss, soziale und politische Teilhabe, gesellschaftliche Anerkennung etc. geht. Sie werden unterschiedlich benachteiligt und bevorzugt.
+          Verschiedene Personen haben ungleiche Bedingungen, wenn es um Zugang zu Ressourcen, gesellschaftliche Integration, soziale und politische Teilhabe, gesellschaftliche Anerkennung etc. geht. Sie werden unterschiedlich benachteiligt und bevorteilt.
         </p>
         <p>
-          Um das genauer verstehen zu können, werfen wir einen Blick darauf, was unter Intersektionalität, Diskriminierung und Privilegerung verstanden wird.
+          Um das genauer verstehen zu können, werfen wir einen Blick darauf, was unter Intersektionalität, Diskriminierung und Privilegierung verstanden wird.
         </p>
       </div>
     </div>

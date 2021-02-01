@@ -11,7 +11,7 @@
             In allen sozialen Kategorien privilegiert
           </p>
           <p class="examples">
-            z.B. weißer, heterosexueller, cis-geschlechtlicher, junger, nicht armer Mann ohne Behinderung etc.
+            z.B. weißer, heterosexueller, cis-geschlechtlicher, junger, nicht armer Mann ohne Behinderung
           </p>
         </div>
       </div>
@@ -21,10 +21,10 @@
         </div>
         <div class="description">
           <p class="title">
-            Aufgrund des Geschlechtes diskriminiert, in Bezug auf andere soziale Kategorien privilegiert
+            Aufgrund des Geschlechtes diskriminiert (Sexismus), in Bezug auf andere soziale Kategorien privilegiert
           </p>
           <p class="examples">
-            z.B. weiße, heterosexuelle, cis-geschlechtliche, junge, nicht arme Frau ohne Behinderung etc.
+            z.B. weiße, heterosexuelle, cis-geschlechtliche, junge, nicht arme Frau ohne Behinderung
           </p>
         </div>
       </div>
@@ -34,30 +34,38 @@
         </div>
         <div class="description">
           <p class="title">
-            Aufgrund des Geschlechtes, der ›Rasse‹ und der Klassenzugehörigkeit diskriminiert, in Bezug auf andere soziale Kategorien privilegiert
+            Aufgrund des Geschlechtes (Sexismus), der ›Rasse‹ (Rassismus) und der Klassenzugehörigkeit (Klassismus) diskriminiert, in Bezug auf andere soziale Kategorien privilegiert
           </p>
           <p class="examples">
-            z.B. heterosexuelle, cis-geschlechtliche, junge, arme Frau of Color ohne Behinderung etc.
+            z.B. heterosexuelle, cis-geschlechtliche, junge, arme Frau of Color ohne Behinderung
           </p>
         </div>
       </div>
     </div>
     <div class="narrative">
       <div class="step">
-        <h2>Diskriminierung &amp; Privilegierung</h2>
+        <h2>2 Diskriminierung &amp; Privilegierung</h2>
         <p>
-          Individuen und Gruppen werden im Rahmen vorherrschender Machtstrukturen aufgrund ihrer sozialen Kategorien unterschiedlich diskriminiert und privilegiert. Sie erleben deswegen nicht gleiche Bedingungen, wenn es um Zugang zu Ressourcen, soziale und politische Teilhabe, gesellschaftlichen Einschluss etc. geht.
+          Individuen und Gruppen werden basierend auf sozialen Kategorien unterschiedlich diskriminiert und privilegiert. Sie erleben deswegen ungleiche Bedingungen, wenn es um Zugang zu Ressourcen, soziale und politische Teilhabe, gesellschaftliche Integration etc. geht.
         </p>
       </div>
       <div class="step">
         <p>
-          Diskriminierung und Privilegierung müssen immer zusammen gedacht werden, denn die jeweils privilegierte Identität innerhalb einer sozialen Kategorie – also z.B. weiß-sein, Mann, heterosexuell, cis-geschlechtlich, ohne Behinderung – bildet die sogenannte »Norm«. Und damit die Basis für die diskriminierenden Strukturen.
-          <br>Diskriminierung und Privilegierung können in einem Individuum oder in einer bestimmten sozialen Gruppe zusammen und gleichzeitig existieren.
+          Diskriminierung und Privilegierung müssen immer zusammen gedacht werden, denn die jeweils privilegierte Identität innerhalb einer sozialen Kategorie – also z.B. weiß, Mann, heterosexuell, cis-geschlechtlich oder ohne Behinderung – bildet die sogenannte »Norm«. Und damit die Ausgangsbasis für diskriminierende Strukturen.
+        </p>
+        <p>
+          Diskriminierung und Privilegierung können innerhalb eines Individuums oder einer bestimmten sozialen Gruppe zusammen und gleichzeitig existieren.
+        </p>
+        <p>
+          Beispiele für Diskriminierungsformen sind Rassismus, Sexismus, Ableismus, Klassismus, Cis- und Heterosexismus, Anti-muslimischer Rassismus, Antisemitismus, Anti-Rom*nja Rassismus.
         </p>
       </div>
       <div class="step">
         <p>
-          Personen und Gruppen, die durch vorherrschende Machtstrukturen Privilegien erhalten, haben Bedingungen, die ihre Machtposition und Überlegenheit reproduzieren. Die Schwierigkeit liegt darin, dass Privilegien meist unsichtbar für diejenigen sind, die sie besitzen. Für privilegierte Personen und Gruppen ist die Leichtigkeit, mit der sie die Welt durchqueren, selbstverständlich und unsichtbar, weil es für sie einfach so ist, wie es ist und sie sich vorstellen, dass es für alle anderen auch so ist. Es fehlt die gelebte Erfahrung, die tagtäglich daran erinnert, von der Norm abzuweichen. Das Ungleichgewicht der Macht bleibt somit oftmals unregistriert.
+          Personen und Gruppen, die auf Basis sozialer Kategorien, viele Privilegien innehaben, haben Bedingungen, die ihre Bevorteilung und Machtposition reproduzieren. Die Schwierigkeit liegt darin, dass Privilegien meist selbstverständlich und nicht sichtbar für diejenigen sind, die sie besitzen. Privilegierte Menschen tendieren dazu, ihre Privilegien nicht als solche wahrzunehmen und folglich nicht zu erkennen, welche Hürden und Benachteiligungen für andere Menschen entstehen, die diese Privilegien nicht haben. Es fehlt die gelebte Erfahrung, die alltäglich daran erinnert, von der Norm abzuweichen.
+        </p>
+        <p>
+          Ein erster, wichtiger Schritt ist es, sich seinen eigenen Privilegien bewusst zu werden, sie zu reflektieren und anzuerkennen. Das kann beispielsweise damit beginnen, sich über Erfahrungen von Menschen, die zum Beispiel Diskriminierung in Deutschland ausgesetzt sind, zu informieren.
         </p>
         <div class="detour">
           <a href="#">Exkurs zu den Dimensionen von Diskriminierung</a>
