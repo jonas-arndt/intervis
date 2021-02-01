@@ -1,7 +1,5 @@
 <template>
   <div ref="page" class="page">
-    <DebugControl class="debug-control" />
-
     <Title />
 
     <Introduction />
@@ -58,6 +56,15 @@ export default {
   top: 1.5rem;
 
   z-index: 1000;
+}
+
+.background-grid {
+
+  position: fixed;
+  width: 100%;
+  height: 100%;
+
+  z-index: 100;
 }
 
 </style>
