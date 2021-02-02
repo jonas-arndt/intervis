@@ -6,7 +6,11 @@
 
     <Intersectionality />
 
+    <ConceptDevelopment />
+
     <DiscriminationAndPrivilege />
+
+    <DimensionsDiscrimination />
 
     <CaseStudies />
 
