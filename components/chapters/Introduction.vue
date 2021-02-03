@@ -1,12 +1,7 @@
 <template>
   <div class="chapter grid-visualization">
     <div class="visualization">
-      <ul>
-        <li>Zugang</li>
-        <li>Einschluss</li>
-        <li>Teilhabe</li>
-        <li>Anerkennung</li>
-      </ul>
+      <img :src="require('~/assets/visualizations/zugang_integration_teilhabe_anerkennung.svg')" alt="Zugang, Integration, Teilhabe, Anerkennung">
     </div>
     <div class="narrative">
       <div class="step">
@@ -39,41 +34,53 @@
 @import "../../styles/_variables";
 
 .chapter.grid-visualization {
-  position: relative;
-
-  & > .visualization, & > .narrative {
-    padding-left: 10%;
-    padding-right: 10%;
+  .narrative {
+    .step {
+      font-size: $font-size-small;
+    }
   }
 
   .visualization {
-    position: sticky;
-    top: 0;
-
-    z-index: -100;
-
-    width: 100%;
-    height: 100vh;
-
-    font-family: $font-family-signika;
-    font-weight: 700;
-    color: $color-red;
-    font-size: 20vh;
-
-    background: url('~assets/lines/lines-grey.jpg');
-    background-size: cover;
+    img {
+      max-width: 100%;
+      max-height: 90vh;
+    }
   }
+}
 
-  .narrative {
-    padding-top: 10rem;
-    padding-bottom: 100vh;
+@media (min-width: $media-breakpoint-min-m) {
+  .chapter.grid-visualization {
+    position: relative;
 
-    .step {
-      @include white-boxed-narrative-step;
-      margin-bottom: 150vh;
+    & > .visualization, & > .narrative {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
 
-      &:last-child {
-        margin-bottom: inherit;
+    .visualization {
+      position: sticky;
+      top: 0;
+
+      z-index: -100;
+
+      width: 100%;
+      height: 100vh;
+
+      background: url('~assets/lines/lines-grey.jpg');
+      background-size: cover;
+    }
+
+    .narrative {
+      padding-top: 10rem;
+      padding-bottom: 100vh;
+
+      .step {
+        @include white-boxed-narrative-step;
+        margin-bottom: 150vh;
+
+        &:last-child {
+          margin-bottom: inherit;
+        }
       }
     }
   }

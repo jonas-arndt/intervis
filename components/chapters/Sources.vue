@@ -101,7 +101,6 @@
 
 .chapter.project-information-and-sources {
   background-color: $color-grey;
-  padding: 3rem 20% 5rem 20%;
 
   h2 {
     font-size: $font-size-title;
@@ -124,18 +123,26 @@
     overflow-wrap: break-word;
     margin-bottom: 2rem;
 
-    ul {
-      // TODO: Add IE workaround (https://stackoverflow.com/a/14745429)
-      columns: 2;
-      -webkit-columns: 2;
-      -moz-columns: 2;
+    ul li {
+      margin-bottom: 1em;
+    }
+  }
+}
 
-      column-gap: 3em;
-      -webkit-column-gap: 3em;
-      -moz-column-gap: 3em;
+@media (min-width: $media-breakpoint-min-m) {
+  .chapter.project-information-and-sources {
+    padding: 3rem 20% 5rem 20%;
 
-      li {
-        margin-bottom: 1em;
+    .references {
+      ul {
+        // TODO: Add IE workaround (https://stackoverflow.com/a/14745429)
+        columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;
+
+        column-gap: 3em;
+        -webkit-column-gap: 3em;
+        -moz-column-gap: 3em;
       }
     }
   }

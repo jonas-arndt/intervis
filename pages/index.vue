@@ -1,16 +1,24 @@
 <template>
-  <div ref="page" class="page">
+  <div ref="page" class="page index">
     <Title />
 
     <Introduction />
 
     <Intersectionality />
 
-    <ConceptDevelopment />
+    <div class="popup-overlay">
+      <div class="horizontal scroll-container">
+        <ConceptDevelopment />
+      </div>
+    </div>
 
     <DiscriminationAndPrivilege />
 
-    <DimensionsDiscrimination />
+    <div class="popup-overlay">
+      <div class="horizontal scroll-container">
+        <DimensionsDiscrimination />
+      </div>
+    </div>
 
     <CaseStudies />
 
@@ -51,24 +59,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "../styles/_variables";
-
-.debug-control {
-  position: fixed;
-  right: 2rem;
-  top: 1.5rem;
-
-  z-index: 1000;
-}
-
-.background-grid {
-
-  position: fixed;
-  width: 100%;
-  height: 100%;
-
-  z-index: 100;
-}
 
 </style>

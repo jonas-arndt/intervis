@@ -27,37 +27,52 @@
 @import "../../styles/_variables";
 
 .chapter.what-is-intersectionality {
-  position: relative;
-
-  & > .background {
-    position: sticky;
-    top: 0;
-
-    width: 100%;
-    height: 100vh;
-
-    z-index: -1;
-
-    background: url('~assets/lines/lines-orange.jpg');
-    background-size: cover;
-  }
 
   .narrative {
-    position: relative;
-    margin-top: -100vh;
-    padding: 50vh 10% 50vh 10%;
-
     .step {
-      @include white-boxed-narrative-step;
-      margin-bottom: 150vh;
-
-      &:last-child {
-        margin-bottom: inherit;
-      }
+      font-size: $font-size-small;
     }
 
     .detour a {
       @include red-button;
+    }
+  }
+}
+
+@media (min-width: $media-breakpoint-min-m) {
+  .chapter.what-is-intersectionality {
+    position: relative;
+
+    & > .background {
+      position: sticky;
+      top: 0;
+
+      width: 100%;
+      height: 100vh;
+
+      z-index: -1;
+
+      background: url('~assets/lines/lines-orange.jpg');
+      background-size: cover;
+    }
+
+    .narrative {
+      position: relative;
+      margin-top: -100vh;
+      padding: 50vh 10% 50vh 10%;
+
+      .step {
+        @include white-boxed-narrative-step;
+        margin-bottom: 150vh;
+
+        &:last-child {
+          margin-bottom: inherit;
+        }
+      }
+
+      .detour a {
+        @include red-button;
+      }
     }
   }
 }

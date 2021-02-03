@@ -1,13 +1,5 @@
 <template>
   <div class="chapter intersectional_measures">
-    <div class="visualization">
-      <div class="visual top-left">
-        <img src="~/assets/visualizations/measures1.png">
-      </div>
-      <div class="visual bottom-right">
-        <img src="~/assets/visualizations/measures2.png">
-      </div>
-    </div>
     <div class="narrative">
       <div class="step">
         <h2>4 Intersektionale Maßnahmen</h2>
@@ -43,6 +35,14 @@
         </p>
       </div>
     </div>
+    <div class="visualization">
+      <div class="visual top-left">
+        <img src="~/assets/visualizations/measures1.png">
+      </div>
+      <div class="visual bottom-right">
+        <img src="~/assets/visualizations/measures2.png">
+      </div>
+    </div>
   </div>
 </template>
 
@@ -50,54 +50,8 @@
 @import "../../styles/_variables";
 
 .chapter.intersectional_measures {
-  position: relative;
-
-  padding: 20vh 10% 50vh 10%;
-
-  .visualization {
-    position: sticky;
-    top: 0;
-    width: 45%;
-    height: 90vh;
-    padding: 10%;
-
-    .visual {
-      position: absolute;
-      width: 60%;
-
-      img {
-        width: 100%;
-        height: auto;
-      }
-
-      &.top-left {
-        top: 0;
-        left: 0;
-      }
-
-      &.bottom-right {
-        bottom: 0;
-        right: 0;
-      }
-    }
-
-  }
 
   .narrative {
-    position: relative;
-    width: 45%;
-    left: 50%;
-
-    padding-bottom: 100vh;
-
-    .step {
-      margin-top: 50vh;
-
-      &:first-child {
-        margin-top: -50vh;
-      }
-    }
-
     h2 {
       color: $color-red;
     }
@@ -115,15 +69,85 @@
     }
   }
 
-  &:after {
-    content: "";
-    background: url('~assets/lines/lines-small.jpg');
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
+  .visualization {
+    position: relative;
+
+    .visual {
+
+      img {
+        max-width: 60%;
+        height: auto;
+      }
+
+      &.bottom-right {
+        position: relative;
+        left: 40%;
+      }
+    }
+  }
+}
+
+@media (min-width: $media-breakpoint-min-m) {
+  .chapter.intersectional_measures {
+    position: relative;
+    padding: 20vh 10% 50vh 10%;
+
+    .visualization {
+      position: sticky;
+      top: 0;
+      width: 45%;
+      height: 90vh;
+      padding: 10%;
+
+      .visual {
+        width: 60%;
+
+        img {
+          width: 100%;
+          max-width: none;
+          height: auto;
+        }
+
+        &.top-left {
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        &.bottom-right {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+        }
+      }
+    }
+
+    .narrative {
+      position: relative;
+      width: 45%;
+      left: 50%;
+
+      padding-bottom: 100vh;
+
+      .step {
+        margin-top: 50vh;
+
+        &:first-child {
+          margin-top: -50vh;
+        }
+      }
+    }
+
+    &:after {
+      content: "";
+      background: url('~assets/lines/lines-small.jpg');
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -1;
+    }
   }
 }
 </style>

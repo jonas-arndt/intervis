@@ -5,7 +5,7 @@
       Intersektionalität ist bislang weder Gegenstand von gesellschaftlichen Diskursen, noch hat der Begriff Eingang in den Alltagswortschatz in Deutschland gefunden. Das politische und transformative Potenzial, das einige Autor*innen in einer intersektionalen Perspektive sehen, ist demnach noch ungenutzt.
     </p>
     <p>
-      <span class="quote">Das ist zu bedauern, denn es ist wünschenswert, dass sich Intersektionalität als kritische Perspektive auf Machtverhältnisse im allgemein gesellschaftlichen Diskurs durchsetzt und in selbstverständlicher Weise einbezogen wird, wann immer es um Macht, Ungleichheit und diskursive Ausschlüsse geht.</span> (Meyer, 2017, S.155)
+      <q>Das ist zu bedauern, denn es ist wünschenswert, dass sich Intersektionalität als kritische Perspektive auf Machtverhältnisse im allgemein gesellschaftlichen Diskurs durchsetzt und in selbstverständlicher Weise einbezogen wird, wann immer es um Macht, Ungleichheit und diskursive Ausschlüsse geht.</q> (Meyer, 2017, S.155)
     </p>
 
     <p>
@@ -16,7 +16,7 @@
     </p>
 
     <h3>Und was kann ich da jetzt machen?</h3>
-    <ul class="intented-list">
+    <ul class="personal-suggestions">
       <li>
         Anerkennen, dass intersektionale Diskriminierung, Marginalisierung und Unterdrückung ein strukturelles Problem ist!
       </li>
@@ -54,7 +54,7 @@
       Die folgenden Quellen sind keine vollständige oder abschließende Sammlung. Sie sind vielmehr eine Liste von Literatur, Personen etc. die uns Autor*innen dabei geholfen haben, Intersektionalität, Diskriminierung und Privilegierung (besser) zu verstehen.
     </p>
 
-    <div class="books">
+    <div class="further-reading books">
       <h4>Bücher</h4>
       <ul>
         <li>
@@ -132,7 +132,7 @@
       </ul>
     </div>
 
-    <div class="articles">
+    <div class="further-reading articles">
       <h4>Artikel</h4>
       <ul>
         <li>
@@ -162,7 +162,7 @@
       </ul>
     </div>
 
-    <div class="links">
+    <div class="further-reading links">
       <h4>Webseiten, Talks, Soziale Medien, Podcasts</h4>
       <ul>
         <li>
@@ -252,32 +252,19 @@
 
 .chapter.and-now {
   background-color: $color-red;
-  padding: 3rem 20% 5rem 20%;
   color: white;
 
-  ul.intented-list {
-    $intent: 1em;
+  h2 {
+    margin-bottom: 1.8rem;
+    color: $color-black;
+  }
 
-    padding-left: $intent;
-    font-size: $font-size-small;
-    font-weight: 600;
-
-    li {
-      width: 45%;
-      margin-bottom: 2em;
-
-      &:nth-child(2n) {
-        position: relative;
-        left: 55%;
-      }
-
-      &:before {
-        position: absolute;
-        width: $intent;
-        margin-left: -$intent;
-        content: "–";
-      }
-    }
+  h3 {
+    font-size: $font-size-subtitle;
+    margin-top: 4rem;
+    margin-bottom: 1.6rem;
+    color: $color-black;
+    font-weight: 400;
   }
 
   h4 {
@@ -285,12 +272,30 @@
     margin-bottom: 0.7em;
   }
 
-  .books, .articles, .links {
+  a {
+    color: $color-black;
+  }
+
+  ul.personal-suggestions {
+    padding-left: 1em;
+    font-size: $font-size-small;
+    font-weight: 600;
+
+    li {
+      margin-bottom: 2em;
+
+      &:before {
+        position: absolute;
+        width: 1em;
+        margin-left: -1em;
+        content: "–";
+      }
+    }
+  }
+
+  .further-reading {
     $icon-width: 1.2em;
     $multiplier: 1.5;
-
-    position: relative;
-    width: 33%;
 
     ul {
       padding-left: $multiplier * $icon-width;
@@ -349,22 +354,29 @@
       }
     }
   }
+}
 
-  h2 {
-    margin-bottom: 1.8rem;
-    color: $color-black;
-  }
+@media (min-width: $media-breakpoint-min-m) {
+  .chapter.and-now {
+    background-color: $color-red;
+    padding: 3rem 20% 5rem 20%;
 
-  h3 {
-    font-size: $font-size-subtitle;
-    margin-top: 4rem;
-    margin-bottom: 1.6rem;
-    color: $color-black;
-    font-weight: 400;
-  }
+    ul.personal-suggestions {
 
-  a {
-    color: $color-black;
+      li {
+        width: 45%;
+
+        &:nth-child(2n) {
+          position: relative;
+          left: 55%;
+        }
+      }
+    }
+
+    .further-reading {
+      position: relative;
+      width: 33%;
+    }
   }
 }
 </style>

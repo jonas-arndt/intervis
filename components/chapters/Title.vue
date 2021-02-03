@@ -1,16 +1,7 @@
 <template>
   <div class="chapter title">
     <div class="inside">
-      <div class="language-switcher">
-        <ul>
-          <li :class="{ 'active': language == 'de' }">
-            <a href="#" @click.prevent="language = 'de'">DE</a>
-          </li>
-          <li :class="{ 'active': language == 'en' }">
-            <a href="#" @click.prevent="language = 'en'">EN</a>
-          </li>
-        </ul>
-      </div>
+      <LanguageSwitcher class="language-switcher" />
       <span class="date">XX.XX.XXXX</span>
       <div class="title-container">
         <h1>Inter…was?<br>Intersektionalität!</h1>
@@ -31,69 +22,19 @@
   </div>
 </template>
 
-<script>
-export default {
-  data () {
-    return {
-      language: 'de'
-    }
-  }
-}
-
-</script>
-
 <style lang="scss" scoped>
 @import "../../styles/_variables";
 
 .chapter.title {
-  position: relative;
-  height: 100vh;
-  min-height: 600px;
-
-  padding: 3em 10% 3em 10%;
-
-  & > .inside {
-    position: relative;
-    height: 100%;
-  }
 
   .language-switcher {
-    li {
-      display: inline-block;
-      margin-right: 0.5em;
-
-      a {
-        display: block;
-        font-family: $font-family-signika;
-        font-weight: 700;
-        color: $color-black;
-      }
-
-      &.active {
-        a {
-          border: 2px solid $color-red;
-          border-radius: 1.2em;
-          padding: 0.1em 0.4em 0.1em 0.4em;
-
-          color: $color-red;
-        }
-      }
-    }
+    margin-bottom: 1.5rem;
   }
 
   .date {
-    position: absolute;
-    top: 15%;
-    margin-top: -1.5em;
-
     font-family: $font-family-signika;
     font-weight: 600;
     font-size: $font-size-small;
-  }
-
-  .title-container {
-    position: absolute;
-    top: 15%;
   }
 
   h1 {
@@ -107,35 +48,17 @@ export default {
   }
 
   .introduction {
-    position: absolute;
-    bottom: 50%;
-    margin-bottom: -7em;
     font-size: $font-size-title-caption;
     font-style: italic;
   }
 
   .instruction {
-    position: absolute;
-    bottom: 0;
-
-    $icon-width: 1.2em;
-    $multiplier: 1.5;
-
-    padding: 0.5em 0 0.5em 0;
-    padding-left: $multiplier * $icon-width;
-
     font-family: $font-family-signika;
     font-size: $font-size-small;
     color: $color-red;
 
     &:before {
-      position: absolute;
-      width: $icon-width;
-      height: 100%;
-      content: "";
-      margin-left: -$multiplier * $icon-width;
-      background: url('~assets/icons/red-arrow-down.svg') no-repeat;
-      background-size: contain;
+      content: "↓";
     }
   }
 
@@ -151,6 +74,64 @@ export default {
     right: 0;
     position: absolute;
     z-index: -1;
+  }
+}
+
+@media (min-width: $media-breakpoint-min-m) {
+
+  .chapter.title {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+
+    padding: 3em 10% 3em 10%;
+
+    & > .inside {
+      position: relative;
+      height: 100%;
+    }
+
+    .date {
+      position: absolute;
+      top: 15%;
+      margin-top: -1.5em;
+    }
+
+    .title-container {
+      position: absolute;
+      top: 15%;
+    }
+
+    .introduction {
+      position: absolute;
+      bottom: 50%;
+      margin-bottom: -7em;
+    }
+
+    .instruction {
+      position: absolute;
+      bottom: 0;
+
+      $icon-width: 1.2em;
+      $multiplier: 1.5;
+
+      padding: 0.5em 0 0.5em 0;
+      padding-left: $multiplier * $icon-width;
+
+      font-family: $font-family-signika;
+      font-size: $font-size-small;
+      color: $color-red;
+
+      &:before {
+        position: absolute;
+        width: $icon-width;
+        height: 100%;
+        content: "";
+        margin-left: -$multiplier * $icon-width;
+        background: url('~assets/icons/red-arrow-down.svg') no-repeat;
+        background-size: contain;
+      }
+    }
   }
 }
 </style>

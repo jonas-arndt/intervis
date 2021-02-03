@@ -7,71 +7,47 @@
 <style lang="scss">
 @import "../styles/_variables";
 @import "../styles/_fonts";
+@import "../styles/_defaults";
+
+// custom style definitions
 
 html {
-  font-family: $font-family-pt-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-
   background-color: #F9FAFF;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
+.page {
+  overflow: hidden;
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: $font-family-signika;
+.chapter {
+  padding: 1rem;
 }
 
-h1 {
-  font-size: $font-size-title;
+a.cross-reference {
+  &:before {
+    content: "→ ";
+  }
 }
 
-h2 {
-  font-size: $font-size-title;
+.popup-overlay .scroll-container {
+  background-color: #ECEEF8;
+  overflow-y: hidden;
 }
 
-p {
-  line-height: 1.6em;
-  margin-bottom: 1.2em;
-}
+@media (min-width: $media-breakpoint-min-m) {
+  .popup-overlay {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
 
-a {
-  text-decoration: none;
-  color: $color-black;
+    padding: 2rem;
 
-  &.cross-reference {
-    &:before {
-      content: "→ ";
+    .scroll-container {
+      position: relative;
+      height: 100%;
+      width: auto;
     }
   }
 }
 
-ul {
-  padding: 0;
-}
-
-li {
-  list-style: none;
-}
-
-.quote {
-  font-style: italic;
-
-  &:before {
-    content: "»";
-  }
-  &:after {
-    content: "«";
-  }
-}
 </style>
