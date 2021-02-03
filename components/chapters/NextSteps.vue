@@ -1,6 +1,8 @@
 <template>
   <div class="chapter and-now">
-    <h2>5 Und jetzt?</h2>
+    <h2 class="chapter-title">
+      5 Und jetzt?
+    </h2>
     <p>
       Intersektionalität ist bislang weder Gegenstand von gesellschaftlichen Diskursen, noch hat der Begriff Eingang in den Alltagswortschatz in Deutschland gefunden. Das politische und transformative Potenzial, das einige Autor*innen in einer intersektionalen Perspektive sehen, ist demnach noch ungenutzt.
     </p>

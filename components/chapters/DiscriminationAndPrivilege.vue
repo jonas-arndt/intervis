@@ -3,7 +3,9 @@
     <div class="background" />
     <div class="narrative">
       <div class="step">
-        <h2>2 Diskriminierung &amp; Privilegierung</h2>
+        <h2 class="chapter-title">
+          2 Diskriminierung &amp; Privilegierung
+        </h2>
         <p>
           Individuen und Gruppen werden basierend auf sozialen Kategorien unterschiedlich diskriminiert und privilegiert. Sie erleben deswegen ungleiche Bedingungen, wenn es um Zugang zu Ressourcen, soziale und politische Teilhabe, gesellschaftliche Integration etc. geht.
         </p>

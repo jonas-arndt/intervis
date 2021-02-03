@@ -3,7 +3,9 @@
     <div class="background" />
     <div class="narrative">
       <div class="step">
-        <h2>1 Intersektionalität – Eine erste Definition</h2>
+        <h2 class="chapter-title">
+          1 Intersektionalität – Eine erste Definition
+        </h2>
         <p>
           Wir sind alle unterschiedliche Individuen, mit ganz unterschiedlichen Interessen, Stärken, Zielen etc. Darüber hinaus prägen uns mehrere sogenannte soziale Kategorien, wie Geschlecht (einschließlich Geschlechtsidentität, sexuelle Orientierung), ›Rasse‹ (einschließlich Ethnizität, Nationalität, Hautfarbe, Migrationsstatus, Sprache, Kultur, Religion), Klasse (einschließlich sozio-ökonomische Position und Herkunft), Behinderung, Alter etc. Diese sozialen Kategorien sind Dimensionen sozialer Machtverhältnisse: Personen und Gruppen werden im Rahmen vorherrschender Gesellschaftssysteme (Kapitalismus, Kolonialismus/weiße Vorherrschaft und Patriarchat) basierend auf diesen sozialen Kategorien unterschiedlich benachteiligt, also diskriminiert, und bevorteilt, also privilegiert. Das führt zu sozialer Ungleichheit und asymmetrischer Machtverteilung in unserer Gesellschaft.
         </p>

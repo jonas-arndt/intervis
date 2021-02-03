@@ -1,7 +1,9 @@
 <template>
   <div class="chapter case_studies_from_germany">
     <div class="step">
-      <h2>3 Fallbeispiele aus Deutschland</h2>
+      <h2 class="chapter-title">
+        3 Fallbeispiele aus Deutschland
+      </h2>
       <p>
         Zur Veranschaulichung der Auswirkungen von intersektionaler Diskriminierung schauen wir uns lokale Fallbeispiele aus Deutschland an. Die folgenden Beispiele sind ein kleiner Ausschnitt der zahlreichen, intersektionalen Diskriminierungsformen und -erfahrungen.
       </p>

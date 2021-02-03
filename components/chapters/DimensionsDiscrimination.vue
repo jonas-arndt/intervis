@@ -1,6 +1,8 @@
 <template>
   <div class="chapter dimensions-of-discrimination">
-    <h2>Dimensionen von Diskriminierung</h2>
+    <h2 class="chapter-title">
+      Dimensionen von Diskriminierung
+    </h2>
     <h3>Direkt &amp; Indirekt</h3>
     <p>
       Direkte/unmittelbare Diskriminierung liegt nach Definition des Allgemeinen Gleichbehandlungsgesetzes (AGG) dann vor, <q>wenn eine Person wegen eines in § 1 genannten Grundes [›Rasse‹, ethnische Herkunft, Geschlecht, Religion oder Weltanschauung, Behinderung, Alter oder sexuelle Identität] eine weniger günstige Behandlung erfährt, als eine andere Person in einer vergleichbaren Situation erfährt, erfahren hat oder erfahren würde</q> (§ 3 (1) AGG). Indirekte/mittelbare Diskriminierung liegt dann vor, <q>wenn dem Anschein nach neutrale Vorschriften, Kriterien oder Verfahren Personen wegen eines in § 1 genannten Grundes gegenüber anderen Personen in besonderer Weise benachteiligen können</q> (§ 3 (2) AGG).

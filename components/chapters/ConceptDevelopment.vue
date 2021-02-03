@@ -1,6 +1,8 @@
 <template>
   <div class="chapter concept-development">
-    <h2>Begriffsentwicklung von Intersektionalität</h2>
+    <h2 class="chapter-title">
+      Begriffsentwicklung von Intersektionalität
+    </h2>
     <p class="teaser">
       Die Entstehung von Intersektionalitätstheorien verlief nicht geradlinig. Sie ist geprägt von vielfältigen Entwicklungslinien. Und wie jede Historie, ist sie ihrerseits von Marginalisierung und Ausschlüssen geprägt. Innerhalb dieses Artikels wird die Begriffsentwicklung im US-amerikanischen und deutschen Kontext in groben Zügen skizziert.
     </p>

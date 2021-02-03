@@ -7,6 +7,7 @@
 <style lang="scss">
 @import "../styles/_variables";
 @import "../styles/_fonts";
+@import "../styles/_reset";
 @import "../styles/_defaults";
 
 // custom style definitions
@@ -21,6 +22,10 @@ html {
 
 .chapter {
   padding: 1rem;
+
+  .chapter-title {
+    font-weight: 700;
+  }
 }
 
 a.cross-reference {

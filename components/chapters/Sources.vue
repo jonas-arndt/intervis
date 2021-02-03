@@ -1,6 +1,8 @@
 <template>
   <div class="chapter project-information-and-sources">
-    <h2>Projektinformation &amp; Quellen</h2>
+    <h2 class="chapter-title">
+      Projektinformation &amp; Quellen
+    </h2>
     <p>
       Dieses Projekt versucht, Intersektionalität zugänglicher zu machen, das zentrale Anliegen zu kommunizieren und einen Einstieg zu ermöglichen. Im Rahmen dieses Projektes ist es nicht möglich, Intersektionalität vollständig in ihren detaillierten Methoden, theoretischen Ansätzen, Analyseebenen etc. zu behandeln. Auch sind die genannten Beispiele lediglich ein kleiner Ausschnitt der zahlreichen, intersektionalen Diskriminierungsformen und -erfahrungen.
     </p>

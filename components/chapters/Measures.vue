@@ -2,7 +2,9 @@
   <div class="chapter intersectional_measures">
     <div class="narrative">
       <div class="step">
-        <h2>4 Intersektionale Maßnahmen</h2>
+        <h2 class="chapter-title">
+          4 Intersektionale Maßnahmen
+        </h2>
         <p>
           Die zuvor betrachteten Beispiele zeigen: Es braucht besondere Maßnahmen, um Diskriminierung und Privilegierung auszugleichen und somit gleiche Ausgangsbedingungen zu schaffen. Diese müssen intersektional gedacht sein und nicht nur die individuelle Dimension, sondern vor allem die strukturelle und institutionelle Dimension von Diskriminierung einbeziehen.
         </p>
