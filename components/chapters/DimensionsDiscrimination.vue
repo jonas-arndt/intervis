@@ -14,7 +14,7 @@
       </div>
 
       <div class="block">
-        <img class="icon" :src="require('~/assets/icons/dimensions/layer-1.svg')">
+        <img class="icon" :src="require('~/assets/icons/dimensions/dimension_individuell.svg')">
         <h3 class="block-title">
           Individuelle Dimension
         </h3>
@@ -25,7 +25,7 @@
       </div>
 
       <div class="block">
-        <img class="icon" :src="require('~/assets/icons/dimensions/layer-2.svg')">
+        <img class="icon" :src="require('~/assets/icons/dimensions/dimension_strukturell.svg')">
         <h3 class="block-title">
           Strukturelle Dimension
         </h3>
@@ -36,13 +36,23 @@
       </div>
 
       <div class="block">
-        <img class="icon" :src="require('~/assets/icons/dimensions/layer-3.svg')">
+        <img class="icon" :src="require('~/assets/icons/dimensions/dimension_institutionell.svg')">
         <h3 class="block-title">
           Institutionelle Dimension
         </h3>
         <p class="text">
           Diese Dimension von Diskriminierung manifestiert sich durch vermeintlich neutrale Gesetze und Politiken, durch die jedoch bestimmte Personen und/oder Gruppen diskriminiert werden.
           <br>Sie trägt zur Aufrechterhaltung von ungleichen Machtverhältnissen durch Gesetze und Institutionen bei. Diejenigen, die sich in Institutionen in einer Machtpositionen befinden, z.B. Lehrer*innen, Richter*innen, Polizist*innen, reproduzieren und bekräftigen – meist unabsichtlich – häufig Diskriminierung in ihren Handlungen, Vorgehensweisen und Entscheidungen durch unbewusste Vorurteile und Stereotypisierungen. Ein Beispiel dafür ist <q>Racial Profiling</q>.
+        </p>
+      </div>
+
+      <div class="block">
+        <img class="icon" :src="require('~/assets/icons/dimensions/dimension_historisch.svg')">
+        <h3 class="block-title">
+          Historische Dimension
+        </h3>
+        <p class="text">
+          Die historische Dimension von Diskriminierung ist die Basis der drei anderen Dimensionen. Historische Ereignisse haben immer Einfluss auf die Gegenwart. So beeinflussen beispielsweise die Versklavung afrikanischer Menschen, der Kolonialismus und der Holocaust/Porajmos heutige Diskriminierungs- und Marginalisierungsstrukturen und bestimmen weiterhin, wie Personen und Gruppen hierarchisiert und Macht und Ressourcen verteilt sind.
         </p>
       </div>
     </div>
@@ -57,5 +67,23 @@
     font-size: $font-size-subtitle;
     font-weight: 400;
   }
+
+  .icon {
+    position: absolute;
+    top: 2rem;
+    width: 3rem;
+  }
+
+  .block-title {
+    position: absolute;
+    top: 6rem;
+  }
+
+  .text {
+    position: absolute;
+    top: 7rem;
+    padding-top: 1rem;
+  }
+
 }
 </style>

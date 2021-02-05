@@ -86,29 +86,16 @@ a.cross-reference {
 
         margin-right: 3rem;
 
-        .icon {
-          position: absolute;
-          top: 0;
-        }
-
         h3.block-title {
-          position: absolute;
-          top: 6rem;
           font-size: $font-size-subtitle;
         }
 
         h4.block-title {
-          position: absolute;
-          top: 7rem;
           font-size: $font-size-default;
           font-style: italic;
         }
 
         .text {
-          position: absolute;
-          top: 7.5rem;
-          padding-top: 1rem;
-
           font-size: $font-size-small;
 
           display: block;
