@@ -12,21 +12,9 @@
       </p>
     </div>
 
-    <div class="case-study">
-      <div class="case-study-link">
-        <a href="#">Frauen* mit Kopftuch beim Zugang zum Arbeitsmarkt</a>
-      </div>
-    </div>
-    <div class="case-study">
-      <div class="case-study-link">
-        <a href="#">Sinti*zze und Rom*nja Kinder im Schulsystem</a>
-      </div>
-    </div>
-    <div class="case-study">
-      <div class="case-study-link">
-        <a href="#">Frauen* mit Behinderung auf dem Arbeitsmarkt</a>
-      </div>
-    </div>
+    <CaseStudy1 />
+    <CaseStudy2 />
+    <CaseStudy3 />
   </div>
 </template>
 
@@ -43,52 +31,6 @@
     margin-bottom: 3em;
     font-size: $font-size-small;
   }
-
-  .case-study {
-    margin-bottom: 2rem;
-
-    &:last-child {
-      margin-bottom: inherit;
-    }
-
-    .case-study-link {
-      position: relative;
-
-      padding: 0.25rem 0.75rem 0.25rem 0.75rem;
-
-      $border-definition: 2px solid $color-red;
-
-      &:before, &:after {
-        content: "";
-
-        position: absolute;
-        width: 1em;
-        height: 1em;
-      }
-
-      &:before {
-        top: 0;
-        left: 0;
-
-        border-top: $border-definition;
-        border-left: $border-definition;
-      }
-
-      &:after {
-        right: 0;
-        bottom: 0;
-
-        border-right: $border-definition;
-        border-bottom: $border-definition;
-      }
-
-      a {
-        font-family: $font-family-signika;
-        font-size: $font-size-subtitle;
-        color: $color-black;
-      }
-    }
-  }
 }
 
 @media (min-width: $media-breakpoint-min-m) {
@@ -100,24 +42,6 @@
 
     p {
       width: 50%;
-    }
-
-    .case-study {
-      position: relative;
-      display: inline-block;
-      width: 22%;
-      margin-right: 16%;
-
-      vertical-align: top;
-
-      &:last-child {
-        margin-right: inherit;
-      }
-    }
-
-    .case-study-link {
-      position: relative;
-      height: 10rem;
     }
 
     &:after {

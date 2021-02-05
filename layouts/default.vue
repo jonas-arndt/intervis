@@ -131,4 +131,7 @@ a.cross-reference {
   }
 }
 
+// other elements
+@import "../styles/case_study";
+
 </style>
