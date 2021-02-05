@@ -102,7 +102,7 @@
 @import "../../styles/_variables";
 
 .chapter.project-information-and-sources {
-  background-color: $color-grey;
+  background-color: $color-light-grey;
 
   h2 {
     font-size: $font-size-title;
