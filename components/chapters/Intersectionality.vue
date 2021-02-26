@@ -21,12 +21,10 @@
           <a href="#">Exkurs zur Begriffsentwicklung von Intersektionalität</a>
         </div>
       </div>
-      <div class="popup-overlay">
-        <div class="horizontal scroll-container">
-          <ConceptDevelopment />
-        </div>
-      </div>
     </div>
+    <PopupOverlay>
+      <ConceptDevelopment />
+    </PopupOverlay>
   </div>
 </template>
 

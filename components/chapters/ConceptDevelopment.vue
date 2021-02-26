@@ -67,54 +67,57 @@
 
 .concept-development {
 
-  .block {
+  @media (min-width: $media-breakpoint-min-m) {
 
-    .title {
-      position: absolute;
-      top: 0;
+    .block {
 
-      margin-top: 1.5rem;
-      margin-bottom: 0.75rem;
+      .title {
+        position: absolute;
+        top: 0;
 
-      .label {
-        font-weight: 400;
-        font-size: $font-size-subtitle;
-      }
-
-      &.germany {
-        height: 3rem;
-        background: url('~assets/icons/states/deutschland.svg') no-repeat;
-        background-size: contain;
+        margin-top: 1.5rem;
+        margin-bottom: 0.75rem;
 
         .label {
-          position: relative;
-          left: 1.3rem;
-          top: 1.2rem;
+          font-weight: 400;
+          font-size: $font-size-subtitle;
+        }
+
+        &.germany {
+          height: 3rem;
+          background: url('~assets/icons/states/deutschland.svg') no-repeat;
+          background-size: contain;
+
+          .label {
+            position: relative;
+            left: 1.3rem;
+            top: 1.2rem;
+          }
+        }
+        &.usa {
+          height: 2.4rem;
+          width: 4rem;
+          background: url('~assets/icons/states/usa.svg') no-repeat;
+          background-size: contain;
+
+          .label {
+            position: relative;
+            left: 2.2rem;
+            top: 1.2rem;
+          }
         }
       }
-      &.usa {
-        height: 2.4rem;
-        width: 4rem;
-        background: url('~assets/icons/states/usa.svg') no-repeat;
-        background-size: contain;
 
-        .label {
-          position: relative;
-          left: 2.2rem;
-          top: 1.2rem;
-        }
+      .block-title {
+        position: absolute;
+        top: 6rem;
       }
-    }
 
-    .block-title {
-      position: absolute;
-      top: 6rem;
-    }
-
-    .text {
-      position: absolute;
-      top: 6.5rem;
-      padding-top: 1rem;
+      .text {
+        position: absolute;
+        top: 6.5rem;
+        padding-top: 1rem;
+      }
     }
   }
 }

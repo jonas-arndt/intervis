@@ -74,11 +74,9 @@
         </div>
       </div>
     </div>
-    <div class="popup-overlay">
-      <div class="horizontal scroll-container">
-        <DimensionsDiscrimination />
-      </div>
-    </div>
+    <PopupOverlay>
+      <DimensionsDiscrimination />
+    </PopupOverlay>
   </div>
 </template>
 

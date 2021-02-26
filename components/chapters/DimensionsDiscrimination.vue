@@ -68,22 +68,23 @@
     font-weight: 400;
   }
 
-  .icon {
-    position: absolute;
-    top: 2rem;
-    width: 3rem;
-  }
+  @media (min-width: $media-breakpoint-min-m) {
+    .icon {
+      position: absolute;
+      top: 2rem;
+      width: 3rem;
+    }
 
-  .block-title {
-    position: absolute;
-    top: 6rem;
-  }
+    .block-title {
+      position: absolute;
+      top: 6rem;
+    }
 
-  .text {
-    position: absolute;
-    top: 7rem;
-    padding-top: 1rem;
+    .text {
+      position: absolute;
+      top: 7rem;
+      padding-top: 1rem;
+    }
   }
-
 }
 </style>
