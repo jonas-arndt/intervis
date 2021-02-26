@@ -13,7 +13,9 @@
       In diesem Teil, der »Projektoffenlegung«, werden bestimmte Visualisierungsentscheidungen transparent und involvierte Personen sichtbar gemacht. Der Projektprozess wird offengelegt, die Perspektiven und Positionen der Autor*innen kommuniziert und das Projekt reflektiert.
     </p>
     <div class="disclosure-link">
-      <a href="#">Zur Projektoffenlegung</a>
+      <button class="button" @click="$store.commit('toggleDisclosureVisibility')">
+        Einblicke in das Projekt
+      </button>
     </div>
     <div class="references">
       <ul>
@@ -114,7 +116,7 @@
     margin-bottom: 3rem;
     text-align: center;
 
-    a {
+    .button {
       @include red-button;
       display: inline-block;
     }

@@ -1,65 +1,53 @@
 <template>
   <div ref="page" class="page index">
-    <Title />
+    <SliderContainer :slided-in="designDecisionsAreVisible" class="design-decisions-container">
+      <!-- SliderContainer: main content start -->
+      <template v-slot:main>
+        <FlipContainer ref="flipContainer" :flipped="projectDisclosureIsVisible">
+          <!-- FlipContainer: front content start -->
+          <template v-slot:front>
+            <Narrative />
+          </template>
+          <!-- FlipContainer: front content end -->
 
-    <Introduction />
+          <!-- FlipContainer: back content start-->
+          <template v-slot:back>
+            <ProjectDisclosure />
+          </template>
+          <!-- FlipContainer: back content end -->
+        </FlipContainer>
+      </template>
+      <!-- SliderContainer: main content end -->
 
-    <Intersectionality />
-
-    <div class="popup-overlay">
-      <div class="horizontal scroll-container">
-        <ConceptDevelopment />
-      </div>
-    </div>
-
-    <DiscriminationAndPrivilege />
-
-    <div class="popup-overlay">
-      <div class="horizontal scroll-container">
-        <DimensionsDiscrimination />
-      </div>
-    </div>
-
-    <CaseStudies />
-
-    <Measures />
-
-    <NextSteps />
-
-    <Sources />
+      <!-- SliderContainer: slide in content start -->
+      <template v-slot:slide-in>
+        test
+        <SlideInContent />
+      </template>
+      <!-- SliderContainer: slide in content end -->
+    </SliderContainer>
   </div>
 </template>
 
 <script>
-import scrollama from 'scrollama'
+import { mapState } from 'vuex'
 
 export default {
-  data () {
-    return {
-      scroller: scrollama(),
-      scrollProgress: 0
-    }
-  },
-  mounted () {
-    this.scroller.setup({
-      step: '.step',
-      offset: 0.5,
-      order: false,
-      debug: false
-    })
-
-    window.addEventListener('resize', () => {
-      this.scroller.resize()
-    })
-    window.addEventListener('scroll', () => {
-      // set scroll progress
-      this.scrollProgress = window.scrollY / (this.$refs.page.clientHeight - window.innerHeight)
-    })
+  computed: {
+    ...mapState(['projectDisclosureIsVisible', 'designDecisionsAreVisible'])
   }
 }
 </script>
 
 <style lang="scss" scoped>
 @import "../styles/_variables";
+
+.page {
+  height: 100%;
+
+  .design-decisions-container {
+    height: 100%;
+  }
+}
 
 </style>

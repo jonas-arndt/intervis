@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <Nuxt />
-  </div>
+  <Nuxt />
 </template>
 
 <style lang="scss">
@@ -11,6 +9,13 @@
 @import "../styles/_defaults";
 
 // custom style definitions
+
+html,
+body,
+#__nuxt,
+#__layout {
+    height: 100%;
+}
 
 html {
   background-color: #F9FAFF;
