@@ -1,8 +1,6 @@
 <template>
   <div class="narrative">
-    <button style="position: fixed; right: 0; top: 20px; z-index:1000;" @click="$store.commit('toggleDesignDecisionsVisibility')">
-      Einblick in die Visualisierungsentscheidungen
-    </button>
+    <SlideInToggleButton class="design-decisions-toggle-button" />
 
     <Title />
 
@@ -67,6 +65,14 @@ export default {
 @import "../styles/_variables";
 
 .narrative {
+    background-color: #F9FAFF;
+
+    .design-decisions-toggle-button {
+        position: fixed;
+        right: 0;
+        top: 20px;
+        z-index:1000;
+    }
 }
 
 </style>
