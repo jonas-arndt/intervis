@@ -17,10 +17,6 @@ body,
     height: 100%;
 }
 
-html {
-  background-color: #F9FAFF;
-}
-
 .page {
   overflow: hidden;
 }

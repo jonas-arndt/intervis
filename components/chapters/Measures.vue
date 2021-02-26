@@ -139,17 +139,6 @@
         }
       }
     }
-
-    &:after {
-      content: "";
-      background: url('~assets/lines/lines-small.jpg');
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      position: absolute;
-      z-index: -1;
-    }
   }
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="chapter what-is-intersectionality">
-    <div class="background" />
+    <SlideInToggleButton class="design-decisions-toggle-button" />
     <div class="narrative">
       <div class="step">
         <h2 class="chapter-title">
@@ -19,6 +19,11 @@
         </p>
         <div class="detour">
           <a href="#">Exkurs zur Begriffsentwicklung von Intersektionalität</a>
+        </div>
+      </div>
+      <div class="popup-overlay">
+        <div class="horizontal scroll-container">
+          <ConceptDevelopment />
         </div>
       </div>
     </div>
@@ -44,19 +49,6 @@
 @media (min-width: $media-breakpoint-min-m) {
   .chapter.what-is-intersectionality {
     position: relative;
-
-    & > .background {
-      position: sticky;
-      top: 0;
-
-      width: 100%;
-      height: 100vh;
-
-      z-index: -1;
-
-      background: url('~assets/lines/lines-orange.jpg');
-      background-size: cover;
-    }
 
     .narrative {
       position: relative;

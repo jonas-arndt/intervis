@@ -1,34 +1,21 @@
 <template>
-  <div class="narrative">
-    <SlideInToggleButton class="design-decisions-toggle-button" />
-
-    <Title />
-
-    <Introduction />
-
-    <Intersectionality />
-
-    <div class="popup-overlay">
-      <div class="horizontal scroll-container">
-        <ConceptDevelopment />
+  <div class="article-content">
+    <div class="content-with-background">
+      <div class="background">
+        <BackgroundVisualization />
+      </div>
+      <div class="foreground">
+        <Title />
+        <Introduction />
+        <Intersectionality />
+        <DiscriminationAndPrivilege />
+        <CaseStudies />
+        <Measures />
       </div>
     </div>
-
-    <DiscriminationAndPrivilege />
-
-    <div class="popup-overlay">
-      <div class="horizontal scroll-container">
-        <DimensionsDiscrimination />
-      </div>
-    </div>
-
-    <CaseStudies />
-
-    <Measures />
-
     <NextSteps />
-
     <Sources />
+  </div>
   </div>
 </template>
 
@@ -64,8 +51,26 @@ export default {
 <style lang="scss" scoped>
 @import "../styles/_variables";
 
-.narrative {
+.article-content {
     background-color: #F9FAFF;
+
+    .content-with-background {
+      position: relative;
+      .background {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        z-index: 100;
+      }
+      .foreground {
+        position: relative;
+        z-index: 200;
+      }
+    }
 
     .design-decisions-toggle-button {
         position: fixed;

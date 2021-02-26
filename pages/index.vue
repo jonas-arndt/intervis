@@ -6,7 +6,7 @@
         <FlipContainer ref="flipContainer" :flipped="projectDisclosureIsVisible">
           <!-- FlipContainer: front content start -->
           <template v-slot:front>
-            <Narrative />
+            <ArticleContent />
           </template>
           <!-- FlipContainer: front content end -->
 

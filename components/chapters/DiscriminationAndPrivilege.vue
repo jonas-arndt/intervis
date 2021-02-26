@@ -1,6 +1,5 @@
 <template>
   <div class="chapter discrimination_and_privilege">
-    <div class="background" />
     <div class="narrative">
       <div class="step">
         <h2 class="chapter-title">
@@ -75,6 +74,11 @@
         </div>
       </div>
     </div>
+    <div class="popup-overlay">
+      <div class="horizontal scroll-container">
+        <DimensionsDiscrimination />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -147,19 +151,6 @@
       top: 0;
       margin-top: -100vh;
 
-    }
-
-    & > .background {
-      position: sticky;
-      top: 0;
-
-      width: 100%;
-      height: 100vh;
-
-      z-index: -1;
-
-      background: url('~assets/lines/lines-small.jpg');
-      background-size: cover;
     }
 
     & > .narrative {

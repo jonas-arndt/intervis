@@ -61,20 +61,6 @@
       content: "↓";
     }
   }
-
-  // background image
-  &:after {
-    content: "";
-    background: url('~assets/lines/lines-grey.jpg');
-    background-size: cover;
-    opacity: 0.25;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
-  }
 }
 
 @media (min-width: $media-breakpoint-min-m) {

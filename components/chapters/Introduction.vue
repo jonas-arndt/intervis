@@ -1,8 +1,5 @@
 <template>
   <div class="chapter grid-visualization">
-    <div class="visualization">
-      <img :src="require('~/assets/visualizations/zugang_integration_teilhabe_anerkennung.svg')" alt="Zugang, Integration, Teilhabe, Anerkennung">
-    </div>
     <div class="narrative">
       <div class="step">
         <p>
@@ -39,35 +36,15 @@
       font-size: $font-size-small;
     }
   }
-
-  .visualization {
-    img {
-      max-width: 100%;
-      max-height: 90vh;
-    }
-  }
 }
 
 @media (min-width: $media-breakpoint-min-m) {
   .chapter.grid-visualization {
     position: relative;
 
-    & > .visualization, & > .narrative {
+    & > .narrative {
       padding-left: 10%;
       padding-right: 10%;
-    }
-
-    .visualization {
-      position: sticky;
-      top: 0;
-
-      z-index: -100;
-
-      width: 100%;
-      height: 100vh;
-
-      background: url('~assets/lines/lines-grey.jpg');
-      background-size: cover;
     }
 
     .narrative {
