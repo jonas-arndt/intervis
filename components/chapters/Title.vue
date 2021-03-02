@@ -2,21 +2,25 @@
   <div class="chapter title">
     <div class="inside">
       <LanguageSwitcher class="language-switcher" />
-      <span class="date">XX.XX.XXXX</span>
-      <div class="title-container">
-        <h1>Inter…was?<br>Intersektionalität!</h1>
-        <p class="subtitle">
-          Eine visuelle Einführung in das Zusammenwirken von Machtstrukturen
+
+      <div class="title-block">
+        <span class="date">XX.XX.XXXX</span>
+        <div class="title-container">
+          <h1>Inter…was?<br>Intersektionalität!</h1>
+          <p class="subtitle">
+            Eine visuelle Einführung in das Zusammenwirken von Machtstrukturen
+          </p>
+        </div>
+        <p class="introduction">
+          Identische Qualifikationen.
+          <br>Identischer Lebenslauf.
+          <br>Identische Bewerbung.
+          <br>Der einzige Unterschied: Name und Foto.
+          <br>Warum wird Sandra zum Vorstellungsgespräch eingeladen,
+          <br>Meyrem aber nicht?
         </p>
       </div>
-      <p class="introduction">
-        Identische Qualifikationen.
-        <br>Identischer Lebenslauf.
-        <br>Identische Bewerbung.
-        <br>Der einzige Unterschied: Name und Foto.
-        <br>Warum wird Sandra zum Vorstellungsgespräch eingeladen,
-        <br>Meyrem aber nicht?
-      </p>
+
       <span class="instruction">Scrolle nach unten, um Antworten darauf zu finden.</span>
     </div>
   </div>
@@ -26,6 +30,8 @@
 @import "../../styles/_variables";
 
 .chapter.title {
+  position: relative;
+  padding: 1rem;
 
   .language-switcher {
     margin-bottom: 1.5rem;
@@ -53,6 +59,10 @@
   }
 
   .instruction {
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+
     font-family: $font-family-signika;
     font-size: $font-size-small;
     color: $color-red;
@@ -61,59 +71,32 @@
       content: "↓";
     }
   }
-}
 
-@media (min-width: $media-breakpoint-min-m) {
-
-  .chapter.title {
-    position: relative;
+  @media (min-height: 33rem) {
     height: 100vh;
-    min-height: 600px;
 
-    padding: 3em 10% 3em 10%;
-
-    & > .inside {
+    .title-block {
       position: relative;
-      height: 100%;
+      top: 45vh;
+      margin-top: -15rem;
     }
+  }
 
-    .date {
-      position: absolute;
-      top: 15%;
-      margin-top: -1.5em;
-    }
-
-    .title-container {
-      position: absolute;
-      top: 15%;
-    }
-
-    .introduction {
-      position: absolute;
-      bottom: 50%;
-      margin-bottom: -7em;
-    }
+  @media (min-width: $media-breakpoint-min-m) {
+    padding: 10%;
+    padding-top: 3rem;
 
     .instruction {
-      position: absolute;
-      bottom: 0;
-
-      $icon-width: 1.2em;
-      $multiplier: 1.5;
-
-      padding: 0.5em 0 0.5em 0;
-      padding-left: $multiplier * $icon-width;
-
-      font-family: $font-family-signika;
-      font-size: $font-size-small;
-      color: $color-red;
+      left: 10%;
+      bottom: 2rem;
 
       &:before {
-        position: absolute;
-        width: $icon-width;
-        height: 100%;
-        content: "";
-        margin-left: -$multiplier * $icon-width;
+        display: inline-block;
+        position: relative;
+        top: 0.4em;
+        width: 1.5em;
+        height: 1.5em;
+        content: " ";
         background: url('~assets/icons/red-arrow-down.svg') no-repeat;
         background-size: contain;
       }

@@ -22,10 +22,16 @@ body,
 }
 
 .chapter {
-  padding: 1rem;
 
   .chapter-title {
     font-weight: 700;
+  }
+
+  .step {
+    background: rgb(249, 250, 255, 0.95);
+    padding: 1rem;
+    margin-bottom: 5rem;
+
   }
 }
 
