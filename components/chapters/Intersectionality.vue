@@ -18,13 +18,15 @@
           In den folgenden Kapiteln findest du dazu anschauliche Erklärungen und Beispiele.
         </p>
         <div class="detour">
-          <a href="#">Exkurs zur Begriffsentwicklung von Intersektionalität</a>
+          <a href="#" class="button">Exkurs zur Begriffsentwicklung von Intersektionalität</a>
         </div>
       </div>
     </div>
+    <!--
     <PopupOverlay>
       <ConceptDevelopment />
     </PopupOverlay>
+    -->
   </div>
 </template>
 
@@ -32,40 +34,22 @@
 @import "../../styles/_variables";
 
 .chapter.what-is-intersectionality {
+  position: relative;
 
-  .narrative {
-    .step {
-      font-size: $font-size-small;
-    }
-
-    .detour a {
-      @include red-button;
-    }
-  }
-}
-
-@media (min-width: $media-breakpoint-min-m) {
-  .chapter.what-is-intersectionality {
-    position: relative;
-
+  @media (min-width: $media-breakpoint-min-m) {
     .narrative {
       position: relative;
-      margin-top: -100vh;
       padding: 50vh 10% 50vh 10%;
 
       .step {
-        @include white-boxed-narrative-step;
         margin-bottom: 150vh;
 
         &:last-child {
           margin-bottom: inherit;
         }
       }
-
-      .detour a {
-        @include red-button;
-      }
     }
   }
 }
+
 </style>
