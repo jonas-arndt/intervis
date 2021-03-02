@@ -1,5 +1,6 @@
 <template>
   <div class="chapter grid-visualization">
+    <TitleVisualization class="background-visualization" />
     <div class="narrative">
       <div class="step">
         <p>
@@ -31,35 +32,37 @@
 @import "../../styles/_variables";
 
 .chapter.grid-visualization {
+  position: relative;
+
   .narrative {
+    position: relative;
+    padding-top: 30vh;
+    padding-bottom: 150vh;
+
     .step {
-      font-size: $font-size-small;
+      margin-bottom: 150vh;
+
+      &:last-child {
+        margin-bottom: inherit;
+      }
     }
   }
-}
 
-@media (min-width: $media-breakpoint-min-m) {
-  .chapter.grid-visualization {
-    position: relative;
+  .background-visualization {
+    z-index: -100;
+    position: sticky;
+    top: 0;
+  }
 
-    & > .narrative {
-      padding-left: 10%;
-      padding-right: 10%;
-    }
+  @media (min-width: $media-breakpoint-min-m) {
+    padding-top: 80vh;
+    padding-bottom: 80vh;
 
     .narrative {
       padding-top: 10rem;
       padding-bottom: 100vh;
-
-      .step {
-        @include white-boxed-narrative-step;
-        margin-bottom: 150vh;
-
-        &:last-child {
-          margin-bottom: inherit;
-        }
-      }
     }
   }
 }
+
 </style>

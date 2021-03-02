@@ -23,24 +23,3 @@ $media-breakpoint-min-s: 576px;
 $media-breakpoint-min-m: 768px;
 $media-breakpoint-min-l: 992px;
 $media-breakpoint-min-xl: 1200px;
-
-// mixins
-@mixin red-button {
-  display: inline-block;
-  padding: 0.8em 1.2em 0.8em 1.2em;
-
-  border-radius: 1.7em;
-  color: white;
-  border: none;
-
-  background: $color-red;
-}
-
-@mixin white-boxed-narrative-step {
-  position: relative;
-  width: 40%;
-  background: white;
-
-  font-size: $font-size-small;
-  padding: $font-size-small 1em $font-size-small 1em;
-}

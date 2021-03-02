@@ -40,7 +40,6 @@
   .date {
     font-family: $font-family-signika;
     font-weight: 600;
-    font-size: $font-size-small;
   }
 
   h1 {
@@ -64,7 +63,6 @@
     bottom: 1rem;
 
     font-family: $font-family-signika;
-    font-size: $font-size-small;
     color: $color-red;
 
     &:before {
