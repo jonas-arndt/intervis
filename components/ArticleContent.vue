@@ -2,7 +2,7 @@
   <div class="article-content">
     <div class="content-with-background">
       <div class="background">
-        <BackgroundVisualization />
+        <LineVisualization />
       </div>
       <div class="foreground">
         <Title />
