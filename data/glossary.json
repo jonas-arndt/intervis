@@ -1,24 +1,102 @@
-{
-  "Ableismus": "Beschreibt die Diskriminierung von Menschen mit körperlicher, seelischer, geistiger und/oder geistiger Behinderung. Ableismus führt zu sozialer Ausgrenzung, Marginalisierung und struktureller Unterdrückung und manifestiert soziale Ungleichheit.",
-  "Anti-muslimischer Rassismus / Islamophobie": "Beschreibt die negativen Vorurteile gegenüber Menschen, die den Islam praktizieren und/oder als muslimisch gelesen werden, und die Diskriminerung, der sie ausgesetzt sind. Islamophobie ist die Angst, der Hass und/oder negative Vorurteile gegenüber dem Islam und Muslim*innen.",
-  "Anti-Rom*nja Rassismus": "Beschreibt die negativen Vorurteile gegenüber Rom*nja, einschließlich anderer Untergruppen, die kollektiv als Rom*nja bezeichnet werden, und die Diskriminerung, der sie ausgesetzt sind.",
-  "Antisemitismus": "Beschreibt die negativen Vorurteile gegenüber Menschen, die das Judentum praktizieren und/oder als jüdisch gelesen werden, und die Diskriminerung, der sie ausgesetzt sind. Verschwörungstheorien über das Judentum und die Leugnung des Holocaust sind ebenfalls Formen des Antisemitismus.",
-  "Behinderung": "»Zu den Menschen mit Behinderungen zählen Menschen, die langfristige körperliche, seelische, geistige oder Sinnesbeeinträchtigungen haben, welche sie in Wechselwirkung mit verschiedenen Barrieren an der vollen, wirksamen und gleichberechtigten Teilhabe an der Gesellschaft hindern können« (Beauftragte der Bundesregierung für die Belange von Menschen mit Behinderungen, 2017, S. 8). Behinderung wird nicht als fest definiertes Konzept verstanden, sondern wird ständig weiterentwickelt und ist von gesellschaftlichen Entwicklungen abhängig.
-  Anstatt »Behinderung« wird auch »Beeinträchtigung« verwendet.
-  Häufig wird auch von behindert »zu werden« anstatt von behindert »zu sein« gesprochen.",
-  "Cis-geschlechtlich": "Personen, deren biologisches Geschlecht – das Geschlecht, das ihnen bei der Geburt zugewiesen wurde – ihrer Geschlechtsidentität entspricht.",
-  "Cis- und Heterosexismus": "Beschreibt die Diskriminierung von Menschen aufgrund ihrer Geschlechtsidentität und sexuellen Orientierung. Nicht-cisgeschlechtliche (transgender, genderqueer, nicht-binär etc.) und nicht-heterosexuelle Menschen (lesbisch, schwul, bisexuell, asexuell, queer, pansexuell etc.) sind Cis- und Heterosexismus ausgesetzt.",
-  "Genderstar": "Der englische Begriff »Gender« bezeichnet im Unterschied zum englischen Begriff »Sex« nicht das biologische Geschlecht, sondern die soziale, gesellschaftlich konstruierte Geschlechtsidentität. Der Genderstar ermöglicht es, Identitäten und Selbstpositionierungen jenseits eines binären Systems – die Einteilung der Menschen in zwei Geschlechter (Mann/Frau) – sichtbar zu machen. Der Genderstar hinter dem Begriff »Frauen« soll, über cisgeschlechtliche Frauen hinaus, alle Arten weiblicher Selbstidentifikation einschließen.",
-  "Klassismus": "Beschreibt die Diskriminierung von Menschen aufgrund ihrer sozio-ökonomische Positionen und Herkünfte / soziale Klassen. Menschen aus »niedrigeren« Klassen (z.B. Arbeiter*innen (»working class«), arme Menschen), aber beispielsweise auch sogenannte »first generation students«, sind Klassismus ausgesetzt. Klassismus führt zu sozialer Ausgrenzung, Marginalisierung und struktureller Unterdrückung und manifestiert soziale Ungleichheit.",
-  "Patriarchat": "Beschreibt die Gesellschaftsordnung der Vorherrschaft und Überlegenheit des männlichen Geschlechts über alle anderen Geschlechter. Patriarchale Systeme und Praktiken in familiären, strukturellen, institutionellen etc. Kontexten führen zu ungleicher Macht- und Ressourcenverteilung, sozialer Ungleichheit und Unterdrückung. Sexismus, Cis-und Hetereosexismus etc. sind Nebenprodukte/Säulen des Patriarchats, weil sie auf einem binären System (Einteilung der Geschlechter in Mann/Frau) und der Überlegenheit des männlichen Geschlechts beruhen, und halten gleichzeitig patriarchale Strukturen aufrecht.",
-  "People of Color": "Die Begriffe People of Color und Women of Color stammen aus den USA und sind eine politische Selbstbezeichnung und kollektive Positionierung von Menschen, die in einer Mehrheitsgesellschaft, in der weiß-sein als Norm gilt, strukturellen Rassismus erfahren.",
-  "Queer": "Queer ist eine Selbstbezeichnung und ein politischer Begriff, der sich gegen heteronormative Normen (gesellschaftliche Norm einer Sexualität zwischen Mann und Frau) richtet. Er schließt vielfältige Formen von sexueller/romantischer Orientierung und Geschlechtsidentitäten ein.",
-  "Racial Profiling": "»Racial Profiling« sind durch Gesetze legitimierte, vermeintlich neutrale, rassistisch motivierte, polizeiliche Maßnahmen. So führen z.B. Identitätskontrollen an »gefährlichen Orten« in Kombination mit rassistischen Vorurteilen dazu,, dass nicht-weiß gelesene Menschen häufiger kontrolliert werden. Dies führt wiederum dazu, dass nicht-weiß gelesene Menschen überproportional häufig verhaftet werden und in Gefängnissen vertreten sind. Ohne Kontextualisierung werden solche Statistiken wiederum als Legitimierung genutzt, Racial Profiling durchzuführen.",
-  "›Rasse‹": "Der Begriff ›Rasse‹ wird als sozio-politisches Konstrukt verstanden, das auf weißer Vorherrschaft basiert, und nicht als biologische Kategorie. Um eine Differenz zwischen dem rassistischen und kritisch-analytischen Gebrauch von ›Rasse‹ zu markieren, wird er in Anführungszeichen gesetzt. Er wird als Oberbegriff verwendet für alle sozio-politischen Kategorien, die in Deutschland rassifiziert werden, wie zum Beispiel Nationalität, Ethnizität, Sprache, Kultur, Religion, Migrationsstatus, Hautfarbe.",
-  "Rassismus": "Beschreibt die Diskriminierung von Menschen aufgrund ihrer ›Rasse‹ (einschließlich Nationalität, Ethnizität, Sprache, Kultur, Religion, Migrationsstatus, Hautfarbe etc.), die auf weißer Vorherrschaft basiert. Die privilegierte Position des weiß-seins bildet in solchen rassistischen Strukturen die Norm. Rassismus führt zu sozialer Ausgrenzung, Marginalisierung und struktureller Unterdrückung und manifestiert soziale Ungleichheit.",
-  "Sexismus": "Beschreibt die Diskriminierung von Menschen aufgrund ihres zugeschriebenen Geschlechts. Das männliche Geschlecht ist dabei gegenüber allen anderen Geschlechtern privilegiert. Sexismus führt zu sozialer Ausgrenzung, Marginalisierung und struktureller Unterdrückung und manifestiert soziale Ungleichheit.",
-  "Schwarz": "Die Großschreibung des Begriffes »Schwarz« verweist auf seine Verwendung als politische, ermächtigende Selbstbezeichnung und »[...] zeigt das symbolische Kapital des Widerstandes gegen Rassismus an, welches rassistisch markierte Menschen und Kollektive sich gemeinsam erkämpft haben« (Gunda-Werner-Institut, 2019, S. 4).",
-  "Trans": "Der Begriff Trans bezeichnet Personen, die »[...] nicht (oder nicht nur) in dem Geschlecht, das ihnen bei Geburt zugewiesen wurde, bzw. der damit verbundenen Geschlechterrolle leben können oder wollen« (TransInterQueer e.V., o.D., S. 9).",
-  "Umgekehrte Diskriminierung": "Bezieht sich zum Beispiel auf das Argument, dass auch weiße Menschen Rassismus ausgesetzt sein können. Diese Argumentation ignoriert aber die Tatsache, dass Rassismus durch die Verflechtung von Vorurteilen und der Macht, diese tatsächlich durchzusetzen, entsteht, was dann zu realer Diskriminierung und Unterdrückung führt. Weiße Menschen können also rassistische Vorurteile erfahren, ein umgekehrter Rassismus wird aber insofern ausgeschlossen, dass weiße Menschen innerhalb vorherrschender Machtverhältnisse privilegiert sind und keine strukturelle Marginalisierung erfahren.",
-  "weiß": "Der Begriff weiß wird klein und kursiv geschrieben, um zu zeigen, dass er kein Selbstermächtigungs- und Widerstandspotential innehat, sondern es sich um eine privilegierte Position innerhalb rassistischer Strukturen handelt, in welchem weiß-sein üblicherweise unmarkiert bleibt."
-}
+[
+    {
+        "ID": "glossar-ableism",
+        "German": "Beschreibt die Diskriminierung von Menschen mit k\u00f6rperlicher, seelischer, geistiger oder Sinnesbehinderung. Ableismus f\u00fchrt zu sozialer Ausgrenzung, Marginalisierung und struktureller Unterdr\u00fcckung und manifestiert soziale Ungleichheit.",
+        "Englisch": "Describes discrimination against people with physical, mental, intellectual or sensory disabilities. Ableism leads to social exclusion, marginalization, and structural oppression and manifests social inequality."
+    },
+    {
+        "ID": "glossar-anti-muslim-racism",
+        "German": "Beschreibt die negativen Vorurteile gegen\u00fcber Menschen, die den Islam praktizieren und/oder als muslimisch gelesen werden (von denen also angenommen wird, sie seien muslimisch), und die Diskriminerung, der sie ausgesetzt sind. Islamophobie ist der Hass, die Angst und/oder negative Vorurteile gegen\u00fcber dem Islam und Muslim*innen.",
+        "Englisch": "Describes the negative prejudices against people who practice Islam and/or are perceived to be Muslim and the discrimination they face. Islamophobia is the hatred of, fear of, and/or negative prejudices against Islam and Muslims."
+    },
+    {
+        "ID": "glossar-anti-rom*nja-racism",
+        "German": "Beschreibt die negativen Vorurteile gegen\u00fcber Rom*nja, einschlie\u00dflich anderer Untergruppen, die kollektiv als Rom*nja bezeichnet werden, und die Diskriminerung, der sie ausgesetzt sind.",
+        "Englisch": "Describes the negative prejudices against Rom*nja, including other subgroups collectively referred to as Rom*nja, and the discrimination they face."
+    },
+    {
+        "ID": "glossar-anti-semitism",
+        "German": "Beschreibt die negativen Vorurteile gegen\u00fcber Menschen, die das Judentum praktizieren und/oder als j\u00fcdisch gelesen werden (von denen also angenommen wird, sie seien j\u00fcdisch), und die Diskriminerung, der sie ausgesetzt sind. Die Leugnung des Holocaust und Verschw\u00f6rungstheorien \u00fcber das Judentum sind ebenfalls Formen des Antisemitismus.",
+        "Englisch": "Describes the negative prejudices against people who practice Judaism and/or are perceived to be Jewish and the discrimination they face. Holocaust denial and conspiracy theories about Judaism are also forms of anti-Semitism."
+    },
+    {
+        "ID": "glossar-disability",
+        "German": "Beschreibt langfristige k\u00f6rperliche, seelische, geistige oder Sinnesbeeintr\u00e4chtigungen, die Menschen in Wechselwirkung mit verschiedenen Barrieren in der Umwelt an der vollst\u00e4ndigen gesellschaftliche Teilhabe hindern k\u00f6nnen. Behinderung wird nicht als ein fest definiertes Konzept verstanden, sondern wird st\u00e4ndig weiterentwickelt und ist von gesellschaftlichen Entwicklungen abh\u00e4ngig.\nAnstatt \u00bbBehinderung\u00ab wird auch \u00bbBeeintr\u00e4chtigung\u00ab verwendet. Aktivist*innen weisen darauf hin, anstatt die Formulierung \u00bbbehindert zu sein\u00ab, \u00bbbehindert zu werden\u00ab zu verwenden.",
+        "Englisch": "Describes long-term physical, mental, intellectual or sensory impairments that, in interaction with various barriers in the environment, can prevent people from fully participating in society. Disability is not understood as a fixed concept, but is constantly evolving and dependent on social developments."
+    },
+    {
+        "ID": "glossar-cisgender",
+        "German": "Personen, deren biologisches Geschlecht \u2013 das Geschlecht, das ihnen bei der Geburt zugewiesen wurde \u2013 ihrer Geschlechtsidentit\u00e4t entspricht.",
+        "Englisch": "Individuals whose biological sex \u2013 the sex they were assigned at birth \u2013 corresponds to their gender identity."
+    },
+    {
+        "ID": "glossar-cis-and-heterosexism",
+        "German": "Beschreibt die Diskriminierung von Menschen aufgrund ihrer Geschlechtsidentit\u00e4t und sexuellen Orientierung. Nicht-cisgeschlechtliche (transgender, genderqueer, nicht-bin\u00e4r etc.) und nicht-heterosexuelle Menschen (lesbisch, schwul, bisexuell, asexuell, queer, pansexuell etc.) sind Cis- und Heterosexismus ausgesetzt.",
+        "Englisch": "Describes discrimination against people based on their gender identity and sexual orientation. Non-cisgender (transgender, genderqueer, non-binary, etc.) and non-heterosexual people (lesbian, gay, bisexual, asexual, queer, pansexual, etc.) are exposed to cis- and heterosexism."
+    },
+    {
+        "ID": "glossar-genderstar",
+        "German": "Der englische Begriff \u00bbGender\u00ab bezeichnet im Unterschied zum englischen Begriff \u00bbSex\u00ab nicht das biologische Geschlecht, sondern die soziale, gesellschaftlich konstruierte Geschlechtsidentit\u00e4t. Der Genderstar erm\u00f6glicht es, Identit\u00e4ten und Selbstpositionierungen jenseits eines bin\u00e4ren Systems \u2013 die Einteilung der Menschen in zwei Geschlechter (Mann/Frau) \u2013 sichtbar zu machen. Der Genderstar hinter dem Begriff \u00bbFrauen\u00ab soll, \u00fcber cisgeschlechtliche Frauen hinaus, alle Arten weiblicher Selbstidentifikation einschlie\u00dfen.",
+        "Englisch": "The English term \u00bbgender\u00ab, in contrast to the English term \u00bbsex\u00ab, does not refer to the biological sex, but to the socially constructed gender identity. The genderstar allows to make identities and self-positionings beyond a binary system (classification of gender into male/female) visible. The genderstar behind the term \u00bbwomen\u00ab is meant to include all kinds of female self-identification that go beyond cisgender women."
+    },
+    {
+        "ID": "glossar-classism",
+        "German": "Beschreibt die Diskriminierung von Menschen aufgrund ihrer sozio-\u00f6konomischen Positionen und Herk\u00fcnfte / soziale Klassen. Menschen aus \u00bbniedrigeren\u00ab Klassen (z.B. Arbeiter*innen (\u00bbworking class\u00ab), arme Menschen), aber beispielsweise auch sogenannte \u00bbfirst generation students\u00ab \u2013 also Studierende aus nicht akademischen Haushalten \u2013 sind Klassismus ausgesetzt. Klassismus f\u00fchrt zu sozialer Ausgrenzung, Marginalisierung und struktureller Unterdr\u00fcckung und manifestiert soziale Ungleichheit.",
+        "Englisch": "Describes the discrimination of people based on their socio-economic positions and backgrounds / social classes. People from \u00bblower\u00ab classes (e.g. \u00bbworking class\u00ab, poor people), but also, for example, so-called \u00bbfirst generation students\u00ab \u2013 i.e. students from non-academic households \u2013 are exposed to classism. Classism leads to social exclusion, marginalization, and structural oppression and manifests social inequality."
+    },
+    {
+        "ID": "glossar-patriarchy",
+        "German": "Beschreibt die Gesellschaftsordnung der Vorherrschaft und \u00dcberlegenheit des m\u00e4nnlichen Geschlechts \u00fcber alle anderen Geschlechter. Patriarchale Systeme und Praktiken in famili\u00e4ren, strukturellen, institutionellen etc. Kontexten f\u00fchren zu ungleicher Macht- und Ressourcenverteilung, sozialer Ungleichheit und Unterdr\u00fcckung. Sexismus, Cis-und Hetereosexismus etc. sind Nebenprodukte/S\u00e4ulen des Patriarchats, weil sie auf einem bin\u00e4ren System (Einteilung der Geschlechter in Mann/Frau) und der \u00dcberlegenheit des m\u00e4nnlichen Geschlechts beruhen, und halten gleichzeitig patriarchale Strukturen aufrecht.",
+        "Englisch": "Describes the social order of supremacy and superiority of the male gender over all other genders. Patriarchal systems and practices in family, structural, institutional, etc. contexts lead to unequal/asymmetric distribution of power and resources, social inequality, and oppression. Sexism, cis- and hetereosexism, etc. are by-products of patriarchy because they are based on gender binary (classification of gender into male/female) and the superiority of the male gender, while maintaining patriarchal structures."
+    },
+    {
+        "ID": "glossar-people-of-color",
+        "German": "Die Begriffe \u00bbPeople of Color\u00ab und \u00bbWomen of Color\u00ab stammen aus den USA und sind eine politische Selbstbezeichnung und kollektive Positionierung von Menschen, die in einer Gesellschaft, in der wei\u00df-sein als Norm gilt, strukturellen Rassismus erfahren.",
+        "Englisch": "The terms \u00bbPeople of Color\u00ab and \u00bbWomen of Color\u00ab have their origins in the U.S. and are a political self-identification and collective positioning of people who experience structural racism in a society where being white is considered the norm."
+    },
+    {
+        "ID": "glossar-queer",
+        "German": "Queer ist eine Selbstbezeichnung und ein politischer Begriff, der sich gegen heteronormative Normen (gesellschaftliche Norm einer Sexualit\u00e4t zwischen Mann und Frau) richtet. Er schlie\u00dft vielf\u00e4ltige Formen von sexueller/romantischer Orientierung und Geschlechtsidentit\u00e4ten ein.",
+        "Englisch": "Queer is a self-identification and a political term directed against heteronormative norms (social norm of a sexuality between man and woman). It includes various forms of sexual/romantic orientation and gender identities."
+    },
+    {
+        "ID": "glossar-racial-profiling",
+        "German": "\u00bbRacial Profiling\u00ab sind durch Gesetze legitimierte, vermeintlich neutrale, rassistisch motivierte, polizeiliche Ma\u00dfnahmen. So f\u00fchren z.B. Identit\u00e4tskontrollen an \u00bbgef\u00e4hrlichen Orten\u00ab in Kombination mit rassistischen Vorurteilen dazu, dass nicht-wei\u00df gelesene Menschen (von denen also angenommen wird, sie seien nicht-wei\u00df) h\u00e4ufiger kontrolliert werden. Dies f\u00fchrt wiederum dazu, dass nicht-wei\u00df gelesene Menschen \u00fcberproportional h\u00e4ufig verhaftet werden und in Gef\u00e4ngnissen vertreten sind. Ohne Kontextualisierung werden solche Statistiken wiederum als Legitimierung genutzt, Racial Profiling durchzuf\u00fchren.",
+        "Englisch": "\u00bbRacial profiling\u00ab are supposedly neutral, racially motivated police measures legitimized by the law. For example, identity checks in \u00bbdangerous places\u00ab combined with racial prejudices lead to people who are perceived as non-white being targeted more frequently by these checks. This in turn leads to a disproportionate number of non-white people being arrested and represented in prisons. Without contextualization, such statistics are in turn used to legitimize racial profiling."
+    },
+    {
+        "ID": "glossar-race",
+        "German": "Der Begriff wird als sozio-politisches Konstrukt verstanden, das auf wei\u00dfer Vorherrschaft basiert, und nicht als biologische Kategorie. Um eine Differenz zwischen dem rassistischen und kritisch-analytischen Gebrauch von \u203aRasse\u2039 zu markieren, wird er in Anf\u00fchrungszeichen gesetzt. Er wird als Oberbegriff verwendet f\u00fcr alle sozio-politischen Kategorien, die in Deutschland rassifiziert werden, wie zum Beispiel Nationalit\u00e4t, Ethnizit\u00e4t, Sprache, Kultur, Religion, Migrationsstatus, Hautfarbe.",
+        "Englisch": "A socio-political construct based on white supremacy, rather than a biological category. It is used as an umbrella term for all socio-political categories that are racialized in Germany, such as nationality, ethnicity, language, culture, religion, migration status, skin color."
+    },
+    {
+        "ID": "glossar-racism",
+        "German": "Beschreibt die Diskriminierung von Menschen aufgrund ihrer \u203aRasse\u2039 (einschlie\u00dflich Nationalit\u00e4t, Ethnizit\u00e4t, Sprache, Kultur, Religion, Migrationsstatus, Hautfarbe etc.), die auf wei\u00dfer Vorherrschaft basiert. Die privilegierte Position des wei\u00df-seins bildet in solchen rassistischen Strukturen die Norm. Rassismus f\u00fchrt zu sozialer Ausgrenzung, Marginalisierung und struktureller Unterdr\u00fcckung und manifestiert soziale Ungleichheit.",
+        "Englisch": "Describes discrimination against people based on their race (including nationality, ethnicity, language, culture, religion, migration status, skin color, etc.), which is based on white supremacy. The privileged position of being white represents the norm in such racist structures. Racism leads to social exclusion, marginalization, and structural oppression and manifests social inequality."
+    },
+    {
+        "ID": "glossar-sexism",
+        "German": "Beschreibt die Diskriminierung von Menschen aufgrund ihres (zugeschriebenen) Geschlechts. Das m\u00e4nnliche Geschlecht ist dabei gegen\u00fcber allen anderen Geschlechtern privilegiert. Sexismus f\u00fchrt zu sozialer Ausgrenzung, Marginalisierung und struktureller Unterdr\u00fcckung und manifestiert soziale Ungleichheit.",
+        "Englisch": "Describes discrimination against people based on their (ascribed) gender. The male gender is privileged over all other genders. Sexism leads to social exclusion, marginalization, and structural oppression and manifests social inequality."
+    },
+    {
+        "ID": "glossar-black",
+        "German": "Die Gro\u00dfschreibung des Begriffes markiert eine sozio-politische Positionierung in einer Mehrheitsgesellschaft, in der wei\u00df-sein als Norm gilt und verweist auf seine Verwendung als politische, erm\u00e4chtigende Selbstbezeichnung.",
+        "Englisch": "The capitalization of the term marks a socio-political positioning in a society where being white is considered the norm and refers to its use as a political, empowering self-identification."
+    },
+    {
+        "ID": "glossar-trans",
+        "German": "Der Begriff bezeichnet Personen, deren Geschlecht bzw. der damit verbundenen Geschlechterrolle nicht oder nicht vollst\u00e4ndig mit dem Geschlecht, dass ihnen bei der Geburt zugewiesen wurde, \u00fcbereinstimmt.",
+        "Englisch": "The term refers to individuals whose gender or its associated gender role does not correspond, or does not fully correspond, to the gender that was assigned to them at birth."
+    },
+    {
+        "ID": "glossar-reverse-discrimination",
+        "German": "Bezieht sich zum Beispiel auf das Argument, dass auch wei\u00dfe Menschen Rassismus ausgesetzt sein k\u00f6nnen. Diese Argumentation ignoriert aber die Tatsache, dass Rassismus durch die Verflechtung von Vorurteilen und der Macht, diese tats\u00e4chlich durchzusetzen, entsteht, was dann zu realer Diskriminierung und Unterdr\u00fcckung f\u00fchrt. Wei\u00dfe Menschen k\u00f6nnen also rassistische Vorurteile erfahren, ein umgekehrter Rassismus wird aber insofern ausgeschlossen, dass wei\u00dfe Menschen innerhalb vorherrschender Machtverh\u00e4ltnisse privilegiert sind und keine strukturelle Marginalisierung erfahren.",
+        "Englisch": "Refers, for example, to the argument that white people can also be exposed to racism. However, this argument ignores the fact that racism arises from the coupling of prejudices and the power to actually enforce them, which only then leads to actual discrimination and oppression. White people can thus experience racial prejudices, but reverse racism does not exist since white people are privileged within prevailing power relations and do not experience structural marginalization."
+    },
+    {
+        "ID": "glossar-white",
+        "German": "Der Begriff wird klein und kursiv geschrieben, um zu zeigen, dass er kein Selbsterm\u00e4chtigungs- und Widerstandspotential innehat, sondern es sich um eine privilegierte Position innerhalb rassistischer Strukturen handelt, in welchem wei\u00df-sein \u00fcblicherweise unmarkiert bleibt.",
+        "Englisch": "The term is written in lower case italics to show that it does not hold any potential for self-empowerment and resistance, but that it is a privileged position within racist structures in which being white usually remains unmarked."
+    }
+]

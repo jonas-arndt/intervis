@@ -1,0 +1,607 @@
+[
+    {
+        "ID": "slidein-title",
+        "German": "Visualisierungsentscheidungen & Datenkontext",
+        "English": "Visualization decisions and data context"
+    },
+    {
+        "ID": "slidein-button",
+        "German": "Mehr Einblicke ins Projekt",
+        "English": "More insights into project"
+    },
+    {
+        "ID": "slidein1-subtitle",
+        "German": "Visualisierung von Intersektionalit\u00e4t",
+        "English": "Visualizing Intersectionality"
+    },
+    {
+        "ID": "slidein1-intro",
+        "German": "Die Besonderheit und Komplexit\u00e4t von Intersektionalit\u00e4t liegt unter anderem darin, dass sie sowohl die Eigenst\u00e4ndigkeit, als auch den stetigen Zusammenhang, das stetige Zusammenwirken von diversen sozialen Kategorien bzw. Machtverh\u00e4ltnissen erfasst. Eine visuelle Repr\u00e4sentation von Intersektionalit\u00e4t muss dies widerspiegeln, um diese Besonderheit und Komplexit\u00e4t vermitteln zu k\u00f6nnen.",
+        "English": "The specificity and complexity of intersectionality lies, among other things, in the fact that it captures both the independence and the constant interplay, the simultaneous interaction of various social categories / power relations. Visual representations of intersectionality must reflect this in order to be able to mediate this specificity and complexity."
+    },
+    {
+        "ID": "slidein1-heading1",
+        "German": "Verschiedene Ausrichtungen von Strichen repr\u00e4sentieren verschiedene soziale Kategorien",
+        "English": "Different alignments of strokes represent different social categories"
+    },
+    {
+        "ID": "slidein1-button1",
+        "German": "Warum?",
+        "English": "Why?"
+    },
+    {
+        "ID": "slidein1-text1",
+        "German": "Verschiedene Ausrichtungen von Strichen repr\u00e4sentieren verschiedene soziale Kategorien. Es gibt eine Vielzahl an m\u00f6glichen Ausrichtungsm\u00f6glichkeiten f\u00fcr eine Vielzahl von sozialen Kategorien. Die in diesem Artikel gezeigten Strichausrichtungen bzw. soziale Kategorien dienen\u2028 als Beispiele und sind \u2028eine unvollst\u00e4ndige\u2028 Auswahl. Die \u00bbselbst gezeichneten\u00ab, unperfekten Striche sollen verdeutlichen, dass gesellschaftlich konstruierte soziale Kategorien nicht endg\u00fcltig oder starr, sondern flexibel, kontextabh\u00e4ngig, von vielen verschiedenen Faktoren gepr\u00e4gt und in st\u00e4ndiger Ver\u00e4nderung sind. Ebenfalls soll diese Gestaltung der Striche suggerieren, dass die Visualisierungen nicht von vornherein gegeben und objektiv, sondern von Personen mit partiellen und situierten Positionen entwickelt worden sind.",
+        "English": "Different alignments of strokes represent different social categories. There are a variety of possible alignments for a variety of social categories. The alignments of strokes / social categories shown in this article serve as examples and are an incomplete selection. The \u00bbself-drawn\u00ab, imperfect strokes are intended to illustrate that socially constructed social categories are not final or fixed, but flexible, depending on context, shaped by many different factors, and constantly changing. Likewise, this design of the strokes is meant to suggest that the visualizations are not pre-given and objective, but have been developed by individuals with partial and situated positions."
+    },
+    {
+        "ID": "slidein1-heading2",
+        "German": "Intersektionalit\u00e4t wird durch ineinander verwobene Striche repr\u00e4sentiert",
+        "English": "Intersectionality is represented by interwoven strokes"
+    },
+    {
+        "ID": "slidein1-button2",
+        "German": "Warum?",
+        "English": "Why?"
+    },
+    {
+        "ID": "slidein1-text2",
+        "German": "Intersektionalit\u00e4t wird durch ineinander verwobene Striche repr\u00e4sentiert. Dies verdeutlicht, dass soziale Kategorien als Dimensionen sozialer Machtverh\u00e4ltnisse nie unabh\u00e4ngig voneinander existieren, sondern gleichzeitig zusammenwirken und in einer gegenseitigen Wechselwirkung stehen. W\u00e4hrend also die unterschiedlichen Ausrichtungen der Striche die Eigenst\u00e4ndigkeit der sozialen Kategorien erfassen, soll die gleiche Farbigkeit, die gleiche Strichart und die Verwobenheit der Striche ihren st\u00e4ndigen Zusammenhang verdeutlichen. Denn soziale Kategorien als Dimensionen sozialer Machtverh\u00e4ltnisse \u00bb[...] lassen sich [...] nicht aufeinander reduzieren, aber sie entstehen und funktionieren auch nicht unabh\u00e4ngig voneinander\u00ab (Meyer, 2017, S. 84).",
+        "English": "Intersectionality is represented by interwoven strokes. This illustrates that social categories as dimensions of social power relations never exist independently of one another, but interact simultaneously and are in a constant interplay. Thus, while the different alignments of the strokes capture the independence of the social categories, the same coloration, the same stroke type, and the interweaving of the strokes are intended to illustrate their constant connection. Social categories as dimensions of social power relations \u00bb[...] cannot be reduced [...] to one another, but neither do they emerge and function independently of one another\u00ab (Meyer, 2017, p. 84, translated)."
+    },
+    {
+        "ID": "slidein1-heading3",
+        "German": "Eine verworfene Alternative",
+        "English": "A discarded alternative"
+    },
+    {
+        "ID": "slidein1-button3",
+        "German": "Mehr dazu",
+        "English": "Read more"
+    },
+    {
+        "ID": "slidein1-image3",
+        "German": "name.png",
+        "English": "name.png"
+    },
+    {
+        "ID": "slidein1-text3",
+        "German": "Designprozesse sind unter anderem davon gepr\u00e4gt, dass bestimmte entwickelte Ideen und Konzepte ganz oder teilweise verworfen werden. Ein Beispiel f\u00fcr einen verworfenen Ansatz in diesem Projekt ist die Idee, Intersektionalit\u00e4t mit Visualisierungsparametern der Deckkraft und \u00dcberlagerung zu visualisieren. Verschiedenfarbige Fl\u00e4chen, die sich \u00fcberlagern, repr\u00e4sentieren dabei verschiedene soziale Kategorien. Die Deckkraft markiert, ob eine Person oder Gruppe basierend auf der jeweiligen sozialen Kategorie diskriminiert (sehr hohe Deckkraft) oder privilegiert (sehr niedrige Deckkraft) ist, und ob somit das Lesen der darunter liegenden Begriffe erschwert wird oder nicht. Diese Art der Repr\u00e4sentation wurde verworfen, da das Aufeinanderlegen von farbigen Fl\u00e4chen m\u00f6glicherweise zu sehr eine additive Verbindung der sozialen Kategorien suggeriert und sie visuell noch zu stark f\u00fcr sich alleine stehen und wirken. Die Idee durch visuelle Mittel das Lesen von Begriffen zu erschweren, wurde jedoch in weiteren Visualisierungsans\u00e4tzen angewandt.",
+        "English": "Design processes are characterized, among other things, by discarded ideas and concepts. An example of a discarded approach in this project is the idea of visualizing intersectionality with parameters of opacity and overlay. Differently colored surfaces that overlap represent different social categories. Opacity marks whether a person or group is discriminated against (very high opacity) or privileged (very low opacity) based on their social category, and thus whether or not reading the underlying terms is made more difficult. This kind of representation was discarded because the layering of colored surfaces might suggest an additive connection of social categories and they are visually too separated from each other.  \nHowever, the idea of making terms more difficult to read by visual means has been applied in further visualization approaches."
+    },
+    {
+        "ID": "slidein2-subtitle",
+        "German": "Visualisierung von Diskrimi\u2028nierung und Privilegierung",
+        "English": "Visualizing Discrimination and Privilege"
+    },
+    {
+        "ID": "slidein2-heading1",
+        "German": "Das Netz aus verwobenen Strichen ist immer sichtbar und einzelne Strichausrichtungen werden nie ohne dieses Netz dargestellt",
+        "English": "The grid of interwoven strokes is always visible and individual alignments of strokes are never displayed without this grid"
+    },
+    {
+        "ID": "slidein2-button1",
+        "German": "Warum?",
+        "English": "Why?"
+    },
+    {
+        "ID": "slidein2-text1",
+        "German": "Soziale Kategorien als Dimensionen sozialer Machtverh\u00e4ltnisse sind aus intersektionaler Perspektive nie isoliert voneinander zu betrachten und existieren nie unabh\u00e4ngig voneinander. Jede Person ist durch mehrere und gleichzeitig zusammenwirkende soziale Kategorien intersektional gepr\u00e4gt. Soziale Kategorien sind also immer in ihrer Verwobenheit rekonstruierbar, unabh\u00e4ngig davon, ob eine Person basierend auf diesen diskriminiert oder privilegiert wird. Das Netz aus verwobenen Strichen ist deshalb innerhalb der Visualisierungen immer sichtbar und einzelne Strichausrichtungen werden nie ohne dieses Netz dargestellt.",
+        "English": "From an intersectional perspective social categories as dimensions of social power relations do never exist independently and separately of one another. Each person is intersectionally shaped by multiple and simultaneously interacting social categories. Social categories can always be reconstructed in their interweaving, regardless of whether a person is discriminated against or privileged based on them. Thus, the grid of interwoven strokes is always visible within the visualizations and individual alignments of strokes are never displayed without this grid."
+    },
+    {
+        "ID": "slidein2-heading2",
+        "German": "Diskriminierung wird durch orangefarbene und in den Vordergrund tretende Striche visualisiert",
+        "English": "Discrimination is visualized by orange, foreground strokes"
+    },
+    {
+        "ID": "slidein2-button2",
+        "German": "Warum?",
+        "English": "Why?"
+    },
+    {
+        "ID": "slidein2-text2",
+        "German": "Diskriminierung wird durch orangefarbene und in den Vordergrund tretende Striche visualisiert. Sie erschweren das Lesen der Begriffe Zugang, Einbeziehung, Teilhabe und Anerken\u2028nung bzw. k\u00f6nnen sie sogar unlesbar machen: Personen, die Diskriminierung erfahren, sind benachteiligt, wenn es um Zugang zu Ressourcen, soziale und politische Teilhabe, gesellschaftliche Einbeziehung und Anerkennung etc. geht. Privilegierung wird durch grau-violette Striche visualisiert, die im Hintergrund verweilen. Sie hindern nicht am Lesen der Begriffe. Mit der Verwendung dieser \u00fcbereinanderliegenden Ebenen soll die vermeintlich \u00bbnormale\u00ab \u2013 neutrale, objektive \u2013 Sicht auf die W\u00f6rter herausgefordert werden. Denn dieser \u00bbview from nowhere\u00ab ist immer ein \u00bbview from somewhere\u00ab, n\u00e4mlich die Sicht von denjenigen, die in unserer Gesellschaft privilegiert sind und als Norm gelten.",
+        "English": "Discrimination is visualized by orange, foreground strokes. These strokes make it difficult to read the terms access, inclusion, participation and acknowledgement, and can even make them illegible: people who are exposed to discrimination are disadvantaged when it comes to access to resources, social and political participation, social inclusion and acknowledgement, etc. Privilege is visualized by gray-violet, backgrounded strokes. These strokes do not prevent the reading of the terms. Using these overlapping layers is intended to challenge the supposedly \u00bbnormal\u00ab \u2013 neutral, objective \u2013 view of the words, because this \u00bbview from nowhere\u00ab is always a \u00bbview from somewhere\u00ab, the view of those who are privileged in our society and considered the norm."
+    },
+    {
+        "ID": "slidein2-heading3",
+        "German": "Es k\u00f6nnen sich vielf\u00e4ltige, unterschiedliche und individuelle Formen aus dem Netz der verwobenen Striche herausbilden",
+        "English": "Diverse, different and individual shapes can emerge from the grid of interwoven strokes"
+    },
+    {
+        "ID": "slidein2-button3",
+        "German": "Warum?",
+        "English": "Why?"
+    },
+    {
+        "ID": "slidein2-text3",
+        "German": "Es k\u00f6nnen sich vielf\u00e4ltige, unterschiedliche und individuelle Formen aus dem Netz der verwobenen Striche herausbilden, so, wie es vielf\u00e4ltige, unterschiedliche und individuell gelebte Diskriminierungs- und Privilegierungserfahrungen gibt. Trotzdem verbindet alle Formen die gleiche \u00bbErscheinungsform\u00ab (sie alle sind organische Verformungen von Kreisen), und sie alle bilden sich aus dem Netz der Striche heraus. Es besteht eine Zusammengeh\u00f6rigkeit: Die individuell gelebten Erfahrungen entstehen alle basierend auf sozialen Kategorien, die Ausdruck vorherrschende Macht- und Herrschaftsverh\u00e4ltnisse sind.",
+        "English": "Diverse, different and individual shapes can emerge from the grid of interwoven strokes, as there are diverse, different and individually lived experiences of discrimination and privilege. Nevertheless, the same manifestation connects all shapes (they are all organic deformations of circles) and they all emerge from the grid of strokes. There is a coherence: the individually lived experiences all arise based on social categories that are expressions of prevailing relations of power and domination."
+    },
+    {
+        "ID": "slidein2-heading4",
+        "German": "Eine verworfene Alternative",
+        "English": "A discarded alternative"
+    },
+    {
+        "ID": "slidein2-button4",
+        "German": "Mehr dazu",
+        "English": "Read more"
+    },
+    {
+        "ID": "slidein2-image4",
+        "German": "name.png",
+        "English": "name.png"
+    },
+    {
+        "ID": "slidein2-text4",
+        "German": "Ein*e im Projektprozess befragte*r Expert*in zu Intersektionalit\u00e4t wies darauf hin, dass soziale Kategorien aus intersektionaler Perspektive nie isoliert voneinander zu betrachten sind. Das Netz der sozialen Kategorien \u2013 unabh\u00e4ngig davon, ob eine Person basierend auf diesen sozialen Kategorien diskriminiert oder privilegiert wird \u2013 ist immer und f\u00fcr jede Person rekonstruierbar und jede Person ist durch mehrere Identit\u00e4ten intersektional gepr\u00e4gt. Personen oder Gruppen, die \u00bbnur\u00ab sexistische Diskriminierung erfahren und in anderen sozialen Kategorien privilegiert sind, mit ausschlie\u00dflich horizontalen Strichen zu visualisieren (was Diskriminierung basierend auf der sozialen Kategorie \u00bbGeschlecht\u00ab angzeigt) ist daher nicht ganz treffend und kann zu einem falschen Verst\u00e4ndnis von Intersektionalit\u00e4t f\u00fchren. Diese sehr hilfreiche Kritik f\u00fchrte zu einer Verfeinerung der visuellen Repr\u00e4sentation: Das Netz der sozialen Kategorien ist immer sichtbar. Diskriminierung wird durch orangefarbene und in den Vordergrund tretende Striche visualisiert. Privilegierung wird durch grau-violette Striche visualisiert, die im Hintergrund verweilen.",
+        "English": "An expert on intersectionality interviewed during the project process pointed out that from an intersectional perspective, socio-political categories do never exist independently and separately of one another. The grid of social categories \u2013 regardless of whether a person is discriminated against or privileged based on these social categories \u2013 can always be reconstructed for each person, and each person is intersectionally shaped by multiple identities. Thus, visualizing individuals or groups who experience \u00bbonly\u00ab sexist discrimination and are privileged in other social categories with exclusively horizontal strokes (indicating discrimination based on the social category of gender) is not accurate and may lead to a misunderstanding of intersectionality. This very helpful critique led to a refinement of the visual representation: the grid of social categories is always visible. Discrimination is visualized by orange, foregrounded strokes. Privilege is visualized by gray-violet, backgrounded strokes."
+    },
+    {
+        "ID": "slidein3-subtitle",
+        "German": "Visualisierung von Daten zu intersektionaler Diskriminierung",
+        "English": "Visualizing data on intersectional discrimination"
+    },
+    {
+        "ID": "slidein3-heading1",
+        "German": "\u00dcber die Daten",
+        "English": "About the data"
+    },
+    {
+        "ID": "slidein3-button1",
+        "German": "Mehr dazu",
+        "English": "Read more"
+    },
+    {
+        "ID": "slidein3-text1",
+        "German": "Der Mangel an verf\u00fcgbaren intersektionalen Antidiskriminierungs- und Gleichstellungsdaten erschwert es hervorzuheben, wie sich intersektionale Diskriminierung speziell auf verschiedene Bev\u00f6lkerungsgruppen auswirkt. Kombinationen von qualitativen und quantitativen Daten sowie vorhandene, stellvertretende Daten k\u00f6nnen verwendet werden, um Tendenzen aufzuzeigen.\nDie hier verwendeten Daten sind Teil von umfangreichen Umfragen, Studien und Berichten zu Diskriminierung in Deutschland und sind lediglich ein kleiner Ausschnitt von diesen. Auch die Umfragen und Studien selber sind partiell und bilden ebenfalls einen kleinen Ausschnitt der zahlreichen Diskriminierungsformen- und erfahrungen. Sie zeigen aber dennoch wichtige und interessante Tendenzen. Ziel und Zweck dieser Studien und Berichte ist die Offenlegung von bestimmten Diskriminierungsformen als Beweis und Grundlage f\u00fcr notwendige Antidiskriminierungsma\u00dfnahmen und -handlungen. Innerhalb dieser Studien und Berichte werden Datenerhebungs- und analysemethoden, Kontexte der Daten etc. beschrieben, auf die wir hier verweisen m\u00f6chten:\n\nInnerhalb der \u2192 Studie zur aktuellen Bildungssituation deutscher Sinti und Roma. Dokumentation und Forschungsbericht werden Daten Methoden und Kontexte auf S.4ff (Einleitung), S. 7ff (Methodische Herausforderungen) und S. 17ff (Auswertung von quantitativen Daten zur Erhebung) beschrieben. Die in diesem Artikel verwendeten Daten lassen sich auf S. 101f finden.\n\nInnerhalb des Feldexperiments \u2192 Discrimination against Female Migrants Wearing Headscarves werden Daten Methoden und Kontexte ab S. 7 (Current study) beschrieben. Die in diesem Artikel verwendeten Daten lassen sich auf S. 22ff finden.\n\nInnerhalb der Studie \u2192 Lebenssituation und Belastungen von Frauen mit Beeintr\u00e4chtigungen und Behinderungen in Deutschland. Kurzfassung werden Daten Methoden und Kontexte auf S. 9f (Methodische Anlage der Studie) beschrieben. Die in diesem Artikel verwendeten Daten lassen sich auf S. 21 & 24 finden.\n\nInnerhalb des Berichtes \u2192 Zweiter Teilhabebericht der Bundesregierung \u00fcber die Lebenslagen von Menschen mit Beeintr\u00e4chtigungen werden Daten Methoden und Kontexte auf S. 533ff (In eigener Sache: Daten, Methoden und Literatur) beschrieben. Die in diesem Artikel verwendeten Daten lassen sich auf S. 170 finden (die Prim\u00e4rquelle dieser Daten ist der Mikrozensus 2013; im Rahmen des Berichts wurde die Analyse der Daten vom Institut f\u00fcr Sozialforschung und Gesellschaftspolitik durchgef\u00fchrt).",
+        "English": "The lack of available intersectional anti-discrimination and equality data makes it difficult to highlight how intersectional discrimination specifically affects certain population groups. Combinations of qualitative and quantitative data, as well as existing proxy data, can be used to show trends.\nThe data used is part of extensive surveys, studies, and reports on discrimination in Germany and is only a small sample of these. The surveys and studies themselves are also partial and represent a small sample of the numerous forms and experiences of discrimination. Nevertheless, they show important and interesting trends. The goal and purpose of these studies and reports is to reveal specific forms of discrimination as evidence and basis for necessary anti-discrimination measures and actions. Within these studies and reports, data collection and analysis methods, data contexts, etc. are described, to which we would like to refer here:\n\nWithin the \u2192 study about educational situations of German Sinti*zze and Rom*nja, data methods and contexts are described on p. 4 ff (Einleitung), p. 7 ff (Methodische Herausforderungen), and p. 17 ff (Auswertung von quantitativen Daten zur Erhebung). The data used in this article can be found on p. 101 f.\n\nWithin the field experiment \u2192 Discrimination against Female Migrants Wearing Headscarves, data methods and contexts are described starting on p. 7 (Current study). The data used in this article can be found on p. 22 ff.\n\nWithin the \u2192 study about living situations and burdens of women with disabilities in Germany, data methods and contexts are described on p. 9 f (Methodische Anlage der Studie). The data used in this article can be found on p. 21 & 24.\n\nWithin the \u2192 report about the living situations of people with disabilities, data methods and contexts are described on p. 533 ff (In eigener Sache: Daten, Methoden und Literatur). The data used in this article can be found on p. 170 (the primary source of this data is the \u00bbMikrozensus\u00ab (statistical survey in Germany) of 2013; as part of the report, the data analysis was carried out by the Institute for Social Research)."
+    },
+    {
+        "ID": "slidein3-heading2",
+        "German": "F\u00fcr die Visualisierung von Daten aus Studien werden keine standardisierten und konventionellen Visualisierungsformen genutzt",
+        "English": "No standardized and conventional visual shapes are used to visualize data from studies"
+    },
+    {
+        "ID": "slidein3-button2",
+        "German": "Warum?",
+        "English": "Why?"
+    },
+    {
+        "ID": "slidein3-text2",
+        "German": "F\u00fcr die Visualisierung von Daten aus Umfragen und Studien werden keine standardisierten und konventionellen visuellen Formen \u2013 also \u00fcblicherweise klare, geometrische Grundformen \u2013 genutzt, sondern die gleichen, unperfekten, nicht exakten Striche und Formen, mit denen auch Intersektionalit\u00e4t visualisiert wird. Geometrische und klare Formen (z.B. exakte Kreise, Balken etc.) suggerieren oftmals den Anschein von Objektivit\u00e4t. Diese konventionellen Formen nicht zu verwenden und daf\u00fcr nicht exakte, organische Verformungen von Kreisen zu nutzen, die sich aus dem Netz der Striche herausbilden, ist der Versuch deutlich zu machen, dass die verwendeten Daten und ihre Visualisierungen nicht objektiv, neutral und \u00bbroh\u00ab sind. Daten und ihre visuellen Repr\u00e4sentationen entstehen innerhalb vorherrschender Machtverh\u00e4ltnisse und sind somit Bias geladen. Sie werden von Individuen mit bestimmten Standpunkten und Positionen in der Welt innerhalb bestimmter sozialer, politischer, wirtschaftlicher und kultureller Kontexte produziert. In einer kapitalistischen, patriarchalen und rassistischen Gesellschaft sind die Positionen, die meistens sichtbar und scheinbar objektiv sind, die der Pivilegiertesten.\nSo sind auch die herangezogenen Umfragen und Studien und ihre Daten partiell und situiert. Das bedeutet nicht, dass sie keinen Mehrwert bieten oder nicht genutzt werden sollten. Im Gegenteil, sie sind bereichernd und wertvoll und zeigen wichtige und interessante Tendenzen. Visuelle Repr\u00e4sentationen sollten aber widerspiegeln und transparent kommunizieren, dass sie selbst und ihre Daten nicht objektiv, neutral und universell wahr sind und nicht alle Perspektiven, Kontexte etc. mit einschlie\u00dfen.",
+        "English": "No standardized and conventional visual shapes \u2013 usually clear, geometric basic shapes \u2013 are used to visualize data from surveys and studies, but the same imperfect, non-exact shapes and strokes that are used for visualizing intersectionality. Geometric and clear shapes (e.g. exact circles, bars, etc.) often suggest the appearance of objectivity. Using organic deformations of circles that emerge from the grid of strokes instead of conventional shapes is the attempt to clarify that the used data and its visual displays are not objective, neutral and \u00bbraw\u00ab. Data and its visual displays are generated within prevailing power relations and thus biased. They are produced by individuals with particular standpoints and positions in the world within certain social, political, economic, and cultural contexts. In a capitalist, patriarchal, and racist society, the positions that are particulary visible and claim to be objective are those of the most privileged.\nThus, the surveys and studies used and their data are also partial and situated. This does not mean that they do not add value or should not be used. On the contrary, they are enriching and valuable and show important and interesting trends. However, visual representations should reflect and communicate transparently that they themselves and their data are not objective, neutral, and universally true and do not include all perspectives, contexts, etc."
+    },
+    {
+        "ID": "slidein3-heading3",
+        "German": "Die verwendeten Daten werden kontextualisiert",
+        "English": "The data used is contextualized"
+    },
+    {
+        "ID": "slidein3-button3",
+        "German": "Warum?",
+        "English": "Why?"
+    },
+    {
+        "ID": "slidein3-text3",
+        "German": "Daten ohne ihre Kontexte zu kommunizieren und damit zu positionieren, kann zu Falschinterpretationen und zu tats\u00e4chlichem Schaden f\u00fchren, indem zum Beispiel Wissensl\u00fccken von Leser*innen mit Stereotypen und Vorurteilen gef\u00fcllt werden. Ohne ihren Kontext repr\u00e4sentieren Daten nicht immer das, was sie vorgeben darzustellen, insbesondere, wenn es sich um Daten \u00fcber marginalisierte Personen und Gruppen handelt. Die verwendeten Daten aus Umfragen und Studien werden deswegen durch den begleitenden Text kontextualisiert, indem er die Tendezen, die sich aus den Daten ergeben, als Ausdruck intersektionaler Diskriminierung beschreibt. Diese Tendenzen werden zus\u00e4tzlich durch einen zusammenfassenden Satz, der sich typografisch und durch seine Position hervorhebt, auf den ersten Blick sichtbar.",
+        "English": "Communicating and thus positioning data without its contexts can lead to misinterpretation and actual harm, for example, by filling gaps in readers' knowledge with stereotypes and prejudices. Without its contexts, data does not always represent what it claims to present, especially when it comes to data about marginalized individuals and groups. The data used from surveys and studies is therefore contextualized by the accompanying text, which describes the trends that emerge from the data as expressions of intersectional discrimination. These trends are additionally made visible at first glance through a summarizing sentence that is typographically and positionally highlighted."
+    },
+    {
+        "ID": "backside-title",
+        "German": "Einblicke in das Projekt",
+        "English": "Insights into the Project"
+    },
+    {
+        "ID": "backside-button",
+        "German": "Zur\u00fcck zum Artikel",
+        "English": "Back to article"
+    },
+    {
+        "ID": "mail-hint",
+        "German": "Du hast Anmerkungen, Vorschl\u00e4ge, ...?\u2028 Wir freuen uns \u00fcber eine Mail von Dir!",
+        "English": "Do you have comments, suggestions, ...?\u2028 Feel free to send us an email!"
+    },
+    {
+        "ID": "backside-menu1",
+        "German": "Projektprozess & Methoden",
+        "English": "Project process & methods"
+    },
+    {
+        "ID": "backside-menu2",
+        "German": "Visualisierungsentscheidungen\u2028 & Datenkontext",
+        "English": "Visualization decisions & data context"
+    },
+    {
+        "ID": "backside-menu3",
+        "German": "Involvierte Personen",
+        "English": "Involved people"
+    },
+    {
+        "ID": "backside-menu4",
+        "German": "Unsere Positionen",
+        "English": "Our positions"
+    },
+    {
+        "ID": "backside-menu5",
+        "German": "Projektreflexion",
+        "English": "Project reflection"
+    },
+    {
+        "ID": "backside-process-subtitle1",
+        "German": "Phase A: Bachelor Projekt",
+        "English": "Phase A: Bachelor project"
+    },
+    {
+        "ID": "backside-process-intro1",
+        "German": "Im Rahmen der Interfacedesign Bachelorarbeit von Hannah Schwan entstand eine erste Version dieses Artikels. Innerhalb der Bachelorarbeit wurde ein Konzept und Entwurf f\u00fcr eine Web-Visualisierung entwickelt, mit dem Ziel Intersektionalit\u00e4t mithilfe einer Kombination aus Text, animierter Illustration und Datenvisualisierung anschaulich zu erkl\u00e4ren und ihr zentrales Anliegen zug\u00e4nglich zu vermitteln. Dabei wurden au\u00dferdem bestimmte Prinzipien und Methoden feministischer Informationsvisualisierung angewandt.\nDetails dazu findest Du in der \u2192 Bachelorarbeit.",
+        "English": "A first version of this article was developed as part of the Design Bachelor's thesis by Hannah Schwan. Within the Bachelor's thesis a concept and design for a web visualization was developed with the aim to accessibly explain the central concern of intersectionality using a combination of text, animated illustration and data visualization. Additionally, certain principles and methods of feminist information visualization were applied.\nDetails can be found in the \u2192 Bachelor's thesis."
+    },
+    {
+        "ID": "backside-process-image1",
+        "German": "name.png",
+        "English": "name.png"
+    },
+    {
+        "ID": "backside-process-heading1",
+        "German": "Recherche",
+        "English": "Research"
+    },
+    {
+        "ID": "backside-process-text1",
+        "German": "Das Projekt war zun\u00e4chst gepr\u00e4gt durch eine Recherchephase, in der wissenschaft\u2028liche Arbeiten zu Intersektionalit\u00e4t und Studien zu intersektionaler Diskriminierung rezipiert wurden. Ebenfalls wurden f\u00fcr das Projekt relevante Prinzipien f\u00fcr eine intersektional feministische Informationsvisualisierung herangezogen, hier war vor allem das Buch \u2192 Data Feminism von Catherine D\u2019Ignazio und Lauren F. Klein eine wichtige Referenz.",
+        "English": "The project was initially characterized by a research phase in which literature on intersectionality and studies on intersectional discrimination were surveyed. I also drew on relevant principles for intersectional feminist information visualization. Here, the book \u2192 Data Feminism by Catherine D'Ignazio and Lauren F. Klein was an important reference."
+    },
+    {
+        "ID": "backside-process-heading2",
+        "German": "Ideen & Skizzen",
+        "English": "Ideas & sketches"
+    },
+    {
+        "ID": "backside-process-text2",
+        "German": "Auf Grundlage der Ergebnisse dieser Recherchephase folgte schlie\u00dflich eine iterative Gestaltungsphase. In einem explorativen Ideenfindungsprozess wurden Ideen mit Hilfe von analogen und digitalen Skizzen generiert, entwickelt und verworfen. Beispiele lassen sich unter \u00bbVisualisierungsentscheidungen\u2028 & Datenkontext\u00ab finden.",
+        "English": "Based on the results of this research phase, an iterative design phase followed. In an exploratory ideation process, ideas were generated, developed, and discarded using analog and digital sketches. Examples can be found under \u00bbVisualization decisions & data context\u00ab."
+    },
+    {
+        "ID": "backside-process-heading3",
+        "German": "Konzepte & Entw\u00fcrfe",
+        "English": "Concepts & design drafts"
+    },
+    {
+        "ID": "backside-process-image2",
+        "German": "name.png",
+        "English": "name.png"
+    },
+    {
+        "ID": "backside-process-text3",
+        "German": "Konzepte und Entw\u00fcrfe f\u00fcr eine visuelle Sprache von Intersektionalit\u00e4t, f\u00fcr ein begleitendes Narrativ und ein Interfacedesign wurden nach und nach entwickelt. Auch wurde in dieser Phase mit visuellen Repr\u00e4sentationen f\u00fcr Daten aus Studien zu intersektionaler Diskriminierung experimentiert.",
+        "English": "Concepts and designs for a visual language of intersectionality, for an accompanying narrative and an interface design were progressively developed. During this phase I also experimented with visual representations of data from studies about intersectional discrimination."
+    },
+    {
+        "ID": "backside-process-heading4",
+        "German": "Feedback Expert*innen und Weiterentwicklung",
+        "English": "Expert feedback and further development"
+    },
+    {
+        "ID": "backside-process-text4",
+        "German": "Expert*innen zu Intersektionalit\u00e4t wurden im Gestaltungsprozess einbezogen, um die Sinnhaftigkeit der entwickelten Visualisierungen kritisch zu \u00fcberpr\u00fcfen und so das Wissen verschiedener Personen einzubeziehen. Es fanden jeweils 45-min\u00fctige Feedbackgespr\u00e4che mit drei Expert*innen in Form von Videoanrufen statt. Zun\u00e4chst wurde das Ziel des Projektes erl\u00e4utert und im Anschluss wurden Konzepte und Entw\u00fcrfe gezeigt und erkl\u00e4rt. Daraufhin \u00e4u\u00dferten die Expert*innen hilfreiche Anmerkungen, Kritik und Feedback, woraufhin eine \u00dcberarbeitung und Konkretisierung der Visualisierung folgte. Beispiele lassen sich unter \u00bbVisualisierungsentscheidungen\u2028 & Datenkontext\u00ab finden.",
+        "English": "Experts on intersectionality were involved in the design process in order to critically review the meaningfulness of the developed visualizations and thus to integrate the knowledge of different people. Feedback sessions of 45 minutes each were carried out with three experts in the form of video calls. First, the goal of the project was explained and then concepts and design drafts were shown and explained. The experts then expressed helpful comments, critique and feedback, which was followed by a revision and refinement of the visualization. Examples can be found under \u00bbVisualization decisions & data context\u00ab."
+    },
+    {
+        "ID": "backside-process-subtitle2",
+        "German": "Phase B: Weiterentwicklung im UCLAB",
+        "English": "Phase B: Further development in UCLAB"
+    },
+    {
+        "ID": "backside-process-intro2",
+        "German": "Die innerhalb der Bachelorarbeit entwickelte Visualisierung wurde anschlie\u00dfend im \u2192 Urban Complexity Lab von Hannah Schwan, Jonas Arndt, Sandra Cartes und Marian D\u00f6rk weiterentwickelt und umgesetzt. Ziel dieser Weiterentwicklung war die Verfeinerung und Implementierung der interaktiven Visualisierung und das Ver\u00f6ffentlichen eines wissenschaftlichen Papers.\nDen Quellcode des resultierenden Scrollytelling Artikels ist kommentiert auf \u2192 Github verf\u00fcgbar.",
+        "English": "The visualization developed within the Bachelor's thesis was then further developed and implemented in the \u2192 Urban Complexity Lab by Hannah Schwan, Jonas Arndt, Sandra Cartes, and Marian D\u00f6rk. The goal of this further development was to refine and implement the interactive visualization and publish a paper.\nThe source code of the resulting scrollytelling article is available commented on \u2192 Github."
+    },
+    {
+        "ID": "backside-process-image3",
+        "German": "name.png",
+        "English": "name.png"
+    },
+    {
+        "ID": "backside-process-heading5",
+        "German": "Feedback & Verfeinerung und Implementierung",
+        "English": "Feedback & refinement and implementation"
+    },
+    {
+        "ID": "backside-process-text5",
+        "German": "Zu Beginn dieser zweiten Phase des Projektes gab es zun\u00e4chst internes Feedback und Abstimmungen, was konkret \u00fcberarbeitet und verfeinert werden sollte. Die entwickelte grundlegende, visuelle Sprache von Intersektionalit\u00e4t sollte erhalten bleiben. Visuelle Details, die narrative Struktur der interaktiven Visualisierung und das Interfacedesign wurden weiterentwickelt, was in einem Scrollytelling Format resultierte. Auch der Text des Artikels wurde in mehreren Iterationen konkretisiert. Daraufhin wurde der Scrollytelling Artikel implementiert.",
+        "English": "At the beginning of this second phase of the project, there was initially internal feedback and consultation on what specifically should be revised and refined. We decided to keep the developed basic visual language of intersectionality. Visual details, the narrative structure of the interactive visualization, and the interface design were further developed, resulting in a scrollytelling format. The text of the article was also concretized in several iterations. After that, the scrollytelling article was implemented."
+    },
+    {
+        "ID": "backside-process-heading6",
+        "German": "Ver\u00f6ffentlichung & Evaluation",
+        "English": "Publishing & Evaluation"
+    },
+    {
+        "ID": "backside-process-text6",
+        "German": "Lorem ipsum",
+        "English": "Lorem ipsum"
+    },
+    {
+        "ID": "backside-process-heading7",
+        "German": "Auswertung & \u00dcberarbeitung",
+        "English": "Revision"
+    },
+    {
+        "ID": "backside-process-text7",
+        "German": "Lorem ipsum",
+        "English": "Lorem ipsum"
+    },
+    {
+        "ID": "backside-process-text8",
+        "German": "Parallel zur Implementierung des Artikels wurde ein wissenschaftliches Paper verfasst. Der Fokus liegt hierbei auf der kritischen Praxis der Offenlegung (\u00bbdisclosure\u00ab) als Prinzip feministischer Datenvisualisierung. Dieser Scrollytelling Artikel bildet die Case Study f\u00fcr das Paper. Wir definieren darin inhaltliche Aspekte der Offenlegung, die notwendig sind f\u00fcr das kritische Lesen und Reflektieren von Visualisierungen und ihren Kontexten. Wir schlagen verschiedene Formen vor, um die kritische Praxis der Offenlegung in Datenvisualisierungen und visuelle Interfaces einzubetten.\nSobald das Paper ver\u00f6ffentlicht ist, wird es hier verlinkt.",
+        "English": "In addition to the implementation of the scrollytelling article, we prepared a paper focusing on disclosure as a critical technical practice of feminist data visualization. This scrollytelling article provides the case study for the paper. In the paper we define content-related aspects of disclosure, all of which are necessary to critically read and reflect a visualization and its context. We propose distinct forms for embedding the critical practice of disclosure in data visualizations and visual interfaces.\nOnce the paper is published, it will be linked here."
+    },
+    {
+        "ID": "backside-decision\u2013subtitle1",
+        "German": "Visualisierung von Intersektionalit\u00e4t",
+        "English": "Visualizing Intersectionality"
+    },
+    {
+        "ID": "backside-decision\u2013intro",
+        "German": "Die Besonderheit und Komplexit\u00e4t von Intersektionalit\u00e4t liegt unter anderem darin, dass sie sowohl die Eigenst\u00e4ndigkeit, als auch den stetigen Zusammenhang, das stetige Zusammenwirken von diversen sozialen Kategorien bzw. Machtverh\u00e4ltnissen erfasst. Eine visuelle Repr\u00e4sentation von Intersektionalit\u00e4t muss dies widerspiegeln, um diese Besonderheit und Komplexit\u00e4t vermitteln zu k\u00f6nnen.",
+        "English": "The specificity and complexity of intersectionality lies, among other things, in the fact that it captures both the independence and the constant interplay, the simultaneous interaction of various social categories / power relations. Visual representations of intersectionality must reflect this in order to be able to mediate this specificity and complexity."
+    },
+    {
+        "ID": "backside-decision-heading1",
+        "German": "Verschiedene Ausrichtungen von Strichen repr\u00e4sentieren verschiedene soziale Kategorien",
+        "English": "Different alignments of strokes represent different social categories"
+    },
+    {
+        "ID": "backside-decision-button1",
+        "German": "Warum?",
+        "English": "Why?"
+    },
+    {
+        "ID": "backside-decision-text1",
+        "German": "Verschiedene Ausrichtungen von Strichen repr\u00e4sentieren verschiedene soziale Kategorien. Es gibt eine Vielzahl an m\u00f6glichen Ausrichtungsm\u00f6glichkeiten f\u00fcr eine Vielzahl von sozialen Kategorien. Die in diesem Artikel gezeigten Strichausrichtungen bzw. soziale Kategorien dienen\u2028 als Beispiele und sind \u2028eine unvollst\u00e4ndige\u2028 Auswahl. Die \u00bbselbst gezeichneten\u00ab, unperfekten Striche sollen verdeutlichen, dass gesellschaftlich konstruierte soziale Kategorien nicht endg\u00fcltig oder starr, sondern flexibel, kontextabh\u00e4ngig, von vielen verschiedenen Faktoren gepr\u00e4gt und in st\u00e4ndiger Ver\u00e4nderung sind. Ebenfalls soll diese Gestaltung der Striche suggerieren, dass die Visualisierungen nicht von vornherein gegeben und objektiv, sondern von Personen mit partiellen und situierten Positionen entwickelt worden sind.",
+        "English": "Different alignments of strokes represent different social categories. There are a variety of possible alignments for a variety of social categories. The alignments of strokes / social categories shown in this article serve as examples and are an incomplete selection. The \u00bbself-drawn\u00ab, imperfect strokes are intended to illustrate that socially constructed social categories are not final or fixed, but flexible, depending on context, shaped by many different factors, and constantly changing. Likewise, this design of the strokes is meant to suggest that the visualizations are not pre-given and objective, but have been developed by individuals with partial and situated positions."
+    },
+    {
+        "ID": "backside-decision-heading2",
+        "German": "Intersektionalit\u00e4t wird durch ineinander verwobene Striche repr\u00e4sentiert",
+        "English": "Intersectionality is represented by interwoven strokes"
+    },
+    {
+        "ID": "backside-decision-button2",
+        "German": "Warum?",
+        "English": "Why?"
+    },
+    {
+        "ID": "backside-decision-text2",
+        "German": "Intersektionalit\u00e4t wird durch ineinander verwobene Striche repr\u00e4sentiert. Dies verdeutlicht, dass soziale Kategorien als Dimensionen sozialer Machtverh\u00e4ltnisse nie unabh\u00e4ngig voneinander existieren, sondern gleichzeitig zusammenwirken und in einer gegenseitigen Wechselwirkung stehen. W\u00e4hrend also die unterschiedlichen Ausrichtungen der Striche die Eigenst\u00e4ndigkeit der sozialen Kategorien erfassen, soll die gleiche Farbigkeit, die gleiche Strichart und die Verwobenheit der Striche ihren st\u00e4ndigen Zusammenhang verdeutlichen. Denn soziale Kategorien als Dimensionen sozialer Machtverh\u00e4ltnisse \u00bb[...] lassen sich [...] nicht aufeinander reduzieren, aber sie entstehen und funktionieren auch nicht unabh\u00e4ngig voneinander\u00ab (Meyer, 2017, S. 84).",
+        "English": "Intersectionality is represented by interwoven strokes. This illustrates that social categories as dimensions of social power relations never exist independently of one another, but interact simultaneously and are in a constant interplay. Thus, while the different alignments of the strokes capture the independence of the social categories, the same coloration, the same stroke type, and the interweaving of the strokes are intended to illustrate their constant connection. Social categories as dimensions of social power relations \u00bb[...] cannot be reduced [...] to one another, but neither do they emerge and function independently of one another\u00ab (Meyer, 2017, p. 84, translated)."
+    },
+    {
+        "ID": "backside-decision-heading3",
+        "German": "Eine verworfene Alternative",
+        "English": "A discarded alternative"
+    },
+    {
+        "ID": "backside-decision-button3",
+        "German": "Mehr dazu",
+        "English": "Read more"
+    },
+    {
+        "ID": "backside-decision-image4",
+        "German": "name.png",
+        "English": "name.png"
+    },
+    {
+        "ID": "backside-decision-text3",
+        "German": "Designprozesse sind unter anderem davon gepr\u00e4gt, dass bestimmte entwickelte Ideen und Konzepte ganz oder teilweise verworfen werden. Ein Beispiel f\u00fcr einen verworfenen Ansatz in diesem Projekt ist die Idee, Intersektionalit\u00e4t mit Visualisierungsparametern der Deckkraft und \u00dcberlagerung zu visualisieren. Verschiedenfarbige Fl\u00e4chen, die sich \u00fcberlagern, repr\u00e4sentieren dabei verschiedene soziale Kategorien. Die Deckkraft markiert, ob eine Person oder Gruppe basierend auf der jeweiligen sozialen Kategorie diskriminiert (sehr hohe Deckkraft) oder privilegiert (sehr niedrige Deckkraft) ist, und ob somit das Lesen der darunter liegenden Begriffe erschwert wird oder nicht. Diese Art der Repr\u00e4sentation wurde verworfen, da das Aufeinanderlegen von farbigen Fl\u00e4chen m\u00f6glicherweise zu sehr eine additive Verbindung der sozialen Kategorien suggeriert und sie visuell noch zu stark f\u00fcr sich alleine stehen und wirken. Die Idee durch visuelle Mittel das Lesen von Begriffen zu erschweren, wurde jedoch in weiteren Visualisierungsans\u00e4tzen angewandt.",
+        "English": "Design processes are characterized, among other things, by discarded ideas and concepts. An example of a discarded approach in this project is the idea of visualizing intersectionality with parameters of opacity and overlay. Differently colored surfaces that overlap represent different social categories. Opacity marks whether a person or group is discriminated against (very high opacity) or privileged (very low opacity) based on their social category, and thus whether or not reading the underlying terms is made more difficult. This kind of representation was discarded because the layering of colored surfaces might suggest an additive connection of social categories and they are visually too separated from each other.  \nHowever, the idea of making terms more difficult to read by visual means has been applied in further visualization approaches."
+    },
+    {
+        "ID": "backside-decision-subtitle2",
+        "German": "Visualisierung von Diskrimi\u2028nierung und Privilegierung",
+        "English": "Visualizing Discrimination and Privilege"
+    },
+    {
+        "ID": "backside-decision-heading4",
+        "German": "Das Netz aus verwobenen Strichen ist immer sichtbar und einzelne Strichausrichtungen werden nie ohne dieses Netz dargestellt",
+        "English": "The grid of interwoven strokes is always visible and individual alignments of strokes are never displayed without this grid"
+    },
+    {
+        "ID": "backside-decision-button4",
+        "German": "Warum?",
+        "English": "Why?"
+    },
+    {
+        "ID": "backside-decision-text4",
+        "German": "Soziale Kategorien als Dimensionen sozialer Machtverh\u00e4ltnisse sind aus intersektionaler Perspektive nie isoliert voneinander zu betrachten und existieren nie unabh\u00e4ngig voneinander. Jede Person ist durch mehrere und gleichzeitig zusammenwirkende soziale Kategorien intersektional gepr\u00e4gt. Soziale Kategorien sind also immer in ihrer Verwobenheit rekonstruierbar, unabh\u00e4ngig davon, ob eine Person basierend auf diesen diskriminiert oder privilegiert wird. Das Netz aus verwobenen Strichen ist deshalb innerhalb der Visualisierungen immer sichtbar und einzelne Strichausrichtungen werden nie ohne dieses Netz dargestellt.",
+        "English": "From an intersectional perspective social categories as dimensions of social power relations do never exist independently and separately of one another. Each person is intersectionally shaped by multiple and simultaneously interacting social categories. Social categories can always be reconstructed in their interweaving, regardless of whether a person is discriminated against or privileged based on them. Thus, the grid of interwoven strokes is always visible within the visualizations and individual alignments of strokes are never displayed without this grid."
+    },
+    {
+        "ID": "backside-decision-heading5",
+        "German": "Diskriminierung wird durch orangefarbene und in den Vordergrund tretende Striche visualisiert",
+        "English": "Discrimination is visualized by orange, foreground strokes"
+    },
+    {
+        "ID": "backside-decision-button5",
+        "German": "Warum?",
+        "English": "Why?"
+    },
+    {
+        "ID": "backside-decision-text5",
+        "German": "Diskriminierung wird durch orangefarbene und in den Vordergrund tretende Striche visualisiert. Sie erschweren das Lesen der Begriffe Zugang, Einbeziehung, Teilhabe und Anerken\u2028nung bzw. k\u00f6nnen sie sogar unlesbar machen: Personen, die Diskriminierung erfahren, sind benachteiligt, wenn es um Zugang zu Ressourcen, soziale und politische Teilhabe, gesellschaftliche Einbeziehung und Anerkennung etc. geht. Privilegierung wird durch grau-violette Striche visualisiert, die im Hintergrund verweilen. Sie hindern nicht am Lesen der Begriffe. Mit der Verwendung dieser \u00fcbereinanderliegenden Ebenen soll die vermeintlich \u00bbnormale\u00ab \u2013 neutrale, objektive \u2013 Sicht auf die W\u00f6rter herausgefordert werden. Denn dieser \u00bbview from nowhere\u00ab ist immer ein \u00bbview from somewhere\u00ab, n\u00e4mlich die Sicht von denjenigen, die in unserer Gesellschaft privilegiert sind und als Norm gelten.",
+        "English": "Discrimination is visualized by orange, foreground strokes. These strokes make it difficult to read the terms access, inclusion, participation and acknowledgement, and can even make them illegible: people who are exposed to discrimination are disadvantaged when it comes to access to resources, social and political participation, social inclusion and acknowledgement, etc. Privilege is visualized by gray-violet, backgrounded strokes. These strokes do not prevent the reading of the terms. Using these overlapping layers is intended to challenge the supposedly \u00bbnormal\u00ab \u2013 neutral, objective \u2013 view of the words, because this \u00bbview from nowhere\u00ab is always a \u00bbview from somewhere\u00ab, the view of those who are privileged in our society and considered the norm."
+    },
+    {
+        "ID": "backside-decision-heading6",
+        "German": "Es k\u00f6nnen sich vielf\u00e4ltige, unterschiedliche und individuelle Formen aus dem Netz der verwobenen Striche herausbilden",
+        "English": "Diverse, different and individual shapes can emerge from the grid of interwoven strokes"
+    },
+    {
+        "ID": "backside-decision-button6",
+        "German": "Warum?",
+        "English": "Why?"
+    },
+    {
+        "ID": "backside-decision-text6",
+        "German": "Es k\u00f6nnen sich vielf\u00e4ltige, unterschiedliche und individuelle Formen aus dem Netz der verwobenen Striche herausbilden, so, wie es vielf\u00e4ltige, unterschiedliche und individuell gelebte Diskriminierungs- und Privilegierungserfahrungen gibt. Trotzdem verbindet alle Formen die gleiche \u00bbErscheinungsform\u00ab (sie alle sind organische Verformungen von Kreisen), und sie alle bilden sich aus dem Netz der Striche heraus. Es besteht eine Zusammengeh\u00f6rigkeit: Die individuell gelebten Erfahrungen entstehen alle basierend auf sozialen Kategorien, die Ausdruck vorherrschende Macht- und Herrschaftsverh\u00e4ltnisse sind.",
+        "English": "Diverse, different and individual shapes can emerge from the grid of interwoven strokes, as there are diverse, different and individually lived experiences of discrimination and privilege. Nevertheless, the same manifestation connects all shapes (they are all organic deformations of circles) and they all emerge from the grid of strokes. There is a coherence: the individually lived experiences all arise based on social categories that are expressions of prevailing relations of power and domination."
+    },
+    {
+        "ID": "backside-decision-heading7",
+        "German": "Eine verworfene Alternative",
+        "English": "A discarded alternative"
+    },
+    {
+        "ID": "backside-decision-button7",
+        "German": "Mehr dazu",
+        "English": "Read more"
+    },
+    {
+        "ID": "backside-decision-image5",
+        "German": "name.png",
+        "English": "name.png"
+    },
+    {
+        "ID": "backside-decision-text7",
+        "German": "Ein*e im Projektprozess befragte*r Expert*in zu Intersektionalit\u00e4t wies darauf hin, dass soziale Kategorien aus intersektionaler Perspektive nie isoliert voneinander zu betrachten sind. Das Netz der sozialen Kategorien \u2013 unabh\u00e4ngig davon, ob eine Person basierend auf diesen sozialen Kategorien diskriminiert oder privilegiert wird \u2013 ist immer und f\u00fcr jede Person rekonstruierbar und jede Person ist durch mehrere Identit\u00e4ten intersektional gepr\u00e4gt. Personen oder Gruppen, die \u00bbnur\u00ab sexistische Diskriminierung erfahren und in anderen sozialen Kategorien privilegiert sind, mit ausschlie\u00dflich horizontalen Strichen zu visualisieren (was Diskriminierung basierend auf der sozialen Kategorie \u00bbGeschlecht\u00ab angzeigt) ist daher nicht ganz treffend und kann zu einem falschen Verst\u00e4ndnis von Intersektionalit\u00e4t f\u00fchren. Diese sehr hilfreiche Kritik f\u00fchrte zu einer Verfeinerung der visuellen Repr\u00e4sentation: Das Netz der sozialen Kategorien ist immer sichtbar. Diskriminierung wird durch orangefarbene und in den Vordergrund tretende Striche visualisiert. Privilegierung wird durch grau-violette Striche visualisiert, die im Hintergrund verweilen.",
+        "English": "An expert on intersectionality interviewed during the project process pointed out that from an intersectional perspective, socio-political categories do never exist independently and separately of one another. The grid of social categories \u2013 regardless of whether a person is discriminated against or privileged based on these social categories \u2013 can always be reconstructed for each person, and each person is intersectionally shaped by multiple identities. Thus, visualizing individuals or groups who experience \u00bbonly\u00ab sexist discrimination and are privileged in other social categories with exclusively horizontal strokes (indicating discrimination based on the social category of gender) is not accurate and may lead to a misunderstanding of intersectionality. This very helpful critique led to a refinement of the visual representation: the grid of social categories is always visible. Discrimination is visualized by orange, foregrounded strokes. Privilege is visualized by gray-violet, backgrounded strokes."
+    },
+    {
+        "ID": "backside-decision-subtitle3",
+        "German": "Visualisierung von Daten zu intersektionaler Diskriminierung",
+        "English": "Visualizing data on intersectional discrimination"
+    },
+    {
+        "ID": "backside-decision-heading8",
+        "German": "\u00dcber die Daten",
+        "English": "About the data"
+    },
+    {
+        "ID": "backside-decision-button8",
+        "German": "Mehr dazu",
+        "English": "Read more"
+    },
+    {
+        "ID": "backside-decision-text8",
+        "German": "Der Mangel an verf\u00fcgbaren intersektionalen Antidiskriminierungs- und Gleichstellungsdaten erschwert es hervorzuheben, wie sich intersektionale Diskriminierung speziell auf verschiedene Bev\u00f6lkerungsgruppen auswirkt. Kombinationen von qualitativen und quantitativen Daten sowie vorhandene, stellvertretende Daten k\u00f6nnen verwendet werden, um Tendenzen aufzuzeigen.\nDie hier verwendeten Daten sind Teil von umfangreichen Umfragen, Studien und Berichten zu Diskriminierung in Deutschland und sind lediglich ein kleiner Ausschnitt von diesen. Auch die Umfragen und Studien selber sind partiell und bilden ebenfalls einen kleinen Ausschnitt der zahlreichen Diskriminierungsformen- und erfahrungen. Sie zeigen aber dennoch wichtige und interessante Tendenzen. Ziel und Zweck dieser Studien und Berichte ist die Offenlegung von bestimmten Diskriminierungsformen als Beweis und Grundlage f\u00fcr notwendige Antidiskriminierungsma\u00dfnahmen und -handlungen. Innerhalb dieser Studien und Berichte werden Datenerhebungs- und analysemethoden, Kontexte der Daten etc. beschrieben, auf die wir hier verweisen m\u00f6chten:\n\nInnerhalb der \u2192 Studie zur aktuellen Bildungssituation deutscher Sinti und Roma. Dokumentation und Forschungsbericht werden Daten Methoden und Kontexte auf S.4ff (Einleitung), S. 7ff (Methodische Herausforderungen) und S. 17ff (Auswertung von quantitativen Daten zur Erhebung) beschrieben. Die in diesem Artikel verwendeten Daten lassen sich auf S. 101f finden.\n\nInnerhalb des Feldexperiments \u2192 Discrimination against Female Migrants Wearing Headscarves werden Daten Methoden und Kontexte ab S. 7 (Current study) beschrieben. Die in diesem Artikel verwendeten Daten lassen sich auf S. 22ff finden.\n\nInnerhalb der Studie \u2192 Lebenssituation und Belastungen von Frauen mit Beeintr\u00e4chtigungen und Behinderungen in Deutschland. Kurzfassung werden Daten Methoden und Kontexte auf S. 9f (Methodische Anlage der Studie) beschrieben. Die in diesem Artikel verwendeten Daten lassen sich auf S. 21 & 24 finden.\n\nInnerhalb des Berichtes \u2192 Zweiter Teilhabebericht der Bundesregierung \u00fcber die Lebenslagen von Menschen mit Beeintr\u00e4chtigungen werden Daten Methoden und Kontexte auf S. 533ff (In eigener Sache: Daten, Methoden und Literatur) beschrieben. Die in diesem Artikel verwendeten Daten lassen sich auf S. 170 finden (die Prim\u00e4rquelle dieser Daten ist der Mikrozensus 2013; im Rahmen des Berichts wurde die Analyse der Daten vom Institut f\u00fcr Sozialforschung und Gesellschaftspolitik durchgef\u00fchrt).",
+        "English": "The lack of available intersectional anti-discrimination and equality data makes it difficult to highlight how intersectional discrimination specifically affects certain population groups. Combinations of qualitative and quantitative data, as well as existing proxy data, can be used to show trends.\nThe data used is part of extensive surveys, studies, and reports on discrimination in Germany and is only a small sample of these. The surveys and studies themselves are also partial and represent a small sample of the numerous forms and experiences of discrimination. Nevertheless, they show important and interesting trends. The goal and purpose of these studies and reports is to reveal specific forms of discrimination as evidence and basis for necessary anti-discrimination measures and actions. Within these studies and reports, data collection and analysis methods, data contexts, etc. are described, to which we would like to refer here:\n\nWithin the \u2192 study about educational situations of German Sinti*zze and Rom*nja, data methods and contexts are described on p. 4 ff (Einleitung), p. 7 ff (Methodische Herausforderungen), and p. 17 ff (Auswertung von quantitativen Daten zur Erhebung). The data used in this article can be found on p. 101 f.\n\nWithin the field experiment \u2192 Discrimination against Female Migrants Wearing Headscarves, data methods and contexts are described starting on p. 7 (Current study). The data used in this article can be found on p. 22 ff.\n\nWithin the \u2192 study about living situations and burdens of women with disabilities in Germany, data methods and contexts are described on p. 9 f (Methodische Anlage der Studie). The data used in this article can be found on p. 21 & 24.\n\nWithin the \u2192 report about the living situations of people with disabilities, data methods and contexts are described on p. 533 ff (In eigener Sache: Daten, Methoden und Literatur). The data used in this article can be found on p. 170 (the primary source of this data is the \u00bbMikrozensus\u00ab (statistical survey in Germany) of 2013; as part of the report, the data analysis was carried out by the Institute for Social Research)."
+    },
+    {
+        "ID": "backside-decision-heading9",
+        "German": "F\u00fcr die Visualisierung von Daten aus Studien werden keine standardisierten und konventionellen Visualisierungsformen genutzt",
+        "English": "No standardized and conventional visual shapes are used to visualize data from studies"
+    },
+    {
+        "ID": "backside-decision-button9",
+        "German": "Warum?",
+        "English": "Why?"
+    },
+    {
+        "ID": "backside-decision-text9",
+        "German": "F\u00fcr die Visualisierung von Daten aus Umfragen und Studien werden keine standardisierten und konventionellen visuellen Formen \u2013 also \u00fcblicherweise klare, geometrische Grundformen \u2013 genutzt, sondern die gleichen, unperfekten, nicht exakten Striche und Formen, mit denen auch Intersektionalit\u00e4t visualisiert wird. Geometrische und klare Formen (z.B. exakte Kreise, Balken etc.) suggerieren oftmals den Anschein von Objektivit\u00e4t. Diese konventionellen Formen nicht zu verwenden und daf\u00fcr nicht exakte, organische Verformungen von Kreisen zu nutzen, die sich aus dem Netz der Striche herausbilden, ist der Versuch deutlich zu machen, dass die verwendeten Daten und ihre Visualisierungen nicht objektiv, neutral und \u00bbroh\u00ab sind. Daten und ihre visuellen Repr\u00e4sentationen entstehen innerhalb vorherrschender Machtverh\u00e4ltnisse und sind somit Bias geladen. Sie werden von Individuen mit bestimmten Standpunkten und Positionen in der Welt innerhalb bestimmter sozialer, politischer, wirtschaftlicher und kultureller Kontexte produziert. In einer kapitalistischen, patriarchalen und rassistischen Gesellschaft sind die Positionen, die meistens sichtbar und scheinbar objektiv sind, die der Pivilegiertesten.\nSo sind auch die herangezogenen Umfragen und Studien und ihre Daten partiell und situiert. Das bedeutet nicht, dass sie keinen Mehrwert bieten oder nicht genutzt werden sollten. Im Gegenteil, sie sind bereichernd und wertvoll und zeigen wichtige und interessante Tendenzen. Visuelle Repr\u00e4sentationen sollten aber widerspiegeln und transparent kommunizieren, dass sie selbst und ihre Daten nicht objektiv, neutral und universell wahr sind und nicht alle Perspektiven, Kontexte etc. mit einschlie\u00dfen.",
+        "English": "No standardized and conventional visual shapes \u2013 usually clear, geometric basic shapes \u2013 are used to visualize data from surveys and studies, but the same imperfect, non-exact shapes and strokes that are used for visualizing intersectionality. Geometric and clear shapes (e.g. exact circles, bars, etc.) often suggest the appearance of objectivity. Using organic deformations of circles that emerge from the grid of strokes instead of conventional shapes is the attempt to clarify that the used data and its visual displays are not objective, neutral and \u00bbraw\u00ab. Data and its visual displays are generated within prevailing power relations and thus biased. They are produced by individuals with particular standpoints and positions in the world within certain social, political, economic, and cultural contexts. In a capitalist, patriarchal, and racist society, the positions that are particulary visible and claim to be objective are those of the most privileged.\nThus, the surveys and studies used and their data are also partial and situated. This does not mean that they do not add value or should not be used. On the contrary, they are enriching and valuable and show important and interesting trends. However, visual representations should reflect and communicate transparently that they themselves and their data are not objective, neutral, and universally true and do not include all perspectives, contexts, etc."
+    },
+    {
+        "ID": "backside-decision-heading10",
+        "German": "Die verwendeten Daten werden kontextualisiert",
+        "English": "The data used is contextualized"
+    },
+    {
+        "ID": "backside-decision-button10",
+        "German": "Warum?",
+        "English": "Why?"
+    },
+    {
+        "ID": "backside-decision-text10",
+        "German": "Daten ohne ihre Kontexte zu kommunizieren und damit zu positionieren, kann zu Falschinterpretationen und zu tats\u00e4chlichem Schaden f\u00fchren, indem zum Beispiel Wissensl\u00fccken von Leser*innen mit Stereotypen und Vorurteilen gef\u00fcllt werden. Ohne ihren Kontext repr\u00e4sentieren Daten nicht immer das, was sie vorgeben darzustellen, insbesondere, wenn es sich um Daten \u00fcber marginalisierte Personen und Gruppen handelt. Die verwendeten Daten aus Umfragen und Studien werden deswegen durch den begleitenden Text kontextualisiert, indem er die Tendezen, die sich aus den Daten ergeben, als Ausdruck intersektionaler Diskriminierung beschreibt. Diese Tendenzen werden zus\u00e4tzlich durch einen zusammenfassenden Satz, der sich typografisch und durch seine Position hervorhebt, auf den ersten Blick sichtbar.",
+        "English": "Communicating and thus positioning data without its contexts can lead to misinterpretation and actual harm, for example, by filling gaps in readers' knowledge with stereotypes and prejudices. Without its contexts, data does not always represent what it claims to present, especially when it comes to data about marginalized individuals and groups. The data used from surveys and studies is therefore contextualized by the accompanying text, which describes the trends that emerge from the data as expressions of intersectional discrimination. These trends are additionally made visible at first glance through a summarizing sentence that is typographically and positionally highlighted."
+    },
+    {
+        "ID": "backside-involved-text",
+        "German": "Wir m\u00f6chten uns bei den einbezogenen Expert*innen zu Intersektionalit\u00e4t f\u00fcr ihre Zeit und ihr hilfreiches Feedback bedanken.\n\nEin gro\u00dfer Dank gilt allen forschenden und arbeitenden Personen im Bereich der Intersektionalit\u00e4t, Antidiskriminierung etc., die notwendige und wichtige Arbeit leisten und wertvolles Wissen generieren, auf Grundlage dessen dieses Projekt \u00fcberhaupt erst entwickelt werden konnte.\n\nWir bedanken uns bei Nenand Mihailovic und bei der Person des Zitats aus dem Kapitel \u00bbFrauen* mit Kopftuch beim\u2028 Zugang zum Arbeitsmarkt\u00ab f\u00fcr das Teilen ihrer Diskriminierungserfahrungen. \n\nWir m\u00f6chten uns bei den befragten Personen aus den Studien f\u00fcr ihre Zeit und ihre Bereitschaft, ihre Geschichten und Erfahrungen zu teilen, bedanken. Danke an die Personen, die die Befragungen und Feldexperimente durchgef\u00fchrt und ausgewertet haben, an die Autor*innen der Studien und Berichte und an die beteiligten Expert*innen f\u00fcr ihre wertvolle und wichtige Arbeit.\nDanke an...\n\n...die 261 Befragten im Rahmen der \u2192 Studie zur aktuellen Bildungssituation deutscher Sinti und Roma. Dokumentation und Forschungsbericht und an dessen Autor*innen und Interviewer*innen. Auf der 2. PDF Seite der Studie l\u00e4sst sich eine detaillierte, namentliche Aufz\u00e4hlung finden.\n\n...Doris Weichselbaumer f\u00fcr die Durchf\u00fchrung eines \u2192 Feldexperimentes zur Untersuchung von Besch\u00e4ftigungschancen von muslimischen Frauen und an die beteiligten und helfenden Personen dieses Experimentes und dessen Auswertung. Auf der 3. PDF Seite der Studie l\u00e4sst sich eine detaillierte, namentliche Aufz\u00e4hlung finden.\n\n...die 1.561 Befragten im Rahmen der Studie \u2192 Lebenssituation und Belastungen von Frauen mit Beeintr\u00e4chtigungen und Behinderungen in Deutschland. Kurzfassung und an dessen Autor*innen, Interviewer*innen und beteiligten Expert*innen. Auf S. 5 und 6 der Studie l\u00e4sst sich eine detaillierte, namentliche Aufz\u00e4hlung finden.\n\n\u2026 die Autor*innen und beteiligten Wissenschaftler*innen und Expert*innen der Studie \u2192 Zweiter Teilhabebericht der Bundesregierung \u00fcber die Lebenslagen von Menschen mit Beeintr\u00e4chtigungen und an die beteiligten Personen des Institut f\u00fcr Sozialforschung und Gesellschaftspolitik, die f\u00fcr die Datenanalyse zust\u00e4ndig waren. Auf S. 541 l\u00e4sst sich eine namentliche Liste von beteiligten Wissenschaftler*innen finden.\n",
+        "English": "We would like to thank the involved experts on intersectionality for their time and helpful feedback.\n\nThank you to all those researching and working in the field of intersectionality, anti-discrimination, etc., who do necessary and important work and generate valuable knowledge on the basis of which this project could be developed in the first place.\n\nWe would like to thank Nenand Mihailovic and the person of the quote from the chapter \u00bbWomen* with hijab in accessing the labor market\u00ab for sharing their experiences of discrimination. \n\nWe would like to thank the people interviewed as part of the studies for their time and willingness to share their stories and experiences. Thank you to the people who conducted and analyzed the surveys and field experiments, to the authors of the studies and reports and to the experts involved for their valuable and important work.\nThanks to...\n\n...the 261 people surveyed as part of the the \u2192 study about educational situations of German Sinti*zze and Rom*nja and to its authors and interviewers. A detailed list of authors and interviewers can be found on the 2nd PDF page of the study.\n\n...Doris Weichselbaumer for conducting a field experiment \u2192 Discrimination against Female Migrants Wearing Headscarves and to the people involved in and helping with this experiment and its evaluation. On the 3rd PDF page of the study, a detailed list of people involved can be found.\n\n...the 1,561 people interviewed as part of the \u2192 study about living situations and burdens of women with disabilities in Germany and to its authors, interviewers and involved experts. On p. 5 and 6 of the study, a detailed list of people involved can be found.\n\n... the authors and involved scientists and experts of the \u2192 report about the living situations of people with disabilities and to the involved persons of the Institute for Social Research, who were responsible for the data analysis. A list of involved scientists can be found on p. 541 of the study."
+    },
+    {
+        "ID": "backside-positions-intro",
+        "German": "Dieses Projekt ist gepr\u00e4gt von Personen mit bestimmten Standpunkten und Positionen in der Welt innerhalb bestimmter sozialer, politischer, \u00f6konomischer und kultureller Kontexte. Um unsere eigenen partiellen und situierten Positionen anzuerkennen, legen wir sie offen. Wer sind wir? Was machen wir? Was ist unsere berufliche, soziale, politische Position? Was ist unsere Motivation f\u00fcr dieses Projekt? ",
+        "English": "This project is shaped by people with particular standpoints and positions in the world within particular social, political, economic, and cultural contexts. To acknowledge our own partial and situated positions, we reveal them. Who are we? What do we do? What is our professional, social, political position? What is our motivation for this project? "
+    },
+    {
+        "ID": "backside-positions-heading1",
+        "German": "Hannah",
+        "English": "Hannah"
+    },
+    {
+        "ID": "backside-positions-text1",
+        "German": "Ich bin Masterstudentin im Bereich Design an der Fachhochschule Potsdam, wo ich 2020 auch meinen Bachelorabschluss erlangt habe. Mein Fokus liegt haupts\u00e4chlich auf Informationsvisualisierung und Interfacedesign. W\u00e4hrend des Bachelorstudiums habe ich zudem begonnen, mich mit Feminismus und Intersektionalit\u00e4t zu besch\u00e4ftigen und bin immer weiter in diese Themen eingestiegen, bis sie mich nicht mehr losgelassen haben. Zum einen, weil sie einige pers\u00f6nliche Erfahrungen und Empfindungen erkl\u00e4rt und in einen Kontext gesetzt haben. Zum anderen, weil sie f\u00fcr mich als sehr privilegierte Person viele gesellschaftliche Ph\u00e4nomene und Probleme erkl\u00e4rt haben, die ich davor nicht gesehen habe, den gro\u00dfen Handlungsbedarf aufgedeckt und das Bewusstsein und die Anerkennung geschaffen haben, dass ich Teil dieser Probleme bin und damit Verantwortung bei notwendigen Ver\u00e4nderungen \u00fcbernehmen muss.\nMeine Bachelorarbeit war das erste gr\u00f6\u00dfere Projekt, in welchem ich diese zwei Interessenbereiche von Design/Visualisierung und intersektionalem Feminismus verbunden habe. Die erste Version dieses Artikels entstand innerhalb meiner Bachelorarbeit. Zurzeit bin ich studentische Mitarbeiterin UCLAB, wo ich dieses Projekt zusammen mit tollen Menschen weiterentwickelt durfte. \nMit diesem Artikel m\u00f6chte ich die Themen Intersektionalit\u00e4t, Diskriminierung und Privilegierung zug\u00e4nglich und anschaulich machen, dazu beitragen, dass Leser*innen neue Erkenntnisse und Perspektiven erlangen und sie ermutigen, sich weiter mit diesen Themen zu besch\u00e4ftigen.",
+        "English": "I am a Master student in the field of design at the University of Applied Sciences Potsdam, where I also got my Bachelor's degree in 2020. My main focus lies on information visualization and interface design. During my Bachelor's studies I also started to learn about feminism and intersectionality and got deeper and deeper into these topics until they didn't let go of me anymore. On the one hand, because they explained and contextualized several personal experiences and feelings. On the other hand, because they explained many social phenomena and problems that I as a very privileged person did not notice before, revealed the great need for action, and created the awareness and acknowledgement that I am part of these problems and thus must take responsibility in making necessary changes. My Bachelor's thesis was the first major project in which I combined these two areas of interest of design/visualization and intersectional feminism. The first version of this article was developed within my Bachelor's thesis. Currently I am a student researcher at the UCLAB, where I had the opportunity to further develop this project together with great people. With this article I aim to make the topics of intersectionality, discrimination and privilege accessible, be part of helping readers gain new insights and perspectives, and encourage them to further engage with these topics."
+    },
+    {
+        "ID": "backside-positions-heading2",
+        "German": "Jonas",
+        "English": "Jonas"
+    },
+    {
+        "ID": "backside-positions-text2",
+        "German": "Lorem ipsum",
+        "English": "Lorem ipsum"
+    },
+    {
+        "ID": "backside-positions-heading3",
+        "German": "Sandra",
+        "English": "Sandra"
+    },
+    {
+        "ID": "backside-positions-text3",
+        "German": "Lorem ipsum",
+        "English": "Lorem ipsum"
+    },
+    {
+        "ID": "backside-positions-heading4",
+        "German": "Marian",
+        "English": "Marian"
+    },
+    {
+        "ID": "backside-positions-text4",
+        "German": "Lorem ipsum",
+        "English": "Lorem ipsum"
+    },
+    {
+        "ID": "backside-reflection-subtitle1",
+        "German": "B\u00fcndelung von Wissen",
+        "English": "Pooling knowledge"
+    },
+    {
+        "ID": "backside-reflection-text1",
+        "German": "Marginalisierte Personen erfahren im Rahmen vorherrschender Machtverh\u00e4ltnisse Diskriminierung und k\u00f6nnen so oftmals Privilegien sehen und erkennen, die sie selbst nicht besitzen und die f\u00fcr die Privilegierten meist nicht sichtbar sind. Auch kennen sie ihre Probleme und wissen, welche Ph\u00e4nomene in vorherrschenden Machtverh\u00e4ltnissen nicht gez\u00e4hlt, f\u00fcr nicht wichtig erkl\u00e4rt und/oder vernachl\u00e4ssigt werden. Die aktive und bewusste Zusammenarbeit mit marginalisierten Positionen in Forschungs- und Designprozessen ist deshalb bereichernd, wertvoll und vor allem notwendig. Das Generieren von Wissen \u00bbfrom the margins\u00ab ist ein feministischer Akt und fokussiert das Ziel der \u00bbCo-liberation\u00ab \u2013 einen Endzustand, in dem Menschen aus dominanten und marginalisierten Gruppen zusammenarbeiten, um vorherrschende Machtverh\u00e4ltnissen abzubauen.\n\u2028Im Rahmen dieses Projektes fand keine stetige Zusammenarbeit mit intersektional marginalisierten Personen statt. Die punktuelle Einbeziehung von Expert*innen zu Intersektionalit\u00e4t im Projektprozess und das Projektteam bestehend aus Personen verschiedener Disziplinen ist ein erster wichtiger Schritt, jedoch bei weitem nicht ausreichend.",
+        "English": "Marginalized individuals are exposed to discrimination within the context of prevailing power relations and can thus often see and recognize privileges that they themselves do not possess and that are usually not visible to the privileged. They also are aware of their problems and know which phenomena are not counted, declared as not important and/or neglected in prevailing power relations. The active and conscious collaboration with marginalized positions in research and design processes is therefore enriching, valuable and above all necessary. Generating knowledge \u00bbfrom the margins\u00ab is a feminist act and focuses on the goal of \u00bbco-liberation\u00ab \u2013 an end state in which people from dominant and marginalized groups work together to dismantle prevailing power relations.\n\u2028This project did not involve ongoing collaboration with intersectionally marginalized people. The selective inclusion of experts on intersectionality in the project process and the project team consisting of people from different disciplines is an important first step, but far from sufficient."
+    },
+    {
+        "ID": "backside-reflection-subtitle2",
+        "German": "Scrollytelling Artikel f\u00fchrt zu Ausschl\u00fcssen",
+        "English": "Scrollytelling article leads to exclusion"
+    },
+    {
+        "ID": "backside-reflection-heading2",
+        "German": "Sprache",
+        "English": "Language"
+    },
+    {
+        "ID": "backside-reflection-text2",
+        "German": "Es ist es wichtig anzuerkennen, dass der entwickelte Scrollytelling Artikel trotz bereits umgesetzter Kriterien zu Ausschl\u00fcssen f\u00fchren kann. Ein Beispiel daf\u00fcr ist die verwendete Sprache. Der Artikel ist zur Zeit in deutscher und englischer Sprache verf\u00fcgbar, die \u00dcbersetzung in weitere Sprachen ist w\u00fcnschenswert. Wir haben versucht den Text, trotz der Schwierigkeit und Komplexit\u00e4t des Themas, anschaulich und verst\u00e4ndlich zu formulieren. Vor allem die unmittelbaren Erkl\u00e4rungen von bestimmten Fachbegriffen helfen dabei. Ein weiterf\u00fchrender Schritt muss es sein, den Text auch in Leichter Sprache zur Verf\u00fcgung zu stellen.",
+        "English": "It is important to acknowledge that the developed scrollytelling article may lead to exclusions despite already implemented criteria. An example of this is the language used. The article is currently available in German and English, translation into other languages is desirable. Despite the difficulty and complexity of the topic, we have tried to write the text in a descriptive and understandable way. Especially the immediate explanations of certain technical terms are helpful. A required further step is to provide the text in \u00bbLeichter Sprache\u00ab (specific version of the German language; is intended to facilitate the comprehension of texts for people who, for various reasons, have a low level of competence in the German language, it thus also serves accessibility)."
+    },
+    {
+        "ID": "backside-reflection-heading3",
+        "German": "Barrierefreiheit",
+        "English": "Accessibility"
+    },
+    {
+        "ID": "backside-reflection-text3",
+        "German": "Zun\u00e4chst gibt es die grundlegende Problematik, dass visuelle Elemente prinzipiell bestimmte Personen ausschlie\u00dfen. Beispielsweise k\u00f6nnen sie von Screenreadern, die Menschen mit Sehbeeintr\u00e4chtigung Webseiten vorlesen, nicht gelesen werden. Hier ist eine M\u00f6glichkeit, visuelle Elemente mit Texten zu beschreiben, was wir in diesem Projekt umgesetzt haben.\nAufgrund zeitlicher Kapazit\u00e4t und mangelnder Expertise wurden in diesem Projekt einige Aspekte der Barrierefreiheit nicht umgesetzt und es fand keine detaillierte Besch\u00e4ftigung mit diesem Thema statt. Der Scrollytelling Artikel weist folglich diesbez\u00fcglich einige M\u00e4ngel auf.\nWeitere, notwendige Schritte sind der Einbezug von Expert*innen zu diesem Thema und die detaillierte Untersuchung, was bez\u00fcglich Barrierefreiheit innerhalb dieses Scrollytelling Artikels umgesetzt werden sollte, beispielsweise Tastatur-Navigation, von Leser*innen ver\u00e4nderbare Parameter wie zum Beispiel Kontrast, Schriftgr\u00f6\u00dfe, Farbe etc.",
+        "English": "There is the fundamental problem that visual elements exclude certain people in general. For example, they cannot be read by screen readers reading web pages to people with visual impairments. Here, one option is to describe visual elements with text, which is what we implemented in this project.\nDue to time capacity and lack of expertise, several aspects of accessibility were not implemented in this project and no detailed consideration of this topic was carried out. As a result, the scrollytelling article has several deficiencies regarding accessibility.\nFurther required steps are the involvement of experts on this topic and the detailed investigation of what should be implemented within this scrollytelling article regarding accessibility, e.g. keyboard navigation, parameters that can be adjusted by readers such as contrast, font size, color, etc."
+    }
+]
