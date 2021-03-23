@@ -1,5 +1,6 @@
 <template>
   <div class="chapter discrimination_and_privilege">
+    <DiscriminationVisualization class="background-visualization" />
     <div class="narrative">
       <div class="step">
         <h2 class="chapter-title">
@@ -28,49 +29,7 @@
           Ein erster, wichtiger Schritt ist es, sich seinen eigenen Privilegien bewusst zu werden, sie zu reflektieren und anzuerkennen. Das kann beispielsweise damit beginnen, sich über Erfahrungen von Menschen, die Diskriminierung ausgesetzt sind, zu informieren.
         </p>
         <div class="detour">
-          <a href="#">Exkurs zu den Dimensionen von Diskriminierung</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="visualization">
-      <div class="case-container">
-        <div class="visual">
-          <img src="~/assets/visualizations/discrimination1.png">
-        </div>
-        <div class="description">
-          <p class="title">
-            In allen sozialen Kategorien privilegiert
-          </p>
-          <p class="examples">
-            z.B. weißer, heterosexueller, cis-geschlechtlicher, junger, nicht armer Mann ohne Behinderung
-          </p>
-        </div>
-      </div>
-      <div class="case-container">
-        <div class="visual">
-          <img src="~/assets/visualizations/discrimination2.png">
-        </div>
-        <div class="description">
-          <p class="title">
-            Aufgrund des Geschlechtes diskriminiert (Sexismus), in Bezug auf andere soziale Kategorien privilegiert
-          </p>
-          <p class="examples">
-            z.B. weiße, heterosexuelle, cis-geschlechtliche, junge, nicht arme Frau ohne Behinderung
-          </p>
-        </div>
-      </div>
-      <div class="case-container">
-        <div class="visual">
-          <img src="~/assets/visualizations/discrimination3.png">
-        </div>
-        <div class="description">
-          <p class="title">
-            Aufgrund des Geschlechtes (Sexismus), der ›Rasse‹ (Rassismus) und der Klassenzugehörigkeit (Klassismus) diskriminiert, in Bezug auf andere soziale Kategorien privilegiert
-          </p>
-          <p class="examples">
-            z.B. heterosexuelle, cis-geschlechtliche, junge, arme Frau of Color ohne Behinderung
-          </p>
+          <a href="#" class="button">Erfahre mehr zu den Dimensionen von Diskriminierung</a>
         </div>
       </div>
     </div>

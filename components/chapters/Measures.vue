@@ -1,5 +1,6 @@
 <template>
   <div class="chapter intersectional_measures">
+    <MeasuresVisualization class="background-visualization" />
     <div class="narrative">
       <div class="step">
         <h2 class="chapter-title">
@@ -35,14 +36,6 @@
         <p class="highlight">
           Denn ihre Befreiung erfordert den vollständigen Abbau und die Überwindung aller Macht- und Herrschaftsstrukturen in ihrer Verwobenheit.
         </p>
-      </div>
-    </div>
-    <div class="visualization">
-      <div class="visual top-left">
-        <img src="~/assets/visualizations/measures1.png">
-      </div>
-      <div class="visual bottom-right">
-        <img src="~/assets/visualizations/measures2.png">
       </div>
     </div>
   </div>
