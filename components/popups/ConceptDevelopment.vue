@@ -39,7 +39,7 @@
           Kimberlé Crenshaw
         </h4>
         <p class="text">
-          1989 prägte die US-amerikanische Juristin und Professorin für Critical Legal Studies Kimberlé Crenshaw in ihrem Essay <q>Demarginalizing the Intersection of Race and Sex: A Black Feminist Critique of Antidiscrimination Doctrine, Feminist Theory and Antiracist Politics</q> erstmals den Begriff <q>Intersektionalität</q>.
+          1989 führte die US-amerikanische Juristin und Professorin für Critical Legal Studies Kimberlé Crenshaw in ihrem Essay <q>Demarginalizing the Intersection of Race and Sex: A Black Feminist Critique of Antidiscrimination Doctrine, Feminist Theory and Antiracist Politics</q> erstmals den Begriff <q>Intersektionalität</q> ein.
         </p>
       </div>
 
@@ -55,7 +55,7 @@
         <p class="text">
           Die Entwicklungslinien deutschsprachiger Intersektionalitätstheorien sind vielfältiger und gebrochener, verglichen mit denen der angloamerikanischen Entwicklung.
           <br>Politisch-theoretische Debatten wurden teilweise durch US-amerikanische Texte beeinflusst, teilweise aber auch unabhängig davon geführt.
-          <br>Impulsgeber*innen in den 1980er und 1990er Jahren waren Migrant*innen, jüdische Frauen*, Schwarze Deutsche, Frauen* mit Behinderung und Queer of Color. Sie alle machten auf ihre spezifischen Diskriminierungserfahrungen und deren Marginalisierung im deutschen Mainstream-Feminismus aufmerksam. Sie thematisierten, dass sie als <q>die Anderen</q> repräsentiert und ihre Themen und Forderungen nicht wahrgenommen und berücksichtigt wurden. Dabei kritisierten sie vor allem den deutschen Mainstream-Feminismus, dessen Akteur*innen für sich beanspruchten, Politik für alle Frauen* zu betreiben, obwohl sie sich nur an den Interessen und Bedürfnissen weißer, heterosexueller, cis-geschlechtlicher, christlicher, nichtbehinderter Frauen orientierten.
+          <br>Impulsgeber*innen in den 1980er und 1990er Jahren waren Migrant*innen, jüdische Frauen*, Schwarze Deutsche, Frauen* mit Behinderung und Queer of Color. Sie alle machten auf ihre spezifischen Diskriminierungserfahrungen und deren Marginalisierung im deutschen Mainstream-Feminismus aufmerksam. Sie thematisierten, dass sie als <q>die Anderen</q> repräsentiert und ihre Themen und Forderungen nicht wahrgenommen und berücksichtigt wurden. Dabei kritisierten sie vor allem den deutschen Mainstream-Feminismus, dessen Akteur*innen für sich beanspruchten, Politik für alle Frauen* zu betreiben, obwohl sie sich nur an den Interessen und Bedürfnissen weißer, cis-geschlechtlicher, christlicher, nichtbehinderter Frauen orientierten.
         </p>
       </div>
     </div>

@@ -19,7 +19,7 @@
           Individuelle Dimension
         </h3>
         <p class="text">
-          Die individuelle Dimension von Diskriminierung ist die Dimension, die den meisten Menschen bekannt ist. Eine Person diskriminiert – absichtlich oder unabsichtlich – eine andere. Täter*in(nen) und Opfer können benannt werden. Beispiele dafür sind ausgesprochene Vorurteile, verbale und körperliche Gewalt und Hate Speech.
+          Die individuelle Dimension von Diskriminierung ist die Dimension, die den meisten Menschen bekannt ist. Eine Person diskriminiert – absichtlich oder unabsichtlich – eine andere. Täter*in(nen) und Opfer können benannt werden. Beispiele dafür sind Hate Speech, Vorurteile, verbale und körperliche Gewalt.
           <br>Die individuelle Dimension ist jedoch nur die Spitze des Eisbergs.
         </p>
       </div>
@@ -31,7 +31,7 @@
         </h3>
         <p class="text">
           Die strukturelle Dimension von Diskriminierung kommt bei der statistischen Anhäufung von einzelnen Diskriminierungserfahrungen zum Vorschein und repräsentiert die soziale und strukturelle Ungleichheit, die durch Diskriminierung und Privilegierung manifestiert wird. Diese spiegelt sich in allen gesellschaftlichen Institutionen wider: auf dem Arbeitsmarkt, auf dem Wohnungsmarkt, im Schulsystem, im Gesundheitswesen etc.
-          <br>So sind zum Beispiel spezifische Gruppen in bestimmten Sektoren oder Institutionen (z.B. in Förderschulen, in Gefängnissen, in bestimmten Arbeitssektoren) über- oder unterrepräsentiert. Diese Statistiken werden häufig falsch interpretiert oder sogar instrumentalisiert, wenn die strukturelle Dimension von Diskriminierung nicht mit einbezogen wird. Auch die Argumentation der <q>Umgekehrten Diskriminierung</q> ignoriert die strukturelle Dimension.
+          <br>So sind zum Beispiel spezifische Gruppen in bestimmten Sektoren oder Institutionen (z.B. in Förderschulen, in Gefängnissen, in bestimmten Arbeitssektoren) über- oder unterrepräsentiert. Diese Statistiken können falsch interpretiert oder sogar instrumentalisiert werden, wenn die strukturelle Dimension von Diskriminierung nicht mit einbezogen wird, indem Über- oder Unterrepräsentationen zum Beispiel mit vermeintlichen Eigenschaften einer bestimmten Gruppe verbunden werden. Auch die Argumentation der <q>Umgekehrten Diskriminierung</q> ignoriert die strukturelle Dimension.
         </p>
       </div>
 
@@ -42,7 +42,7 @@
         </h3>
         <p class="text">
           Diese Dimension von Diskriminierung manifestiert sich durch vermeintlich neutrale Gesetze und Politiken, durch die jedoch bestimmte Personen und/oder Gruppen diskriminiert werden.
-          <br>Sie trägt zur Aufrechterhaltung von ungleichen Machtverhältnissen durch Gesetze und Institutionen bei. Diejenigen, die sich in Institutionen in einer Machtpositionen befinden, z.B. Lehrer*innen, Richter*innen, Polizist*innen, reproduzieren und bekräftigen – meist unabsichtlich – häufig Diskriminierung in ihren Handlungen, Vorgehensweisen und Entscheidungen durch unbewusste Vorurteile und Stereotypisierungen. Ein Beispiel dafür ist <q>Racial Profiling</q>.
+          <br>Sie trägt zur Aufrechterhaltung von ungleichen Machtverhältnissen durch Gesetze und Institutionen bei. Diejenigen, die sich in Institutionen in einer Machtpositionen befinden, z.B. Lehrer*innen, Richter*innen, Polizist*innen, reproduzieren und bekräftigen – meist unabsichtlich – Diskriminierung in ihren Handlungen, Vorgehensweisen und Entscheidungen durch unbewusste Vorurteile und Stereotypisierungen. Ein Beispiel dafür ist <q>Racial Profiling</q>.
         </p>
       </div>
 
