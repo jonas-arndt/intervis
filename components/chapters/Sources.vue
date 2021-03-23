@@ -105,6 +105,7 @@
 
 .chapter.project-information-and-sources {
   background-color: $color-light-grey;
+  padding: 1rem;
 
   h2 {
     font-size: $font-size-title;
@@ -115,11 +116,6 @@
     margin-top: 2rem;
     margin-bottom: 3rem;
     text-align: center;
-
-    .button {
-      @include red-button;
-      display: inline-block;
-    }
   }
 
   .references {

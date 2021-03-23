@@ -2,7 +2,7 @@
   <div class="chapter intersectional_measures">
     <MeasuresVisualization class="background-visualization" />
     <div class="narrative">
-      <div class="step">
+      <div class="step right">
         <h2 class="chapter-title">
           4 Intersektionale Maßnahmen
         </h2>
@@ -14,7 +14,7 @@
         </p>
       </div>
 
-      <div class="step">
+      <div class="step right">
         <p>
           Frauen*, die intersektional marginalisiert sind (z.B. Frauen* of Color, Transfrauen*, Frauen* mit Hidschab, arme Frauen*, Frauen* mit Behinderung), werden somit nicht mit eingeschlossen.
         </p>
@@ -26,13 +26,13 @@
         </p>
       </div>
 
-      <div class="step">
+      <div class="step right">
         <p>
           Erst wenn die Rechte, Interessen und Bedürfnisse der strukturell am stärksten marginalisierten Personen und Gruppen durchgesetzt bzw. berücksichtigt werden, werden alle Menschen von sozialer Ungleichheit und asymmetrischen Machtverhältnissen befreit. Ungleiche Ausgangsbedingungen beim Zugang zu Ressourcen, bei sozialer und politischer Teilhabe, bei gesellschaftlicher Einbeziehung und Anerkennung etc. können überwunden werden.
         </p>
       </div>
 
-      <div class="step">
+      <div class="step right">
         <p class="highlight">
           Denn ihre Befreiung erfordert den vollständigen Abbau und die Überwindung aller Macht- und Herrschaftsstrukturen in ihrer Verwobenheit.
         </p>
@@ -45,93 +45,52 @@
 @import "../../styles/_variables";
 
 .chapter.intersectional_measures {
-
   .narrative {
+    padding-top: 20vh;
+    padding-bottom: 100vh;
+
+    .step {
+      margin-bottom: 150vh;
+
+      &:last-child {
+        margin-bottom: inherit;
+      }
+    }
+
     h2 {
       color: $color-red;
     }
 
-    p {
-      font-size: $font-size-small;
+    p.highlight {
+      font-size: $font-size-subtitle;
+      font-weight: 700;
+      font-style: italic;
 
-      &.highlight {
-        font-size: $font-size-subtitle;
-        font-weight: 700;
-        font-style: italic;
-
-        margin-bottom: 0;
-      }
+      margin-bottom: 0;
     }
   }
 
-  .visualization {
-    position: relative;
-
-    .visual {
-
-      img {
-        max-width: 60%;
-        height: auto;
-      }
-
-      &.bottom-right {
-        position: relative;
-        left: 40%;
-      }
-    }
+  .background-visualization {
+    z-index: -100;
+    position: sticky;
+    top: 0;
   }
-}
 
-@media (min-width: $media-breakpoint-min-m) {
-  .chapter.intersectional_measures {
-    position: relative;
-    padding: 20vh 10% 50vh 10%;
-
-    .visualization {
-      position: sticky;
-      top: 0;
-      width: 45%;
-      height: 90vh;
-      padding: 10%;
-
-      .visual {
-        width: 60%;
-
-        img {
-          width: 100%;
-          max-width: none;
-          height: auto;
-        }
-
-        &.top-left {
-          position: absolute;
-          top: 0;
-          left: 0;
-        }
-
-        &.bottom-right {
-          position: absolute;
-          bottom: 0;
-          right: 0;
-        }
-      }
-    }
-
+  @media (min-width: $media-breakpoint-min-m) {
     .narrative {
       position: relative;
-      width: 45%;
-      left: 50%;
-
       padding-bottom: 100vh;
 
       .step {
         margin-top: 50vh;
 
-        &:first-child {
-          margin-top: -50vh;
+        &.right {
+          position: relative;
+          left: 50%;
         }
       }
     }
   }
 }
+
 </style>

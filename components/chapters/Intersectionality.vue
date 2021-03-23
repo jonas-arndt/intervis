@@ -36,17 +36,27 @@
 .chapter.what-is-intersectionality {
   position: relative;
 
+  .narrative {
+    padding-top: 50vh;
+    padding-bottom: 50vh;
+
+    .step {
+      margin-bottom: 100vh;
+
+      &:last-child {
+        margin-bottom: inherit;
+      }
+    }
+  }
+
   @media (min-width: $media-breakpoint-min-m) {
     .narrative {
       position: relative;
-      padding: 50vh 10% 50vh 10%;
+      padding-left: 10%;
+      padding-right: 10%;
 
       .step {
-        margin-bottom: 150vh;
-
-        &:last-child {
-          margin-bottom: inherit;
-        }
+        margin-bottom: 80vh;
       }
     }
   }

@@ -43,80 +43,33 @@
 @import "../../styles/_variables";
 
 .chapter.discrimination_and_privilege {
+  .narrative {
+    padding-top: 50vh;
+    padding-bottom: 50vh;
+
+    .step {
+      margin-bottom: 100vh;
+    }
+  }
 
   h2 {
     color: $color-red;
     margin-bottom: 1rem;
   }
 
-  .narrative .step {
-    font-size: $font-size-small;
-  }
-
   .detour {
     margin-top: 3em;
-
-    a {
-      @include red-button;
-    }
   }
 
-  .case-container {
-    position: relative;
-    height: 30vh;
-    padding: 1rem;
-
-    .visual {
-      display: inline-block;
-
-      position: relative;
-      width: 35%;
-      vertical-align: middle;
-      margin-right: 10%;
-
-      img {
-        position: relative;
-        width: 100%;
-        height: auto;
-      }
-    }
-
-    .description {
-      display: inline-block;
-
-      position: relative;
-      width: 45%;
-      vertical-align: middle;
-
-      font-size: $font-size-smaller;
-
-      .title {
-        font-weight: 700;
-      }
-    }
+  .background-visualization {
+    z-index: -100;
+    position: sticky;
+    top: 0;
   }
-}
 
-@media (min-width: $media-breakpoint-min-m) {
-  .chapter.discrimination_and_privilege {
-    position: relative;
-
-    & > .visualization {
-      position: sticky;
-      width: 50%;
-      left: 50%;
-      top: 0;
-      margin-top: -100vh;
-
-    }
-
-    & > .narrative {
-      margin-top: -100vh;
-      padding: 50vh 10% 50vh 10%;
-
+  @media (min-width: $media-breakpoint-min-m) {
+    .narrative {
       .step {
-        position: relative;
-        width: 40%;
         margin-bottom: 20vh;
       }
     }

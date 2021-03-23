@@ -253,6 +253,7 @@
 .chapter.and-now {
   background-color: $color-red;
   color: white;
+  padding: 1rem;
 
   h2 {
     margin-bottom: 1.8rem;

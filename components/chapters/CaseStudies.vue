@@ -24,6 +24,9 @@
 @import "../../styles/_variables";
 
 .chapter.case_studies_from_germany {
+  padding-top: 30vh;
+  padding-bottom: 20vh;
+
   h2 {
     color: $color-red;
     margin-bottom: 0.5em;
@@ -31,31 +34,10 @@
 
   p {
     margin-bottom: 3em;
-    font-size: $font-size-small;
+  }
+
+  @media (min-width: $media-breakpoint-min-m) {
   }
 }
 
-@media (min-width: $media-breakpoint-min-m) {
-  .chapter.case_studies_from_germany {
-    position: relative;
-    padding: 20vh 10% 0 10%;
-
-    height: 100vh;
-
-    p {
-      width: 50%;
-    }
-
-    &:after {
-      content: "";
-      background: url('~assets/lines/lines-small.jpg');
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      position: absolute;
-      z-index: -1;
-    }
-  }
-}
 </style>
