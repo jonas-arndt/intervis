@@ -6,7 +6,7 @@
           2 Diskriminierung &amp; Privilegierung
         </h2>
         <p>
-          Individuen und Gruppen werden basierend auf sozialen Kategorien unterschiedlich diskriminiert und privilegiert. Sie erleben deswegen ungleiche Bedingungen, wenn es um Zugang zu Ressourcen, soziale und politische Teilhabe, gesellschaftliche Integration etc. geht.
+          Individuen und Gruppen werden basierend auf sozialen Kategorien unterschiedlich diskriminiert und privilegiert. Sie erleben deswegen ungleiche Bedingungen, wenn es um Zugang zu Ressourcen, soziale und politische Teilhabe, gesellschaftliche Einbeziehung und Anerkennung etc. geht. Privilegien führen zu Bedingungen, die Bevorteilung und Machtpositionen reproduzieren.
         </p>
       </div>
       <div class="step">
@@ -22,10 +22,10 @@
       </div>
       <div class="step">
         <p>
-          Personen und Gruppen, die auf Basis sozialer Kategorien, viele Privilegien innehaben, haben Bedingungen, die ihre Bevorteilung und Machtposition reproduzieren. Die Schwierigkeit liegt darin, dass Privilegien meist selbstverständlich und nicht sichtbar für diejenigen sind, die sie besitzen. Privilegierte Menschen tendieren dazu, ihre Privilegien nicht als solche wahrzunehmen und folglich nicht zu erkennen, welche Hürden und Benachteiligungen für andere Menschen entstehen, die diese Privilegien nicht haben. Es fehlt die gelebte Erfahrung, die alltäglich daran erinnert, von der Norm abzuweichen.
+          Die Schwierigkeit liegt darin, dass Privilegien meist selbstverständlich und nicht sichtbar für diejenigen sind, die sie besitzen. Privilegierte Menschen tendieren dazu, ihre Privilegien nicht als solche wahrzunehmen und folglich nicht zu erkennen, welche Hürden und Benachteiligungen für andere Menschen entstehen, die diese Privilegien nicht haben. Es fehlt die gelebte Erfahrung, die alltäglich daran erinnert, von der Norm abzuweichen.
         </p>
         <p>
-          Ein erster, wichtiger Schritt ist es, sich seinen eigenen Privilegien bewusst zu werden, sie zu reflektieren und anzuerkennen. Das kann beispielsweise damit beginnen, sich über Erfahrungen von Menschen, die zum Beispiel Diskriminierung in Deutschland ausgesetzt sind, zu informieren.
+          Ein erster, wichtiger Schritt ist es, sich seinen eigenen Privilegien bewusst zu werden, sie zu reflektieren und anzuerkennen. Das kann beispielsweise damit beginnen, sich über Erfahrungen von Menschen, die Diskriminierung ausgesetzt sind, zu informieren.
         </p>
         <div class="detour">
           <a href="#">Exkurs zu den Dimensionen von Diskriminierung</a>

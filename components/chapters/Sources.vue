@@ -10,7 +10,7 @@
       Dieses Projekt ist geprägt von den subjektiven und partiellen Perspektiven der Projektbeteiligten.
     </p>
     <p>
-      In diesem Teil, der »Projektoffenlegung«, werden bestimmte Visualisierungsentscheidungen transparent und involvierte Personen sichtbar gemacht. Der Projektprozess wird offengelegt, die Perspektiven und Positionen der Autor*innen kommuniziert und das Projekt reflektiert.
+      In dem Teil »Einblicke in das Projekt« werden bestimmte Visualisierungsentscheidungen transparent und involvierte Personen sichtbar gemacht. Der Projektprozess wird offengelegt, die Perspektiven und Positionen der Autor*innen kommuniziert und das Projekt reflektiert.
     </p>
     <div class="disclosure-link">
       <button class="button" @click="$store.commit('toggleDisclosureVisibility')">

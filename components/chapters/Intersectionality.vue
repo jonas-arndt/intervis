@@ -18,7 +18,7 @@
           In den folgenden Kapiteln findest du dazu anschauliche Erklärungen und Beispiele.
         </p>
         <div class="detour">
-          <a href="#" class="button">Exkurs zur Begriffsentwicklung von Intersektionalität</a>
+          <a href="#" class="button">Erfahre mehr zur Begriffsentwicklung von Intersektionalität</a>
         </div>
       </div>
     </div>

@@ -4,56 +4,54 @@
       5 Und jetzt?
     </h2>
     <p>
-      Intersektionalität ist bislang weder Gegenstand von gesellschaftlichen Diskursen, noch hat der Begriff Eingang in den Alltagswortschatz in Deutschland gefunden. Das politische und transformative Potenzial, das einige Autor*innen in einer intersektionalen Perspektive sehen, ist demnach noch ungenutzt.
+      Intersektionalität ist bislang weder Gegenstand von gesellschaftlichen Diskursen, noch hat der Begriff Eingang in den Alltagswortschatz in Deutschland gefunden. Das politische und transformative Potenzial, das einige Autor*innen in einer intersektionalen Perspektive sehen, ist demnach noch ungenutzt. »Das ist zu bedauern, denn es ist wünschenswert, dass sich Intersektionalität als kritische Perspektive auf Machtverhältnisse im allgemein gesellschaftlichen Diskurs durchsetzt und in selbstverständlicher Weise einbezogen wird, wann immer es um Macht, Ungleichheit und diskursive Ausschlüsse geht.« (Meyer, 2017, S.155)
     </p>
     <p>
-      <q>Das ist zu bedauern, denn es ist wünschenswert, dass sich Intersektionalität als kritische Perspektive auf Machtverhältnisse im allgemein gesellschaftlichen Diskurs durchsetzt und in selbstverständlicher Weise einbezogen wird, wann immer es um Macht, Ungleichheit und diskursive Ausschlüsse geht.</q> (Meyer, 2017, S.155)
-    </p>
-
-    <p>
-      Intersektionale Ansätze konzentrieren sich nicht nur auf die individuelle Dimension von Diskriminierung, sondern gleichermaßen auf die institutionelle, strukturelle und historische Dimension, was das Spektrum von Maßnahmen, die Diskriminierung entgegenwirken können, erweitert.
+      Intersektionale Perspektiven konzentrieren sich nicht nur auf die individuelle Dimension von Diskriminierung, sondern gleichermaßen auf die institutionelle, strukturelle und historische Dimension, was das Spektrum von Maßnahmen, die Diskriminierung entgegenwirken können, erweitert.
     </p>
     <p>
-      Europäische rechtliche und politische Rahmenbedingungen konzeptualisieren Diskriminierung tendenziell eher aus einer eindimensionalen Perspektive. Intersektionale Perspektiven bieten das Potenzial, Personen und Gruppen, die in herkömmlichen, eindimensionalen Herangehensweisen unsichtbar bleiben, einzuschließen. Das Center for Intersectional Justice in Berlin gibt einige <a href="#" class="cross-reference">Handlungsempfehlungen</a>, um die notwendige intersektionale Perspektive in die europäischen Antidiskriminierungsarbeit zu integrieren.
+      Europäische rechtliche und politische Rahmenbedingungen konzeptualisieren Diskriminierung tendenziell eher aus einer eindimensionalen Perspektive. Intersektionale Perspektiven bieten das Potenzial, Personen und Gruppen, die in herkömmlichen, eindimensionalen Herangehensweisen unsichtbar bleiben, einzuschließen. Das Center for Intersectional Justice in Berlin gibt einige → Handlungsempfehlungen, um die notwendige intersektionale Perspektive in die europäischen Antidiskriminierungsarbeit zu integrieren.
     </p>
 
     <h3>Und was kann ich da jetzt machen?</h3>
+    <p>
+      Um die weitere Beschäftigung mit dem Thema zu erleichtern, haben wir erste, mögliche To Do’s aufgelistet, mit denen du gleich beginnen kannst.
+      <br>Diese Liste ist keinesfalls vollständig oder abschließend.
+    </p>
+
     <ul class="personal-suggestions">
       <li>
-        Anerkennen, dass intersektionale Diskriminierung, Marginalisierung und Unterdrückung ein strukturelles Problem ist!
+        Erkenne an, dass intersektionale Diskriminierung, Marginalisierung und Unterdrückung ein strukturelles und instituonelles Problem ist, und sich nicht nur auf indiviudeller Ebene widerspiegelt.
       </li>
       <li>
-        Sich Privilegien bewusst werden, sich selbst reflektieren und kritisieren!
+        Werde dir deiner Privilegien bewusst, reflektiere und hinterfrage dich. Erkenne an, dass dies unkomfortabel und unbequem ist und dass genau das gut und wichtig ist.
       </li>
       <li>
-        Anerkennen, dass dies unkomfortabel und unbequem ist. Und erkennen, dass genau das gut und wichtig ist!
+        Informiere dich eigenständig, also belese dich, besuche Veranstaltungen etc. Marginalisierte Personen stehen in keinster Weise in einer Bringschuld.
       </li>
       <li>
-        Sich eigenständig informieren, also dazu lesen, Veranstaltungen besuchen etc.! Marginalisierte Personen stehen in keinster Weise in einer Bringschuld!
+        Höre marginalisierten Menschen, die Diskriminierung erleben und davon berichten, zu und negiere ihre gelebten Erfahrungen nicht, sondern betrachte diese als wertvoll und beziehe sie als wichtiges Wissen ein.
       </li>
       <li>
-        Marginalisierten Menschen, die Diskriminierung erleben und davon berichten, zuhören und ihre gelebten Erfahrungen nicht negieren, sondern diese als wertvolles und wichtiges Wissen betrachten und einbeziehen!
+        Erkenne an, dass die eigenen Erfahrungen, das eigene Wissen etc. situiert, partiell und voreingenommen sind, und schließe nicht von der eigenen Position, Situation und Perspektive auf andere.
       </li>
       <li>
-        Anerkennen, dass die eigenen Erfahrungen, das eigene Wissen etc. situiert, limitiert und voreingenommen sind und nicht von der eigenen Position, Situation und Perspektive auf andere schließen!
+        Übe, strukturelle Unterdrückung zu erkennen und mit einer »intersektionalen Brille« Dinge und Situationen im alltäglichen, privaten und beruflichen Leben zu beobachten! Wer ist die Norm und wen schließt sie aus?
       </li>
       <li>
-        Üben, strukturelle Unterdrückung zu erkennen und mit einer »intersektionalen Brille« Dinge und Situationen im alltäglichen, privaten und beruflichen Leben beobachten! Wer ist die Norm? Wer wird nicht mit eingeschlossen?
+        Stell dir die Frage: Wie bin ich im privaten und im beruflichen Kontext an der Aufrechterhaltung und Verstärkung diskriminierender Strukturen beteiligt?
       </li>
       <li>
-        Sich die Frage stellen: Wie bin ich an der Aufrechterhaltung und Verstärkung diskriminierender Strukturen beteiligt im privaten und im beruflichen Kontext?
+        Übernehme Verantwortung – im privaten und beruflichen Leben! Wen fördere ich, wen zitiere ich, wen retweete ich, wen binde ich ein, wen stelle ich ein, …?
       </li>
       <li>
-        Verantwortung übernehmen! Wen fördere ich, wen zitiere ich, wen retweete ich, wen binde ich ein, wen stelle ich ein, …?
-      </li>
-      <li>
-        Mit anderen über Intersektionalität, Diskriminierung und Privilegierung sprechen, es teilen, es benennen, sich bewusst für eine Diskussion oder Auseinandersetzung entscheiden!
+        Sprich mit anderen über Intersektionalität, Diskriminierung und Privilegierung, teile es, benenne es, diskutiere.
       </li>
     </ul>
 
     <h3>Weiterführende Quellen für Dich</h3>
     <p>
-      Die folgenden Quellen sind keine vollständige oder abschließende Sammlung. Sie sind vielmehr eine Liste von Literatur, Personen etc. die uns Autor*innen dabei geholfen haben, Intersektionalität, Diskriminierung und Privilegierung (besser) zu verstehen.
+      Die folgenden Quellen sind eine Sammlung von Literatur, Personen etc., die uns Autor*innen dabei geholfen haben, Intersektionalität, Diskriminierung und Privilegierung (besser) zu verstehen. Diese Liste ist keinesfalls vollständig oder abschließend.
     </p>
 
     <div class="further-reading books">

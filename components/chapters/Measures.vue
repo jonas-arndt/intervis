@@ -27,7 +27,7 @@
 
       <div class="step">
         <p>
-          Erst, wenn die Rechte, Interessen und Bedürfnisse der strukturell am stärksten marginalisierten Personen und Gruppen durchgesetzt bzw. berücksichtigt werden, werden alle Menschen von sozialer Ungleichheit und asymmetrischen Machtverhältnissen befreit. Ungleiche Ausgangsbedingungen beim Zugang zu Ressourcen, bei gesellschaftlicher Integration, sozialer und politischer Teilhabe und gesellschaftlicher Anerkennung können überwunden werden.
+          Erst wenn die Rechte, Interessen und Bedürfnisse der strukturell am stärksten marginalisierten Personen und Gruppen durchgesetzt bzw. berücksichtigt werden, werden alle Menschen von sozialer Ungleichheit und asymmetrischen Machtverhältnissen befreit. Ungleiche Ausgangsbedingungen beim Zugang zu Ressourcen, bei sozialer und politischer Teilhabe, bei gesellschaftlicher Einbeziehung und Anerkennung etc. können überwunden werden.
         </p>
       </div>
 
