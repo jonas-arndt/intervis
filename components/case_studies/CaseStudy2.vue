@@ -49,7 +49,7 @@
 </template>
 
 <style lang="scss" scoped>
-@import "../../../styles/_variables";
+@import "../../styles/_variables";
 
 .case-study.school {
   .case-study-title {
