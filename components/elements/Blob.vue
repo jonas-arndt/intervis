@@ -22,7 +22,7 @@ export default {
 
     return {
       points,
-      d: this.getSpline(this.points),
+      d: this.getSpline(points),
       noiseStep: 0.002,
       noiseOffset: 10,
       simplex: new SimplexNoise()
