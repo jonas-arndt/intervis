@@ -36,7 +36,7 @@
       </div>
     </div>
 
-    <PopupOverlay v-if="discriminationDimensionsAreVisible">
+    <PopupOverlay v-if="discriminationDimensionsAreVisible" @close="hideDiscriminationDimensions()">
       <DimensionsDiscrimination />
     </PopupOverlay>
   </div>
@@ -50,7 +50,7 @@ export default {
     ...mapState(['discriminationDimensionsAreVisible'])
   },
   methods: {
-    ...mapMutations(['showDiscriminationDimensions'])
+    ...mapMutations(['showDiscriminationDimensions', 'hideDiscriminationDimensions'])
   }
 }
 </script>

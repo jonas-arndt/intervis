@@ -1,5 +1,10 @@
 <template>
   <div class="popup-overlay">
+    <div class="close-button">
+      <button @click="$emit('close')">
+        <img :src="require('~/assets/icons/close.svg')">
+      </button>
+    </div>
     <div class="horizontal scroll-container">
       <slot />
     </div>

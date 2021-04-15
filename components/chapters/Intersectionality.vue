@@ -25,7 +25,7 @@
       </div>
     </div>
 
-    <PopupOverlay v-if="conceptDevelopmentIsVisible">
+    <PopupOverlay v-if="conceptDevelopmentIsVisible" @close="hideConceptDevelopment()">
       <ConceptDevelopment />
     </PopupOverlay>
   </div>
@@ -39,7 +39,7 @@ export default {
     ...mapState(['conceptDevelopmentIsVisible'])
   },
   methods: {
-    ...mapMutations(['showConceptDevelopment'])
+    ...mapMutations(['showConceptDevelopment', 'hideConceptDevelopment'])
   }
 }
 </script>
