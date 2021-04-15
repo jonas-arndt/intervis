@@ -1,5 +1,6 @@
 <template>
   <div class="case-study working-women">
+    <SlideInToggleButton />
     <WorkingWomanVisualization class="background-visualization" />
     <div class="narrative">
       <div class="step">
@@ -52,6 +53,8 @@
 @import "../../styles/_variables";
 
 .case-study.working-women {
+  position: relative;
+
   .case-study-title {
     font-size: $font-size-subtitle;
     margin-bottom: 0.6em;

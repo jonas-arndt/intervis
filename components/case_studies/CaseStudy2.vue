@@ -1,5 +1,6 @@
 <template>
   <div class="case-study school">
+    <SlideInToggleButton />
     <SchoolVisualization class="background-visualization" />
 
     <div class="narrative">
@@ -52,6 +53,8 @@
 @import "../../styles/_variables";
 
 .case-study.school {
+  position: relative;
+
   .case-study-title {
     font-size: $font-size-subtitle;
     margin-bottom: 0.6em;

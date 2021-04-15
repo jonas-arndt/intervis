@@ -19,6 +19,12 @@ export default {
 /* Rectangle */
 
 .slide-in-toggle-button {
+  position: absolute;
+  display: inline-block;
+  right: 0px;
+  top: 20px;
+  z-index:1000;
+
   min-width: 45px;
   height: 45px;
 
