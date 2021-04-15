@@ -1,5 +1,9 @@
 <template>
   <div ref="page" class="page index">
+    <DialogContainer class="intro">
+      <Teaser />
+    </DialogContainer>
+
     <SliderContainer :slided-in="designDecisionsAreVisible" class="design-decisions-container">
       <!-- SliderContainer: main content start -->
       <template v-slot:main>
@@ -44,6 +48,10 @@ export default {
 
 .page {
   height: 100%;
+
+  .intro {
+    z-index: 500;
+  }
 
   .design-decisions-container {
     height: 100%;
