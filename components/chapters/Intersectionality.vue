@@ -18,17 +18,31 @@
           In den folgenden Kapiteln findest du dazu anschauliche Erklärungen und Beispiele.
         </p>
         <div class="detour">
-          <a href="#" class="button">Erfahre mehr zur Begriffsentwicklung von Intersektionalität</a>
+          <button class="red-button" @click="showConceptDevelopment">
+            Erfahre mehr zur Begriffsentwicklung von Intersektionalität
+          </button>
         </div>
       </div>
     </div>
-    <!--
-    <PopupOverlay>
+
+    <PopupOverlay v-if="conceptDevelopmentIsVisible">
       <ConceptDevelopment />
     </PopupOverlay>
-    -->
   </div>
 </template>
+
+<script>
+import { mapState, mapMutations } from 'vuex'
+
+export default {
+  computed: {
+    ...mapState(['conceptDevelopmentIsVisible'])
+  },
+  methods: {
+    ...mapMutations(['showConceptDevelopment'])
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 @import "../../styles/_variables";

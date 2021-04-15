@@ -29,15 +29,31 @@
           Ein erster, wichtiger Schritt ist es, sich seinen eigenen Privilegien bewusst zu werden, sie zu reflektieren und anzuerkennen. Das kann beispielsweise damit beginnen, sich über Erfahrungen von Menschen, die Diskriminierung ausgesetzt sind, zu informieren.
         </p>
         <div class="detour">
-          <a href="#" class="button">Erfahre mehr zu den Dimensionen von Diskriminierung</a>
+          <button class="red-button" @click="showDiscriminationDimensions">
+            Erfahre mehr zu den Dimensionen von Diskriminierung
+          </button>
         </div>
       </div>
     </div>
-    <PopupOverlay>
+
+    <PopupOverlay v-if="discriminationDimensionsAreVisible">
       <DimensionsDiscrimination />
     </PopupOverlay>
   </div>
 </template>
+
+<script>
+import { mapState, mapMutations } from 'vuex'
+
+export default {
+  computed: {
+    ...mapState(['discriminationDimensionsAreVisible'])
+  },
+  methods: {
+    ...mapMutations(['showDiscriminationDimensions'])
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 @import "../../styles/_variables";
