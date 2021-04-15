@@ -10,20 +10,39 @@
 @import "../../styles/_variables";
 
 .dialog-container {
-  position: fixed;
+  position: absolute;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 
   background-color: rgba(30, 30, 30, 0.75);
+  overflow-y: scroll;
+  padding: 1rem;
 
   .content-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
     background-color: $color-light-grey;
 
-    padding: 3rem;
+    padding: 2rem;
+  }
+
+  @media (min-width: $media-breakpoint-min-m) {
+    .content-container {
+      position: absolute;
+      top: 20%;
+      left: 20%;
+      transform: translate(-10%, -10%);
+    }
+  }
+
+  @media (min-width: $media-breakpoint-min-l) {
+    .content-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      padding: 3rem;
+    }
   }
 }
 
