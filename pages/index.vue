@@ -1,6 +1,6 @@
 <template>
   <div ref="page" class="page index">
-    <DialogContainer class="intro">
+    <DialogContainer v-if="teaserIsVisible" class="intro">
       <Teaser />
     </DialogContainer>
 
@@ -38,7 +38,7 @@ import { mapState } from 'vuex'
 
 export default {
   computed: {
-    ...mapState(['projectDisclosureIsVisible', 'designDecisionsAreVisible'])
+    ...mapState(['projectDisclosureIsVisible', 'designDecisionsAreVisible', 'teaserIsVisible'])
   }
 }
 </script>

@@ -1,6 +1,8 @@
 export const state = () => ({
   projectDisclosureIsVisible: false,
-  designDecisionsAreVisible: false
+  designDecisionsAreVisible: false,
+  teaserIsVisible: true,
+
   conceptDevelopmentIsVisible: false,
   discriminationDimensionsAreVisible: false
 })
@@ -11,6 +13,10 @@ export const mutations = {
   },
   toggleDesignDecisionsVisibility (state) {
     state.designDecisionsAreVisible = !state.designDecisionsAreVisible
+  },
+  hideTeaser (state) {
+    state.teaserIsVisible = false
+  },
   showConceptDevelopment (state) {
     state.conceptDevelopmentIsVisible = true
   },
