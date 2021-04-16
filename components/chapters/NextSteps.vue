@@ -1,61 +1,54 @@
 <template>
   <div class="chapter and-now">
     <h2 class="chapter-title">
-      5 Und jetzt?
+      5 {{ $t('chapter5-title') }}
     </h2>
     <p>
-      Intersektionalität ist bislang weder Gegenstand von gesellschaftlichen Diskursen, noch hat der Begriff Eingang in den Alltagswortschatz in Deutschland gefunden. Das politische und transformative Potenzial, das einige Autor*innen in einer intersektionalen Perspektive sehen, ist demnach noch ungenutzt. »Das ist zu bedauern, denn es ist wünschenswert, dass sich Intersektionalität als kritische Perspektive auf Machtverhältnisse im allgemein gesellschaftlichen Diskurs durchsetzt und in selbstverständlicher Weise einbezogen wird, wann immer es um Macht, Ungleichheit und diskursive Ausschlüsse geht.« (Meyer, 2017, S.155)
-    </p>
-    <p>
-      Intersektionale Perspektiven konzentrieren sich nicht nur auf die individuelle Dimension von Diskriminierung, sondern gleichermaßen auf die institutionelle, strukturelle und historische Dimension, was das Spektrum von Maßnahmen, die Diskriminierung entgegenwirken können, erweitert.
-    </p>
-    <p>
-      Europäische rechtliche und politische Rahmenbedingungen konzeptualisieren Diskriminierung tendenziell eher aus einer eindimensionalen Perspektive. Intersektionale Perspektiven bieten das Potenzial, Personen und Gruppen, die in herkömmlichen, eindimensionalen Herangehensweisen unsichtbar bleiben, einzuschließen. Das Center for Intersectional Justice in Berlin gibt einige → Handlungsempfehlungen, um die notwendige intersektionale Perspektive in die europäischen Antidiskriminierungsarbeit zu integrieren.
+      {{ $t('chapter5-text1') }}
     </p>
 
-    <h3>Und was kann ich da jetzt machen?</h3>
+    <h3>{{ $t('chapter5-subtitle2') }}</h3>
     <p>
-      Um die weitere Beschäftigung mit dem Thema zu erleichtern, haben wir erste, mögliche To Do’s aufgelistet, mit denen du gleich beginnen kannst.
-      <br>Diese Liste ist keinesfalls vollständig oder abschließend.
+      {{ $t('chapter5-text2') }}
     </p>
 
     <ul class="personal-suggestions">
       <li>
-        Erkenne an, dass intersektionale Diskriminierung, Marginalisierung und Unterdrückung ein strukturelles und instituonelles Problem ist, und sich nicht nur auf indiviudeller Ebene widerspiegelt.
+        {{ $t('chapter5-point1') }}
       </li>
       <li>
-        Werde dir deiner Privilegien bewusst, reflektiere und hinterfrage dich. Erkenne an, dass dies unkomfortabel und unbequem ist und dass genau das gut und wichtig ist.
+        {{ $t('chapter5-point2') }}
       </li>
       <li>
-        Informiere dich eigenständig, also belese dich, besuche Veranstaltungen etc. Marginalisierte Personen stehen in keinster Weise in einer Bringschuld.
+        {{ $t('chapter5-point3') }}
       </li>
       <li>
-        Höre marginalisierten Menschen, die Diskriminierung erleben und davon berichten, zu und negiere ihre gelebten Erfahrungen nicht, sondern betrachte diese als wertvoll und beziehe sie als wichtiges Wissen ein.
+        {{ $t('chapter5-point4') }}
       </li>
       <li>
-        Erkenne an, dass die eigenen Erfahrungen, das eigene Wissen etc. situiert, partiell und voreingenommen sind, und schließe nicht von der eigenen Position, Situation und Perspektive auf andere.
+        {{ $t('chapter5-point5') }}
       </li>
       <li>
-        Übe, strukturelle Unterdrückung zu erkennen und mit einer »intersektionalen Brille« Dinge und Situationen im alltäglichen, privaten und beruflichen Leben zu beobachten! Wer ist die Norm und wen schließt sie aus?
+        {{ $t('chapter5-point6') }}
       </li>
       <li>
-        Stell dir die Frage: Wie bin ich im privaten und im beruflichen Kontext an der Aufrechterhaltung und Verstärkung diskriminierender Strukturen beteiligt?
+        {{ $t('chapter5-point7') }}
       </li>
       <li>
-        Übernehme Verantwortung – im privaten und beruflichen Leben! Wen fördere ich, wen zitiere ich, wen retweete ich, wen binde ich ein, wen stelle ich ein, …?
+        {{ $t('chapter5-point8') }}
       </li>
       <li>
-        Sprich mit anderen über Intersektionalität, Diskriminierung und Privilegierung, teile es, benenne es, diskutiere.
+        {{ $t('chapter5-point9') }}
       </li>
     </ul>
 
-    <h3>Weiterführende Quellen für Dich</h3>
+    <h3>{{ $t('chapter5-subtitle3') }}</h3>
     <p>
-      Die folgenden Quellen sind eine Sammlung von Literatur, Personen etc., die uns Autor*innen dabei geholfen haben, Intersektionalität, Diskriminierung und Privilegierung (besser) zu verstehen. Diese Liste ist keinesfalls vollständig oder abschließend.
+      {{ $t('chapter5-text3') }}
     </p>
 
     <div class="further-reading books">
-      <h4>Bücher</h4>
+      <h4>{{ $t('chapter5-heading1') }}</h4>
       <ul>
         <li>
           Die Kategorie Behinderung in der Intersektionalitätsforschung: Theoretische Grundlagen und empirische Befunde
@@ -133,7 +126,7 @@
     </div>
 
     <div class="further-reading articles">
-      <h4>Artikel</h4>
+      <h4>{{ $t('chapter5-heading2') }}</h4>
       <ul>
         <li>
           CIJ Factsheet: Intersectionality at a Glance in Europe
@@ -163,7 +156,7 @@
     </div>
 
     <div class="further-reading links">
-      <h4>Webseiten, Talks, Soziale Medien, Podcasts</h4>
+      <h4>{{ $t('chapter5-heading3') }}</h4>
       <ul>
         <li>
           Center for Intersectional Justice (https://www.intersectionaljustice.org/)

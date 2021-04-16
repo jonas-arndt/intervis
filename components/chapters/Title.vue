@@ -4,24 +4,19 @@
       <LanguageSwitcher class="language-switcher" />
 
       <div class="title-block">
-        <span class="date">XX.XX.XXXX</span>
+        <span class="date">{{ $t('startscreen-date') }}</span>
         <div class="title-container">
-          <h1>Inter…was?<br>Intersektionalität!</h1>
+          <h1>{{ $t('startscreen-title') }}</h1>
           <p class="subtitle">
-            Eine visuelle Einführung in das Zusammenwirken von Machtstrukturen
+            {{ $t('startscreen-subtitle') }}
           </p>
         </div>
         <p class="introduction">
-          Identische Qualifikationen.
-          <br>Identischer Lebenslauf.
-          <br>Identische Bewerbung.
-          <br>Der einzige Unterschied: Name und Foto.
-          <br>Warum wird Sandra zum Vorstellungsgespräch eingeladen,
-          <br>Meyrem aber nicht?
+          {{ $t('startscreen-intro') }}
         </p>
       </div>
 
-      <span class="instruction">Scrolle nach unten, um Antworten darauf zu finden.</span>
+      <span class="instruction">{{ $t('startscreen-hint') }}</span>
     </div>
   </div>
 </template>

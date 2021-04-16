@@ -3,13 +3,10 @@
     <div class="narrative">
       <div class="step">
         <h2 class="chapter-title">
-          3 Fallbeispiele aus Deutschland
+          3 {{ $t('chapter3-title') }}
         </h2>
         <p>
-          Zur Veranschaulichung der Auswirkungen von intersektionaler Diskriminierung schauen wir uns Fallbeispiele aus Deutschland an. Die folgenden Beispiele sind ein kleiner Ausschnitt der zahlreichen, intersektionalen Diskriminierungsformen und -erfahrungen.
-        </p>
-        <p>
-          Wähle ein Beispiel, worüber du mehr erfahren möchtest.
+          {{ $t('chapter3-intro1') }}
         </p>
       </div>
     </div>

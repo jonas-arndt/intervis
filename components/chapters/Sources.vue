@@ -1,22 +1,20 @@
 <template>
   <div class="chapter project-information-and-sources">
     <h2 class="chapter-title">
-      Projektinformation &amp; Quellen
+      {{ $t('projectinfo-title') }}
     </h2>
     <p>
-      Dieses Projekt versucht, Intersektionalität zugänglicher zu machen, das zentrale Anliegen zu kommunizieren und einen Einstieg zu ermöglichen. Im Rahmen dieses Projektes ist es nicht möglich, Intersektionalität vollständig in ihren detaillierten Methoden, theoretischen Ansätzen, Analyseebenen etc. zu behandeln. Auch sind die genannten Beispiele lediglich ein kleiner Ausschnitt der zahlreichen, intersektionalen Diskriminierungsformen und -erfahrungen.
-    </p>
-    <p>
-      Dieses Projekt ist geprägt von den subjektiven und partiellen Perspektiven der Projektbeteiligten.
-    </p>
-    <p>
-      In dem Teil »Einblicke in das Projekt« werden bestimmte Visualisierungsentscheidungen transparent und involvierte Personen sichtbar gemacht. Der Projektprozess wird offengelegt, die Perspektiven und Positionen der Autor*innen kommuniziert und das Projekt reflektiert.
+      {{ $t('projectinfo-text1') }}
     </p>
     <p class="disclosure-link">
       <button class="red-button" @click="$store.commit('toggleDisclosureVisibility')">
-        Einblicke in das Projekt
+        {{ $t('projectinfo-button') }}
       </button>
     </p>
+
+    <h2 class="chapter-title">
+      {{ $t('references-title') }}
+    </h2>
     <div class="references">
       <ul>
         <li>
