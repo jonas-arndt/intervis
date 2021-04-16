@@ -85,9 +85,9 @@
         "English": "Do you have comments, suggestions, ...?\u2028 Feel free to send us an email!"
     },
     {
-        "ID": "disclosure-hint",
-        "German": "Einblick in die Visualisierungsentscheidungen",
-        "English": "Insights into visualization decisions"
+        "ID": "disclosure-hint1",
+        "German": "Warum visualisieren wir Intersektionalit\u00e4t auf diese Weise?",
+        "English": "Why do we visualize Intersectionality like this?"
     },
     {
         "ID": "chapter1-bar",
@@ -173,6 +173,11 @@
         "ID": "overlay1-text4",
         "German": "Die Entwicklungslinien deutschsprachiger Intersektionalit\u00e4tstheorien sind vielf\u00e4ltiger und gebrochener, verglichen mit denen der angloamerikanischen Entwicklung. Politisch-theoretische Debatten wurden teilweise durch US-amerikanische Texte beeinflusst, teilweise aber auch unabh\u00e4ngig davon gef\u00fchrt. Impulsgeber*innen in den 1980er und 1990er Jahren waren Migrant*innen, j\u00fcdische Frauen*, Schwarze Deutsche, Frauen* mit Behinderung und Queer of Color. Sie alle machten auf ihre spezifischen Diskriminierungserfahrungen und deren Marginalisierung im deutschen Mainstream-Feminismus aufmerksam. Sie thematisierten, dass sie als \u00bbdie Anderen\u00ab repr\u00e4sentiert und ihre Themen und Forderungen nicht wahrgenommen und ber\u00fccksichtigt wurden. Dabei kritisierten sie vor allem den deutschen Mainstream-Feminismus, dessen Akteur*innen f\u00fcr sich beanspruchten, Politik f\u00fcr alle Frauen* zu betreiben, obwohl sie sich nur an den Interessen und Bed\u00fcrfnissen wei\u00dfer, cis-geschlechtlicher, christlicher, nichtbehinderter Frauen orientierten.",
         "English": "The lines of development of intersectionality theories in the German context are more diverse and fractured compared to those of Anglo-American development. Political-theoretical debates were partly influenced by US-American texts, but also partly independently of them. Impulses in the 1980s and 1990s were given by migrant women*, Jewish women*, Black Germans, women* with disabilities and Queer of Color. They all drew attention to their specific experiences of discrimination and their marginalization in German mainstream feminism. They addressed the fact that they were represented as \u00bbthe others\u00ab and that their topics and demands were not perceived and taken into account. In doing so, they especially criticized German mainstream feminism, whose actors claimed to pursue politics for all women*, although they were only oriented towards the interests and needs of white, cisgender, Christian, abled women."
+    },
+    {
+        "ID": "disclosure-hint2",
+        "German": "Warum visualisieren wir Diskriminierung auf diese Weise?",
+        "English": "Why do we visualize discrimination like this?"
     },
     {
         "ID": "chapter2-bar",
@@ -306,8 +311,13 @@
     },
     {
         "ID": "chapter3-example1-text1",
-        "German": "Frauen* mit Hidschab (muslimisches Kopftuch) werden intersektional \u2013 sexistisch, rassistisch und anti-muslimisch \u2013 in diversen Bereichen in Deutschland diskriminiert. Nicht nur auf individueller Ebene, sondern auch strukturell und institutionell. So erleben sie zum Beispiel direkte Diskriminierung beim Zugang zum Arbeitsmarkt, was ein \u2192 Experiment von Doris Weichselbaumer aus dem Jahr 2016 (S. 12ff) deutlich macht:\n1474 Bewerbungen wurden an Unternehmen in Deutschland verschickt, in allen Punkten identisch, mit Ausnahme des Namens und des Bewerbungsfotos. Drei verschiedene Identit\u00e4ten sollten in diesem Experiment getestet werden: Eine Frau* mit einem \u00bbdeutsch klingenden\u00ab Namen (Sandra Bauer), eine Frau* mit einem \u00bbt\u00fcrkisch klingenden\u00ab Namen (Meyrem \u00d6zt\u00fcrk) und eine Frau* mit einem \u00bbt\u00fcrkisch klingenden\u00ab Namen (Meyrem \u00d6zt\u00fcrk), die auf dem Bewerbungsfoto ein Hidschab tr\u00e4gt. Auf allen drei Bewerbungsfotos war die gleiche Frau* zu sehen, auf einem tr\u00e4gt sie einen Hidschab.",
-        "English": "Women* with hijab (Muslim headscarve) are exposed to intersectional \u2013 sexist, racist and anti-Muslim \u2013 discrimination in various areas in Germany. Not only on an individual level, but structurally and institutionally. For example, they experience direct discrimination in accessing the labor market as illustrated by an \u2192 experiment by Doris Weichselbaumer from 2016 (p. 12 ff):\n1474 applications were sent to companies in Germany, identical in all points except name and application photo. Three different identities were to be tested in this experiment: A woman* with a \u00bbGerman sounding\u00ab name (Sandra Bauer), a woman* with a \u00bbTurkish sounding\u00ab name (Meyrem \u00d6zt\u00fcrk) and a woman* with a \u00bbTurkish sounding\u00ab name (Meyrem \u00d6zt\u00fcrk) wearing a hijab in the application photo. All three application photos show the same woman*, in one of them she is wearing a hijab.\n"
+        "German": "Frauen* mit Hidschab (muslimisches Kopftuch) werden intersektional \u2013 sexistisch, rassistisch und anti-muslimisch \u2013 in diversen Bereichen in Deutschland diskriminiert. Nicht nur auf individueller Ebene, sondern auch strukturell und institutionell. So erleben sie zum Beispiel direkte Diskriminierung beim Zugang zum Arbeitsmarkt, was ein \u2192 Experiment von Doris Weichselbaumer aus dem Jahr 2016 (S. 12ff) deutlich macht:\n\n1474 Bewerbungen wurden an Unternehmen in Deutschland verschickt, in allen Punkten identisch, mit Ausnahme des Namens und des Bewerbungsfotos. Drei verschiedene Identit\u00e4ten sollten in diesem Experiment getestet werden: Eine Frau* mit einem \u00bbdeutsch klingenden\u00ab Namen (Sandra Bauer), eine Frau* mit einem \u00bbt\u00fcrkisch klingenden\u00ab Namen (Meyrem \u00d6zt\u00fcrk) und eine Frau* mit einem \u00bbt\u00fcrkisch klingenden\u00ab Namen (Meyrem \u00d6zt\u00fcrk), die auf dem Bewerbungsfoto ein Hidschab tr\u00e4gt. Auf allen drei Bewerbungsfotos war die gleiche Frau* zu sehen, auf einem tr\u00e4gt sie einen Hidschab.",
+        "English": "Women* with hijab (Muslim headscarve) are exposed to intersectional \u2013 sexist, racist and anti-Muslim \u2013 discrimination in various areas in Germany. Not only on an individual level, but structurally and institutionally. For example, they experience direct discrimination in accessing the labor market as illustrated by an \u2192 experiment by Doris Weichselbaumer from 2016 (p. 12 ff):\n\n1474 applications were sent to companies in Germany, identical in all points except name and application photo. Three different identities were to be tested in this experiment: A woman* with a \u00bbGerman sounding\u00ab name (Sandra Bauer), a woman* with a \u00bbTurkish sounding\u00ab name (Meyrem \u00d6zt\u00fcrk) and a woman* with a \u00bbTurkish sounding\u00ab name (Meyrem \u00d6zt\u00fcrk) wearing a hijab in the application photo. All three application photos show the same woman*, in one of them she is wearing a hijab.\n"
+    },
+    {
+        "ID": "disclosure-hint3",
+        "German": "Warum visualisieren wir die Daten auf diese Weise?",
+        "English": "Why do we visualize the data like this?"
     },
     {
         "ID": "chapter3-exampl1-vis1",
@@ -390,6 +400,11 @@
         "English": "In 2017, the 20-year-old successfully sued North Rhine-Westphalia (state of Germany) because he was wrongly classified as intellectually disabled in a placement test when he was 7 years old and as a result had to attend a special education school designed for children with disabilities. At the time of the test, he could only speak Romanes, the language of the Rom*nja, which was equated with low intelligence. Such supposedly \u00bbneutral\u00ab methods in the educational system, which do not adequately take into account e.g. a lack of language skills, lead in practice to a disproportionately number of e.g. Sinti*zze and Rom*nja children being wrongly diagnosed with special needs and learning disabilities and thus being disadvantaged due to their ethnicity and class.\n(Quote by Nenad Mihailovic from the \u2192 documentary \u00bbF\u00fcr dumm erkl\u00e4rt - Nenads zweite Chance\u00ab from 2018, minute 0\u201336, translated)\n\nA \u2192 study on the educational situation of German Sinti*zze and Rom*nja from 2011 (p. 101 f), edited by Daniel Strau\u00df, highlights this structural discrimination of Sinti*zze and Rom*nja in the education system:"
     },
     {
+        "ID": "disclosure-hint3",
+        "German": "Warum visualisieren wir die Daten auf diese Weise?",
+        "English": "Why do we visualize the data like this?"
+    },
+    {
         "ID": "chapter3-example2-vis1",
         "German": "24,40%",
         "English": "24,40%"
@@ -468,6 +483,11 @@
         "ID": "chapter3-example3-text1",
         "German": "Frauen* mit Behinderung erfahren, aufgrund ihres Geschlechtes und ihrer Behinderung, in diversen Bereichen in Deutschland Diskriminierung \u2013 auf individueller, struktureller und institutioneller Ebene. Vor allem in der Gesundheitsversorgung und in der Erwerbst\u00e4tigkeit.\n\nEine \u2192 Studie von 2012, herausgegeben vom Bundesministerium f\u00fcr Familie, Senioren, Frauen und Jugend (S. 21 & 24), zeigt die besondere Vulnerabilit\u00e4t und Gef\u00e4hrdung von Frauen* mit Behinderung:",
         "English": "Women* with disabilities experience discrimination on the basis of their gender and disability in various areas in Germany \u2013 on individual, structural and institutional level. Particularly in health care and employment.\n\nA \u2192 study from 2012, published by the Federal Ministry for Family Affairs, Senior Citizens, Women and Youth (p. 21 & 24), shows the particular vulnerability and endangerment of women* with disabilities:"
+    },
+    {
+        "ID": "disclosure-hint3",
+        "German": "Warum visualisieren wir die Daten auf diese Weise?",
+        "English": "Why do we visualize the data like this?"
     },
     {
         "ID": "chapter3-example3-vis1",
@@ -665,6 +685,11 @@
         "English": "More"
     },
     {
+        "ID": "projectinfo-title",
+        "German": "Projektinformationen",
+        "English": "Project information"
+    },
+    {
         "ID": "projectinfo-text1",
         "German": "Dieses Projekt versucht, Intersektionalit\u00e4t zug\u00e4nglicher zu machen, das zentrale Anliegen zu kommunizieren und einen Einstieg zu erm\u00f6glichen. Im Rahmen dieses Projektes ist es nicht m\u00f6glich, Intersektionalit\u00e4t vollst\u00e4ndig in ihren detaillierten Methoden, theoretischen Ans\u00e4tzen, Analyseebenen etc. zu behandeln. Auch sind die genannten Beispiele lediglich ein kleiner Ausschnitt der zahlreichen, intersektionalen Diskriminierungsformen und -erfahrungen.\nDieses Projekt ist gepr\u00e4gt von den subjektiven und partiellen Perspektiven des Projektteams. In dem Teil \u00bbEinblicke in das Projekt\u00ab werden bestimmte Visualisierungsentscheidungen transparent und involvierte Personen sichtbar gemacht. Der Projektprozess wird offengelegt, die Perspektiven und Positionen der Autor*innen werden kommuniziert und die Projektergebnisse reflektiert.",
         "English": "This project attempts to make intersectionality more accessible, to communicate its central concern and to provide an introduction. Within the context of this project, it is not possible to illustrate intersectionality in its detailed methods, theoretical approaches, levels of analysis, etc. Also, the examples given are only a small sample of the numerous, intersectional forms and experiences of discrimination.\nThis project is shaped by the subjective and partial perspectives of the project team. In the \u00bbInsights into the project\u00ab part, we make certain visualization decisions transparent and people involved visible. We disclose the project process, communicate the perspectives and positions of the authors and reflect on the project outcomes.\n"
@@ -673,5 +698,10 @@
         "ID": "projectinfo-button",
         "German": "Einblicke in das Projekt",
         "English": "Insights into the project"
+    },
+    {
+        "ID": "references-title",
+        "German": "Quellen",
+        "English": "References"
     }
 ]

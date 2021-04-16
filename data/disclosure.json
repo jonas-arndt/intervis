@@ -61,8 +61,8 @@
     },
     {
         "ID": "slidein1-image3",
-        "German": "name.png",
-        "English": "name.png"
+        "German": "alternative1.png",
+        "English": "alternative1.png"
     },
     {
         "ID": "slidein1-text3",
@@ -131,8 +131,8 @@
     },
     {
         "ID": "slidein2-image4",
-        "German": "name.png",
-        "English": "name.png"
+        "German": "alternative2.png",
+        "English": "alternative2.png"
     },
     {
         "ID": "slidein2-text4",
@@ -241,8 +241,8 @@
     },
     {
         "ID": "backside-process-image1",
-        "German": "name.png",
-        "English": "name.png"
+        "German": "process1_de.png",
+        "English": "process1_en.png"
     },
     {
         "ID": "backside-process-heading1",
@@ -271,8 +271,8 @@
     },
     {
         "ID": "backside-process-image2",
-        "German": "name.png",
-        "English": "name.png"
+        "German": "designdrafts.png",
+        "English": "designdrafts.png"
     },
     {
         "ID": "backside-process-text3",
@@ -282,7 +282,7 @@
     {
         "ID": "backside-process-heading4",
         "German": "Feedback Expert*innen und Weiterentwicklung",
-        "English": "Expert feedback and further development"
+        "English": "Expert feedback and Further development"
     },
     {
         "ID": "backside-process-text4",
@@ -301,13 +301,13 @@
     },
     {
         "ID": "backside-process-image3",
-        "German": "name.png",
-        "English": "name.png"
+        "German": "process2_de.png",
+        "English": "process1_en.png"
     },
     {
         "ID": "backside-process-heading5",
         "German": "Feedback & Verfeinerung und Implementierung",
-        "English": "Feedback & refinement and implementation"
+        "English": "Feedback & refinement and Implementation"
     },
     {
         "ID": "backside-process-text5",
@@ -317,7 +317,7 @@
     {
         "ID": "backside-process-heading6",
         "German": "Ver\u00f6ffentlichung & Evaluation",
-        "English": "Publishing & Evaluation"
+        "English": "Publishing & evaluation"
     },
     {
         "ID": "backside-process-text6",
@@ -327,7 +327,7 @@
     {
         "ID": "backside-process-heading7",
         "German": "Auswertung & \u00dcberarbeitung",
-        "English": "Revision"
+        "English": "Evaluation analysis & revision"
     },
     {
         "ID": "backside-process-text7",
@@ -335,9 +335,14 @@
         "English": "Lorem ipsum"
     },
     {
+        "ID": "backside-process-heading8",
+        "German": "Paper Einreichung",
+        "English": "Paper submission"
+    },
+    {
         "ID": "backside-process-text8",
-        "German": "Parallel zur Implementierung des Artikels wurde ein wissenschaftliches Paper verfasst. Der Fokus liegt hierbei auf der kritischen Praxis der Offenlegung (\u00bbdisclosure\u00ab) als Prinzip feministischer Datenvisualisierung. Dieser Scrollytelling Artikel bildet die Case Study f\u00fcr das Paper. Wir definieren darin inhaltliche Aspekte der Offenlegung, die notwendig sind f\u00fcr das kritische Lesen und Reflektieren von Visualisierungen und ihren Kontexten. Wir schlagen verschiedene Formen vor, um die kritische Praxis der Offenlegung in Datenvisualisierungen und visuelle Interfaces einzubetten.\nSobald das Paper ver\u00f6ffentlicht ist, wird es hier verlinkt.",
-        "English": "In addition to the implementation of the scrollytelling article, we prepared a paper focusing on disclosure as a critical technical practice of feminist data visualization. This scrollytelling article provides the case study for the paper. In the paper we define content-related aspects of disclosure, all of which are necessary to critically read and reflect a visualization and its context. We propose distinct forms for embedding the critical practice of disclosure in data visualizations and visual interfaces.\nOnce the paper is published, it will be linked here."
+        "German": "Neben dem Scrollytelling Artikel haben wir auch ein wissenschaftliches Paper verfasst. Der Fokus liegt hierbei auf der kritischen Praxis der Offenlegung (\u00bbdisclosure\u00ab) als Prinzip feministischer Datenvisualisierung. Dieser Scrollytelling Artikel bildet die Case Study f\u00fcr das Paper. Wir definieren darin inhaltliche Aspekte der Offenlegung, die notwendig sind f\u00fcr das kritische Lesen und Reflektieren von Visualisierungen und ihren Kontexten. Wir schlagen verschiedene Formen vor, um die kritische Praxis der Offenlegung in Datenvisualisierungen und visuelle Interfaces einzubetten.\nSobald das Paper ver\u00f6ffentlicht ist, wird es hier verlinkt.",
+        "English": "In addition to the scrollytelling article, we prepared a paper focusing on disclosure as a critical technical practice of feminist data visualization. This scrollytelling article provides the case study for the paper. In the paper we define content-related aspects of disclosure, all of which are necessary to critically read and reflect a visualization and its context. We propose distinct forms for embedding the critical practice of disclosure in data visualizations and visual interfaces.\nOnce the paper is published, it will be linked here."
     },
     {
         "ID": "backside-decision\u2013subtitle1",
@@ -391,8 +396,8 @@
     },
     {
         "ID": "backside-decision-image4",
-        "German": "name.png",
-        "English": "name.png"
+        "German": "alternative1.png",
+        "English": "alternative1.png"
     },
     {
         "ID": "backside-decision-text3",
@@ -461,8 +466,8 @@
     },
     {
         "ID": "backside-decision-image5",
-        "German": "name.png",
-        "English": "name.png"
+        "German": "alternative2.png",
+        "English": "alternative2.png"
     },
     {
         "ID": "backside-decision-text7",
@@ -576,7 +581,7 @@
     },
     {
         "ID": "backside-reflection-text1",
-        "German": "Marginalisierte Personen erfahren im Rahmen vorherrschender Machtverh\u00e4ltnisse Diskriminierung und k\u00f6nnen so oftmals Privilegien sehen und erkennen, die sie selbst nicht besitzen und die f\u00fcr die Privilegierten meist nicht sichtbar sind. Auch kennen sie ihre Probleme und wissen, welche Ph\u00e4nomene in vorherrschenden Machtverh\u00e4ltnissen nicht gez\u00e4hlt, f\u00fcr nicht wichtig erkl\u00e4rt und/oder vernachl\u00e4ssigt werden. Die aktive und bewusste Zusammenarbeit mit marginalisierten Positionen in Forschungs- und Designprozessen ist deshalb bereichernd, wertvoll und vor allem notwendig. Das Generieren von Wissen \u00bbfrom the margins\u00ab ist ein feministischer Akt und fokussiert das Ziel der \u00bbCo-liberation\u00ab \u2013 einen Endzustand, in dem Menschen aus dominanten und marginalisierten Gruppen zusammenarbeiten, um vorherrschende Machtverh\u00e4ltnissen abzubauen.\n\u2028Im Rahmen dieses Projektes fand keine stetige Zusammenarbeit mit intersektional marginalisierten Personen statt. Die punktuelle Einbeziehung von Expert*innen zu Intersektionalit\u00e4t im Projektprozess und das Projektteam bestehend aus Personen verschiedener Disziplinen ist ein erster wichtiger Schritt, jedoch bei weitem nicht ausreichend.",
+        "German": "Marginalisierte Personen erfahren im Rahmen vorherrschender Machtverh\u00e4ltnisse Diskriminierung und k\u00f6nnen so oftmals Privilegien sehen und erkennen, die sie selbst nicht besitzen und die f\u00fcr die Privilegierten meist nicht sichtbar sind. Auch kennen sie ihre Probleme und wissen, welche Ph\u00e4nomene in vorherrschenden Machtverh\u00e4ltnissen nicht gez\u00e4hlt, f\u00fcr nicht wichtig erkl\u00e4rt und/oder vernachl\u00e4ssigt werden. Die aktive und bewusste Zusammenarbeit mit marginalisierten Positionen in Forschungs- und Designprozessen ist deshalb bereichernd, wertvoll und vor allem notwendig. Das Generieren von Wissen \u00bbfrom the margins\u00ab ist ein feministischer Akt und fokussiert das Ziel der \u00bbCo-liberation\u00ab \u2013 einen Endzustand, in dem Menschen aus dominanten und marginalisierten Gruppen zusammenarbeiten, um vorherrschende Machtverh\u00e4ltnissen abzubauen.\nIm Rahmen dieses Projektes fand keine stetige Zusammenarbeit mit intersektional marginalisierten Personen statt. Die punktuelle Einbeziehung von Expert*innen zu Intersektionalit\u00e4t im Projektprozess und das Projektteam bestehend aus Personen verschiedener Disziplinen ist ein erster wichtiger Schritt, jedoch bei weitem nicht ausreichend.",
         "English": "Marginalized individuals are exposed to discrimination within the context of prevailing power relations and can thus often see and recognize privileges that they themselves do not possess and that are usually not visible to the privileged. They also are aware of their problems and know which phenomena are not counted, declared as not important and/or neglected in prevailing power relations. The active and conscious collaboration with marginalized positions in research and design processes is therefore enriching, valuable and above all necessary. Generating knowledge \u00bbfrom the margins\u00ab is a feminist act and focuses on the goal of \u00bbco-liberation\u00ab \u2013 an end state in which people from dominant and marginalized groups work together to dismantle prevailing power relations.\n\u2028This project did not involve ongoing collaboration with intersectionally marginalized people. The selective inclusion of experts on intersectionality in the project process and the project team consisting of people from different disciplines is an important first step, but far from sufficient."
     },
     {
@@ -601,7 +606,7 @@
     },
     {
         "ID": "backside-reflection-text3",
-        "German": "Zun\u00e4chst gibt es die grundlegende Problematik, dass visuelle Elemente prinzipiell bestimmte Personen ausschlie\u00dfen. Beispielsweise k\u00f6nnen sie von Screenreadern, die Menschen mit Sehbeeintr\u00e4chtigung Webseiten vorlesen, nicht gelesen werden. Hier ist eine M\u00f6glichkeit, visuelle Elemente mit Texten zu beschreiben, was wir in diesem Projekt umgesetzt haben.\nAufgrund zeitlicher Kapazit\u00e4t und mangelnder Expertise wurden in diesem Projekt einige Aspekte der Barrierefreiheit nicht umgesetzt und es fand keine detaillierte Besch\u00e4ftigung mit diesem Thema statt. Der Scrollytelling Artikel weist folglich diesbez\u00fcglich einige M\u00e4ngel auf.\nWeitere, notwendige Schritte sind der Einbezug von Expert*innen zu diesem Thema und die detaillierte Untersuchung, was bez\u00fcglich Barrierefreiheit innerhalb dieses Scrollytelling Artikels umgesetzt werden sollte, beispielsweise Tastatur-Navigation, von Leser*innen ver\u00e4nderbare Parameter wie zum Beispiel Kontrast, Schriftgr\u00f6\u00dfe, Farbe etc.",
-        "English": "There is the fundamental problem that visual elements exclude certain people in general. For example, they cannot be read by screen readers reading web pages to people with visual impairments. Here, one option is to describe visual elements with text, which is what we implemented in this project.\nDue to time capacity and lack of expertise, several aspects of accessibility were not implemented in this project and no detailed consideration of this topic was carried out. As a result, the scrollytelling article has several deficiencies regarding accessibility.\nFurther required steps are the involvement of experts on this topic and the detailed investigation of what should be implemented within this scrollytelling article regarding accessibility, e.g. keyboard navigation, parameters that can be adjusted by readers such as contrast, font size, color, etc."
+        "German": "Zun\u00e4chst gibt es die grundlegende Problematik, dass visuelle Elemente prinzipiell bestimmte Personen ausschlie\u00dfen. Beispielsweise k\u00f6nnen sie von Screenreadern, die Menschen mit Sehbeeintr\u00e4chtigung Webseiten vorlesen, nicht gelesen werden. Hier ist eine M\u00f6glichkeit, visuelle Elemente mit Texten zu beschreiben, was ein n\u00e4chster Schritt in diesem Projekt sein muss.\nAufgrund zeitlicher Kapazit\u00e4t und mangelnder Expertise wurden in diesem Projekt einige Aspekte der Barrierefreiheit nicht umgesetzt und es fand keine detaillierte Besch\u00e4ftigung mit diesem Thema statt. Der Scrollytelling Artikel weist folglich diesbez\u00fcglich einige M\u00e4ngel auf.\nWeitere, notwendige Schritte sind der Einbezug von Expert*innen zu diesem Thema und die detaillierte Untersuchung, was bez\u00fcglich Barrierefreiheit innerhalb dieses Scrollytelling Artikels umgesetzt werden sollte, beispielsweise Tastatur-Navigation, von Leser*innen ver\u00e4nderbare Parameter wie zum Beispiel Kontrast, Schriftgr\u00f6\u00dfe, Farbe etc.",
+        "English": "There is the fundamental problem that visual elements exclude certain people in general. For example, they cannot be read by screen readers reading web pages to people with visual impairments. Here, one option is to describe visual elements with text, which must be a next step in this project.\nDue to time capacity and lack of expertise, several aspects of accessibility were not implemented in this project and no detailed consideration of this topic was carried out. As a result, the scrollytelling article has several deficiencies regarding accessibility.\nFurther required steps are the involvement of experts on this topic and the detailed investigation of what should be implemented within this scrollytelling article regarding accessibility, e.g. keyboard navigation, parameters that can be adjusted by readers such as contrast, font size, color, etc."
     }
 ]
