@@ -200,11 +200,6 @@
         "English": "Back to article"
     },
     {
-        "ID": "mail-hint",
-        "German": "Du hast Anmerkungen, Vorschl\u00e4ge, ...?\u2028 Wir freuen uns \u00fcber eine Mail von Dir!",
-        "English": "Do you have comments, suggestions, ...?\u2028 Feel free to send us an email!"
-    },
-    {
         "ID": "backside-menu1",
         "German": "Projektprozess & Methoden",
         "English": "Project process & methods"
