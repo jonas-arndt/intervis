@@ -25,6 +25,10 @@
     <PopupOverlay v-if="conceptDevelopmentIsVisible" @close="hideConceptDevelopment()">
       <ConceptDevelopment />
     </PopupOverlay>
+
+    <SliderContent>
+      <DesignDecisions1 />
+    </SliderContent>
   </div>
 </template>
 

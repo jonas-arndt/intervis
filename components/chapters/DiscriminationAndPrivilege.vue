@@ -1,5 +1,6 @@
 <template>
   <div class="chapter discrimination_and_privilege">
+    <SlideInToggleButton />
     <DiscriminationVisualization class="background-visualization" />
     <div class="narrative">
       <div class="step">
@@ -30,6 +31,10 @@
     <PopupOverlay v-if="discriminationDimensionsAreVisible" @close="hideDiscriminationDimensions()">
       <DimensionsDiscrimination />
     </PopupOverlay>
+
+    <SliderContent>
+      <DesignDecisions2 />
+    </SliderContent>
   </div>
 </template>
 

@@ -37,6 +37,10 @@
         </p>
       </div>
     </div>
+
+    <SliderContent>
+      <DesignDecisions3 />
+    </SliderContent>
   </div>
 </template>
 
