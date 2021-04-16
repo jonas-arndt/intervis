@@ -1,11 +1,8 @@
 <template>
   <div class="language-switcher">
     <ul>
-      <li :class="{ 'active': language == 'de' }">
-        <a href="#" @click.prevent="language = 'de'">DE</a>
-      </li>
-      <li :class="{ 'active': language == 'en' }">
-        <a href="#" @click.prevent="language = 'en'">EN</a>
+      <li v-for="localeName, localeKey in locales" :key="localeKey" :class="{ 'active': $i18n.locale == localeKey }">
+        <a href="#" @click.prevent="$i18n.setLocale(localeKey)">{{ localeName }}</a>
       </li>
     </ul>
   </div>
@@ -15,7 +12,10 @@
 export default {
   data () {
     return {
-      language: 'de'
+      locales: {
+        de: 'DE',
+        en: 'EN'
+      }
     }
   }
 }
