@@ -55,19 +55,12 @@ export default {
   ],
 
   i18n: {
-    locales: ['en', 'de'],
+    locales: [
+      { code: 'en', iso: 'en-US', file: 'en.js' },
+      { code: 'de', iso: 'de-DE', file: 'de.js' }
+    ],
     defaultLocale: 'en',
-    vueI18n: {
-      fallbackLocale: 'en',
-      messages: {
-        en: {
-          greeting: 'Hello world!'
-        },
-        de: {
-          greeting: '¡Hola mundo!'
-        }
-      }
-    }
+    langDir: '~/locales/',
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
