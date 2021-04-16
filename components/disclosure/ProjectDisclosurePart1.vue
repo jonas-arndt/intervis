@@ -6,7 +6,8 @@
       {{ $t('backside-process-intro1') }}
     </p>
 
-    <img src="~/assets/images/disclosure/timeline-phase-a.png">
+    <img v-if="$i18n.locale == 'de'" src="~/assets/intervis_disclosure_figures/process1_de.png">
+    <img v-if="$i18n.locale == 'en'" src="~/assets/intervis_disclosure_figures/process1_en.png">
 
     <h3>{{ $t('backside-process-heading1') }}</h3>
     <p>
@@ -19,6 +20,7 @@
     </p>
 
     <h3>{{ $t('backside-process-heading3') }}</h3>
+    <img src="~/assets/intervis_disclosure_figures/designdrafts.png">
     <p>
       {{ $t('backside-process-text3') }}
     </p>
@@ -33,7 +35,8 @@
       {{ $t('backside-process-intro2') }}
     </p>
 
-    <img src="~/assets/images/disclosure/timeline-phase-b.png">
+    <img v-if="$i18n.locale == 'de'" src="~/assets/intervis_disclosure_figures/process2_de.png">
+    <img v-if="$i18n.locale == 'en'" src="~/assets/intervis_disclosure_figures/process2_en.png">
 
     <h3>{{ $t('backside-process-heading5') }}</h3>
     <p>

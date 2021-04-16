@@ -32,8 +32,7 @@
         {{ $t('backside-decision-button3') }}
       </template>
       <template v-slot:answer>
-        <img src="~/assets/images/disclosure/alternative-drafts-1.png">
-        <img src="~/assets/images/disclosure/alternative-drafts-2.png">
+        <img src="~/assets/intervis_disclosure_figures/alternative1.png">
         <p>
           {{ $t('backside-decision-text3') }}
         </p>
