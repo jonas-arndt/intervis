@@ -1,6 +1,6 @@
 <template>
   <a :class="['slide-in-toggle-button', designDecisionsAreVisible ? 'active' : '']" @click="$store.commit('toggleDesignDecisionsVisibility')">
-    <span class="label">Einblick in die Visuali-<br>sierungsentscheidungen</span>
+    <span class="label"><slot /></span>
   </a>
 </template>
 

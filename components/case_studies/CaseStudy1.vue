@@ -1,6 +1,9 @@
 <template>
   <div class="case-study working-women">
-    <SlideInToggleButton />
+    <SlideInToggleButton>
+      {{ $t('disclosure-hint3') }}
+    </SlideInToggleButton>
+
     <WorkingWomanVisualization class="background-visualization" />
     <div class="narrative">
       <div class="step">

@@ -1,6 +1,9 @@
 <template>
   <div class="chapter discrimination_and_privilege">
-    <SlideInToggleButton />
+    <SlideInToggleButton>
+      {{ $t('disclosure-hint2') }}
+    </SlideInToggleButton>
+
     <DiscriminationVisualization class="background-visualization" />
     <div class="narrative">
       <div class="step">

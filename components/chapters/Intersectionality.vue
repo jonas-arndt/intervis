@@ -1,6 +1,9 @@
 <template>
   <div class="chapter what-is-intersectionality">
-    <SlideInToggleButton />
+    <SlideInToggleButton>
+      {{ $t('disclosure-hint1') }}
+    </SlideInToggleButton>
+
     <div class="narrative">
       <div class="step">
         <h2 class="chapter-title">
