@@ -25,8 +25,6 @@
 @import "../../styles/_variables";
 
 .chapter.grid-visualization {
-  position: relative;
-
   .narrative {
     position: relative;
     padding-top: 30vh;

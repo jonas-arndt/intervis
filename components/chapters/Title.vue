@@ -25,7 +25,6 @@
 @import "../../styles/_variables";
 
 .chapter.title {
-  position: relative;
   padding: 1rem;
 
   .language-switcher {

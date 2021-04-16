@@ -45,8 +45,6 @@ export default {
 @import "../../styles/_variables";
 
 .chapter.what-is-intersectionality {
-  position: relative;
-
   .narrative {
     padding-top: 50vh;
     padding-bottom: 50vh;
