@@ -12,11 +12,11 @@
     <p>
       In dem Teil »Einblicke in das Projekt« werden bestimmte Visualisierungsentscheidungen transparent und involvierte Personen sichtbar gemacht. Der Projektprozess wird offengelegt, die Perspektiven und Positionen der Autor*innen kommuniziert und das Projekt reflektiert.
     </p>
-    <div class="disclosure-link">
-      <button class="button" @click="$store.commit('toggleDisclosureVisibility')">
+    <p class="disclosure-link">
+      <button class="red-button" @click="$store.commit('toggleDisclosureVisibility')">
         Einblicke in das Projekt
       </button>
-    </div>
+    </p>
     <div class="references">
       <ul>
         <li>

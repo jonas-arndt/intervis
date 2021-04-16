@@ -51,7 +51,7 @@ a.cross-reference {
   }
 }
 
-.detour .button, .disclosure-link .button {
+.red-button {
   display: inline-block;
   padding: 0.8em 1.2em 0.8em 1.2em;
 

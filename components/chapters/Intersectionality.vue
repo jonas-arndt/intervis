@@ -17,11 +17,11 @@
         <p>
           In den folgenden Kapiteln findest du dazu anschauliche Erklärungen und Beispiele.
         </p>
-        <div class="detour">
+        <p class="detour">
           <button class="red-button" @click="showConceptDevelopment">
             Erfahre mehr zur Begriffsentwicklung von Intersektionalität
           </button>
-        </div>
+        </p>
       </div>
     </div>
 
@@ -53,6 +53,10 @@ export default {
   .narrative {
     padding-top: 50vh;
     padding-bottom: 50vh;
+
+    .detour {
+      margin-top: 3em;
+    }
 
     .step {
       margin-bottom: 100vh;

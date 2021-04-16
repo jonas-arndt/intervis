@@ -28,11 +28,11 @@
         <p>
           Ein erster, wichtiger Schritt ist es, sich seinen eigenen Privilegien bewusst zu werden, sie zu reflektieren und anzuerkennen. Das kann beispielsweise damit beginnen, sich über Erfahrungen von Menschen, die Diskriminierung ausgesetzt sind, zu informieren.
         </p>
-        <div class="detour">
+        <p class="detour">
           <button class="red-button" @click="showDiscriminationDimensions">
             Erfahre mehr zu den Dimensionen von Diskriminierung
           </button>
-        </div>
+        </p>
       </div>
     </div>
 
