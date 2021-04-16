@@ -1,9 +1,10 @@
 <template>
   <div class="project-disclosure content">
-    project disclosure
     <button @click="$store.commit('toggleDisclosureVisibility')">
-      Zurück zur Visualisierung
+      {{ $t('backside-button') }}
     </button>
+
+    <ProjectDisclosurePart1 />
   </div>
 </template>
 
