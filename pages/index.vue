@@ -4,32 +4,21 @@
       <Teaser />
     </DialogContainer>
 
-    <SliderContainer :slided-in="designDecisionsAreVisible" class="design-decisions-container">
-      <!-- SliderContainer: main content start -->
-      <template v-slot:main>
-        <FlipContainer ref="flipContainer" :flipped="projectDisclosureIsVisible">
-          <!-- FlipContainer: front content start -->
-          <template v-slot:front>
-            <ArticleContent />
-          </template>
-          <!-- FlipContainer: front content end -->
-
-          <!-- FlipContainer: back content start-->
-          <template v-slot:back>
-            <ProjectDisclosure />
-          </template>
-          <!-- FlipContainer: back content end -->
-        </FlipContainer>
+    <FlipContainer ref="flipContainer" :flipped="projectDisclosureIsVisible">
+      <!-- FlipContainer: front content start -->
+      <template v-slot:front>
+        <SliderContainer :slided-in="designDecisionsAreVisible" class="design-decisions-container">
+          <ArticleContent />
+        </SliderContainer>
       </template>
-      <!-- SliderContainer: main content end -->
+      <!-- FlipContainer: front content end -->
 
-      <!-- SliderContainer: slide in content start -->
-      <template v-slot:slide-in>
-        test
-        <SlideInContent />
+      <!-- FlipContainer: back content start-->
+      <template v-slot:back>
+        <ProjectDisclosure />
       </template>
-      <!-- SliderContainer: slide in content end -->
-    </SliderContainer>
+      <!-- FlipContainer: back content end -->
+    </FlipContainer>
   </div>
 </template>
 

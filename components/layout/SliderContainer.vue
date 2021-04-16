@@ -1,11 +1,6 @@
 <template>
   <div :class="['slider-container', 'layout', slidedIn ? 'slided-in' : '']">
-    <div class="main-content">
-      <slot name="main" />
-    </div>
-    <div class="slide-in-content">
-      <slot name="slide-in" />
-    </div>
+    <slot />
   </div>
 </template>
 
@@ -26,22 +21,9 @@ export default {
 .slider-container {
   position: relative;
   height: 100%;
-
   left: 0;
 
   transition: 1s;
-
-  .main-content {
-    height: 100%;
-  }
-
-  .slide-in-content {
-    position: absolute;
-    top: 0;
-    left: 100%;
-    width: 50%;
-
-  }
 
   &.slided-in {
     left: -50%;
