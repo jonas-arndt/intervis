@@ -96,8 +96,8 @@
     },
     {
         "ID": "chapter1-title",
-        "German": "Intersektionalit\u00e4t \u2013 eine erste Definition",
-        "English": "Intersectionality \u2013 a first Definition"
+        "German": "1 Intersektionalit\u00e4t \u2013 eine erste Definition",
+        "English": "1 Intersectionality \u2013 a first Definition1 "
     },
     {
         "ID": "chapter1-text1",
@@ -186,8 +186,8 @@
     },
     {
         "ID": "chapter2-title",
-        "German": "Diskriminierung & Privilegierung",
-        "English": "Discrimination & Privilege"
+        "German": "2 Diskriminierung & Privilegierung",
+        "English": "2 Discrimination & Privilege "
     },
     {
         "ID": "chapter2-text1",
@@ -200,9 +200,34 @@
         "English": "Access\nInclusion\nParticipation\nAcknowledgement"
     },
     {
-        "ID": "chapter2-vis2",
-        "German": "In allen sozialen Kategorien privilegiert\nz.B. wei\u00dfer, heterosexueller, cis-geschlechtlicher, junger, nicht armer Mann ohne Behinderung\n\nAufgrund des Geschlechtes diskriminiert (Sexismus), in Bezug auf andere soziale Kategorien privilegiert\nz.B. wei\u00dfe, heterosexuelle, cis-geschlechtliche, junge, nicht arme Frau ohne Behinderung\n\nAufgrund des Geschlechtes (Sexismus), der \u203aRasse\u2039 (Rassismus) und der Klassenzugeh\u00f6rigkeit (Klassismus) diskriminiert, in Bezug auf andere soziale Kategorien privilegiert\nz.B. heterosexuelle, cis-geschlechtliche, junge, arme Frau of Color ohne Behinderung\n",
-        "English": "Privileged in all social categories\ne.g. white, heterosexual, cisgender, young, middle-class man without disabilities\n\nDiscriminated against on the basis of gender (sexism), privileged in other social categories\ne.g. white, heterosexual, cisgender, young, middle-class woman without disabilities\n\nDiscriminated against on the basis of gender (sexism), race (racism) and class (classism), privileged in other social categories\ne.g. heterosexual, cisgender, young, poor Woman of Color without disabilities"
+        "ID": "chapter2-vis2-title1",
+        "German": "In allen sozialen Kategorien privilegiert",
+        "English": "Privileged in all social categories"
+    },
+    {
+        "ID": "chapter2-vis2-examples1",
+        "German": "z.B. wei\u00dfer, heterosexueller, cis-geschlechtlicher, junger, nicht armer Mann ohne Behinderung",
+        "English": "e.g. white, heterosexual, cisgender, young, middle-class man without disabilities"
+    },
+    {
+        "ID": "chapter2-vis2-title2",
+        "German": "Aufgrund des Geschlechtes diskriminiert (Sexismus), in Bezug auf andere soziale Kategorien privilegiert",
+        "English": "Discriminated against on the basis of gender (sexism), privileged in other social categories"
+    },
+    {
+        "ID": "chapter2-vis2-examples2",
+        "German": "z.B. wei\u00dfe, heterosexuelle, cis-geschlechtliche, junge, nicht arme Frau ohne Behinderung",
+        "English": "e.g. white, heterosexual, cisgender, young, middle-class woman without disabilities"
+    },
+    {
+        "ID": "chapter2-vis2-title3",
+        "German": "Aufgrund des Geschlechtes (Sexismus), der \u203aRasse\u2039 (Rassismus) und der Klassenzugeh\u00f6rigkeit (Klassismus) diskriminiert, in Bezug auf andere soziale Kategorien privilegiert",
+        "English": "Discriminated against on the basis of gender (sexism), race (racism) and class (classism), privileged in other social categories"
+    },
+    {
+        "ID": "chapter2-vis2-examples3",
+        "German": "z.B. heterosexuelle, cis-geschlechtliche, junge, arme Frau of Color ohne Behinderung",
+        "English": "e.g. heterosexual, cisgender, young, poor Woman of Color without disabilities"
     },
     {
         "ID": "chapter2-text2",
@@ -281,8 +306,8 @@
     },
     {
         "ID": "chapter3-title",
-        "German": "Fallbeispiele aus Deutschland",
-        "English": "Case Studies from Germany"
+        "German": "3 Fallbeispiele aus Deutschland",
+        "English": "3 Case Studies from Germany"
     },
     {
         "ID": "chapter3-intro1",
@@ -546,8 +571,8 @@
     },
     {
         "ID": "chapter4-title",
-        "German": "Intersektionale Ma\u00dfnahmen",
-        "English": "Intersectional Measures"
+        "German": "4 Intersektionale Ma\u00dfnahmen",
+        "English": "4 Intersectional Measures"
     },
     {
         "ID": "chapter4-text1",
@@ -565,14 +590,19 @@
         "English": "Only when the rights, interests, and needs of the structurally most marginalized individuals and groups are taken into account and implemented will all people be liberated from social inequality and asymmetrical power relations. Unequal conditions in access to resources, in social and political participation, in social inclusion and acknowledgement, etc. can be overcome."
     },
     {
+        "ID": "chapter4-highlight",
+        "German": "Denn ihre Befreiung erfordert den vollst\u00e4ndigen Abbau und die \u00dcberwindung aller Macht- und Herrschaftsstrukturen in ihrer Verwobenheit.",
+        "English": "TODO"
+    },
+    {
         "ID": "chapter5-bar",
         "German": "Und jetzt?",
         "English": "And Now What?"
     },
     {
         "ID": "chapter5-title",
-        "German": "Und jetzt?",
-        "English": "And Now What?"
+        "German": "5 Und jetzt?",
+        "English": "5 And Now What?"
     },
     {
         "ID": "chapter5-text1",
