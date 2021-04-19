@@ -48,7 +48,9 @@
     </p>
 
     <div class="further-reading books">
-      <h4>{{ $t('chapter5-heading1') }}</h4>
+      <h4 class="title">
+        {{ $t('chapter5-heading1') }}
+      </h4>
       <ul>
         <li>
           Die Kategorie Behinderung in der Intersektionalitätsforschung: Theoretische Grundlagen und empirische Befunde
@@ -126,7 +128,9 @@
     </div>
 
     <div class="further-reading articles">
-      <h4>{{ $t('chapter5-heading2') }}</h4>
+      <h4 class="title">
+        {{ $t('chapter5-heading2') }}
+      </h4>
       <ul>
         <li>
           CIJ Factsheet: Intersectionality at a Glance in Europe
@@ -155,8 +159,10 @@
       </ul>
     </div>
 
-    <div class="further-reading links">
-      <h4>{{ $t('chapter5-heading3') }}</h4>
+    <div class="further-reading online">
+      <h4 class="title">
+        {{ $t('chapter5-heading3') }}
+      </h4>
       <ul>
         <li>
           Center for Intersectional Justice (https://www.intersectionaljustice.org/)
@@ -244,30 +250,23 @@
 @import "../../styles/_variables";
 
 .chapter.and-now {
-  background-color: $color-red;
-  color: white;
+  background-color: $color-light-grey;
   padding: 1rem;
 
   h2 {
     margin-bottom: 1.8rem;
-    color: $color-black;
   }
 
   h3 {
     font-size: $font-size-subtitle;
     margin-top: 4rem;
     margin-bottom: 1.6rem;
-    color: $color-black;
     font-weight: 400;
   }
 
   h4 {
     margin-top: 2em;
     margin-bottom: 0.7em;
-  }
-
-  a {
-    color: $color-black;
   }
 
   ul.personal-suggestions {
@@ -277,23 +276,25 @@
 
     li {
       margin-bottom: 2em;
-
-      &:before {
-        position: absolute;
-        width: 1em;
-        margin-left: -1em;
-        content: "–";
-      }
     }
   }
 
   .further-reading {
-    $icon-width: 1.2em;
-    $multiplier: 1.5;
+    padding-left: 2rem;
+
+    .title {
+      position: relative;
+
+      &:before {
+        position: absolute;
+        width: 1.5rem;
+        height: 100%;
+        content: " ";
+        margin-left: -2rem;
+      }
+    }
 
     ul {
-      padding-left: $multiplier * $icon-width;
-
       font-family: $font-family-signika;
       font-size: $font-size-small;
       font-weight: 600;
@@ -302,20 +303,11 @@
     li {
       position: relative;
       margin-bottom: 1em;
-
-      &:before {
-        position: absolute;
-        width: $icon-width;
-        height: 100%;
-        content: " ";
-        margin-left: -$multiplier * $icon-width;
-      }
-
     }
 
     &.books {
-      li:before {
-        background: url('~assets/icons/book.svg') center no-repeat;
+      .title:before {
+        background: url('~assets/icons/links/book.svg') center right no-repeat;
         background-size: contain;
       }
     }
@@ -323,27 +315,17 @@
     &.articles {
       left: 33%;
 
-      li:before {
-        background: url('~assets/icons/book.svg') center no-repeat;
+      .title:before {
+        background: url('~assets/icons/links/article.svg') center right no-repeat;
         background-size: contain;
       }
     }
 
-    &.links {
+    &.online {
       left: 66%;
 
-      li:before {
-        background: url('~assets/icons/white-arrow-right.svg') center no-repeat;
-        background-size: 60% auto;
-      }
-
-      li.instagram:before {
-        background: url('~assets/icons/instagram.svg') center no-repeat;
-        background-size: contain;
-      }
-
-      li.twitter:before {
-        background: url('~assets/icons/twitter.svg') center no-repeat;
+      .title:before {
+        background: url('~assets/icons/links/online.svg') center right no-repeat;
         background-size: contain;
       }
     }
@@ -352,7 +334,6 @@
 
 @media (min-width: $media-breakpoint-min-m) {
   .chapter.and-now {
-    background-color: $color-red;
     padding: 3rem 20% 5rem 20%;
 
     ul.personal-suggestions {
