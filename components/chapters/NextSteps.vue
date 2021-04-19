@@ -47,204 +47,52 @@
       {{ $t('chapter5-text3') }}
     </p>
 
-    <div class="further-reading books">
+    <div v-for="sectionData, sectionKey in furtherReadingData" :key="sectionKey" :class="['further-reading', sectionKey]">
       <h4 class="title">
-        {{ $t('chapter5-heading1') }}
+        {{ $t(sectionData.titleKey) }}
       </h4>
       <ul>
-        <li>
-          Die Kategorie Behinderung in der Intersektionalitätsforschung: Theoretische Grundlagen und empirische Befunde
-          <br>Ulrike Schildmann, Sabrina Schramme &amp; Astrid Libuda-Köster, 2018
-        </li>
-        <li>
-          Die letzten Tage des Patriarchats
-          <br>Margarete Stokowski, 2018
-        </li>
-        <li>
-          Eure Heimat ist unser Albtraum
-          <br>Fatma Aydemir &amp; Hengameh Yaghoobifarah, 2019
-        </li>
-        <li>
-          exit RACISM: rassismuskritisch denken lernen
-          <br>Tupoka Ogette, 2019
-        </li>
-        <li>
-          Feminist Disability Studies
-          <br>Kim Q. Hall, 2011
-        </li>
-        <li>
-          Fokus Intersektionalität: Bewegungen und Verortungen eines vielschichtigen Konzeptes
-          <br>Helma Lutz, 2013
-        </li>
-        <li>
-          Hallo, hört mich jemand?
-          <br>Sibel Schick, 2020
-        </li>
-        <li>
-          Intersektionalität: Geschichte, Theorie und Praxis
-          <br>Kerstin Bronner &amp; Stefan Paulus, 2017
-        </li>
-        <li>
-          Islamische Feminismen
-          <br>Zahra Ali, 2017
-        </li>
-        <li>
-          Lebensweltgestaltung junger Frauen mit türkischem Migrationshintergrund in der dritten Generation
-          <br>Sevnur Bülbül-Emanet, 2015
-        </li>
-        <li>
-          Rückkehr nach Reims
-          <br>Didier Eribon, 2016
-        </li>
-        <li>
-          Schwarzer Feminismus: Grundlagentexte
-          <br>Natasha A. Kelly, 2019
-        </li>
-        <li>
-          Theorien der Intersektionalität zur Einführung
-          <br>Katrin Meyer, 2017
-        </li>
-        <li>
-          (Un-)Sichtbare Erfolge: Bildungswege von Romnja und Sintize in Deutschland
-          <br>Elizabeta Jonuz &amp; Jane Weiß, 2020
-        </li>
-        <li>
-          Untenrum frei
-          <br>Margarete Stokowski, 2018
-        </li>
-        <li>
-          Was weiße Menschen nicht über Rassismus hören wollen aber wissen sollten
-          <br>Alice Hasters, 2019
-        </li>
-        <li>
-          Yalla, Feminismus!
-          <br>Reyhan Sahin, 2019
-        </li>
-        <li>
-          Zeige deine Klasse: Die Geschichte meiner sozialen Herkunft
-          <br>Daniela Dröscher, 2018
-        </li>
-      </ul>
-    </div>
-
-    <div class="further-reading articles">
-      <h4 class="title">
-        {{ $t('chapter5-heading2') }}
-      </h4>
-      <ul>
-        <li>
-          CIJ Factsheet: Intersectionality at a Glance in Europe
-          <br>Center for Intersectional Justice, 2020
-        </li>
-        <li>
-          Forgotten women: The impact of Islamophobia on Muslim women
-          <br>European Network Against Racism, 2016
-        </li>
-        <li>
-          Gesundheitsversorgung für alle. Ohne Diskriminierung
-          <br>Women in Exile, 2020
-        </li>
-        <li>
-          Intersektionalität in Deutschland. Chancen, Lücken und Herausforderungen
-          <br>Center for Intersectional Justice, 2019
-        </li>
-        <li>
-          Intersectional discrimination in Europe: relevance, challenges and ways forward
-          <br>Center for Intersectional Justice, 2020
-        </li>
-        <li>
-          „Reach Everyone on the Planet …“ – Kimberlé Crenshaw und die Intersektionalität
-          <br>Gunda-Werner-Institut, 2019
-        </li>
-      </ul>
-    </div>
-
-    <div class="further-reading online">
-      <h4 class="title">
-        {{ $t('chapter5-heading3') }}
-      </h4>
-      <ul>
-        <li>
-          Center for Intersectional Justice (https://www.intersectionaljustice.org/)
-        </li>
-        <li>
-          Missy Magazine (https://missy-magazine.de/)
-        </li>
-        <li>
-          Portal Intersektionalität (http://portal-intersektionalitaet.de/startseite/)
-        </li>
-      </ul>
-      <ul>
-        <li>
-          TED Talk Confessions of a bad feminist
-          <br>(https://www.youtube.com/watch?v=Fxt_MZKMdes)
-          <br>Roxane Gay
-        </li>
-        <li>
-          TED Talk Effective Allyship: A Transgender Take on Intersectionality
-          <br>(https://www.youtube.com/watch?v=3EcuDfDjUd8)
-          <br>Ashlee Marie Preston
-        </li>
-        <li>
-          TED Talk: Rethinking Privilege
-          <br>(https://www.youtube.com/watch?v=0rFXhLDgLnc&t)
-          <br>Mariam Veiszadeh
-        </li>
-        <li>
-          TED Talk: The urgency of intersectionality
-          <br>(https://www.youtube.com/watch?v=akOe5-UsQ2o&t)
-          <br>Kimberlé Crenshaw
-        </li>
-      </ul>
-      <ul>
-        <li class="twitter">
-          @alicehasters
-          <br>Twitter Alice Hasters
-        </li>
-        <li class="twitter">
-          @EmiliaZenzile
-          <br>Twitter Emilia Roig
-        </li>
-        <li class="twitter">
-          @LadyBitchRay1
-          <br>Twitter Lady Bitch Ray
-        </li>
-        <li class="twitter">
-          @marga_owski
-          <br>Twitter Margarete Stokowski
-        </li>
-        <li class="twitter">
-          @modekoerper
-          <br>Twitter Dr.*in phil Mahret Ifeoma Kupka
-        </li>
-        <li class="twitter">
-          @sandylocks
-          <br>Twitter Kimberlé Crenshaw
-        </li>
-        <li class="twitter">
-          @sibelschick
-          <br>Twitter Sibel Schick
-        </li>
-        <li class="twitter">
-          @teresabuecker
-          <br>Twitter Teresa Bücker
-        </li>
-        <li class="instagram">
-          @tupoka.o
-          <br>Instagram Tupoka Ogette
-        </li>
-      </ul>
-      <ul>
-        <li>
-          Lila Podcast (https://lila-podcast.de/)
-        </li>
-        <li>
-          Podcast Feuer &amp; Brot (https://feuerundbrot.de/)
+        <li v-for="link, index in sectionData.entries" :key="index">
+          <a :href="link.Link">
+            <span class="title">{{ link.Title }}</span>
+            <span v-if="link.Authors" class="author">{{ link.Authors }}</span>
+          </a>
         </li>
       </ul>
     </div>
   </div>
 </template>
+
+<script>
+import StructuredLinkData from '~/data/links_structured.json'
+
+export default {
+  data () {
+    return {
+      linkData: StructuredLinkData
+    }
+  },
+  computed: {
+    furtherReadingData () {
+      return {
+        books: {
+          entries: this.linkData.book,
+          titleKey: 'chapter5-heading1'
+        },
+        articles: {
+          entries: this.linkData.article,
+          titleKey: 'chapter5-heading2'
+        },
+        others: {
+          entries: this.linkData.other,
+          titleKey: 'chapter5-heading3'
+        }
+      }
+    }
+  }
+}
+
+</script>
 
 <style lang="scss" scoped>
 @import "../../styles/_variables";
@@ -282,7 +130,7 @@
   .further-reading {
     padding-left: 2rem;
 
-    .title {
+    & > .title {
       position: relative;
 
       &:before {
@@ -297,17 +145,24 @@
     ul {
       font-family: $font-family-signika;
       font-size: $font-size-small;
-      font-weight: 600;
     }
 
     li {
       position: relative;
       margin-bottom: 1em;
+
+      .title, .author {
+        display: block;
+      }
+
+      .title {
+        font-weight: 600;
+      }
     }
 
     &.books {
-      .title:before {
-        background: url('~assets/icons/links/book.svg') center right no-repeat;
+      & > .title:before {
+        background: url('~assets/icons/links/books.svg') center right no-repeat;
         background-size: contain;
       }
     }
@@ -315,17 +170,17 @@
     &.articles {
       left: 33%;
 
-      .title:before {
-        background: url('~assets/icons/links/article.svg') center right no-repeat;
+      & > .title:before {
+        background: url('~assets/icons/links/articles.svg') center right no-repeat;
         background-size: contain;
       }
     }
 
-    &.online {
+    &.others {
       left: 66%;
 
-      .title:before {
-        background: url('~assets/icons/links/online.svg') center right no-repeat;
+      & > .title:before {
+        background: url('~assets/icons/links/others.svg') center right no-repeat;
         background-size: contain;
       }
     }
