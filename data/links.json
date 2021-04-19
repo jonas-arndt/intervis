@@ -1,168 +1,174 @@
 [
     {
-        "ID": "chapter5-book1",
+        "Type": "book",
         "Title": "Die Kategorie Behinderung in der Intersektionalit\u00e4tsforschung: Theoretische Grundlagen und empirische Befunde",
         "Link": "https://www.projektverlag.de/Die_Kategorie_Behinderung_in_der_Intersektionalit%C3%A4tsforschung",
         "Authors": "Ulrike Schildmann, Sabrina Schramme & Astrid Libuda-K\u00f6ster, 2018"
     },
     {
-        "ID": "chapter5-book2",
+        "Type": "book",
         "Title": "Die letzten Tage des Patriarchats",
         "Link": "https://www.rowohlt.de/buch/margarete-stokowski-die-letzten-tage-des-patriarchats-9783499606694",
         "Authors": "Margarete Stokowski, 2018"
     },
     {
-        "ID": "chapter5-book3",
+        "Type": "book",
         "Title": "Eure Heimat ist unser Albtraum",
         "Link": "https://www.ullstein-buchverlage.de/nc/buch/details/eure-heimat-ist-unser-albtraum-9783961010363.html",
         "Authors": "Fatma Aydemir & Hengameh Yaghoobifarah, 2019"
     },
     {
-        "ID": "chapter5-book4",
+        "Type": "book",
         "Title": "exit RACISM: rassismuskritisch denken lernen",
         "Link": "https://www.unrast-verlag.de/neuerscheinungen/exit-racism2016-12-05-22-25-07-detail",
         "Authors": "Tupoka Ogette, 2019"
     },
     {
-        "ID": "chapter5-book5",
+        "Type": "book",
         "Title": "Feminist Disability Studies",
         "Link": "https://iupress.org/9780253223401/feminist-disability-studies/",
         "Authors": "Kim Q. Hall, 2011"
     },
     {
-        "ID": "chapter5-book6",
+        "Type": "book",
         "Title": "Fokus Intersektionalit\u00e4t: Bewegungen und Verortungen eines vielschichtigen Konzeptes",
         "Link": "https://www.springer.com/de/book/9783531195490",
         "Authors": "Helma Lutz, 2013"
     },
     {
-        "ID": "chapter5-book7",
+        "Type": "book",
         "Title": "Hallo, h\u00f6rt mich jemand?",
         "Link": "https://www.edition-assemblage.de/buecher/hallo/",
         "Authors": "Sibel Schick, 2020"
     },
     {
-        "ID": "chapter5-book8",
+        "Type": "book",
         "Title": "Intersektionalit\u00e4t: Geschichte, Theorie und Praxis",
         "Link": "https://shop.budrich-academic.de/produkt/intersektionalitaet-geschichte-theorie-und-praxis/",
         "Authors": "Kerstin Bronner & Stefan Paulus, 2017"
     },
     {
-        "ID": "chapter5-book9",
+        "Type": "book",
         "Title": "Islamische Feminismen",
         "Link": "http://www.passagen.at/cms/index.php?id=80&autor=13182&L=0",
         "Authors": "Zahra Ali, 2017"
     },
     {
-        "ID": "chapter5-book10",
+        "Type": "book",
         "Title": "Lebensweltgestaltung junger Frauen mit t\u00fcrkischem Migrationshintergrund in der dritten Generation",
         "Link": "https://www.springer.com/de/book/9783658083762",
         "Authors": "Sevnur B\u00fclb\u00fcl-Emanet, 2015"
     },
     {
-        "ID": "chapter5-book11",
+        "Type": "book",
         "Title": "R\u00fcckkehr nach Reims",
         "Link": "https://www.suhrkamp.de/buecher/rueckkehr_nach_reims-didier_eribon_7252.html",
         "Authors": "Didier Eribon, 2016"
     },
     {
-        "ID": "chapter5-book12",
+        "Type": "book",
         "Title": "Schwarzer Feminismus: Grundlagentexte",
         "Link": "https://www.unrast-verlag.de/neuerscheinungen/schwarzer-feminismus-detail",
         "Authors": "Natasha A. Kelly, 2019"
     },
     {
-        "ID": "chapter5-book13",
+        "Type": "book",
         "Title": "Theorien der Intersektionalit\u00e4t zur Einf\u00fchrung",
         "Link": "https://www.junius-verlag.de/Programm/Theorien-der-Intersektionalitaet-zur-Einfuehrung.html",
         "Authors": "Katrin Meyer, 2017"
     },
     {
-        "ID": "chapter5-book14",
+        "Type": "book",
         "Title": "(Un-)Sichtbare Erfolge: Bildungswege von Romnja und Sintize in Deutschland",
         "Link": "https://www.springer.com/de/book/9783658279660",
         "Authors": "Elizabeta Jonuz & Jane Wei\u00df, 2020"
     },
     {
-        "ID": "chapter5-book15",
+        "Type": "book",
         "Title": "Untenrum frei",
         "Link": "https://www.rowohlt.de/buch/margarete-stokowski-untenrum-frei-9783499631863",
         "Authors": "Margarete Stokowski, 2018"
     },
     {
-        "ID": "chapter5-book16",
+        "Type": "book",
         "Title": "Was wei\u00dfe Menschen nicht \u00fcber Rassismus h\u00f6ren wollen aber wissen sollten",
         "Link": "https://www.hanser-literaturverlage.de/buch/was-weisse-menschen-nicht-ueber-rassismus-hoeren-wollen-aber-wissen-sollten/978-3-446-26425-0/",
         "Authors": "Alice Hasters, 2019"
     },
     {
-        "ID": "chapter5-book17",
+        "Type": "book",
         "Title": "Yalla, Feminismus!",
         "Link": "https://www.klett-cotta.de/buch/Tropen-Sachbuch/Yalla_Feminismus!/106754",
         "Authors": "Reyhan Sahin, 2019"
     },
     {
-        "ID": "chapter5-book18",
+        "Type": "book",
         "Title": "Zeige deine Klasse: Die Geschichte meiner sozialen Herkunft",
         "Link": "https://www.hoffmann-und-campe.de/buch-info/zeige-deine-klasse-buch-10079/",
         "Authors": "Daniela Dr\u00f6scher, 2018"
     },
     {
-        "ID": "chapter5-article1",
+        "Type": "article",
         "Title": "CIJ Factsheet: Intersectionality at a Glance in Europe",
         "Link": "https://www.intersectionaljustice.org/publication/2020-04-07-center-for-intersectional-justice-factsheet-intersectionality-at-a-glance-in-europe",
         "Authors": "Center for Intersectional Justice, 2020"
     },
     {
-        "ID": "chapter5-article2",
+        "Type": "article",
         "Title": "Forgotten women: The impact of Islamophobia on Muslim women",
         "Link": "https://www.enar-eu.org/Forgotten-Women-the-impact-of-Islamophobia-on-Muslim-women",
         "Authors": "European Network Against Racism, 2016"
     },
     {
-        "ID": "chapter5-article3",
+        "Type": "article",
         "Title": "Gesundheitsversorgung f\u00fcr alle. Ohne Diskriminierung",
         "Link": "https://www.women-in-exile.net/wp-content/uploads/2020/10/Health-Magzine-Deutsch-14.09.20-low.pdf",
         "Authors": "Women in Exile, 2020"
     },
     {
-        "ID": "chapter5-article4",
+        "Type": "article",
         "Title": "Intersektionalit\u00e4t in Deutschland. Chancen, L\u00fccken und Herausforderungen",
         "Link": "https://www.dezim-institut.de/fileadmin/PDF-Download/CIJ_Broschuere_190917_web.pdf",
         "Authors": "Center for Intersectional Justice, 2019"
     },
     {
-        "ID": "chapter5-article5",
+        "Type": "article",
         "Title": "Intersectional discrimination in Europe: relevance, challenges and ways forward",
         "Link": "https://www.intersectionaljustice.org/publication/2020-09-14-intersectional-discrimination-in-europe-relevance-challenges-and-ways-forward",
         "Authors": "Center for Intersectional Justice, 2020"
     },
     {
-        "ID": "chapter5-article6",
+        "Type": "article",
         "Title": "\u201eReach Everyone on the Planet \u2026\u201c \u2013 Kimberl\u00e9 Crenshaw und die Intersektionalit\u00e4t",
         "Link": "https://www.gwi-boell.de/de/2019/04/28/reach-everyone-planet-kimberle-crenshaw-und-die-intersektionalitaet",
         "Authors": "Gunda-Werner-Institut, 2019"
     },
     {
-        "ID": "chapter5-online4",
+        "Type": "talk",
+        "Title": "TED Talk: How to recognize your white privilege \u2013 and use it to fight inequality",
+        "Link": "https://www.ted.com/talks/peggy_mcintosh_how_to_recognize_your_white_privilege_and_use_it_to_fight_inequality",
+        "Authors": "Peggy McIntosh"
+    },
+    {
+        "Type": "talk",
         "Title": "TED Talk Confessions of a bad feminist",
         "Link": "https://www.youtube.com/watch?v=Fxt_MZKMdes",
         "Authors": "Roxane Gay"
     },
     {
-        "ID": "chapter5-online5",
+        "Type": "talk",
         "Title": "TED Talk Effective Allyship: A Transgender Take on Intersectionality",
         "Link": "https://www.youtube.com/watch?v=3EcuDfDjUd8",
         "Authors": "Ashlee Marie Preston"
     },
     {
-        "ID": "chapter5-online6",
+        "Type": "talk",
         "Title": "TED Talk: Rethinking Privilege",
         "Link": "https://www.youtube.com/watch?v=0rFXhLDgLnc&t",
         "Authors": "Mariam Veiszadeh"
     },
     {
-        "ID": "chapter5-online7",
+        "Type": "talk",
         "Title": "TED Talk: The urgency of intersectionality",
         "Link": "https://www.youtube.com/watch?v=akOe5-UsQ2o&t",
         "Authors": "Kimberl\u00e9 Crenshaw"
