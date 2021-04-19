@@ -1,26 +1,18 @@
 <template>
   <div class="chapter what-is-intersectionality">
     <SlideInToggleButton>
-      {{ $t('disclosure-hint1') }}
+      <span v-html="$t('disclosure-hint1')" />
     </SlideInToggleButton>
 
     <div class="narrative">
       <div class="step">
-        <h2 class="chapter-title">
-          1 {{ $t('chapter1-title') }}
-        </h2>
-        <p>
-          {{ $t('chapter1-text1') }}
-        </p>
+        <h2 class="chapter-title" v-html="$t('chapter1-title')" />
+        <p v-html="$t('chapter1-text1')" />
       </div>
       <div class="step">
-        <p>
-          {{ $t('chapter1-text2') }}
-        </p>
+        <p v-html="$t('chapter1-text2')" />
         <p class="detour">
-          <button class="red-button" @click="showConceptDevelopment">
-            {{ $t('chapter1-button') }}
-          </button>
+          <button class="red-button" @click="showConceptDevelopment" v-html="$t('chapter1-button')" />
         </p>
       </div>
     </div>

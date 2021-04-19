@@ -1,43 +1,29 @@
 <template>
   <div class="case-study working-handicapped">
     <SlideInToggleButton>
-      {{ $t('disclosure-hint3') }}
+      <span v-html="$t('disclosure-hint3')" />
     </SlideInToggleButton>
 
     <WorkingHandicappedVisualization class="background-visualization" />
 
     <div class="narrative">
       <div class="step">
-        <h3 class="case-study-title">
-          {{ $t('chapter3-example3-title') }}
-        </h3>
-        <p>
-          {{ $t('chapter3-example3-text1') }}
-        </p>
+        <h3 class="case-study-title" v-html="$t('chapter3-example3-title')" />
+        <p v-html="$t('chapter3-example3-text1')" />
       </div>
 
       <div class="step">
-        <p>
-          {{ $t('chapter3-example3-text2') }}
-        </p>
+        <p v-html="$t('chapter3-example3-text2')" />
       </div>
 
       <div class="step">
-        <p>
-          {{ $t('chapter3-example3-text3') }}
-        </p>
+        <p v-html="$t('chapter3-example3-text3')" />
       </div>
 
       <div class="step">
-        <p>
-          {{ $t('chapter3-example3-text4') }}
-        </p>
-        <blockquote>
-          {{ $t('chapter3-example3-trend') }}
-        </blockquote>
-        <p>
-          {{ $t('chapter3-example3-text5') }}
-        </p>
+        <p v-html="$t('chapter3-example3-text4')" />
+        <blockquote v-html="$t('chapter3-example3-trend')" />
+        <p v-html="$t('chapter3-example3-text5')" />
       </div>
     </div>
 

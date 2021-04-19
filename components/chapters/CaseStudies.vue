@@ -2,12 +2,8 @@
   <div class="chapter case_studies_from_germany">
     <div class="narrative">
       <div class="step">
-        <h2 class="chapter-title">
-          3 {{ $t('chapter3-title') }}
-        </h2>
-        <p>
-          {{ $t('chapter3-intro1') }}
-        </p>
+        <h2 class="chapter-title" v-html="$t('chapter3-title')" />
+        <p v-html="$t('chapter3-intro1')" />
       </div>
     </div>
 

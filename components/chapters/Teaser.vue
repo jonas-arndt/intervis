@@ -4,20 +4,12 @@
 
     <div class="title-block">
       <div class="title-container">
-        <h1>{{ $t('startscreen-title') }}</h1>
-        <p class="subtitle">
-          {{ $t('startscreen-subtitle') }}
-        </p>
-        <p>
-          {{ $t('startscreen-preamble') }}
-        </p>
+        <h1 v-html="$t('startscreen-title')" />
+        <p class="subtitle" v-html="$t('startscreen-subtitle')" />
+        <p v-html="$t('startscreen-preamble')" />
         <ButtonLine>
-          <button class="red-button" @click="hideTeaser()">
-            {{ $t('startscreen-preamble-button1') }}
-          </button>
-          <button class="red-button" @click="toggleDisclosureVisibility()">
-            {{ $t('startscreen-preamble-button2') }}
-          </button>
+          <button class="red-button" @click="hideTeaser()" v-html="$t('startscreen-preamble-button1')" />
+          <button class="red-button" @click="toggleDisclosureVisibility()" v-html="$t('startscreen-preamble-button2')" />
         </ButtonLine>
       </div>
     </div>

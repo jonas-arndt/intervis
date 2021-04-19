@@ -1,28 +1,18 @@
 <template>
   <div class="disclosure content">
-    <h1>{{ $t('backside-menu4') }}</h1>
-    <p>
-      {{ $t('backside-positions-intro') }}
-    </p>
+    <h1 v-html="$t('backside-menu4')" />
+    <p v-html="$t('backside-positions-intro')" />
 
-    <h2>{{ $t('backside-positions-heading1') }}</h2>
-    <p>
-      {{ $t('backside-positions-text1') }}
-    </p>
+    <h2 v-html="$t('backside-positions-heading1')" />
+    <p v-html="$t('backside-positions-text1')" />
 
-    <h2>{{ $t('backside-positions-heading2') }}</h2>
-    <p>
-      {{ $t('backside-positions-text2') }}
-    </p>
+    <h2 v-html="$t('backside-positions-heading2')" />
+    <p v-html="$t('backside-positions-text2')" />
 
-    <h2>{{ $t('backside-positions-heading3') }}</h2>
-    <p>
-      {{ $t('backside-positions-text3') }}
-    </p>
+    <h2 v-html="$t('backside-positions-heading3')" />
+    <p v-html="$t('backside-positions-text3')" />
 
-    <h2>{{ $t('backside-positions-heading4') }}</h2>
-    <p>
-      {{ $t('backside-positions-text4') }}
-    </p>
+    <h2 v-html="$t('backside-positions-heading4')" />
+    <p v-html="$t('backside-positions-text4')" />
   </div>
 </template>

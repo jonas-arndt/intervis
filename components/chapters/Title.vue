@@ -4,19 +4,15 @@
       <LanguageSwitcher class="language-switcher" />
 
       <div class="title-block">
-        <span class="date">{{ $t('startscreen-date') }}</span>
+        <span class="date" v-html="$t('startscreen-date')" />
         <div class="title-container">
-          <h1>{{ $t('startscreen-title') }}</h1>
-          <p class="subtitle">
-            {{ $t('startscreen-subtitle') }}
-          </p>
+          <h1 v-html="$t('startscreen-title')" />
+          <p class="subtitle" v-html="$t('startscreen-subtitle')" />
         </div>
-        <p class="introduction">
-          {{ $t('startscreen-intro') }}
-        </p>
+        <p class="introduction" v-html="$t('startscreen-intro')" />
       </div>
 
-      <span class="instruction">{{ $t('startscreen-hint') }}</span>
+      <span class="instruction" v-html="$t('startscreen-hint')" />
     </div>
   </div>
 </template>

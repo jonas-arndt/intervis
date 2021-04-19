@@ -1,56 +1,34 @@
 <template>
   <div class="chapter dimensions-of-discrimination horizontal-content">
-    <h2 class="chapter-title">
-      {{ $t('overlay2-title') }}
-    </h2>
+    <h2 class="chapter-title" v-html="$t('overlay2-title')" />
     <div class="content">
       <div class="block">
-        <h3 class="block-title">
-          {{ $t('overlay2-subtitle1') }}
-        </h3>
-        <p class="text">
-          {{ $t('overlay2-text1') }}
-        </p>
+        <h3 class="block-title" v-html="$t('overlay2-subtitle1')" />
+        <p class="text" v-html="$t('overlay2-text1')" />
       </div>
 
       <div class="block">
         <img class="icon" :src="require('~/assets/icons/dimensions/dimension_individuell.svg')">
-        <h3 class="block-title">
-          {{ $t('overlay2-subtitle2') }}
-        </h3>
-        <p class="text">
-          {{ $t('overlay2-text2') }}
-        </p>
+        <h3 class="block-title" v-html="$t('overlay2-subtitle2')" />
+        <p class="text" v-html="$t('overlay2-text2')" />
       </div>
 
       <div class="block">
         <img class="icon" :src="require('~/assets/icons/dimensions/dimension_strukturell.svg')">
-        <h3 class="block-title">
-          {{ $t('overlay2-subtitle3') }}
-        </h3>
-        <p class="text">
-          {{ $t('overlay2-text3') }}
-        </p>
+        <h3 class="block-title" v-html="$t('overlay2-subtitle3')" />
+        <p class="text" v-html="$t('overlay2-text3')" />
       </div>
 
       <div class="block">
         <img class="icon" :src="require('~/assets/icons/dimensions/dimension_institutionell.svg')">
-        <h3 class="block-title">
-          {{ $t('overlay2-subtitle4') }}
-        </h3>
-        <p class="text">
-          {{ $t('overlay2-text4') }}
-        </p>
+        <h3 class="block-title" v-html="$t('overlay2-subtitle4')" />
+        <p class="text" v-html="$t('overlay2-text4')" />
       </div>
 
       <div class="block">
         <img class="icon" :src="require('~/assets/icons/dimensions/dimension_historisch.svg')">
-        <h3 class="block-title">
-          {{ $t('overlay2-subtitle5') }}
-        </h3>
-        <p class="text">
-          {{ $t('overlay2-text5') }}
-        </p>
+        <h3 class="block-title" v-html="$t('overlay2-subtitle5')" />
+        <p class="text" v-html="$t('overlay2-text5')" />
       </div>
     </div>
   </div>

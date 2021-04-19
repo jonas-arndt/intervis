@@ -5,12 +5,8 @@
         <Blob :point-list="pointsFirstShape" />
       </div>
       <div class="description">
-        <p class="title">
-          {{ $t('chapter2-vis2-title1') }}
-        </p>
-        <p class="examples">
-          {{ $t('chapter2-vis2-examples1') }}
-        </p>
+        <p class="title" v-html="$t('chapter2-vis2-title1')" />
+        <p class="examples" v-html="$t('chapter2-vis2-examples1')" />
       </div>
     </div>
     <div class="case-container">
@@ -18,12 +14,8 @@
         <Blob :point-list="pointsSecondShape" />
       </div>
       <div class="description">
-        <p class="title">
-          {{ $t('chapter2-vis2-title2') }}
-        </p>
-        <p class="examples">
-          {{ $t('chapter2-vis2-examples2') }}
-        </p>
+        <p class="title" v-html="$t('chapter2-vis2-title2')" />
+        <p class="examples" v-html="$t('chapter2-vis2-examples2')" />
       </div>
     </div>
     <div class="case-container">
@@ -31,12 +23,8 @@
         <Blob :point-list="pointsThirdShape" />
       </div>
       <div class="description">
-        <p class="title">
-          {{ $t('chapter2-vis2-title3') }}
-        </p>
-        <p class="examples">
-          {{ $t('chapter2-vis2-examples3') }}
-        </p>
+        <p class="title" v-html="$t('chapter2-vis2-title3')" />
+        <p class="examples" v-html="$t('chapter2-vis2-examples3')" />
       </div>
     </div>
   </div>

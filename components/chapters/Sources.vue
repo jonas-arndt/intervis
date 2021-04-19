@@ -1,20 +1,12 @@
 <template>
   <div class="chapter project-information-and-sources">
-    <h2 class="chapter-title">
-      {{ $t('projectinfo-title') }}
-    </h2>
-    <p>
-      {{ $t('projectinfo-text1') }}
-    </p>
+    <h2 class="chapter-title" v-html="$t('projectinfo-title')" />
+    <p v-html="$t('projectinfo-text1')" />
     <p class="disclosure-link">
-      <button class="red-button" @click="$store.commit('toggleDisclosureVisibility')">
-        {{ $t('projectinfo-button') }}
-      </button>
+      <button class="red-button" @click="$store.commit('toggleDisclosureVisibility')" v-html="$t('projectinfo-button')" />
     </p>
 
-    <h2 class="chapter-title">
-      {{ $t('references-title') }}
-    </h2>
+    <h2 class="chapter-title" v-html="$t('references-title')" />
     <div class="references">
       <ul>
         <li>

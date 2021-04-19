@@ -1,32 +1,22 @@
 <template>
   <div class="chapter discrimination_and_privilege">
     <SlideInToggleButton>
-      {{ $t('disclosure-hint2') }}
+      <span v-html="$t('disclosure-hint2')" />
     </SlideInToggleButton>
 
     <DiscriminationVisualization class="background-visualization" />
     <div class="narrative">
       <div class="step">
-        <h2 class="chapter-title">
-          2 {{ $t('chapter2-title') }}
-        </h2>
-        <p>
-          {{ $t('chapter2-text1') }}
-        </p>
+        <h2 class="chapter-title" v-html="$t('chapter2-title')" />
+        <p v-html="$t('chapter2-text1')" />
       </div>
       <div class="step">
-        <p>
-          {{ $t('chapter2-text2') }}
-        </p>
+        <p v-html="$t('chapter2-text2')" />
       </div>
       <div class="step">
-        <p>
-          {{ $t('chapter2-text3') }}
-        </p>
+        <p v-html="$t('chapter2-text3')" />
         <p class="detour">
-          <button class="red-button" @click="showDiscriminationDimensions">
-            {{ $t('chapter2-button') }}
-          </button>
+          <button class="red-button" @click="showDiscriminationDimensions" v-html="$t('chapter2-button')" />
         </p>
       </div>
     </div>

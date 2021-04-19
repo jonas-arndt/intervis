@@ -1,9 +1,6 @@
 <template>
   <div class="project-disclosure content">
-    <button @click="$store.commit('toggleDisclosureVisibility')">
-      {{ $t('backside-button') }}
-    </button>
-
+    <button @click="$store.commit('toggleDisclosureVisibility')" v-html="$t('backside-button')" />
     <ProjectDisclosurePart1 />
   </div>
 </template>

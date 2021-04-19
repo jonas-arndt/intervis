@@ -3,30 +3,20 @@
     <MeasuresVisualization class="background-visualization" />
     <div class="narrative">
       <div class="step right">
-        <h2 class="chapter-title">
-          4 {{ $t('chapter4-title') }}
-        </h2>
-        <p>
-          {{ $t('chapter4-text1') }}
-        </p>
+        <h2 class="chapter-title" v-html="$t('chapter4-title')" />
+        <p v-html="$t('chapter4-text1')" />
       </div>
 
       <div class="step right">
-        <p>
-          {{ $t('chapter4-text2') }}
-        </p>
+        <p v-html="$t('chapter4-text2')" />
       </div>
 
       <div class="step right">
-        <p>
-          {{ $t('chapter4-text3') }}
-        </p>
+        <p v-html="$t('chapter4-text3')" />
       </div>
 
       <div class="step right">
-        <p class="highlight">
-          {{ $t('chapter4-highlight') }}
-        </p>
+        <p class="highlight" v-html="$t('chapter4-highlight')" />
       </div>
     </div>
   </div>

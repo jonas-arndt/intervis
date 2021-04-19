@@ -1,46 +1,30 @@
 <template>
   <div class="case-study school">
     <SlideInToggleButton>
-      {{ $t('disclosure-hint3') }}
+      <span v-html="$t('disclosure-hint3')" />
     </SlideInToggleButton>
 
     <SchoolVisualization class="background-visualization" />
 
     <div class="narrative">
       <div class="step">
-        <h3 class="case-study-title">
-          {{ $t('chapter3-example2-title') }}
-        </h3>
-        <p>
-          {{ $t('chapter3-example2-text1') }}
-        </p>
+        <h3 class="case-study-title" v-html="$t('chapter3-example2-title')" />
+        <p v-html="$t('chapter3-example2-text1')" />
       </div>
 
       <div class="step">
-        <blockquote>
-          {{ $t('chapter3-example2-quote') }}
-        </blockquote>
-        <p>
-          {{ $t('chapter3-example2-text2') }}
-        </p>
+        <blockquote v-html="$t('chapter3-example2-quote')" />
+        <p v-html="$t('chapter3-example2-text2')" />
       </div>
 
       <div class="step">
-        <p>
-          {{ $t('chapter3-example2-text3') }}
-        </p>
+        <p v-html="$t('chapter3-example2-text3')" />
       </div>
 
       <div class="step">
-        <p>
-          {{ $t('chapter3-example2-text4') }}
-        </p>
-        <blockquote>
-          {{ $t('chapter3-example2-trend') }}
-        </blockquote>
-        <p>
-          {{ $t('chapter3-example2-text5') }}
-        </p>
+        <p v-html="$t('chapter3-example2-text4')" />
+        <blockquote v-html="$t('chapter3-example2-trend')" />
+        <p v-html="$t('chapter3-example2-text5')" />
       </div>
     </div>
 

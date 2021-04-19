@@ -1,56 +1,28 @@
 <template>
   <div class="chapter and-now">
-    <h2 class="chapter-title">
-      5 {{ $t('chapter5-title') }}
-    </h2>
-    <p>
-      {{ $t('chapter5-text1') }}
-    </p>
+    <h2 class="chapter-title" v-html="$t('chapter5-title')" />
+    <p v-html="$t('chapter5-text1')" />
 
-    <h3>{{ $t('chapter5-subtitle2') }}</h3>
-    <p>
-      {{ $t('chapter5-text2') }}
-    </p>
+    <h3 v-html="$t('chapter5-subtitle2')" />
+    <p v-html="$t('chapter5-text2')" />
 
     <ul class="personal-suggestions">
-      <li>
-        {{ $t('chapter5-point1') }}
-      </li>
-      <li>
-        {{ $t('chapter5-point2') }}
-      </li>
-      <li>
-        {{ $t('chapter5-point3') }}
-      </li>
-      <li>
-        {{ $t('chapter5-point4') }}
-      </li>
-      <li>
-        {{ $t('chapter5-point5') }}
-      </li>
-      <li>
-        {{ $t('chapter5-point6') }}
-      </li>
-      <li>
-        {{ $t('chapter5-point7') }}
-      </li>
-      <li>
-        {{ $t('chapter5-point8') }}
-      </li>
-      <li>
-        {{ $t('chapter5-point9') }}
-      </li>
+      <li v-html="$t('chapter5-point1')" />
+      <li v-html="$t('chapter5-point2')" />
+      <li v-html="$t('chapter5-point3')" />
+      <li v-html="$t('chapter5-point4')" />
+      <li v-html="$t('chapter5-point5')" />
+      <li v-html="$t('chapter5-point6')" />
+      <li v-html="$t('chapter5-point7')" />
+      <li v-html="$t('chapter5-point8')" />
+      <li v-html="$t('chapter5-point9')" />
     </ul>
 
-    <h3>{{ $t('chapter5-subtitle3') }}</h3>
-    <p>
-      {{ $t('chapter5-text3') }}
-    </p>
+    <h3 v-html="$t('chapter5-subtitle3')" />
+    <p v-html="$t('chapter5-text3')" />
 
     <div v-for="sectionData, sectionKey in furtherReadingData" :key="sectionKey" :class="['further-reading', sectionKey]">
-      <h4 class="title">
-        {{ $t(sectionData.titleKey) }}
-      </h4>
+      <h4 class="title" v-html="$t(sectionData.titleKey)" />
       <ul>
         <li v-for="link, index in sectionData.entries" :key="index">
           <a :href="link.Link">

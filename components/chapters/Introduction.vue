@@ -3,19 +3,13 @@
     <TitleVisualization class="background-visualization" />
     <div class="narrative">
       <div class="step">
-        <p>
-          {{ $t('teaser-text1') }}
-        </p>
+        <p v-html="$t('teaser-text1')" />
       </div>
       <div class="step">
-        <p>
-          {{ $t('teaser-text2') }}
-        </p>
+        <p v-html="$t('teaser-text2')" />
       </div>
       <div class="step">
-        <p>
-          {{ $t('teaser-text3') }}
-        </p>
+        <p v-html="$t('teaser-text3')" />
       </div>
     </div>
   </div>

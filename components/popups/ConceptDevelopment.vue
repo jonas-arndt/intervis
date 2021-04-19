@@ -1,59 +1,37 @@
 <template>
   <div class="chapter concept-development horizontal-content">
-    <h2 class="chapter-title">
-      {{ $t('overlay1-title') }}
-    </h2>
+    <h2 class="chapter-title" v-html="$t('overlay1-title')" />
     <div class="content">
       <div class="block">
-        <p class="text teaser">
-          {{ $t('overlay1-intro') }}
-        </p>
+        <p class="text teaser" v-html="$t('overlay1-intro')" />
       </div>
 
       <div class="block">
         <div class="title usa icon">
-          <h3 class="label">
-            {{ $t('overlay1-subtitle1') }}
-          </h3>
+          <h3 class="label" v-html="$t('overlay1-subtitle1')" />
         </div>
         <h4 class="block-title">
-          <q>{{ $t('overlay1-heading1') }}</q>
+          <q v-html="$t('overlay1-heading1')" />
         </h4>
-        <p class="text">
-          {{ $t('overlay1-text1') }}
-        </p>
+        <p class="text" v-html="$t('overlay1-text1')" />
       </div>
 
       <div class="block columned">
-        <h4 class="block-title">
-          {{ $t('overlay1-heading2') }}
-        </h4>
-        <p class="text">
-          {{ $t('overlay1-text2') }}
-        </p>
+        <h4 class="block-title" v-html="$t('overlay1-heading2')" />
+        <p class="text" v-html="$t('overlay1-text2')" />
       </div>
 
       <div class="block">
-        <h4 class="block-title">
-          {{ $t('overlay1-heading3') }}
-        </h4>
-        <p class="text">
-          {{ $t('overlay1-text3') }}
-        </p>
+        <h4 class="block-title" v-html="$t('overlay1-heading3')" />
+        <p class="text" v-html="$t('overlay1-text3')" />
       </div>
 
       <div class="block columned">
         <div class="title germany icon">
-          <h3 class="label">
-            {{ $t('overlay1-subtitle2') }}
-          </h3>
+          <h3 class="label" v-html="$t('overlay1-subtitle2')" />
         </div>
-        <h4 class="block-title">
-          {{ $t('overlay1-heading4') }}
-        </h4>
-        <p class="text">
-          {{ $t('overlay1-text4') }}
-        </p>
+        <h4 class="block-title" v-html="$t('overlay1-heading4')" />
+        <p class="text" v-html="$t('overlay1-text4')" />
       </div>
     </div>
   </div>
