@@ -62,6 +62,7 @@ a.cross-reference {
   border-radius: 1.7em;
   border: none;
   background: $color-red;
+  outline: none;
 
   font-family: $font-family-signika;
   color: white;
