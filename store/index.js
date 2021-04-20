@@ -4,8 +4,16 @@ export const state = () => ({
   teaserIsVisible: true,
 
   conceptDevelopmentIsVisible: false,
-  discriminationDimensionsAreVisible: false
+  discriminationDimensionsAreVisible: false,
+
+  activeDisclosureChapterId: 0
 })
+
+export const getters = {
+  getDisclosureChapter (state) {
+    return state.activeDisclosureChapterId
+  }
+}
 
 export const mutations = {
   toggleDisclosureVisibility (state) {
@@ -28,5 +36,8 @@ export const mutations = {
   },
   hideDiscriminationDimensions (state) {
     state.discriminationDimensionsAreVisible = false
+  },
+  setDisclosureChapterId (state, chapterId) {
+    state.activeDisclosureChapterId = chapterId
   }
 }
