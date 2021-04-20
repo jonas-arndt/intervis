@@ -150,6 +150,24 @@
   "other": [
     {
       "Type": "other",
+      "Title": "Center for Intersectional Justice",
+      "Link": "https://www.intersectionaljustice.org/",
+      "Authors": ""
+    },
+    {
+      "Type": "other",
+      "Title": "Missy Magazine",
+      "Link": "https://missy-magazine.de/",
+      "Authors": ""
+    },
+    {
+      "Type": "other",
+      "Title": "Portal Intersektionalit\u00e4t",
+      "Link": "http://portal-intersektionalitaet.de/startseite/",
+      "Authors": ""
+    },
+    {
+      "Type": "other",
       "Title": "TED Talk: How to recognize your white privilege \u2013 and use it to fight inequality",
       "Link": "https://www.ted.com/talks/peggy_mcintosh_how_to_recognize_your_white_privilege_and_use_it_to_fight_inequality",
       "Authors": "Peggy McIntosh"
@@ -177,6 +195,72 @@
       "Title": "TED Talk: The urgency of intersectionality",
       "Link": "https://www.youtube.com/watch?v=akOe5-UsQ2o&t",
       "Authors": "Kimberl\u00e9 Crenshaw"
+    },
+    {
+      "Type": "other",
+      "Title": "@alicehasters",
+      "Link": "",
+      "Authors": "Alice Hasters"
+    },
+    {
+      "Type": "other",
+      "Title": "@EmiliaZenzile",
+      "Link": "",
+      "Authors": "Emilia Roig"
+    },
+    {
+      "Type": "other",
+      "Title": "@LadyBitchRay1",
+      "Link": "",
+      "Authors": "Lady Bitch Ray"
+    },
+    {
+      "Type": "other",
+      "Title": "@marga_owski",
+      "Link": "",
+      "Authors": "Margarete Stokowski"
+    },
+    {
+      "Type": "other",
+      "Title": "@modekoerper",
+      "Link": "",
+      "Authors": "Dr.*in phil Mahret Ifeoma Kupka"
+    },
+    {
+      "Type": "other",
+      "Title": "@sandylocks",
+      "Link": "",
+      "Authors": "Kimberl\u00e9 Crenshaw"
+    },
+    {
+      "Type": "other",
+      "Title": "@sibelschick",
+      "Link": "",
+      "Authors": "Sibel Schick"
+    },
+    {
+      "Type": "other",
+      "Title": "@teresabuecker",
+      "Link": "",
+      "Authors": "Teresa B\u00fccker"
+    },
+    {
+      "Type": "other",
+      "Title": "@tupoka.o",
+      "Link": "",
+      "Authors": "Tupoka Ogette"
+    },
+    {
+      "Type": "other",
+      "Title": "Lila Podcast",
+      "Link": "https://lila-podcast.de/",
+      "Authors": ""
+    },
+    {
+      "Type": "other",
+      "Title": "Podcast Feuer & Brot",
+      "Link": "https://feuerundbrot.de/",
+      "Authors": ""
     }
   ]
 }
