@@ -67,6 +67,19 @@ a.cross-reference {
   color: white;
 }
 
+.red-bordered-button {
+  display: inline-block;
+  padding: 0.5em 0.8em 0.5em 0.8em;
+
+  border-radius: 1.7em;
+  border: 1px solid $color-red;
+  background-color: $color-white;
+  outline: none;
+
+  font-family: $font-family-signika;
+  color: $color-red;
+}
+
 // other elements
 @import "../styles/case-study";
 @import "../styles/horizontal-content"
