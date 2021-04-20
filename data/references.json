@@ -1,102 +1,177 @@
 [
     {
-        "Title": "Allgemeines Gleichbehandlungsgesetz (AGG) (2013).",
-        "Link": "https://www.gesetze-im-internet.de/agg/BJNR189710006.html",
-        "Request date": "09.02.21"
+        "author": "Allgemeines Gleichbehandlungsgesetz (AGG) (2013).",
+        "title": "",
+        "source": "",
+        "link": "https://www.gesetze-im-internet.de/agg/BJNR189710006.html",
+        "request date": "09.02.21"
     },
     {
-        "Title": "Antidiskriminierungsstelle des Bundes (Hg.) (2017). Diskriminierung in Deutschland. Dritter Gemeinsamer Bericht der Antidiskriminierungsstelle des Bundes und der in ihrem Zust\u00e4ndigkeitsbereich betroffenen Beauftragten der Bundesregierung und des Deutschen Bundestages.",
-        "Link": "https://www.antidiskriminierungsstelle.de/SharedDocs/Downloads/DE/publikationen/BT_Bericht/gemeinsamer_bericht_dritter_2017.html?nn=6569158",
-        "Request date": "09.02.21"
+        "author": "Antidiskriminierungsstelle des Bundes (Hg.) (2017).",
+        "title": "Diskriminierung in Deutschland. Dritter Gemeinsamer Bericht der Antidiskriminierungsstelle des Bundes und der in ihrem Zust\u00e4ndigkeitsbereich betroffenen Beauftragten der Bundesregierung und des Deutschen Bundestages.",
+        "source": "",
+        "link": "https://www.antidiskriminierungsstelle.de/SharedDocs/Downloads/DE/publikationen/BT_Bericht/gemeinsamer_bericht_dritter_2017.html?nn=6569158",
+        "request date": "09.02.21"
     },
     {
-        "Title": "Beauftragte der Bundesregierung f\u00fcr die Belange von Menschen mit Behinderungen (Hg.) (2017). Die UN-Behindertenrechtskonvention. \u00dcbereinkommen \u00fcber die Rechte von Menschen mit Behinderungen.",
-        "Link": "https://www.behindertenbeauftragte.de/SharedDocs/Publikationen/UN_Konvention_deutsch.pdf?__blob=publicationFile&v=2",
-        "Request date": "09.02.21"
+        "author": "Beauftragte der Bundesregierung f\u00fcr die Belange von Menschen mit Behinderungen (Hg.) (2017).",
+        "title": "Die UN-Behindertenrechtskonvention. \u00dcbereinkommen \u00fcber die Rechte von Menschen mit Behinderungen.",
+        "source": "",
+        "link": "https://www.behindertenbeauftragte.de/SharedDocs/Publikationen/UN_Konvention_deutsch.pdf?__blob=publicationFile&v=2",
+        "request date": "09.02.21"
     },
     {
-        "Title": "Bundesministerium f\u00fcr Arbeit und Soziales (Hg.) (2016). Zweiter Teilhabebericht der Bundesregierung \u00fcber die Lebenslagen von Menschen mit Beeintr\u00e4chtigungen. Teilhabe \u2013 Beeintr\u00e4chtigung \u2013 Behinderung.",
-        "Link": "https://www.bundesregierung.de/resource/blob/976072/480512/6b249c2a22eb36f7a1ffb1f2029543b9/2017-01-18-teilhabebericht-2016-data.pdf?download=1",
-        "Request date": "09.02.21"
+        "author": "Bundesministerium f\u00fcr Arbeit und Soziales (Hg.) (2016).",
+        "title": "Zweiter Teilhabebericht der Bundesregierung \u00fcber die Lebenslagen von Menschen mit Beeintr\u00e4chtigungen. Teilhabe \u2013 Beeintr\u00e4chtigung \u2013 Behinderung.",
+        "source": "",
+        "link": "https://www.bundesregierung.de/resource/blob/976072/480512/6b249c2a22eb36f7a1ffb1f2029543b9/2017-01-18-teilhabebericht-2016-data.pdf?download=1",
+        "request date": "09.02.21"
     },
     {
-        "Title": "Bundesministerium f\u00fcr Famile, Senioren, Frauen und Jugend (Hg.) (2012). Lebenssituation und Belastungen von Frauen mit Beeintr\u00e4chtigungen und Behinderungen in Deutschland. Kurzfassung.",
-        "Link": "https://www.bmfsfj.de/bmfsfj/service/publikationen/lebenssituation-und-belastungen-von-frauen-mit-beeintraechtigungen-und-behinderungen-in-deutschland/80576?view=DEFAULT",
-        "Request date": "09.02.21"
+        "author": "Bundesministerium f\u00fcr Famile, Senioren, Frauen und Jugend (Hg.) (2012).",
+        "title": "Lebenssituation und Belastungen von Frauen mit Beeintr\u00e4chtigungen und Behinderungen in Deutschland. Kurzfassung.",
+        "source": "",
+        "link": "https://www.bmfsfj.de/bmfsfj/service/publikationen/lebenssituation-und-belastungen-von-frauen-mit-beeintraechtigungen-und-behinderungen-in-deutschland/80576?view=DEFAULT",
+        "request date": "09.02.21"
     },
     {
-        "Title": "Center for Intersectional Justice (Hg.) (2019). Intersektionalit\u00e4t in Deutschland. Chancen, L\u00fccken und Herausforderungen.",
-        "Link": "https://www.dezim-institut.de/fileadmin/PDF-Download/CIJ_Broschuere_190917_web.pdf",
-        "Request date": "09.02.21"
+        "author": "Center for Intersectional Justice (Hg.) (2019).",
+        "title": "Intersektionalit\u00e4t in Deutschland. Chancen, L\u00fccken und Herausforderungen.",
+        "source": "",
+        "link": "https://www.dezim-institut.de/fileadmin/PDF-Download/CIJ_Broschuere_190917_web.pdf",
+        "request date": "09.02.21"
     },
     {
-        "Title": "Center for Intersectional Justice (Hg.) (2020). CIJ Factsheet: Intersectionality at a Glance in Europe.",
-        "Link": "https://www.intersectionaljustice.org/publication/2020-04-07-center-for-intersectional-justice-factsheet-intersectionality-at-a-glance-in-europe",
-        "Request date": "09.02.21"
+        "author": "Center for Intersectional Justice (Hg.) (2020).",
+        "title": "CIJ Factsheet: Intersectionality at a Glance in Europe.",
+        "source": "",
+        "link": "https://www.intersectionaljustice.org/publication/2020-04-07-center-for-intersectional-justice-factsheet-intersectionality-at-a-glance-in-europe",
+        "request date": "09.02.21"
     },
     {
-        "Title": "Center for Intersectional Justice (Hg.) (2020). Intersectional discrimination in Europe: relevance, challenges and ways forward.",
-        "Link": "https://www.intersectionaljustice.org/publication/2020-09-14-intersectional-discrimination-in-europe-relevance-challenges-and-ways-forward",
-        "Request date": "09.02.21"
+        "author": "Center for Intersectional Justice (Hg.) (2020).",
+        "title": "Intersectional discrimination in Europe: relevance, challenges and ways forward.",
+        "source": "",
+        "link": "https://www.intersectionaljustice.org/publication/2020-09-14-intersectional-discrimination-in-europe-relevance-challenges-and-ways-forward",
+        "request date": "09.02.21"
     },
     {
-        "Title": "Crenshaw, K. (1998). Demarginalizing the Intersection of Race and Sex: A Black Feminist Critique of Antidiscrimination Doctrine, Feminist Theory and Antiracist Politics. University of Chicago Legal Forum, 1989 (8).",
-        "Link": "http://chicagounbound.uchicago.edu/uclf/vol1989/iss1/8",
-        "Request date": "09.02.21"
+        "author": "Combahee River Collection (2006). A Black Feminist Statement. In: Hackett, E. & Haslanger, S. (Hg.)",
+        "title": "Theorizing Feminisms. A Reader (S. 412\u2013418).",
+        "source": "New York, Oxford: Oxford University Press.",
+        "link": "",
+        "request date": ""
     },
     {
-        "Title": "European Network Against Racism (Hg.) (2016a). Equality data collection: Facts and Principles.",
-        "Link": "https://www.enar-eu.org/Equality-data-collection-151",
-        "Request date": "09.02.21"
+        "author": "Crenshaw, K. (1998).",
+        "title": "Demarginalizing the Intersection of Race and Sex: A Black Feminist Critique of Antidiscrimination Doctrine, Feminist Theory and Antiracist Politics. University of Chicago Legal Forum, 1989 (8).",
+        "source": "",
+        "link": "http://chicagounbound.uchicago.edu/uclf/vol1989/iss1/8",
+        "request date": "09.02.21"
     },
     {
-        "Title": "European Network Against Racism (Hg.) (2016b). Forgotten women: The impact of Islamophobia on Muslim women.",
-        "Link": "https://www.enar-eu.org/Forgotten-Women-the-impact-of-Islamophobia-on-Muslim-women",
-        "Request date": "09.02.21"
+        "author": "Crenshaw, K. (1991).",
+        "title": "Mapping the Margins: Intersectionality, Identity Politics, and Violence against Women of Color. Stanford Law Review, 43(6), 1241\u20131299.",
+        "source": "",
+        "link": "",
+        "request date": ""
     },
     {
-        "Title": "European Network Against Racism (Hg.) (2019). Intersectional discrimination in Europe: relevance, challenges and ways forward.",
-        "Link": "https://www.enar-eu.org/intersectionalityreport",
-        "Request date": "09.02.21"
+        "author": "D\u2019Ignazio, C. & Klein, L. F. (2016).",
+        "title": "Feminist Data Visualization. Proceedings from the Workshop on Visualization for the Digital Humanities at IEEE VIS Conference 2016.",
+        "source": "",
+        "link": "",
+        "request date": ""
     },
     {
-        "Title": "Gunda-Werner-Institut (Hg.). (2019). \u201eReach Everyone on the Planet \u2026\u201c \u2013 Kimberl\u00e9 Crenshaw und die Intersektionalit\u00e4t.",
-        "Link": "https://www.gwi-boell.de/de/2019/04/28/reach-everyone-planet-kimberle-crenshaw-und-die-intersektionalitaet",
-        "Request date": "09.02.21"
+        "author": "D\u2019Ignazio, C. & Klein, L. F. (2020).",
+        "title": "Data feminism.",
+        "source": "Cambridge, Massachusetts: The MIT Press.",
+        "link": "",
+        "request date": ""
     },
     {
-        "Title": "Kennedy, H., Hill, R. L., Aiello, G., & Allen, W. (2016). The work that visualisation conventions do. Information, Communication & Society, 19(6), 715\u2013735.",
-        "Link": "https://doi.org/10.1080/1369118X.2016.1153126",
-        "Request date": "09.02.21"
+        "author": "European Network Against Racism (Hg.) (2016a).",
+        "title": "Equality data collection: Facts and Principles.",
+        "source": "",
+        "link": "https://www.enar-eu.org/Equality-data-collection-151",
+        "request date": "09.02.21"
     },
     {
-        "Title": "Mangold, A. (2017). Justitias Dresscode: Wie das BVerfG Neutralit\u00e4t mit \u201eNormalit\u00e4t\u201c verwechselt. Verfassungsblog.",
-        "Link": "https://verfassungsblog.de/justitias-dresscode-wie-das-bverfg-neutralitaet-mit-normalitaet-verwechselt/",
-        "Request date": "09.02.21"
+        "author": "European Network Against Racism (Hg.) (2016b).",
+        "title": "Forgotten women: The impact of Islamophobia on Muslim women.",
+        "source": "",
+        "link": "https://www.enar-eu.org/Forgotten-Women-the-impact-of-Islamophobia-on-Muslim-women",
+        "request date": "09.02.21"
     },
     {
-        "Title": "Strau\u00df, D. (Hg.) (2011). Studie zur aktuellen Bildungssituation deutscher Sinti und Roma. Dokumentation und Forschungsbericht. Marburg: I-Verb.de.",
-        "Link": "https://mediendienst-integration.de/fileadmin/Dateien/2011_Strauss_Studie_Sinti_Bildung.pdf",
-        "Request date": "09.02.21"
+        "author": "European Network Against Racism (Hg.) (2019).",
+        "title": "Intersectional discrimination in Europe: relevance, challenges and ways forward.",
+        "source": "",
+        "link": "https://www.enar-eu.org/intersectionalityreport",
+        "request date": "09.02.21"
     },
     {
-        "Title": "Uebel, C. & Baur, G. (2018). F\u00fcr dumm erkl\u00e4rt - Nenads zweite Chance [Dokumentation]. WDR Doku.",
-        "Link": "https://www.youtube.com/watch?v=miMenY9TdaI",
-        "Request date": "09.02.21"
+        "author": "Gunda-Werner-Institut (Hg.). (2019).",
+        "title": "\u201eReach Everyone on the Planet \u2026\u201c \u2013 Kimberl\u00e9 Crenshaw und die Intersektionalit\u00e4t.",
+        "source": "",
+        "link": "https://www.gwi-boell.de/de/2019/04/28/reach-everyone-planet-kimberle-crenshaw-und-die-intersektionalitaet",
+        "request date": "09.02.21"
     },
     {
-        "Title": "TransInterQueer e.V. (Hg.) (o. D.). Tans* Inter* Queer ABC.",
-        "Link": "http://www.transinterqueer.org/download/Publikationen/TrIQ-ABC_web(2).pdf",
-        "Request date": "09.02.21"
+        "author": "Kennedy, H., Hill, R. L., Aiello, G., & Allen, W. (2016).",
+        "title": "The work that visualisation conventions do. Information, Communication & Society, 19(6), 715\u2013735.",
+        "source": "",
+        "link": "https://doi.org/10.1080/1369118X.2016.1153126",
+        "request date": "09.02.21"
     },
     {
-        "Title": "Walgenbach, K. (2012). Intersektionalit\u00e4t \u2013 eine Einf\u00fchrung.",
-        "Link": "http://portal-intersektionalitaet.de/theoriebildung/ueberblickstexte/walgenbach-einfuehrung/",
-        "Request date": "09.02.21"
+        "author": "Mangold, A. (2017).",
+        "title": "Justitias Dresscode: Wie das BVerfG Neutralit\u00e4t mit \u201eNormalit\u00e4t\u201c verwechselt. Verfassungsblog.",
+        "source": "",
+        "link": "https://verfassungsblog.de/justitias-dresscode-wie-das-bverfg-neutralitaet-mit-normalitaet-verwechselt/",
+        "request date": "09.02.21"
     },
     {
-        "Title": "Weichselbaumer, D. (2016). Discrimination against Female Migrants Wearing Headscarves. In: Institute for the Study of Labor (IZA) (Hg.): Discussion Paper Series.",
-        "Link": "https://www.iza.org/publications/dp/10217/discrimination-against-female-migrants-wearing-headscarves",
-        "Request date": "09.02.21"
+        "author": "Meyer, K. (2017).",
+        "title": "Theorien der Intersektionalit\u00e4t zur Einf\u00fchrung.",
+        "source": "Hamburg: Junius Verlag.",
+        "link": "",
+        "request date": ""
+    },
+    {
+        "author": "Strau\u00df, D. (Hg.) (2011).",
+        "title": "Studie zur aktuellen Bildungssituation deutscher Sinti und Roma. Dokumentation und Forschungsbericht.",
+        "source": "Marburg: I-Verb.de.",
+        "link": "https://mediendienst-integration.de/fileadmin/Dateien/2011_Strauss_Studie_Sinti_Bildung.pdf",
+        "request date": "09.02.21"
+    },
+    {
+        "author": "Uebel, C. & Baur, G. (2018).",
+        "title": "F\u00fcr dumm erkl\u00e4rt - Nenads zweite Chance [Dokumentation]. WDR Doku.",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=miMenY9TdaI",
+        "request date": "09.02.21"
+    },
+    {
+        "author": "TransInterQueer e.V. (Hg.) (o. D.).",
+        "title": "Tans* Inter* Queer ABC.",
+        "source": "",
+        "link": "http://www.transinterqueer.org/download/Publikationen/TrIQ-ABC_web(2).pdf",
+        "request date": "09.02.21"
+    },
+    {
+        "author": "Walgenbach, K. (2012).",
+        "title": "Intersektionalit\u00e4t \u2013 eine Einf\u00fchrung.",
+        "source": "",
+        "link": "http://portal-intersektionalitaet.de/theoriebildung/ueberblickstexte/walgenbach-einfuehrung/",
+        "request date": "09.02.21"
+    },
+    {
+        "author": "Weichselbaumer, D. (2016).",
+        "title": "Discrimination against Female Migrants Wearing Headscarves. In: Institute for the Study of Labor (IZA) (Hg.): Discussion Paper Series.",
+        "source": "",
+        "link": "https://www.iza.org/publications/dp/10217/discrimination-against-female-migrants-wearing-headscarves",
+        "request date": "09.02.21"
     }
 ]

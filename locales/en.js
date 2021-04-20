@@ -144,6 +144,7 @@ export default {
   'projectinfo-text1': 'This project attempts to make intersectionality more accessible, to communicate its central concern and to provide an introduction. Within the context of this project, it is not possible to illustrate intersectionality in its detailed methods, theoretical approaches, levels of analysis, etc. Also, the examples given are only a small sample of the numerous, intersectional forms and experiences of discrimination.<br>This project is shaped by the subjective and partial perspectives of the project team. In the \u00BBInsights into the project\u00AB part, we make certain visualization decisions transparent and people involved visible. We disclose the project process, communicate the perspectives and positions of the authors and reflect on the project outcomes.<br>',
   'projectinfo-button': 'Insights into the project',
   'references-title': 'References',
+  'references-downloaded': 'Retrieved from',
   'slidein-title': 'Visualization decisions and data context',
   'slidein-button': 'More insights into project',
   'slidein1-subtitle': 'Visualizing Intersectionality',

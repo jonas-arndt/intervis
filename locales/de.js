@@ -144,6 +144,7 @@ export default {
   'projectinfo-text1': 'Dieses Projekt versucht, Intersektionalit\u00E4t zug\u00E4nglicher zu machen, das zentrale Anliegen zu kommunizieren und einen Einstieg zu erm\u00F6glichen. Im Rahmen dieses Projektes ist es nicht m\u00F6glich, Intersektionalit\u00E4t vollst\u00E4ndig in ihren detaillierten Methoden, theoretischen Ans\u00E4tzen, Analyseebenen etc. zu behandeln. Auch sind die genannten Beispiele lediglich ein kleiner Ausschnitt der zahlreichen, intersektionalen Diskriminierungsformen und -erfahrungen.<br>Dieses Projekt ist gepr\u00E4gt von den subjektiven und partiellen Perspektiven des Projektteams. In dem Teil \u00BBEinblicke in das Projekt\u00AB werden bestimmte Visualisierungsentscheidungen transparent und involvierte Personen sichtbar gemacht. Der Projektprozess wird offengelegt, die Perspektiven und Positionen der Autor*innen werden kommuniziert und die Projektergebnisse reflektiert.',
   'projectinfo-button': 'Einblicke in das Projekt',
   'references-title': 'Quellen',
+  'references-downloaded': 'Abgerufen von',
   'slidein-title': 'Visualisierungsentscheidungen & Datenkontext',
   'slidein-button': 'Mehr Einblicke ins Projekt',
   'slidein1-subtitle': 'Visualisierung von Intersektionalit\u00E4t',

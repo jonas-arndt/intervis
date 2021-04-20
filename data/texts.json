@@ -723,5 +723,10 @@
         "ID": "references-title",
         "German": "Quellen",
         "English": "References"
+    },
+    {
+        "ID": "references-downloaded",
+        "German": "Abgerufen von",
+        "English": "Retrieved from"
     }
 ]
