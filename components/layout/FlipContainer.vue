@@ -36,6 +36,7 @@ export default {
 /*  UPDATED! flip the pane when hovered */
 .flip-container.flipped .back {
   transform: rotateY(0deg);
+  z-index: 2;
 }
 .flip-container.flipped .front {
   transform: rotateY(180deg);
@@ -44,6 +45,7 @@ export default {
 .flip-container, .flipper, .front, .back {
   height: 100%;
   width: 100%;
+  z-index: 0;
 }
 
 /* flip speed goes here */
@@ -73,6 +75,7 @@ export default {
 
 /* back, initially hidden pane */
 .back {
+  z-index: 0;
   transform: rotateY(-180deg);
 }
 
