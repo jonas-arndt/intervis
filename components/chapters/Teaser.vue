@@ -9,7 +9,7 @@
         <p v-html="$t('startscreen-preamble')" />
         <ButtonLine>
           <button class="red-button" @click="hideTeaser()" v-html="$t('startscreen-preamble-button1')" />
-          <button class="red-button" @click="toggleDisclosureVisibility()" v-html="$t('startscreen-preamble-button2')" />
+          <button class="red-button" @click="showProjectDisclosure()" v-html="$t('startscreen-preamble-button2')" />
         </ButtonLine>
       </div>
     </div>
@@ -21,7 +21,11 @@ import { mapMutations } from 'vuex'
 
 export default {
   methods: {
-    ...mapMutations(['hideTeaser', 'toggleDisclosureVisibility'])
+    ...mapMutations(['hideTeaser', 'toggleDisclosureVisibility']),
+    showProjectDisclosure () {
+      this.toggleDisclosureVisibility()
+      this.hideTeaser()
+    }
   }
 }
 
