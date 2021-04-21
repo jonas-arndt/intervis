@@ -1,14 +1,23 @@
 <template>
   <div class="slider-content">
     <div class="inside">
-      <h2 class="title" v-html="$t('slidein-title')" />
-      <slot />
+      <div class="scroll-container">
+        <h2 class="title" v-html="$t('slidein-title')" />
+        <slot />
+      </div>
+      <a class="disclosure-button red-button" @click.stop="toggleDisclosureVisibility()" v-html="$t('slidein-button')" />
     </div>
   </div>
 </template>
 
 <script>
+import { mapMutations } from 'vuex'
 
+export default {
+  methods: {
+    ...mapMutations(['toggleDisclosureVisibility'])
+  }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -25,13 +34,27 @@
     position: sticky;
     top: 0px;
     height: 100vh;
-    overflow-y: scroll;
 
-    padding: 1.5rem 1rem 1.5rem 1rem;
+    .scroll-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow-y: scroll;
+
+      padding: 1.5rem 1rem 1.5rem 1rem;
+    }
 
     .title {
       font-weight: 700;
       font-size: $font-size-title-caption;
+    }
+
+    .disclosure-button {
+      position: absolute;
+      bottom: 2rem;
+      right: 2rem;
+
+      font-size: $font-size-small;
     }
   }
 }
