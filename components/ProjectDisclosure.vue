@@ -1,8 +1,8 @@
 <template>
-  <div class="project-disclosure content">
+  <div class="project-disclosure">
     <div class="header">
-      <h1 v-html="$t('backside-title')" />
-      <DisclosureNavigation />
+      <h1 class="title" v-html="$t('backside-title')" />
+      <DisclosureNavigation class="navigation" />
     </div>
 
     <div class="content">
@@ -36,16 +36,29 @@ export default {
   flex-direction: column;
 
   height: 100%;
-
   background-color: $color-white;
 
-  .header, .content {
-    display: table-row;
+  .header {
+    padding: 1.5rem;
+    padding-bottom: 0.5rem;
+
+    .title {
+      font-weight: 700;
+      font-size: $font-size-subtitle;
+      margin-bottom: 1rem;
+    }
+
+    .navigation {
+      margin-left: -0.3rem;
+    }
   }
 
   .content {
     overflow-y: scroll;
-    padding-bottom: 4rem;
+
+    & > * {
+      padding: 0.5rem 1.5rem 3.5rem 1.5rem;
+    }
   }
 
   .return-button {
@@ -57,6 +70,17 @@ export default {
 
   @media (min-width: $media-breakpoint-min-m) {
     flex-direction: row;
+
+    .header {
+      min-width: 10rem;
+      flex-shrink: 0;
+
+      padding-top: 5rem;
+    }
+
+    .content > * {
+      padding-top: 5rem;
+    }
 
     .return-button {
       width: auto;
