@@ -1,7 +1,9 @@
 <template>
-  <a :class="['slide-in-toggle-button', designDecisionsAreVisible ? 'active' : '']" @click="$store.commit('toggleDesignDecisionsVisibility')">
-    <span class="label"><slot /></span>
-  </a>
+  <div class="slide-in-toggle-button-wrapper">
+    <a :class="['button', designDecisionsAreVisible ? 'active' : '']" @click="$store.commit('toggleDesignDecisionsVisibility')">
+      <span class="label"><slot /></span>
+    </a>
+  </div>
 </template>
 
 <script>
@@ -18,49 +20,56 @@ export default {
 @import "../../styles/_variables";
 /* Rectangle */
 
-.slide-in-toggle-button {
-  position: absolute;
-  display: inline-block;
-  right: 0px;
+.slide-in-toggle-button-wrapper {
+  position: sticky;
+  width: 100%;
+
   top: 20px;
   z-index:1000;
 
-  min-width: 45px;
-  height: 45px;
+  .button {
+    position: absolute;
+    display: inline-block;
+    right: 0px;
 
-  background: $color-black;
-  border-radius: 22.5px 0px 0px 22.5px;
+    min-width: 45px;
+    height: 45px;
 
-  background-image: url('~assets/icons/slide-in/light-bulp.svg');
-  background-repeat: no-repeat;
-  background-position: 13px center;
-  background-color: $color-black;
+    background: $color-black;
+    border-radius: 22.5px 0px 0px 22.5px;
 
-  transition: 1s;
+    background-image: url('~assets/icons/slide-in/light-bulp.svg');
+    background-repeat: no-repeat;
+    background-position: 13px center;
+    background-color: $color-black;
 
-  .label {
-    display: none;
-    margin-top: 8px;
-    margin-left: 40px;
-    margin-right: 10px;
-
-    font-size: $font-size-small;
-    color: $color-white;
-    font-family: $font-family-signika;
-    line-height: 1.4em;
-  }
-
-  &.active {
-      background-image: url('~assets/icons/slide-in/back.svg');
-      background-position: 19px center;
-  }
-
-  &:hover {
-    cursor: pointer;
-    font-size: $font-size-small;
+    transition: 1s;
 
     .label {
-      display: block;
+      display: none;
+      margin-top: 8px;
+      margin-left: 40px;
+      margin-right: 10px;
+
+      font-size: $font-size-small;
+      color: $color-white;
+      font-family: $font-family-signika;
+      line-height: 1.4em;
+    }
+
+    &.active {
+        background-image: url('~assets/icons/slide-in/back.svg');
+        background-position: 19px center;
+    }
+
+    &:hover {
+      cursor: pointer;
+      font-size: $font-size-small;
+
+      .label {
+        display: block;
+      }
+
     }
 
   }
