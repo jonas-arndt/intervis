@@ -27,22 +27,21 @@ export default {
 .language-switcher {
   li {
     display: inline-block;
-    margin-right: 0.5em;
+    margin-right: 1em;
 
     a {
+      position: relative;
       display: block;
       font-family: $font-family-signika;
-      font-weight: 700;
+      font-weight: 600;
       color: $color-black;
     }
 
     &.active {
       a {
-        border: 2px solid $color-red;
+        border: 2px solid $color-black;
         border-radius: 1.2em;
         padding: 0.1em 0.4em 0.1em 0.4em;
-
-        color: $color-red;
       }
     }
   }
