@@ -1,19 +1,19 @@
 <template>
   <div class="project-disclosure content">
-    <button class="red-bordered-button return-button" @click="$store.commit('toggleDisclosureVisibility')" v-html="$t('backside-button')" />
-
-    <header>
+    <div class="header">
       <h1 v-html="$t('backside-title')" />
       <DisclosureNavigation />
-    </header>
+    </div>
 
-    <main>
+    <div class="content">
       <ProjectDisclosurePart1 v-if="activeDisclosureChapterId == 0" />
       <ProjectDisclosurePart2 v-if="activeDisclosureChapterId == 1" />
       <ProjectDisclosurePart3 v-if="activeDisclosureChapterId == 2" />
       <ProjectDisclosurePart4 v-if="activeDisclosureChapterId == 3" />
       <ProjectDisclosurePart5 v-if="activeDisclosureChapterId == 4" />
-    </main>
+    </div>
+
+    <button class="red-bordered-button return-button" @click="$store.commit('toggleDisclosureVisibility')" v-html="$t('backside-button')" />
   </div>
 </template>
 
@@ -31,10 +31,22 @@ export default {
 @import "../styles/_variables";
 
 .project-disclosure {
-  background-color: $color-white;
   position: relative;
+  display: flex;
+  flex-direction: column;
+
   height: 100%;
-  overflow: scroll;
+
+  background-color: $color-white;
+
+  .header, .content {
+    display: table-row;
+  }
+
+  .content {
+    overflow-y: scroll;
+    padding-bottom: 4rem;
+  }
 
   .return-button {
     position: fixed;
@@ -44,6 +56,8 @@ export default {
   }
 
   @media (min-width: $media-breakpoint-min-m) {
+    flex-direction: row;
+
     .return-button {
       width: auto;
       top: 1rem;
