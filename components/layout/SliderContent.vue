@@ -1,6 +1,7 @@
 <template>
   <div class="slider-content">
     <div class="inside">
+      <h2 class="title" v-html="$t('slidein-title')" />
       <slot />
     </div>
   </div>
@@ -24,8 +25,14 @@
     position: sticky;
     top: 0px;
     height: 100vh;
-    padding-top: 20px;
     overflow-y: scroll;
+
+    padding: 1.5rem 1rem 1.5rem 1rem;
+
+    .title {
+      font-weight: 700;
+      font-size: $font-size-title-caption;
+    }
   }
 }
 </style>
