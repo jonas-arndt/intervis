@@ -27,6 +27,8 @@
     <PopupOverlay v-if="discriminationDimensionsAreVisible" class="overlay" @close="hideDiscriminationDimensions()">
       <DimensionsDiscrimination />
     </PopupOverlay>
+
+    <MailFeedbackButton class="feedback-button" />
   </div>
 </template>
 
@@ -61,6 +63,22 @@ export default {
 
   .design-decisions-container {
     height: 100%;
+  }
+
+  .feedback-button {
+    display: none;
+
+    position: fixed;
+    bottom: 3rem;
+    left: 0;
+
+    z-index: 400;
+  }
+
+  @media (min-width: $media-breakpoint-min-m) {
+    .feedback-button {
+      display: block;
+    }
   }
 }
 
