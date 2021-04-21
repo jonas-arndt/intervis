@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1 v-html="$t('slidein1-subtitle')" />
+  <div class="design-decisions-1">
+    <h1 class="title" v-html="$t('slidein1-subtitle')" />
     <p class="teaser" v-html="$t('slidein1-intro')" />
 
     <QuestionWithHiddenAnswer>
@@ -35,3 +35,17 @@
     </QuestionWithHiddenAnswer>
   </div>
 </template>
+
+<style lang="scss" scoped>
+
+.design-decisions-1 {
+  .title {
+    margin-bottom: 1.2rem;
+  }
+
+  .teaser {
+    font-style: italic;
+    margin-bottom: 1.8rem;
+  }
+}
+</style>

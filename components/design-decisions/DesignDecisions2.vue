@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1 v-html="$t('slidein2-subtitle')" />
+  <div class="design-decisions-2">
+    <h1 class="title" v-html="$t('slidein2-subtitle')" />
 
     <QuestionWithHiddenAnswer>
       <span v-html="$t('slidein2-heading1')" />
@@ -44,3 +44,12 @@
     </QuestionWithHiddenAnswer>
   </div>
 </template>
+
+<style lang="scss" scoped>
+
+.design-decisions-2 {
+  .title {
+    margin-bottom: 1.2rem;
+  }
+}
+</style>

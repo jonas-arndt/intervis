@@ -47,6 +47,7 @@ export default {
     .title {
       font-weight: 700;
       font-size: $font-size-title-caption;
+      margin-bottom: 2rem;
     }
 
     .disclosure-button {
