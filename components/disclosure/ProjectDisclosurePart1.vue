@@ -1,6 +1,5 @@
 <template>
   <div class="disclosure content">
-    <h1 v-html="$t('backside-menu1')" />
     <h2 v-html="$t('backside-process-subtitle1')" />
     <p v-html="$t('backside-process-intro1')" />
 
