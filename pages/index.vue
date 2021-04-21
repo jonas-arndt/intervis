@@ -19,15 +19,32 @@
       </template>
       <!-- FlipContainer: back content end -->
     </FlipContainer>
+
+    <PopupOverlay v-if="conceptDevelopmentIsVisible" class="overlay" @close="hideConceptDevelopment()">
+      <ConceptDevelopment />
+    </PopupOverlay>
+
+    <PopupOverlay v-if="discriminationDimensionsAreVisible" class="overlay" @close="hideDiscriminationDimensions()">
+      <DimensionsDiscrimination />
+    </PopupOverlay>
   </div>
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapState, mapMutations } from 'vuex'
 
 export default {
   computed: {
-    ...mapState(['projectDisclosureIsVisible', 'designDecisionsAreVisible', 'teaserIsVisible'])
+    ...mapState([
+      'conceptDevelopmentIsVisible',
+      'discriminationDimensionsAreVisible',
+      'projectDisclosureIsVisible',
+      'designDecisionsAreVisible',
+      'teaserIsVisible'
+    ])
+  },
+  methods: {
+    ...mapMutations(['hideConceptDevelopment', 'hideDiscriminationDimensions'])
   }
 }
 </script>
@@ -38,7 +55,7 @@ export default {
 .page {
   height: 100%;
 
-  .intro {
+  .intro, .overlay {
     z-index: 500;
   }
 

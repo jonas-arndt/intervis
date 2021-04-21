@@ -21,10 +21,6 @@
       </div>
     </div>
 
-    <PopupOverlay v-if="discriminationDimensionsAreVisible" @close="hideDiscriminationDimensions()">
-      <DimensionsDiscrimination />
-    </PopupOverlay>
-
     <SliderContent>
       <DesignDecisions2 />
     </SliderContent>
@@ -32,14 +28,11 @@
 </template>
 
 <script>
-import { mapState, mapMutations } from 'vuex'
+import { mapMutations } from 'vuex'
 
 export default {
-  computed: {
-    ...mapState(['discriminationDimensionsAreVisible'])
-  },
   methods: {
-    ...mapMutations(['showDiscriminationDimensions', 'hideDiscriminationDimensions'])
+    ...mapMutations(['showDiscriminationDimensions'])
   }
 }
 </script>

@@ -17,10 +17,6 @@
       </div>
     </div>
 
-    <PopupOverlay v-if="conceptDevelopmentIsVisible" @close="hideConceptDevelopment()">
-      <ConceptDevelopment />
-    </PopupOverlay>
-
     <SliderContent>
       <DesignDecisions1 />
     </SliderContent>
@@ -28,14 +24,11 @@
 </template>
 
 <script>
-import { mapState, mapMutations } from 'vuex'
+import { mapMutations } from 'vuex'
 
 export default {
-  computed: {
-    ...mapState(['conceptDevelopmentIsVisible'])
-  },
   methods: {
-    ...mapMutations(['showConceptDevelopment', 'hideConceptDevelopment'])
+    ...mapMutations(['showConceptDevelopment'])
   }
 }
 </script>
