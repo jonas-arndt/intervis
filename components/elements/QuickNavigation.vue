@@ -50,7 +50,6 @@ export default {
 
     .inside {
       position: relative;
-      height: 2em;
       display: inline-block;
       background: $color-black;
       border-radius: 0 1em 1em 0;
