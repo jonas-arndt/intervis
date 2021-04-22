@@ -14,7 +14,8 @@
       </div>
     </div>
     <NextSteps @hook:mounted="setComponentMounted('NextSteps')" />
-    <Sources @hook:mounted="setComponentMounted('Sources')" />
+    <ProjectInformation @hook:mounted="setComponentMounted('ProjectInformation')" />
+    <References @hook:mounted="setComponentMounted('References')" />
   </div>
 </template>
 
@@ -32,7 +33,8 @@ export default {
       'CaseStudies',
       'Measures',
       'NextSteps',
-      'Sources'
+      'ProjectInformation',
+      'References'
     ]
 
     const mountedSubComponents = {}

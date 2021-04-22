@@ -1,11 +1,5 @@
 <template>
-  <div class="chapter project-information-and-sources">
-    <h2 class="chapter-title" v-html="$t('projectinfo-title')" />
-    <p v-html="$t('projectinfo-text1')" />
-    <p class="disclosure-link">
-      <button class="red-button" @click="$store.commit('toggleDisclosureVisibility')" v-html="$t('projectinfo-button')" />
-    </p>
-
+  <div class="chapter references">
     <h2 class="chapter-title" v-html="$t('references-title')" />
     <div class="references">
       <ul>
@@ -44,19 +38,13 @@ export default {
 <style lang="scss" scoped>
 @import "../../styles/_variables";
 
-.chapter.project-information-and-sources {
+.chapter.references {
   background-color: $color-light-grey;
   padding: 1rem;
 
   h2 {
     font-size: $font-size-title;
     margin-bottom: 1.8rem;
-  }
-
-  .disclosure-link {
-    margin-top: 2rem;
-    margin-bottom: 3rem;
-    text-align: center;
   }
 
   .references {
@@ -69,10 +57,8 @@ export default {
       margin-bottom: 1em;
     }
   }
-}
 
-@media (min-width: $media-breakpoint-min-m) {
-  .chapter.project-information-and-sources {
+  @media (min-width: $media-breakpoint-min-m) {
     padding: 3rem 20% 5rem 20%;
 
     .references {
