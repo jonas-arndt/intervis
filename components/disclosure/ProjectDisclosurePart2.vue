@@ -63,7 +63,7 @@
         <span v-html="$t('backside-decision-button6')" />
       </template>
       <template v-slot:answer>
-        <span v-html="$t('backside-decision-text6')" />
+        <p v-html="$t('backside-decision-text6')" />
       </template>
     </QuestionWithHiddenAnswer>
 
