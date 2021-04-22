@@ -21,6 +21,9 @@
   background-repeat: no-repeat;
   background-position: 1rem center;
 
+  font-weight: 400;
+  color: $color-black;
+
   .label {
     display: block;
     position: relative;

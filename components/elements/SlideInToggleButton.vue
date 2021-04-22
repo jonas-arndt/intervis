@@ -55,6 +55,7 @@ export default {
       color: $color-white;
       font-family: $font-family-signika;
       line-height: 1.4em;
+      font-weight: 400;
     }
 
     &.active {
