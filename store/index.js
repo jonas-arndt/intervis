@@ -12,6 +12,10 @@ export const state = () => ({
 export const getters = {
   getDisclosureChapter (state) {
     return state.activeDisclosureChapterId
+  },
+  getActiveChapter (state) {
+    // TODO
+    return 2
   }
 }
 

@@ -28,6 +28,7 @@
       <DimensionsDiscrimination />
     </PopupOverlay>
 
+    <QuickNavigation class="article-navigation" />
     <MailFeedbackButton class="feedback-button" />
   </div>
 </template>
@@ -70,6 +71,14 @@ export default {
 
     position: fixed;
     bottom: 3rem;
+    left: 0;
+
+    z-index: 400;
+  }
+
+  .article-navigation {
+    position: fixed;
+    top: 2rem;
     left: 0;
 
     z-index: 400;
