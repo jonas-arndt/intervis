@@ -109,6 +109,16 @@ a.cross-reference {
   }
 }
 
+// Layout definitions from google spreadsheet
+a {
+  font-weight: 800;
+  color: $color-red;
+
+  &:hover {
+    color: $color-black;
+  }
+}
+
 // other elements
 @import "../styles/case-study";
 @import "../styles/horizontal-content"
