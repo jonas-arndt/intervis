@@ -73,6 +73,15 @@ export default {
   background-color: $color-light-grey;
   padding: 1rem;
 
+  a {
+    color: $color-black;
+    font-weight: inherit;
+
+    &:hover {
+      color: $color-red;
+    }
+  }
+
   h2 {
     margin-bottom: 1.8rem;
   }

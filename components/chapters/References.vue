@@ -47,6 +47,15 @@ export default {
     margin-bottom: 1.8rem;
   }
 
+  a {
+    font-weight: normal;
+    color: $color-black;
+
+    &:hover {
+      color: $color-red;
+    }
+  }
+
   .references {
     font-size: $font-size-smaller;
     line-height: normal;

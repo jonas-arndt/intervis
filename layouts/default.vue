@@ -110,12 +110,29 @@ a.cross-reference {
 }
 
 // Layout definitions from google spreadsheet
+b {
+  font-weight: 600;
+}
+
+i {
+  font-style: italic;
+}
+
 a {
   font-weight: 800;
   color: $color-red;
 
   &:hover {
     color: $color-black;
+  }
+
+  &.tooltip {
+    color: $color-black;
+    text-decoration: underline;
+
+    &:hover {
+      color: $color-red;
+    }
   }
 }
 
