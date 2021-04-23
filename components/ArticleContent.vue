@@ -20,8 +20,6 @@
 </template>
 
 <script>
-import scrollama from 'scrollama'
-
 export default {
   data () {
     const subComponents = [
@@ -44,7 +42,6 @@ export default {
 
     return {
       mountedSubComponents,
-      scroller: undefined
     }
   },
   computed: {
@@ -60,33 +57,12 @@ export default {
   watch: {
     subComponentsFullyMounted (subComponentsFullyMounted) {
       if (subComponentsFullyMounted) {
-        this.initScrollama()
       }
     }
   },
   methods: {
     setComponentMounted (componentName) {
       this.mountedSubComponents[componentName] = true
-    },
-    initScrollama () {
-      this.scroller = scrollama()
-      this.scroller.setup({
-        step: '.chapter',
-        progress: true,
-        debug: false
-      })
-        .onStepEnter((response) => {
-          // { element, index, direction }
-        })
-        .onStepExit((response) => {
-          // { element, index, direction }
-        })
-        .onStepProgress((response) => {
-          // { element: DOMElement, index: number, progress: number }
-        })
-
-      // setup resize event
-      window.addEventListener('resize', this.scroller.resize)
     }
   }
 }
