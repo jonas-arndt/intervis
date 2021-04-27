@@ -30,6 +30,7 @@
 
     <QuickNavigation class="article-navigation" />
     <MailFeedbackButton class="feedback-button" />
+    <GoogleLink class="google-link" />
   </div>
 </template>
 
@@ -74,6 +75,12 @@ export default {
     left: 0;
 
     z-index: 400;
+  }
+
+  .google-link {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
   }
 
   .article-navigation {
