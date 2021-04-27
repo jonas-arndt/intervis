@@ -2,7 +2,9 @@
   <div class="discrimination-visualization">
     <div class="case-container">
       <div class="visual">
-        <Blob :point-list="pointsFirstShape" />
+        <!-- <Blob :point-list="pointsFirstShape" /> -->
+        <img v-if="$i18n.locale == 'de'" src="~/assets/fallback/chapter2_1_german.png">
+        <img v-if="$i18n.locale == 'en'" src="~/assets/fallback/chapter2_1_english.png">
       </div>
       <div class="description">
         <p class="title" v-html="$t('chapter2-vis2-title1')" />
@@ -11,7 +13,10 @@
     </div>
     <div class="case-container">
       <div class="visual">
-        <Blob :point-list="pointsSecondShape" />
+        <!-- <Blob :point-list="pointsSecondShape" /> -->
+        <img v-if="$i18n.locale == 'de'" src="~/assets/fallback/chapter2_2_german.png">
+        <img v-if="$i18n.locale == 'en'" src="~/assets/fallback/chapter2_2_english.png">
+        <img>
       </div>
       <div class="description">
         <p class="title" v-html="$t('chapter2-vis2-title2')" />
@@ -20,7 +25,9 @@
     </div>
     <div class="case-container">
       <div class="visual">
-        <Blob :point-list="pointsThirdShape" />
+        <!-- <Blob :point-list="pointsThirdShape" /> -->
+        <img v-if="$i18n.locale == 'de'" src="~/assets/fallback/chapter2_3_german.png">
+        <img v-if="$i18n.locale == 'en'" src="~/assets/fallback/chapter2_3_english.png">
       </div>
       <div class="description">
         <p class="title" v-html="$t('chapter2-vis2-title3')" />

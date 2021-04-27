@@ -2,10 +2,28 @@
   <div class="measures-visualization">
     <div class="visual-container">
       <div class="visual top-left">
-        <img src="~/assets/visualizations/measures1.png">
+        <div class="step-1">
+          <img v-if="$i18n.locale == 'en'" src="~/assets/fallback/chapter4_1_english.png">
+          <img v-if="$i18n.locale == 'de'" src="~/assets/fallback/chapter4_1_german.png">
+        </div>
+        <div class="step-2">
+          <img v-if="$i18n.locale == 'en'" src="~/assets/fallback/chapter4_3_english.png">
+          <img v-if="$i18n.locale == 'de'" src="~/assets/fallback/chapter4_3_german.png">
+        </div>
+        <div class="step-3">
+          <img v-if="$i18n.locale == 'en'" src="~/assets/fallback/chapter4_5_english.png">
+          <img v-if="$i18n.locale == 'de'" src="~/assets/fallback/chapter4_5_german.png">
+        </div>
       </div>
       <div class="visual bottom-right">
-        <img src="~/assets/visualizations/measures2.png">
+        <div class="step-1">
+          <img v-if="$i18n.locale == 'en'" src="~/assets/fallback/chapter4_4_english.png">
+          <img v-if="$i18n.locale == 'de'" src="~/assets/fallback/chapter4_4_german.png">
+        </div>
+        <div class="step-2">
+          <img v-if="$i18n.locale == 'en'" src="~/assets/fallback/chapter4_5_english.png">
+          <img v-if="$i18n.locale == 'de'" src="~/assets/fallback/chapter4_5_german.png">
+        </div>
       </div>
     </div>
   </div>
