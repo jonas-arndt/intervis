@@ -1,5 +1,5 @@
 export default {
-  'evaluation-link': 'Hier findest Du einen 15-min\u00FCtigen Fragebogen zum Artikel. Wir freuen uns \u00FCber deine Teilnahme!',
+  'evaluation-link': '<b>Hier findest Du<br>einen 15-min\u00FCtigen<br>Fragebogen zum<br>Artikel.</b><br>Wir freuen uns \u00FCber<br>deine Teilnahme!',
   '': 'https://docs.google.com/forms/d/e/1FAIpQLSd9kykOGH0PTMdTi5de8w3Oz17lMRH-IjS0JNmIGfgBNdBp5w/viewform?usp=sf_link',
   'startscreen-date': '18.05.2021',
   'startscreen-title': 'Inter\u2026was?<br>Intersektionalit\u00E4t!',

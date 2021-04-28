@@ -1,8 +1,8 @@
 [
     {
         "ID": "evaluation-link",
-        "German": "Hier findest Du einen 15-min\u00fctigen Fragebogen zum Artikel. Wir freuen uns \u00fcber deine Teilnahme!",
-        "English": "Here you will find a 15-minute questionnaire about the article. We are looking forward to your participation!"
+        "German": "<b>Hier findest Du\neinen 15-min\u00fctigen\nFragebogen zum\nArtikel.</b>\nWir freuen uns \u00fcber\ndeine Teilnahme!",
+        "English": "<b>Here you will\nfind a 15-minute\nquestionnaire about\nthe article.</b> We are\nlooking forward to\nyour participation!"
     },
     {
         "ID": "",

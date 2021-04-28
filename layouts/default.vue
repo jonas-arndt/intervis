@@ -66,6 +66,8 @@ a.cross-reference {
 
   font-family: $font-family-signika;
   color: white;
+
+  cursor: pointer;
 }
 
 .red-bordered-button {
@@ -79,6 +81,8 @@ a.cross-reference {
 
   font-family: $font-family-signika;
   color: $color-red;
+
+  cursor: pointer;
 }
 
 .disclosure.content {
@@ -100,6 +104,7 @@ a.cross-reference {
   h3 {
     font-size: $font-size-title-caption;
     font-style: italic;
+    font-family: $font-family-pt-serif;
     margin-top: 2.4rem;
     margin-bottom: 0.8rem;
   }

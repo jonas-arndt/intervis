@@ -1,5 +1,5 @@
 export default {
-  'evaluation-link': 'Here you will find a 15-minute questionnaire about the article. We are looking forward to your participation!',
+  'evaluation-link': '<b>Here you will<br>find a 15-minute<br>questionnaire about<br>the article.</b> We are<br>looking forward to<br>your participation!',
   '': 'https://docs.google.com/forms/d/e/1FAIpQLSeynkCObZU11Vxb9PIy6e58I-US1x4FR_bl7oeX3MpGxowZpA/viewform?usp=sf_link',
   'startscreen-date': '18.05.2021',
   'startscreen-title': 'Inter...what?<br>Intersectionality!',
