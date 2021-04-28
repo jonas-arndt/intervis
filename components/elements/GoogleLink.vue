@@ -1,9 +1,29 @@
 <template>
-  <a href="https://forms.gle/vNSTSwdxJrdoHUB77" target="_blank" class="google-link">
-    <span class="main-statement">Hier findest du<br>einen 15-minütigen<br>Fragebogen zum<br>Artikel.</span>
-    <span class="sub-statement">Wir freuen uns über<br>Deine Teilnahme!</span>
+  <a :href="link" target="_blank" class="google-link">
+    <span v-html="$t('evaluation-link')" />
   </a>
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+      germanLink: 'https://docs.google.com/forms/d/e/1FAIpQLSd9kykOGH0PTMdTi5de8w3Oz17lMRH-IjS0JNmIGfgBNdBp5w/viewform?usp=sf_link',
+      englishLink: 'https://docs.google.com/forms/d/e/1FAIpQLSeynkCObZU11Vxb9PIy6e58I-US1x4FR_bl7oeX3MpGxowZpA/viewform?usp=sf_link'
+    }
+  },
+  computed: {
+    link () {
+      if (this.$i18n.locale === 'de') {
+        return this.germanLink
+      } else {
+        return this.englishLink
+      }
+    }
+  }
+}
+
+</script>
 
 <style lang="scss">
 @import "../../styles/_variables";
@@ -27,13 +47,6 @@ $circle-radius: 11em;
 
   background-color: $color-red;
   cursor: pointer;
-
-  .main-statement, .sub-statement {
-    display: block;
-  }
-  .main-statement {
-    font-weight: 600;
-  }
 }
 
 </style>
