@@ -14,10 +14,6 @@
       <div class="step right">
         <p v-html="$t('chapter4-text3')" />
       </div>
-
-      <div class="step right">
-        <p class="highlight" v-html="$t('chapter4-highlight')" />
-      </div>
     </div>
   </div>
 </template>
