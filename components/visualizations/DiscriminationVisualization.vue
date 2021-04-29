@@ -2,9 +2,11 @@
   <div class="discrimination-visualization">
     <div class="case-container">
       <div class="visual">
-        <!-- <Blob :point-list="pointsFirstShape" /> -->
-        <img v-if="$i18n.locale == 'de'" src="~/assets/fallback/chapter2_1_german.png">
-        <img v-if="$i18n.locale == 'en'" src="~/assets/fallback/chapter2_1_english.png">
+        <div class="inside">
+          <!-- <Blob :point-list="pointsFirstShape" /> -->
+          <img v-if="$i18n.locale == 'de'" src="~/assets/fallback/chapter2_1_german.png">
+          <img v-if="$i18n.locale == 'en'" src="~/assets/fallback/chapter2_1_english.png">
+        </div>
       </div>
       <div class="description">
         <p class="title" v-html="$t('chapter2-vis2-title1')" />
@@ -13,10 +15,11 @@
     </div>
     <div class="case-container">
       <div class="visual">
-        <!-- <Blob :point-list="pointsSecondShape" /> -->
-        <img v-if="$i18n.locale == 'de'" src="~/assets/fallback/chapter2_2_german.png">
-        <img v-if="$i18n.locale == 'en'" src="~/assets/fallback/chapter2_2_english.png">
-        <img>
+        <div class="inside">
+          <!-- <Blob :point-list="pointsSecondShape" /> -->
+          <img v-if="$i18n.locale == 'de'" src="~/assets/fallback/chapter2_2_german.png">
+          <img v-if="$i18n.locale == 'en'" src="~/assets/fallback/chapter2_2_english.png">
+        </div>
       </div>
       <div class="description">
         <p class="title" v-html="$t('chapter2-vis2-title2')" />
@@ -25,9 +28,11 @@
     </div>
     <div class="case-container">
       <div class="visual">
-        <!-- <Blob :point-list="pointsThirdShape" /> -->
-        <img v-if="$i18n.locale == 'de'" src="~/assets/fallback/chapter2_3_german.png">
-        <img v-if="$i18n.locale == 'en'" src="~/assets/fallback/chapter2_3_english.png">
+        <div class="inside">
+          <!-- <Blob :point-list="pointsThirdShape" /> -->
+          <img v-if="$i18n.locale == 'de'" src="~/assets/fallback/chapter2_3_german.png">
+          <img v-if="$i18n.locale == 'en'" src="~/assets/fallback/chapter2_3_english.png">
+        </div>
       </div>
       <div class="description">
         <p class="title" v-html="$t('chapter2-vis2-title3')" />
@@ -112,25 +117,36 @@ export default {
 .discrimination-visualization {
   position: relative;
   height: 100vh;
-  width: 90%;
-  padding: 1rem;
+  width: 100%;
+  padding: 15vh 1rem 10vh 1rem;
 
   .case-container {
     position: relative;
-    height: 30vh;
+    height: 25vh;
 
     .visual {
-      display: inline-block;
-
       position: relative;
-      width: 35%;
+      top: 10%;
+      display: inline-block;
+      width: 30%;
       vertical-align: middle;
-      margin-right: 0%;
+      margin-right: 5%;
+      height: 90%;
+      overflow: hidden;
+
+      & > .inside {
+        position: relative;
+        display: block;
+        height: 90%;
+
+        margin: 0 auto;
+        text-align: right;
+      }
 
       img {
         position: relative;
-        width: 100%;
-        height: auto;
+        max-width: 100%;
+        max-height: 100%;
       }
     }
 
@@ -141,17 +157,26 @@ export default {
       width: 60%;
       vertical-align: middle;
 
-      font-size: $font-size-smaller;
+      font-family: $font-family-signika;
+      font-size: $font-size-small;
+
+      p {
+        margin-bottom: 0;
+      }
 
       .title {
         font-weight: 700;
+        margin-bottom: 0.5em;
       }
     }
   }
 
   @media (min-width: $media-breakpoint-min-m) {
     left: 60%;
-    width: 30%;
+    width: 35%;
+
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
