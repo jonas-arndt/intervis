@@ -1,5 +1,5 @@
 <template>
-  <div ref="page" class="page index">
+  <div ref="page" class="page index no-js">
     <DialogContainer v-if="teaserIsVisible" class="intro">
       <Teaser />
     </DialogContainer>
@@ -38,6 +38,11 @@
 import { mapState, mapMutations } from 'vuex'
 
 export default {
+  data () {
+    return {
+      noJsClass: 'no-js'
+    }
+  },
   computed: {
     ...mapState([
       'conceptDevelopmentIsVisible',
@@ -47,8 +52,16 @@ export default {
       'teaserIsVisible'
     ])
   },
+  mounted () {
+    this.removeNoJsClass()
+  },
   methods: {
-    ...mapMutations(['hideConceptDevelopment', 'hideDiscriminationDimensions'])
+    ...mapMutations(['hideConceptDevelopment', 'hideDiscriminationDimensions']),
+    removeNoJsClass () {
+      if (this.$refs.page.classList.contains(this.noJsClass)) {
+        this.$refs.page.classList.remove(this.noJsClass)
+      }
+    }
   }
 }
 </script>
