@@ -104,6 +104,16 @@ export default {
     z-index: 400;
   }
 
+  &.no-js {
+    .article-navigation {
+      display: none;
+    }
+
+    .google-link {
+      display: none;
+    }
+  }
+
   @media (min-width: $media-breakpoint-min-m) {
     .feedback-button {
       display: block;
