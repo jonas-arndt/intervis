@@ -1,38 +1,42 @@
 <template>
   <div class="school-visualization">
     <div class="step-1">
+      <img class="shape" src="~/assets/fallback/chapter3_example2_quote.png">
       <p class="quote" v-html="$t('chapter3-example2-quote')" />
-      <img src="~/assets/fallback/chapter3_example2_quote.png">
     </div>
     <div class="step-2">
-      <div class="visualization-1">
-        <img src="~/assets/fallback/chapter3_example2_mehrheitsbevoelkerung_gymnasium.png">
-        <div class="legend">
-          <span class="digit">24,40%</span>
-          <span class="details" v-html="$t('chapter3-example2-vis2')" />
+      <div class="inside">
+        <div class="visualization-1">
+          <img src="~/assets/fallback/chapter3_example2_mehrheitsbevoelkerung_gymnasium.png">
+          <div class="legend">
+            <span class="digit">24,40%</span>
+            <span class="details" v-html="$t('chapter3-example2-vis2')" />
+          </div>
         </div>
-      </div>
-      <div class="visualization-2">
-        <img src="~/assets/fallback/chapter3_example2_sinti_zze_rom_nja_gymnasium.png">
-        <div class="legend">
-          <span class="digit">2,30%</span>
-          <span class="details" v-html="$t('chapter3-example2-vis4')" />
+        <div class="visualization-2">
+          <img src="~/assets/fallback/chapter3_example2_sinti_zze_rom_nja_gymnasium.png">
+          <div class="legend">
+            <span class="digit">2,30%</span>
+            <span class="details" v-html="$t('chapter3-example2-vis4')" />
+          </div>
         </div>
       </div>
     </div>
     <div class="step-3">
-      <div class="visualization-1">
-        <img src="~/assets/fallback/chapter3_example2_mehrheitsbevoelkerung_foerderschule.png">
-        <div class="legend">
-          <span class="digit">4,90%</span>
-          <span class="details" v-html="$t('chapter3-example2-vis6')" />
+      <div class="inside">
+        <div class="visualization-1">
+          <img src="~/assets/fallback/chapter3_example2_mehrheitsbevoelkerung_foerderschule.png">
+          <div class="legend">
+            <span class="digit">4,90%</span>
+            <span class="details" v-html="$t('chapter3-example2-vis6')" />
+          </div>
         </div>
-      </div>
-      <div class="visualization-2">
-        <img src="~/assets/fallback/chapter3_example2_sinti_zze_rom_nja_foerderschule.png">
-        <div class="legend">
-          <span class="digit">10,70%</span>
-          <span class="details" v-html="$t('chapter3-example2-vis8')" />
+        <div class="visualization-2">
+          <img src="~/assets/fallback/chapter3_example2_sinti_zze_rom_nja_foerderschule.png">
+          <div class="legend">
+            <span class="digit">10,70%</span>
+            <span class="details" v-html="$t('chapter3-example2-vis8')" />
+          </div>
         </div>
       </div>
     </div>
@@ -43,8 +47,61 @@
 @import "../../styles/_variables";
 
 .school-visualization {
-  position: relative;
-  height: 100vh;
+  .step-1 {
+    position: absolute;
+    top: 25%;
+    height: 25%;
+    min-height: 100vh;
+    width: 100%;
+
+    .shape {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      width: 100%;
+      z-index: -1;
+    }
+
+    .quote {
+      position: sticky;
+      display: block;
+      height: 100vh;
+      top: 0;
+      margin: 0;
+      margin-top: 20%;
+      background-color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  .step-2 {
+    position: absolute;
+    top: 50%;
+    height: 25%;
+    min-height: 100vh;
+    width: 100%;
+
+    .inside {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      width: 100%;
+    }
+  }
+
+  .step-3 {
+    position: absolute;
+    top: 75%;
+    height: 25%;
+    min-height: 100vh;
+    width: 100%;
+
+    .inside {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      width: 100%;
+    }
+  }
 
   .legend {
     position: absolute;
@@ -99,9 +156,6 @@
     }
   }
 
-  @media (min-width: $media-breakpoint-min-m) {
-    left: 45%;
-    width: 50%;
-  }
+  @media (min-width: $media-breakpoint-min-m) {}
 }
 </style>

@@ -1,33 +1,37 @@
 <template>
   <div class="working-handicapped-visualization">
     <div class="step-1">
-      <div class="visualization-1">
-        <img src="~/assets/fallback/chapter3_example3_frauen_mitbehinderung_gewalt.png">
-        <div class="legend">
-          <span class="details" v-html="$t('chapter3-example3-vis1')" />
+      <div class="inside">
+        <div class="visualization-1">
+          <img src="~/assets/fallback/chapter3_example3_frauen_mitbehinderung_gewalt.png">
+          <div class="legend">
+            <span class="details" v-html="$t('chapter3-example3-vis1')" />
+          </div>
         </div>
-      </div>
-      <div class="visualization-2">
-        <img src="~/assets/fallback/chapter3_example3_frauen_ohnebehinderung_gewalt.png">
-        <div class="legend">
-          <span class="details" v-html="$t('chapter3-example3-vis2')" />
+        <div class="visualization-2">
+          <img src="~/assets/fallback/chapter3_example3_frauen_ohnebehinderung_gewalt.png">
+          <div class="legend">
+            <span class="details" v-html="$t('chapter3-example3-vis2')" />
+          </div>
         </div>
       </div>
     </div>
 
     <div class="step-2">
-      <div class="visualization-1">
-        <img src="~/assets/fallback/chapter3_example3_frauen_mitbehinderung_erwerbstaetigkeit.png">
-        <div class="legend">
-          <span class="digit">47%</span>
-          <span class="details" v-html="$t('chapter3-example3-vis4')" />
+      <div class="inside">
+        <div class="visualization-1">
+          <img src="~/assets/fallback/chapter3_example3_frauen_mitbehinderung_erwerbstaetigkeit.png">
+          <div class="legend">
+            <span class="digit">47%</span>
+            <span class="details" v-html="$t('chapter3-example3-vis4')" />
+          </div>
         </div>
-      </div>
-      <div class="visualization-2">
-        <img src="~/assets/fallback/chapter3_example3_frauen_ohnebehinderung_erwerbstaetigkeit.png">
-        <div class="legend">
-          <span class="digit">74%</span>
-          <span class="details" v-html="$t('chapter3-example3-vis6')" />
+        <div class="visualization-2">
+          <img src="~/assets/fallback/chapter3_example3_frauen_ohnebehinderung_erwerbstaetigkeit.png">
+          <div class="legend">
+            <span class="digit">74%</span>
+            <span class="details" v-html="$t('chapter3-example3-vis6')" />
+          </div>
         </div>
       </div>
     </div>
@@ -38,8 +42,35 @@
 @import "../../styles/_variables";
 
 .working-handicapped-visualization {
-  position: relative;
-  height: 100vh;
+  .step-1 {
+    position: absolute;
+    top: 25%;
+    height: 25%;
+    min-height: 100vh;
+    width: 100%;
+
+    .inside {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      width: 100%;
+    }
+  }
+
+  .step-2 {
+    position: absolute;
+    top: 75%;
+    height: 25%;
+    min-height: 100vh;
+    width: 100%;
+
+    .inside {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      width: 100%;
+    }
+  }
 
   .legend {
     position: absolute;
@@ -94,9 +125,6 @@
     }
   }
 
-  @media (min-width: $media-breakpoint-min-m) {
-    left: 45%;
-    width: 50%;
-  }
+  @media (min-width: $media-breakpoint-min-m) {}
 }
 </style>

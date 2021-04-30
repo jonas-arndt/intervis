@@ -1,26 +1,40 @@
 <template>
   <div class="measures-visualization">
-    <div class="visual-container">
-      <div class="visual top-left">
-        <div class="step-1">
+    <div class="step-1">
+      <div class="inside">
+        <div class="visual top-left">
           <img v-if="$i18n.locale == 'en'" src="~/assets/fallback/chapter4_1_english.png">
           <img v-if="$i18n.locale == 'de'" src="~/assets/fallback/chapter4_1_german.png">
         </div>
-        <div class="step-2">
-          <img v-if="$i18n.locale == 'en'" src="~/assets/fallback/chapter4_3_english.png">
-          <img v-if="$i18n.locale == 'de'" src="~/assets/fallback/chapter4_3_german.png">
-        </div>
-        <div class="step-3">
-          <img v-if="$i18n.locale == 'en'" src="~/assets/fallback/chapter4_5_english.png">
-          <img v-if="$i18n.locale == 'de'" src="~/assets/fallback/chapter4_5_german.png">
-        </div>
-      </div>
-      <div class="visual bottom-right">
-        <div class="step-1">
+
+        <div class="visual bottom-right">
           <img v-if="$i18n.locale == 'en'" src="~/assets/fallback/chapter4_4_english.png">
           <img v-if="$i18n.locale == 'de'" src="~/assets/fallback/chapter4_4_german.png">
         </div>
-        <div class="step-2">
+      </div>
+    </div>
+    <div class="step-2">
+      <div class="inside">
+        <div class="visual top-left">
+          <img v-if="$i18n.locale == 'en'" src="~/assets/fallback/chapter4_3_english.png">
+          <img v-if="$i18n.locale == 'de'" src="~/assets/fallback/chapter4_3_german.png">
+        </div>
+
+        <div class="visual bottom-right">
+          <img v-if="$i18n.locale == 'en'" src="~/assets/fallback/chapter4_4_english.png">
+          <img v-if="$i18n.locale == 'de'" src="~/assets/fallback/chapter4_4_german.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="step-3">
+      <div class="inside">
+        <div class="visual top-left">
+          <img v-if="$i18n.locale == 'en'" src="~/assets/fallback/chapter4_5_english.png">
+          <img v-if="$i18n.locale == 'de'" src="~/assets/fallback/chapter4_5_german.png">
+        </div>
+
+        <div class="visual bottom-right">
           <img v-if="$i18n.locale == 'en'" src="~/assets/fallback/chapter4_5_english.png">
           <img v-if="$i18n.locale == 'de'" src="~/assets/fallback/chapter4_5_german.png">
         </div>
@@ -33,10 +47,50 @@
 @import "../../styles/_variables";
 
 .measures-visualization {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  padding: 1rem;
+  .step-1 {
+    position: absolute;
+    top: 0%;
+    height: 33%;
+    min-height: 100vh;
+    width: 100%;
+
+    .inside {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      width: 100%;
+    }
+  }
+
+  .step-2 {
+    position: absolute;
+    top: 33%;
+    height: 33%;
+    min-height: 100vh;
+    width: 100%;
+
+    .inside {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      width: 100%;
+    }
+  }
+
+  .step-3 {
+    position: absolute;
+    top: 67%;
+    height: 33%;
+    min-height: 100vh;
+    width: 100%;
+
+    .inside {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      width: 100%;
+    }
+  }
 
   .visual-container {
     position: relative;

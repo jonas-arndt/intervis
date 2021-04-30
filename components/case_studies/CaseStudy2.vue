@@ -40,6 +40,9 @@
 .case-study.school {
   position: relative;
 
+  padding-top: 100vh;
+  padding-bottom: 100vh;
+
   .case-study-title {
     font-size: $font-size-subtitle;
     margin-bottom: 0.6em;
@@ -50,14 +53,21 @@
   }
 
   .background-visualization {
-    z-index: -100;
-    position: sticky;
+    position: absolute;
     top: 0;
+    z-index: -100;
+    height: 100%;
+    width: 100%;
   }
 
   @media (min-width: $media-breakpoint-min-m) {
     .step {
       margin-bottom: 30vh;
+    }
+
+    .background-visualization {
+      left: 45%;
+      width: 50%;
     }
   }
 }
