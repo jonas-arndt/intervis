@@ -7,7 +7,8 @@ export const state = () => ({
   discriminationDimensionsAreVisible: false,
 
   activeDisclosureChapterId: 0,
-  articleScrollPosition: 0
+  articleScrollPosition: 0,
+  chapterDimensions: {}
 })
 
 export const getters = {
@@ -47,5 +48,9 @@ export const mutations = {
   },
   setScrollPosition (state, scrollPosition) {
     state.articleScrollPosition = scrollPosition
+  },
+  setChapterDimensions (state, { chapterId, chapterDimensions }) {
+    console.log('setChapterDimensions', chapterId, chapterDimensions)
+    state.chapterDimensions.chapter = chapterId
   }
 }
