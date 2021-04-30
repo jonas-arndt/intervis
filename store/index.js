@@ -50,7 +50,6 @@ export const mutations = {
     state.articleScrollPosition = scrollPosition
   },
   setChapterDimensions (state, { chapterId, chapterDimensions }) {
-    console.log('setChapterDimensions', chapterId, chapterDimensions)
     state.chapterDimensions.chapter = chapterId
   }
 }
