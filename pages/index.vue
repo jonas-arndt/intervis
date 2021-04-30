@@ -7,9 +7,11 @@
     <FlipContainer ref="flipContainer" :flipped="projectDisclosureIsVisible">
       <!-- FlipContainer: front content start -->
       <template v-slot:front>
-        <SliderContainer :slided-in="designDecisionsAreVisible" class="design-decisions-container">
-          <ArticleContent />
-        </SliderContainer>
+        <ScrollContainer @scrollPositionUpdated="setScrollPosition">
+          <SliderContainer :slided-in="designDecisionsAreVisible" class="design-decisions-container">
+            <ArticleContent />
+          </SliderContainer>
+        </ScrollContainer>
       </template>
       <!-- FlipContainer: front content end -->
 
@@ -56,7 +58,7 @@ export default {
     this.removeNoJsClass()
   },
   methods: {
-    ...mapMutations(['hideConceptDevelopment', 'hideDiscriminationDimensions']),
+    ...mapMutations(['hideConceptDevelopment', 'hideDiscriminationDimensions', 'setScrollPosition']),
     removeNoJsClass () {
       if (this.$refs.page.classList.contains(this.noJsClass)) {
         this.$refs.page.classList.remove(this.noJsClass)

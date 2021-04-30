@@ -6,7 +6,8 @@ export const state = () => ({
   conceptDevelopmentIsVisible: false,
   discriminationDimensionsAreVisible: false,
 
-  activeDisclosureChapterId: 0
+  activeDisclosureChapterId: 0,
+  articleScrollPosition: 0
 })
 
 export const getters = {
@@ -43,5 +44,8 @@ export const mutations = {
   },
   setDisclosureChapterId (state, chapterId) {
     state.activeDisclosureChapterId = chapterId
+  },
+  setScrollPosition (state, scrollPosition) {
+    state.articleScrollPosition = scrollPosition
   }
 }
