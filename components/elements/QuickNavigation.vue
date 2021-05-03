@@ -1,7 +1,7 @@
 <template>
   <nav class="quick-navigation">
     <ul>
-      <li v-for="entry, index of entries" :key="entry.id" :class="{ 'entry': true, 'active': entry.id == activeArticleChapterId }">
+      <li v-for="entry, index of entries" :key="entry.id" :class="{ 'entry': true, 'active': entry.id == activeArticleChapterId }" @click="$nuxt.$emit('scrollToChapter', entry.id)">
         <div class="inside">
           <span class="index">{{ index + 1 }}</span>
           <span class="title" v-html="$t(entry.labelKey)" />

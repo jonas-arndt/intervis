@@ -42,6 +42,9 @@ export default {
       if (this.activeArticleChapterId === undefined || scrollPosition < this.activeChapterDimensions.y1 || scrollPosition > this.activeChapterDimensions.y2) {
         for (const [chapterId, dimensions] of Object.entries(this.chapterDimensions)) {
           if (scrollPosition >= dimensions.y1 && scrollPosition <= dimensions.y2) {
+            // TODO: Update chapter dimensions when page is completely loaded
+            this.updateAllChapterDimensions()
+
             this.setActiveArticleChapterId(chapterId)
             this.activeChapterDimensions = dimensions
             return
@@ -57,6 +60,13 @@ export default {
   mounted () {
     window.addEventListener('resize', this.handleResize)
     this.updateVerticalViewportCenter()
+
+    this.$nuxt.$on('scrollToChapter', (chapterId) => {
+      if (chapterId in this.chapterDimensions) {
+        this.updateChapterDimensions(chapterId)
+        this.$nuxt.$emit('scrollArticle', this.chapterDimensions[chapterId].y1)
+      }
+    })
   },
   destroyed () {
     window.removeEventListener('resize', this.handleResize)

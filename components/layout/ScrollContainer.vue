@@ -4,6 +4,16 @@
   </div>
 </template>
 
+<script>
+export default {
+  mounted () {
+    this.$nuxt.$on('scrollArticle', (y) => {
+      this.$refs.scroller.scrollTo(0, y)
+    })
+  }
+}
+</script>
+
 <style lang="scss" scoped>
 @import "../../styles/_variables";
 
