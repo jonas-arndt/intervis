@@ -25,15 +25,19 @@ import { mapMutations, mapState } from 'vuex'
 export default {
   data () {
     return {
+      verticalViewportCenter: 0,
       chapterDimensions: {},
       activeChapterDimensions: undefined
     }
   },
   computed: {
-    ...mapState(['articleScrollPosition', 'activeArticleChapterId'])
+    ...mapState(['articleScrollPosition', 'activeArticleChapterId']),
+    centeredScrollPosition () {
+      return Math.max(0, this.articleScrollPosition - this.verticalViewportCenter)
+    }
   },
   watch: {
-    articleScrollPosition (scrollPosition) {
+    centeredScrollPosition (scrollPosition) {
       // if current chapter is undefined or not active anymore
       if (this.activeArticleChapterId === undefined || scrollPosition < this.activeChapterDimensions.y1 || scrollPosition > this.activeChapterDimensions.y2) {
         for (const [chapterId, dimensions] of Object.entries(this.chapterDimensions)) {
@@ -52,6 +56,7 @@ export default {
   },
   mounted () {
     window.addEventListener('resize', this.handleResize)
+    this.updateVerticalViewportCenter()
   },
   destroyed () {
     window.removeEventListener('resize', this.handleResize)
@@ -59,7 +64,11 @@ export default {
   methods: {
     ...mapMutations(['setActiveArticleChapterId']),
     handleResize () {
+      this.updateVerticalViewportCenter()
       this.updateAllChapterDimensions()
+    },
+    updateVerticalViewportCenter () {
+      this.verticalViewportCenter = Math.floor(window.innerHeight / 2)
     },
     updateAllChapterDimensions () {
       for (const chapterRef in this.chapterDimensions) {
