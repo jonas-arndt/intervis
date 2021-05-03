@@ -4,13 +4,25 @@
       <slot />
     </p>
     <div class="hidden-content-wrapper">
-      <span class="toggle"><slot name="toggle" /></span>
-      <div class="answer">
+      <span class="toggle" @click="showAnswer = !showAnswer">
+        <slot name="toggle" />
+      </span>
+      <div v-show="showAnswer" class="answer">
         <slot name="answer" />
       </div>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+      showAnswer: false
+    }
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 @import "../../styles/_variables";
@@ -38,6 +50,12 @@
       margin-top: 0.4rem;
       margin-bottom: 0.7rem;
     }
+  }
+}
+
+.js .question-with-hidden-answer {
+  .toggle {
+    cursor: pointer;
   }
 }
 
