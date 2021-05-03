@@ -71,16 +71,16 @@ export default {
       this.verticalViewportCenter = Math.floor(window.innerHeight / 2)
     },
     updateAllChapterDimensions () {
-      for (const chapterRef in this.chapterDimensions) {
-        this.updateChapterDimensions(chapterRef)
+      for (const chapterId in this.chapterDimensions) {
+        this.updateChapterDimensions(chapterId)
       }
     },
-    updateChapterDimensions (chapterRef) {
-      const boundingClientRect = this.$refs[chapterRef].$el.getBoundingClientRect()
+    updateChapterDimensions (chapterId) {
+      const boundingClientRect = this.$refs[chapterId].$el.getBoundingClientRect()
       const y1 = this.articleScrollPosition + Math.round(boundingClientRect.top)
       const y2 = y1 + Math.round(boundingClientRect.height)
 
-      this.chapterDimensions[chapterRef] = { y1, y2 }
+      this.chapterDimensions[chapterId] = { y1, y2 }
     }
   }
 }
