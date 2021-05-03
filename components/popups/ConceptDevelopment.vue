@@ -38,6 +38,8 @@
 @import "../../styles/_variables";
 
 .concept-development {
+  font-size: $font-size-small;
+
   .block:last-child {
     & > *:last-child {
       margin-bottom: 0;
@@ -51,7 +53,7 @@
   .block-title {
     font-weight: bold;
     font-style: italic;
-    font-size: $font-size-title-caption;
+    font-size: $font-size-default;
 
     margin-bottom: 0.5em;
   }
@@ -92,34 +94,52 @@
     .block {
       display: inline-block;
       position: relative;
-      height: 100%;
-      width: 80vw;
-
       white-space: normal;
+      height: 100%;
 
-      .title {
-        position: absolute;
-        top: 0;
+      // popup overlay padding 1rem
+      // content padding: 2rem
+      width: 42vw;
+      margin-right: 5vw;
 
-        margin-top: 1.5rem;
-        margin-bottom: 0.75rem;
-
-        .label {
-          font-weight: 400;
-          font-size: $font-size-subtitle;
-        }
+      &:first-child {
+        margin-left: 2rem;
       }
 
-      .block-title {
-        position: absolute;
-        top: 6rem;
+      &:last-child {
+        margin-right: 2rem;
       }
+    }
 
-      .text {
-        position: absolute;
-        top: 6.5rem;
-        padding-top: 1rem;
+    .title {
+      position: absolute;
+      top: 0;
+
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+
+      .label {
+        font-weight: 400;
+        font-size: $font-size-subtitle;
       }
+    }
+
+    .block-title {
+      position: absolute;
+      top: 6rem;
+    }
+
+    .text {
+      position: absolute;
+      top: 6.5rem;
+      padding-top: 1rem;
+    }
+  }
+
+  @media (min-width: $media-breakpoint-min-l) {
+    .block {
+      width: 28vw;
+      margin-right: 4vw;
     }
   }
 }

@@ -35,6 +35,8 @@
 @import "../../styles/_variables";
 
 .chapter.dimensions-of-discrimination {
+  font-size: $font-size-small;
+
   .block:last-child {
     & > *:last-child {
       margin-bottom: 0;
@@ -42,7 +44,7 @@
   }
 
   .block-title {
-    font-size: $font-size-title-caption;
+    font-size: $font-size-default;
     font-weight: normal;
     margin-bottom: 0.5em;
   }
@@ -59,15 +61,26 @@
     .block {
       display: inline-block;
       position: relative;
-      height: 100%;
-      width: 80vw;
-
       white-space: normal;
+      height: 100%;
+
+      // popup overlay padding 1rem
+      // content padding: 2rem
+      width: 42vw;
+      margin-right: 5vw;
+
+      &:first-child {
+        margin-left: 2rem;
+      }
+
+      &:last-child {
+        margin-right: 2rem;
+      }
     }
 
     .icon {
       position: absolute;
-      top: 2rem;
+      top: 0.5rem;
       width: 3rem;
     }
 
@@ -80,6 +93,13 @@
       position: absolute;
       top: 7rem;
       padding-top: 1rem;
+    }
+  }
+
+  @media (min-width: $media-breakpoint-min-l) {
+    .block {
+      width: 28vw;
+      margin-right: 4vw;
     }
   }
 }

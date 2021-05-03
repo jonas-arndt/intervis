@@ -60,22 +60,26 @@
       border: none;
     }
   }
-}
 
-@media (min-width: $media-breakpoint-min-m) {
-  .popup-overlay {
+  @media (min-width: $media-breakpoint-min-m) {
     padding: 1rem;
 
     & > .inside {
       position: relative;
       height: 100%;
       width: auto;
+      padding: 2.5rem 0 2.5rem 0;
+    }
+
+    .chapter-title {
+      font-size: $font-size-title;
+      padding-left: 2rem;
     }
 
     .content {
       position: absolute;
-      top: 20%;
-      height: 80%;
+      top: 15%;
+      height: 85%;
       width: 100%;
       overflow-y: hidden;
       overflow-x: scroll;
