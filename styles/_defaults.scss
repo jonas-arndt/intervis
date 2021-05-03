@@ -46,14 +46,3 @@ ul {
 li {
   list-style: none;
 }
-
-q {
-  font-style: italic;
-
-  &:before {
-    content: "»";
-  }
-  &:after {
-    content: "«";
-  }
-}

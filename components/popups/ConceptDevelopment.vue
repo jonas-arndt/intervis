@@ -8,9 +8,7 @@
       <div class="title usa icon">
         <h3 class="label" v-html="$t('overlay1-subtitle1')" />
       </div>
-      <h4 class="block-title">
-        <q v-html="$t('overlay1-heading1')" />
-      </h4>
+      <h4 class="block-title" v-html="$t('overlay1-heading1')" />
       <p class="text" v-html="$t('overlay1-text1')" />
     </div>
 
