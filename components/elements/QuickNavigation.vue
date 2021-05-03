@@ -1,10 +1,10 @@
 <template>
   <nav class="quick-navigation">
     <ul>
-      <li v-for="key, index of entryKeys" :key="index" :class="{ 'entry': true, 'active': index == activeIndex }">
+      <li v-for="entry, index of entries" :key="entry.id" :class="{ 'entry': true, 'active': entry.id == activeArticleChapterId }">
         <div class="inside">
-          <span class="index">{{ index }}</span>
-          <span class="title" v-html="$t(key)" />
+          <span class="index">{{ index + 1 }}</span>
+          <span class="title" v-html="$t(entry.labelKey)" />
         </div>
       </li>
     </ul>
@@ -12,22 +12,22 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
+
 export default {
   data () {
     return {
-      entryKeys: {
-        1: 'chapter1-bar',
-        2: 'chapter2-bar',
-        3: 'chapter3-bar',
-        4: 'chapter4-bar',
-        5: 'chapter5-bar'
-      }
+      entries: [
+        { id: 'chapter1', labelKey: 'chapter1-bar' },
+        { id: 'chapter2', labelKey: 'chapter2-bar' },
+        { id: 'chapter3', labelKey: 'chapter3-bar' },
+        { id: 'chapter4', labelKey: 'chapter4-bar' },
+        { id: 'chapter5', labelKey: 'chapter5-bar' }
+      ]
     }
   },
   computed: {
-    activeIndex () {
-      return this.$store.getters.getActiveChapter
-    }
+    ...mapState(['activeArticleChapterId'])
   }
 }
 </script>

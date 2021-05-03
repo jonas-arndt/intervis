@@ -25,11 +25,29 @@ import { mapMutations, mapState } from 'vuex'
 export default {
   data () {
     return {
+      chapterDimensions: {},
+      activeChapterDimensions: undefined
     }
   },
   computed: {
+    ...mapState(['articleScrollPosition', 'activeArticleChapterId'])
   },
   watch: {
+    articleScrollPosition (scrollPosition) {
+      // if current chapter is undefined or not active anymore
+      if (this.activeArticleChapterId === undefined || scrollPosition < this.activeChapterDimensions.y1 || scrollPosition > this.activeChapterDimensions.y2) {
+        for (const [chapterId, dimensions] of Object.entries(this.chapterDimensions)) {
+          if (scrollPosition >= dimensions.y1 && scrollPosition <= dimensions.y2) {
+            this.setActiveArticleChapterId(chapterId)
+            this.activeChapterDimensions = dimensions
+            return
+          }
+        }
+
+        // reset values if no matching chapter was found
+        this.setActiveArticleChapterId(undefined)
+        this.activeChapterDimensions = undefined
+      }
     }
   },
   mounted () {
@@ -39,21 +57,21 @@ export default {
     window.removeEventListener('resize', this.handleResize)
   },
   methods: {
-    ...mapMutations(['setChapterDimensions']),
+    ...mapMutations(['setActiveArticleChapterId']),
     handleResize () {
       this.updateAllChapterDimensions()
     },
     updateAllChapterDimensions () {
-      const chapterRefs = ['chapter1', 'chapter2', 'chapter3', 'chapter4', 'chapter5']
-      for (const chapterRef of chapterRefs) {
+      for (const chapterRef in this.chapterDimensions) {
         this.updateChapterDimensions(chapterRef)
       }
     },
     updateChapterDimensions (chapterRef) {
-      this.setChapterDimensions({
-        chapterId: chapterRef,
-        chapterDimensions: this.$refs[chapterRef].$el.getBoundingClientRect()
-      })
+      const boundingClientRect = this.$refs[chapterRef].$el.getBoundingClientRect()
+      const y1 = this.articleScrollPosition + Math.round(boundingClientRect.top)
+      const y2 = y1 + Math.round(boundingClientRect.height)
+
+      this.chapterDimensions[chapterRef] = { y1, y2 }
     }
   }
 }
@@ -64,6 +82,7 @@ export default {
 
 .article-content {
   background-color: $color-white;
+  position: relative;
 
   .content-with-background {
     position: relative;
