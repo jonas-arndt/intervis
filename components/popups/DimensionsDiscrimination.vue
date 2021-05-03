@@ -38,12 +38,44 @@
 @import "../../styles/_variables";
 
 .chapter.dimensions-of-discrimination {
+  position: relative;
+  overflow-x: hidden;
+
+  .chapter-title {
+    position: relative;
+    max-width: 80%;
+  }
+
   h3 {
     font-size: $font-size-subtitle;
     font-weight: 400;
   }
 
   @media (min-width: $media-breakpoint-min-m) {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+    .content {
+      position: absolute;
+      top: 20%;
+      height: 80%;
+      width: 100%;
+      overflow-y: hidden;
+      overflow-x: scroll;
+
+      white-space: nowrap;
+    }
+
+    .block {
+      display: inline-block;
+      position: relative;
+      height: 100%;
+      width: 80vw;
+
+      white-space: normal;
+    }
+
     .icon {
       position: absolute;
       top: 2rem;
