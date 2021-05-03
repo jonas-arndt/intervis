@@ -53,6 +53,7 @@
     right: 1.5rem;
     top: 1.5rem;
     z-index: 10;
+    cursor: pointer;
 
     button {
       outline: none;
