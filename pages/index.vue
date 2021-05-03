@@ -1,5 +1,5 @@
 <template>
-  <div ref="page" class="page index no-js">
+  <div ref="page" class="page index">
     <DialogContainer v-if="teaserIsVisible" class="intro">
       <Teaser />
     </DialogContainer>
@@ -52,7 +52,7 @@ import { mapState, mapMutations } from 'vuex'
 export default {
   data () {
     return {
-      noJsClass: 'no-js'
+      jsClass: 'js'
     }
   },
   computed: {
@@ -65,14 +65,12 @@ export default {
     ])
   },
   mounted () {
-    this.removeNoJsClass()
+    this.addJsClass()
   },
   methods: {
     ...mapMutations(['hideConceptDevelopment', 'hideDiscriminationDimensions', 'setScrollPosition']),
-    removeNoJsClass () {
-      if (this.$refs.page.classList.contains(this.noJsClass)) {
-        this.$refs.page.classList.remove(this.noJsClass)
-      }
+    addJsClass () {
+      this.$refs.page.classList.add(this.jsClass)
     }
   }
 }
@@ -103,27 +101,19 @@ export default {
   }
 
   .google-link {
+    display: none;
     position: fixed;
     right: 2rem;
     bottom: 2rem;
   }
 
   .article-navigation {
+    display: none;
     position: fixed;
     top: 2rem;
     left: 0;
 
     z-index: 400;
-  }
-
-  &.no-js {
-    .article-navigation {
-      display: none;
-    }
-
-    .google-link {
-      display: none;
-    }
   }
 
   @media (min-width: $media-breakpoint-min-m) {
@@ -133,4 +123,13 @@ export default {
   }
 }
 
+.page.js {
+  .article-navigation {
+    display: block;
+  }
+
+  .google-link {
+    display: block;
+  }
+}
 </style>
