@@ -23,11 +23,21 @@
     </FlipContainer>
 
     <PopupOverlay v-if="conceptDevelopmentIsVisible" class="overlay" @close="hideConceptDevelopment()">
-      <ConceptDevelopment />
+      <template v-slot:title>
+        <span v-html="$t('overlay1-title')" />
+      </template>
+      <template v-slot:content>
+        <ConceptDevelopment />
+      </template>
     </PopupOverlay>
 
     <PopupOverlay v-if="discriminationDimensionsAreVisible" class="overlay" @close="hideDiscriminationDimensions()">
-      <DimensionsDiscrimination />
+      <template v-slot:title>
+        <span v-html="$t('overlay2-title')" />
+      </template>
+      <template v-slot:content>
+        <DimensionsDiscrimination />
+      </template>
     </PopupOverlay>
 
     <QuickNavigation class="article-navigation" />
