@@ -1,5 +1,5 @@
 <template>
-  <div class="chapter dimensions-of-discrimination horizontal-content">
+  <div class="chapter dimensions-of-discrimination">
     <h2 class="chapter-title" v-html="$t('overlay2-title')" />
     <div class="content">
       <div class="block">

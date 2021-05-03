@@ -1,5 +1,5 @@
 <template>
-  <div class="chapter concept-development horizontal-content">
+  <div class="chapter concept-development">
     <h2 class="chapter-title" v-html="$t('overlay1-title')" />
     <div class="content">
       <div class="block">

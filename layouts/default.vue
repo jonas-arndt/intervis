@@ -143,6 +143,5 @@ a {
 
 // other elements
 @import "../styles/case-study";
-@import "../styles/horizontal-content"
 
 </style>
