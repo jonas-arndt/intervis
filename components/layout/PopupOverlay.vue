@@ -5,8 +5,13 @@
         <img :src="require('~/assets/icons/close.svg')">
       </a>
     </div>
-    <div class="scroll-container">
-      <slot />
+    <div class="inside">
+      <h2>
+        <slot name="title" />
+      </h2>
+      <div class="content">
+        <slot name="content" />
+      </div>
     </div>
   </div>
 </template>
@@ -38,13 +43,12 @@
     }
   }
 
-  .scroll-container {
+  & > .inside {
     position: relative;
     height: 100%;
     width: 100%;
 
     background-color: #ECEEF8;
-    overflow-y: scroll;
   }
 }
 
