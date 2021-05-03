@@ -141,6 +141,22 @@ a {
   }
 }
 
+.red-bordered-text, .grey-bordered-text {
+  border: 2px solid;
+  font-weight: bold;
+  border-radius: 0.7em;
+  padding: 0 0.2em 0 0.2em;
+  margin: 0 -0.2em 0 -0.2em;
+
+  &.red-bordered-text {
+    border-color: $color-red;
+  }
+
+  &.grey-bordered-text {
+    border-color: $color-medium-grey;
+  }
+}
+
 // other elements
 @import "../styles/case-study";
 
