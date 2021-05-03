@@ -35,6 +35,12 @@
 @import "../../styles/_variables";
 
 .chapter.dimensions-of-discrimination {
+  .block:last-child {
+    & > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+
   h3 {
     font-size: $font-size-subtitle;
     font-weight: 400;

@@ -38,6 +38,12 @@
 @import "../../styles/_variables";
 
 .concept-development {
+  .block:last-child {
+    & > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+
   .title {
     &.germany {
       height: 3rem;
