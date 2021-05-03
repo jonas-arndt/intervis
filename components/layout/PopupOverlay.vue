@@ -6,7 +6,7 @@
       </a>
     </div>
     <div class="inside">
-      <h2>
+      <h2 class="chapter-title">
         <slot name="title" />
       </h2>
       <div class="content">
@@ -30,6 +30,15 @@
   padding: 0.8rem;
   z-index: 2000;
 
+  & > .inside {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+
+    background-color: #ECEEF8;
+  }
+
   .close-button {
     position: fixed;
     right: 1.5rem;
@@ -42,24 +51,25 @@
       border: none;
     }
   }
-
-  & > .inside {
-    position: relative;
-    height: 100%;
-    width: 100%;
-
-    background-color: #ECEEF8;
-  }
 }
 
 @media (min-width: $media-breakpoint-min-m) {
   .popup-overlay {
     padding: 1rem;
 
-    .scroll-container {
+    & > .inside {
       position: relative;
       height: 100%;
       width: auto;
+    }
+
+    .content {
+      position: absolute;
+      top: 20%;
+      height: 80%;
+      width: 100%;
+      overflow-y: hidden;
+      overflow-x: scroll;
     }
   }
 }

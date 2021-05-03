@@ -1,38 +1,35 @@
 <template>
   <div class="chapter concept-development">
-    <h2 class="chapter-title" v-html="$t('overlay1-title')" />
-    <div class="content">
-      <div class="block">
-        <p class="text teaser" v-html="$t('overlay1-intro')" />
-      </div>
+    <div class="block">
+      <p class="text teaser" v-html="$t('overlay1-intro')" />
+    </div>
 
-      <div class="block">
-        <div class="title usa icon">
-          <h3 class="label" v-html="$t('overlay1-subtitle1')" />
-        </div>
-        <h4 class="block-title">
-          <q v-html="$t('overlay1-heading1')" />
-        </h4>
-        <p class="text" v-html="$t('overlay1-text1')" />
+    <div class="block">
+      <div class="title usa icon">
+        <h3 class="label" v-html="$t('overlay1-subtitle1')" />
       </div>
+      <h4 class="block-title">
+        <q v-html="$t('overlay1-heading1')" />
+      </h4>
+      <p class="text" v-html="$t('overlay1-text1')" />
+    </div>
 
-      <div class="block columned">
-        <h4 class="block-title" v-html="$t('overlay1-heading2')" />
-        <p class="text" v-html="$t('overlay1-text2')" />
-      </div>
+    <div class="block columned">
+      <h4 class="block-title" v-html="$t('overlay1-heading2')" />
+      <p class="text" v-html="$t('overlay1-text2')" />
+    </div>
 
-      <div class="block">
-        <h4 class="block-title" v-html="$t('overlay1-heading3')" />
-        <p class="text" v-html="$t('overlay1-text3')" />
-      </div>
+    <div class="block">
+      <h4 class="block-title" v-html="$t('overlay1-heading3')" />
+      <p class="text" v-html="$t('overlay1-text3')" />
+    </div>
 
-      <div class="block columned">
-        <div class="title germany icon">
-          <h3 class="label" v-html="$t('overlay1-subtitle2')" />
-        </div>
-        <h4 class="block-title" v-html="$t('overlay1-heading4')" />
-        <p class="text" v-html="$t('overlay1-text4')" />
+    <div class="block columned">
+      <div class="title germany icon">
+        <h3 class="label" v-html="$t('overlay1-subtitle2')" />
       </div>
+      <h4 class="block-title" v-html="$t('overlay1-heading4')" />
+      <p class="text" v-html="$t('overlay1-text4')" />
     </div>
   </div>
 </template>
@@ -41,30 +38,34 @@
 @import "../../styles/_variables";
 
 .concept-development {
-  position: relative;
-  overflow-x: hidden;
+  .title {
+    &.germany {
+      height: 3rem;
+      background: url('~assets/icons/states/deutschland.svg') no-repeat;
+      background-size: contain;
 
-  .chapter-title {
-    position: relative;
-    max-width: 80%;
+      .label {
+        position: relative;
+        left: 1.3rem;
+        top: 1.2rem;
+      }
+    }
+    &.usa {
+      height: 2.4rem;
+      width: 4rem;
+      background: url('~assets/icons/states/usa.svg') no-repeat;
+      background-size: contain;
+
+      .label {
+        position: relative;
+        left: 2.2rem;
+        top: 1.2rem;
+      }
+    }
   }
 
-
   @media (min-width: $media-breakpoint-min-m) {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-
-    .content {
-      position: absolute;
-      top: 20%;
-      height: 80%;
-      width: 100%;
-      overflow-y: hidden;
-      overflow-x: scroll;
-
-      white-space: nowrap;
-    }
+    white-space: nowrap;
 
     .block {
       display: inline-block;
@@ -84,30 +85,6 @@
         .label {
           font-weight: 400;
           font-size: $font-size-subtitle;
-        }
-
-        &.germany {
-          height: 3rem;
-          background: url('~assets/icons/states/deutschland.svg') no-repeat;
-          background-size: contain;
-
-          .label {
-            position: relative;
-            left: 1.3rem;
-            top: 1.2rem;
-          }
-        }
-        &.usa {
-          height: 2.4rem;
-          width: 4rem;
-          background: url('~assets/icons/states/usa.svg') no-repeat;
-          background-size: contain;
-
-          .label {
-            position: relative;
-            left: 2.2rem;
-            top: 1.2rem;
-          }
         }
       }
 
