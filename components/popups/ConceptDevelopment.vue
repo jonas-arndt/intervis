@@ -44,28 +44,44 @@
     }
   }
 
+  p.teaser {
+    font-style: italic;
+  }
+
+  .block-title {
+    font-weight: bold;
+    font-style: italic;
+    font-size: $font-size-title-caption;
+
+    margin-bottom: 0.5em;
+  }
+
   .title {
+    font-size: $font-size-title-caption;
+    font-weight: normal;
+    margin-top: 2em;
+    margin-bottom: 1em;
+
     &.germany {
-      height: 3rem;
+      height: 4.5rem;
       background: url('~assets/icons/states/deutschland.svg') no-repeat;
       background-size: contain;
 
       .label {
         position: relative;
-        left: 1.3rem;
-        top: 1.2rem;
+        left: 1.7rem;
+        top: 2rem;
       }
     }
     &.usa {
-      height: 2.4rem;
-      width: 4rem;
+      height: 3.3rem;
       background: url('~assets/icons/states/usa.svg') no-repeat;
       background-size: contain;
 
       .label {
         position: relative;
-        left: 2.2rem;
-        top: 1.2rem;
+        left: 3.5rem;
+        top: 2.3rem;
       }
     }
   }

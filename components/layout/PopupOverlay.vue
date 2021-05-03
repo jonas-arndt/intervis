@@ -41,6 +41,13 @@
     background-color: #ECEEF8;
   }
 
+  .chapter-title {
+    font-weight: bold;
+    font-size: $font-size-subtitle;
+    padding-right: 2rem;
+    margin-bottom: 1.2em;
+  }
+
   .close-button {
     position: fixed;
     right: 1.5rem;

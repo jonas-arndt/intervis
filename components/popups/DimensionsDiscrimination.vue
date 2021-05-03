@@ -41,9 +41,16 @@
     }
   }
 
-  h3 {
-    font-size: $font-size-subtitle;
-    font-weight: 400;
+  .block-title {
+    font-size: $font-size-title-caption;
+    font-weight: normal;
+    margin-bottom: 0.5em;
+  }
+
+  .icon {
+    width: 4rem;
+    margin-top: 2em;
+    margin-bottom: 1em;
   }
 
   @media (min-width: $media-breakpoint-min-m) {
