@@ -16,7 +16,7 @@
       <div class="step">
         <p v-html="$t('chapter2-text3')" />
         <p class="detour">
-          <button class="red-button" @click="showDiscriminationDimensions" v-html="$t('chapter2-button')" />
+          <button class="red-bordered-button" @click="showDiscriminationDimensions" v-html="$t('chapter2-button')" />
         </p>
       </div>
     </div>

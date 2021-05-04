@@ -12,7 +12,7 @@
       <div class="step">
         <p v-html="$t('chapter1-text2')" />
         <p class="detour">
-          <button class="red-button" @click="showConceptDevelopment" v-html="$t('chapter1-button')" />
+          <button class="red-bordered-button" @click="showConceptDevelopment" v-html="$t('chapter1-button')" />
         </p>
       </div>
     </div>
