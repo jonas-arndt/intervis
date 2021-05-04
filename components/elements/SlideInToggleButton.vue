@@ -35,13 +35,12 @@ export default {
     min-width: 45px;
     height: 45px;
 
-    background: $color-black;
     border-radius: 22.5px 0px 0px 22.5px;
 
+    background: $color-red;
     background-image: url('~assets/icons/slide-in/light-bulp.svg');
     background-repeat: no-repeat;
     background-position: 13px center;
-    background-color: $color-black;
 
     transition: 1s;
 
