@@ -6,7 +6,7 @@
       </div>
       <div class="foreground">
         <Title />
-        <Introduction />
+        <Introduction ref="introduction" @hook:mounted="updateChapterDimensions('introduction')" />
         <Intersectionality ref="chapter1" @hook:mounted="updateChapterDimensions('chapter1')" />
         <DiscriminationAndPrivilege ref="chapter2" @hook:mounted="updateChapterDimensions('chapter2')" />
         <CaseStudies ref="chapter3" @hook:mounted="updateChapterDimensions('chapter3')" />
@@ -25,15 +25,14 @@ import { mapMutations, mapState } from 'vuex'
 export default {
   data () {
     return {
-      verticalViewportCenter: 0,
       chapterDimensions: {},
       activeChapterDimensions: undefined
     }
   },
   computed: {
-    ...mapState(['articleScrollPosition', 'activeArticleChapterId']),
+    ...mapState(['verticalScrollPosition', 'verticalViewportCenter', 'activeArticleChapterId']),
     centeredScrollPosition () {
-      return Math.max(0, this.articleScrollPosition - this.verticalViewportCenter)
+      return Math.max(0, this.verticalScrollPosition - this.verticalViewportCenter)
     }
   },
   watch: {
@@ -60,11 +59,9 @@ export default {
   mounted () {
     this.$nuxt.$on('windowResized', this.handleWindowResizeEvent)
     this.$nuxt.$on('scrollToChapter', this.handleCallToChapterEvent)
-
-    this.updateVerticalViewportCenter()
   },
   methods: {
-    ...mapMutations(['setActiveArticleChapterId']),
+    ...mapMutations(['setActiveArticleChapterId', 'setIntroductionStartPosition']),
     handleCallToChapterEvent (chapterId) {
       if (chapterId in this.chapterDimensions) {
         this.updateChapterDimensions(chapterId)
@@ -72,11 +69,7 @@ export default {
       }
     },
     handleWindowResizeEvent () {
-      this.updateVerticalViewportCenter()
       this.updateAllChapterDimensions()
-    },
-    updateVerticalViewportCenter () {
-      this.verticalViewportCenter = Math.floor(window.innerHeight / 2)
     },
     updateAllChapterDimensions () {
       for (const chapterId in this.chapterDimensions) {
@@ -85,10 +78,15 @@ export default {
     },
     updateChapterDimensions (chapterId) {
       const boundingClientRect = this.$refs[chapterId].$el.getBoundingClientRect()
-      const y1 = this.articleScrollPosition + Math.round(boundingClientRect.top)
+      const y1 = this.verticalScrollPosition + Math.round(boundingClientRect.top)
       const y2 = y1 + Math.round(boundingClientRect.height)
 
       this.chapterDimensions[chapterId] = { y1, y2 }
+
+      // set break point values
+      if (chapterId === 'introduction') {
+        this.setIntroductionStartPosition(y1)
+      }
     }
   }
 }
