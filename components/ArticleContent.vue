@@ -25,13 +25,12 @@ import { mapMutations, mapState } from 'vuex'
 export default {
   data () {
     return {
-      verticalViewportCenter: 0,
       chapterDimensions: {},
       activeChapterDimensions: undefined
     }
   },
   computed: {
-    ...mapState(['verticalScrollPosition', 'activeArticleChapterId']),
+    ...mapState(['verticalScrollPosition', 'verticalViewportCenter', 'activeArticleChapterId']),
     centeredScrollPosition () {
       return Math.max(0, this.verticalScrollPosition - this.verticalViewportCenter)
     }
@@ -60,8 +59,6 @@ export default {
   mounted () {
     this.$nuxt.$on('windowResized', this.handleWindowResizeEvent)
     this.$nuxt.$on('scrollToChapter', this.handleCallToChapterEvent)
-
-    this.updateVerticalViewportCenter()
   },
   methods: {
     ...mapMutations(['setActiveArticleChapterId']),
@@ -72,11 +69,7 @@ export default {
       }
     },
     handleWindowResizeEvent () {
-      this.updateVerticalViewportCenter()
       this.updateAllChapterDimensions()
-    },
-    updateVerticalViewportCenter () {
-      this.verticalViewportCenter = Math.floor(window.innerHeight / 2)
     },
     updateAllChapterDimensions () {
       for (const chapterId in this.chapterDimensions) {
