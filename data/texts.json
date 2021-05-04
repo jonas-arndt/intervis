@@ -356,8 +356,8 @@
     },
     {
         "ID": "chapter3-exampl1-vis2",
-        "German": "Sandra Bauer\nEinladungen zum Vorstellungsgespr\u00e4ch",
-        "English": "Sandra Bauer\nInvitations to job interview"
+        "German": "<b>Sandra Bauer</b>\nEinladungen zum Vorstellungsgespr\u00e4ch",
+        "English": "<b>Sandra Bauer</b>\nInvitations to job interview"
     },
     {
         "ID": "chapter3-exampl1-vis3",
@@ -366,8 +366,8 @@
     },
     {
         "ID": "chapter3-exampl1-vis4",
-        "German": "Meyrem \u00d6zt\u00fcrk mit Kopftuch\nEinladungen zum Vorstellungsgespr\u00e4ch",
-        "English": "Meyrem \u00d6zt\u00fcrk with hijab\nInvitations to job interview"
+        "German": "<b>Meyrem \u00d6zt\u00fcrk mit Kopftuch</b>\nEinladungen zum Vorstellungsgespr\u00e4ch",
+        "English": "<b>Meyrem \u00d6zt\u00fcrk with hijab</b>\nInvitations to job interview"
     },
     {
         "ID": "chapter3-example1-text2",
@@ -441,8 +441,8 @@
     },
     {
         "ID": "chapter3-example2-vis2",
-        "German": "Mehrheitsbev\u00f6lkerung\nGymnasiumsbesuch",
-        "English": "Majority population\n\u00bbGymnasium\u00ab attendance"
+        "German": "<b>Mehrheitsbev\u00f6lkerung</b>\nGymnasiumsbesuch",
+        "English": "<b>Majority population</b>\n\u00bbGymnasium\u00ab attendance"
     },
     {
         "ID": "chapter3-example2-vis3",
@@ -451,8 +451,8 @@
     },
     {
         "ID": "chapter3-example2-vis4",
-        "German": "Sinti*zze und Rom*nja \nGymnasiumsbesuch",
-        "English": "Sinti*zze and Rom*nja \n\u00bbGymnasium\u00ab attendance"
+        "German": "<b>Sinti*zze und Rom*nja</b> \nGymnasiumsbesuch",
+        "English": "<b>Sinti*zze and Rom*nja</b> \n\u00bbGymnasium\u00ab attendance"
     },
     {
         "ID": "chapter3-example2-text3",
@@ -466,8 +466,8 @@
     },
     {
         "ID": "chapter3-example2-vis6",
-        "German": "Mehrheitsbev\u00f6lkerung\nF\u00f6rderschulenbesuch",
-        "English": "Majority population\nSpecial education school attendance"
+        "German": "<b>Mehrheitsbev\u00f6lkerung</b>\nF\u00f6rderschulenbesuch",
+        "English": "<b>Majority population</b>\nSpecial education school attendance"
     },
     {
         "ID": "chapter3-example2-vis7",
@@ -476,8 +476,8 @@
     },
     {
         "ID": "chapter3-example2-vis8",
-        "German": "Sinti*zze und Rom*nja\nF\u00f6rderschulenbesuch",
-        "English": "Sinti*zze and Rom*nja\nSpecial education school attendance"
+        "German": "<b>Sinti*zze und Rom*nja</b>\nF\u00f6rderschulenbesuch",
+        "English": "<b>Sinti*zze and Rom*nja</b>\nSpecial education school attendance"
     },
     {
         "ID": "chapter3-example2-text4",
@@ -516,13 +516,13 @@
     },
     {
         "ID": "chapter3-example3-vis1",
-        "German": "Frauen* mit Behinderung\nErfahrung mit sexualisierter Gewalt",
-        "English": "Women* with disabilities\nExperience with sexualized violence"
+        "German": "<b>Frauen* mit Behinderung</b>\nErfahrung mit sexualisierter Gewalt",
+        "English": "<b>Women* with disabilities</b>\nExperience with sexualized violence"
     },
     {
         "ID": "chapter3-example3-vis2",
-        "German": "Frauen* ohne Behinderung\nErfahrung mit sexualisierter Gewalt",
-        "English": "Women* without disabilities\nExperience with sexualized violence"
+        "German": "<b>Frauen* ohne Behinderung</b>\nErfahrung mit sexualisierter Gewalt",
+        "English": "<b>Women* without disabilities</b>\nExperience with sexualized violence"
     },
     {
         "ID": "chapter3-example3-text2",
@@ -541,8 +541,8 @@
     },
     {
         "ID": "chapter3-example3-vis4",
-        "German": "Frauen* mit Behinderung\nErwerbst\u00e4tigkeit",
-        "English": "Women* with disabilities\nEmployment"
+        "German": "<b>Frauen* mit Behinderung</b>\nErwerbst\u00e4tigkeit",
+        "English": "<b>Women* with disabilities</b>\nEmployment"
     },
     {
         "ID": "chapter3-example3-vis5",
@@ -551,8 +551,8 @@
     },
     {
         "ID": "chapter3-example3-vis6",
-        "German": "Frauen* ohne Behinderung\nErwerbst\u00e4tigkeit",
-        "English": "Women* without disabilities\nEmployment"
+        "German": "<b>Frauen* ohne Behinderung</b>\nErwerbst\u00e4tigkeit",
+        "English": "<b>Women* without disabilities</b>\nEmployment"
     },
     {
         "ID": "chapter3-example3-text4",
