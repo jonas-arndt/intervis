@@ -7,9 +7,11 @@
       <span class="toggle" @click="showAnswer = !showAnswer">
         <slot name="toggle" />
       </span>
-      <div v-show="showAnswer" class="answer">
-        <slot name="answer" />
-      </div>
+      <transition name="fadeHeight" mode="out-in">
+        <div v-show="showAnswer" class="answer">
+          <slot name="answer" />
+        </div>
+      </transition>
     </div>
   </div>
 </template>
@@ -24,7 +26,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import "../../styles/_variables";
 
 .question-with-hidden-answer {
@@ -56,6 +58,18 @@ export default {
 .js .question-with-hidden-answer {
   .toggle {
     cursor: pointer;
+  }
+
+  .fadeHeight-enter-active,
+  .fadeHeight-leave-active {
+    transition: all 1s;
+    max-height: 25em;
+  }
+  .fadeHeight-enter,
+  .fadeHeight-leave-to
+  {
+    opacity: 0;
+    max-height: 0px;
   }
 }
 
