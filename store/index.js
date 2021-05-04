@@ -9,7 +9,7 @@ export const state = () => ({
   activeDisclosureChapterId: 0,
   activeArticleChapterId: undefined,
 
-  articleScrollPosition: 0
+  verticalScrollPosition: 0
 })
 
 export const getters = {
@@ -44,7 +44,7 @@ export const mutations = {
     state.activeDisclosureChapterId = chapterId
   },
   setScrollPosition (state, scrollPosition) {
-    state.articleScrollPosition = scrollPosition
+    state.verticalScrollPosition = scrollPosition
   },
   setActiveArticleChapterId (state, chapterId) {
     state.activeArticleChapterId = chapterId

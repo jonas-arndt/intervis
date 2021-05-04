@@ -31,9 +31,9 @@ export default {
     }
   },
   computed: {
-    ...mapState(['articleScrollPosition', 'activeArticleChapterId']),
+    ...mapState(['verticalScrollPosition', 'activeArticleChapterId']),
     centeredScrollPosition () {
-      return Math.max(0, this.articleScrollPosition - this.verticalViewportCenter)
+      return Math.max(0, this.verticalScrollPosition - this.verticalViewportCenter)
     }
   },
   watch: {
@@ -85,7 +85,7 @@ export default {
     },
     updateChapterDimensions (chapterId) {
       const boundingClientRect = this.$refs[chapterId].$el.getBoundingClientRect()
-      const y1 = this.articleScrollPosition + Math.round(boundingClientRect.top)
+      const y1 = this.verticalScrollPosition + Math.round(boundingClientRect.top)
       const y2 = y1 + Math.round(boundingClientRect.height)
 
       this.chapterDimensions[chapterId] = { y1, y2 }
