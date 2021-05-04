@@ -66,11 +66,18 @@ export default {
   },
   mounted () {
     this.addJsClass()
+    window.addEventListener('resize', this.handleResize)
+  },
+  destroyed () {
+    window.removeEventListener('resize', this.handleResize)
   },
   methods: {
     ...mapMutations(['hideConceptDevelopment', 'hideDiscriminationDimensions', 'setScrollPosition']),
     addJsClass () {
       this.$refs.page.classList.add(this.jsClass)
+    },
+    handleResize () {
+      this.$nuxt.$emit('windowResized')
     }
   }
 }

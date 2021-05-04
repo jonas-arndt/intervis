@@ -58,22 +58,20 @@ export default {
     }
   },
   mounted () {
-    window.addEventListener('resize', this.handleResize)
-    this.updateVerticalViewportCenter()
+    this.$nuxt.$on('windowResized', this.handleWindowResizeEvent)
+    this.$nuxt.$on('scrollToChapter', this.handleCallToChapterEvent)
 
-    this.$nuxt.$on('scrollToChapter', (chapterId) => {
+    this.updateVerticalViewportCenter()
+  },
+  methods: {
+    ...mapMutations(['setActiveArticleChapterId']),
+    handleCallToChapterEvent (chapterId) {
       if (chapterId in this.chapterDimensions) {
         this.updateChapterDimensions(chapterId)
         this.$nuxt.$emit('scrollArticle', this.chapterDimensions[chapterId].y1)
       }
-    })
-  },
-  destroyed () {
-    window.removeEventListener('resize', this.handleResize)
-  },
-  methods: {
-    ...mapMutations(['setActiveArticleChapterId']),
-    handleResize () {
+    },
+    handleWindowResizeEvent () {
       this.updateVerticalViewportCenter()
       this.updateAllChapterDimensions()
     },
