@@ -10,7 +10,10 @@ export const state = () => ({
   activeArticleChapterId: undefined,
 
   verticalScrollPosition: 0,
-  verticalViewportCenter: 0
+  verticalViewportCenter: 0,
+
+  // article break points
+  introductionStartPosition: undefined
 })
 
 export const getters = {
@@ -52,5 +55,10 @@ export const mutations = {
   },
   setActiveArticleChapterId (state, chapterId) {
     state.activeArticleChapterId = chapterId
+  },
+
+  // article break points
+  setIntroductionStartPosition (state, verticalPosition) {
+    state.introductionStartPosition = verticalPosition
   }
 }

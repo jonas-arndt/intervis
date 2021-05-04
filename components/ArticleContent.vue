@@ -6,7 +6,7 @@
       </div>
       <div class="foreground">
         <Title />
-        <Introduction />
+        <Introduction ref="introduction" @hook:mounted="updateChapterDimensions('introduction')" />
         <Intersectionality ref="chapter1" @hook:mounted="updateChapterDimensions('chapter1')" />
         <DiscriminationAndPrivilege ref="chapter2" @hook:mounted="updateChapterDimensions('chapter2')" />
         <CaseStudies ref="chapter3" @hook:mounted="updateChapterDimensions('chapter3')" />
@@ -61,7 +61,7 @@ export default {
     this.$nuxt.$on('scrollToChapter', this.handleCallToChapterEvent)
   },
   methods: {
-    ...mapMutations(['setActiveArticleChapterId']),
+    ...mapMutations(['setActiveArticleChapterId', 'setIntroductionStartPosition']),
     handleCallToChapterEvent (chapterId) {
       if (chapterId in this.chapterDimensions) {
         this.updateChapterDimensions(chapterId)
@@ -82,6 +82,11 @@ export default {
       const y2 = y1 + Math.round(boundingClientRect.height)
 
       this.chapterDimensions[chapterId] = { y1, y2 }
+
+      // set break point values
+      if (chapterId === 'introduction') {
+        this.setIntroductionStartPosition(y1)
+      }
     }
   }
 }
