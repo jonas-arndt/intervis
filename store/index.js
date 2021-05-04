@@ -9,7 +9,8 @@ export const state = () => ({
   activeDisclosureChapterId: 0,
   activeArticleChapterId: undefined,
 
-  verticalScrollPosition: 0
+  verticalScrollPosition: 0,
+  verticalViewportCenter: 0
 })
 
 export const getters = {
@@ -43,8 +44,11 @@ export const mutations = {
   setDisclosureChapterId (state, chapterId) {
     state.activeDisclosureChapterId = chapterId
   },
-  setScrollPosition (state, scrollPosition) {
-    state.verticalScrollPosition = scrollPosition
+  setVerticalViewportCenter (state, verticalViewportCenter) {
+    state.verticalViewportCenter = verticalViewportCenter
+  },
+  setVerticalScrollPosition (state, verticalScrollPosition) {
+    state.verticalScrollPosition = verticalScrollPosition
   },
   setActiveArticleChapterId (state, chapterId) {
     state.activeArticleChapterId = chapterId

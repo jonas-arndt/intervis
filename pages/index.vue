@@ -7,7 +7,7 @@
     <FlipContainer ref="flipContainer" :flipped="projectDisclosureIsVisible">
       <!-- FlipContainer: front content start -->
       <template v-slot:front>
-        <VerticalScrollContainer @scrollPositionUpdated="setScrollPosition">
+        <VerticalScrollContainer>
           <SliderContainer :slided-in="designDecisionsAreVisible" class="design-decisions-container">
             <ArticleContent />
           </SliderContainer>
@@ -72,7 +72,10 @@ export default {
     window.removeEventListener('resize', this.handleResize)
   },
   methods: {
-    ...mapMutations(['hideConceptDevelopment', 'hideDiscriminationDimensions', 'setScrollPosition']),
+    ...mapMutations([
+      'hideConceptDevelopment',
+      'hideDiscriminationDimensions'
+    ]),
     addJsClass () {
       this.$refs.page.classList.add(this.jsClass)
     },
