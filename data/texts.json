@@ -11,8 +11,8 @@
     },
     {
         "ID": "startscreen-date",
-        "German": "18.05.2021",
-        "English": "18.05.2021"
+        "German": "19.05.2021",
+        "English": "19.05.2021"
     },
     {
         "ID": "startscreen-title",
@@ -96,8 +96,8 @@
     },
     {
         "ID": "disclosure-hint1",
-        "German": "Warum visualisieren wir Intersektionalit\u00e4t auf diese Weise?",
-        "English": "Why do we visualize Intersectionality like this?"
+        "German": "Warum visualisieren wir Inter-\nsektionalit\u00e4t auf diese Weise?",
+        "English": "Why do we visualize Inter-\nsectionality like this?"
     },
     {
         "ID": "chapter1-bar",
@@ -186,8 +186,8 @@
     },
     {
         "ID": "disclosure-hint2",
-        "German": "Warum visualisieren wir Diskriminierung auf diese Weise?",
-        "English": "Why do we visualize discrimination like this?"
+        "German": "Warum visualisieren wir Dis-\nkriminierung auf diese Weise?",
+        "English": "Why do we visualize\ndiscrimination like this?"
     },
     {
         "ID": "chapter2-bar",
@@ -431,8 +431,8 @@
     },
     {
         "ID": "disclosure-hint3",
-        "German": "Warum visualisieren wir die Daten auf diese Weise?",
-        "English": "Why do we visualize the data like this?"
+        "German": "Warum visualisieren wir\ndie Daten auf diese Weise?",
+        "English": "Why do we visualize\nthe data like this?"
     },
     {
         "ID": "chapter3-example2-vis1",
