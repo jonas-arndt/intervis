@@ -5,6 +5,7 @@
     </SlideInToggleButton>
 
     <WorkingWomanVisualization class="background-visualization" />
+
     <div class="narrative">
       <div class="step">
         <h3 class="case-study-title" v-html="$t('chapter3-example1-title')" />
@@ -20,9 +21,9 @@
       <div class="step">
         <p v-html="$t('chapter3-example1-text4')" />
       </div>
+
       <div class="step">
         <p v-html="$t('chapter3-example1-text5')" />
-        <blockquote v-html="$t('chapter3-example1-quote')" />
       </div>
     </div>
 
@@ -49,6 +50,10 @@
   .step {
     margin-bottom: 100vh;
 
+    blockquote {
+      font-size: $font-size-title-caption;
+    }
+
     &:last-child {
       margin-bottom: inherit;
     }
@@ -65,6 +70,15 @@
   @media (min-width: $media-breakpoint-min-m) {
     .step {
       margin-bottom: 30vh;
+      background: none;
+
+      blockquote {
+        position: relative;
+        left: 5rem;
+        text-align: right;
+        margin-top: 2em;
+        margin-bottom: 2em;
+      }
     }
 
     .background-visualization {

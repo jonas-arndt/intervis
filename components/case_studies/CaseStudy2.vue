@@ -13,7 +13,6 @@
       </div>
 
       <div class="step">
-        <blockquote v-html="$t('chapter3-example2-quote')" />
         <p v-html="$t('chapter3-example2-text2')" />
       </div>
 
@@ -50,6 +49,14 @@
 
   .step {
     margin-bottom: 100vh;
+
+    blockquote {
+      font-size: $font-size-title-caption;
+    }
+
+    &:last-child {
+      margin-bottom: inherit;
+    }
   }
 
   .background-visualization {
@@ -63,6 +70,15 @@
   @media (min-width: $media-breakpoint-min-m) {
     .step {
       margin-bottom: 30vh;
+      background: none;
+
+      blockquote {
+        position: relative;
+        left: 5rem;
+        text-align: right;
+        margin-top: 2em;
+        margin-bottom: 2em;
+      }
     }
 
     .background-visualization {
