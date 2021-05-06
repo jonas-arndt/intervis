@@ -25,13 +25,21 @@ export default {
       'verticalScrollPosition',
       'verticalViewportCenter'
     ]),
-    quarterHeight () {
-      return Math.round((this.intersectionalityChapterStartPosition - this.introductionStartPosition) / 4)
+    staticViewHeight () {
+      // start (static) > transition > lines (static) > transition > grid (static) > outro (fade out) > blank screen
+      const totalStaticHeight = this.intersectionalityChapterStartPosition - this.introductionStartPosition - 2 * this.transitionHeight - this.outroHeight - 2 * this.verticalViewportCenter
+      return Math.round(totalStaticHeight / 3)
+    },
+    outroHeight () {
+      return 2 * this.verticalViewportCenter
+    },
+    transitionHeight () {
+      return 2 * this.verticalViewportCenter
     },
     singleLinesStyles () {
       const domain = [
-        this.introductionStartPosition + this.quarterHeight,
-        this.introductionStartPosition + 2 * this.quarterHeight
+        this.introductionStartPosition + this.staticViewHeight,
+        this.introductionStartPosition + this.staticViewHeight + this.transitionHeight
       ]
       const range = [0, 1]
       const scale = scaleLinear()
@@ -45,8 +53,8 @@ export default {
     },
     gridStyles () {
       const domain = [
-        this.introductionStartPosition + 2 * this.quarterHeight,
-        this.introductionStartPosition + 3 * this.quarterHeight
+        this.introductionStartPosition + 2 * this.staticViewHeight + this.transitionHeight,
+        this.introductionStartPosition + 2 * this.staticViewHeight + 2 * this.transitionHeight
       ]
       const range = [0, 1]
       const scale = scaleLinear()
@@ -60,8 +68,8 @@ export default {
     },
     opacity () {
       const domain = [
-        this.intersectionalityChapterStartPosition - 2 * this.verticalViewportCenter,
-        this.intersectionalityChapterStartPosition
+        this.intersectionalityChapterStartPosition - 2 * this.verticalViewportCenter - this.outroHeight,
+        this.intersectionalityChapterStartPosition - 2 * this.verticalViewportCenter
       ]
       const range = [1, 0]
       return scaleLinear()
