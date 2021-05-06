@@ -13,11 +13,25 @@ export default {
     ...mapState([
       'verticalScrollPosition',
       'verticalViewportCenter',
-      'introductionStartPosition'
+      'introductionStartPosition',
+      'discriminationChapterStartPosition',
+      'measuresChapterEndPosition'
     ]),
     opacity () {
-      const domain = [this.introductionStartPosition - 2 * this.verticalViewportCenter, this.introductionStartPosition]
-      const range = [0.3, 1]
+      const domain = [
+        // first transition
+        this.introductionStartPosition - 2 * this.verticalViewportCenter,
+        this.introductionStartPosition,
+
+        // second transition
+        this.discriminationChapterStartPosition - 2 * this.verticalViewportCenter,
+        this.discriminationChapterStartPosition,
+
+        // third transition
+        this.measuresChapterEndPosition - 5 * this.verticalViewportCenter,
+        this.measuresChapterEndPosition - 3 * this.verticalViewportCenter
+      ]
+      const range = [0.3, 1, 1, 0.3, 0.3, 0]
       return scaleLinear()
         .domain(domain).range(range)(this.verticalScrollPosition)
     }

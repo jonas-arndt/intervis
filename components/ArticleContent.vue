@@ -61,7 +61,12 @@ export default {
     this.$nuxt.$on('scrollToChapter', this.handleCallToChapterEvent)
   },
   methods: {
-    ...mapMutations(['setActiveArticleChapterId', 'setIntroductionStartPosition']),
+    ...mapMutations([
+      'setActiveArticleChapterId',
+      'setIntroductionStartPosition',
+      'setDiscriminationChapterStartPosition',
+      'setMeasuresChapterEndPosition'
+    ]),
     handleCallToChapterEvent (chapterId) {
       if (chapterId in this.chapterDimensions) {
         this.updateChapterDimensions(chapterId)
@@ -84,8 +89,19 @@ export default {
       this.chapterDimensions[chapterId] = { y1, y2 }
 
       // set break point values
-      if (chapterId === 'introduction') {
-        this.setIntroductionStartPosition(y1)
+      switch (chapterId) {
+        case 'introduction': {
+          this.setIntroductionStartPosition(y1)
+          break
+        }
+        case 'chapter2': {
+          this.setDiscriminationChapterStartPosition(y1)
+          break
+        }
+        case 'chapter4': {
+          this.setMeasuresChapterEndPosition(y2)
+          break
+        }
       }
     }
   }

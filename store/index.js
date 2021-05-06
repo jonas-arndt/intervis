@@ -13,7 +13,9 @@ export const state = () => ({
   verticalViewportCenter: 0,
 
   // article break points
-  introductionStartPosition: undefined
+  introductionStartPosition: undefined,
+  discriminationChapterStartPosition: undefined,
+  measuresChapterEndPosition: undefined
 })
 
 export const getters = {
@@ -60,5 +62,11 @@ export const mutations = {
   // article break points
   setIntroductionStartPosition (state, verticalPosition) {
     state.introductionStartPosition = verticalPosition
+  },
+  setDiscriminationChapterStartPosition (state, verticalPosition) {
+    state.discriminationChapterStartPosition = verticalPosition
+  },
+  setMeasuresChapterEndPosition (state, verticalPosition) {
+    state.measuresChapterEndPosition = verticalPosition
   }
 }
