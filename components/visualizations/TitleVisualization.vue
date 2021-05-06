@@ -1,6 +1,7 @@
 <template>
   <div class="title-visualization">
-    <img :src="require('~/assets/visualizations/zugang_integration_teilhabe_anerkennung.svg')" alt="Zugang, Integration, Teilhabe, Anerkennung">
+    <img v-if="$i18n.locale == 'en'" src="~/assets/teaser/teaser-text-en.svg" alt="Access, Inclusion, Participation, Acknowledgment">
+    <img v-if="$i18n.locale == 'de'" src="~/assets/teaser/teaser-text-de.svg" alt="Zugang, Integration, Teilhabe, Anerkennung">
   </div>
 </template>
 
