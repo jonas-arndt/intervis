@@ -178,7 +178,7 @@ export default {
     height: 400px;
     width: 400px;
 
-    background-image: url("~assets/lines/lines-grey.jpg");
+    background-image: url("~assets/lines/grey_merged.jpg");
     background-size: cover;
   }
 }
