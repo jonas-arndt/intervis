@@ -32,15 +32,15 @@ export default {
         this.intersectionalityChapterStartPosition,
         this.intersectionalityChapterStartPosition + 2 * this.verticalViewportCenter,
 
-        // fourth transition
+        // fourth transition: 1 > 0.3
         this.discriminationChapterStartPosition - 2 * this.verticalViewportCenter,
         this.discriminationChapterStartPosition,
 
-        // fifth transition
+        // fifth transition: 0.3 > 0
         this.nextStepsChapterStartPosition - 5 * this.verticalViewportCenter,
         this.nextStepsChapterStartPosition - 3 * this.verticalViewportCenter
       ]
-      const range = [0.3, 1, 1, 0, 0, 1, 0.3, 0.3, 0]
+      const range = [0.3, 1, 1, 0, 0, 1, 1, 0.3, 0.3, 0]
       return scaleLinear()
         .domain(domain).range(range).clamp(true)(this.verticalScrollPosition)
     },
