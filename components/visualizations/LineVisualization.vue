@@ -1,6 +1,6 @@
 <template>
   <div class="background-visualization" :style="{ opacity }">
-    <div class="lines" />
+    <div class="grey-lines" :style="greyLinesStyles" />
   </div>
 </template>
 
@@ -14,6 +14,7 @@ export default {
       'verticalScrollPosition',
       'verticalViewportCenter',
       'introductionStartPosition',
+      'intersectionalityChapterStartPosition',
       'discriminationChapterStartPosition',
       'measuresChapterEndPosition'
     ]),
@@ -34,6 +35,31 @@ export default {
       const range = [0.3, 1, 1, 0.3, 0.3, 0]
       return scaleLinear()
         .domain(domain).range(range)(this.verticalScrollPosition)
+    },
+    greyLinesStyles () {
+      const size = scaleLinear()
+        .domain([
+          this.discriminationChapterStartPosition - 2 * this.verticalViewportCenter,
+          this.discriminationChapterStartPosition
+        ])
+        .range([300, 100])
+        .clamp(true)(this.verticalScrollPosition)
+
+      const position = scaleLinear()
+        .domain([
+          this.discriminationChapterStartPosition - 2 * this.verticalViewportCenter,
+          this.discriminationChapterStartPosition
+        ])
+        .range([-100, 0])
+        .clamp(true)(this.verticalScrollPosition)
+
+      scaleLinear()
+      return {
+        width: size + '%',
+        height: size + '%',
+        top: position + 'vh',
+        left: position + 'vw'
+      }
     }
   }
 }
@@ -43,15 +69,18 @@ export default {
 .background-visualization {
   position: relative;
   height: 100%;
+  width: 100%;
+  overflow: hidden;
 
-  .lines {
-    position: sticky;
-    top: 0;
+  .grey-lines {
+    position: absolute;
+    top: -100vh;
+    left: -100vh;
 
-    width: 100%;
-    height: 100vh;
+    width: 300%;
+    height: 300%;
 
-    background: url('~assets/lines/lines-grey.jpg');
+    background: url('~assets/lines/grey_merged.jpg');
     background-size: cover;
   }
 }

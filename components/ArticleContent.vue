@@ -64,6 +64,7 @@ export default {
     ...mapMutations([
       'setActiveArticleChapterId',
       'setIntroductionStartPosition',
+      'setIntersectionalityChapterStartPosition',
       'setDiscriminationChapterStartPosition',
       'setMeasuresChapterEndPosition'
     ]),
@@ -94,6 +95,10 @@ export default {
           this.setIntroductionStartPosition(y1)
           break
         }
+        case 'chapter1': {
+          this.setIntersectionalityChapterStartPosition(y1)
+          break
+        }
         case 'chapter2': {
           this.setDiscriminationChapterStartPosition(y1)
           break
@@ -118,20 +123,22 @@ export default {
   .content-with-background {
     position: relative;
 
-    .background {
-      position: absolute;
+    & > .background {
+      position: sticky;
       top: 0;
       left: 0;
 
       width: 100%;
-      height: 100%;
+      height: 100vh;
 
       z-index: 100;
     }
 
-    .foreground {
+    & > .foreground {
       position: relative;
       z-index: 200;
+      top: -100vh;
+      margin-bottom: -100vh;
     }
   }
 }

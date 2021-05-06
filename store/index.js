@@ -14,6 +14,7 @@ export const state = () => ({
 
   // article break points
   introductionStartPosition: undefined,
+  intersectionalityChapterStartPosition: undefined,
   discriminationChapterStartPosition: undefined,
   measuresChapterEndPosition: undefined
 })
@@ -62,6 +63,9 @@ export const mutations = {
   // article break points
   setIntroductionStartPosition (state, verticalPosition) {
     state.introductionStartPosition = verticalPosition
+  },
+  setIntersectionalityChapterStartPosition (state, verticalPosition) {
+    state.intersectionalityChapterStartPosition = verticalPosition
   },
   setDiscriminationChapterStartPosition (state, verticalPosition) {
     state.discriminationChapterStartPosition = verticalPosition
