@@ -42,7 +42,7 @@ export default {
           this.discriminationChapterStartPosition - 2 * this.verticalViewportCenter,
           this.discriminationChapterStartPosition
         ])
-        .range([300, 100])
+        .range([200, 100])
         .clamp(true)(this.verticalScrollPosition)
 
       const position = scaleLinear()
@@ -50,7 +50,7 @@ export default {
           this.discriminationChapterStartPosition - 2 * this.verticalViewportCenter,
           this.discriminationChapterStartPosition
         ])
-        .range([-100, 0])
+        .range([-50, 0])
         .clamp(true)(this.verticalScrollPosition)
 
       scaleLinear()
@@ -74,11 +74,11 @@ export default {
 
   .grey-lines {
     position: absolute;
-    top: -100vh;
-    left: -100vh;
+    top: -50vh;
+    left: -50vh;
 
-    width: 300%;
-    height: 300%;
+    width: 200%;
+    height: 200%;
 
     background: url('~assets/lines/grey_merged.jpg');
     background-size: cover;

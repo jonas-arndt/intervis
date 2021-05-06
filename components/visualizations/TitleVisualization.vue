@@ -99,10 +99,10 @@ export default {
 
   .single-lines, .grid {
     position: absolute;
-    top: -100vh;
-    left: -100vw;
-    width: 300%;
-    height: 300%;
+    top: -50vh;
+    left: -50vw;
+    width: 200%;
+    height: 200%;
     z-index: 10;
 
     &.single-lines {
