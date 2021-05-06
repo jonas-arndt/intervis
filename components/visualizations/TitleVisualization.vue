@@ -48,7 +48,7 @@ export default {
 
       return {
         opacity,
-        zIndex: opacity === 1 ? 30 : 10
+        zIndex: opacity > 0.4 ? 30 : 10
       }
     },
     gridStyles () {
@@ -63,7 +63,7 @@ export default {
 
       return {
         opacity,
-        zIndex: opacity === 1 ? 30 : 10
+        zIndex: opacity > 0.4 ? 29 : 9
       }
     },
     opacity () {
