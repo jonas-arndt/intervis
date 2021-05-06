@@ -1,9 +1,76 @@
 <template>
-  <div class="title-visualization">
-    <img v-if="$i18n.locale == 'en'" src="~/assets/teaser/teaser-text-en.svg" alt="Access, Inclusion, Participation, Acknowledgment">
-    <img v-if="$i18n.locale == 'de'" src="~/assets/teaser/teaser-text-de.svg" alt="Zugang, Integration, Teilhabe, Anerkennung">
+  <div class="title-visualization" :style="{ opacity }">
+    <div class="text">
+      <img v-if="$i18n.locale == 'en'" src="~/assets/teaser/teaser-text-en.svg" alt="Access, Inclusion, Participation, Acknowledgment">
+      <img v-if="$i18n.locale == 'de'" src="~/assets/teaser/teaser-text-de.svg" alt="Zugang, Integration, Teilhabe, Anerkennung">
+    </div>
+    <div class="single-lines" :style="singleLinesStyles">
+      <div class="horizontal-lines" />
+    </div>
+    <div class="grid" :style="gridStyles">
+      <div class="grid-visualization" />
+    </div>
   </div>
 </template>
+
+<script>
+import { mapState } from 'vuex'
+import { scaleLinear } from 'd3-scale'
+
+export default {
+  computed: {
+    ...mapState([
+      'introductionStartPosition',
+      'intersectionalityChapterStartPosition',
+      'verticalScrollPosition',
+      'verticalViewportCenter'
+    ]),
+    quarterHeight () {
+      return Math.round((this.intersectionalityChapterStartPosition - this.introductionStartPosition) / 4)
+    },
+    singleLinesStyles () {
+      const domain = [
+        this.introductionStartPosition + this.quarterHeight,
+        this.introductionStartPosition + 2 * this.quarterHeight
+      ]
+      const range = [0, 1]
+      const scale = scaleLinear()
+        .domain(domain).range(range).clamp(true)
+      const opacity = scale(this.verticalScrollPosition)
+
+      return {
+        opacity,
+        zIndex: opacity === 1 ? 30 : 10
+      }
+    },
+    gridStyles () {
+      const domain = [
+        this.introductionStartPosition + 2 * this.quarterHeight,
+        this.introductionStartPosition + 3 * this.quarterHeight
+      ]
+      const range = [0, 1]
+      const scale = scaleLinear()
+        .domain(domain).range(range).clamp(true)
+      const opacity = scale(this.verticalScrollPosition)
+
+      return {
+        opacity,
+        zIndex: opacity === 1 ? 30 : 10
+      }
+    },
+    opacity () {
+      const domain = [
+        this.intersectionalityChapterStartPosition - 2 * this.verticalViewportCenter,
+        this.intersectionalityChapterStartPosition
+      ]
+      const range = [1, 0]
+      return scaleLinear()
+        .domain(domain).range(range).clamp(true)(this.verticalScrollPosition)
+    }
+  }
+}
+
+</script>
 
 <style scoped lang="scss">
 @import "../../styles/_variables";
@@ -11,20 +78,46 @@
 .title-visualization {
   position: relative;
   height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 
-  img {
+  .text {
     position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    height: 100%;
-    top: 5vh;
-    left: 1rem;
-    max-width: 90%;
-    max-height: 90vh;
+    z-index: 20;
+
+    img {
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+      top: 5vh;
+      left: 1rem;
+      max-width: 90%;
+      max-height: 90vh;
+    }
+  }
+
+  .single-lines, .grid {
+    position: absolute;
+    top: -100vh;
+    left: -100vw;
+    width: 300%;
+    height: 300%;
+    z-index: 10;
+
+    &.single-lines {
+      background: url('~assets/lines/red_horizontals.png');
+      background-size: cover;
+    }
+
+    &.grid {
+      background: url('~assets/lines/red_merged_transparent.png');
+      background-size: cover;
+    }
   }
 
   @media (min-width: $media-breakpoint-min-m) {
-    img {
+    .text img {
       left: 10%;
     }
   }

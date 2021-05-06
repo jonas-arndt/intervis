@@ -41,11 +41,10 @@
 
   @media (min-width: $media-breakpoint-min-m) {
     padding-top: 80vh;
-    padding-bottom: 80vh;
 
     .narrative {
       padding-top: 10rem;
-      padding-bottom: 100vh;
+      padding-bottom: 180vh;
     }
   }
 }
