@@ -66,7 +66,7 @@ export default {
       'setIntroductionStartPosition',
       'setIntersectionalityChapterStartPosition',
       'setDiscriminationChapterStartPosition',
-      'setMeasuresChapterEndPosition'
+      'setNextStepsChapterStartPosition'
     ]),
     handleCallToChapterEvent (chapterId) {
       if (chapterId in this.chapterDimensions) {
@@ -103,8 +103,8 @@ export default {
           this.setDiscriminationChapterStartPosition(y1)
           break
         }
-        case 'chapter4': {
-          this.setMeasuresChapterEndPosition(y2)
+        case 'chapter5': {
+          this.setNextStepsChapterStartPosition(y1)
           break
         }
       }

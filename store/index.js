@@ -16,7 +16,7 @@ export const state = () => ({
   introductionStartPosition: undefined,
   intersectionalityChapterStartPosition: undefined,
   discriminationChapterStartPosition: undefined,
-  measuresChapterEndPosition: undefined
+  nextStepsChapterStartPosition: undefined
 })
 
 export const getters = {
@@ -70,7 +70,7 @@ export const mutations = {
   setDiscriminationChapterStartPosition (state, verticalPosition) {
     state.discriminationChapterStartPosition = verticalPosition
   },
-  setMeasuresChapterEndPosition (state, verticalPosition) {
-    state.measuresChapterEndPosition = verticalPosition
+  setNextStepsChapterStartPosition (state, verticalPosition) {
+    state.nextStepsChapterStartPosition = verticalPosition
   }
 }

@@ -16,7 +16,7 @@ export default {
       'introductionStartPosition',
       'intersectionalityChapterStartPosition',
       'discriminationChapterStartPosition',
-      'measuresChapterEndPosition'
+      'nextStepsChapterStartPosition'
     ]),
     opacity () {
       const domain = [
@@ -29,8 +29,8 @@ export default {
         this.discriminationChapterStartPosition,
 
         // third transition
-        this.measuresChapterEndPosition - 5 * this.verticalViewportCenter,
-        this.measuresChapterEndPosition - 3 * this.verticalViewportCenter
+        this.nextStepsChapterStartPosition - 5 * this.verticalViewportCenter,
+        this.nextStepsChapterStartPosition - 3 * this.verticalViewportCenter
       ]
       const range = [0.3, 1, 1, 0.3, 0.3, 0]
       return scaleLinear()
