@@ -24,12 +24,9 @@ export default {
       })
     },
     updateVerticalViewportCenter () {
-      const verticalViewportCenter = this.getVerticalViewportCenter()
-      this.setVerticalViewportCenter(verticalViewportCenter)
-    },
-    getVerticalViewportCenter () {
       const boundingClientRect = this.$refs.scroller.getBoundingClientRect()
-      return Math.round(boundingClientRect.height / 2)
+      const verticalViewportCenter = Math.round(boundingClientRect.height / 2)
+      this.setVerticalViewportCenter(verticalViewportCenter)
     }
   }
 }
