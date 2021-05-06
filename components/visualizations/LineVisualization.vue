@@ -34,7 +34,7 @@ export default {
       ]
       const range = [0.3, 1, 1, 0.3, 0.3, 0]
       return scaleLinear()
-        .domain(domain).range(range)(this.verticalScrollPosition)
+        .domain(domain).range(range).clamp(true)(this.verticalScrollPosition)
     },
     greyLinesStyles () {
       const size = scaleLinear()
