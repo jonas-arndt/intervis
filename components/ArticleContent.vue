@@ -16,6 +16,7 @@
     <NextSteps ref="chapter5" @hook:mounted="updateChapterDimensions('chapter5')" />
     <ProjectInformation />
     <References />
+    <Imprint />
   </div>
 </template>
 
