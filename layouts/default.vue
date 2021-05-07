@@ -22,6 +22,8 @@ body,
 }
 
 .chapter {
+  position: relative;
+
   .chapter-title {
     font-weight: 700;
     margin-bottom: 0.6em;
@@ -60,16 +62,6 @@ body,
       }
     }
   }
-}
-
-a.cross-reference {
-  &:before {
-    content: "→ ";
-  }
-}
-
-.chapter {
-  position: relative;
 }
 
 .red-button {
@@ -144,8 +136,4 @@ a {
     border-color: $color-medium-grey;
   }
 }
-
-// other elements
-@import "../styles/case-study";
-
 </style>
