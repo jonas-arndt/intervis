@@ -91,6 +91,7 @@ export default {
 
 .page {
   height: 100%;
+  overflow: hidden;
 
   .intro, .overlay {
     z-index: 500;

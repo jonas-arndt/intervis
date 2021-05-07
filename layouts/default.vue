@@ -17,10 +17,6 @@ body,
     height: 100%;
 }
 
-.page {
-  overflow: hidden;
-}
-
 .chapter {
   position: relative;
 
