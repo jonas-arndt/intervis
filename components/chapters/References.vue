@@ -1,7 +1,7 @@
 <template>
-  <div class="chapter references">
+  <div class="references">
     <h2 class="chapter-title" v-html="$t('references-title')" />
-    <div class="references">
+    <div class="reference-list">
       <ul>
         <li v-for="reference, index in references" :key="index" class="reference">
           <span v-if="reference.author" class="author">{{ reference.author }}</span>
@@ -38,9 +38,14 @@ export default {
 <style lang="scss" scoped>
 @import "../../styles/_variables";
 
-.chapter.references {
+.references {
   background-color: $color-light-grey;
   padding: 1rem;
+
+  .chapter-title {
+    font-weight: 700;
+    margin-bottom: 0.6em;
+  }
 
   h2 {
     font-size: $font-size-title;
@@ -56,7 +61,7 @@ export default {
     }
   }
 
-  .references {
+  .reference-list {
     font-size: $font-size-smaller;
     line-height: normal;
     overflow-wrap: break-word;
@@ -70,7 +75,7 @@ export default {
   @media (min-width: $media-breakpoint-min-m) {
     padding: 3rem 20% 5rem 20%;
 
-    .references {
+    .reference-list {
       ul {
         // TODO: Add IE workaround (https://stackoverflow.com/a/14745429)
         columns: 2;

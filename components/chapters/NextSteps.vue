@@ -1,5 +1,5 @@
 <template>
-  <div class="chapter and-now">
+  <div class="and-now">
     <h2 class="chapter-title" v-html="$t('chapter5-title')" />
     <p v-html="$t('chapter5-text1')" />
 
@@ -69,9 +69,14 @@ export default {
 <style lang="scss" scoped>
 @import "../../styles/_variables";
 
-.chapter.and-now {
+.and-now {
   background-color: $color-light-grey;
   padding: 1rem;
+
+  .chapter-title {
+    font-weight: 700;
+    margin-bottom: 0.6em;
+  }
 
   a {
     color: $color-black;
@@ -166,10 +171,8 @@ export default {
       }
     }
   }
-}
 
-@media (min-width: $media-breakpoint-min-m) {
-  .chapter.and-now {
+  @media (min-width: $media-breakpoint-min-m) {
     padding: 3rem 20% 5rem 20%;
 
     ul.personal-suggestions {

@@ -1,5 +1,5 @@
 <template>
-  <div class="chapter project-information">
+  <div class="project-information">
     <h2 class="chapter-title" v-html="$t('projectinfo-title')" />
     <p v-html="$t('projectinfo-text1')" />
     <p class="disclosure-link">
@@ -11,9 +11,14 @@
 <style lang="scss" scoped>
 @import "../../styles/_variables";
 
-.chapter.project-information {
+.project-information {
   background-color: $color-light-grey;
   padding: 1rem;
+
+  .chapter-title {
+    font-weight: 700;
+    margin-bottom: 0.6em;
+  }
 
   h2 {
     font-size: $font-size-title;
