@@ -11,7 +11,6 @@
       </div>
 
       <div class="step">
-        <blockquote v-html="$t('chapter3-example2-quote')" />
         <p v-html="$t('chapter3-example2-text2')" />
       </div>
 
