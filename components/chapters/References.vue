@@ -16,10 +16,6 @@
           </li>
         </ul>
       </div>
-
-      <div class="imprint-link">
-        <a href="#">Impressum</a>
-      </div>
     </FullWidthContent>
   </div>
 </template>
