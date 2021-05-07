@@ -72,10 +72,6 @@ export default {
 @import "../../styles/_variables";
 
 .and-now {
-  background-color: $color-light-grey;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-
   .chapter-title {
     font-weight: 700;
     margin-bottom: 0.6em;
@@ -176,9 +172,6 @@ export default {
   }
 
   @media (min-width: $media-breakpoint-min-m) {
-    padding-top: 3rem;
-    padding-bottom: 5rem;
-
     ul.personal-suggestions {
 
       li {

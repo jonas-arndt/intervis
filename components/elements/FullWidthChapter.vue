@@ -8,12 +8,11 @@
 @import "../../styles/_variables";
 
 .full-width-chapter {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 1rem;
+  background-color: $color-light-grey;
 
   @media (min-width: $media-breakpoint-min-m) {
-    padding-left: 20%;
-    padding-right: 20%;
+    padding: 3rem 20% 5rem 20%;
   }
 }
 </style>

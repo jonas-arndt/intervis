@@ -41,10 +41,6 @@ export default {
 @import "../../styles/_variables";
 
 .references {
-  background-color: $color-light-grey;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-
   .chapter-title {
     font-weight: 700;
     margin-bottom: 0.6em;
@@ -76,9 +72,6 @@ export default {
   }
 
   @media (min-width: $media-breakpoint-min-m) {
-    padding-top: 3rem;
-    padding-bottom: 5rem;
-
     .reference-list {
       ul {
         // TODO: Add IE workaround (https://stackoverflow.com/a/14745429)
