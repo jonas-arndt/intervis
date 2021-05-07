@@ -1,8 +1,8 @@
 [
     {
         "ID": "evaluation-link",
-        "German": "<b>Hier findest Du\neinen 15-min\u00fctigen\nFragebogen zum\nArtikel.</b>\nWir freuen uns \u00fcber\ndeine Teilnahme!",
-        "English": "<b>Here you will\nfind a 15-minute\nquestionnaire about\nthe article.</b> We are\nlooking forward to\nyour participation!"
+        "German": "<b>Hier findest Du\neinen 20-min\u00fctigen\nFragebogen zum\nArtikel.</b>\nWir freuen uns \u00fcber\ndeine Teilnahme!",
+        "English": "<b>Here you will\nfind a 20-minute\nquestionnaire about\nthe article.</b> We are\nlooking forward to\nyour participation!"
     },
     {
         "ID": "",
@@ -21,8 +21,8 @@
     },
     {
         "ID": "startscreen-subtitle",
-        "German": "Eine visuelle Einf\u00fchrung.",
-        "English": "A visual Introduction."
+        "German": "Eine visuelle Einf\u00fchrung",
+        "English": "A visual Introduction"
     },
     {
         "ID": "startscreen-authors",
@@ -80,6 +80,16 @@
         "English": "Access to resources such as education, the labor market, and housing, social and political participation, social inclusion and acknowledgment. As person A you can read these words without any problems.\n\nWhat happens when you slip into other people and look at these words from their point of views?"
     },
     {
+        "ID": "teaser-alt-tag1",
+        "German": "Der gesamte Screen ist gef\u00fcllt mit unperfekten, \u00bbselbst gezeichneten\u00ab Strichen, die eine fast wei\u00dfe F\u00fcllung haben und eine graue Umrandung. Es gibt viele unterschiedliche Ausrichtungen der Striche (90 Grad, 180 Grad, 45 Grad usw.) und sie sind ineinander verflochten/verwoben, sodass ein Netz aus Strichen entsteht. Im Vordergrund stehen in gro\u00dfen, orangenen Buchstaben untereinander die Worte Zugang, Einbeziehung, Teilhabe und Anerkennung.",
+        "English": ""
+    },
+    {
+        "ID": "teaser-alt-tag2",
+        "German": "Mit dem Scrollen setzten sich nun alle waagerechten Striche vor diese Worte und ihre Umrandung nimmt eine orange Farbigkeit an. Mit weiterem Scrollen kommen immer mehr Strichausrichtungen in den Vordergrund und ihre Umrandungen werden orange, sodass die Worte Zugang, Einbeziehung, Teilhabe und Anerkennung sehr schwer lesbar werden. ",
+        "English": ""
+    },
+    {
         "ID": "teaser-text2",
         "German": "F\u00e4llt Dir etwas auf?\nDie Begriffe sind aus der Sicht dieser Person nur noch schwer zu erkennen, fast unleserlich.",
         "English": "Do you notice anything?\nFrom this person\u2019s point of view the words are difficult to read, almost illegible.\n"
@@ -113,6 +123,11 @@
         "ID": "chapter1-text1",
         "German": "Wir sind alle unterschiedliche Individuen, mit ganz unterschiedlichen Interessen, St\u00e4rken, Zielen etc. Dar\u00fcber hinaus pr\u00e4gen uns mehrere sogenannte soziale Kategorien, wie Geschlecht (einschlie\u00dflich Geschlechtsidentit\u00e4t, sexuelle Orientierung), \u203a<a href=\"glossar#rasse\" class=\"tooltip\">Rasse</a>\u2039 (einschlie\u00dflich Ethnizit\u00e4t, Nationalit\u00e4t, Hautfarbe, Migrationsstatus, Sprache, Kultur, Religion), Klasse (einschlie\u00dflich sozio-\u00f6konomische Position und Herkunft), <a href=\"glossar#behinderung\" class=\"tooltip\">Behinderung</a>, Alter etc. Diese sozialen Kategorien sind Dimensionen sozialer Machtverh\u00e4ltnisse: Personen und Gruppen werden im Rahmen vorherrschender Gesellschaftssysteme (Kapitalismus, <a href=\"glossar#todo\" class=\"tooltip\"><i>wei\u00dfe</i> Vorherrschaft</a> und <a href=\"glossar#todo\" class=\"tooltip\">Patriarchat</a>) basierend auf diesen sozialen Kategorien unterschiedlich benachteiligt, also diskriminiert, und bevorteilt, also privilegiert. Das f\u00fchrt zu sozialer Ungleichheit und asymmetrischer Machtverteilung in unserer Gesellschaft.",
         "English": "We are all different individuals with different interests, strengths, goals, etc. In addition, several so-called social categories shape us, such as gender (including gender identity, sexual orientation), <a href=\"glossary#race\" class=\"tooltip\">race</a> (including ethnicity, nationality, skin color, migration status, language, culture, religion), class (including socio-economic position and background), <a href=\"glossary#disability\" class=\"tooltip\">disability</a>, age, etc. These social categories are dimensions of social power relations: Individuals and groups are differentially disadvantaged, i.e. discriminated against, and advantaged, i.e. privileged, based on these social categories within the framework of prevailing social systems (capitalism, <a href=\"glossary#supremacy\" class=\"tooltip\"><i>white</i> supremacy</a>, and <a href=\"glossary#patriarchy\" class=\"tooltip\">patriarchy</a>). This leads to social inequality and asymmetric distribution of power in our society.\n"
+    },
+    {
+        "ID": "teaser-alt-tag3",
+        "German": "Im Hintergrund liegt das gleiche Netz aus Strichen wie zu Anfang, die Strichumrandungen haben aber alle eine orange Farbigkeit. Der gesamte Screen ist von diesem Netz ausgef\u00fcllt.",
+        "English": ""
     },
     {
         "ID": "chapter1-text2",
@@ -238,6 +253,11 @@
         "ID": "chapter2-vis2-examples3",
         "German": "z.B. heterosexuelle, cis-geschlechtliche, junge, arme Frau of Color ohne Behinderung",
         "English": "e.g. heterosexual, cisgender, young, poor Woman of Color without disabilities"
+    },
+    {
+        "ID": "teaser-alt-tag4",
+        "German": "Es erscheint eine \u00bbherausgezoomte\u00ab Version des Netzes mit kleineren Strichen, die eine hellgraue Umrandung haben. Der gesamte Screen ist von diesem Netzt ausgef\u00fcllt. Rechts gibt es drei verschiedene, organische Formen (organische Verformungen von Kreisen), die untereinander angeordnet sind. Diese Formen bilden sich aus dem Hintergrundnetz heraus, in dem sie ebenfalls mit dem Netz gef\u00fcllt sind und durch eine Farbver\u00e4nderung der Strichumrandungen erkennbar werden. In jeder der drei Formen stehen die Worte Zugang, Einbeziehung, Teilhabe, Anerkennung. Innerhalb der ersten Form sind die Strichumrandungen grau und alle Strichausrichtungen liegen hinter diesen Worten. Innerhalb der darunter angeordneten Form befinden sich die waagerechten Striche vor den W\u00f6rtern und sie haben eine orange Umrandung. Innerhalb der unteren Form treten alle waagerechten und senkrechten Striche und die Striche mit einer 135 Grad Ausrichtung vor die W\u00f6rter und die Strichumrandungen sind orange.",
+        "English": ""
     },
     {
         "ID": "chapter2-text2",
@@ -370,6 +390,11 @@
         "English": "<b>Meyrem \u00d6zt\u00fcrk with hijab</b>\nInvitations to job interview"
     },
     {
+        "ID": "teaser-alt-tag5",
+        "German": "Der gesamte Screen ist noch immer von dem Netzt aus Strichen ausgef\u00fcllt. Die vorherigen Formen verschwinden und rechts bilden sich zwei neue unterschiedlich gro\u00dfe, organische Formen aus dem Netz heraus. Das Gr\u00f6\u00dfenverh\u00e4ltnis der beiden Formen spiegelt das Verh\u00e4ltnis von 18,8% zu 4,2% wider. Die obere Form visualisiert die 18,8% und ihre waagerechten Striche sind im Vordergrund und haben eine orange Umrandung, alle anderen Strichausrichtungen haben eine graue Umrandung. Die untere Form visualisiert die 4,2% und hier sind auch die waagerechten Striche und zus\u00e4tzlich die zwei Strichausrichtungen 135 und 335 Grad im Vordergrund und haben eine orange Umrandung.",
+        "English": ""
+    },
+    {
         "ID": "chapter3-example1-text2",
         "German": "Sandra Bauer war die erfolgreichste Kandidatin: Von 18,8% aller Unternehmen, bei denen sie sich bewarb, wurde sie zum Vorstellungsgespr\u00e4ch eingeladen. Meyrem \u00d6zt\u00fcrk ohne Hidschab von 13,5%. Meyrem \u00d6zt\u00fcrk, die auf dem Bewerbungsfoto einen Hidschab tr\u00e4gt, wurde lediglich von 4,2% aller Unternehmen, die sie kontaktierte, zu einem Vorstellungsgespr\u00e4ch eingeladen.",
         "English": "Sandra Bauer was the most successful candidate: She was invited for a job interview by 18.8% of all companies to which she applied. Meyrem \u00d6zt\u00fcrk without a hijab by 13.5%. Meyrem \u00d6zt\u00fcrk, who wears a hijab in the application photo, was invited to an interview by only 4.2% of all companies she contacted."
@@ -388,6 +413,11 @@
         "ID": "chapter3-example1-text4",
         "German": "Ein Beispiel f\u00fcr indirekte intersektionale Diskriminierung von Frauen* mit Hidschab auf dem deutschen Arbeitsmarkt ist das sogenannte \u00bbNeutralit\u00e4tsgesetz\u00ab in Berlin, das in erster Linie ein Kopftuchverbot f\u00fcr beispielsweise muslimische Richter*innen, Lehrer*innen und Erzieher*innen zur Folge haben kann. Solche rechtlich legitimierten, religi\u00f6sen Kleidungsbeschr\u00e4nkungen richten sich nicht direkt gegen eine bestimmte Glaubensgemeinschaft, allerdings liegt der Schluss nahe, dass der Hidschab das implizite Ziel ist. Gerechtfertigt werden sie mit der Argumentation der Aufrechterhaltung der \u00bbNeutralit\u00e4t\u00ab von staatlichen Institutionen.",
         "English": "An example of indirect intersectional discrimination against women* with hijab in the German labor market is the so-called \u00bbNeutrality Act\u00ab in Berlin, which primarily can result in a headscarf ban for Muslim judges, teachers, educators, etc. Such legally legitimized, religious dress restrictions are not directly directed against a specific religious community, but it is reasonable to conclude that the hijab is the implicit target. They are justified with the argumentation of maintaining the \u00bbneutrality\u00ab of state institutions.\n"
+    },
+    {
+        "ID": "teaser-alt-tag6",
+        "German": "Die untere organische Form vergr\u00f6\u00dfert sich",
+        "English": ""
     },
     {
         "ID": "chapter3-example1-quote",
@@ -418,6 +448,11 @@
         "ID": "chapter3-example2-text1",
         "German": "Sinti*zze und Rom*nja leben seit dem 15. Jahrhundert im deutschsprachigen Raum und sind die gr\u00f6\u00dfte ethnische Minderheit in Europa. Sie sind Vorurteilen, Diskriminierung und Marginalisierung ausgesetzt, welche ihre Wurzeln in historischen Ereignissen haben. So wurden sie in Deutschland w\u00e4hrend des Holocausts/Porajmos systematisch verfolgt und ermordet. Sinti*zze und Rom*nja sind bis heute rassistischer und klassistischer Diskriminierung ausgesetzt \u2013 auf individueller, struktureller und institutioneller Ebene. So auch im deutschen Schulsystem. Der Fall Nenad Mihailovic, gezeigt in der \u2192 Dokumentation \u00bbF\u00fcr dumm erkl\u00e4rt - Nenads zweite Chance\u00ab von 2018, macht dies deutlich:",
         "English": "Sinti*zze and Rom*nja have lived in German-speaking countries since the 15th century and are the largest ethnic minority in Europe. They are exposed to prejudices, discrimination and marginalization, which have their roots in historical events. They were systematically persecuted and murdered in Germany during the Holocaust/Porajmos. Sinti*zze and Rom*nja are still exposed to racist and classist discrimination today \u2013 on an individual, structural and institutional level. This is also the case in the German school system. The case of Nenad Mihailovic, shown in the \u2192 documentary \u00bbF\u00fcr dumm erkl\u00e4rt - Nenads zweite Chance\u00ab from 2018, illustrates this:\n"
+    },
+    {
+        "ID": "teaser-alt-tag7",
+        "German": "Die vorherigen Formen verschwinden und rechts unten bildet sich eine neue organische Form aus dem Netz heraus. Innerhalb dieser sind die Strichausrichtungen 90 und 135 Grad im Vordergrund und haben eine orange Umrandung, alle anderen Strichausrichtungen haben eine graue Umrandung. ",
+        "English": ""
     },
     {
         "ID": "chapter3-example2-quote",
@@ -455,9 +490,19 @@
         "English": "<b>Sinti*zze and Rom*nja</b> \n\u00bbGymnasium\u00ab attendance"
     },
     {
+        "ID": "teaser-alt-tag8",
+        "German": "Diese Form wird kleiner und visualisiert nun die 2,3%. Die Farbigkeit der Strichumrandungen innerhalb der Formen bleibt die selbe. Rechts oben bildet sich eine zweite, gr\u00f6\u00dfere Form aus dem Netz heraus. Diese visualisiert die 24,4% und hier haben alle Strichausrichtungen eine graue Umrandung. Das Gr\u00f6\u00dfenverh\u00e4ltnis der beiden Formen spiegelt das Verh\u00e4ltnis von 24,4% zu 2,3% wider.",
+        "English": ""
+    },
+    {
         "ID": "chapter3-example2-text3",
         "German": "Sinti*zze und Rom*nja sind \u00fcberproportional an F\u00f6rderschulen und unterproportional an Gymnasien vertreten. Nur 6 von 261 Befragten besuchten ein Gymnasium, das entspricht 2,3%. In der Mehrheitsbev\u00f6lkerung verf\u00fcgen insgesamt 24,4% \u00fcber eine Hochschulreife, in der Altersgruppe der 20- bis 25-J\u00e4hrigen sogar \u00fcber 40%. Nur 11,5% der Befragten besuchten die Realschule (12,3% der befragten 14- bis 25-J\u00e4hrigen). Im Vergleich: In der Mehrheitsbev\u00f6lkerung haben \u00fcber 30% in der Altersgruppe der 14- bis 25-J\u00e4hrigen einen mittleren Bildungsabschluss.",
         "English": "Sinti*zze and Rom*nja are disproportionately represented in special education schools designed for children with disabilities and underrepresented at \u00bbGymnasien\u00ab (academic secondary schools). Only 6 out of 261 respondents attended a Gymnasium, which corresponds to 2.3%. In the majority population, a total of 24.4% have a university entrance qualification, and in the 20 to 25 year old age group even more than 40%. Only 11.5% of respondents attended \u00bbRealschule\u00ab (secondary school) (12.3% of the 14 to 25 year olds surveyed). By comparison, in the majority population, over 30% of the 14 to 25 year old age group have a secondary school education."
+    },
+    {
+        "ID": "teaser-alt-tag9",
+        "German": "Die untere Form wird nun gr\u00f6\u00dfer und die obere Form kleiner, sodass die untere Form gr\u00f6\u00dfer ist als die obere Form. Die Farbigkeit der Strichumrandungen innerhalb der Formen bleibt die selbe. Die untere Form visualisiert die 10,7% und die obere die 4,9%. Das Gr\u00f6\u00dfenverh\u00e4ltnis der beiden Formen spiegelt das Verh\u00e4ltnis von 10,7% zu 4,9% wider.",
+        "English": ""
     },
     {
         "ID": "chapter3-example2-vis5",
@@ -515,6 +560,11 @@
         "English": "Women* with disabilities experience discrimination on the basis of their gender and disability in various areas in Germany \u2013 on individual, structural and institutional level. Particularly in health care and employment.\n\nA <a href=\"https://www.bmfsfj.de/bmfsfj/service/publikationen/lebenssituation-und-belastungen-von-frauen-mit-beeintraechtigungen-und-behinderungen-in-deutschland-80576\">\u2192 study</a> from 2012, published by the Federal Ministry for Family Affairs, Senior Citizens, Women and Youth (p. 21 & 24), shows the particular vulnerability and endangerment of women* with disabilities:"
     },
     {
+        "ID": "teaser-alt-tag10",
+        "German": "Die vorherigen Formen verschwinden und rechts bilden sich zwei neue unterschiedlich gro\u00dfe, organische Formen aus dem Netz heraus. Das Gr\u00f6\u00dfenverh\u00e4ltnis der beiden Formen spiegelt das Verh\u00e4ltnis von 3 zu 2 wider. Innerhalb der oberen, gr\u00f6\u00dfere Form treten die waagerechten Striche und die Strichausrichtung 45 Grad in den Vordergrund und erhalten eine orange Strichumrandung, alle anderen Strichausrichtungen haben eine graue Umrandung. Innerhalb der unteren, kleineren Form treten nur die waagerechten Striche in den Vordergrund und erhalten eine orange Strichumrandung.",
+        "English": ""
+    },
+    {
         "ID": "chapter3-example3-vis1",
         "German": "<b>Frauen* mit Behinderung</b>\nErfahrung mit sexualisierter Gewalt",
         "English": "<b>Women* with disabilities</b>\nExperience with sexualized violence"
@@ -533,6 +583,11 @@
         "ID": "chapter3-example3-text3",
         "German": "Vor allem Frauen* mit Behinderung werden h\u00e4ufig so sozialisiert, als w\u00e4ren sie dauerhaft abh\u00e4ngig und auf Betreuung angewiesen, was ihre Handlungsf\u00e4higkeit und Selbstbestimmtheit einschr\u00e4nkt. Patriarchale Strukturen, die von der Annahme ausgehen, dass M\u00e4nner das Familieneinkommen bestreiten, in Verbindung mit Vorurteilen hinsichtlich F\u00e4higkeiten und Kompetenzen von Menschen mit Behinderung erschweren es Frauen* mit Behinderung zudem in den Arbeitsmarkt einzutreten und selbstst\u00e4ndig zu werden. Zus\u00e4tzlich erschwert die mangelnde Barrierefreiheit im Arbeitskontext den Zugang zum Arbeitsmarkt f\u00fcr alle Menschen mit Behinderung. Dies alles spiegelt sich in der Erwerbst\u00e4tigkeitsquote wider:",
         "English": "Especially women* with disabilities are often socialized as if they were permanently dependent and in need of care, which limits their agency and self-determination. Patriarchal structures, which assume that men provide the family income, combined with prejudices about the skills and competences of people with disabilities, also make it difficult for women* with disabilities to access the labor market and become independent. In addition, the lack of accessibility in the work context makes it difficult for all people with disabilities to access the labour market. All of this is reflected in the employment rate:"
+    },
+    {
+        "ID": "teaser-alt-tag11",
+        "German": "Die untere Form wird nun gr\u00f6\u00dfer und die obere Form kleiner, sodass die untere Form gr\u00f6\u00dfer ist als die obere Form. Die Farbigkeit der Strichumrandungen innerhalb der Formen bleibt die selbe. Die untere Form visualisiert die 74% und die obere die 47%. Das Gr\u00f6\u00dfenverh\u00e4ltnis der beiden Formen spiegelt das Verh\u00e4ltnis von 74% zu 47% wider.",
+        "English": ""
     },
     {
         "ID": "chapter3-example3-vis3",
@@ -580,6 +635,11 @@
         "English": "Access\nInclusion\nParticipation\nAcknowledgment"
     },
     {
+        "ID": "teaser-alt-tag12",
+        "German": "Die vorherigen Formen verschwinden und nun bilden sich links zwei neue organische Formen aus dem Netz heraus. In diesen beiden Formen stehen jeweils die Worte Zugang, Einbeziehung, Teilhabe und Anerkennung. Innerhalb der oberen Form treten nur die waagerechten Striche vor diese W\u00f6rter und erhalten eine orange Strichumrandung. Innerhalb der unteren Form werden alle Strichausrichtungen orange und alle treten vor die W\u00f6rter.",
+        "English": ""
+    },
+    {
         "ID": "chapter4-title",
         "German": "Intersektionale Ma\u00dfnahmen",
         "English": "Intersectional Measures"
@@ -590,9 +650,19 @@
         "English": "The examples discussed above show: Special measures are needed to compensate for discrimination and privilege and thus create equal conditions. These must be intersectional and include not only the individual dimension, but above all the structural and institutional dimension of discrimination.\nAnti-discrimination measures that, for example, exclusively address sexist discrimination and are thus one-dimensional and not intersectional, tend to target women who are <i>white</i>, heterosexual, cisgender, young, middle-class, without disabilities, etc. \u2013 the most privileged of the marginalized group. Their lived experiences and interests are foregrounded, but may be seriously different from those of other women*."
     },
     {
+        "ID": "teaser-alt-tag13",
+        "German": "Innerhalb der oberen Form treten die waagerechte Striche nun hinter die W\u00f6rter und ihre Umrandungen werden grau. Innerhalb dieser Form liegen also alle Striche jetzt hinter den Worten. Bei der unteren Form ver\u00e4ndert sich nichts, alle Striche haben eine orange Umrandung und liegen vor den W\u00f6rtern.",
+        "English": ""
+    },
+    {
         "ID": "chapter4-text2",
         "German": "Frauen*, die intersektional marginalisiert sind (z.B. Frauen* of Color, Transfrauen*, Frauen* mit Hidschab, arme Frauen*, Frauen* mit Behinderung), werden somit nicht mit eingeschlossen. Die intersektionale Diskriminierung einer Frau* mit Hidschab kann beispielsweise nicht aufgedeckt werden, wenn nur Geschlecht oder nur Religion/\u203aRasse\u2039/Ethnizit\u00e4t betrachtet wird, denn in der gleichen Situation ist eine Frau* ohne Hidschab und ein muslimischer Mann nicht der gleichen Art/Form von Diskriminierung ausgesetzt. Solche eindimensionalen Ma\u00dfnahmen k\u00f6nnen folglich intersektionale Diskriminierung und Marginalisierung nicht \u00fcberwinden. Personen und Gruppen k\u00f6nnen dadurch sogar m\u00f6glicherweise noch st\u00e4rker marginalisiert werden.",
         "English": "Women* who experience intersectional marginalization and discrimination (e.g. Women* of Color, trans women*, Muslim women*, poor women*, women* with disabilities) are thus not included. For example, the intersectional discrimination of a woman* with hijab cannot be uncovered if only approached from the axis of gender or only from the axis of religion/race/ethnicity, because in the same situation, a woman* without hijab and a Muslim man do not face the same type/form of discrimination. Consequently, such one-dimensional measures cannot overcome intersectional discrimination and marginalization. Individuals and groups may even be further marginalized as a result."
+    },
+    {
+        "ID": "teaser-alt-tag14",
+        "German": "Das gesamte Hintergrundnetz und die Formen verschwinden, sodass nur noch die Worte Zugang, Einbeziehung, Teilhabe und Anerkennung zu sehen sind. Diese werden beim Weiterscrollen gr\u00f6\u00dfer skaliert, sodass sie den gesamten Screen einnehmen. ",
+        "English": ""
     },
     {
         "ID": "chapter4-text3",
@@ -733,5 +803,30 @@
         "ID": "references-downloaded",
         "German": "Abgerufen von",
         "English": "Retrieved from"
+    },
+    {
+        "ID": "imprint_text1",
+        "German": "Du hast Feedback oder Vorschl\u00e4ge? Wir freuen uns \u00fcber eine <a href=\"mailto:hannah.schwan@fh-potsdam.de\">E-Mail</a> von Dir!",
+        "English": "Do you have comments, suggestions, ...?\u2028 Feel free to send us an <a href=\"mailto:hannah.schwan@fh-potsdam.de\">email</a>!"
+    },
+    {
+        "ID": "imprint_text2",
+        "German": "Projektteam",
+        "English": "Projectteam"
+    },
+    {
+        "ID": "imprint_text3",
+        "German": "<b>Hananh Schwan</b> (Konzeption, Gestaltung, Text)\n<b>Jonas Arndt</b> (Umsetzung)\n<b>Sandra Cartes</b> (Inhaltliche Beratung)\n<b>Marian D\u00f6rk</b> (Wissenschaftliche Leitung)\n",
+        "English": "<b>Hananh Schwan</b> (Concept, Design, Text)\n<b>Jonas Arndt</b> (Development)\n<b>Sandra Cartes</b> (Content consulting)\n<b>Marian D\u00f6rk</b> (Scientific supervision)"
+    },
+    {
+        "ID": "imprint_text4",
+        "German": "<a href=\"https://www.fh-potsdam.de/impressum/\">Impressum</a>",
+        "English": "<a href=\"https://www.fh-potsdam.de/impressum/\">Imprint</a>"
+    },
+    {
+        "ID": "imprint_text5",
+        "German": "<a href=\"https://www.fh-potsdam.de/datenschutzhinweis/\">Datenschutzerkl\u00e4rung</a>",
+        "English": "<a href=\"https://www.fh-potsdam.de/datenschutzhinweis/\">Privacy Policy</a>"
     }
 ]
