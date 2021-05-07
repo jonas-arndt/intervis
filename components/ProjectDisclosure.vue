@@ -13,7 +13,9 @@
       <ProjectDisclosurePart5 v-if="activeDisclosureChapterId == 4" />
     </div>
 
-    <button class="red-bordered-button return-button" @click="$store.commit('toggleDisclosureVisibility')" v-html="$t('backside-button')" />
+    <RedBorderedButton class="return-button" :action="toggleVisibility">
+      <span v-html="$t('backside-button')" />
+    </RedBorderedButton>
   </div>
 </template>
 
@@ -22,6 +24,11 @@ import { mapState } from 'vuex'
 export default {
   computed: {
     ...mapState(['activeDisclosureChapterId'])
+  },
+  methods: {
+    toggleVisibility () {
+      this.$store.commit('toggleDisclosureVisibility')
+    }
   }
 
 }

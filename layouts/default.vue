@@ -64,36 +64,6 @@ body,
   }
 }
 
-.red-button {
-  display: inline-block;
-  padding: 0.8em 1.2em 0.8em 1.2em;
-
-  border-radius: 1.7em;
-  border: none;
-  background: $color-red;
-  outline: none;
-
-  font-family: $font-family-signika;
-  color: white;
-
-  cursor: pointer;
-}
-
-.red-bordered-button {
-  display: inline-block;
-  padding: 0.5em 0.8em 0.5em 0.8em;
-
-  border-radius: 1.7em;
-  border: 1px solid $color-red;
-  background-color: $color-white;
-  outline: none;
-
-  font-family: $font-family-signika;
-  color: $color-red;
-
-  cursor: pointer;
-}
-
 // Layout definitions from google spreadsheet
 b {
   font-weight: 600;

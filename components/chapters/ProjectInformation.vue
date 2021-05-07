@@ -4,7 +4,9 @@
       <h2 class="chapter-title" v-html="$t('projectinfo-title')" />
       <p v-html="$t('projectinfo-text1')" />
       <p class="disclosure-link">
-        <button class="red-button" @click="$store.commit('toggleDisclosureVisibility')" v-html="$t('projectinfo-button')" />
+        <RedButton @click="$store.commit('toggleDisclosureVisibility')">
+          <span v-html="$t('projectinfo-button')" />
+        </RedButton>
       </p>
     </FullWidthContent>
   </div>

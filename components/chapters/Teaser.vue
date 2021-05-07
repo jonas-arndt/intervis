@@ -5,8 +5,12 @@
     <p class="subtitle" v-html="$t('startscreen-subtitle')" />
     <p class="description" v-html="$t('startscreen-preamble')" />
     <div class="button-line">
-      <button class="red-button" @click="hideTeaser()" v-html="$t('startscreen-preamble-button1')" />
-      <button class="red-button" @click="showProjectDisclosure()" v-html="$t('startscreen-preamble-button2')" />
+      <RedButton :action="hideTeaser">
+        <span v-html="$t('startscreen-preamble-button1')" />
+      </RedButton>
+      <RedButton :action="showProjectDisclosure">
+        <span v-html="$t('startscreen-preamble-button2')" />
+      </RedButton>
     </div>
   </div>
 </template>
