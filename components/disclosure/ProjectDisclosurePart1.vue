@@ -1,5 +1,5 @@
 <template>
-  <div class="disclosure content">
+  <DisclosureContent>
     <h2 v-html="$t('backside-process-subtitle1')" />
     <p v-html="$t('backside-process-intro1')" />
 
@@ -36,5 +36,5 @@
 
     <h3 v-html="$t('backside-process-heading8')" />
     <p v-html="$t('backside-process-text8')" />
-  </div>
+  </DisclosureContent>
 </template>
