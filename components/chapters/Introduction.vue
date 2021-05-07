@@ -1,7 +1,7 @@
 <template>
   <div class="chapter grid-visualization">
     <TitleVisualization class="background-visualization" />
-    <div class="narrative">
+    <div class="narrative with-background">
       <div class="step">
         <p v-html="$t('teaser-text1')" />
       </div>
@@ -20,7 +20,6 @@
 
 .chapter.grid-visualization {
   .narrative {
-    position: relative;
     padding-top: 30vh;
     padding-bottom: 150vh;
 

@@ -32,14 +32,31 @@ body,
     padding: 1rem;
   }
 
+  .background-visualization {
+    z-index: -100;
+    position: sticky;
+    top: 0;
+  }
+
   @media (min-width: $media-breakpoint-min-m) {
     .narrative {
+      position: relative;
       padding-left: 10%;
       padding-right: 10%;
 
+      width: 50%;
+
       .step {
-        width: 60%;
+        background: none;
         padding: $font-size-small 1em $font-size-small 1em;
+      }
+
+      &.right {
+        left: 50%;
+      }
+
+      &.with-background .step {
+        background: rgb(249, 250, 255, 0.95);
       }
     }
   }

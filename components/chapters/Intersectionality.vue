@@ -4,7 +4,7 @@
       <span v-html="$t('disclosure-hint1')" />
     </SlideInToggleButton>
 
-    <div class="narrative">
+    <div class="narrative with-background">
       <div class="step">
         <h2 class="chapter-title" v-html="$t('chapter1-title')" />
         <p v-html="$t('chapter1-text1')" />
