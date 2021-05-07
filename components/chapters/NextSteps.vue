@@ -1,6 +1,6 @@
 <template>
   <div class="and-now">
-    <FullWidthChapter>
+    <FullWidthContent>
       <h2 class="chapter-title" v-html="$t('chapter5-title')" />
       <p v-html="$t('chapter5-text1')" />
 
@@ -33,7 +33,7 @@
           </li>
         </ul>
       </div>
-    </FullWidthChapter>
+    </FullWidthContent>
   </div>
 </template>
 
@@ -72,6 +72,10 @@ export default {
 @import "../../styles/_variables";
 
 .and-now {
+  background-color: $color-light-grey;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
   .chapter-title {
     font-weight: 700;
     margin-bottom: 0.6em;
@@ -172,6 +176,9 @@ export default {
   }
 
   @media (min-width: $media-breakpoint-min-m) {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+
     ul.personal-suggestions {
 
       li {
