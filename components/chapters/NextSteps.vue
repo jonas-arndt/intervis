@@ -1,37 +1,39 @@
 <template>
   <div class="and-now">
-    <h2 class="chapter-title" v-html="$t('chapter5-title')" />
-    <p v-html="$t('chapter5-text1')" />
+    <FullWidthChapter>
+      <h2 class="chapter-title" v-html="$t('chapter5-title')" />
+      <p v-html="$t('chapter5-text1')" />
 
-    <h3 v-html="$t('chapter5-subtitle2')" />
-    <p v-html="$t('chapter5-text2')" />
+      <h3 v-html="$t('chapter5-subtitle2')" />
+      <p v-html="$t('chapter5-text2')" />
 
-    <ul class="personal-suggestions">
-      <li v-html="$t('chapter5-point1')" />
-      <li v-html="$t('chapter5-point2')" />
-      <li v-html="$t('chapter5-point3')" />
-      <li v-html="$t('chapter5-point4')" />
-      <li v-html="$t('chapter5-point5')" />
-      <li v-html="$t('chapter5-point6')" />
-      <li v-html="$t('chapter5-point7')" />
-      <li v-html="$t('chapter5-point8')" />
-      <li v-html="$t('chapter5-point9')" />
-    </ul>
-
-    <h3 v-html="$t('chapter5-subtitle3')" />
-    <p v-html="$t('chapter5-text3')" />
-
-    <div v-for="sectionData, sectionKey in furtherReadingData" :key="sectionKey" :class="['further-reading', sectionKey]">
-      <h4 class="title" v-html="$t(sectionData.titleKey)" />
-      <ul>
-        <li v-for="link, index in sectionData.entries" :key="index">
-          <a :href="link.Link">
-            <span class="title">{{ link.Title }}</span>
-            <span v-if="link.Authors" class="author">{{ link.Authors }}</span>
-          </a>
-        </li>
+      <ul class="personal-suggestions">
+        <li v-html="$t('chapter5-point1')" />
+        <li v-html="$t('chapter5-point2')" />
+        <li v-html="$t('chapter5-point3')" />
+        <li v-html="$t('chapter5-point4')" />
+        <li v-html="$t('chapter5-point5')" />
+        <li v-html="$t('chapter5-point6')" />
+        <li v-html="$t('chapter5-point7')" />
+        <li v-html="$t('chapter5-point8')" />
+        <li v-html="$t('chapter5-point9')" />
       </ul>
-    </div>
+
+      <h3 v-html="$t('chapter5-subtitle3')" />
+      <p v-html="$t('chapter5-text3')" />
+
+      <div v-for="sectionData, sectionKey in furtherReadingData" :key="sectionKey" :class="['further-reading', sectionKey]">
+        <h4 class="title" v-html="$t(sectionData.titleKey)" />
+        <ul>
+          <li v-for="link, index in sectionData.entries" :key="index">
+            <a :href="link.Link">
+              <span class="title">{{ link.Title }}</span>
+              <span v-if="link.Authors" class="author">{{ link.Authors }}</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </FullWidthChapter>
   </div>
 </template>
 
@@ -71,7 +73,8 @@ export default {
 
 .and-now {
   background-color: $color-light-grey;
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 
   .chapter-title {
     font-weight: 700;
@@ -173,7 +176,8 @@ export default {
   }
 
   @media (min-width: $media-breakpoint-min-m) {
-    padding: 3rem 20% 5rem 20%;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
 
     ul.personal-suggestions {
 

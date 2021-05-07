@@ -1,24 +1,26 @@
 <template>
   <div class="references">
-    <h2 class="chapter-title" v-html="$t('references-title')" />
-    <div class="reference-list">
-      <ul>
-        <li v-for="reference, index in references" :key="index" class="reference">
-          <span v-if="reference.author" class="author">{{ reference.author }}</span>
-          <span v-if="reference.title" class="title">{{ reference.title }}</span>
-          <span v-if="reference.source" class="source">{{ reference.source }}</span>
-          <span v-if="reference.link">
-            {{ $t('references-downloaded') }}
-            <a :href="reference.link" class="link">{{ reference.link }}</a>
-          </span>
-          <span v-if="reference['request date']" class="request-date">({{ reference['request date'] }})</span>
-        </li>
-      </ul>
-    </div>
+    <FullWidthChapter>
+      <h2 class="chapter-title" v-html="$t('references-title')" />
+      <div class="reference-list">
+        <ul>
+          <li v-for="reference, index in references" :key="index" class="reference">
+            <span v-if="reference.author" class="author">{{ reference.author }}</span>
+            <span v-if="reference.title" class="title">{{ reference.title }}</span>
+            <span v-if="reference.source" class="source">{{ reference.source }}</span>
+            <span v-if="reference.link">
+              {{ $t('references-downloaded') }}
+              <a :href="reference.link" class="link">{{ reference.link }}</a>
+            </span>
+            <span v-if="reference['request date']" class="request-date">({{ reference['request date'] }})</span>
+          </li>
+        </ul>
+      </div>
 
-    <div class="imprint-link">
-      <a href="#">Impressum</a>
-    </div>
+      <div class="imprint-link">
+        <a href="#">Impressum</a>
+      </div>
+    </FullWidthChapter>
   </div>
 </template>
 
@@ -40,7 +42,8 @@ export default {
 
 .references {
   background-color: $color-light-grey;
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 
   .chapter-title {
     font-weight: 700;
@@ -73,7 +76,8 @@ export default {
   }
 
   @media (min-width: $media-breakpoint-min-m) {
-    padding: 3rem 20% 5rem 20%;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
 
     .reference-list {
       ul {

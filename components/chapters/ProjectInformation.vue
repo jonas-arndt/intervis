@@ -1,10 +1,12 @@
 <template>
   <div class="project-information">
-    <h2 class="chapter-title" v-html="$t('projectinfo-title')" />
-    <p v-html="$t('projectinfo-text1')" />
-    <p class="disclosure-link">
-      <button class="red-button" @click="$store.commit('toggleDisclosureVisibility')" v-html="$t('projectinfo-button')" />
-    </p>
+    <FullWidthChapter>
+      <h2 class="chapter-title" v-html="$t('projectinfo-title')" />
+      <p v-html="$t('projectinfo-text1')" />
+      <p class="disclosure-link">
+        <button class="red-button" @click="$store.commit('toggleDisclosureVisibility')" v-html="$t('projectinfo-button')" />
+      </p>
+    </FullWidthChapter>
   </div>
 </template>
 
@@ -13,7 +15,8 @@
 
 .project-information {
   background-color: $color-light-grey;
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 
   .chapter-title {
     font-weight: 700;
@@ -32,7 +35,8 @@
   }
 
   @media (min-width: $media-breakpoint-min-m) {
-      padding: 3rem 20% 5rem 20%;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
   }
 }
 </style>
