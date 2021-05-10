@@ -40,7 +40,7 @@
       </template>
     </PopupOverlay>
 
-    <QuickNavigation class="article-navigation" />
+    <QuickNavigation v-if="!projectDisclosureIsVisible" class="article-navigation" />
     <GoogleLink class="google-link" />
   </div>
 </template>
