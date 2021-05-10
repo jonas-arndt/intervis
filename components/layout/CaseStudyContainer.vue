@@ -61,6 +61,7 @@
         text-align: right;
         margin-top: 2em;
         margin-bottom: 2em;
+        font-style: italic;
       }
     }
 
