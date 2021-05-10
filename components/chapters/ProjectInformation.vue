@@ -4,13 +4,23 @@
       <h2 class="chapter-title" v-html="$t('projectinfo-title')" />
       <p v-html="$t('projectinfo-text1')" />
       <p class="disclosure-link">
-        <RedButton @click="$store.commit('toggleDisclosureVisibility')">
+        <RedButton :action="showProjectDisclosure">
           <span v-html="$t('projectinfo-button')" />
         </RedButton>
       </p>
     </FullWidthContent>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    showProjectDisclosure () {
+      this.$store.commit('toggleDisclosureVisibility')
+    }
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 @import "../../styles/_variables";
