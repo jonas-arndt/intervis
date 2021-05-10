@@ -29,6 +29,8 @@ export default {
   left: 100%;
   width: 50%;
   height: 100%;
+  z-index: 10;
+  background-color: $color-white;
 
   .inside {
     position: sticky;
