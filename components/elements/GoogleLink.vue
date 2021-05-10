@@ -1,6 +1,6 @@
 <template>
   <a :href="link" target="_blank" class="google-link">
-    <span v-html="$t('evaluation-link')" />
+    <span class="label" v-html="$t('evaluation-link')" />
   </a>
 </template>
 
@@ -28,25 +28,34 @@ export default {
 <style lang="scss">
 @import "../../styles/_variables";
 
-$circle-radius: 11em;
-
 .google-link {
-  display: block;
-  width: $circle-radius;
-  height: $circle-radius;
-  border-radius: $circle-radius;
+  display: inline-block;
+  right: 0px;
 
-  padding-top: 1.8em;
+  width: 16rem;
+  height: 3rem;
 
-  font-family: $font-family-signika;
-  font-size: $font-size-default;
-  line-height: 1.2 * $font-size-default;
-  font-weight: normal;
-  text-align: center;
+  background: $color-red;
+  border-radius: 0 1.5rem 1.5rem 0;
+
+  background-image: url('~assets/icons/feedback-icon.svg');
+  background-repeat: no-repeat;
+  background-position: 1rem center;
+
+  font-weight: 600;
   color: $color-white;
 
-  background-color: $color-red;
-  cursor: pointer;
+  .label {
+    display: block;
+    position: relative;
+
+    top: 0.5rem;
+    padding-left: 2.75rem;
+
+    font-size: $font-size-small;
+    font-family: $font-family-signika;
+    line-height: 1.4em;
+  }
 }
 
 </style>

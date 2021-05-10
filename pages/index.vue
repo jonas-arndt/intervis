@@ -100,21 +100,12 @@ export default {
     height: 100%;
   }
 
-  .feedback-button {
-    display: none;
-
-    position: fixed;
-    bottom: 3rem;
-    left: 0;
-
-    z-index: 400;
-  }
-
   .google-link {
     display: none;
     position: fixed;
-    right: 2rem;
-    bottom: 2rem;
+    bottom: 3rem;
+    left: 0;
+    z-index: 400;
   }
 
   .article-navigation {
