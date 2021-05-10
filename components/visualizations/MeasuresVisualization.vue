@@ -92,49 +92,26 @@
     }
   }
 
-  .visual-container {
-    position: relative;
-    top: 10%;
-    left: 10%;
-    width: 80%;
-  }
-
   .visual {
+    position: absolute;
+    height: 45%;
+    width: 50%;
+
     img {
-      max-width: 60%;
-      height: auto;
+      max-height: 100%;
+      max-width: 100%;
+    }
+
+    &.top-left {
+      top: 5%;
+      left: 15%;
     }
 
     &.bottom-right {
-      position: relative;
-      left: 40%;
-    }
-  }
-
-  @media (min-width: $media-breakpoint-min-m) {
-    .visual-container {
-      width: 45%;
-      height: 80%;
-      left: 0;
-      padding: 10%;
-    }
-
-    .visual {
-      width: 60%;
+      right: 15%;
+      bottom: 5%;
 
       img {
-        width: 100%;
-        max-width: none;
-        height: auto;
-      }
-
-      &.top-left {
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
-
-      &.bottom-right {
         position: absolute;
         bottom: 0;
         right: 0;
