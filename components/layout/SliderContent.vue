@@ -5,7 +5,9 @@
         <h2 class="title" v-html="$t('slidein-title')" />
         <slot />
       </div>
-      <a class="disclosure-button red-button" @click.stop="toggleDisclosureVisibility()" v-html="$t('slidein-button')" />
+      <RedButton class="disclosure-button" :action="toggleDisclosureVisibility">
+        <span v-html="$t('slidein-button')" />
+      </RedButton>
     </div>
   </div>
 </template>
