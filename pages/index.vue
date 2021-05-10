@@ -41,7 +41,6 @@
     </PopupOverlay>
 
     <QuickNavigation class="article-navigation" />
-    <MailFeedbackButton class="feedback-button" />
     <GoogleLink class="google-link" />
   </div>
 </template>
