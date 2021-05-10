@@ -20,7 +20,9 @@
     </div>
     <div class="step-2">
       <img class="shape" src="~/assets/fallback/chapter3_example1_quote.png">
-      <p class="quote" v-html="$t('chapter3-example1-quote')" />
+      <div class="quote">
+        <p class="text" v-html="$t('chapter3-example1-quote')" />
+      </div>
     </div>
   </div>
 </template>
@@ -57,6 +59,7 @@
       height: 100vh;
       width: 100%;
       z-index: -1;
+      opacity: 0.5;
     }
 
     .quote {
@@ -65,8 +68,17 @@
       height: 100vh;
       top: 0;
       margin: 0;
-      margin-top: 20%;
-      background-color: rgba(255, 255, 255, 0.6);
+      margin-top: -100vh;
+
+      font-size: $font-size-subtitle;
+      font-weight: bold;
+      font-style: italic;
+
+      .text {
+        display: table-cell;
+        height: 100vh;
+        vertical-align: middle;
+      }
     }
   }
 
