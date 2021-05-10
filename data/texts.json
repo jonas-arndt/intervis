@@ -1,8 +1,8 @@
 [
     {
         "ID": "evaluation-link",
-        "German": "<b>Hier findest Du\neinen 20-min\u00fctigen\nFragebogen zum\nArtikel.</b>\nWir freuen uns \u00fcber\ndeine Teilnahme!",
-        "English": "<b>Here you will\nfind a 20-minute\nquestionnaire about\nthe article.</b> We are\nlooking forward to\nyour participation!"
+        "German": "<b>Hier findest Du\neinen 15-min\u00fctigen\nFragebogen zum\nArtikel</b>",
+        "English": "<b>Here you will\nfind a 15-minute\nquestionnaire about\nthe article</b>"
     },
     {
         "ID": "",
@@ -41,7 +41,7 @@
     },
     {
         "ID": "startscreen-preamble",
-        "German": "Ziel dieses Artikels ist es die Themen Intersektionalit\u00e4t, Diskriminierung und Privilegierung mithilfe visueller Elemente anschaulich zu erkl\u00e4ren. Intersektionale Perspektiven sind bislang nicht im Alltagswortschatz und in gesellschaftlichen Diskursen in Deutschland angekommen. Das m\u00f6chten wir \u00e4ndern, dieser Artikel kann ein Anfang daf\u00fcr sein. Eine erste Version des Artikels entstand im Rahmen der Design Bachelorarbeit von Hannah Schwan. Anschlie\u00dfend wurde er im UCLAB von Hannah, Jonas Arndt, Sandra Cartes und Marian D\u00f6rk weiterentwickelt.\n\nBeim Besuch dieser Website werden folgende Informationen gespeichert und zu Forschungszwecken ausgewertet und ver\u00f6ffentlicht: lorem ipusm, lorem ipusm, lorem ipsum, lorem ipsum. Durch Anklicken einer der Buttons wird die Einverst\u00e4ndnis dazu gegeben.",
+        "German": "Ziel dieses Artikels ist es die Themen Intersektionalit\u00e4t, Diskriminierung und Privilegierung mithilfe visueller Elemente anschaulich zu erkl\u00e4ren. Intersektionale Perspektiven sind bislang nicht im Alltagswortschatz und in gesellschaftlichen Diskursen in Deutschland angekommen. Das m\u00f6chten wir \u00e4ndern, dieser Artikel kann ein Anfang daf\u00fcr sein. Eine erste Version des Artikels entstand im Rahmen der Design Bachelorarbeit von Hannah Schwan. Anschlie\u00dfend wurde er im UCLAB von Hannah, Jonas Arndt, Sandra Cartes und Marian D\u00f6rk weiterentwickelt.\n\nBeim Besuch dieser Website werden folgende Informationen anonym gespeichert und zu Forschungszwecken ausgewertet und ver\u00f6ffentlicht: lorem ipusm, lorem ipusm, lorem ipsum, lorem ipsum. Durch Anklicken einer der Buttons wird die Einverst\u00e4ndnis dazu gegeben.",
         "English": "With this article we aim to accessibly explain the topics of intersectionality, discrimination and privilege using visual elements. Intersectional perspectives have not yet arrived in everyday vocabulary and social discourse in Germany. We would like to change that, and this article can be a beginning for that. A first version of the article was developed as part of the Design Bachelor\u2019s thesis by Hannah Schwan. It was then further developed at the UCLAB by Hannah, Jonas Arndt, Sandra Cartes and Marian D\u00f6rk.\n\nWhen you visit this website the following information is stored and analyzed and published for research purpose: lorem ipusm, lorem ipusm, lorem ipsum, lorem ipsum. By clicking one of the buttons below, you are giving your consent to this."
     },
     {
@@ -81,13 +81,13 @@
     },
     {
         "ID": "teaser-alt-tag1",
-        "German": "Der gesamte Screen ist gef\u00fcllt mit unperfekten, \u00bbselbst gezeichneten\u00ab Strichen, die eine fast wei\u00dfe F\u00fcllung haben und eine graue Umrandung. Es gibt viele unterschiedliche Ausrichtungen der Striche (90 Grad, 180 Grad, 45 Grad usw.) und sie sind ineinander verflochten/verwoben, sodass ein Netz aus Strichen entsteht. Im Vordergrund stehen in gro\u00dfen, orangenen Buchstaben untereinander die Worte Zugang, Einbeziehung, Teilhabe und Anerkennung.",
-        "English": ""
+        "German": "Der gesamte Screen ist gef\u00fcllt mit unperfekten, \u00bbselbst gezeichneten\u00ab Strichen, die eine fast wei\u00dfe F\u00fcllung haben und eine graue Umrandung. Es gibt viele unterschiedliche Ausrichtungen der Striche (90 Grad, 180 Grad, 45 Grad usw.) und sie sind ineinander verwoben, sodass ein Netz aus Strichen entsteht. Im Vordergrund stehen in gro\u00dfen, orangenen Buchstaben untereinander die Worte Zugang, Einbeziehung, Teilhabe und Anerkennung.",
+        "English": "The entire screen is filled with imperfect, \u00bbself-drawn\u00ab strokes that have an almost white fill and a gray outline. There are many different alignments of strokes (90 degrees, 180 degrees, 45 degrees, etc.). They are interwoven and create a grid of strokes. In the foreground the words access, inclusion, participation and acknowledgment are displayed in large orange letters one below the other."
     },
     {
         "ID": "teaser-alt-tag2",
         "German": "Mit dem Scrollen setzten sich nun alle waagerechten Striche vor diese Worte und ihre Umrandung nimmt eine orange Farbigkeit an. Mit weiterem Scrollen kommen immer mehr Strichausrichtungen in den Vordergrund und ihre Umrandungen werden orange, sodass die Worte Zugang, Einbeziehung, Teilhabe und Anerkennung sehr schwer lesbar werden. ",
-        "English": ""
+        "English": "With scrolling, all horizontal strokes are now placed in front of these words and their outlines turn orange. With further scrolling, more and more stroke alignments come to the foreground and their outlines turn orange, so that the words access, inclusion, participation and acknowledgment become very difficult to read. "
     },
     {
         "ID": "teaser-text2",
@@ -127,7 +127,7 @@
     {
         "ID": "teaser-alt-tag3",
         "German": "Im Hintergrund liegt das gleiche Netz aus Strichen wie zu Anfang, die Strichumrandungen haben aber alle eine orange Farbigkeit. Der gesamte Screen ist von diesem Netz ausgef\u00fcllt.",
-        "English": ""
+        "English": "In the background is the same grid of strokes as in the beginning, but the stroke outlines all have an orange color. The entire screen is filled with this grid."
     },
     {
         "ID": "chapter1-text2",
@@ -256,8 +256,8 @@
     },
     {
         "ID": "teaser-alt-tag4",
-        "German": "Es erscheint eine \u00bbherausgezoomte\u00ab Version des Netzes mit kleineren Strichen, die eine hellgraue Umrandung haben. Der gesamte Screen ist von diesem Netzt ausgef\u00fcllt. Rechts gibt es drei verschiedene, organische Formen (organische Verformungen von Kreisen), die untereinander angeordnet sind. Diese Formen bilden sich aus dem Hintergrundnetz heraus, in dem sie ebenfalls mit dem Netz gef\u00fcllt sind und durch eine Farbver\u00e4nderung der Strichumrandungen erkennbar werden. In jeder der drei Formen stehen die Worte Zugang, Einbeziehung, Teilhabe, Anerkennung. Innerhalb der ersten Form sind die Strichumrandungen grau und alle Strichausrichtungen liegen hinter diesen Worten. Innerhalb der darunter angeordneten Form befinden sich die waagerechten Striche vor den W\u00f6rtern und sie haben eine orange Umrandung. Innerhalb der unteren Form treten alle waagerechten und senkrechten Striche und die Striche mit einer 135 Grad Ausrichtung vor die W\u00f6rter und die Strichumrandungen sind orange.",
-        "English": ""
+        "German": "Es erscheint eine \u00bbherausgezoomte\u00ab Version des Netzes mit kleineren Strichen, die hellgraue Umrandungen haben. Der gesamte Screen ist von diesem Netzt ausgef\u00fcllt und es bleibt auch f\u00fcr die n\u00e4chsten Kapitel sichtbar. Rechts gibt es drei verschiedene, organische Formen (organische Verformungen von Kreisen), die untereinander angeordnet sind. Diese Formen bilden sich aus dem Hintergrundnetz heraus, indem sie ebenfalls mit dem Netz gef\u00fcllt sind und durch eine Farbver\u00e4nderung der Strichumrandungen innerhalb der Formen sichbar werden. In jeder der drei Formen stehen die Worte Zugang, Einbeziehung, Teilhabe, Anerkennung. Innerhalb der ersten Form sind die Strichumrandungen grau und alle Strichausrichtungen liegen hinter den Worten. Innerhalb der darunter angeordneten Form befinden sich die waagerechten Striche vor den W\u00f6rtern und sie haben eine orange Umrandung, alle anderen Strichausrichtungen haben innerhalb dieser Form eine graue Umrandung und sind hinter den W\u00f6rtern positioniert. Innerhalb der unteren Form treten alle waagerechten und senkrechten Striche und die Striche mit einer 135 Grad Ausrichtung vor die W\u00f6rter und ihre Umrandungen sind orange, alle anderen Strichausrichtungen haben innerhalb dieser Form eine graue Umrandung und sind hinter den W\u00f6rtern positioniert.",
+        "English": "A \u00bbzoomed out\u00ab version of the grid appears with smaller strokes that have light gray outlines. The entire screen is filled by this grid, and it remains visible for the next few chapters. On the right, there are three different, organic shapes (organic deformations of circles) arranged one below the other. These shapes emerge from the background grid by also being filled with the grid and becoming visible by a change in the color of the stroke outlines within the shapes. Within each of the three shapes the words access, inclusion, participation and acknowledgment are displayed. Within the first shape, the stroke outlines are gray and all stroke alignments are placed behind the words. Within the shape below, the horizontal strokes are positioned in front of the words and have an orange outline, all other stroke alignments within this shape have a gray outline and are placed behind the words. Within the bottom shape, all horizontal strokes, vertical strokes, and strokes with a 135 degree alignment occur in front of the words and their outlines are orange, all other stroke alignments within this shape have a gray outline and are positioned behind the words."
     },
     {
         "ID": "chapter2-text2",
@@ -341,8 +341,8 @@
     },
     {
         "ID": "chapter3-intro1",
-        "German": "Zur Veranschaulichung der Auswirkungen von intersektionaler Diskriminierung schauen wir uns Fallbeispiele aus Deutschland an, von denen beispielsweise das Center for Intersectional Justice Berlin unter anderem berichtet. Die folgenden Beispiele sind ein kleiner Ausschnitt der zahlreichen, intersektionalen Diskriminierungsformen und -erfahrungen.\nW\u00e4hle ein Beispiel, wor\u00fcber du mehr erfahren m\u00f6chtest.",
-        "English": "To illustrate the effects of intersectional discrimination, we look at case studies from Germany, reported for example by the Center for Intersectional Justice Berlin. The following examples are a small sample of the many, intersectional forms and experiences of discrimination.\nChoose an example you would like to learn more about."
+        "German": "Zur Veranschaulichung der Auswirkungen von intersektionaler Diskriminierung schauen wir uns Fallbeispiele aus Deutschland an, von denen beispielsweise das Center for Intersectional Justice Berlin unter anderem berichtet. Die folgenden Beispiele sind ein kleiner Ausschnitt der zahlreichen, intersektionalen Diskriminierungsformen und -erfahrungen.",
+        "English": "To illustrate the effects of intersectional discrimination, we look at case studies from Germany, reported for example by the Center for Intersectional Justice Berlin. The following examples are a small sample of the many, intersectional forms and experiences of discrimination."
     },
     {
         "ID": "chapter3-intro2",
@@ -391,8 +391,8 @@
     },
     {
         "ID": "teaser-alt-tag5",
-        "German": "Der gesamte Screen ist noch immer von dem Netzt aus Strichen ausgef\u00fcllt. Die vorherigen Formen verschwinden und rechts bilden sich zwei neue unterschiedlich gro\u00dfe, organische Formen aus dem Netz heraus. Das Gr\u00f6\u00dfenverh\u00e4ltnis der beiden Formen spiegelt das Verh\u00e4ltnis von 18,8% zu 4,2% wider. Die obere Form visualisiert die 18,8% und ihre waagerechten Striche sind im Vordergrund und haben eine orange Umrandung, alle anderen Strichausrichtungen haben eine graue Umrandung. Die untere Form visualisiert die 4,2% und hier sind auch die waagerechten Striche und zus\u00e4tzlich die zwei Strichausrichtungen 135 und 335 Grad im Vordergrund und haben eine orange Umrandung.",
-        "English": ""
+        "German": "Der gesamte Screen ist noch immer von dem Netz aus Strichen ausgef\u00fcllt. Die vorherigen Formen verschwinden und rechts bilden sich zwei neue, unterschiedlich gro\u00dfe, organische Formen aus dem Netz heraus. Das Gr\u00f6\u00dfenverh\u00e4ltnis der beiden Formen spiegelt das Verh\u00e4ltnis von 18,8% zu 4,2% wider. Die obere Form visualisiert die 18,8% und ihre waagerechten Striche sind im Vordergrund und haben eine orange Umrandung, alle anderen Strichausrichtungen haben innerhalb dieser Form eine graue Umrandung. Die untere Form visualisiert die 4,2% und hier sind auch die waagerechten Striche und zus\u00e4tzlich die zwei Strichausrichtungen 135 und 335 Grad im Vordergrund und haben eine orange Umrandung, alle anderen Strichausrichtungen haben innerhalb dieser Form eine graue Umrandung. ",
+        "English": "The entire screen is still filled with the grid of strokes. The previous shapes disappear and two new organic shapes of different sizes emerge from the grid on the right. The size ratio of the two shapes reflects the ratio of 18.8% to 4.2%. The top shape visualizes the 18.8% and its horizontal strokes are in the foreground and have an orange outline, all other stroke alignments within this shape have a gray outline. The lower shape visualizes the 4.2% and again the horizontal strokes and additionally the two stroke alignments 135 and 335 degrees are in the foreground and have an orange outline, all other stroke alignments within this shape have a gray outline."
     },
     {
         "ID": "chapter3-example1-text2",
@@ -416,8 +416,8 @@
     },
     {
         "ID": "teaser-alt-tag6",
-        "German": "Die untere organische Form vergr\u00f6\u00dfert sich",
-        "English": ""
+        "German": "Die untere Form vergr\u00f6\u00dfert sich (die waagerechten Striche und die zwei Strichausrichtungen 135 und 335 Grad sind innerhalb der Form im Vordergrund und haben eine orange Umrandung, alle anderen Strichausrichtungen haben innerhalb dieser Form eine graue Umrandung).",
+        "English": "The bottom shape enlarges (within the shape the horizontal strokes and the two stroke alignments 135 and 335 degrees are in the foreground and have an orange outline, all other stroke alignments within this shape have a gray outline).\n"
     },
     {
         "ID": "chapter3-example1-quote",
@@ -451,8 +451,8 @@
     },
     {
         "ID": "teaser-alt-tag7",
-        "German": "Die vorherigen Formen verschwinden und rechts unten bildet sich eine neue organische Form aus dem Netz heraus. Innerhalb dieser sind die Strichausrichtungen 90 und 135 Grad im Vordergrund und haben eine orange Umrandung, alle anderen Strichausrichtungen haben eine graue Umrandung. ",
-        "English": ""
+        "German": "Die vorherigen Formen verschwinden und rechts unten bildet sich eine neue organische Form aus dem Netz heraus. Innerhalb dieser sind die Strichausrichtungen 90 und 135 Grad im Vordergrund und haben eine orange Umrandung, alle anderen Strichausrichtungen haben innerhalb dieser Form eine graue Umrandung.",
+        "English": "The previous shapes disappear and a new organic shape emerges from the grid at the bottom right. Within this, the 90 and 135 degree stroke alignments are in the foreground and have an orange outline, all other stroke alignments within this shape have a gray outline."
     },
     {
         "ID": "chapter3-example2-quote",
@@ -491,8 +491,8 @@
     },
     {
         "ID": "teaser-alt-tag8",
-        "German": "Diese Form wird kleiner und visualisiert nun die 2,3%. Die Farbigkeit der Strichumrandungen innerhalb der Formen bleibt die selbe. Rechts oben bildet sich eine zweite, gr\u00f6\u00dfere Form aus dem Netz heraus. Diese visualisiert die 24,4% und hier haben alle Strichausrichtungen eine graue Umrandung. Das Gr\u00f6\u00dfenverh\u00e4ltnis der beiden Formen spiegelt das Verh\u00e4ltnis von 24,4% zu 2,3% wider.",
-        "English": ""
+        "German": "Die vorher beschriebene Form wird kleiner und visualisiert nun die 2,3%. Die Farbigkeit der Strichumrandungen innerhalb der Form bleibt die selbe (Strichausrichtungen 90 und 135 Grad sind im Vordergrund und haben eine orange Umrandung, alle anderen Strichausrichtungen haben innerhalb dieser Form eine graue Umrandung). Rechts oben bildet sich eine zweite, gr\u00f6\u00dfere Form aus dem Netz heraus. Diese visualisiert die 24,4% und hier haben alle Strichausrichtungen eine graue Umrandung. Das Gr\u00f6\u00dfenverh\u00e4ltnis der beiden Formen spiegelt das Verh\u00e4ltnis von 24,4% zu 2,3% wider.",
+        "English": "The previously described shape becomes smaller and is now visualizing the 2.3%. The color of the stroke outlines within the shape remains the same (stroke alignments 90 and 135 degrees are in the foreground and have an orange outline, all other stroke alignments within this shape have a gray outline). At the top right, a second, larger shape emerges from the grid. This visualizes the 24.4% and here all stroke alignments have a gray outline. The size ratio of the two shapes reflects the ratio of 24.4% to 2.3%."
     },
     {
         "ID": "chapter3-example2-text3",
@@ -502,7 +502,7 @@
     {
         "ID": "teaser-alt-tag9",
         "German": "Die untere Form wird nun gr\u00f6\u00dfer und die obere Form kleiner, sodass die untere Form gr\u00f6\u00dfer ist als die obere Form. Die Farbigkeit der Strichumrandungen innerhalb der Formen bleibt die selbe. Die untere Form visualisiert die 10,7% und die obere die 4,9%. Das Gr\u00f6\u00dfenverh\u00e4ltnis der beiden Formen spiegelt das Verh\u00e4ltnis von 10,7% zu 4,9% wider.",
-        "English": ""
+        "English": "The lower shape now becomes larger and the upper shape smaller, so that the lower shape is larger than the upper shape. The color of the stroke outlines within the shapes remains the same. The lower shape visualizes the 10.7% and the upper shape visualizes the 4.9%. The size ratio of the two shapes reflects the ratio of 10.7% to 4.9%."
     },
     {
         "ID": "chapter3-example2-vis5",
@@ -561,8 +561,8 @@
     },
     {
         "ID": "teaser-alt-tag10",
-        "German": "Die vorherigen Formen verschwinden und rechts bilden sich zwei neue unterschiedlich gro\u00dfe, organische Formen aus dem Netz heraus. Das Gr\u00f6\u00dfenverh\u00e4ltnis der beiden Formen spiegelt das Verh\u00e4ltnis von 3 zu 2 wider. Innerhalb der oberen, gr\u00f6\u00dfere Form treten die waagerechten Striche und die Strichausrichtung 45 Grad in den Vordergrund und erhalten eine orange Strichumrandung, alle anderen Strichausrichtungen haben eine graue Umrandung. Innerhalb der unteren, kleineren Form treten nur die waagerechten Striche in den Vordergrund und erhalten eine orange Strichumrandung.",
-        "English": ""
+        "German": "Die vorherigen Formen verschwinden und rechts bilden sich zwei neue unterschiedlich gro\u00dfe, organische Formen aus dem Netz heraus. Das Gr\u00f6\u00dfenverh\u00e4ltnis der beiden Formen spiegelt das Verh\u00e4ltnis von 3 zu 2 wider. Innerhalb der oberen, gr\u00f6\u00dfere Form treten die waagerechten Striche und die Strichausrichtung 45 Grad in den Vordergrund und erhalten eine orange Strichumrandung, alle anderen Strichausrichtungen haben innerhalb dieser Form eine graue Umrandung. Innerhalb der unteren, kleineren Form treten nur die waagerechten Striche in den Vordergrund und erhalten eine orange Strichumrandung, alle anderen Strichausrichtungen haben innerhalb dieser Form eine graue Umrandung.",
+        "English": "The previous shapes disappear and two new organic shapes of different sizes emerge from the grid on the right. The size ratio of the two shapes reflects the ratio of 3 to 2. Within the upper, larger shape, the horizontal strokes and the 45 degree stroke alignment are in the foreground and have an orange outline, all other stroke alignments within this shape have a gray outline. Within the lower, smaller shape, only the horizontal strokes are in the foreground and have an orange outline, all other stroke alignments within this shape have a gray outline."
     },
     {
         "ID": "chapter3-example3-vis1",
@@ -587,7 +587,7 @@
     {
         "ID": "teaser-alt-tag11",
         "German": "Die untere Form wird nun gr\u00f6\u00dfer und die obere Form kleiner, sodass die untere Form gr\u00f6\u00dfer ist als die obere Form. Die Farbigkeit der Strichumrandungen innerhalb der Formen bleibt die selbe. Die untere Form visualisiert die 74% und die obere die 47%. Das Gr\u00f6\u00dfenverh\u00e4ltnis der beiden Formen spiegelt das Verh\u00e4ltnis von 74% zu 47% wider.",
-        "English": ""
+        "English": "The lower shape now becomes larger and the upper shape smaller, so that the lower shape is larger than the upper shape. The color of the stroke outlines within the shapes remains the same. The lower shape visualizes the 74% and the upper shape visualizes the 47%. The size ratio of the two shapes reflects the ratio of 74% to 47%."
     },
     {
         "ID": "chapter3-example3-vis3",
@@ -636,8 +636,8 @@
     },
     {
         "ID": "teaser-alt-tag12",
-        "German": "Die vorherigen Formen verschwinden und nun bilden sich links zwei neue organische Formen aus dem Netz heraus. In diesen beiden Formen stehen jeweils die Worte Zugang, Einbeziehung, Teilhabe und Anerkennung. Innerhalb der oberen Form treten nur die waagerechten Striche vor diese W\u00f6rter und erhalten eine orange Strichumrandung. Innerhalb der unteren Form werden alle Strichausrichtungen orange und alle treten vor die W\u00f6rter.",
-        "English": ""
+        "German": "Die vorherigen Formen verschwinden und nun bilden sich links zwei neue organische Formen aus dem Netz heraus. In diesen beiden Formen stehen jeweils die Worte Zugang, Einbeziehung, Teilhabe und Anerkennung. Innerhalb der oberen Form treten nur die waagerechten Striche vor diese W\u00f6rter und erhalten eine orange Umrandung, alle anderen Strichausrichtungen haben innerhalb dieser Form eine graue Umrandung und sind hinter den W\u00f6rtern positioniert. Innerhalb der unteren Form haben alle Striche eine orange Umrandung und alle treten vor die W\u00f6rter.",
+        "English": "The previous shapes disappear and now, on the left, two new organic shapes emerge from the grid. Within each of these two shapes the words access, inclusion, participation and acknowledgment are displayed. Within the upper shape only the horizontal strokes are placed in front of these words and their outlines turn orange, all other stroke alignments within this shape have a gray outline and are positioned behind the words. Within the lower shape, all strokes have an orange outline and all are placed in front of the words."
     },
     {
         "ID": "chapter4-title",
@@ -651,8 +651,8 @@
     },
     {
         "ID": "teaser-alt-tag13",
-        "German": "Innerhalb der oberen Form treten die waagerechte Striche nun hinter die W\u00f6rter und ihre Umrandungen werden grau. Innerhalb dieser Form liegen also alle Striche jetzt hinter den Worten. Bei der unteren Form ver\u00e4ndert sich nichts, alle Striche haben eine orange Umrandung und liegen vor den W\u00f6rtern.",
-        "English": ""
+        "German": "Innerhalb der oberen Form treten die waagerechte Striche nun hinter die W\u00f6rter und ihre Umrandungen werden grau. Innerhalb dieser Form sind also nun alle Strichumrandungen grau und alle Striche liegen hinter den Worten. Bei der unteren Form ver\u00e4ndert sich nichts, alle Striche haben eine orange Umrandung und liegen vor den W\u00f6rtern.",
+        "English": "Within the upper shape, the horizontal strokes now move behind the words and their outlines become gray. So within this shape, all stroke outlines are now gray and all strokes are positioned behind the words. In the lower shape nothing changes, all strokes have an orange outline and are placed in front of the words."
     },
     {
         "ID": "chapter4-text2",
@@ -662,7 +662,7 @@
     {
         "ID": "teaser-alt-tag14",
         "German": "Das gesamte Hintergrundnetz und die Formen verschwinden, sodass nur noch die Worte Zugang, Einbeziehung, Teilhabe und Anerkennung zu sehen sind. Diese werden beim Weiterscrollen gr\u00f6\u00dfer skaliert, sodass sie den gesamten Screen einnehmen. ",
-        "English": ""
+        "English": "The entire background grid and the shapes disappear, so that only the words access, inclusion, participation, and acknowledgment are visible. When scrolling further, these are scaled larger so that they take up the entire screen. "
     },
     {
         "ID": "chapter4-text3",
@@ -755,19 +755,9 @@
         "English": "Books"
     },
     {
-        "ID": "chapter5-button1",
-        "German": "Mehr",
-        "English": "More"
-    },
-    {
         "ID": "chapter5-heading2",
         "German": "Artikel",
         "English": "Article"
-    },
-    {
-        "ID": "chapter5-button2",
-        "German": "Mehr",
-        "English": "More"
     },
     {
         "ID": "chapter5-heading3",
@@ -775,9 +765,14 @@
         "English": "Websites, Talks, Social Media, Podcasts"
     },
     {
-        "ID": "chapter5-button3",
+        "ID": "chapter5-button1",
         "German": "Mehr",
         "English": "More"
+    },
+    {
+        "ID": "chapter5-button2",
+        "German": "Weniger",
+        "English": "Less"
     },
     {
         "ID": "projectinfo-title",
