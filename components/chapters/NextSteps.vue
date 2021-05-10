@@ -108,11 +108,21 @@ export default {
 
   ul.personal-suggestions {
     padding-left: 1em;
-    font-size: $font-size-small;
     font-weight: 600;
+    font-family: $font-family-signika;
+    line-height: 1.33em;
 
     li {
       margin-bottom: 2em;
+      position: relative;
+
+      &:before {
+        position: absolute;
+        display: block;
+        left: -0.8em;
+        content: "–";
+        font-weight: normal;
+      }
     }
   }
 
