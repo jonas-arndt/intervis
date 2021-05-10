@@ -172,8 +172,8 @@ export default {
   }
 
   @media (min-width: $media-breakpoint-min-m) {
-    left: 60%;
-    width: 35%;
+    left: 55%;
+    width: 40%;
 
     padding-left: 0;
     padding-right: 0;
