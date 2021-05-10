@@ -58,8 +58,6 @@
       background: none;
 
       blockquote {
-        position: relative;
-        left: 5rem;
         text-align: right;
         margin-top: 2em;
         margin-bottom: 2em;
