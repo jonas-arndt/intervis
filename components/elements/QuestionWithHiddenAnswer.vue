@@ -4,7 +4,7 @@
       <slot />
     </p>
     <div class="hidden-content-wrapper">
-      <span class="toggle" @click="showAnswer = !showAnswer">
+      <span class="toggle" :class="[showAnswer ? 'open' : 'close']" @click="showAnswer = !showAnswer">
         <slot name="toggle" />
       </span>
       <transition name="fadeHeight" mode="out-in">
@@ -39,6 +39,7 @@ export default {
   }
 
   .toggle {
+    font-family: $font-family-signika;
     display: inline-block;
     margin-bottom: 0.4rem;
     color: $color-red;
@@ -58,6 +59,24 @@ export default {
 .js .question-with-hidden-answer {
   .toggle {
     cursor: pointer;
+
+    &:before {
+      content: " ";
+      position: relative;
+      display: inline-block;
+      width: 1.2em;
+      height: 1.2em;
+      margin-right: 0.2em;
+      top: 0.25em;
+    }
+
+    &.open:before {
+      background: url('~assets/icons/toggle/toggle-open.svg') left center no-repeat;
+    }
+
+    &.close:before {
+      background: url('~assets/icons/toggle/toggle-close.svg') left center no-repeat;
+    }
   }
 
   .fadeHeight-enter-active,
