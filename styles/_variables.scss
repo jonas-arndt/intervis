@@ -23,3 +23,8 @@ $media-breakpoint-min-s: 576px;
 $media-breakpoint-min-m: 768px;
 $media-breakpoint-min-l: 992px;
 $media-breakpoint-min-xl: 1200px;
+
+// functions
+@function width-from-img-width($img-width) {
+  @return ($img-width * 0.05%);
+}

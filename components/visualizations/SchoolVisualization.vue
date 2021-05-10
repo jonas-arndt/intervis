@@ -1,7 +1,9 @@
 <template>
   <div class="school-visualization">
     <div class="step-1">
-      <img class="shape" src="~/assets/fallback/chapter3_example2_quote.png">
+      <div class="shape">
+        <img src="~/assets/fallback/chapter3_example2_quote.png">
+      </div>
       <div class="quote">
         <p class="text" v-html="$t('chapter3-example2-quote')" />
       </div>
@@ -63,6 +65,12 @@
       width: 100%;
       z-index: -1;
       opacity: 0.5;
+
+      img {
+        position: absolute;
+        width: 80%;
+        bottom: 10%;
+      }
     }
 
     .quote {
@@ -99,6 +107,38 @@
       height: 100vh;
       width: 100%;
     }
+
+    .visualization-1 {
+      position: relative;
+      width: 85%;
+
+      left: 5%;
+      top: 7%;
+      padding-bottom: 1rem;
+
+      img {
+        position: relative;
+        width: width-from-img-width(2527);
+        left: 30%;
+      }
+    }
+
+    .visualization-2 {
+      position: absolute;
+      width: 85%;
+
+      left: 5%;
+      bottom: 7%;
+
+      img {
+        position: relative;
+        width: width-from-img-width(791);
+      }
+
+      .legend {
+        margin-bottom: 1rem;
+      }
+    }
   }
 
   .step-3 {
@@ -113,6 +153,38 @@
       top: 0;
       height: 100vh;
       width: 100%;
+    }
+
+    .visualization-1 {
+      position: relative;
+      width: 85%;
+
+      left: 5%;
+      top: 7%;
+      padding-bottom: 1rem;
+
+      img {
+        position: relative;
+        width: width-from-img-width(1137);
+        left: 30%;
+      }
+    }
+
+    .visualization-2 {
+      position: absolute;
+      width: 85%;
+
+      left: 5%;
+      bottom: 7%;
+
+      img {
+        position: relative;
+        width: width-from-img-width(1699);
+      }
+
+      .legend {
+        margin-bottom: 1rem;
+      }
     }
   }
 
@@ -134,38 +206,6 @@
 
     .details {
       font-size: $font-size-small;
-    }
-  }
-
-  .visualization-1 {
-    position: relative;
-    width: 85%;
-
-    left: 5%;
-    top: 7%;
-    padding-bottom: 1rem;
-
-    img {
-      position: relative;
-      max-width: 40%;
-      left: 30%;
-    }
-  }
-
-  .visualization-2 {
-    position: absolute;
-    width: 85%;
-
-    left: 5%;
-    bottom: 7%;
-
-    img {
-      position: relative;
-      max-width: 80%;
-    }
-
-    .legend {
-      margin-bottom: 1rem;
     }
   }
 

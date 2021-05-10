@@ -57,7 +57,7 @@
 
       img {
         position: relative;
-        width: (1648% / 20);
+        width: width-from-img-width(1648);
       }
     }
 
@@ -70,7 +70,7 @@
 
       img {
         position: relative;
-        width: (685% / 20);
+        width: width-from-img-width(685);
         left: 30%;
       }
 

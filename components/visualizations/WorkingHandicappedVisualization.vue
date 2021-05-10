@@ -55,6 +55,38 @@
       height: 100vh;
       width: 100%;
     }
+
+    .visualization-1 {
+      position: relative;
+      width: 85%;
+
+      left: 5%;
+      top: 7%;
+      padding-bottom: 2rem;
+
+      img {
+        position: relative;
+        width: width-from-img-width(1802);
+        left: 30%;
+      }
+    }
+
+    .visualization-2 {
+      position: absolute;
+      width: 85%;
+
+      left: 5%;
+      bottom: 5%;
+
+      img {
+        position: relative;
+        width: width-from-img-width(907);
+      }
+
+      .legend {
+        margin-bottom: 1rem;
+      }
+    }
   }
 
   .step-2 {
@@ -69,6 +101,38 @@
       top: 0;
       height: 100vh;
       width: 100%;
+    }
+
+    .visualization-1 {
+      position: relative;
+      width: 85%;
+
+      left: 5%;
+      top: 7%;
+      padding-bottom: 2rem;
+
+      img {
+        position: relative;
+        width: width-from-img-width(1355);
+        left: 30%;
+      }
+    }
+
+    .visualization-2 {
+      position: absolute;
+      width: 85%;
+
+      left: 5%;
+      bottom: 5%;
+
+      img {
+        position: relative;
+        width: width-from-img-width(1479);
+      }
+
+      .legend {
+        margin-bottom: 1rem;
+      }
     }
   }
 
@@ -90,38 +154,6 @@
 
     .details {
       font-size: $font-size-small;
-    }
-  }
-
-  .visualization-1 {
-    position: relative;
-    width: 85%;
-
-    left: 5%;
-    top: 7%;
-    padding-bottom: 2rem;
-
-    img {
-      position: relative;
-      max-width: 50%;
-      left: 30%;
-    }
-  }
-
-  .visualization-2 {
-    position: absolute;
-    width: 85%;
-
-    left: 5%;
-    bottom: 5%;
-
-    img {
-      position: relative;
-      max-width: 80%;
-    }
-
-    .legend {
-      margin-bottom: 1rem;
     }
   }
 
