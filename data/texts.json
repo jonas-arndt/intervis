@@ -1,8 +1,8 @@
 [
     {
         "ID": "evaluation-link",
-        "German": "<b>Hier findest Du\neinen 15-min\u00fctigen\nFragebogen zum\nArtikel</b>",
-        "English": "<b>Here you will\nfind a 15-minute\nquestionnaire about\nthe article</b>"
+        "German": "Hier findest Du einen 15-min\u00fctigen\nFragebogen zum Artikel",
+        "English": "Here you will find a 15-minute\nquestionnaire about the article"
     },
     {
         "ID": "",

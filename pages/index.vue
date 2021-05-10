@@ -41,7 +41,7 @@
     </PopupOverlay>
 
     <QuickNavigation v-if="!projectDisclosureIsVisible" class="article-navigation" />
-    <GoogleLink class="google-link" />
+    <GoogleLink v-show="questionnaireLinkIsVisible" class="google-link" />
   </div>
 </template>
 
@@ -51,7 +51,8 @@ import { mapState, mapMutations } from 'vuex'
 export default {
   data () {
     return {
-      jsClass: 'js'
+      jsClass: 'js',
+      questionnaireLinkTimeout: undefined
     }
   },
   computed: {
@@ -60,26 +61,45 @@ export default {
       'discriminationDimensionsAreVisible',
       'projectDisclosureIsVisible',
       'designDecisionsAreVisible',
-      'teaserIsVisible'
+      'teaserIsVisible',
+      'questionnaireLinkIsVisible',
+      'verticalScrollPosition',
+      'nextStepsChapterStartPosition'
     ])
+  },
+  watch: {
+    verticalScrollPosition (scrollPosition) {
+      if (!this.questionnaireLinkIsVisible && scrollPosition > this.nextStepsChapterStartPosition) {
+        this.showQuestionnaireLink()
+      }
+    }
   },
   mounted () {
     this.addJsClass()
     window.addEventListener('resize', this.handleResize)
+
+    this.questionnaireLinkTimeout = setTimeout(this.showQuestionnaireLink, 300000) // 5 min => 5 * 60 * 1000
   },
   destroyed () {
     window.removeEventListener('resize', this.handleResize)
+    clearTimeout(this.questionnaireLinkTimeout)
   },
   methods: {
     ...mapMutations([
       'hideConceptDevelopment',
-      'hideDiscriminationDimensions'
+      'hideDiscriminationDimensions',
+      'setQuestionnaireLinkIsVisible'
     ]),
     addJsClass () {
       this.$refs.page.classList.add(this.jsClass)
     },
     handleResize () {
       this.$nuxt.$emit('windowResized')
+    },
+    showQuestionnaireLink () {
+      if (!this.questionnaireLinkIsVisible) {
+        this.setQuestionnaireLinkIsVisible(true)
+      }
     }
   }
 }
