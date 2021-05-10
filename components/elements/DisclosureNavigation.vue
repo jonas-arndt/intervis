@@ -53,7 +53,7 @@ export default {
     }
 
     &.active {
-      padding-left: -2px;
+      margin-left: -2px;
       border-left: 2px solid $color-red;
       font-weight: 700;
 
