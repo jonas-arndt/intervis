@@ -5,14 +5,14 @@
         <div class="visualization-1">
           <img src="~/assets/fallback/chapter3_example1_sandrabauer.png">
           <div class="legend">
-            <span class="digit">18,80%</span>
+            <span class="digit" v-html="$t('chapter3-exampl1-vis1')" />
             <span class="details" v-html="$t('chapter3-exampl1-vis2')" />
           </div>
         </div>
         <div class="visualization-2">
           <img src="~/assets/fallback/chapter3_example1_meyremoeztuerk.png">
           <div class="legend">
-            <span class="digit">4,20%</span>
+            <span class="digit" v-html="$t('chapter3-exampl1-vis3')" />
             <span class="details" v-html="$t('chapter3-exampl1-vis4')" />
           </div>
         </div>

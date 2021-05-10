@@ -22,14 +22,14 @@
         <div class="visualization-1">
           <img src="~/assets/fallback/chapter3_example3_frauen_mitbehinderung_erwerbstaetigkeit.png">
           <div class="legend">
-            <span class="digit">47%</span>
+            <span class="digit" v-html="$t('chapter3-example3-vis3')" />
             <span class="details" v-html="$t('chapter3-example3-vis4')" />
           </div>
         </div>
         <div class="visualization-2">
           <img src="~/assets/fallback/chapter3_example3_frauen_ohnebehinderung_erwerbstaetigkeit.png">
           <div class="legend">
-            <span class="digit">74%</span>
+            <span class="digit" v-html="$t('chapter3-example3-vis5')" />
             <span class="details" v-html="$t('chapter3-example3-vis6')" />
           </div>
         </div>

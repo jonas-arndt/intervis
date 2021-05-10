@@ -11,14 +11,14 @@
         <div class="visualization-1">
           <img src="~/assets/fallback/chapter3_example2_mehrheitsbevoelkerung_gymnasium.png">
           <div class="legend">
-            <span class="digit">24,40%</span>
+            <span class="digit" v-html="$t('chapter3-example2-vis1')" />
             <span class="details" v-html="$t('chapter3-example2-vis2')" />
           </div>
         </div>
         <div class="visualization-2">
           <img src="~/assets/fallback/chapter3_example2_sinti_zze_rom_nja_gymnasium.png">
           <div class="legend">
-            <span class="digit">2,30%</span>
+            <span class="digit" v-html="$t('chapter3-example2-vis3')" />
             <span class="details" v-html="$t('chapter3-example2-vis4')" />
           </div>
         </div>
@@ -29,14 +29,14 @@
         <div class="visualization-1">
           <img src="~/assets/fallback/chapter3_example2_mehrheitsbevoelkerung_foerderschule.png">
           <div class="legend">
-            <span class="digit">4,90%</span>
+            <span class="digit" v-html="$t('chapter3-example2-vis5')" />
             <span class="details" v-html="$t('chapter3-example2-vis6')" />
           </div>
         </div>
         <div class="visualization-2">
           <img src="~/assets/fallback/chapter3_example2_sinti_zze_rom_nja_foerderschule.png">
           <div class="legend">
-            <span class="digit">10,70%</span>
+            <span class="digit" v-html="$t('chapter3-example2-vis7')" />
             <span class="details" v-html="$t('chapter3-example2-vis8')" />
           </div>
         </div>
