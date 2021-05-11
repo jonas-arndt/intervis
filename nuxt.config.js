@@ -49,6 +49,7 @@ export default {
       '~/components/design-decisions',
       '~/components/disclosure',
       '~/components/elements',
+      '~/components/fallback',
       '~/components/layout',
       '~/components/popups',
       '~/components/visualizations',
