@@ -34,13 +34,13 @@ export default {
 
   width: 16rem;
   height: 3rem;
-
-  background: $color-red;
   border-radius: 0 1.5rem 1.5rem 0;
 
-  background-image: url('~assets/icons/feedback-icon.svg');
+  background: $color-red;
+  background-image: url('~assets/icons/speech_bubble.svg');
   background-repeat: no-repeat;
-  background-position: 1rem center;
+  background-position: -2.5rem 0.75rem;
+  background-size: 50% 50%;
 
   font-weight: 600;
   color: $color-white;
