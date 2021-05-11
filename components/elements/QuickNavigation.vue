@@ -3,7 +3,8 @@
     <ul>
       <li v-for="entry, index of entries" :key="entry.id" :class="{ 'entry': true, 'active': entry.id == activeArticleChapterId }" @click="$nuxt.$emit('scrollToChapter', entry.id)">
         <div class="inside">
-          <span class="index">{{ index + 1 }}</span>
+          <span v-if="entry.id != activeArticleChapterId" class="index">{{ index + 1 }}</span>
+          <span v-else class="index">&bull;</span>
           <span class="title" v-html="$t(entry.labelKey)" />
         </div>
       </li>
@@ -58,7 +59,7 @@ export default {
       padding-right: 0.75em;
     }
 
-    &.active, &:hover {
+    &:hover {
       cursor: pointer;
 
       .title {
