@@ -24,7 +24,7 @@ export default {
 
   border-radius: 1.7em;
   border: 1px solid $color-red;
-  background-color: $color-white;
+  background-color: transparent;
   outline: none;
 
   font-family: $font-family-signika;
