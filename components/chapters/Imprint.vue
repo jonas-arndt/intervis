@@ -5,8 +5,8 @@
 
       <div class="credits">
         <div class="logos">
-          <img class="logo" src="~/assets/logos/logo_fhp.png">
-          <img class="logo" src="~/assets/logos/logo_uclab.png">
+          <img class="logo fhp" src="~/assets/logos/FHP_logo.svg">
+          <img class="logo uclab" src="~/assets/logos/uclab.svg">
         </div>
 
         <div class="team">
@@ -41,6 +41,7 @@
   .credits {
     position: relative;
     width: 100%;
+    margin-top: 3rem;
   }
 
   .logos {
@@ -52,6 +53,15 @@
     .logo {
       display: block;
       width: 100%;
+      margin-bottom: 2.5rem;
+
+      &.uclab {
+        width: 80%;
+      }
+
+      &:last-child {
+        margin-bottom: inherit;
+      }
     }
   }
 
@@ -84,7 +94,7 @@
     .team {
       position: absolute;
       left: 50%;
-      top: 20%;
+      top: 5%;
     }
 
   }
