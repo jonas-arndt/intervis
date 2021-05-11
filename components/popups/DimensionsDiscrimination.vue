@@ -35,8 +35,6 @@
 @import "../../styles/_variables";
 
 .chapter.dimensions-of-discrimination {
-  font-size: $font-size-small;
-
   .block:last-child {
     & > *:last-child {
       margin-bottom: 0;
@@ -44,7 +42,7 @@
   }
 
   .block-title {
-    font-size: $font-size-default;
+    font-size: $font-size-subtitle;
     font-weight: normal;
     margin-bottom: 0.5em;
   }

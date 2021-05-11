@@ -36,8 +36,6 @@
 @import "../../styles/_variables";
 
 .concept-development {
-  font-size: $font-size-small;
-
   .block:last-child {
     & > *:last-child {
       margin-bottom: 0;
@@ -49,15 +47,15 @@
   }
 
   .block-title {
-    font-weight: bold;
+    font-weight: 600;
     font-style: italic;
-    font-size: $font-size-default;
+    font-size: $font-size-title-caption;
 
     margin-bottom: 0.5em;
   }
 
   .title {
-    font-size: $font-size-title-caption;
+    font-size: $font-size-subtitle;
     font-weight: normal;
     margin-top: 2em;
     margin-bottom: 1em;

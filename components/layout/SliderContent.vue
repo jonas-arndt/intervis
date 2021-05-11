@@ -58,8 +58,6 @@ export default {
       position: absolute;
       bottom: 2rem;
       right: 2rem;
-
-      font-size: $font-size-small;
     }
   }
 }

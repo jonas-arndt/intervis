@@ -64,7 +64,6 @@ export default {
 
     &:hover {
       cursor: pointer;
-      font-size: $font-size-small;
 
       .label {
         display: block;

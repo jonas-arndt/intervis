@@ -46,7 +46,7 @@ body,
 
       .step {
         background: none;
-        padding: $font-size-small 1em $font-size-small 1em;
+        padding: 0.8em 1em 0.8em 1em;
       }
 
       &.right {

@@ -61,7 +61,7 @@ export default {
   }
 
   .reference-list {
-    font-size: $font-size-smaller;
+    font-size: $font-size-small;
     line-height: 1.5em;
     overflow-wrap: break-word;
     margin-bottom: 2rem;
