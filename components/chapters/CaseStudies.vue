@@ -1,5 +1,9 @@
 <template>
   <div class="chapter case_studies_from_germany">
+    <SlideInToggleButton>
+      <span v-html="$t('disclosure-hint3')" />
+    </SlideInToggleButton>
+
     <div class="narrative">
       <div class="step">
         <h2 class="chapter-title" v-html="$t('chapter3-title')" />
@@ -10,6 +14,10 @@
     <CaseStudy1 />
     <CaseStudy2 />
     <CaseStudy3 />
+
+    <SliderContent>
+      <DesignDecisions3 />
+    </SliderContent>
   </div>
 </template>
 

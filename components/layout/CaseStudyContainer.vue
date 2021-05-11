@@ -1,9 +1,5 @@
 <template>
   <div class="case-study-container">
-    <SlideInToggleButton>
-      <span v-html="$t('disclosure-hint3')" />
-    </SlideInToggleButton>
-
     <div class="background-visualization">
       <slot name="background-visualization" />
     </div>
@@ -11,10 +7,6 @@
     <div class="narrative">
       <slot name="content" />
     </div>
-
-    <SliderContent>
-      <DesignDecisions3 />
-    </SliderContent>
   </div>
 </template>
 
