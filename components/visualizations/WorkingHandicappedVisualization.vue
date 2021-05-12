@@ -153,6 +153,7 @@
     }
 
     .details {
+      font-family: $font-family-signika;
       font-size: $font-size-small;
     }
   }
