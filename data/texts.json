@@ -1,5 +1,10 @@
 [
     {
+        "ID": "page-title",
+        "German": "Inter\u2026was? Intersektionalit\u00e4t! \u2013 Eine visuelle Einf\u00fchrung",
+        "English": "Inter...what? Intersectionality! \u2013 A visual Introduction"
+    },
+    {
         "ID": "evaluation-link",
         "German": "Hier findest Du einen 15-min\u00fctigen\nFragebogen zum Artikel",
         "English": "Here you will find a 15-minute\nquestionnaire about the article"
@@ -80,14 +85,14 @@
         "English": "Access to resources such as education, the labor market, and housing, social and political participation, social inclusion and acknowledgment. As person A you can read these words without any problems.\n\nWhat happens when you slip into other people and look at these words from their point of views?"
     },
     {
-        "ID": "teaser-alt-tag1",
-        "German": "Der gesamte Screen ist gef\u00fcllt mit unperfekten, \u00bbselbst gezeichneten\u00ab Strichen, die eine fast wei\u00dfe F\u00fcllung haben und eine graue Umrandung. Es gibt viele unterschiedliche Ausrichtungen der Striche (90 Grad, 180 Grad, 45 Grad usw.) und sie sind ineinander verwoben, sodass ein Netz aus Strichen entsteht. Im Vordergrund stehen in gro\u00dfen, orangenen Buchstaben untereinander die Worte Zugang, Einbeziehung, Teilhabe und Anerkennung.",
-        "English": "The entire screen is filled with imperfect, \u00bbself-drawn\u00ab strokes that have an almost white fill and a gray outline. There are many different alignments of strokes (90 degrees, 180 degrees, 45 degrees, etc.). They are interwoven and create a grid of strokes. In the foreground the words access, inclusion, participation and acknowledgment are displayed in large orange letters one below the other."
+        "ID": "alt-tag-teaser-text1",
+        "German": "Der gesamte Screen ist gef\u00fcllt mit unperfekten, \u00bbselbst gezeichneten\u00ab Strichen, die eine fast wei\u00dfe F\u00fcllung haben und eine graue Umrandung. Es gibt viele unterschiedliche Ausrichtungen der Striche (90 Grad, 180 Grad, 45 Grad usw.) und sie sind ineinander verwoben, sodass ein Netz aus Strichen entsteht. Im Vordergrund stehen in gro\u00dfen, orangenen Buchstaben untereinander die W\u00f6rter Zugang, Einbeziehung, Teilhabe und Anerkennung.",
+        "English": "The entire screen is filled with imperfect, \u00bbself-drawn\u00ab strokes that have an almost white fill and a gray outline. There are many different alignments of strokes (90 degrees, 180 degrees, 45 degrees, etc.). They are interwoven and create a grid of strokes. In the foreground the words Access, Inclusion, Participation and Acknowledgment are displayed in large orange letters one below the other."
     },
     {
-        "ID": "teaser-alt-tag2",
-        "German": "Mit dem Scrollen setzten sich nun alle waagerechten Striche vor diese Worte und ihre Umrandung nimmt eine orange Farbigkeit an. Mit weiterem Scrollen kommen immer mehr Strichausrichtungen in den Vordergrund und ihre Umrandungen werden orange, sodass die Worte Zugang, Einbeziehung, Teilhabe und Anerkennung sehr schwer lesbar werden. ",
-        "English": "With scrolling, all horizontal strokes are now placed in front of these words and their outlines turn orange. With further scrolling, more and more stroke alignments come to the foreground and their outlines turn orange, so that the words access, inclusion, participation and acknowledgment become very difficult to read. "
+        "ID": "alt-tag-teaser-text2",
+        "German": "Mit dem Scrollen setzten sich nun alle waagerechten Striche vor diese W\u00f6rter und ihre Umrandung nimmt eine orange Farbigkeit an. Mit weiterem Scrollen treten immer mehr Strichausrichtungen in den Vordergrund und ihre Umrandungen werden orange, sodass die W\u00f6rter Zugang, Einbeziehung, Teilhabe und Anerkennung sehr schwer lesbar werden. ",
+        "English": "With scrolling, all horizontal strokes are now placed in front of these words and their outlines turn orange. With further scrolling, more and more stroke alignments come to the foreground and their outlines turn orange, so that the words Access, Inclusion, Participation and Acknowledgment become very difficult to read. "
     },
     {
         "ID": "teaser-text2",
@@ -121,11 +126,11 @@
     },
     {
         "ID": "chapter1-text1",
-        "German": "Wir sind alle unterschiedliche Individuen, mit ganz unterschiedlichen Interessen, St\u00e4rken, Zielen etc. Dar\u00fcber hinaus pr\u00e4gen uns mehrere sogenannte soziale Kategorien, wie Geschlecht (einschlie\u00dflich Geschlechtsidentit\u00e4t, sexuelle Orientierung), \u203a<a href=\"glossar#rasse\" class=\"tooltip\">Rasse</a>\u2039 (einschlie\u00dflich Ethnizit\u00e4t, Nationalit\u00e4t, Hautfarbe, Migrationsstatus, Sprache, Kultur, Religion), Klasse (einschlie\u00dflich sozio-\u00f6konomische Position und Herkunft), <a href=\"glossar#behinderung\" class=\"tooltip\">Behinderung</a>, Alter etc. Diese sozialen Kategorien sind Dimensionen sozialer Machtverh\u00e4ltnisse: Personen und Gruppen werden im Rahmen vorherrschender Gesellschaftssysteme (Kapitalismus, <a href=\"glossar#todo\" class=\"tooltip\"><i>wei\u00dfe</i> Vorherrschaft</a> und <a href=\"glossar#todo\" class=\"tooltip\">Patriarchat</a>) basierend auf diesen sozialen Kategorien unterschiedlich benachteiligt, also diskriminiert, und bevorteilt, also privilegiert. Das f\u00fchrt zu sozialer Ungleichheit und asymmetrischer Machtverteilung in unserer Gesellschaft.",
+        "German": "Wir sind alle unterschiedliche Individuen, mit ganz unterschiedlichen Interessen, St\u00e4rken, Zielen etc. Dar\u00fcber hinaus pr\u00e4gen uns mehrere sogenannte soziale Kategorien, wie Geschlecht (einschlie\u00dflich Geschlechtsidentit\u00e4t, sexuelle Orientierung), \u203a<a class=\"tooltip\" title=\"lorem ipsum race\">Rasse</a>\u2039 (einschlie\u00dflich Ethnizit\u00e4t, Nationalit\u00e4t, Hautfarbe, Migrationsstatus, Sprache, Kultur, Religion), Klasse (einschlie\u00dflich sozio-\u00f6konomische Position und Herkunft), <a href=\"glossar#behinderung\" class=\"tooltip\">Behinderung</a>, Alter etc. Diese sozialen Kategorien sind Dimensionen sozialer Machtverh\u00e4ltnisse: Personen und Gruppen werden im Rahmen vorherrschender Gesellschaftssysteme (Kapitalismus, <a href=\"glossar#todo\" class=\"tooltip\"><i>wei\u00dfe</i> Vorherrschaft</a> und <a href=\"glossar#todo\" class=\"tooltip\">Patriarchat</a>) basierend auf diesen sozialen Kategorien unterschiedlich benachteiligt, also diskriminiert, und bevorteilt, also privilegiert. Das f\u00fchrt zu sozialer Ungleichheit und asymmetrischer Machtverteilung in unserer Gesellschaft.",
         "English": "We are all different individuals with different interests, strengths, goals, etc. In addition, several so-called social categories shape us, such as gender (including gender identity, sexual orientation), <a href=\"glossary#race\" class=\"tooltip\">race</a> (including ethnicity, nationality, skin color, migration status, language, culture, religion), class (including socio-economic position and background), <a href=\"glossary#disability\" class=\"tooltip\">disability</a>, age, etc. These social categories are dimensions of social power relations: Individuals and groups are differentially disadvantaged, i.e. discriminated against, and advantaged, i.e. privileged, based on these social categories within the framework of prevailing social systems (capitalism, <a href=\"glossary#supremacy\" class=\"tooltip\"><i>white</i> supremacy</a>, and <a href=\"glossary#patriarchy\" class=\"tooltip\">patriarchy</a>). This leads to social inequality and asymmetric distribution of power in our society.\n"
     },
     {
-        "ID": "teaser-alt-tag3",
+        "ID": "alt-tag-chapter1",
         "German": "Im Hintergrund liegt das gleiche Netz aus Strichen wie zu Anfang, die Strichumrandungen haben aber alle eine orange Farbigkeit. Der gesamte Screen ist von diesem Netz ausgef\u00fcllt.",
         "English": "In the background is the same grid of strokes as in the beginning, but the stroke outlines all have an orange color. The entire screen is filled with this grid."
     },
@@ -220,6 +225,11 @@
         "English": "Individuals and groups are <span class=\"red-bordered-text\">discriminated against</span> and <span class=\"grey-bordered-text\">privileged</span> differently based on social categories. They therefore experience unequal conditions when it comes to access to resources, social and political participation, social inclusion and acknowledgment, etc. Privileges lead to conditions that reproduce advantages and positions of power."
     },
     {
+        "ID": "alt-tag-chapter2",
+        "German": "Es erscheint eine \u00bbherausgezoomte\u00ab Version des Netzes mit kleineren Strichen, die hellgraue Umrandungen haben. Der gesamte Screen ist von diesem Netzt ausgef\u00fcllt und es bleibt auch f\u00fcr die n\u00e4chsten Kapitel sichtbar. Rechts gibt es drei verschiedene, organische Formen (organische Verformungen von Kreisen), die untereinander angeordnet sind. Diese Formen bilden sich aus dem Hintergrundnetz heraus, indem sie ebenfalls mit dem Netz gef\u00fcllt sind und durch eine Farbver\u00e4nderung der Strichumrandungen innerhalb der Formen sichbar werden. In jeder der drei Formen stehen die W\u00f6rter Zugang, Einbeziehung, Teilhabe, Anerkennung. Innerhalb der ersten Form sind die Strichumrandungen grau und alle Strichausrichtungen liegen hinter den W\u00f6rtern. Innerhalb der darunter angeordneten Form befinden sich die waagerechten Striche vor den W\u00f6rtern und sie haben eine orange Umrandung, alle anderen Strichausrichtungen haben innerhalb dieser Form eine graue Umrandung und sind hinter den W\u00f6rtern positioniert. Innerhalb der unteren Form treten alle waagerechten und senkrechten Striche und die Striche mit einer 135 Grad Ausrichtung vor die W\u00f6rter und ihre Umrandungen sind orange, alle anderen Strichausrichtungen haben innerhalb dieser Form eine graue Umrandung und sind hinter den W\u00f6rtern positioniert.",
+        "English": "A \u00bbzoomed out\u00ab version of the grid appears with smaller strokes that have light gray outlines. The entire screen is filled by this grid, and it remains visible for the next few chapters. On the right, there are three different, organic shapes (organic deformations of circles) arranged one below the other. These shapes emerge from the background grid by also being filled with the grid and becoming visible by a change in the color of the stroke outlines within the shapes. Within each of the three shapes the words Access, Inclusion, Participation and Acknowledgment are displayed. Within the first shape, the stroke outlines are gray and all stroke alignments are placed behind the words. Within the shape below, the horizontal strokes are positioned in front of the words and have an orange outline, all other stroke alignments within this shape have a gray outline and are placed behind the words. Within the bottom shape, all horizontal strokes, vertical strokes, and strokes with a 135 degree alignment occur in front of the words and their outlines are orange, all other stroke alignments within this shape have a gray outline and are positioned behind the words."
+    },
+    {
         "ID": "chapter2-vis1",
         "German": "Zugang\nEinbeziehung\nTeilhabe\nAnerkennung",
         "English": "Access\nInclusion\nParticipation\nAcknowledgment"
@@ -253,11 +263,6 @@
         "ID": "chapter2-vis2-examples3",
         "German": "z.B. heterosexuelle, cis-geschlechtliche, junge, arme Frau of Color ohne Behinderung",
         "English": "e.g. heterosexual, cisgender, young, poor Woman of Color without disabilities"
-    },
-    {
-        "ID": "teaser-alt-tag4",
-        "German": "Es erscheint eine \u00bbherausgezoomte\u00ab Version des Netzes mit kleineren Strichen, die hellgraue Umrandungen haben. Der gesamte Screen ist von diesem Netzt ausgef\u00fcllt und es bleibt auch f\u00fcr die n\u00e4chsten Kapitel sichtbar. Rechts gibt es drei verschiedene, organische Formen (organische Verformungen von Kreisen), die untereinander angeordnet sind. Diese Formen bilden sich aus dem Hintergrundnetz heraus, indem sie ebenfalls mit dem Netz gef\u00fcllt sind und durch eine Farbver\u00e4nderung der Strichumrandungen innerhalb der Formen sichbar werden. In jeder der drei Formen stehen die Worte Zugang, Einbeziehung, Teilhabe, Anerkennung. Innerhalb der ersten Form sind die Strichumrandungen grau und alle Strichausrichtungen liegen hinter den Worten. Innerhalb der darunter angeordneten Form befinden sich die waagerechten Striche vor den W\u00f6rtern und sie haben eine orange Umrandung, alle anderen Strichausrichtungen haben innerhalb dieser Form eine graue Umrandung und sind hinter den W\u00f6rtern positioniert. Innerhalb der unteren Form treten alle waagerechten und senkrechten Striche und die Striche mit einer 135 Grad Ausrichtung vor die W\u00f6rter und ihre Umrandungen sind orange, alle anderen Strichausrichtungen haben innerhalb dieser Form eine graue Umrandung und sind hinter den W\u00f6rtern positioniert.",
-        "English": "A \u00bbzoomed out\u00ab version of the grid appears with smaller strokes that have light gray outlines. The entire screen is filled by this grid, and it remains visible for the next few chapters. On the right, there are three different, organic shapes (organic deformations of circles) arranged one below the other. These shapes emerge from the background grid by also being filled with the grid and becoming visible by a change in the color of the stroke outlines within the shapes. Within each of the three shapes the words access, inclusion, participation and acknowledgment are displayed. Within the first shape, the stroke outlines are gray and all stroke alignments are placed behind the words. Within the shape below, the horizontal strokes are positioned in front of the words and have an orange outline, all other stroke alignments within this shape have a gray outline and are placed behind the words. Within the bottom shape, all horizontal strokes, vertical strokes, and strokes with a 135 degree alignment occur in front of the words and their outlines are orange, all other stroke alignments within this shape have a gray outline and are positioned behind the words."
     },
     {
         "ID": "chapter2-text2",
@@ -346,7 +351,7 @@
     },
     {
         "ID": "chapter3-intro2",
-        "German": "Frauen* mit \u2028Kopftuch beim\u2028 Zugang zum Arbeitsmarkt",
+        "German": "Frauen* mit \u2028Hidschab beim\u2028 Zugang zum Arbeitsmarkt",
         "English": "Women* with hijab in accessing the labor market"
     },
     {
@@ -370,6 +375,11 @@
         "English": "Women* with hijab (Muslim headscarve) are exposed to intersectional \u2013 sexist, racist and anti-Muslim \u2013 discrimination in various areas in Germany. Not only on an individual level, but structurally and institutionally. For example, they experience direct discrimination in accessing the labor market as illustrated by an <a href=\"https://www.iza.org/publications/dp/10217/discrimination-against-female-migrants-wearing-headscarves\">\u2192 experiment</a> by Doris Weichselbaumer from 2016 (p. 12 ff):\n\n1474 applications were sent to companies in Germany, identical in all points except name and application photo. Three different identities were to be tested in this experiment: A woman* with a \u00bbGerman sounding\u00ab name (Sandra Bauer), a woman* with a \u00bbTurkish sounding\u00ab name (Meyrem \u00d6zt\u00fcrk) and a woman* with a \u00bbTurkish sounding\u00ab name (Meyrem \u00d6zt\u00fcrk) wearing a hijab in the application photo. All three application photos show the same woman*, in one of them she is wearing a hijab.\n"
     },
     {
+        "ID": "alt-tag-chapter3-example1-1",
+        "German": "Der gesamte Screen ist noch immer von dem Netz aus Strichen ausgef\u00fcllt. Die vorherigen Formen verschwinden und rechts bilden sich zwei neue, unterschiedlich gro\u00dfe, organische Formen aus dem Netz heraus. Das Gr\u00f6\u00dfenverh\u00e4ltnis der beiden Formen spiegelt das Verh\u00e4ltnis von 18,8% zu 4,2% wider. Die obere Form visualisiert die 18,8% und ihre waagerechten Striche sind im Vordergrund und haben eine orange Umrandung, alle anderen Strichausrichtungen haben innerhalb dieser Form eine graue Umrandung. Die untere Form visualisiert die 4,2% und hier sind auch die waagerechten Striche und zus\u00e4tzlich die zwei Strichausrichtungen 135 und 335 Grad im Vordergrund und haben eine orange Umrandung, alle anderen Strichausrichtungen haben innerhalb dieser Form eine graue Umrandung. ",
+        "English": "The entire screen is still filled with the grid of strokes. The previous shapes disappear and two new organic shapes of different sizes emerge from the grid on the right. The size ratio of the two shapes reflects the ratio of 18.8% to 4.2%. The top shape visualizes the 18.8% and its horizontal strokes are in the foreground and have an orange outline, all other stroke alignments within this shape have a gray outline. The lower shape visualizes the 4.2% and again the horizontal strokes and additionally the two stroke alignments 135 and 335 degrees are in the foreground and have an orange outline, all other stroke alignments within this shape have a gray outline."
+    },
+    {
         "ID": "chapter3-exampl1-vis1",
         "German": "18,80%",
         "English": "18,80%"
@@ -386,13 +396,8 @@
     },
     {
         "ID": "chapter3-exampl1-vis4",
-        "German": "<b>Meyrem \u00d6zt\u00fcrk mit Kopftuch</b>\nEinladungen zum Vorstellungsgespr\u00e4ch",
+        "German": "<b>Meyrem \u00d6zt\u00fcrk mit Hidschab</b>\nEinladungen zum Vorstellungsgespr\u00e4ch",
         "English": "<b>Meyrem \u00d6zt\u00fcrk with hijab</b>\nInvitations to job interview"
-    },
-    {
-        "ID": "teaser-alt-tag5",
-        "German": "Der gesamte Screen ist noch immer von dem Netz aus Strichen ausgef\u00fcllt. Die vorherigen Formen verschwinden und rechts bilden sich zwei neue, unterschiedlich gro\u00dfe, organische Formen aus dem Netz heraus. Das Gr\u00f6\u00dfenverh\u00e4ltnis der beiden Formen spiegelt das Verh\u00e4ltnis von 18,8% zu 4,2% wider. Die obere Form visualisiert die 18,8% und ihre waagerechten Striche sind im Vordergrund und haben eine orange Umrandung, alle anderen Strichausrichtungen haben innerhalb dieser Form eine graue Umrandung. Die untere Form visualisiert die 4,2% und hier sind auch die waagerechten Striche und zus\u00e4tzlich die zwei Strichausrichtungen 135 und 335 Grad im Vordergrund und haben eine orange Umrandung, alle anderen Strichausrichtungen haben innerhalb dieser Form eine graue Umrandung. ",
-        "English": "The entire screen is still filled with the grid of strokes. The previous shapes disappear and two new organic shapes of different sizes emerge from the grid on the right. The size ratio of the two shapes reflects the ratio of 18.8% to 4.2%. The top shape visualizes the 18.8% and its horizontal strokes are in the foreground and have an orange outline, all other stroke alignments within this shape have a gray outline. The lower shape visualizes the 4.2% and again the horizontal strokes and additionally the two stroke alignments 135 and 335 degrees are in the foreground and have an orange outline, all other stroke alignments within this shape have a gray outline."
     },
     {
         "ID": "chapter3-example1-text2",
@@ -415,7 +420,7 @@
         "English": "An example of indirect intersectional discrimination against women* with hijab in the German labor market is the so-called \u00bbNeutrality Act\u00ab in Berlin, which primarily can result in a headscarf ban for Muslim judges, teachers, educators, etc. Such legally legitimized, religious dress restrictions are not directly directed against a specific religious community, but it is reasonable to conclude that the hijab is the implicit target. They are justified with the argumentation of maintaining the \u00bbneutrality\u00ab of state institutions.\n"
     },
     {
-        "ID": "teaser-alt-tag6",
+        "ID": "alt-tag-chapter3-example1-2",
         "German": "Die untere Form vergr\u00f6\u00dfert sich (die waagerechten Striche und die zwei Strichausrichtungen 135 und 335 Grad sind innerhalb der Form im Vordergrund und haben eine orange Umrandung, alle anderen Strichausrichtungen haben innerhalb dieser Form eine graue Umrandung).",
         "English": "The bottom shape enlarges (within the shape the horizontal strokes and the two stroke alignments 135 and 335 degrees are in the foreground and have an orange outline, all other stroke alignments within this shape have a gray outline).\n"
     },
@@ -450,7 +455,7 @@
         "English": "Sinti*zze and Rom*nja have lived in German-speaking countries since the 15th century and are the largest ethnic minority in Europe. They are exposed to prejudices, discrimination and marginalization, which have their roots in historical events. They were systematically persecuted and murdered in Germany during the Holocaust/Porajmos. Sinti*zze and Rom*nja are still exposed to racist and classist discrimination today \u2013 on an individual, structural and institutional level. This is also the case in the German school system. The case of Nenad Mihailovic, shown in the \u2192 documentary \u00bbF\u00fcr dumm erkl\u00e4rt - Nenads zweite Chance\u00ab from 2018, illustrates this:\n"
     },
     {
-        "ID": "teaser-alt-tag7",
+        "ID": "alt-tag-chapter3-example2-1",
         "German": "Die vorherigen Formen verschwinden und rechts unten bildet sich eine neue organische Form aus dem Netz heraus. Innerhalb dieser sind die Strichausrichtungen 90 und 135 Grad im Vordergrund und haben eine orange Umrandung, alle anderen Strichausrichtungen haben innerhalb dieser Form eine graue Umrandung.",
         "English": "The previous shapes disappear and a new organic shape emerges from the grid at the bottom right. Within this, the 90 and 135 degree stroke alignments are in the foreground and have an orange outline, all other stroke alignments within this shape have a gray outline."
     },
@@ -463,6 +468,11 @@
         "ID": "chapter3-example2-text2",
         "German": "2017 verklagte der 20-J\u00e4hrige erfolgreich das Land Nordrhein-Westfalen, da er f\u00e4lschlicherweise, als er 7 Jahre alt war, bei einem Einstufungstest als geistig behindert eingestuft wurde und daraufhin eine F\u00f6rderschule besuchen musste. Zum Zeitpunkt des Testes konnte er nur Romanes sprechen, die Sprache der Rom*nja, was mit einer geringen Intelligenz gleichgesetzt wurde. Solche vermeintlich \u00bbneutralen\u00ab Methoden im Bildungssystem, welche z.B. mangelnde Sprachkenntnisse nicht ad\u00e4quat ber\u00fccksichtigen, haben zur Folge, dass beispielsweise bei Sinti*zze und Rom*nja Kindern unverh\u00e4ltnism\u00e4\u00dfig h\u00e4ufig \u2013 f\u00e4lschlicherweise \u2013 besondere Bed\u00fcrfnisse und Lernbehinderungen diagnostiziert werden und sie damit aufgrund ihrer Ethnizit\u00e4t und Klassenzugeh\u00f6rigkeit benachteiligt werden.\n(Zitat von Nenand Mihailovic aus der <a href=\"https://www.youtube.com/watch?v=miMenY9TdaI\">\u2192 Dokumentation</a> \u00bbF\u00fcr dumm erkl\u00e4rt - Nenads zweite Chance\u00ab von 2018, Minute 0\u201336)\n\nEine <a href=\"https://mediendienst-integration.de/fileadmin/Dateien/2011_Strauss_Studie_Sinti_Bildung.pdf\">\u2192 Studie</a> zur Bildungssituation deutscher Sinti*zze und Rom*nja von 2011 (S. 101f), herausgegeben von Daniel Strau\u00df, macht diese strukturelle Diskriminierung von Sinti*zze und Rom*nja im Bildungssystem deutlich:",
         "English": "In 2017, the 20-year-old successfully sued North Rhine-Westphalia (state of Germany) because he was wrongly classified as intellectually disabled in a placement test when he was 7 years old and as a result had to attend a special education school designed for children with disabilities. At the time of the test, he could only speak Romanes, the language of the Rom*nja, which was equated with low intelligence. Such supposedly \u00bbneutral\u00ab methods in the educational system, which do not adequately take into account e.g. a lack of language skills, lead to a disproportionately number of e.g. Sinti*zze and Rom*nja children being wrongly diagnosed with special needs and learning disabilities and thus being disadvantaged due to their ethnicity and class.\n(Quote by Nenad Mihailovic from the <a href=\"https://www.youtube.com/watch?v=miMenY9TdaI\">\u2192 documentary</a> \u00bbF\u00fcr dumm erkl\u00e4rt - Nenads zweite Chance\u00ab from 2018, minute 0\u201336, translated)\n\nA <a href=\"https://mediendienst-integration.de/fileadmin/Dateien/2011_Strauss_Studie_Sinti_Bildung.pdf\">\u2192 study</a> on the educational situation of German Sinti*zze and Rom*nja from 2011 (p. 101 f), edited by Daniel Strau\u00df, highlights this structural discrimination of Sinti*zze and Rom*nja in the education system:"
+    },
+    {
+        "ID": "alt-tag-chapter3-example2-2",
+        "German": "Die vorher beschriebene Form wird kleiner und visualisiert nun die 2,3%. Die Farbigkeit der Strichumrandungen innerhalb der Form bleibt die selbe (Strichausrichtungen 90 und 135 Grad sind im Vordergrund und haben eine orange Umrandung, alle anderen Strichausrichtungen haben innerhalb dieser Form eine graue Umrandung). Rechts oben bildet sich eine zweite, gr\u00f6\u00dfere Form aus dem Netz heraus. Diese visualisiert die 24,4% und hier haben alle Strichausrichtungen eine graue Umrandung. Das Gr\u00f6\u00dfenverh\u00e4ltnis der beiden Formen spiegelt das Verh\u00e4ltnis von 24,4% zu 2,3% wider.",
+        "English": "The previously described shape becomes smaller and is now visualizing the 2.3%. The color of the stroke outlines within the shape remains the same (stroke alignments 90 and 135 degrees are in the foreground and have an orange outline, all other stroke alignments within this shape have a gray outline). At the top right, a second, larger shape emerges from the grid. This visualizes the 24.4% and here all stroke alignments have a gray outline. The size ratio of the two shapes reflects the ratio of 24.4% to 2.3%."
     },
     {
         "ID": "disclosure-hint3",
@@ -490,17 +500,12 @@
         "English": "<b>Sinti*zze and Rom*nja</b> \n\u00bbGymnasium\u00ab attendance"
     },
     {
-        "ID": "teaser-alt-tag8",
-        "German": "Die vorher beschriebene Form wird kleiner und visualisiert nun die 2,3%. Die Farbigkeit der Strichumrandungen innerhalb der Form bleibt die selbe (Strichausrichtungen 90 und 135 Grad sind im Vordergrund und haben eine orange Umrandung, alle anderen Strichausrichtungen haben innerhalb dieser Form eine graue Umrandung). Rechts oben bildet sich eine zweite, gr\u00f6\u00dfere Form aus dem Netz heraus. Diese visualisiert die 24,4% und hier haben alle Strichausrichtungen eine graue Umrandung. Das Gr\u00f6\u00dfenverh\u00e4ltnis der beiden Formen spiegelt das Verh\u00e4ltnis von 24,4% zu 2,3% wider.",
-        "English": "The previously described shape becomes smaller and is now visualizing the 2.3%. The color of the stroke outlines within the shape remains the same (stroke alignments 90 and 135 degrees are in the foreground and have an orange outline, all other stroke alignments within this shape have a gray outline). At the top right, a second, larger shape emerges from the grid. This visualizes the 24.4% and here all stroke alignments have a gray outline. The size ratio of the two shapes reflects the ratio of 24.4% to 2.3%."
-    },
-    {
         "ID": "chapter3-example2-text3",
         "German": "Sinti*zze und Rom*nja sind \u00fcberproportional an F\u00f6rderschulen und unterproportional an Gymnasien vertreten. Nur 6 von 261 Befragten besuchten ein Gymnasium, das entspricht 2,3%. In der Mehrheitsbev\u00f6lkerung verf\u00fcgen insgesamt 24,4% \u00fcber eine Hochschulreife, in der Altersgruppe der 20- bis 25-J\u00e4hrigen sogar \u00fcber 40%. Nur 11,5% der Befragten besuchten die Realschule (12,3% der befragten 14- bis 25-J\u00e4hrigen). Im Vergleich: In der Mehrheitsbev\u00f6lkerung haben \u00fcber 30% in der Altersgruppe der 14- bis 25-J\u00e4hrigen einen mittleren Bildungsabschluss.",
         "English": "Sinti*zze and Rom*nja are disproportionately represented in special education schools designed for children with disabilities and underrepresented at \u00bbGymnasien\u00ab (academic secondary schools). Only 6 out of 261 respondents attended a Gymnasium, which corresponds to 2.3%. In the majority population, a total of 24.4% have a university entrance qualification, and in the 20 to 25 year old age group even more than 40%. Only 11.5% of respondents attended \u00bbRealschule\u00ab (secondary school) (12.3% of the 14 to 25 year olds surveyed). By comparison, in the majority population, over 30% of the 14 to 25 year old age group have a secondary school education."
     },
     {
-        "ID": "teaser-alt-tag9",
+        "ID": "alt-tag-chapter3-example2-3",
         "German": "Die untere Form wird nun gr\u00f6\u00dfer und die obere Form kleiner, sodass die untere Form gr\u00f6\u00dfer ist als die obere Form. Die Farbigkeit der Strichumrandungen innerhalb der Formen bleibt die selbe. Die untere Form visualisiert die 10,7% und die obere die 4,9%. Das Gr\u00f6\u00dfenverh\u00e4ltnis der beiden Formen spiegelt das Verh\u00e4ltnis von 10,7% zu 4,9% wider.",
         "English": "The lower shape now becomes larger and the upper shape smaller, so that the lower shape is larger than the upper shape. The color of the stroke outlines within the shapes remains the same. The lower shape visualizes the 10.7% and the upper shape visualizes the 4.9%. The size ratio of the two shapes reflects the ratio of 10.7% to 4.9%."
     },
@@ -546,7 +551,7 @@
     },
     {
         "ID": "chapter3-example2-button2",
-        "German": "Hier geht\u2019s zum Fallbeispiel Frauen* mit \u2028Kopftuch",
+        "German": "Hier geht\u2019s zum Fallbeispiel Frauen* mit \u2028Hidschab",
         "English": "Go to case study Women* with hijab"
     },
     {
@@ -560,8 +565,8 @@
         "English": "Women* with disabilities experience discrimination on the basis of their gender and disability in various areas in Germany \u2013 on individual, structural and institutional level. Particularly in health care and employment.\n\nA <a href=\"https://www.bmfsfj.de/bmfsfj/service/publikationen/lebenssituation-und-belastungen-von-frauen-mit-beeintraechtigungen-und-behinderungen-in-deutschland-80576\">\u2192 study</a> from 2012, published by the Federal Ministry for Family Affairs, Senior Citizens, Women and Youth (p. 21 & 24), shows the particular vulnerability and endangerment of women* with disabilities:"
     },
     {
-        "ID": "teaser-alt-tag10",
-        "German": "Die vorherigen Formen verschwinden und rechts bilden sich zwei neue unterschiedlich gro\u00dfe, organische Formen aus dem Netz heraus. Das Gr\u00f6\u00dfenverh\u00e4ltnis der beiden Formen spiegelt das Verh\u00e4ltnis von 3 zu 2 wider. Innerhalb der oberen, gr\u00f6\u00dfere Form treten die waagerechten Striche und die Strichausrichtung 45 Grad in den Vordergrund und erhalten eine orange Strichumrandung, alle anderen Strichausrichtungen haben innerhalb dieser Form eine graue Umrandung. Innerhalb der unteren, kleineren Form treten nur die waagerechten Striche in den Vordergrund und erhalten eine orange Strichumrandung, alle anderen Strichausrichtungen haben innerhalb dieser Form eine graue Umrandung.",
+        "ID": "alt-tag-chapter3-example3-1",
+        "German": "Die vorherigen Formen verschwinden und rechts bilden sich zwei neue unterschiedlich gro\u00dfe, organische Formen aus dem Netz heraus. Das Gr\u00f6\u00dfenverh\u00e4ltnis der beiden Formen spiegelt das Verh\u00e4ltnis von 3 zu 2 wider. Innerhalb der oberen, gr\u00f6\u00dferen Form treten die waagerechten Striche und die Strichausrichtung 45 Grad in den Vordergrund und erhalten eine orange Strichumrandung, alle anderen Strichausrichtungen haben innerhalb dieser Form eine graue Umrandung. Innerhalb der unteren, kleineren Form treten nur die waagerechten Striche in den Vordergrund und erhalten eine orange Strichumrandung, alle anderen Strichausrichtungen haben innerhalb dieser Form eine graue Umrandung.",
         "English": "The previous shapes disappear and two new organic shapes of different sizes emerge from the grid on the right. The size ratio of the two shapes reflects the ratio of 3 to 2. Within the upper, larger shape, the horizontal strokes and the 45 degree stroke alignment are in the foreground and have an orange outline, all other stroke alignments within this shape have a gray outline. Within the lower, smaller shape, only the horizontal strokes are in the foreground and have an orange outline, all other stroke alignments within this shape have a gray outline."
     },
     {
@@ -585,7 +590,7 @@
         "English": "Especially women* with disabilities are often socialized as if they were permanently dependent and in need of care, which limits their agency and self-determination. Patriarchal structures, which assume that men provide the family income, combined with prejudices about the skills and competences of people with disabilities, also make it difficult for women* with disabilities to access the labor market and become independent. In addition, the lack of accessibility in the work context makes it difficult for all people with disabilities to access the labour market. All of this is reflected in the employment rate:"
     },
     {
-        "ID": "teaser-alt-tag11",
+        "ID": "alt-tag-chapter3-example3-2",
         "German": "Die untere Form wird nun gr\u00f6\u00dfer und die obere Form kleiner, sodass die untere Form gr\u00f6\u00dfer ist als die obere Form. Die Farbigkeit der Strichumrandungen innerhalb der Formen bleibt die selbe. Die untere Form visualisiert die 74% und die obere die 47%. Das Gr\u00f6\u00dfenverh\u00e4ltnis der beiden Formen spiegelt das Verh\u00e4ltnis von 74% zu 47% wider.",
         "English": "The lower shape now becomes larger and the upper shape smaller, so that the lower shape is larger than the upper shape. The color of the stroke outlines within the shapes remains the same. The lower shape visualizes the 74% and the upper shape visualizes the 47%. The size ratio of the two shapes reflects the ratio of 74% to 47%."
     },
@@ -635,11 +640,6 @@
         "English": "Access\nInclusion\nParticipation\nAcknowledgment"
     },
     {
-        "ID": "teaser-alt-tag12",
-        "German": "Die vorherigen Formen verschwinden und nun bilden sich links zwei neue organische Formen aus dem Netz heraus. In diesen beiden Formen stehen jeweils die Worte Zugang, Einbeziehung, Teilhabe und Anerkennung. Innerhalb der oberen Form treten nur die waagerechten Striche vor diese W\u00f6rter und erhalten eine orange Umrandung, alle anderen Strichausrichtungen haben innerhalb dieser Form eine graue Umrandung und sind hinter den W\u00f6rtern positioniert. Innerhalb der unteren Form haben alle Striche eine orange Umrandung und alle treten vor die W\u00f6rter.",
-        "English": "The previous shapes disappear and now, on the left, two new organic shapes emerge from the grid. Within each of these two shapes the words access, inclusion, participation and acknowledgment are displayed. Within the upper shape only the horizontal strokes are placed in front of these words and their outlines turn orange, all other stroke alignments within this shape have a gray outline and are positioned behind the words. Within the lower shape, all strokes have an orange outline and all are placed in front of the words."
-    },
-    {
         "ID": "chapter4-title",
         "German": "Intersektionale Ma\u00dfnahmen",
         "English": "Intersectional Measures"
@@ -650,9 +650,9 @@
         "English": "The examples discussed above show: Special measures are needed to compensate for discrimination and privilege and thus create equal conditions. These must be intersectional and include not only the individual dimension, but above all the structural and institutional dimension of discrimination.\nAnti-discrimination measures that, for example, exclusively address sexist discrimination and are thus one-dimensional and not intersectional, tend to target women who are <i>white</i>, heterosexual, cisgender, young, middle-class, without disabilities, etc. \u2013 the most privileged of the marginalized group. Their lived experiences and interests are foregrounded, but may be seriously different from those of other women*."
     },
     {
-        "ID": "teaser-alt-tag13",
-        "German": "Innerhalb der oberen Form treten die waagerechte Striche nun hinter die W\u00f6rter und ihre Umrandungen werden grau. Innerhalb dieser Form sind also nun alle Strichumrandungen grau und alle Striche liegen hinter den Worten. Bei der unteren Form ver\u00e4ndert sich nichts, alle Striche haben eine orange Umrandung und liegen vor den W\u00f6rtern.",
-        "English": "Within the upper shape, the horizontal strokes now move behind the words and their outlines become gray. So within this shape, all stroke outlines are now gray and all strokes are positioned behind the words. In the lower shape nothing changes, all strokes have an orange outline and are placed in front of the words."
+        "ID": "alt-tag-chapter4-text1",
+        "German": "Die vorherigen Formen verschwinden und nun bilden sich links zwei neue organische Formen aus dem Netz heraus. In diesen beiden Formen stehen jeweils die W\u00f6rter Zugang, Einbeziehung, Teilhabe und Anerkennung. Innerhalb der oberen Form treten nur die waagerechten Striche vor diese W\u00f6rter und erhalten eine orange Umrandung, alle anderen Strichausrichtungen haben innerhalb dieser Form eine graue Umrandung und sind hinter den W\u00f6rtern positioniert. Innerhalb der unteren Form haben alle Striche eine orange Umrandung und alle treten vor die W\u00f6rter.",
+        "English": "The previous shapes disappear and now, on the left, two new organic shapes emerge from the grid. Within each of these two shapes the words Access, Inclusion, Participation and Acknowledgment are displayed. Within the upper shape only the horizontal strokes are placed in front of these words and their outlines turn orange, all other stroke alignments within this shape have a gray outline and are positioned behind the words. Within the lower shape, all strokes have an orange outline and all are placed in front of the words."
     },
     {
         "ID": "chapter4-text2",
@@ -660,14 +660,19 @@
         "English": "Women* who experience intersectional marginalization and discrimination (e.g. Women* of Color, trans women*, Muslim women*, poor women*, women* with disabilities) are thus not included. For example, the intersectional discrimination of a woman* with hijab cannot be uncovered if only approached from the axis of gender or only from the axis of religion/race/ethnicity, because in the same situation, a woman* without hijab and a Muslim man do not face the same type/form of discrimination. Consequently, such one-dimensional measures cannot overcome intersectional discrimination and marginalization. Individuals and groups may even be further marginalized as a result."
     },
     {
-        "ID": "teaser-alt-tag14",
-        "German": "Das gesamte Hintergrundnetz und die Formen verschwinden, sodass nur noch die Worte Zugang, Einbeziehung, Teilhabe und Anerkennung zu sehen sind. Diese werden beim Weiterscrollen gr\u00f6\u00dfer skaliert, sodass sie den gesamten Screen einnehmen. ",
-        "English": "The entire background grid and the shapes disappear, so that only the words access, inclusion, participation, and acknowledgment are visible. When scrolling further, these are scaled larger so that they take up the entire screen. "
+        "ID": "alt-tag-chapter4-text2",
+        "German": "Innerhalb der oberen Form treten die waagerechte Striche nun hinter die W\u00f6rter und ihre Umrandungen werden grau. Innerhalb dieser Form sind also nun alle Strichumrandungen grau und alle Striche liegen hinter den W\u00f6rtern. Bei der unteren Form ver\u00e4ndert sich nichts, alle Striche haben eine orange Umrandung und liegen vor den W\u00f6rtern.",
+        "English": "Within the upper shape, the horizontal strokes now move behind the words and their outlines become gray. So within this shape, all stroke outlines are now gray and all strokes are positioned behind the words. In the lower shape nothing changes, all strokes have an orange outline and are placed in front of the words."
     },
     {
         "ID": "chapter4-text3",
         "German": "Erst wenn die Rechte, Interessen und Bed\u00fcrfnisse der strukturell am st\u00e4rksten marginalisierten Personen und Gruppen ber\u00fccksichtigt bzw. umgesetzt werden, werden alle Menschen von sozialer Ungleichheit und asymmetrischen Machtverh\u00e4ltnissen befreit. Ungleiche Ausgangsbedingungen beim Zugang zu Ressourcen, bei sozialer und politischer Teilhabe, bei gesellschaftlicher Einbeziehung und Anerkennung etc. k\u00f6nnen \u00fcberwunden werden.",
         "English": "Only when the rights, interests, and needs of the structurally most marginalized individuals and groups are taken into account and implemented will all people be liberated from social inequality and asymmetrical power relations. Unequal conditions in access to resources, in social and political participation, in social inclusion and acknowledgment, etc. can be overcome."
+    },
+    {
+        "ID": "alt-tag-chapter4-text3",
+        "German": "Das gesamte Hintergrundnetz und die Formen verschwinden, sodass nur noch die W\u00f6rter Zugang, Einbeziehung, Teilhabe und Anerkennung zu sehen sind. Diese werden beim Weiterscrollen gr\u00f6\u00dfer skaliert, sodass sie den gesamten Screen einnehmen. ",
+        "English": "The entire background grid and the shapes disappear, so that only the words Access, Inclusion, Participation, and Acknowledgment are visible. When scrolling further, these are scaled larger so that they take up the entire screen. "
     },
     {
         "ID": "chapter5-bar",

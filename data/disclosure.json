@@ -65,6 +65,11 @@
         "English": "alternative1.png"
     },
     {
+        "ID": "alt-tag-alternative1",
+        "German": "Das Bild zeigt vier organische Formen, die jeweils aus mehreren, verschiedenfarbigen organischen Fl\u00e4chen bestehen, die eine unterschiedliche Deckkraft besitzen. Im Zentrum der Formen \u00fcberlappen sich all diese Fl\u00e4chen und verdecken so in zwei der vier Formen die dort platzierten W\u00f6rter. Bei den anderen beiden Formen ist die Deckkraft der Fl\u00e4chen geringer, sodass die W\u00f6rter nicht verdeckt werden.",
+        "English": "The image shows four organic shapes, each of which consists of several organic surfaces of different colors and different opacity. In the center of the shapes, all of these surfaces overlap, obscuring the words placed there in two of the four shapes. With the other two shapes, the opacity of the surfaces is lower, so the words are not obscured."
+    },
+    {
         "ID": "slidein1-text3",
         "German": "Designprozesse sind unter anderem davon gepr\u00e4gt, dass bestimmte entwickelte Ideen und Konzepte ganz oder teilweise verworfen werden. Ein Beispiel f\u00fcr einen verworfenen Ansatz in diesem Projekt ist die Idee, Intersektionalit\u00e4t mit Visualisierungsparametern der Deckkraft und \u00dcberlagerung zu visualisieren. Verschiedenfarbige Fl\u00e4chen, die sich \u00fcberlagern, repr\u00e4sentieren dabei verschiedene soziale Kategorien. Die Deckkraft markiert, ob eine Person oder Gruppe basierend auf der jeweiligen sozialen Kategorie diskriminiert (sehr hohe Deckkraft) oder privilegiert (sehr niedrige Deckkraft) ist, und ob somit das Lesen der darunter liegenden Begriffe erschwert wird oder nicht. Diese Art der Repr\u00e4sentation wurde verworfen, da das Aufeinanderlegen von farbigen Fl\u00e4chen m\u00f6glicherweise zu sehr eine additive Verbindung der sozialen Kategorien suggeriert und sie visuell noch zu stark f\u00fcr sich alleine stehen und wirken. Die Idee durch visuelle Mittel das Lesen von Begriffen zu erschweren, wurde jedoch in weiteren Visualisierungsans\u00e4tzen angewandt.",
         "English": "Design processes are characterized, among other things, by discarded ideas and concepts. An example of a discarded approach in this project is the idea of visualizing intersectionality with parameters of opacity and overlay. Differently colored surfaces that overlap represent different social categories. Opacity marks whether a person or group is discriminated against (very high opacity) or privileged (very low opacity) based on their social category, and thus whether or not reading the underlying terms is made more difficult. This kind of representation was discarded because the layering of colored surfaces might suggest an additive connection of social categories and they are visually too separated from each other.  \nHowever, the idea of making terms more difficult to read by visual means has been applied in further visualization approaches."
@@ -135,6 +140,11 @@
         "English": "alternative2.png"
     },
     {
+        "ID": "alt-tag-alternative2",
+        "German": "Das Bild zeigt zwei verschiedene Ausschnitte. Im rechten Ausschnitt ist eine organische Form zu sehen, die sich aus einem Hintergrundnetz aus Strichen mit hellgrauen Umrandungen herausbildet. Innerhalb der Form stehen die W\u00f6rter Zugang, Einbeziehung, Teilhabe, Anerkennung. Innerhalb der Form befinden sich die waagerechten Striche vor den W\u00f6rtern und haben eine orange Umrandung, alle anderen Strichausrichtungen haben innerhalb dieser Form eine graue Umrandung und sind hinter den W\u00f6rtern positioniert.\nIm linken Ausschnitt ist die gleiche Form zu sehen, aber hier liegt im Hintergrund kein Netz aus Strichen, sondern der Hintergrund ist orange gef\u00fcllt. Die Form formt sich aus ausschlie\u00dflich waagerechten Strichen, die eine schwarze Umrandung und, wie der Hintergrund, eine orange F\u00fcllung haben.",
+        "English": "The image shows two different sections. The right section shows an organic shape emerging from a background grid of strokes with light gray outlines. Within the shape the words Access, Inclusion, Participation, Acknowledgment are displayed. Within the shape, the horizontal strokes are in front of the words and have an orange outline, all other stroke alignments have a gray outline within this shape and are positioned behind the words.\nIn the left section you can see the same shape, but here there is no grid of strokes in the background, instead the background is filled with an orange color. The shape is formed exclusively of horizontal strokes that have a black outline and, as the background, an orange fill."
+    },
+    {
         "ID": "slidein2-text4",
         "German": "Ein*e im Projektprozess befragte*r Expert*in zu Intersektionalit\u00e4t wies darauf hin, dass soziale Kategorien aus intersektionaler Perspektive nie isoliert voneinander zu betrachten sind. Das Netz der sozialen Kategorien \u2013 unabh\u00e4ngig davon, ob eine Person basierend auf diesen sozialen Kategorien diskriminiert oder privilegiert wird \u2013 ist immer und f\u00fcr jede Person rekonstruierbar und jede Person ist durch mehrere Identit\u00e4ten intersektional gepr\u00e4gt. Personen oder Gruppen, die \u00bbnur\u00ab sexistische Diskriminierung erfahren und in anderen sozialen Kategorien privilegiert sind, mit ausschlie\u00dflich horizontalen Strichen zu visualisieren (was Diskriminierung basierend auf der sozialen Kategorie \u00bbGeschlecht\u00ab angzeigt) ist daher nicht ganz treffend und kann zu einem falschen Verst\u00e4ndnis von Intersektionalit\u00e4t f\u00fchren. Diese sehr hilfreiche Kritik f\u00fchrte zu einer Verfeinerung der visuellen Repr\u00e4sentation: Das Netz der sozialen Kategorien ist immer sichtbar. Diskriminierung wird durch orangefarbene und in den Vordergrund tretende Striche visualisiert. Privilegierung wird durch grau-violette Striche visualisiert, die im Hintergrund verweilen.",
         "English": "An expert on intersectionality interviewed during the project process pointed out that from an intersectional perspective, socio-political categories do never exist independently and separately of one another. The grid of social categories \u2013 regardless of whether a person is discriminated against or privileged based on these social categories \u2013 can always be reconstructed for each person, and each person is intersectionally shaped by multiple identities. Thus, visualizing individuals or groups who experience \u00bbonly\u00ab sexist discrimination and are privileged in other social categories with exclusively horizontal strokes (indicating discrimination based on the social category of gender) is not accurate and may lead to a misunderstanding of intersectionality. This very helpful critique led to a refinement of the visual representation: the grid of social categories is always visible. Discrimination is visualized by orange, foregrounded strokes. Privilege is visualized by gray-violet, backgrounded strokes."
@@ -146,8 +156,8 @@
     },
     {
         "ID": "slidein3-heading1",
-        "German": "\u00dcber die Daten",
-        "English": "About the data"
+        "German": "Die hier verwendeten Daten sind Teil von umfangreichen Umfragen, Studien und Berichten zu Diskriminierung in Deutschland",
+        "English": "The data used is part of extensive surveys, studies, and reports on discrimination in Germany"
     },
     {
         "ID": "slidein3-button1",
@@ -176,8 +186,8 @@
     },
     {
         "ID": "slidein3-heading3",
-        "German": "Die verwendeten Daten werden kontextualisiert",
-        "English": "The data used is contextualized"
+        "German": "Die verwendeten Daten werden durch den begleitenden Text kontextualisiert, indem er die Tendezen, die die Daten aufzeigen, als Ausdruck intersektionaler Diskriminierung beschreibt",
+        "English": "The data used is contextualized by the accompanying text, which describes the trends that the data reveals as expressions of intersectional discrimination."
     },
     {
         "ID": "slidein3-button3",
@@ -186,8 +196,8 @@
     },
     {
         "ID": "slidein3-text3",
-        "German": "Daten ohne ihre Kontexte zu kommunizieren und damit zu positionieren, kann zu Falschinterpretationen und zu tats\u00e4chlichem Schaden f\u00fchren, indem zum Beispiel Wissensl\u00fccken von Leser*innen mit Stereotypen und Vorurteilen gef\u00fcllt werden. Ohne ihren Kontext repr\u00e4sentieren Daten nicht immer das, was sie vorgeben darzustellen, insbesondere, wenn es sich um Daten \u00fcber marginalisierte Personen und Gruppen handelt. Die verwendeten Daten aus Umfragen und Studien werden deswegen durch den begleitenden Text kontextualisiert, indem er die Tendezen, die sich aus den Daten ergeben, als Ausdruck intersektionaler Diskriminierung beschreibt. Diese Tendenzen werden zus\u00e4tzlich durch einen zusammenfassenden Satz, der sich typografisch und durch seine Ausrichtung hervorhebt, auf den ersten Blick sichtbar.",
-        "English": "Communicating and thus positioning data without its contexts can lead to misinterpretation and actual harm, for example, by filling gaps in readers\u2019 knowledge with stereotypes and prejudices. Without its contexts, data does not always represent what it claims to present, especially when it comes to data about marginalized individuals and groups. The data used from surveys and studies is therefore contextualized by the accompanying text, which describes the trends that emerge from the data as expressions of intersectional discrimination. These trends are additionally made visible at first glance through a summarizing sentence that is highlighted typographically and by its aligment."
+        "German": "Daten ohne ihre Kontexte zu kommunizieren und damit zu positionieren, kann zu Falschinterpretationen und zu tats\u00e4chlichem Schaden f\u00fchren, indem zum Beispiel Wissensl\u00fccken von Leser*innen mit Stereotypen und Vorurteilen gef\u00fcllt werden. Ohne ihren Kontext repr\u00e4sentieren Daten nicht immer das, was sie vorgeben darzustellen, insbesondere, wenn es sich um Daten \u00fcber marginalisierte Personen und Gruppen handelt. Die verwendeten Daten aus Umfragen und Studien werden deswegen durch den begleitenden Text kontextualisiert, indem er die Tendezen, die die Daten aufzeigen, als Ausdruck intersektionaler Diskriminierung beschreibt. Diese Tendenzen werden zus\u00e4tzlich durch einen zusammenfassenden Satz, der sich typografisch und durch seine Ausrichtung hervorhebt, auf den ersten Blick sichtbar.",
+        "English": "Communicating and thus positioning data without its contexts can lead to misinterpretation and actual harm, for example, by filling gaps in readers\u2019 knowledge with stereotypes and prejudices. Without its contexts, data does not always represent what it claims to present, especially when it comes to data about marginalized individuals and groups. The data used from surveys and studies is therefore contextualized by the accompanying text, which describes the trends that the data reveals as expressions of intersectional discrimination. These trends are additionally made visible at first glance through a summarizing sentence that is highlighted typographically and by its aligment."
     },
     {
         "ID": "backside-title",
@@ -240,6 +250,11 @@
         "English": "process1_en.png"
     },
     {
+        "ID": "alt-tag-process1",
+        "German": "Das Bild zeigt eine Zeitleiste. Die W\u00f6rter Recherche, Ideen & Skizzen, Konzepte & Entw\u00fcrfe, Feedback Expert*innen, Weiterentwicklung sind jeweils in einer organischen Form mit schwarzer Umrandung platziert und hintereinander angeordnet. Die Formen sind mit einer waagerechten Linie verbunden.",
+        "English": "The image shows a timeline. The words Research, Ideas & sketches, Concepts & design drafts, Expert feedback, Further development are each placed in an organic shape with a black outline and arranged one after the other. The shapes are connected with a horizontal line."
+    },
+    {
         "ID": "backside-process-heading1",
         "German": "Recherche",
         "English": "Research"
@@ -270,6 +285,11 @@
         "English": "designdrafts.png"
     },
     {
+        "ID": "alt-tag-designdrafts",
+        "German": "Das Bild zeigt insgesamt sechs verschiedene Screens. Diese zeigen unterschiedliche Versionen des Scrollytelling Artikels und veranschaulichen so dessen Entwicklung.",
+        "English": "The image shows a total of six different screens. These show different versions of the scrollytelling article and thus illustrate its development."
+    },
+    {
         "ID": "backside-process-text3",
         "German": "Konzepte und Entw\u00fcrfe f\u00fcr eine visuelle Sprache von Intersektionalit\u00e4t, f\u00fcr ein begleitendes Narrativ und ein Interfacedesign wurden nach und nach entwickelt. Auch wurde in dieser Phase mit visuellen Repr\u00e4sentationen f\u00fcr Daten aus Studien zu intersektionaler Diskriminierung experimentiert.",
         "English": "Concepts and designs for a visual language of intersectionality, for an accompanying narrative and an interface design were progressively developed. During this phase I also experimented with visual representations of data from studies about intersectional discrimination."
@@ -297,7 +317,12 @@
     {
         "ID": "backside-process-image3",
         "German": "process2_de.png",
-        "English": "process1_en.png"
+        "English": "process2_en.png"
+    },
+    {
+        "ID": "alt-tag-process2",
+        "German": "Das Bild zeigt eine Zeitleiste. Die W\u00f6rter Feedback & Verfeinerung, Implementierung, Ver\u00f6ffentlichung & Evaluation, Auswertung & \u00dcberarbeitung, Paper Einreichung sind jeweils in einer organischen Form mit schwarzer Umrandung platziert und hintereinander angeordnet. Die Formen sind mit einer waagerechten Linie verbunden.",
+        "English": "The image shows a timeline. The words Feedback & refinement, Implementation, Publishing & evaluation, Evaluation analysis & revision, Paper submission are each placed in an organic shape with a black outline and arranged one after the other. The shapes are connected with a horizontal line."
     },
     {
         "ID": "backside-process-heading5",
@@ -395,6 +420,11 @@
         "English": "alternative1.png"
     },
     {
+        "ID": "alt-tag-alternative1",
+        "German": "Das Bild zeigt vier organische Formen, die jeweils aus mehreren, verschiedenfarbigen organischen Fl\u00e4chen bestehen, die eine unterschiedliche Deckkraft besitzen. Im Zentrum der Formen \u00fcberlappen sich all diese Fl\u00e4chen und verdecken so in zwei der vier Formen die dort platzierten W\u00f6rter. Bei den anderen beiden Formen ist die Deckkraft der Fl\u00e4chen geringer, sodass die W\u00f6rter nicht verdeckt werden.",
+        "English": "The image shows four organic shapes, each of which consists of several organic surfaces of different colors and different opacity. In the center of the shapes, all of these surfaces overlap, obscuring the words placed there in two of the four shapes. With the other two shapes, the opacity of the surfaces is lower, so the words are not obscured."
+    },
+    {
         "ID": "backside-decision-text3",
         "German": "Designprozesse sind unter anderem davon gepr\u00e4gt, dass bestimmte entwickelte Ideen und Konzepte ganz oder teilweise verworfen werden. Ein Beispiel f\u00fcr einen verworfenen Ansatz in diesem Projekt ist die Idee, Intersektionalit\u00e4t mit Visualisierungsparametern der Deckkraft und \u00dcberlagerung zu visualisieren. Verschiedenfarbige Fl\u00e4chen, die sich \u00fcberlagern, repr\u00e4sentieren dabei verschiedene soziale Kategorien. Die Deckkraft markiert, ob eine Person oder Gruppe basierend auf der jeweiligen sozialen Kategorie diskriminiert (sehr hohe Deckkraft) oder privilegiert (sehr niedrige Deckkraft) ist, und ob somit das Lesen der darunter liegenden Begriffe erschwert wird oder nicht. Diese Art der Repr\u00e4sentation wurde verworfen, da das Aufeinanderlegen von farbigen Fl\u00e4chen m\u00f6glicherweise zu sehr eine additive Verbindung der sozialen Kategorien suggeriert und sie visuell noch zu stark f\u00fcr sich alleine stehen und wirken. Die Idee durch visuelle Mittel das Lesen von Begriffen zu erschweren, wurde jedoch in weiteren Visualisierungsans\u00e4tzen angewandt.",
         "English": "Design processes are characterized, among other things, by discarded ideas and concepts. An example of a discarded approach in this project is the idea of visualizing intersectionality with parameters of opacity and overlay. Differently colored surfaces that overlap represent different social categories. Opacity marks whether a person or group is discriminated against (very high opacity) or privileged (very low opacity) based on their social category, and thus whether or not reading the underlying terms is made more difficult. This kind of representation was discarded because the layering of colored surfaces might suggest an additive connection of social categories and they are visually too separated from each other.  \nHowever, the idea of making terms more difficult to read by visual means has been applied in further visualization approaches."
@@ -463,6 +493,11 @@
         "ID": "backside-decision-image5",
         "German": "alternative2.png",
         "English": "alternative2.png"
+    },
+    {
+        "ID": "alt-tag-alternative2",
+        "German": "Das Bild zeigt zwei verschiedene Ausschnitte. Im rechten Ausschnitt ist eine organische Form zu sehen, die sich aus einem Hintergrundnetz aus Strichen mit hellgrauen Umrandungen herausbildet. Innerhalb der Form stehen die W\u00f6rter Zugang, Einbeziehung, Teilhabe, Anerkennung. Innerhalb der Form befinden sich die waagerechten Striche vor den W\u00f6rtern und haben eine orange Umrandung, alle anderen Strichausrichtungen haben innerhalb dieser Form eine graue Umrandung und sind hinter den W\u00f6rtern positioniert.\nIm linken Ausschnitt ist die gleiche Form zu sehen, aber hier liegt im Hintergrund kein Netz aus Strichen, sondern der Hintergrund ist orange gef\u00fcllt. Die Form formt sich aus ausschlie\u00dflich waagerechten Strichen, die eine schwarze Umrandung und, wie der Hintergrund, eine orange F\u00fcllung haben.",
+        "English": "The image shows two different sections. The right section shows an organic shape emerging from a background grid of strokes with light gray outlines. Within the shape the words Access, Inclusion, Participation, Acknowledgment are displayed. Within the shape, the horizontal strokes are in front of the words and have an orange outline, all other stroke alignments have a gray outline within this shape and are positioned behind the words.\nIn the left section you can see the same shape, but here there is no grid of strokes in the background, instead the background is filled with an orange color. The shape is formed exclusively of horizontal strokes that have a black outline and, as the background, an orange fill."
     },
     {
         "ID": "backside-decision-text7",
