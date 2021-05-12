@@ -9,8 +9,8 @@
         </div>
       </div>
       <div class="description">
-        <p class="title" v-html="$t('chapter2-vis2-title1')" />
-        <p class="examples" v-html="$t('chapter2-vis2-examples1')" />
+        <span class="title" v-html="$t('chapter2-vis2-title1')" />
+        <span class="examples" v-html="$t('chapter2-vis2-examples1')" />
       </div>
     </div>
     <div class="case-container">
@@ -22,8 +22,8 @@
         </div>
       </div>
       <div class="description">
-        <p class="title" v-html="$t('chapter2-vis2-title2')" />
-        <p class="examples" v-html="$t('chapter2-vis2-examples2')" />
+        <span class="title" v-html="$t('chapter2-vis2-title2')" />
+        <span class="examples" v-html="$t('chapter2-vis2-examples2')" />
       </div>
     </div>
     <div class="case-container">
@@ -35,8 +35,8 @@
         </div>
       </div>
       <div class="description">
-        <p class="title" v-html="$t('chapter2-vis2-title3')" />
-        <p class="examples" v-html="$t('chapter2-vis2-examples3')" />
+        <span class="title" v-html="$t('chapter2-vis2-title3')" />
+        <span class="examples" v-html="$t('chapter2-vis2-examples3')" />
       </div>
     </div>
   </div>
@@ -159,14 +159,12 @@ export default {
 
       font-family: $font-family-signika;
       font-size: $font-size-small;
-
-      p {
-        margin-bottom: 0;
-      }
+      line-height: 1.3em;
 
       .title {
+        display: block;
         font-weight: 700;
-        margin-bottom: 0.5em;
+        margin-bottom: 0.6em;
       }
     }
   }
