@@ -1,5 +1,5 @@
 <template>
-  <a :href="link" target="_blank" class="google-link">
+  <a :href="questionnaireLink" target="_blank" class="google-link">
     <span class="label" v-html="$t('evaluation-link')" />
   </a>
 </template>
@@ -8,17 +8,17 @@
 export default {
   data () {
     return {
-      germanLink: 'https://docs.google.com/forms/d/e/1FAIpQLSd9kykOGH0PTMdTi5de8w3Oz17lMRH-IjS0JNmIGfgBNdBp5w/viewform?usp=sf_link',
-      englishLink: 'https://docs.google.com/forms/d/e/1FAIpQLSeynkCObZU11Vxb9PIy6e58I-US1x4FR_bl7oeX3MpGxowZpA/viewform?usp=sf_link'
+      germanLink: 'https://docs.google.com/forms/d/e/1FAIpQLSd9kykOGH0PTMdTi5de8w3Oz17lMRH-IjS0JNmIGfgBNdBp5w/viewform?usp=pp_url&entry.1771559805=',
+      englishLink: 'https://docs.google.com/forms/d/e/1FAIpQLSeynkCObZU11Vxb9PIy6e58I-US1x4FR_bl7oeX3MpGxowZpA/viewform?usp=pp_url&entry.1201035339='
     }
   },
   computed: {
-    link () {
-      if (this.$i18n.locale === 'de') {
-        return this.germanLink
-      } else {
-        return this.englishLink
-      }
+    trackingId () {
+      return 'test123'
+    },
+    questionnaireLink () {
+      const baseUrl = this.$i18n.locale === 'de' ? this.germanLink : this.englishLink
+      return baseUrl + this.trackingId
     }
   }
 }
