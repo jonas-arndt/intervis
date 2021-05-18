@@ -72,8 +72,6 @@ export default {
     this.updatePosition()
     this.animate()
 
-    console.log(this.$el.parentNode.getBoundingClientRect())
-
     // set component size
     const boundingRect = this.$refs.inside.getBoundingClientRect()
     this.width = boundingRect.width
