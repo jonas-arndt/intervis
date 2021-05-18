@@ -1,70 +1,147 @@
 <template>
   <div class="blob">
-    <div class="image" style="clip-path: url(#clip-path)">
-      test
+    <div ref="inside" class="inside">
+      <svg v-if="width > 0 && height > 0" :viewBox="viewBox">
+        <foreignObject
+          :width="width"
+          :height="height"
+          :clip-path="`url(#${clipPathId})`"
+          requiredExtensions="http://www.w3.org/1999/xhtml"
+        >
+          <div
+            :style="{ top: -top+'px', left: -left+'px' }"
+            class="shape-background-wrapper"
+          >
+            <slot />
+          </div>
+        </foreignObject>
+        <defs>
+          <clipPath :id="clipPathId">
+            <path :transform="`translate(${noiseOffset}, ${noiseOffset})`" :d="d" />
+          </clipPath>
+        </defs>
+      </svg>
     </div>
-    <svg width="0" height="0" viewBox="0 0 200 200">
-      <defs>
-        <clipPath id="clip-path">
-          <path transform="translate(100 100)" class="blob" :d="d" />
-        </clipPath>
-      </defs>
-    </svg>
   </div>
 </template>
 
 <script>
 import SimplexNoise from 'simplex-noise'
+import { scaleLinear } from 'd3-scale'
 
 export default {
+  props: {
+    pointList: {
+      type: Array,
+      required: true,
+      default: () => []
+    },
+    clipPathId: {
+      type: String,
+      default: () => 'shape-' + Math.getRandomInt(1000) + '-clip-path'
+    }
+  },
   data () {
-    const points = this.createPoints()
-
     return {
-      points,
-      d: this.getSpline(points),
-      noiseStep: 0.002,
+      simplex: new SimplexNoise(),
+
+      // configuration
+      noiseStep: 0.001,
       noiseOffset: 10,
-      simplex: new SimplexNoise()
+
+      // component
+      width: 0,
+      height: 0,
+      top: 0,
+      left: 0,
+
+      // data
+      data: this.getDataDimensions(),
+
+      // shape
+      points: [],
+      d: undefined
+    }
+  },
+  computed: {
+    viewBox () {
+      return `0 0 ${this.width} ${this.height}`
     }
   },
   mounted () {
+    this.updatePosition()
     this.animate()
+
+    console.log(this.$el.parentNode.getBoundingClientRect())
+
+    // set component size
+    const boundingRect = this.$refs.inside.getBoundingClientRect()
+    this.width = boundingRect.width
+    this.height = boundingRect.height
+
+    // set shape
+    this.points = this.createPoints()
+    this.d = this.spline(this.points)
   },
   methods: {
-    // based on https://dev.to/georgedoescode/tutorial-build-a-smooth-animated-blob-using-svg-js-3pne
+    updatePosition () {
+      const selfRect = this.$el.getBoundingClientRect()
+      const parentRect = this.$el.parentNode.getBoundingClientRect()
 
+      this.top = selfRect.top - parentRect.top
+      this.left = selfRect.left - parentRect.left
+    },
+    getScale () {
+      const ratioX = this.width / (this.data.maxX - this.data.minX)
+      const ratioY = this.height / (this.data.maxY - this.data.minY)
+      if (ratioX < ratioY) {
+        return scaleLinear()
+          .domain([this.data.minX, this.data.maxX])
+          .range([0, this.width - 2 * this.noiseOffset])
+      } else {
+        return scaleLinear()
+          .domain([this.data.minY, this.data.maxY])
+          .range([0, this.height - 2 * this.noiseOffset])
+      }
+    },
     createPoints () {
+      const scale = this.getScale()
+
       const points = []
-      // how many points do we need
-      const numPoints = 6
-      // used to equally space each point around the circle
-      const angleStep = (Math.PI * 2) / numPoints
-      // the radius of the circle
-      const rad = 75
-
-      for (let i = 1; i <= numPoints; i++) {
-        // x & y coordinates of the current point
-        const theta = i * angleStep
-
-        const x = 100 + Math.cos(theta) * rad
-        const y = 100 + Math.sin(theta) * rad
+      this.pointList.forEach((item, i) => {
+        const x = scale(item[0])
+        const y = scale(item[1])
 
         // store the point
         points.push({
           x,
           y,
           /* we need to keep a reference to the point's original {x, y} coordinates
-            for when we modulate the values later */
+                  for when we modulate the values later */
           originX: x,
           originY: y,
           // more on this in a moment!
           noiseOffsetX: Math.random() * 1000,
           noiseOffsetY: Math.random() * 1000
         })
-      }
+      })
 
       return points
+    },
+    getDataDimensions () {
+      let minX = 0
+      let minY = 0
+      let maxX = 0
+      let maxY = 0
+
+      this.pointList.forEach((item, i) => {
+        minX = item[0] < minX ? item[0] : minX
+        minY = item[1] < minY ? item[1] : minY
+        maxX = item[0] > maxX ? item[0] : maxX
+        maxY = item[1] > maxY ? item[1] : maxY
+      })
+
+      return { minX, minY, maxX, maxY }
     },
     animate () {
       this.d = this.getSpline(this.points)
@@ -173,13 +250,21 @@ export default {
 
 <style lang="scss" scoped>
 .blob {
-  .image {
-    position: relative;
-    height: 400px;
-    width: 400px;
+  .inside {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
 
-    background-image: url("~assets/lines/grey_merged.jpg");
-    background-size: cover;
+  .shape-background-wrapper {
+    position: relative;
+
+    & > * {
+      width: 100vw;
+      height: 100vh;
+    }
   }
 }
 </style>

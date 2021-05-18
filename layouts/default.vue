@@ -60,6 +60,50 @@ body,
   }
 }
 
+.chapter-4-visualization {
+  .visual {
+    position: absolute;
+    height: 45%;
+    width: 50%;
+    overflow: hidden;
+
+    img {
+      max-height: 100%;
+      max-width: 100%;
+    }
+
+    &.top-left {
+      top: 5%;
+      left: 15%;
+    }
+
+    &.bottom-right {
+      right: 15%;
+      bottom: 5%;
+
+      img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+
+  @media (min-width: $media-breakpoint-min-m) {
+    .visual {
+      width: 25%;
+
+      &.top-left {
+        left: 7.5%
+      }
+
+      &.bottom-right {
+        right: 57.5%;
+      }
+    }
+  }
+}
+
 // Layout definitions from google spreadsheet
 b {
   font-weight: 600;

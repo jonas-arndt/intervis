@@ -64,11 +64,6 @@
         margin-top: 50vh;
       }
     }
-
-    .background-visualization {
-      left: 5%;
-      width: 50%;
-    }
   }
 }
 
