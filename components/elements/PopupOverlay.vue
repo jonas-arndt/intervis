@@ -1,7 +1,7 @@
 <template>
   <div class="popup-overlay">
     <div class="close-button">
-      <a @click.stop="$emit('close')">
+      <a @click.prevent="$emit('close')">
         <img :src="require('~/assets/icons/close.svg')">
       </a>
     </div>

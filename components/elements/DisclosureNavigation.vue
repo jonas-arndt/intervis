@@ -2,7 +2,7 @@
   <nav class="disclosure-navigation">
     <ul>
       <li v-for="labelKey, index in entries" :key="index" :class="{'active': index == chapterId}">
-        <a href="#" @click.stop="chapterId = index" v-html="$t(labelKey)" />
+        <a href="#" @click.prevent="chapterId = index" v-html="$t(labelKey)" />
       </li>
     </ul>
   </nav>
