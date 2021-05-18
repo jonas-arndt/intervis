@@ -162,7 +162,7 @@ export default {
   'references-downloaded': 'Retrieved from',
   imprint_text1: 'Do you have comments, suggestions, ...?\u2028 Feel free to send us an <a href="mailto:hannah.schwan@fh-potsdam.de">email</a>!',
   imprint_text2: 'Projectteam',
-  imprint_text3: '<b>Hananh Schwan</b> (Concept, Design, Text)<br/><b>Jonas Arndt</b> (Development)<br/><b>Sandra Cartes</b> (Content consulting)<br/><b>Marian D\u00F6rk</b> (Scientific supervision)',
+  imprint_text3: '<b>Hannah Schwan</b> (Concept, Design, Text)<br/><b>Jonas Arndt</b> (Development)<br/><b>Sandra Cartes</b> (Content consulting)<br/><b>Marian D\u00F6rk</b> (Scientific supervision)',
   imprint_text4: '<a href="https://www.fh-potsdam.de/impressum/">Imprint</a>',
   imprint_text5: '<a href="https://www.fh-potsdam.de/datenschutzhinweis/">Privacy Policy</a>',
   'slidein-title': 'Visualization decisions and data context',
