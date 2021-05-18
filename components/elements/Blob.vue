@@ -31,6 +31,10 @@ import { scaleLinear } from 'd3-scale'
 
 export default {
   props: {
+    active: {
+      type: Boolean,
+      default: false
+    },
     pointList: {
       type: Array,
       required: true,
@@ -39,10 +43,6 @@ export default {
     clipPathId: {
       type: String,
       default: () => 'shape-' + Math.floor(Math.random() * 1000) + '-clip-path'
-    },
-    parentRect: {
-      type: Object,
-      default: () => { return { top: 0, left: 0 } }
     }
   },
   data () {
@@ -62,9 +62,9 @@ export default {
       // data
       data: this.getDataDimensions(),
 
-      // shape
-      points: [],
-      d: undefined
+      // shape (default values to prevent errors)
+      points: [[0, 0], [10, 10]],
+      d: 'M 0,0 L 10, 10 Z'
     }
   },
   computed: {
@@ -72,29 +72,44 @@ export default {
       return `0 0 ${this.width} ${this.height}`
     }
   },
+  watch: {
+    active (active) {
+      if (active) {
+        this.activate()
+      }
+    }
+  },
   mounted () {
-    this.updatePosition()
+    this.updateDimensions()
     this.animate()
 
-    // set component size
-    const boundingRect = this.$refs.inside.getBoundingClientRect()
-    this.width = boundingRect.width
-    this.height = boundingRect.height
-
-    // set shape
-    this.points = this.createPoints()
-    this.d = this.spline(this.points)
+    if (this.active) {
+      this.activate()
+    }
   },
   methods: {
-    updatePosition () {
-      const rect = this.$el.getBoundingClientRect()
+    activate () {
+      this.$emit('parentPositionRequested', this)
+      this.updateDimensions()
 
-      this.top = rect.top - this.parentRect.top
+      // set shape
+      this.points = this.createPoints()
+      this.d = this.spline(this.points)
+    },
+    updateParentRect (parentRect) {
+      const rect = this.$el.getBoundingClientRect()
+      this.top = parentRect.top > 0 ? rect.top - parentRect.top : rect.top
       this.left = rect.left
+    },
+    updateDimensions () {
+      const boundingRect = this.$refs.inside.getBoundingClientRect()
+      this.width = boundingRect.width
+      this.height = boundingRect.height
     },
     getScale () {
       const ratioX = this.width / (this.data.maxX - this.data.minX)
       const ratioY = this.height / (this.data.maxY - this.data.minY)
+
       if (ratioX < ratioY) {
         return scaleLinear()
           .domain([this.data.minX, this.data.maxX])
@@ -107,7 +122,6 @@ export default {
     },
     createPoints () {
       const scale = this.getScale()
-
       const points = []
       this.pointList.forEach((item, i) => {
         const x = scale(item[0])
@@ -123,6 +137,7 @@ export default {
           originY: y,
           // more on this in a moment!
           noiseOffsetX: Math.random() * 1000,
+
           noiseOffsetY: Math.random() * 1000
         })
       })

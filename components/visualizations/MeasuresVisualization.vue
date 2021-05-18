@@ -17,11 +17,19 @@
         :point-list="shapes['chapter4_1.svg'].points"
         clip-path-id="clip-path-4-1"
         class="visual top-left"
-        :parent-rect="parentRect"
+        :active="active"
+        @parentPositionRequested="handlePositionRequest"
       >
         <div class="background" />
       </Blob>
-      <Blob ref="shape2" :point-list="shapes['chapter4_2.svg'].points" :parent-rect="parentRect" clip-path-id="clip-path-4-2" class="visual bottom-right">
+      <Blob
+        ref="shape2"
+        :point-list="shapes['chapter4_2.svg'].points"
+        clip-path-id="clip-path-4-2"
+        :active="active"
+        class="visual bottom-right"
+        @parentPositionRequested="handlePositionRequest"
+      >
         <div class="background" />
       </Blob>
     </div>
@@ -32,15 +40,21 @@
 import shapes from '~/data/shapes.json'
 
 export default {
-  data () {
-    return {
-      shapes,
-      parentRect: { top: 0, left: 0 }
+  props: {
+    active: {
+      type: Boolean,
+      default: false
     }
   },
-  mounted () {
-    const rect = this.$el.getBoundingClientRect()
-    this.parentRect = { top: rect.top, left: rect.left }
+  data () {
+    return {
+      shapes
+    }
+  },
+  methods: {
+    handlePositionRequest (requestingComponent) {
+      requestingComponent.updateParentRect(this.$el.getBoundingClientRect())
+    }
   }
 }
 </script>

@@ -8,7 +8,12 @@
             <img v-if="$i18n.locale == 'en'" src="~/assets/fallback/chapter2_1_english.png">
           </div>
           <div class="interactive-visualization">
-            <Blob :point-list="shapes['chapter2_1.svg'].points" clip-path-id="clip-path-2-1" :parent-rect="parentRect">
+            <Blob
+              :point-list="shapes['chapter2_1.svg'].points"
+              clip-path-id="clip-path-2-1"
+              :active="active"
+              @parentPositionRequested="handlePositionRequest"
+            >
               <div class="background" />
             </Blob>
           </div>
@@ -30,7 +35,8 @@
             <Blob
               :point-list="shapes['chapter2_2.svg'].points"
               clip-path-id="clip-path-2-2"
-              :parent-rect="parentRect"
+              :active="active"
+              @parentPositionRequested="handlePositionRequest"
             >
               <div class="background" />
             </Blob>
@@ -50,7 +56,12 @@
             <img v-if="$i18n.locale == 'en'" src="~/assets/fallback/chapter2_3_english.png">
           </div>
           <div class="interactive-visualization">
-            <Blob :point-list="shapes['chapter2_3.svg'].points" clip-path-id="clip-path-2-3" :parent-rect="parentRect">
+            <Blob
+              :point-list="shapes['chapter2_3.svg'].points"
+              clip-path-id="clip-path-2-3"
+              :active="active"
+              @parentPositionRequested="handlePositionRequest"
+            >
               <div class="background" />
             </Blob>
           </div>
@@ -69,15 +80,21 @@
 import shapes from '~/data/shapes.json'
 
 export default {
-  data () {
-    return {
-      shapes,
-      parentRect: { top: 0, left: 0 }
+  props: {
+    active: {
+      type: Boolean,
+      default: false
     }
   },
-  mounted () {
-    const rect = this.$el.getBoundingClientRect()
-    this.parentRect = { top: rect.top, left: rect.left }
+  data () {
+    return {
+      shapes
+    }
+  },
+  methods: {
+    handlePositionRequest (requestingComponent) {
+      requestingComponent.updateParentRect(this.$el.getBoundingClientRect())
+    }
   }
 }
 </script>
