@@ -24,7 +24,7 @@
         "description": "Describes the negative prejudices against people who practice Islam and/or are perceived to be Muslim and the discrimination they face. Islamophobia is the hatred of, fear of, and/or negative prejudices against Islam and Muslims."
     },
     {
-        "ID": "anti-rom*nja-rassismus\n",
+        "ID": "anti-rom*nja-rassismus",
         "language": "German",
         "title": "Anti-Rom*nja Rassismus\n",
         "description": "Beschreibt die negativen Vorurteile gegen\u00fcber Rom*nja, einschlie\u00dflich anderer Untergruppen, die kollektiv als Rom*nja bezeichnet werden, und die Diskriminerung, der sie ausgesetzt sind."
@@ -72,7 +72,7 @@
         "description": "Individuals whose biological sex \u2013 the sex they were assigned at birth \u2013 corresponds to their gender identity."
     },
     {
-        "ID": "cis-und-heterosexismus\n",
+        "ID": "cis-und-heterosexismus",
         "language": "German",
         "title": "Cis- und Heterosexismus\n",
         "description": "Beschreibt die Diskriminierung von Menschen aufgrund ihrer Geschlechtsidentit\u00e4t und sexuellen Orientierung. Nicht-cisgeschlechtliche (transgender, genderqueer, nicht-bin\u00e4r etc.) und nicht-heterosexuelle Menschen (lesbisch, schwul, bisexuell, asexuell, queer, pansexuell etc.) sind Cis- und Heterosexismus ausgesetzt."
@@ -216,7 +216,7 @@
         "description": "The term refers to individuals whose gender or its associated gender role does not correspond, or does not fully correspond, to the gender that was assigned to them at birth."
     },
     {
-        "ID": "umgekehrte-diskriminierung\n",
+        "ID": "umgekehrte-diskriminierung",
         "language": "German",
         "title": "Umgekehrte Diskriminierung\n",
         "description": "Bezieht sich zum Beispiel auf die Argumentation, dass auch wei\u00dfe Menschen Rassismus ausgesetzt sein k\u00f6nnen. Rassismus entsteht jedoch durch die Verflechtung von Vorurteilen und der Macht, diese tats\u00e4chlich durchzusetzen, was dann zu realer Diskriminierung und Unterdr\u00fcckung f\u00fchrt. Wei\u00dfe Menschen k\u00f6nnen also rassistische Vorurteile erfahren, ein umgekehrter Rassismus wird aber insofern ausgeschlossen, dass wei\u00dfe Menschen innerhalb vorherrschender Machtverh\u00e4ltnisse privilegiert sind und keine strukturelle Marginalisierung erfahren."
@@ -228,7 +228,7 @@
         "description": "Refers, for example, to the argument that white people can also be exposed to racism. However, racism arises from the coupling of prejudices and the power to actually enforce them, which only then leads to actual discrimination and oppression. White people can thus experience racial prejudices, but reverse racism does not exist since white people are privileged within prevailing power relations and do not experience structural marginalization."
     },
     {
-        "ID": "wei\u00df",
+        "ID": "weiss",
         "language": "German",
         "title": "wei\u00df",
         "description": "Der Begriff wird klein und kursiv geschrieben, um zu zeigen, dass er kein Selbsterm\u00e4chtigungs- und Widerstandspotential innehat, sondern es sich um eine privilegierte Position innerhalb rassistischer Strukturen handelt, in welchem wei\u00df-sein \u00fcblicherweise unmarkiert bleibt."
