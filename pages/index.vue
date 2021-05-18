@@ -55,11 +55,6 @@ export default {
       questionnaireLinkTimeout: undefined
     }
   },
-  head () {
-    return {
-      title: this.$t('page-title')
-    }
-  },
   computed: {
     ...mapState([
       'conceptDevelopmentIsVisible',
@@ -105,6 +100,11 @@ export default {
       if (!this.questionnaireLinkIsVisible) {
         this.setQuestionnaireLinkIsVisible(true)
       }
+    }
+  },
+  head () {
+    return {
+      title: this.$t('page-title')
     }
   }
 }
