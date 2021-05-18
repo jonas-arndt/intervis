@@ -76,15 +76,13 @@ a {
   &:hover {
     color: $color-black;
   }
+}
 
-  &.tooltip {
-    color: $color-black;
-    text-decoration: underline;
+.tooltip {
+  font-weight: 800;
+  color: $color-black;
 
-    &:hover {
-      color: $color-red;
-    }
-  }
+  border-bottom: 1px dotted $color-black;
 }
 
 .red-bordered-text, .grey-bordered-text {
