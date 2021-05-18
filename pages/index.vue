@@ -42,6 +42,7 @@
 
     <QuickNavigation v-if="!projectDisclosureIsVisible" class="article-navigation" />
     <GoogleLink v-show="questionnaireLinkIsVisible" class="google-link" />
+    <Logger />
   </div>
 </template>
 
