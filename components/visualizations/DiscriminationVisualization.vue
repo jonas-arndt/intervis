@@ -3,9 +3,15 @@
     <div class="case-container">
       <div class="visual">
         <div class="inside">
-          <!-- <Blob :point-list="pointsFirstShape" /> -->
-          <img v-if="$i18n.locale == 'de'" src="~/assets/fallback/chapter2_1_german.png">
-          <img v-if="$i18n.locale == 'en'" src="~/assets/fallback/chapter2_1_english.png">
+          <div class="fallback">
+            <img v-if="$i18n.locale == 'de'" src="~/assets/fallback/chapter2_1_german.png">
+            <img v-if="$i18n.locale == 'en'" src="~/assets/fallback/chapter2_1_english.png">
+          </div>
+          <div class="interactive-visualization">
+            <Blob :point-list="shapes['chapter2_1.svg'].points" clip-path-id="clip-path-2-1" :parent-rect="parentRect">
+              <div class="background" />
+            </Blob>
+          </div>
         </div>
       </div>
       <div class="description">
@@ -16,9 +22,19 @@
     <div class="case-container">
       <div class="visual">
         <div class="inside">
-          <!-- <Blob :point-list="pointsSecondShape" /> -->
-          <img v-if="$i18n.locale == 'de'" src="~/assets/fallback/chapter2_2_german.png">
-          <img v-if="$i18n.locale == 'en'" src="~/assets/fallback/chapter2_2_english.png">
+          <div class="fallback">
+            <img v-if="$i18n.locale == 'de'" src="~/assets/fallback/chapter2_2_german.png">
+            <img v-if="$i18n.locale == 'en'" src="~/assets/fallback/chapter2_2_english.png">
+          </div>
+          <div class="interactive-visualization">
+            <Blob
+              :point-list="shapes['chapter2_2.svg'].points"
+              clip-path-id="clip-path-2-2"
+              :parent-rect="parentRect"
+            >
+              <div class="background" />
+            </Blob>
+          </div>
         </div>
       </div>
       <div class="description">
@@ -29,9 +45,15 @@
     <div class="case-container">
       <div class="visual">
         <div class="inside">
-          <!-- <Blob :point-list="pointsThirdShape" /> -->
-          <img v-if="$i18n.locale == 'de'" src="~/assets/fallback/chapter2_3_german.png">
-          <img v-if="$i18n.locale == 'en'" src="~/assets/fallback/chapter2_3_english.png">
+          <div class="fallback">
+            <img v-if="$i18n.locale == 'de'" src="~/assets/fallback/chapter2_3_german.png">
+            <img v-if="$i18n.locale == 'en'" src="~/assets/fallback/chapter2_3_english.png">
+          </div>
+          <div class="interactive-visualization">
+            <Blob :point-list="shapes['chapter2_3.svg'].points" clip-path-id="clip-path-2-3" :parent-rect="parentRect">
+              <div class="background" />
+            </Blob>
+          </div>
         </div>
       </div>
       <div class="description">
@@ -44,69 +66,18 @@
 </template>
 
 <script>
+import shapes from '~/data/shapes.json'
+
 export default {
   data () {
     return {
-      pointsFirstShape: [
-        [680, 20],
-        [606, 0],
-        [270, 43],
-        [0, 400],
-        [54, 742],
-        [161, 863],
-        [303, 887],
-        [397, 840],
-        [550, 744],
-        [694, 681],
-        [814, 644],
-        [900, 617],
-        [987, 528],
-        [1000, 428],
-        [949, 259],
-        [758, 60],
-        [680, 20]
-      ],
-      pointsSecondShape: [
-        [896, 521],
-        [853, 724],
-        [562, 983],
-        [421, 1000],
-        [151, 893],
-        [0, 625],
-        [36, 368],
-        [169, 191],
-        [389, 44],
-        [540, 1],
-        [587, 0],
-        [770, 96],
-        [839, 219],
-        [889, 405],
-        [896, 521]
-      ],
-      pointsThirdShape: [
-        [373, 0],
-        [373, 1],
-        [278, 14],
-        [82, 142],
-        [0, 412],
-        [33, 532],
-        [109, 650],
-        [240, 785],
-        [372, 893],
-        [485, 963],
-        [602, 1000],
-        [682, 988],
-        [763, 925],
-        [839, 793],
-        [891, 631],
-        [906, 450],
-        [882, 358],
-        [818, 249],
-        [624, 80],
-        [438, 7],
-        [373, 0]
-      ]
+      shapes,
+      parentRect: { top: 0, left: 0 }
     }
+  },
+  mounted () {
+    const rect = this.$el.getBoundingClientRect()
+    this.parentRect = { top: rect.top, left: rect.left }
   }
 }
 </script>
@@ -119,6 +90,10 @@ export default {
   height: 100vh;
   width: 100%;
   padding: 15vh 1rem 10vh 1rem;
+
+  .interactive-visualization {
+    display: none;
+  }
 
   .case-container {
     position: relative;
@@ -178,4 +153,18 @@ export default {
   }
 }
 
+.page.js .discrimination-visualization {
+  .fallback {
+    display: none;
+  }
+
+  .interactive-visualization {
+    display: block;
+
+    .background {
+      background: url('~assets/lines/grey_merged.jpg');
+      background-size: cover;
+    }
+  }
+}
 </styles>

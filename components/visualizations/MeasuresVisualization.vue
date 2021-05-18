@@ -15,12 +15,13 @@
       <Blob
         ref="shape1"
         :point-list="shapes['chapter4_1.svg'].points"
-        clip-path-id="chapter-4-shape1-clip-path"
+        clip-path-id="clip-path-4-1"
         class="visual top-left"
+        :parent-rect="parentRect"
       >
         <div class="background" />
       </Blob>
-      <Blob ref="shape2" :point-list="shapes['chapter4_2.svg'].points" clip-path-id="chapter-4-shape2-clip-path" class="visual bottom-right">
+      <Blob ref="shape2" :point-list="shapes['chapter4_2.svg'].points" :parent-rect="parentRect" clip-path-id="clip-path-4-2" class="visual bottom-right">
         <div class="background" />
       </Blob>
     </div>
@@ -33,8 +34,13 @@ import shapes from '~/data/shapes.json'
 export default {
   data () {
     return {
-      shapes
+      shapes,
+      parentRect: { top: 0, left: 0 }
     }
+  },
+  mounted () {
+    const rect = this.$el.getBoundingClientRect()
+    this.parentRect = { top: rect.top, left: rect.left }
   }
 }
 </script>

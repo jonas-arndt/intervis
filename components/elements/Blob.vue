@@ -38,7 +38,11 @@ export default {
     },
     clipPathId: {
       type: String,
-      default: () => 'shape-' + Math.getRandomInt(1000) + '-clip-path'
+      default: () => 'shape-' + Math.floor(Math.random() * 1000) + '-clip-path'
+    },
+    parentRect: {
+      type: Object,
+      default: () => { return { top: 0, left: 0 } }
     }
   },
   data () {
@@ -83,11 +87,10 @@ export default {
   },
   methods: {
     updatePosition () {
-      const selfRect = this.$el.getBoundingClientRect()
-      const parentRect = this.$el.parentNode.getBoundingClientRect()
+      const rect = this.$el.getBoundingClientRect()
 
-      this.top = selfRect.top - parentRect.top
-      this.left = selfRect.left - parentRect.left
+      this.top = rect.top - this.parentRect.top
+      this.left = rect.left
     },
     getScale () {
       const ratioX = this.width / (this.data.maxX - this.data.minX)
