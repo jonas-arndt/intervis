@@ -15,7 +15,7 @@
   min-height: 100vh;
 
   background-color: rgba(30, 30, 30, 0.75);
-  overflow-y: scroll;
+  overflow-y: auto;
   padding: 1rem;
 
   .content-container {

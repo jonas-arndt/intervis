@@ -12,7 +12,7 @@
   display: block;
   width: 100%;
   height: 100%;
-  overflow-y: scroll;
+  overflow-y: auto;
 
   h2 {
     margin-bottom: 1.2rem;

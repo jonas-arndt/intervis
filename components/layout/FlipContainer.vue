@@ -99,7 +99,7 @@ Some vertical flip updates
 }
 
 .front, .back {
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
 }
 

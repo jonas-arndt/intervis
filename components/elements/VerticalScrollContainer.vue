@@ -38,7 +38,7 @@ export default {
 .scroll-container {
   position: relative;
   height: 100%;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
 }
 </style>
