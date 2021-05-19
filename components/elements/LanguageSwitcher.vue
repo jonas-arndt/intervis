@@ -2,20 +2,43 @@
   <div class="language-switcher">
     <ul>
       <li v-for="localeName, localeKey in locales" :key="localeKey" :class="{ 'active': $i18n.locale == localeKey }">
-        <a href="#" @click.prevent="$i18n.setLocale(localeKey)">{{ localeName }}</a>
+        <a href="#" @click.prevent="switchLang(localeKey)">{{ localeName }}</a>
       </li>
     </ul>
   </div>
 </template>
 
 <script>
+import deModule from '../../locales/de.js'
+import enModule from '../../locales/en.js'
+
 export default {
   data () {
     return {
+      deModule,
+      enModule,
       locales: {
         de: 'DE',
         en: 'EN'
       }
+    }
+  },
+  methods: {
+    switchLang (locale) {
+      // from https://github.com/nuxt-community/i18n-module/issues/68#issuecomment-475792915
+
+      if (locale === this.$store.state.i18n.locale) {
+        return
+      }
+
+      // update store info
+      this.$store.commit('i18n/i18nSetLocale', locale)
+      // update i18n's locale instance
+      this.$i18n.locale = locale
+      // set new messages from new locale file
+      this.$i18n.setLocaleMessage(locale, locale === 'de' ? deModule : enModule)
+      // update url to point to new path, without reloading the page
+      window.history.replaceState('', '', this.switchLocalePath(locale))
     }
   }
 }
