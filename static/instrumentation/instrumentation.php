@@ -59,9 +59,9 @@ function processInitReqestContent($fh, $content) {
   $values = [
     'INIT',
     $content['id'],
-    $content['data']['windowSize']['x'],
-    $content['data']['windowSize']['y']
+    json_encode($content['data'])
   ];
+
   $message = implode(', ', $values);
   fwrite($fh, $message . "\n");
 }
@@ -71,21 +71,18 @@ function processStackReqestContent($fh, $content) {
     10 => 'MOUSE',
     20 => 'RESIZE',
     30 => 'STEP',
-    40 => 'PROGRESS'
+    40 => 'PROGRESS',
+    50 => 'SCROLL',
+    60 => 'STATE',
+    70 => 'LOCALE'
   ];
 
   foreach ($content['data'] as $event) {
     $values = [
       $event['timeOffset'],
-      $eventTypes[$event['type']]
+      $eventTypes[$event['type']],
+      json_encode($event['data'])
     ];
-
-    if ($event['type'] === 10 || $event['type'] === 20) {
-      $values[] = $event['data']['x'];
-      $values[] = $event['data']['y'];
-    } elseif ($event['type'] === 30 || $event['type'] === 40) {
-      $values[] = $event['data'];
-    }
 
     $message = implode(', ', $values);
     fwrite($fh, $message . "\n");
@@ -99,27 +96,6 @@ function processStackReqestContent($fh, $content) {
 
 
 }
-/*
-
-
-  $date = new DateTime();
-  $message = $date->format('Y-m-d H:i:s') . "\n";
-
-
-
-  $myFile = $logDir . '/test.log';
-
-
-*/
-  /*
-  createLogDir($logDir);
-
-  $logFileName = $logDir . '/test.log';
-  $logFile = createLogFile($logFileName);
-
-  logRequest($logFile, $_REQUEST);
-  */
-
 
 // script
 handleRequest(json_decode(file_get_contents("php://input"),true));

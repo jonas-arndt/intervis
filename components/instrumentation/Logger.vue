@@ -119,7 +119,16 @@ export default {
     // server communication
     sendInitialLog () {
       const data = {
-        windowSize: this.getWindowSize()
+        windowSize: this.getWindowSize(),
+        projectDisclosureIsVisible: this.projectDisclosureIsVisible,
+        designDecisionsAreVisible: this.designDecisionsAreVisible,
+        teaserIsVisible: this.teaserIsVisible,
+        questionnaireLinkIsVisible: this.questionnaireLinkIsVisible,
+        conceptDevelopmentIsVisible: this.conceptDevelopmentIsVisible,
+        discriminationDimensionsAreVisible: this.discriminationDimensionsAreVisible,
+        activeDisclosureChapterId: this.activeDisclosureChapterId,
+        activeArticleChapterId: this.activeArticleChapterId,
+        verticalScrollPosition: this.verticalScrollPosition
       }
       this.sendPackage(this.packageType.init, data)
     },
