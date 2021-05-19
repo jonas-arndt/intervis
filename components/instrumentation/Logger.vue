@@ -140,7 +140,7 @@ export default {
         })
         .then(function (response) {})
         .catch(function (error) {
-          console.log(error)
+          this.$emit('logSendErrorOccured', error)
         })
 
       this.packageCounter++

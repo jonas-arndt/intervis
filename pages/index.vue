@@ -42,7 +42,7 @@
 
     <QuickNavigation v-if="!projectDisclosureIsVisible" class="article-navigation" />
     <GoogleLink v-show="questionnaireLinkIsVisible" class="google-link" />
-    <Logger />
+    <Logger @logSendErrorOccured="handleLogSendError" />
   </div>
 </template>
 
@@ -101,6 +101,9 @@ export default {
       if (!this.questionnaireLinkIsVisible) {
         this.setQuestionnaireLinkIsVisible(true)
       }
+    },
+    handleLogSendError (error) {
+      console.log('LogSendError:', error)
     }
   },
   head () {
