@@ -1,5 +1,5 @@
 <template>
-  <a :href="questionnaireLink" target="_blank" class="google-link">
+  <a :href="questionnaireLink" target="_blank" class="google-link" @click="$nuxt.$emit('questionnaireLinkWasClicked')">
     <span class="label" v-html="$t('evaluation-link')" />
   </a>
 </template>

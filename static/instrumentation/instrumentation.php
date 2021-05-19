@@ -74,7 +74,8 @@ function processStackReqestContent($fh, $content) {
     40 => 'PROGRESS',
     50 => 'SCROLL',
     60 => 'STATE',
-    70 => 'LOCALE'
+    70 => 'LOCALE',
+    80 => 'LINK'
   ];
 
   foreach ($content['data'] as $event) {

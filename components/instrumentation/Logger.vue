@@ -14,7 +14,8 @@ export default {
         windowResize: 20,
         scrollPosition: 50,
         stateChange: 60,
-        languageChange: 70
+        languageChange: 70,
+        linkClick: 80
       },
       packageType: {
         init: 10,
@@ -83,6 +84,10 @@ export default {
         this.handleWindowResize()
       })
 
+      this.$nuxt.$on('questionnaireLinkWasClicked', () => {
+        this.handleQuestionnaireClick()
+      })
+
       this.initLogging()
     }
   },
@@ -105,6 +110,9 @@ export default {
     // handle events
     handleWindowResize () {
       this.logEvent(this.eventType.windowResize, this.getWindowSize())
+    },
+    handleQuestionnaireClick () {
+      this.logEvent(this.eventType.linkClick, 'questionnaire')
     },
     handleScrollPositionChange (scrollPosition) {
       this.logEvent(this.eventType.scrollPosition, scrollPosition)
