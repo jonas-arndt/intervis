@@ -42,7 +42,7 @@
 
     <QuickNavigation v-if="!projectDisclosureIsVisible" class="article-navigation" />
     <GoogleLink v-show="questionnaireLinkIsVisible" class="google-link" />
-    <Logger @logSendErrorOccured="handleLogSendError" />
+    <Logger @logSendErrorOccured="handleLogSendError" @loggingIdDefined="handleDefinedLoggingId" />
   </div>
 </template>
 
@@ -89,13 +89,17 @@ export default {
     ...mapMutations([
       'hideConceptDevelopment',
       'hideDiscriminationDimensions',
-      'setQuestionnaireLinkIsVisible'
+      'setQuestionnaireLinkIsVisible',
+      'setLoggingId'
     ]),
     addJsClass () {
       this.$refs.page.classList.add(this.jsClass)
     },
     handleResize () {
       this.$nuxt.$emit('windowResized')
+    },
+    handleDefinedLoggingId (loggingId) {
+      this.setLoggingId(loggingId)
     },
     showQuestionnaireLink () {
       if (!this.questionnaireLinkIsVisible) {

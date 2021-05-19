@@ -13,6 +13,9 @@ export const state = () => ({
   verticalScrollPosition: 0,
   verticalViewportCenter: 0,
 
+  // logging
+  loggingId: '0',
+
   // article break points
   introductionStartPosition: undefined,
   intersectionalityChapterStartPosition: undefined,
@@ -62,6 +65,11 @@ export const mutations = {
   },
   setQuestionnaireLinkIsVisible (state, visibility) {
     state.questionnaireLinkIsVisible = visibility
+  },
+
+  // logging
+  setLoggingId (state, loggingId) {
+    state.loggingId = loggingId.toString()
   },
 
   // article break points

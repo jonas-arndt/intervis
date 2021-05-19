@@ -5,6 +5,8 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
+
 export default {
   data () {
     return {
@@ -13,12 +15,10 @@ export default {
     }
   },
   computed: {
-    trackingId () {
-      return 'test123'
-    },
+    ...mapState(['loggingId']),
     questionnaireLink () {
       const baseUrl = this.$i18n.locale === 'de' ? this.germanLink : this.englishLink
-      return baseUrl + this.trackingId
+      return baseUrl + this.loggingId
     }
   }
 }

@@ -97,6 +97,8 @@ export default {
       this.id = Date.now()
       this.sendInitialLog()
       window.setInterval(this.sendLog, 5000)
+
+      this.$emit('loggingIdDefined', this.id)
     },
     logEvent (type, data) {
       const eventData = {
