@@ -12,8 +12,9 @@ export default {
       id: 0,
       eventType: {
         windowResize: 20,
-        stepChange: 30,
-        stepProgressChange: 40
+        scrollPosition: 50,
+        stateChange: 60,
+        languageChange: 70
       },
       packageType: {
         init: 10,
@@ -26,24 +27,61 @@ export default {
     }
   },
   computed: {
-    ...mapState({
-      scrollStep: state =>
-        state.scrollytelling ? state.scrollytelling.step : null,
-      scrollProgress: state =>
-        state.scrollytelling ? state.scrollytelling.progress : null
-    })
+    ...mapState([
+      'projectDisclosureIsVisible',
+      'designDecisionsAreVisible',
+      'teaserIsVisible',
+      'questionnaireLinkIsVisible',
+
+      'conceptDevelopmentIsVisible',
+      'discriminationDimensionsAreVisible',
+
+      'activeDisclosureChapterId',
+      'activeArticleChapterId',
+
+      'verticalScrollPosition'
+    ]),
+    locale () {
+      return this.$i18n.locale
+    }
   },
   watch: {
-    scrollStep (newValue, oldValue) {
-      this.handleStepChange(newValue)
+    projectDisclosureIsVisible (newValue) {
+      this.handleStateChange('projectDisclosureIsVisible', newValue)
     },
-    scrollProgress (newValue, oldValue) {
-      this.handleProgressChange(newValue)
+    designDecisionsAreVisible (newValue) {
+      this.handleStateChange('designDecisionsAreVisible', newValue)
+    },
+    teaserIsVisible (newValue) {
+      this.handleStateChange('teaserIsVisible', newValue)
+    },
+    questionnaireLinkIsVisible (newValue) {
+      this.handleStateChange('questionnaireLinkIsVisible', newValue)
+    },
+    conceptDevelopmentIsVisible (newValue) {
+      this.handleStateChange('conceptDevelopmentIsVisible', newValue)
+    },
+    discriminationDimensionsAreVisible (newValue) {
+      this.handleStateChange('discriminationDimensionsAreVisible', newValue)
+    },
+    activeDisclosureChapterId (newValue) {
+      this.handleStateChange('activeDisclosureChapterId', newValue)
+    },
+    activeArticleChapterId (newValue) {
+      this.handleStateChange('activeArticleChapterId', newValue)
+    },
+    verticalScrollPosition (newValue) {
+      this.handleScrollPositionChange(newValue)
+    },
+    locale (language) {
+      this.handleLanguageChange(language)
     }
   },
   mounted () {
     if (window.location.href.includes(this.hostUrl)) {
-      window.onresize = this.handleWindowResize
+      this.$nuxt.$on('windowResized', () => {
+        this.handleWindowResize()
+      })
 
       this.initLogging()
     }
@@ -68,11 +106,14 @@ export default {
     handleWindowResize () {
       this.logEvent(this.eventType.windowResize, this.getWindowSize())
     },
-    handleStepChange (newStep) {
-      this.logEvent(this.eventType.stepChange, newStep)
+    handleScrollPositionChange (scrollPosition) {
+      this.logEvent(this.eventType.scrollPosition, scrollPosition)
     },
-    handleProgressChange (newProgress) {
-      this.logEvent(this.eventType.stepProgressChange, newProgress)
+    handleStateChange (state, value) {
+      this.logEvent(this.eventType.stateChange, { state, value })
+    },
+    handleLanguageChange (language) {
+      this.logEvent(this.eventType.languageChange, language)
     },
 
     // server communication
