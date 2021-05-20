@@ -19,8 +19,7 @@ export default {
       'introductionStartPosition',
       'intersectionalityChapterStartPosition',
       'discriminationChapterStartPosition',
-      'nextStepsChapterStartPosition',
-      'viewport'
+      'nextStepsChapterStartPosition'
     ]),
     redOpacityScaleFunction () {
       const domain = [
