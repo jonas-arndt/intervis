@@ -65,7 +65,8 @@ export default {
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
-    'nuxt-i18n'
+    'nuxt-i18n',
+    'nuxt-polyfill'
   ],
 
   i18n: {
@@ -75,6 +76,16 @@ export default {
     ],
     defaultLocale: 'en',
     langDir: '~/locales/',
+  },
+
+  // Configure polyfills:
+  polyfill: {
+    features: [
+      {
+        require: 'intersection-observer',
+        detect: () => 'IntersectionObserver' in window,
+      }
+    ]
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
