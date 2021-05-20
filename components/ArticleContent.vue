@@ -1,18 +1,11 @@
 <template>
   <div class="article-content">
-    <div class="content-with-background">
-      <div class="background">
-        <LineVisualization />
-      </div>
-      <div class="foreground">
-        <Title />
-        <Introduction ref="introduction" @hook:mounted="updateChapterDimensions('introduction')" />
-        <Intersectionality ref="chapter1" :active="activeArticleChapterId === 'chapter1'" @hook:mounted="updateChapterDimensions('chapter1')" />
-        <DiscriminationAndPrivilege ref="chapter2" :active="activeArticleChapterId === 'chapter2'" @hook:mounted="updateChapterDimensions('chapter2')" />
-        <CaseStudies ref="chapter3" :active="activeArticleChapterId === 'chapter3'" @hook:mounted="updateChapterDimensions('chapter3')" />
-        <Measures ref="chapter4" :active="activeArticleChapterId === 'chapter4'" @hook:mounted="updateChapterDimensions('chapter4')" />
-      </div>
-    </div>
+    <Title />
+    <Introduction ref="introduction" @hook:mounted="updateChapterDimensions('introduction')" />
+    <Intersectionality ref="chapter1" :active="activeArticleChapterId === 'chapter1'" @hook:mounted="updateChapterDimensions('chapter1')" />
+    <DiscriminationAndPrivilege ref="chapter2" :active="activeArticleChapterId === 'chapter2'" @hook:mounted="updateChapterDimensions('chapter2')" />
+    <CaseStudies ref="chapter3" :active="activeArticleChapterId === 'chapter3'" @hook:mounted="updateChapterDimensions('chapter3')" />
+    <Measures ref="chapter4" :active="activeArticleChapterId === 'chapter4'" @hook:mounted="updateChapterDimensions('chapter4')" />
     <NextSteps ref="chapter5" :active="activeArticleChapterId === 'chapter5'" @hook:mounted="updateChapterDimensions('chapter5')" />
     <ProjectInformation />
     <References />
@@ -118,30 +111,7 @@ export default {
 @import "../styles/_variables";
 
 .article-content {
-  background-color: $color-white;
   position: relative;
-
-  .content-with-background {
-    position: relative;
-
-    & > .background {
-      position: sticky;
-      top: 0;
-      left: 0;
-
-      width: 100%;
-      height: 100vh;
-
-      z-index: 100;
-    }
-
-    & > .foreground {
-      position: relative;
-      z-index: 200;
-      top: -100vh;
-      margin-bottom: -100vh;
-    }
-  }
 }
 
 </style>

@@ -7,6 +7,7 @@
     <FlipContainer ref="flipContainer" :flipped="projectDisclosureIsVisible">
       <!-- FlipContainer: front content start -->
       <template v-slot:front>
+        <LineVisualization class="article-background" />
         <VerticalScrollContainer>
           <SliderContainer :slided-in="designDecisionsAreVisible" class="design-decisions-container">
             <ArticleContent />
@@ -124,6 +125,7 @@ export default {
 .page {
   height: 100%;
   overflow: hidden;
+  background-color: $color-white;
 
   .intro, .overlay {
     z-index: 500;
@@ -131,6 +133,14 @@ export default {
 
   .design-decisions-container {
     height: 100%;
+  }
+
+  .article-background {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+
+    z-index: -100;
   }
 
   .google-link {
