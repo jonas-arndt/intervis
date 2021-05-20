@@ -82,7 +82,6 @@ export default {
           z-index: 10;
         }
       }
-
     }
   }
 
