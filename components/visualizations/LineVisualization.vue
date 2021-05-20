@@ -1,8 +1,8 @@
 <template>
   <div class="background-visualization">
-    <div class="grid-container" :style="gridStyles">
-      <div class="red-grid" :style="{ opacity: redOpacity }" />
-      <div class="grey-grid" :style="{ opacity: greyOpacity }" />
+    <div class="grid-container" :style="gridContainerStyles">
+      <div class="red-grid" :style="redGridStyles" />
+      <div class="grey-grid" :style="greyGridStyles" />
     </div>
   </div>
 </template>
@@ -19,9 +19,10 @@ export default {
       'introductionStartPosition',
       'intersectionalityChapterStartPosition',
       'discriminationChapterStartPosition',
-      'nextStepsChapterStartPosition'
+      'nextStepsChapterStartPosition',
+      'viewport'
     ]),
-    redOpacity () {
+    redOpacityScaleFunction () {
       const domain = [
         // 0 > 1
         this.intersectionalityChapterStartPosition - 4 * this.verticalViewportCenter,
@@ -33,9 +34,17 @@ export default {
       ]
       const range = [0, 1, 1, 0]
       return scaleLinear()
-        .domain(domain).range(range).clamp(true)(this.verticalScrollPosition)
+        .domain(domain).range(range).clamp(true)
     },
-    greyOpacity () {
+    redOpacity () {
+      return this.redOpacityScaleFunction(this.verticalScrollPosition)
+    },
+    redGridStyles () {
+      return {
+        opacity: this.redOpacity
+      }
+    },
+    greyOpacityScaleFunction () {
       const domain = [
         // 0.3 > 1
         this.introductionStartPosition - 2 * this.verticalViewportCenter,
@@ -51,31 +60,34 @@ export default {
       ]
       const range = [0.3, 1, 1, 0.3, 0.3, 0]
       return scaleLinear()
-        .domain(domain).range(range).clamp(true)(this.verticalScrollPosition)
+        .domain(domain).range(range).clamp(true)
     },
-    gridStyles () {
-      const size = scaleLinear()
-        .domain([
-          this.discriminationChapterStartPosition - 2 * this.verticalViewportCenter,
-          this.discriminationChapterStartPosition
-        ])
-        .range([200, 100])
-        .clamp(true)(this.verticalScrollPosition)
-
-      const position = scaleLinear()
-        .domain([
-          this.discriminationChapterStartPosition - 2 * this.verticalViewportCenter,
-          this.discriminationChapterStartPosition
-        ])
-        .range([-50, 0])
-        .clamp(true)(this.verticalScrollPosition)
-
-      scaleLinear()
+    greyOpacity () {
+      return this.greyOpacityScaleFunction(this.verticalScrollPosition)
+    },
+    greyGridStyles () {
       return {
-        width: size + '%',
-        height: size + '%',
-        top: position + 'vh',
-        left: position + 'vw'
+        opacity: this.greyOpacity
+      }
+    },
+    gridTransformDomain () {
+      return [
+        this.discriminationChapterStartPosition - 2 * this.verticalViewportCenter,
+        this.discriminationChapterStartPosition
+      ]
+    },
+    gridScaleFunction () {
+      return scaleLinear()
+        .domain(this.gridTransformDomain)
+        .range([1, 0.5])
+        .clamp(true)
+    },
+    gridScale () {
+      return this.gridScaleFunction(this.verticalScrollPosition)
+    },
+    gridContainerStyles () {
+      return {
+        transform: `scale(${this.gridScale})`
       }
     }
   }
@@ -94,7 +106,7 @@ export default {
   .grid-container {
     position: absolute;
     top: -50vh;
-    left: -50vh;
+    left: -50vw;
 
     width: 200%;
     height: 200%;
