@@ -64,6 +64,7 @@ export default {
     active (active) {
       if (active) {
         this.$emit('parentPositionRequested', this)
+        this.updateDimensions()
       }
     }
   },
@@ -74,7 +75,7 @@ export default {
   methods: {
     updateParentRect (parentRect) {
       const rect = this.$el.getBoundingClientRect()
-      this.top = parentRect.top > 0 ? rect.top - parentRect.top : rect.top
+      this.top = rect.top - parentRect.top
       this.left = rect.left
     },
     updateDimensions () {
