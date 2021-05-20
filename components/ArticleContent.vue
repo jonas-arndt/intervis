@@ -72,7 +72,6 @@ export default {
       this.setActiveArticleChapterId(entry.target.id)
     },
     handleCallToChapterEvent (chapterId) {
-      console.log(chapterId)
       const rect = this.$refs[chapterId].$el.getBoundingClientRect()
       this.$nuxt.$emit('scrollArticle', this.verticalScrollPosition + rect.top)
     },
