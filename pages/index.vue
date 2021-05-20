@@ -41,7 +41,7 @@
       </template>
     </PopupOverlay>
 
-    <QuickNavigation v-if="!projectDisclosureIsVisible" class="article-navigation" />
+    <QuickNavigation v-if="!projectDisclosureIsVisible" class="article-navigation" :style="quickNavigationStyles" />
     <GoogleLink v-show="questionnaireLinkIsVisible" class="google-link" />
     <Logger @logSendErrorOccured="handleLogSendError" @loggingIdDefined="handleDefinedLoggingId" />
   </div>
@@ -49,12 +49,14 @@
 
 <script>
 import { mapState, mapMutations } from 'vuex'
+import { scaleLinear } from 'd3-scale'
 
 export default {
   data () {
     return {
       jsClass: 'js',
-      questionnaireLinkTimeout: undefined
+      questionnaireLinkTimeout: undefined,
+      quickNavigationOpacity: 0
     }
   },
   computed: {
@@ -66,13 +68,49 @@ export default {
       'teaserIsVisible',
       'questionnaireLinkIsVisible',
       'verticalScrollPosition',
-      'nextStepsChapterStartPosition'
-    ])
+      'nextStepsChapterStartPosition',
+      'intersectionalityChapterStartPosition',
+      'viewport'
+    ]),
+    quickNavigationStyles () {
+      return {
+        opacity: this.quickNavigationOpacity
+      }
+    },
+    quickNavigationOpacityScaleDomain () {
+      return [
+        // 0 > 1
+        this.intersectionalityChapterStartPosition + this.viewport.height,
+        this.intersectionalityChapterStartPosition + 1.5 * this.viewport.height
+      ]
+    },
+    quickNavigationOpacityScaleDomainMin () {
+      return Math.min(...this.quickNavigationOpacityScaleDomain)
+    },
+    quickNavigationOpacityScaleDomainMax () {
+      return Math.max(...this.quickNavigationOpacityScaleDomain)
+    },
+    quickNavigationOpacityScale () {
+      return scaleLinear()
+        .domain(this.quickNavigationOpacityScaleDomain)
+        .range([0, 1])
+        .clamp(true)
+    }
   },
   watch: {
     verticalScrollPosition (scrollPosition) {
       if (!this.questionnaireLinkIsVisible && scrollPosition > this.nextStepsChapterStartPosition) {
         this.showQuestionnaireLink()
+      }
+
+      if (scrollPosition > this.quickNavigationOpacityScaleDomainMin) {
+        if (scrollPosition < this.quickNavigationOpacityScaleDomainMax) {
+          this.quickNavigationOpacity = this.quickNavigationOpacityScale(scrollPosition)
+        } else if (this.quickNavigationOpacity !== 1) {
+          this.quickNavigationOpacity = 1
+        }
+      } else if (this.quickNavigationOpacity !== 0) {
+        this.quickNavigationOpacity = 0
       }
     }
   },
