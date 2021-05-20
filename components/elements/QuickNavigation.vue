@@ -46,6 +46,12 @@ export default {
   .entry {
     margin-bottom: 0.5em;
 
+    .index {
+      position: relative;
+      display: inline-block;
+      width: 0.6em;
+    }
+
     .title {
       display: none;
     }
