@@ -1,6 +1,9 @@
 <template>
-  <div class="background-visualization" :style="{ opacity }">
-    <div class="grey-lines" :style="greyLinesStyles" />
+  <div class="background-visualization">
+    <div class="grid-container" :style="gridStyles">
+      <div class="red-grid" :style="{ opacity: redOpacity }" />
+      <div class="grey-grid" :style="{ opacity: greyOpacity }" />
+    </div>
   </div>
 </template>
 
@@ -18,33 +21,39 @@ export default {
       'discriminationChapterStartPosition',
       'nextStepsChapterStartPosition'
     ]),
-    opacity () {
+    redOpacity () {
       const domain = [
-        // first transition: 0.3 > 1
-        this.introductionStartPosition - 2 * this.verticalViewportCenter,
-        this.introductionStartPosition,
-
-        // second transition: 1 > 0
+        // 0 > 1
         this.intersectionalityChapterStartPosition - 4 * this.verticalViewportCenter,
         this.intersectionalityChapterStartPosition - 2 * this.verticalViewportCenter,
 
-        // third transition: 0 > 1
-        this.intersectionalityChapterStartPosition,
-        this.intersectionalityChapterStartPosition + 2 * this.verticalViewportCenter,
-
-        // fourth transition: 1 > 0.3
+        // 1 > 0
         this.discriminationChapterStartPosition - 2 * this.verticalViewportCenter,
-        this.discriminationChapterStartPosition,
-
-        // fifth transition: 0.3 > 0
-        this.nextStepsChapterStartPosition - 5 * this.verticalViewportCenter,
-        this.nextStepsChapterStartPosition - 3 * this.verticalViewportCenter
+        this.discriminationChapterStartPosition
       ]
-      const range = [0.3, 1, 1, 0, 0, 1, 1, 0.3, 0.3, 0]
+      const range = [0, 1, 1, 0]
       return scaleLinear()
         .domain(domain).range(range).clamp(true)(this.verticalScrollPosition)
     },
-    greyLinesStyles () {
+    greyOpacity () {
+      const domain = [
+        // 0.3 > 1
+        this.introductionStartPosition - 2 * this.verticalViewportCenter,
+        this.introductionStartPosition,
+
+        // 1 > 0.3
+        this.discriminationChapterStartPosition - 2 * this.verticalViewportCenter,
+        this.discriminationChapterStartPosition,
+
+        // 0.3 > 0
+        this.nextStepsChapterStartPosition - 5 * this.verticalViewportCenter,
+        this.nextStepsChapterStartPosition - 3 * this.verticalViewportCenter
+      ]
+      const range = [0.3, 1, 1, 0.3, 0.3, 0]
+      return scaleLinear()
+        .domain(domain).range(range).clamp(true)(this.verticalScrollPosition)
+    },
+    gridStyles () {
       const size = scaleLinear()
         .domain([
           this.discriminationChapterStartPosition - 2 * this.verticalViewportCenter,
@@ -74,22 +83,43 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "../../styles/_variables";
+
 .background-visualization {
   position: relative;
   height: 100%;
   width: 100%;
   overflow: hidden;
 
-  .grey-lines {
+  .grid-container {
     position: absolute;
     top: -50vh;
     left: -50vh;
 
     width: 200%;
     height: 200%;
+  }
 
-    background: url('~assets/lines/grey_merged.jpg');
-    background-size: cover;
+  .grey-grid, .red-grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    &.grey-grid {
+      background: url('~assets/lines/grey_merged.jpg');
+      background-size: cover;
+      z-index: 10;
+      opacity: 0.3;
+    }
+
+    &.red-grid {
+      background: url('~assets/lines/red_merged.jpg');
+      background-size: cover;
+      z-index: 20;
+      opacity: 0;
+    }
   }
 }
 </style>
