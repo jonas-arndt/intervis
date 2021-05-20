@@ -31,8 +31,6 @@ export default {
         return
       }
 
-      // update store info
-      this.$store.commit('i18n/i18nSetLocale', locale)
       // update i18n's locale instance
       this.$i18n.locale = locale
       // set new messages from new locale file
