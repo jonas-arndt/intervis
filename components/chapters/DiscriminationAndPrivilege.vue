@@ -1,6 +1,6 @@
 <template>
   <div class="chapter discrimination_and_privilege">
-    <SlideInToggleButton>
+    <SlideInToggleButton class="slide-in-toggle-button" :style="slideInButtonStyles">
       <span v-html="$t('disclosure-hint2')" />
     </SlideInToggleButton>
 
@@ -30,13 +30,53 @@
 </template>
 
 <script>
-import { mapMutations } from 'vuex'
+import { mapMutations, mapState } from 'vuex'
+import { scaleLinear } from 'd3-scale'
 
 export default {
   props: {
     active: {
       type: Boolean,
       default: false
+    }
+  },
+  data () {
+    return {
+      slideInButtonOpacity: 0
+    }
+  },
+  computed: {
+    ...mapState([
+      'verticalScrollPosition',
+      'viewport',
+      'discriminationChapterStartPosition',
+      'caseStudyChapterStartPosition'
+    ]),
+    slideInButtonStyles () {
+      return {
+        opacity: this.slideInButtonOpacity
+      }
+    },
+    slideInButtonOpacityScale () {
+      return scaleLinear()
+        .domain([
+          // 0 > 1
+          this.discriminationChapterStartPosition + this.viewport.height,
+          this.discriminationChapterStartPosition + 1.5 * this.viewport.height,
+
+          // 1 > 0
+          this.caseStudyChapterStartPosition - 1.5 * this.viewport.height,
+          this.caseStudyChapterStartPosition - this.viewport.height
+        ])
+        .range([0, 1, 1, 0])
+        .clamp(true)
+    }
+  },
+  watch: {
+    verticalScrollPosition (scrollPosition) {
+      if (scrollPosition >= this.discriminationChapterStartPosition && scrollPosition <= this.caseStudyChapterStartPosition) {
+        this.slideInButtonOpacity = this.slideInButtonOpacityScale(scrollPosition)
+      }
     }
   },
   methods: {
@@ -61,6 +101,10 @@ export default {
   h2 {
     color: $color-red;
     margin-bottom: 1rem;
+  }
+
+  .slide-in-toggle-button {
+    opacity: 0;
   }
 
   .detour {

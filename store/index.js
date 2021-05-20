@@ -21,6 +21,8 @@ export const state = () => ({
   introductionStartPosition: undefined,
   intersectionalityChapterStartPosition: undefined,
   discriminationChapterStartPosition: undefined,
+  caseStudyChapterStartPosition: undefined,
+  measuresChapterStartPosition: undefined,
   nextStepsChapterStartPosition: undefined
 })
 
@@ -85,6 +87,12 @@ export const mutations = {
   },
   setDiscriminationChapterStartPosition (state, verticalPosition) {
     state.discriminationChapterStartPosition = verticalPosition
+  },
+  setCaseStudyChapterStartPosition (state, verticalPosition) {
+    state.caseStudyChapterStartPosition = verticalPosition
+  },
+  setMeasuresChapterStartPosition (state, verticalPosition) {
+    state.measuresChapterStartPosition = verticalPosition
   },
   setNextStepsChapterStartPosition (state, verticalPosition) {
     state.nextStepsChapterStartPosition = verticalPosition

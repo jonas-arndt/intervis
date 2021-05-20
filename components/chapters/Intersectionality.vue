@@ -1,6 +1,6 @@
 <template>
   <div class="chapter what-is-intersectionality">
-    <SlideInToggleButton>
+    <SlideInToggleButton class="slide-in-toggle-button" :style="slideInButtonStyles">
       <span v-html="$t('disclosure-hint1')" />
     </SlideInToggleButton>
 
@@ -26,9 +26,49 @@
 </template>
 
 <script>
-import { mapMutations } from 'vuex'
+import { mapMutations, mapState } from 'vuex'
+import { scaleLinear } from 'd3-scale'
 
 export default {
+  data () {
+    return {
+      slideInButtonOpacity: 0
+    }
+  },
+  computed: {
+    ...mapState([
+      'verticalScrollPosition',
+      'viewport',
+      'intersectionalityChapterStartPosition',
+      'discriminationChapterStartPosition'
+    ]),
+    slideInButtonStyles () {
+      return {
+        opacity: this.slideInButtonOpacity
+      }
+    },
+    slideInButtonOpacityScale () {
+      return scaleLinear()
+        .domain([
+          // 0 > 1
+          this.intersectionalityChapterStartPosition + this.viewport.height,
+          this.intersectionalityChapterStartPosition + 1.5 * this.viewport.height,
+
+          // 1 > 0
+          this.discriminationChapterStartPosition - 1.5 * this.viewport.height,
+          this.discriminationChapterStartPosition - this.viewport.height
+        ])
+        .range([0, 1, 1, 0])
+        .clamp(true)
+    }
+  },
+  watch: {
+    verticalScrollPosition (scrollPosition) {
+      if (scrollPosition >= this.intersectionalityChapterStartPosition && scrollPosition <= this.discriminationChapterStartPosition) {
+        this.slideInButtonOpacity = this.slideInButtonOpacityScale(scrollPosition)
+      }
+    }
+  },
   methods: {
     ...mapMutations(['showConceptDevelopment'])
   }
@@ -39,6 +79,10 @@ export default {
 @import "../../styles/_variables";
 
 .chapter.what-is-intersectionality {
+  .slide-in-toggle-button {
+    opacity: 0;
+  }
+
   .narrative {
     padding-top: 50vh;
     padding-bottom: 50vh;

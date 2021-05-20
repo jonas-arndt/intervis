@@ -1,6 +1,6 @@
 <template>
   <div class="chapter case_studies_from_germany">
-    <SlideInToggleButton>
+    <SlideInToggleButton class="slide-in-toggle-button" :style="slideInButtonStyles">
       <span v-html="$t('disclosure-hint3')" />
     </SlideInToggleButton>
 
@@ -21,6 +21,53 @@
   </div>
 </template>
 
+<script>
+import { mapState } from 'vuex'
+import { scaleLinear } from 'd3-scale'
+
+export default {
+  data () {
+    return {
+      slideInButtonOpacity: 0
+    }
+  },
+  computed: {
+    ...mapState([
+      'verticalScrollPosition',
+      'viewport',
+      'caseStudyChapterStartPosition',
+      'measuresChapterStartPosition'
+    ]),
+    slideInButtonStyles () {
+      return {
+        opacity: this.slideInButtonOpacity
+      }
+    },
+    slideInButtonOpacityScale () {
+      return scaleLinear()
+        .domain([
+          // 0 > 1
+          this.caseStudyChapterStartPosition + 1.5 * this.viewport.height,
+          this.caseStudyChapterStartPosition + 2 * this.viewport.height,
+
+          // 1 > 0
+          this.measuresChapterStartPosition - 1.5 * this.viewport.height,
+          this.measuresChapterStartPosition - this.viewport.height
+        ])
+        .range([0, 1, 1, 0])
+        .clamp(true)
+    }
+  },
+  watch: {
+    verticalScrollPosition (scrollPosition) {
+      if (scrollPosition >= this.caseStudyChapterStartPosition && scrollPosition <= this.measuresChapterStartPosition) {
+        this.slideInButtonOpacity = this.slideInButtonOpacityScale(scrollPosition)
+      }
+    }
+  }
+}
+</script>
+
 <style lang="scss" scoped>
 @import "../../styles/_variables";
 
@@ -35,6 +82,10 @@
 
   p {
     margin-bottom: 3em;
+  }
+
+  .slide-in-toggle-button {
+    opacity: 0;
   }
 
   @media (min-width: $media-breakpoint-min-m) {

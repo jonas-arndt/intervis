@@ -46,6 +46,8 @@ export default {
       'setIntroductionStartPosition',
       'setIntersectionalityChapterStartPosition',
       'setDiscriminationChapterStartPosition',
+      'setCaseStudyChapterStartPosition',
+      'setMeasuresChapterStartPosition',
       'setNextStepsChapterStartPosition'
     ]),
     addIntersectionObserver () {
@@ -99,6 +101,14 @@ export default {
         }
         case 'chapter2': {
           this.setDiscriminationChapterStartPosition(y)
+          break
+        }
+        case 'chapter3': {
+          this.setCaseStudyChapterStartPosition(y)
+          break
+        }
+        case 'chapter4': {
+          this.setMeasuresChapterStartPosition(y)
           break
         }
         case 'chapter5': {
