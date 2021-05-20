@@ -7,7 +7,7 @@
     <FlipContainer ref="flipContainer" :flipped="projectDisclosureIsVisible">
       <!-- FlipContainer: front content start -->
       <template v-slot:front>
-        <LineVisualization class="article-background" />
+        <GridVisualization class="article-background" />
         <VerticalScrollContainer>
           <SliderContainer :slided-in="designDecisionsAreVisible" class="design-decisions-container">
             <ArticleContent />
