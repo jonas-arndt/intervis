@@ -10,6 +10,11 @@
     <div class="grid" :style="gridStyles">
       <div class="grid-visualization" />
     </div>
+    <div class="label" :class="labelClass">
+      <span class="person a" v-html="$t('teaser-vis2')" />
+      <span class="person b" v-html="$t('teaser-vis3')" />
+      <span class="person c" v-html="$t('teaser-vis4')" />
+    </div>
   </div>
 </template>
 
@@ -26,54 +31,129 @@ export default {
       'verticalViewportCenter'
     ]),
     staticViewHeight () {
-      // start (static) > transition > lines (static) > transition > grid (static) > outro (fade out) > blank screen
-      const totalStaticHeight = this.intersectionalityChapterStartPosition - this.introductionStartPosition - 2 * this.transitionHeight - this.outroHeight - 2 * this.verticalViewportCenter
+      // intro > start (static) > transition > lines (static) > transition > grid (static) > outro (fade out) > blank screen
+      const totalStaticHeight = this.intersectionalityChapterStartPosition - this.introductionStartPosition - 2 * this.transitionHeight - 2 * this.outroHeight - 2 * this.verticalViewportCenter
       return Math.round(totalStaticHeight / 3)
     },
     outroHeight () {
       return 2 * this.verticalViewportCenter
     },
     transitionHeight () {
-      return 2 * this.verticalViewportCenter
+      return this.verticalViewportCenter
+    },
+
+    // breakpoints
+    breakpoint0 () {
+      return this.introductionStartPosition
+    },
+    breakpoint1 () {
+      return this.breakpoint0 + this.outroHeight
+    },
+    breakpoint2 () {
+      return this.breakpoint1 + this.staticViewHeight
+    },
+    breakpoint3 () {
+      return this.breakpoint2 + this.transitionHeight
+    },
+    breakpoint4 () {
+      return this.breakpoint3 + this.staticViewHeight
+    },
+    breakpoint5 () {
+      return this.breakpoint4 + this.transitionHeight
+    },
+    breakpoint6 () {
+      return this.breakpoint5 + this.staticViewHeight
+    },
+    breakpoint7 () {
+      return this.breakpoint6 + this.outroHeight
+    },
+    breakpoint8 () {
+      return this.intersectionalityChapterStartPosition
+    },
+
+    // label
+    labelClass () {
+      let classes = []
+
+      if (this.verticalScrollPosition > this.breakpoint1 && this.verticalScrollPosition < this.breakpoint2) {
+        classes = ['active', 'person-a']
+      } else if (this.verticalScrollPosition > this.breakpoint3 && this.verticalScrollPosition < this.breakpoint4) {
+        classes = ['active', 'person-b']
+      } else if (this.verticalScrollPosition > this.breakpoint5 && this.verticalScrollPosition < this.breakpoint6) {
+        classes = ['active', 'person-c']
+      }
+
+      return classes
+    },
+
+    // line animation
+    singleLinesScale () {
+      return scaleLinear()
+        .domain([
+          this.breakpoint2,
+          this.breakpoint3
+        ])
+        .range([0, 1])
+        .clamp(true)
+    },
+    singleLinesScaleScrollPosition () {
+      return Math.max(
+        this.breakpoint2,
+        Math.min(this.verticalScrollPosition, this.breakpoint3)
+      )
     },
     singleLinesStyles () {
-      const domain = [
-        this.introductionStartPosition + this.staticViewHeight,
-        this.introductionStartPosition + this.staticViewHeight + this.transitionHeight
-      ]
-      const range = [0, 1]
-      const scale = scaleLinear()
-        .domain(domain).range(range).clamp(true)
-      const opacity = scale(this.verticalScrollPosition)
+      const opacity = this.singleLinesScale(this.singleLinesScaleScrollPosition)
 
       return {
         opacity,
         zIndex: opacity > 0.4 ? 30 : 10
       }
     },
+
+    // grid animation
+    gridScale () {
+      return scaleLinear()
+        .domain([
+          this.breakpoint4,
+          this.breakpoint5
+        ])
+        .range([0, 1])
+        .clamp(true)
+    },
+    gridScaleScrollPosition () {
+      return Math.max(
+        this.breakpoint4,
+        Math.min(this.verticalScrollPosition, this.breakpoint5)
+      )
+    },
     gridStyles () {
-      const domain = [
-        this.introductionStartPosition + 2 * this.staticViewHeight + this.transitionHeight,
-        this.introductionStartPosition + 2 * this.staticViewHeight + 2 * this.transitionHeight
-      ]
-      const range = [0, 1]
-      const scale = scaleLinear()
-        .domain(domain).range(range).clamp(true)
-      const opacity = scale(this.verticalScrollPosition)
+      const opacity = this.gridScale(this.gridScaleScrollPosition)
 
       return {
         opacity,
         zIndex: opacity > 0.4 ? 29 : 9
       }
     },
-    opacity () {
-      const domain = [
-        this.intersectionalityChapterStartPosition - 2 * this.verticalViewportCenter - this.outroHeight,
-        this.intersectionalityChapterStartPosition - 2 * this.verticalViewportCenter
-      ]
-      const range = [1, 0]
+
+    // component opacity
+    opacityScale () {
       return scaleLinear()
-        .domain(domain).range(range).clamp(true)(this.verticalScrollPosition)
+        .domain([
+          this.breakpoint6,
+          this.breakpoint7
+        ])
+        .range([1, 0])
+        .clamp(true)
+    },
+    opacityScaleScrollPosition () {
+      return Math.max(
+        this.breakpoint6,
+        Math.min(this.verticalScrollPosition, this.breakpoint7)
+      )
+    },
+    opacity () {
+      return this.opacityScale(this.opacityScaleScrollPosition)
     }
   }
 }
@@ -102,6 +182,43 @@ export default {
       left: 1rem;
       max-width: 90%;
       max-height: 90vh;
+    }
+  }
+
+  .label {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 40;
+
+    background: $color-white;
+    padding: 0.6em 0.9em 0.6em 0.9em;
+
+    border-radius: 1.1em;
+    border: none;
+
+    font-family: $font-family-signika;
+    font-weight: 700;
+
+    transition: opacity 0.3s;
+    opacity: 0;
+
+    &.active {
+      opacity: 1;
+    }
+
+    .person.a, .person.b, .person.c {
+      display: none;
+    }
+
+    &.person-a .person.a {
+      display: block;
+    }
+    &.person-b .person.b {
+      display: block;
+    }
+    &.person-c .person.c {
+      display: block;
     }
   }
 
