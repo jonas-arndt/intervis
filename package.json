@@ -18,8 +18,7 @@
     "install": "^0.13.0",
     "npm": "^7.7.0",
     "nuxt": "^2.14.6",
-    "nuxt-i18n": "^6.25.0",
-    "simplex-noise": "^2.4.0"
+    "nuxt-i18n": "^6.25.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.1.0",

@@ -2,11 +2,11 @@
   <div class="article-content">
     <Title />
     <Introduction ref="introduction" @hook:mounted="updateChapterDimensions('introduction')" />
-    <Intersectionality ref="chapter1" :active="activeArticleChapterId === 'chapter1'" @hook:mounted="updateChapterDimensions('chapter1')" />
-    <DiscriminationAndPrivilege ref="chapter2" :active="activeArticleChapterId === 'chapter2'" @hook:mounted="updateChapterDimensions('chapter2')" />
-    <CaseStudies ref="chapter3" :active="activeArticleChapterId === 'chapter3'" @hook:mounted="updateChapterDimensions('chapter3')" />
-    <Measures ref="chapter4" :active="activeArticleChapterId === 'chapter4'" @hook:mounted="updateChapterDimensions('chapter4')" />
-    <NextSteps ref="chapter5" :active="activeArticleChapterId === 'chapter5'" @hook:mounted="updateChapterDimensions('chapter5')" />
+    <Intersectionality ref="chapter1" @hook:mounted="updateChapterDimensions('chapter1')" />
+    <DiscriminationAndPrivilege ref="chapter2" @hook:mounted="updateChapterDimensions('chapter2')" />
+    <CaseStudies ref="chapter3" @hook:mounted="updateChapterDimensions('chapter3')" />
+    <Measures ref="chapter4" @hook:mounted="updateChapterDimensions('chapter4')" />
+    <NextSteps ref="chapter5" @hook:mounted="updateChapterDimensions('chapter5')" />
     <ProjectInformation />
     <References />
     <Imprint />

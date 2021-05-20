@@ -4,7 +4,7 @@
       <span v-html="$t('disclosure-hint2')" />
     </SlideInToggleButton>
 
-    <DiscriminationVisualization class="background-visualization" :active="active" />
+    <DiscriminationVisualization class="background-visualization" />
     <div class="narrative">
       <div class="step">
         <h2 class="chapter-title" v-html="$t('chapter2-title')" />
@@ -33,12 +33,6 @@
 import { mapMutations } from 'vuex'
 
 export default {
-  props: {
-    active: {
-      type: Boolean,
-      default: false
-    }
-  },
   methods: {
     ...mapMutations(['showDiscriminationDimensions'])
   }

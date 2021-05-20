@@ -14,19 +14,17 @@
     <div class="interactive-visualization chapter-4-visualization">
       <Blob
         ref="shape1"
-        :point-list="shapes['chapter4_1.svg'].points"
+        :shape="shapes['chapter4_1.svg']"
         clip-path-id="clip-path-4-1"
         class="visual top-left"
-        :active="active"
         @parentPositionRequested="handlePositionRequest"
       >
         <div class="background" />
       </Blob>
       <Blob
         ref="shape2"
-        :point-list="shapes['chapter4_2.svg'].points"
+        :shape="shapes['chapter4_2.svg']"
         clip-path-id="clip-path-4-2"
-        :active="active"
         class="visual bottom-right"
         @parentPositionRequested="handlePositionRequest"
       >
@@ -40,12 +38,6 @@
 import shapes from '~/data/shapes.json'
 
 export default {
-  props: {
-    active: {
-      type: Boolean,
-      default: false
-    }
-  },
   data () {
     return {
       shapes

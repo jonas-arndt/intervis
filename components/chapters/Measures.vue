@@ -1,6 +1,6 @@
 <template>
   <div class="chapter intersectional_measures">
-    <MeasuresVisualization class="background-visualization" :active="active" />
+    <MeasuresVisualization class="background-visualization" />
     <div class="narrative right">
       <div class="step">
         <h2 class="chapter-title" v-html="$t('chapter4-title')" />
@@ -17,17 +17,6 @@
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  props: {
-    active: {
-      type: Boolean,
-      default: false
-    }
-  }
-}
-</script>
 
 <style lang="scss">
 @import "../../styles/_variables";
