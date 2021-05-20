@@ -36,7 +36,10 @@
               clip-path-id="clip-path-2-2"
               @parentPositionRequested="handlePositionRequest"
             >
-              <div class="background" />
+              <div class="background">
+                <div class="lines" />
+                <div class="grid" />
+              </div>
             </Blob>
           </div>
         </div>
@@ -59,7 +62,10 @@
               clip-path-id="clip-path-2-3"
               @parentPositionRequested="handlePositionRequest"
             >
-              <div class="background" />
+              <div class="background">
+                <div class="lines" />
+                <div class="grid" />
+              </div>
             </Blob>
           </div>
         </div>
@@ -174,12 +180,46 @@ export default {
       background-size: cover;
     }
     &.shape-2 .background {
-      background: url('~assets/grid/chapter2_frontlayer_shape2.png');
-      background-size: cover;
+      position: absolute;
+
+      .grid, .lines {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        &.grid {
+          background: url('~assets/grid/dark_gray.png');
+          background-size: cover;
+        }
+        &.lines {
+          background: url('~assets/grid/chapter2_frontlayer_shape2.png');
+          background-size: cover;
+          z-index: 10;
+        }
+      }
     }
     &.shape-3 .background {
-      background: url('~assets/grid/chapter2_frontlayer_shape3.png');
-      background-size: cover;
+      position: absolute;
+
+      .grid, .lines {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        &.grid {
+          background: url('~assets/grid/dark_gray.png');
+          background-size: cover;
+        }
+        &.lines {
+          background: url('~assets/grid/chapter2_frontlayer_shape3.png');
+          background-size: cover;
+          z-index: 10;
+        }
+      }
     }
   }
 }
