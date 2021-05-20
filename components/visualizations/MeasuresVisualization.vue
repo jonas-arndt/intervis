@@ -17,6 +17,7 @@
         :shape="shapes['chapter4_1.svg']"
         clip-path-id="clip-path-4-1"
         class="visual top-left"
+        :active="active"
         @parentPositionRequested="handlePositionRequest"
       >
         <div class="background">
@@ -29,6 +30,7 @@
         :shape="shapes['chapter4_2.svg']"
         clip-path-id="clip-path-4-2"
         class="visual bottom-right"
+        :active="active"
         @parentPositionRequested="handlePositionRequest"
       >
         <div class="background" />
@@ -41,6 +43,12 @@
 import shapes from '~/data/shapes.json'
 
 export default {
+  props: {
+    active: {
+      type: Boolean,
+      default: false
+    }
+  },
   data () {
     return {
       shapes

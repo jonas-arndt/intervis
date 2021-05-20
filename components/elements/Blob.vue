@@ -28,6 +28,10 @@
 <script>
 export default {
   props: {
+    active: {
+      type: Boolean,
+      default: false
+    },
     shape: {
       type: Object,
       required: true,
@@ -54,6 +58,13 @@ export default {
       const widthScale = this.width / this.shape.rect.width
       const heightScale = this.height / this.shape.rect.height
       return Math.min(widthScale, heightScale)
+    }
+  },
+  watch: {
+    active (active) {
+      if (active) {
+        this.$emit('parentPositionRequested', this)
+      }
     }
   },
   mounted () {

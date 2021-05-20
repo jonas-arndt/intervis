@@ -5,9 +5,9 @@
       <Introduction ref="introduction" @hook:mounted="updateChapterDimensions('introduction')" />
     </div>
     <Intersectionality id="chapter1" ref="chapter1" class="intersecting" @hook:mounted="updateChapterDimensions('chapter1')" />
-    <DiscriminationAndPrivilege id="chapter2" ref="chapter2" class="intersecting" @hook:mounted="updateChapterDimensions('chapter2')" />
+    <DiscriminationAndPrivilege id="chapter2" ref="chapter2" class="intersecting" :active="activeArticleChapterId === 'chapter2'" @hook:mounted="updateChapterDimensions('chapter2')" />
     <CaseStudies id="chapter3" ref="chapter3" class="intersecting" @hook:mounted="updateChapterDimensions('chapter3')" />
-    <Measures id="chapter4" ref="chapter4" class="intersecting" @hook:mounted="updateChapterDimensions('chapter4')" />
+    <Measures id="chapter4" ref="chapter4" class="intersecting" :active="activeArticleChapterId === 'chapter4'" @hook:mounted="updateChapterDimensions('chapter4')" />
     <div id="chapter5" class="intersecting">
       <NextSteps ref="chapter5" @hook:mounted="updateChapterDimensions('chapter5')" />
       <ProjectInformation />
@@ -32,7 +32,7 @@ export default {
     }
   },
   computed: {
-    ...mapState(['verticalScrollPosition'])
+    ...mapState(['verticalScrollPosition', 'activeArticleChapterId'])
   },
   mounted () {
     this.$nuxt.$on('windowResized', this.handleWindowResizeEvent)
