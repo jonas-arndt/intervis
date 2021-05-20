@@ -3,7 +3,7 @@
     <ul>
       <li v-for="entry, index of entries" :key="entry.id" :class="{ 'entry': true, 'active': entry.id == activeArticleChapterId }" @click="$nuxt.$emit('scrollToChapter', entry.id)">
         <div class="inside">
-          <span v-if="entry.id != activeArticleChapterId" class="index">{{ index + 1 }}</span>
+          <span v-if="entry.id != activeArticleChapterId" class="index">{{ index }}</span>
           <span v-else class="index">&bull;</span>
           <span class="title" v-html="$t(entry.labelKey)" />
         </div>
@@ -19,6 +19,7 @@ export default {
   data () {
     return {
       entries: [
+        { id: 'introduction', labelKey: 'chapter0-bar' },
         { id: 'chapter1', labelKey: 'chapter1-bar' },
         { id: 'chapter2', labelKey: 'chapter2-bar' },
         { id: 'chapter3', labelKey: 'chapter3-bar' },
