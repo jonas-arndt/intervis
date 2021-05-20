@@ -114,12 +114,12 @@ export default {
     z-index: 10;
 
     &.single-lines {
-      background: url('~assets/lines/red_horizontals.png');
+      background: url('~assets/grid/chapter2_frontlayer_shape2.png');
       background-size: cover;
     }
 
     &.grid {
-      background: url('~assets/lines/red_merged_transparent.png');
+      background: url('~assets/grid/chapter2_frontlayer_shape3.png');
       background-size: cover;
     }
   }

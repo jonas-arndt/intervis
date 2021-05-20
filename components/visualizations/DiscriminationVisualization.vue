@@ -7,7 +7,7 @@
             <img v-if="$i18n.locale == 'de'" src="~/assets/fallback/chapter2_1_german.png">
             <img v-if="$i18n.locale == 'en'" src="~/assets/fallback/chapter2_1_english.png">
           </div>
-          <div class="interactive-visualization">
+          <div class="interactive-visualization shape-1">
             <Blob
               :shape="shapes['chapter2_1.svg']"
               clip-path-id="clip-path-2-1"
@@ -30,7 +30,7 @@
             <img v-if="$i18n.locale == 'de'" src="~/assets/fallback/chapter2_2_german.png">
             <img v-if="$i18n.locale == 'en'" src="~/assets/fallback/chapter2_2_english.png">
           </div>
-          <div class="interactive-visualization">
+          <div class="interactive-visualization shape-2">
             <Blob
               :shape="shapes['chapter2_2.svg']"
               clip-path-id="clip-path-2-2"
@@ -53,7 +53,7 @@
             <img v-if="$i18n.locale == 'de'" src="~/assets/fallback/chapter2_3_german.png">
             <img v-if="$i18n.locale == 'en'" src="~/assets/fallback/chapter2_3_english.png">
           </div>
-          <div class="interactive-visualization">
+          <div class="interactive-visualization shape-3">
             <Blob
               :shape="shapes['chapter2_3.svg']"
               clip-path-id="clip-path-2-3"
@@ -169,8 +169,16 @@ export default {
   .interactive-visualization {
     display: block;
 
-    .background {
-      background: url('~assets/lines/grey_merged.jpg');
+    &.shape-1 .background {
+      background: url('~assets/grid/dark_gray.png');
+      background-size: cover;
+    }
+    &.shape-2 .background {
+      background: url('~assets/grid/chapter2_frontlayer_shape2.png');
+      background-size: cover;
+    }
+    &.shape-3 .background {
+      background: url('~assets/grid/chapter2_frontlayer_shape3.png');
       background-size: cover;
     }
   }

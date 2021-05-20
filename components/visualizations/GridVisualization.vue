@@ -119,14 +119,14 @@ export default {
     height: 100%;
 
     &.grey-grid {
-      background: url('~assets/lines/grey_merged.jpg');
+      background: url('~assets/grid/dark_gray.png');
       background-size: cover;
       z-index: 10;
       opacity: 0.3;
     }
 
     &.red-grid {
-      background: url('~assets/lines/red_merged.jpg');
+      background: url('~assets/grid/chapter4_shape2.png');
       background-size: cover;
       z-index: 20;
       opacity: 0;

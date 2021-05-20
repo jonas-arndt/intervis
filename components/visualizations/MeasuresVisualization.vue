@@ -19,7 +19,10 @@
         class="visual top-left"
         @parentPositionRequested="handlePositionRequest"
       >
-        <div class="background" />
+        <div class="background">
+          <div class="lines" />
+          <div class="grid" />
+        </div>
       </Blob>
       <Blob
         ref="shape2"
@@ -59,9 +62,33 @@ export default {
     display: none;
   }
 
-  .visual.bottom-right, .visual.top-left {
+  .visual.top-left {
     .background {
-      background: url('~assets/lines/grey_merged.jpg');
+      position: absolute;
+      .grid, .lines {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        &.grid {
+          background: url('~assets/grid/dark_gray.png');
+          background-size: cover;
+        }
+        &.lines {
+          background: url('~assets/grid/chapter2_frontlayer_shape2.png');
+          background-size: cover;
+          z-index: 10;
+        }
+      }
+
+    }
+  }
+
+  .visual.bottom-right {
+    .background {
+      background: url('~assets/grid/chapter4_shape2.png');
       background-size: cover;
     }
   }
