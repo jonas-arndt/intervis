@@ -12,6 +12,7 @@ export const state = () => ({
 
   verticalScrollPosition: 0,
   verticalViewportCenter: 0,
+  viewport: { width: 1, height: 1 },
 
   // logging
   loggingId: '0',
@@ -56,6 +57,9 @@ export const mutations = {
   },
   setVerticalViewportCenter (state, verticalViewportCenter) {
     state.verticalViewportCenter = verticalViewportCenter
+  },
+  setViewport (state, viewport) {
+    state.viewport = viewport
   },
   setVerticalScrollPosition (state, verticalScrollPosition) {
     state.verticalScrollPosition = verticalScrollPosition

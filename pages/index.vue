@@ -78,6 +78,7 @@ export default {
   },
   mounted () {
     this.addJsClass()
+    this.updateViewport()
     window.addEventListener('resize', this.handleResize)
 
     this.questionnaireLinkTimeout = setTimeout(this.showQuestionnaireLink, 300000) // 5 min => 5 * 60 * 1000
@@ -91,13 +92,20 @@ export default {
       'hideConceptDevelopment',
       'hideDiscriminationDimensions',
       'setQuestionnaireLinkIsVisible',
-      'setLoggingId'
+      'setLoggingId',
+      'setViewport'
     ]),
     addJsClass () {
       this.$refs.page.classList.add(this.jsClass)
     },
     handleResize () {
+      this.updateViewport()
       this.$nuxt.$emit('windowResized')
+    },
+    updateViewport () {
+      const width = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+      const height = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
+      this.setViewport({ width, height })
     },
     handleDefinedLoggingId (loggingId) {
       this.setLoggingId(loggingId)
