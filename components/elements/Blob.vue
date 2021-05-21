@@ -14,7 +14,7 @@
     <svg :viewBox="viewBox">
       <defs>
         <clipPath :id="clipPathId">
-          <path :transform="`translate(${translateX} ${translateY}) scale(${clipPathScale})`" :d="shape.path" />
+          <path :transform="`translate(${scaleTranslateX} ${scaleTranslateY + verticalAlignTranslateY}) scale(${clipPathScale})`" :d="shape.path" />
         </clipPath>
       </defs>
     </svg>
@@ -40,6 +40,10 @@ export default {
     scale: {
       type: Number,
       default: 1
+    },
+    verticalAlign: {
+      type: String,
+      default: () => 'center'
     }
   },
   data () {
@@ -71,11 +75,29 @@ export default {
         clipPath: `url("#${this.clipPathId}")`
       }
     },
-    translateX () {
+    shapeHeight () {
+      return this.shape.rect.height * this.clipPathScale
+    },
+    scaleTranslateX () {
       return this.active ? (1 - this.scale) * (this.width / 2) : 0
     },
-    translateY () {
-      return this.active ? (1 - this.scale) * (this.height / 2) : 0
+    scaleTranslateY () {
+      return this.active ? (1 - this.scale) * (this.shapeHeight / 2) : 0
+    },
+    verticalAlignTranslateY () {
+      switch (this.verticalAlign) {
+        case 'top': {
+          return 0
+        }
+        case 'center': {
+          return (this.height - this.shapeHeight) / 2
+        }
+        case 'bottom': {
+          return this.height - this.shapeHeight
+        }
+      }
+
+      return 0
     },
     clipPathScale () {
       return this.active ? this.shapeScale * this.scale : 1
