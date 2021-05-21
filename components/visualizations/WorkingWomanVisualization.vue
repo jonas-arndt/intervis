@@ -1,29 +1,15 @@
 <template>
   <div class="working-woman-visualization">
-    <div class="step-1">
-      <div class="inside">
-        <div class="visualization-1">
-          <img src="~/assets/fallback/chapter3_example1_sandrabauer.png">
-          <div class="legend">
-            <span class="digit" v-html="$t('chapter3-exampl1-vis1')" />
-            <span class="details" v-html="$t('chapter3-exampl1-vis2')" />
-          </div>
-        </div>
-        <div class="visualization-2">
-          <img src="~/assets/fallback/chapter3_example1_meyremoeztuerk.png">
-          <div class="legend">
-            <span class="digit" v-html="$t('chapter3-exampl1-vis3')" />
-            <span class="details" v-html="$t('chapter3-exampl1-vis4')" />
-          </div>
+    <div class="fallback">
+      <div class="step-1">
+        <div class="inside">
+          <Chapter3Case1Step1Visualization />
         </div>
       </div>
-    </div>
-    <div class="step-2">
-      <div class="shape">
-        <img src="~/assets/fallback/chapter3_example1_quote.png">
-      </div>
-      <div class="quote">
-        <p class="text" v-html="$t('chapter3-example1-quote')" />
+      <div class="step-2">
+        <div class="inside">
+          <Chapter3Case1Step2Visualization />
+        </div>
       </div>
     </div>
   </div>
@@ -32,122 +18,30 @@
 <style scoped lang="scss">
 @import "../../styles/_variables";
 
-.working-woman-visualization {
-  .step-1 {
+.working-woman-visualization .fallback {
+  .step-1, .step-2 {
     position: absolute;
-    top: 0;
-    height: 30%;
-    min-height: 100vh;
     width: 100%;
+    min-height: 100vh;
 
-    .inside {
+    & > .inside {
       position: sticky;
       top: 0;
       height: 100vh;
       width: 100%;
     }
 
-    .visualization-1 {
-      position: relative;
-      width: 85%;
+    // step specific styles
 
-      left: 5%;
-      top: 7%;
-      padding-bottom: 2rem;
-
-      img {
-        position: relative;
-        width: width-from-img-width(1648);
-      }
-    }
-
-    .visualization-2 {
-      position: absolute;
-      width: 85%;
-
-      left: 5%;
-      bottom: 17%;
-
-      img {
-        position: relative;
-        width: width-from-img-width(685);
-        left: 30%;
-      }
-
-      .legend {
-        margin-bottom: 1rem;
-      }
-    }
-  }
-
-  .step-2 {
-    position: absolute;
-    top: 40%;
-    height: 60%;
-    min-height: 100vh;
-    width: 100%;
-
-    .shape {
-      position: sticky;
+    &.step-1 {
       top: 0;
-      height: 100vh;
-      width: 100%;
-      z-index: -1;
-      opacity: 0.5;
-
-      img {
-        position: absolute;
-        width: 80%;
-        bottom: 10%;
-      }
+      height: 30%;
     }
 
-    .quote {
-      position: sticky;
-      display: block;
-      height: 100vh;
-      top: 0;
-      margin: 0;
-      margin-top: -100vh;
-
-      font-size: $font-size-subtitle;
-      font-weight: bold;
-      font-style: italic;
-
-      .text {
-        display: table-cell;
-        height: 100vh;
-        vertical-align: middle;
-      }
+    &.step-2 {
+      top: 40%;
+      height: 60%;
     }
   }
-
-  .legend {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-
-    span {
-      display: block;
-    }
-
-    .digit {
-      font-size: $font-size-title;
-      font-style: italic;
-      font-weight: 600;
-      margin-bottom: 1rem;
-    }
-
-    .details {
-      font-family: $font-family-signika;
-      font-size: $font-size-small;
-    }
-  }
-
-  &.interactive {
-    height: 100vh;
-  }
-
-  @media (min-width: $media-breakpoint-min-m) {}
 }
 </style>
