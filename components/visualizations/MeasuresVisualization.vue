@@ -56,7 +56,7 @@ export default {
   },
   methods: {
     handlePositionRequest (requestingComponent) {
-      requestingComponent.updateParentRect(this.$el.getBoundingClientRect())
+      requestingComponent.updateParentRect(this.$refs.interactiveVisualization.getBoundingClientRect())
     }
   }
 }
