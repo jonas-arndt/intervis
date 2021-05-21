@@ -5,9 +5,9 @@
       <Introduction ref="introduction" @hook:mounted="updateChapterDimensions('introduction')" />
     </div>
     <Intersectionality id="chapter1" ref="chapter1" class="intersecting" @hook:mounted="updateChapterDimensions('chapter1')" />
-    <DiscriminationAndPrivilege id="chapter2" ref="chapter2" class="intersecting" :active="activeArticleChapterId === 'chapter2'" @hook:mounted="updateChapterDimensions('chapter2')" />
+    <DiscriminationAndPrivilege id="chapter2" ref="chapter2" class="intersecting" :active="'chapter2' in chapterActiveState && chapterActiveState.chapter2" @hook:mounted="updateChapterDimensions('chapter2')" />
     <CaseStudies id="chapter3" ref="chapter3" class="intersecting" @hook:mounted="updateChapterDimensions('chapter3')" />
-    <Measures id="chapter4" ref="chapter4" class="intersecting" :active="activeArticleChapterId === 'chapter4'" @hook:mounted="updateChapterDimensions('chapter4')" />
+    <Measures id="chapter4" ref="chapter4" class="intersecting" :active="'chapter4' in chapterActiveState && chapterActiveState.chapter4" @hook:mounted="updateChapterDimensions('chapter4')" />
     <div id="chapter5" class="intersecting">
       <NextSteps ref="chapter5" @hook:mounted="updateChapterDimensions('chapter5')" />
       <ProjectInformation />
@@ -28,7 +28,8 @@ export default {
         rootMargin: '0px',
         threshold: 0
       },
-      observer: undefined
+      observer: undefined,
+      chapterActiveState: {}
     }
   },
   computed: {
@@ -66,12 +67,18 @@ export default {
       const self = this
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
-          self.handleElementIntersection(entry)
+          self.handleElementEnter(entry)
+        } else {
+          self.handleElementLeave(entry)
         }
       })
     },
-    handleElementIntersection (entry) {
+    handleElementEnter (entry) {
       this.setActiveArticleChapterId(entry.target.id)
+      this.$set(this.chapterActiveState, entry.target.id, true)
+    },
+    handleElementLeave (entry) {
+      this.$set(this.chapterActiveState, entry.target.id, false)
     },
     handleCallToChapterEvent (chapterId) {
       const rect = this.$refs[chapterId].$el.getBoundingClientRect()
