@@ -5,10 +5,9 @@
       :shape="shapes['chapter4_1.svg']"
       clip-path-id="clip-path-4-1"
       class="visual top-left"
-      :active="active"
+      :rect="shape1Rect"
       :style="{ opacity: blobFadeIn }"
       :scale="blobFadeIn"
-      @parentPositionRequested="handlePositionRequest"
     >
       <div class="background">
         <div class="lines" :style="{ opacity: linesFadeOut }" />
@@ -24,10 +23,9 @@
       :shape="shapes['chapter4_2.svg']"
       clip-path-id="clip-path-4-2"
       class="visual bottom-right"
-      :active="active"
+      :rect="shape2Rect"
       :style="{ opacity: blobFadeIn }"
       :scale="blobFadeIn"
-      @parentPositionRequested="handlePositionRequest"
     >
       <div class="background">
         <div class="grid" :style="{ opacity: gridFadeOut }" />
@@ -66,7 +64,9 @@ export default {
   },
   data () {
     return {
-      shapes
+      shapes,
+      shape1Rect: { top: 0, left: 0, width: 0, height: 0 },
+      shape2Rect: { top: 0, left: 0, width: 0, height: 0 }
     }
   },
   computed: {
@@ -221,9 +221,47 @@ export default {
       return { ...styles, ...transformations }
     }
   },
+  watch: {
+    active (active) {
+      if (active) {
+        this.updateShapeRects()
+      }
+    }
+  },
+  mounted () {
+    this.$nuxt.$on('windowResized', this.handleWindowResize)
+  },
   methods: {
-    handlePositionRequest (requestingComponent) {
-      requestingComponent.updateParentRect(this.$el.getBoundingClientRect())
+    handleWindowResize () {
+      if (this.active) {
+        this.updateShapeRects()
+      }
+    },
+    updateShapeRects () {
+      const parentRect = this.$el.getBoundingClientRect()
+      this.updateShapeRect(parentRect, 'shape1Rect', 'shape1')
+      this.updateShapeRect(parentRect, 'shape2Rect', 'shape2')
+    },
+    updateShapeRect (parentRect, rectKey, shapeKey) {
+      const childRect = this.$refs[shapeKey].$el.getBoundingClientRect()
+      const rectData = {
+        top: childRect.top - parentRect.top,
+        left: childRect.left,
+        width: childRect.width,
+        height: childRect.height
+      }
+
+      let valueChanged = false
+      for (const key in this[rectKey]) {
+        if (this[rectKey][key] !== rectData[key]) {
+          valueChanged = true
+          continue
+        }
+      }
+
+      if (valueChanged) {
+        this[rectKey] = rectData
+      }
     }
   }
 }

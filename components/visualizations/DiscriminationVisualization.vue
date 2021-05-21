@@ -9,10 +9,10 @@
           </div>
           <div class="interactive-visualization shape-1">
             <Blob
+              ref="shape1"
               :shape="shapes['chapter2_1.svg']"
+              :rect="shape1Rect"
               clip-path-id="clip-path-2-1"
-              :active="active"
-              @parentPositionRequested="handlePositionRequest"
             >
               <div class="background" />
             </Blob>
@@ -33,10 +33,10 @@
           </div>
           <div class="interactive-visualization shape-2">
             <Blob
+              ref="shape2"
               :shape="shapes['chapter2_2.svg']"
+              :rect="shape2Rect"
               clip-path-id="clip-path-2-2"
-              :active="active"
-              @parentPositionRequested="handlePositionRequest"
             >
               <div class="background">
                 <div class="lines" />
@@ -60,10 +60,10 @@
           </div>
           <div class="interactive-visualization shape-3">
             <Blob
+              ref="shape3"
               :shape="shapes['chapter2_3.svg']"
+              :rect="shape3Rect"
               clip-path-id="clip-path-2-3"
-              :active="active"
-              @parentPositionRequested="handlePositionRequest"
             >
               <div class="background">
                 <div class="lines" />
@@ -94,12 +94,54 @@ export default {
   },
   data () {
     return {
-      shapes
+      shapes,
+      shape1Rect: { top: 0, left: 0, width: 0, height: 0 },
+      shape2Rect: { top: 0, left: 0, width: 0, height: 0 },
+      shape3Rect: { top: 0, left: 0, width: 0, height: 0 }
     }
   },
+  watch: {
+    active (active) {
+      if (active) {
+        this.updateShapeRects()
+      }
+    }
+  },
+  mounted () {
+    this.$nuxt.$on('windowResized', this.handleWindowResize)
+  },
   methods: {
-    handlePositionRequest (requestingComponent) {
-      requestingComponent.updateParentRect(this.$el.getBoundingClientRect())
+    handleWindowResize () {
+      if (this.active) {
+        this.updateShapeRects()
+      }
+    },
+    updateShapeRects () {
+      const parentRect = this.$el.getBoundingClientRect()
+      this.updateShapeRect(parentRect, 'shape1Rect', 'shape1')
+      this.updateShapeRect(parentRect, 'shape2Rect', 'shape2')
+      this.updateShapeRect(parentRect, 'shape3Rect', 'shape3')
+    },
+    updateShapeRect (parentRect, rectKey, shapeKey) {
+      const childRect = this.$refs[shapeKey].$el.getBoundingClientRect()
+      const rectData = {
+        top: childRect.top - parentRect.top,
+        left: childRect.left,
+        width: childRect.width,
+        height: childRect.height
+      }
+
+      let valueChanged = false
+      for (const key in this[rectKey]) {
+        if (this[rectKey][key] !== rectData[key]) {
+          valueChanged = true
+          continue
+        }
+      }
+
+      if (valueChanged) {
+        this[rectKey] = rectData
+      }
     }
   }
 }

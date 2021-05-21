@@ -14,7 +14,7 @@
     <svg :viewBox="viewBox">
       <defs>
         <clipPath :id="clipPathId">
-          <path :transform="`translate(${scaleTranslateX} ${scaleTranslateY + verticalAlignTranslateY}) scale(${clipPathScale})`" :d="shape.path" />
+          <path :transform="`translate(${clipPathTranslateX} ${clipPathTranslateY}) scale(${clipPathScale})`" :d="shape.path" />
         </clipPath>
       </defs>
     </svg>
@@ -24,10 +24,6 @@
 <script>
 export default {
   props: {
-    active: {
-      type: Boolean,
-      default: false
-    },
     shape: {
       type: Object,
       required: true,
@@ -41,33 +37,42 @@ export default {
       type: Number,
       default: 1
     },
+    rect: {
+      type: Object,
+      required: true,
+      default: () => { return { top: 0, left: 0, width: 0, height: 0 } }
+    },
     verticalAlign: {
       type: String,
       default: () => 'center'
     }
   },
-  data () {
-    return {
-      width: 0,
-      height: 0,
-      top: 0,
-      left: 0
-    }
-  },
   computed: {
     viewBox () {
-      return `0 0 ${this.width} ${this.height}`
+      return `0 0 ${this.rect.width} ${this.rect.height}`
     },
-    shapeScale () {
+    clipPathTranslateX () {
+      const translateX = this.scaleBasedTranslateX
+      return Number.isNaN(translateX) ? 0 : translateX
+    },
+    clipPathTranslateY () {
+      const translateY = this.scaleBasedTranslateY + this.verticalAlignBasedTranslateY
+      return Number.isNaN(translateY) ? 0 : translateY
+    },
+    clipPathScale () {
+      const scale = this.containBasedScale * this.scale
+      return Number.isNaN(scale) ? 1 : scale
+    },
+    containBasedScale () {
       return Math.min(
-        this.width / this.shape.rect.width,
-        this.height / this.shape.rect.height
+        this.rect.width / this.shape.rect.width,
+        this.rect.height / this.shape.rect.height
       )
     },
     backgroundWrapperStyles () {
       return {
-        top: -this.top + 'px',
-        left: -this.left + 'px'
+        top: -this.rect.top + 'px',
+        left: -this.rect.left + 'px'
       }
     },
     insideStyles () {
@@ -78,53 +83,26 @@ export default {
     shapeHeight () {
       return this.shape.rect.height * this.clipPathScale
     },
-    scaleTranslateX () {
-      return this.active ? (1 - this.scale) * (this.width / 2) : 0
+    scaleBasedTranslateX () {
+      return (1 - this.scale) * (this.rect.width / 2)
     },
-    scaleTranslateY () {
-      return this.active ? (1 - this.scale) * (this.shapeHeight / 2) : 0
+    scaleBasedTranslateY () {
+      return (1 - this.scale) * (this.shapeHeight / 2)
     },
-    verticalAlignTranslateY () {
+    verticalAlignBasedTranslateY () {
       switch (this.verticalAlign) {
         case 'top': {
           return 0
         }
         case 'center': {
-          return (this.height - this.shapeHeight) / 2
+          return (this.rect.height - this.shapeHeight) / 2
         }
         case 'bottom': {
-          return this.height - this.shapeHeight
+          return this.rect.height - this.shapeHeight
         }
       }
 
       return 0
-    },
-    clipPathScale () {
-      return this.active ? this.shapeScale * this.scale : 1
-    }
-  },
-  watch: {
-    active (active) {
-      if (active) {
-        this.$emit('parentPositionRequested', this)
-        this.updateDimensions()
-      }
-    }
-  },
-  mounted () {
-    this.updateDimensions()
-    this.$emit('parentPositionRequested', this)
-  },
-  methods: {
-    updateParentRect (parentRect) {
-      const rect = this.$el.getBoundingClientRect()
-      this.top = rect.top - parentRect.top
-      this.left = rect.left
-    },
-    updateDimensions () {
-      const boundingRect = this.$refs.inside.getBoundingClientRect()
-      this.width = boundingRect.width
-      this.height = boundingRect.height
     }
   }
 }
