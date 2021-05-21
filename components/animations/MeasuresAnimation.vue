@@ -70,7 +70,7 @@ export default {
     }
   },
   computed: {
-    ...mapState(['verticalScrollPosition']),
+    ...mapState(['verticalScrollPosition', 'viewport']),
     trimmedScrollPosition () {
       if (this.verticalScrollPosition <= this.breakpoints[0]) {
         return this.breakpoints[0]
@@ -164,7 +164,7 @@ export default {
     shape1TextStyles () {
       return { opacity: this.textOpacity, ...this.shape1TextPositionStyles }
     },
-    shape2TextPositionStyles () {
+    shape2TextPositionRawStyles () {
       const styles = {}
 
       if (this.active) {
@@ -177,19 +177,53 @@ export default {
         const top = rect.top - parentRect.top
         const left = rect.left - parentRect.left
 
-        styles.left = (left + horizontalPadding * rect.width) + 'px'
-        styles.width = ((1 - 2 * horizontalPadding) * rect.width) + 'px'
-        styles.top = (top + verticalPadding * rect.height) + 'px'
-        styles.height = ((1 - 2 * verticalPadding) * rect.height) + 'px'
+        styles.left = (left + horizontalPadding * rect.width)
+        styles.width = ((1 - 2 * horizontalPadding) * rect.width)
+        styles.top = (top + verticalPadding * rect.height)
+        styles.height = ((1 - 2 * verticalPadding) * rect.height)
       }
 
+      return styles
+    },
+    shape2TextPositionStyles () {
+      const styles = {}
+      for (const [key, value] of Object.entries(this.shape2TextPositionRawStyles)) {
+        styles[key] = value + 'px'
+      }
       return styles
     },
     shape2TextStyles () {
       return { opacity: this.gridFadeOut, ...this.shape2TextPositionStyles }
     },
     shape2UnclippedTextStyles () {
-      return { opacity: 1 - this.gridFadeOut, ...this.shape2TextPositionStyles }
+      const styles = { opacity: 1 - this.gridFadeOut, ...this.shape2TextPositionStyles }
+
+      const transformations = {}
+      if ('top' in styles) {
+        const rect = this.shape2TextPositionRawStyles
+        const domain = [this.breakpoints[4], this.breakpoints[5]]
+
+        // scale
+        const ratioX = this.viewport.width / rect.width
+        const ratioY = this.viewport.height / rect.height
+        const ratio = Math.min(ratioX, ratioY)
+
+        const scale = scaleLinear()
+          .domain(domain).range([1, ratio]).clamp(true)(this.trimmedScrollPosition)
+
+        // translate
+        const widthOffset = (this.viewport.width - ratio * rect.width) / 2
+        const translateX = scaleLinear()
+          .domain(domain).range([0, rect.left - widthOffset]).clamp(true)(this.trimmedScrollPosition)
+
+        const heightOffset = (this.viewport.height - ratio * rect.height) / 2
+        const translateY = scaleLinear()
+          .domain(domain).range([0, rect.top - heightOffset]).clamp(true)(this.trimmedScrollPosition)
+
+        transformations.transform = `translate(-${translateX}px, -${translateY}px) scale(${scale})`
+      }
+      console.log({ ...styles, ...transformations })
+      return { ...styles, ...transformations }
     }
   },
   methods: {
@@ -266,6 +300,7 @@ export default {
 
     .unclipped-text {
       position: absolute;
+      transform-origin: left top;
     }
   }
 }
