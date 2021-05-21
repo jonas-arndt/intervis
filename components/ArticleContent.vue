@@ -29,11 +29,14 @@ export default {
         threshold: 0
       },
       observer: undefined,
-      chapterActiveState: {}
+      chapterActiveState: {},
+      scrollArticleChapterOffsets: {
+        chapter4: 1.5
+      }
     }
   },
   computed: {
-    ...mapState(['verticalScrollPosition', 'activeArticleChapterId'])
+    ...mapState(['verticalScrollPosition', 'activeArticleChapterId', 'viewport'])
   },
   mounted () {
     this.$nuxt.$on('windowResized', this.handleWindowResizeEvent)
@@ -82,7 +85,10 @@ export default {
     },
     handleCallToChapterEvent (chapterId) {
       const rect = this.$refs[chapterId].$el.getBoundingClientRect()
-      this.$nuxt.$emit('scrollArticle', this.verticalScrollPosition + rect.top)
+      const chapterOffset = chapterId in this.scrollArticleChapterOffsets
+        ? this.scrollArticleChapterOffsets[chapterId] * this.viewport.height
+        : 0
+      this.$nuxt.$emit('scrollArticle', this.verticalScrollPosition + rect.top + chapterOffset)
     },
     handleWindowResizeEvent () {
       this.updateAllChapterDimensions()

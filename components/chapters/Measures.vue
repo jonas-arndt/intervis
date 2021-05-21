@@ -33,6 +33,8 @@ export default {
 @import "../../styles/_variables";
 
 .chapter.intersectional_measures {
+  margin-top: -100vh;
+
   .narrative {
     position: relative;
     padding-bottom: 100vh;
@@ -43,13 +45,13 @@ export default {
       position: absolute;
 
       &.step-1 {
-        top: 150vh;
+        top: 125vh;
       }
       &.step-2 {
-        top: 250vh;
+        top: 225vh;
       }
       &.step-3 {
-        top: 350vh;
+        top: 325vh;
       }
     }
 
