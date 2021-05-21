@@ -12,6 +12,10 @@
     >
       <div class="background">
         <div class="lines" :style="{ opacity: linesFadeOut }" />
+        <div class="text" :style="shape1TextStyles">
+          <img v-if="$i18n.locale == 'en'" src="~/assets/teaser/teaser-text-en.svg" alt="Access, Inclusion, Participation, Acknowledgment">
+          <img v-if="$i18n.locale == 'de'" src="~/assets/teaser/teaser-text-de.svg" alt="Zugang, Integration, Teilhabe, Anerkennung">
+        </div>
         <div class="grid" :style="{ opacity: gridFadeOut }" />
       </div>
     </Blob>
@@ -25,7 +29,20 @@
       :scale="blobFadeIn"
       @parentPositionRequested="handlePositionRequest"
     >
-      <div class="background" :style="{ opacity: gridFadeOut }" />
+      <div class="background">
+        <div class="grid" :style="{ opacity: gridFadeOut }" />
+        <div class="text" :style="shape2TextStyles">
+          <img v-if="$i18n.locale == 'en'" src="~/assets/teaser/teaser-text-en.svg" alt="Access, Inclusion, Participation, Acknowledgment">
+          <img v-if="$i18n.locale == 'de'" src="~/assets/teaser/teaser-text-de.svg" alt="Zugang, Integration, Teilhabe, Anerkennung">
+        </div>
+      </div>
+
+      <template v-slot:unclipped>
+        <div class="unclipped-text" :style="shape2UnclippedTextStyles">
+          <img v-if="$i18n.locale == 'en'" src="~/assets/teaser/teaser-text-en.svg" alt="Access, Inclusion, Participation, Acknowledgment">
+          <img v-if="$i18n.locale == 'de'" src="~/assets/teaser/teaser-text-de.svg" alt="Zugang, Integration, Teilhabe, Anerkennung">
+        </div>
+      </template>
     </Blob>
   </div>
 </template>
@@ -106,6 +123,73 @@ export default {
     },
     gridFadeOut () {
       return this.gridFadeOutScale(this.trimmedScrollPosition)
+    },
+
+    // text animation
+    textScale () {
+      return scaleLinear()
+        .domain([
+          this.breakpoints[4],
+          this.breakpoints[5]
+        ])
+        .range([1, 0])
+        .clamp(true)
+    },
+    textOpacity () {
+      return this.textScale(this.trimmedScrollPosition)
+    },
+
+    // text styles
+    shape1TextPositionStyles () {
+      const styles = {}
+
+      if (this.active) {
+        const rect = this.$refs.shape1.$el.getBoundingClientRect()
+        const parentRect = this.$el.getBoundingClientRect()
+
+        const verticalPadding = 0.25
+        const horizontalPadding = 0.1
+
+        const top = rect.top - parentRect.top
+        const left = rect.left - parentRect.left
+
+        styles.left = (left + horizontalPadding * rect.width) + 'px'
+        styles.width = ((1 - 2 * horizontalPadding) * rect.width) + 'px'
+        styles.top = (top + verticalPadding * rect.height) + 'px'
+        styles.height = ((1 - 2 * verticalPadding) * rect.height) + 'px'
+      }
+
+      return styles
+    },
+    shape1TextStyles () {
+      return { opacity: this.textOpacity, ...this.shape1TextPositionStyles }
+    },
+    shape2TextPositionStyles () {
+      const styles = {}
+
+      if (this.active) {
+        const rect = this.$refs.shape2.$el.getBoundingClientRect()
+        const parentRect = this.$el.getBoundingClientRect()
+
+        const verticalPadding = 0.25
+        const horizontalPadding = 0.1
+
+        const top = rect.top - parentRect.top
+        const left = rect.left - parentRect.left
+
+        styles.left = (left + horizontalPadding * rect.width) + 'px'
+        styles.width = ((1 - 2 * horizontalPadding) * rect.width) + 'px'
+        styles.top = (top + verticalPadding * rect.height) + 'px'
+        styles.height = ((1 - 2 * verticalPadding) * rect.height) + 'px'
+      }
+
+      return styles
+    },
+    shape2TextStyles () {
+      return { opacity: this.gridFadeOut, ...this.shape2TextPositionStyles }
+    },
+    shape2UnclippedTextStyles () {
+      return { opacity: 1 - this.gridFadeOut, ...this.shape2TextPositionStyles }
     }
   },
   methods: {
@@ -120,6 +204,10 @@ export default {
   @import "../../styles/_variables";
 
   .measures-animation {
+    .visual {
+      overflow: visible;
+    }
+
     .visual.top-left {
       .background {
         position: absolute;
@@ -141,14 +229,44 @@ export default {
             z-index: 10;
         }
       }
+      .text {
+        position: absolute;
+        z-index: 5;
+      }
     }
   }
 
   .visual.bottom-right {
+    img {
+      bottom: auto;
+      right: auto;
+    }
+
     .background {
+      position: absolute;
+
+      .grid {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
         background: url('~assets/grid/chapter4_shape2.png');
         background-size: cover;
+
+        z-index: 20;
+      }
+
+      .text {
+        position: absolute;
+        z-index: 10;
       }
     }
+
+    .unclipped-text {
+      position: absolute;
+    }
   }
+}
 </style>

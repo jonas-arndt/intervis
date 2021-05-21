@@ -7,14 +7,17 @@
       >
         <slot />
       </div>
-      <svg :viewBox="viewBox">
-        <defs>
-          <clipPath :id="clipPathId">
-            <path :transform="`translate(${translateX} ${translateY}) scale(${shapeScale * this.scale})`" :d="shape.path" />
-          </clipPath>
-        </defs>
-      </svg>
     </div>
+    <div class="outside" :style="backgroundWrapperStyles">
+      <slot name="unclipped" />
+    </div>
+    <svg :viewBox="viewBox">
+      <defs>
+        <clipPath :id="clipPathId">
+          <path :transform="`translate(${translateX} ${translateY}) scale(${shapeScale * this.scale})`" :d="shape.path" />
+        </clipPath>
+      </defs>
+    </svg>
   </div>
 </template>
 
@@ -118,6 +121,14 @@ export default {
       width: 100vw;
       height: 100vh;
     }
+  }
+
+  .outside {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+
+    z-index: -10;
   }
 }
 </style>

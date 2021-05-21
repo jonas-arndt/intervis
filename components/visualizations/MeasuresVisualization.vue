@@ -51,8 +51,11 @@ export default {
     outroHeight () {
       return 1.5 * this.viewport.height
     },
+    suffixHeight () {
+      return this.viewport.height
+    },
     animationBreakpoints () {
-      const fixedElementsHeight = this.prefixHeight + this.introHeight + this.outroHeight
+      const fixedElementsHeight = this.prefixHeight + this.introHeight + this.outroHeight + this.suffixHeight
       const transitionStepHeight = (this.totalChapterHeight - fixedElementsHeight) / 2
 
       const chapterStart = this.measuresChapterStartPosition
@@ -61,6 +64,7 @@ export default {
       const firstStepEnd = introEnd + transitionStepHeight
       const secondStepEnd = firstStepEnd + transitionStepHeight
       const outroEnd = secondStepEnd + this.outroHeight
+      const suffixEnd = outroEnd + this.suffixHeight
 
       return [
         chapterStart,
@@ -68,7 +72,8 @@ export default {
         introEnd,
         firstStepEnd,
         secondStepEnd,
-        outroEnd
+        outroEnd,
+        suffixEnd
       ]
     }
   }
