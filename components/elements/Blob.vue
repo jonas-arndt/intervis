@@ -14,7 +14,7 @@
     <svg :viewBox="viewBox">
       <defs>
         <clipPath :id="clipPathId">
-          <path :transform="`translate(${translateX} ${translateY}) scale(${shapeScale * this.scale})`" :d="shape.path" />
+          <path :transform="`translate(${translateX} ${translateY}) scale(${clipPathScale})`" :d="shape.path" />
         </clipPath>
       </defs>
     </svg>
@@ -55,9 +55,10 @@ export default {
       return `0 0 ${this.width} ${this.height}`
     },
     shapeScale () {
-      const widthScale = this.width / this.shape.rect.width
-      const heightScale = this.height / this.shape.rect.height
-      return Math.min(widthScale, heightScale)
+      return Math.min(
+        this.width / this.shape.rect.width,
+        this.height / this.shape.rect.height
+      )
     },
     backgroundWrapperStyles () {
       return {
@@ -71,10 +72,13 @@ export default {
       }
     },
     translateX () {
-      return (1 - this.scale) * (this.width / 2)
+      return this.active ? (1 - this.scale) * (this.width / 2) : 0
     },
     translateY () {
-      return (1 - this.scale) * (this.height / 2)
+      return this.active ? (1 - this.scale) * (this.height / 2) : 0
+    },
+    clipPathScale () {
+      return this.active ? this.shapeScale * this.scale : 1
     }
   },
   watch: {
