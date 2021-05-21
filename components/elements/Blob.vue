@@ -1,20 +1,13 @@
 <template>
   <div class="blob">
-    <div ref="inside" class="inside">
-      <svg v-if="width > 0 && height > 0" :viewBox="viewBox">
-        <foreignObject
-          :width="width"
-          :height="height"
-          :clip-path="`url(#${clipPathId})`"
-          requiredExtensions="http://www.w3.org/1999/xhtml"
-        >
-          <div
-            :style="{ top: -top+'px', left: -left+'px' }"
-            class="shape-background-wrapper"
-          >
-            <slot />
-          </div>
-        </foreignObject>
+    <div ref="inside" class="inside" :style="insideStyles">
+      <div
+        :style="backgroundWrapperStyles"
+        class="shape-background-wrapper"
+      >
+        <slot />
+      </div>
+      <svg :viewBox="viewBox">
         <defs>
           <clipPath :id="clipPathId">
             <path :transform="`scale(${shapeScale})`" :d="shape.path" />
@@ -58,6 +51,17 @@ export default {
       const widthScale = this.width / this.shape.rect.width
       const heightScale = this.height / this.shape.rect.height
       return Math.min(widthScale, heightScale)
+    },
+    backgroundWrapperStyles () {
+      return {
+        top: -this.top + 'px',
+        left: -this.left + 'px'
+      }
+    },
+    insideStyles () {
+      return {
+        clipPath: `url("#${this.clipPathId}")`
+      }
     }
   },
   watch: {
@@ -98,7 +102,7 @@ export default {
   }
 
   .shape-background-wrapper {
-    position: relative;
+    position: absolute;
 
     & > * {
       width: 100vw;
