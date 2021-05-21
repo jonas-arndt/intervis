@@ -2,16 +2,16 @@
   <div class="chapter intersectional_measures">
     <MeasuresVisualization class="background-visualization" :active="active" />
     <div class="narrative right">
-      <div class="step">
+      <div class="step step-1">
         <h2 class="chapter-title" v-html="$t('chapter4-title')" />
         <p v-html="$t('chapter4-text1')" />
       </div>
 
-      <div class="step">
+      <div class="step step-2">
         <p v-html="$t('chapter4-text2')" />
       </div>
 
-      <div class="step">
+      <div class="step step-3">
         <p v-html="$t('chapter4-text3')" />
       </div>
     </div>
@@ -34,14 +34,22 @@ export default {
 
 .chapter.intersectional_measures {
   .narrative {
-    padding-top: 20vh;
+    position: relative;
     padding-bottom: 100vh;
 
-    .step {
-      margin-bottom: 150vh;
+    height: 600vh;
 
-      &:last-child {
-        margin-bottom: inherit;
+    .step {
+      position: absolute;
+
+      &.step-1 {
+        top: 150vh;
+      }
+      &.step-2 {
+        top: 250vh;
+      }
+      &.step-3 {
+        top: 350vh;
       }
     }
 
