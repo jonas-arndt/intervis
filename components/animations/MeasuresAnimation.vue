@@ -222,7 +222,6 @@ export default {
 
         transformations.transform = `translate(-${translateX}px, -${translateY}px) scale(${scale})`
       }
-      console.log({ ...styles, ...transformations })
       return { ...styles, ...transformations }
     }
   },
