@@ -10,7 +10,7 @@
       <svg :viewBox="viewBox">
         <defs>
           <clipPath :id="clipPathId">
-            <path :transform="`scale(${shapeScale})`" :d="shape.path" />
+            <path :transform="`translate(${translateX} ${translateY}) scale(${shapeScale * this.scale})`" :d="shape.path" />
           </clipPath>
         </defs>
       </svg>
@@ -33,6 +33,10 @@ export default {
     clipPathId: {
       type: String,
       default: () => 'shape-' + Math.floor(Math.random() * 1000) + '-clip-path'
+    },
+    scale: {
+      type: Number,
+      default: 1
     }
   },
   data () {
@@ -62,6 +66,12 @@ export default {
       return {
         clipPath: `url("#${this.clipPathId}")`
       }
+    },
+    translateX () {
+      return (1 - this.scale) * (this.width / 2)
+    },
+    translateY () {
+      return (1 - this.scale) * (this.height / 2)
     }
   },
   watch: {

@@ -18,35 +18,13 @@
       </div>
     </div>
     <div ref="interactiveVisualization" class="interactive-visualization chapter-4-visualization">
-      <Blob
-        ref="shape1"
-        :shape="shapes['chapter4_1.svg']"
-        clip-path-id="clip-path-4-1"
-        class="visual top-left"
-        :active="active"
-        @parentPositionRequested="handlePositionRequest"
-      >
-        <div class="background">
-          <div class="lines" />
-          <div class="grid" />
-        </div>
-      </Blob>
-      <Blob
-        ref="shape2"
-        :shape="shapes['chapter4_2.svg']"
-        clip-path-id="clip-path-4-2"
-        class="visual bottom-right"
-        :active="active"
-        @parentPositionRequested="handlePositionRequest"
-      >
-        <div class="background" />
-      </Blob>
+      <MeasuresAnimation :breakpoints="animationBreakpoints" :active="active" />
     </div>
   </div>
 </template>
 
 <script>
-import shapes from '~/data/shapes.json'
+import { mapState } from 'vuex'
 
 export default {
   props: {
@@ -55,14 +33,43 @@ export default {
       default: false
     }
   },
-  data () {
-    return {
-      shapes
-    }
-  },
-  methods: {
-    handlePositionRequest (requestingComponent) {
-      requestingComponent.updateParentRect(this.$refs.interactiveVisualization.getBoundingClientRect())
+  computed: {
+    ...mapState([
+      'viewport',
+      'measuresChapterStartPosition',
+      'nextStepsChapterStartPosition'
+    ]),
+    totalChapterHeight () {
+      return this.nextStepsChapterStartPosition - this.measuresChapterStartPosition
+    },
+    prefixHeight () {
+      return this.viewport.height
+    },
+    introHeight () {
+      return 0.5 * this.viewport.height
+    },
+    outroHeight () {
+      return 1.5 * this.viewport.height
+    },
+    animationBreakpoints () {
+      const fixedElementsHeight = this.prefixHeight + this.introHeight + this.outroHeight
+      const transitionStepHeight = (this.totalChapterHeight - fixedElementsHeight) / 2
+
+      const chapterStart = this.measuresChapterStartPosition
+      const prefixEnd = chapterStart + this.prefixHeight
+      const introEnd = prefixEnd + this.introHeight
+      const firstStepEnd = introEnd + transitionStepHeight
+      const secondStepEnd = firstStepEnd + transitionStepHeight
+      const outroEnd = secondStepEnd + this.outroHeight
+
+      return [
+        chapterStart,
+        prefixEnd,
+        introEnd,
+        firstStepEnd,
+        secondStepEnd,
+        outroEnd
+      ]
     }
   }
 }
@@ -76,35 +83,6 @@ export default {
     display: none;
   }
 
-  .visual.top-left {
-    .background {
-      position: absolute;
-      .grid, .lines {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-
-        &.grid {
-          background: url('~assets/grid/dark_gray.png');
-          background-size: cover;
-        }
-        &.lines {
-          background: url('~assets/grid/chapter2_frontlayer_shape2.png');
-          background-size: cover;
-          z-index: 10;
-        }
-      }
-    }
-  }
-
-  .visual.bottom-right {
-    .background {
-      background: url('~assets/grid/chapter4_shape2.png');
-      background-size: cover;
-    }
-  }
 }
 
 .page.js .measures-visualization {

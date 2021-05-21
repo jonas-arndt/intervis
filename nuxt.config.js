@@ -44,6 +44,7 @@ export default {
   components: {
     dirs: [
       '~/components',
+      '~/components/animations',
       '~/components/case_studies',
       '~/components/chapters',
       '~/components/design-decisions',
