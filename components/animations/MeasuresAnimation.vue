@@ -147,16 +147,14 @@ export default {
         const rect = this.$refs.shape1.$el.getBoundingClientRect()
         const parentRect = this.$el.getBoundingClientRect()
 
-        const verticalPadding = 0.25
         const horizontalPadding = 0.1
-
         const top = rect.top - parentRect.top
         const left = rect.left - parentRect.left
 
         styles.left = (left + horizontalPadding * rect.width) + 'px'
         styles.width = ((1 - 2 * horizontalPadding) * rect.width) + 'px'
-        styles.top = (top + verticalPadding * rect.height) + 'px'
-        styles.height = ((1 - 2 * verticalPadding) * rect.height) + 'px'
+        styles.top = top + 'px'
+        styles.height = rect.height + 'px'
       }
 
       return styles
@@ -171,16 +169,14 @@ export default {
         const rect = this.$refs.shape2.$el.getBoundingClientRect()
         const parentRect = this.$el.getBoundingClientRect()
 
-        const verticalPadding = 0.25
         const horizontalPadding = 0.1
-
         const top = rect.top - parentRect.top
         const left = rect.left - parentRect.left
 
         styles.left = (left + horizontalPadding * rect.width)
         styles.width = ((1 - 2 * horizontalPadding) * rect.width)
-        styles.top = (top + verticalPadding * rect.height)
-        styles.height = ((1 - 2 * verticalPadding) * rect.height)
+        styles.top = top
+        styles.height = rect.height
       }
 
       return styles
@@ -220,7 +216,7 @@ export default {
         const translateY = scaleLinear()
           .domain(domain).range([0, rect.top - heightOffset]).clamp(true)(this.trimmedScrollPosition)
 
-        transformations.transform = `translate(-${translateX}px, -${translateY}px) scale(${scale})`
+        transformations.transform = `translate(${-translateX}px, ${-translateY}px) scale(${scale})`
       }
       return { ...styles, ...transformations }
     }
@@ -239,6 +235,14 @@ export default {
   .measures-animation {
     .visual {
       overflow: visible;
+    }
+
+    .text, .unclipped-text {
+      img {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+      }
     }
 
     .visual.top-left {
