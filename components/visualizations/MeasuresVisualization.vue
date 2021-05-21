@@ -2,16 +2,22 @@
   <div class="measures-visualization">
     <div class="fallback">
       <div class="step-1">
-        <Chapter4Step1Visualization />
+        <div class="inside">
+          <Chapter4Step1Visualization />
+        </div>
       </div>
       <div class="step-2">
-        <Chapter4Step2Visualization />
+        <div class="inside">
+          <Chapter4Step2Visualization />
+        </div>
       </div>
       <div class="step-3">
-        <Chapter4Step3Visualization />
+        <div class="inside">
+          <Chapter4Step3Visualization />
+        </div>
       </div>
     </div>
-    <div class="interactive-visualization chapter-4-visualization">
+    <div ref="interactiveVisualization" class="interactive-visualization chapter-4-visualization">
       <Blob
         ref="shape1"
         :shape="shapes['chapter4_1.svg']"
@@ -99,31 +105,6 @@ export default {
       background-size: cover;
     }
   }
-
-  .fallback {
-    .step-1, .step-2, .step-3 {
-      position: absolute;
-      top: 0%;
-      height: 33%;
-      min-height: 100vh;
-      width: 100%;
-
-      &.step-2 {
-        top: 33%;
-      }
-
-      &.step-3 {
-        top: 67%;
-      }
-
-      & > * {
-        position: sticky;
-        top: 0;
-        width: 100%;
-        height: 100vh;
-      }
-    }
-  }
 }
 
 .page.js .measures-visualization {
@@ -136,6 +117,31 @@ export default {
     display: block;
     top: 0;
     height: 100vh;
+  }
+}
+
+.measures-visualization .fallback {
+  .step-1, .step-2, .step-3 {
+    position: absolute;
+    top: 0%;
+    height: 33%;
+    min-height: 100vh;
+    width: 100%;
+
+    &.step-2 {
+      top: 33%;
+    }
+
+    &.step-3 {
+      top: 67%;
+    }
+
+    & > .inside {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      height: 100vh;
+    }
   }
 }
 </style>
