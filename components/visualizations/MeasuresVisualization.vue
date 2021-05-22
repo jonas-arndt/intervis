@@ -59,22 +59,22 @@ export default {
       const transitionStepHeight = (this.totalChapterHeight - fixedElementsHeight) / 2
 
       const chapterStart = this.measuresChapterStartPosition
-      const prefixEnd = chapterStart + this.prefixHeight
-      const introEnd = prefixEnd + this.introHeight
+      const introStart = chapterStart + this.prefixHeight
+      const introEnd = introStart + this.introHeight
       const firstStepEnd = introEnd + transitionStepHeight
       const secondStepEnd = firstStepEnd + transitionStepHeight
       const outroEnd = secondStepEnd + this.outroHeight
       const suffixEnd = outroEnd + this.suffixHeight
 
-      return [
+      return {
         chapterStart,
-        prefixEnd,
+        introStart,
         introEnd,
         firstStepEnd,
         secondStepEnd,
         outroEnd,
         suffixEnd
-      ]
+      }
     }
   }
 }

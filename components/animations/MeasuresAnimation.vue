@@ -54,9 +54,9 @@ export default {
       default: false
     },
     breakpoints: {
-      type: Array,
+      type: Object,
       required: true,
-      default: () => []
+      default: () => { return {} }
     }
   },
   data () {
@@ -69,12 +69,12 @@ export default {
   computed: {
     ...mapState(['verticalScrollPosition', 'viewport']),
     trimmedScrollPosition () {
-      if (this.verticalScrollPosition <= this.breakpoints[0]) {
-        return this.breakpoints[0]
+      if (this.verticalScrollPosition <= this.breakpoints.chapterStart) {
+        return this.breakpoints.chapterStart
       }
 
-      if (this.verticalScrollPosition >= this.breakpoints[this.breakpoints.length - 1]) {
-        return this.breakpoints[this.breakpoints.length - 1]
+      if (this.verticalScrollPosition >= this.breakpoints.outroEnd) {
+        return this.breakpoints.outroEnd
       }
 
       return this.verticalScrollPosition
@@ -84,8 +84,8 @@ export default {
     blobFadeInScale () {
       return scaleLinear()
         .domain([
-          this.breakpoints[1],
-          this.breakpoints[2]
+          this.breakpoints.introStart,
+          this.breakpoints.introEnd
         ])
         .range([0, 1])
         .clamp(true)
@@ -98,8 +98,8 @@ export default {
     linesFadeOutScale () {
       return scaleLinear()
         .domain([
-          this.breakpoints[2],
-          this.breakpoints[3]
+          this.breakpoints.introEnd,
+          this.breakpoints.firstStepEnd
         ])
         .range([1, 0])
         .clamp(true)
@@ -112,8 +112,8 @@ export default {
     gridFadeOutScale () {
       return scaleLinear()
         .domain([
-          this.breakpoints[3],
-          this.breakpoints[4]
+          this.breakpoints.firstStepEnd,
+          this.breakpoints.secondStepEnd
         ])
         .range([1, 0])
         .clamp(true)
@@ -126,8 +126,8 @@ export default {
     textScale () {
       return scaleLinear()
         .domain([
-          this.breakpoints[4],
-          this.breakpoints[5]
+          this.breakpoints.secondStepEnd,
+          this.breakpoints.outroEnd
         ])
         .range([1, 0])
         .clamp(true)
@@ -194,7 +194,7 @@ export default {
       const transformations = {}
       if ('top' in styles) {
         const rect = this.shape2TextPositionRawStyles
-        const domain = [this.breakpoints[4], this.breakpoints[5]]
+        const domain = [this.breakpoints.secondStepEnd, this.breakpoints.outroEnd]
 
         // scale
         const ratioX = this.viewport.width / rect.width
