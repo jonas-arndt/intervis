@@ -9,11 +9,11 @@
       :scale="introProgress"
     >
       <div class="background">
-        <div class="lines" :style="{ opacity: linesFadeOut }" />
+        <div class="lines" :style="shape1LinesStyles" />
         <div class="text" :style="shape1TextStyles">
           <Words />
         </div>
-        <div class="grid" :style="{ opacity: gridFadeOut }" />
+        <div class="grid" :style="gridStyles" />
       </div>
     </Blob>
     <Blob
@@ -25,7 +25,7 @@
       :scale="introProgress"
     >
       <div class="background">
-        <div class="grid" :style="{ opacity: gridFadeOut }" />
+        <div class="grid" :style="gridStyles" />
         <div class="text" :style="shape2TextStyles">
           <Words />
         </div>
@@ -33,7 +33,9 @@
 
       <template v-slot:unclipped>
         <div class="unclipped-text" :style="shape2UnclippedTextStyles">
-          <Words />
+          <div class="inside">
+            <Words ref="unclippedText" />
+          </div>
         </div>
       </template>
     </Blob>
@@ -64,152 +66,67 @@ export default {
       shape1Rect: { top: 0, left: 0, width: 0, height: 0 },
       shape2Rect: { top: 0, left: 0, width: 0, height: 0 },
 
-      introProgress: 0
+      introProgress: 0,
+      firstStepProgress: 0,
+      secondStepProgress: 0,
+      outroProgress: 0
     }
   },
   computed: {
-    ...mapState(['verticalScrollPosition', 'viewport']),
-    trimmedScrollPosition () {
-      if (this.verticalScrollPosition <= this.breakpoints.chapterStart) {
-        return this.breakpoints.chapterStart
-      }
+    ...mapState(['viewport', 'verticalScrollPosition']),
 
-      if (this.verticalScrollPosition >= this.breakpoints.outroEnd) {
-        return this.breakpoints.outroEnd
-      }
-
-      return this.verticalScrollPosition
+    // text positions
+    shape1TextPositionStyles () {
+      return this.getStylesFromRect(this.shape1Rect)
+    },
+    shape2TextPositionStyles () {
+      return this.getStylesFromRect(this.shape2Rect)
     },
 
-    // style aggregations
+    // text scale ratios
+    shape2TextRatio () {
+      return Math.min(
+        this.viewport.width / this.shape2Rect.width,
+        this.viewport.height / this.shape2Rect.height
+      )
+    },
+
+    // general styles
     componentStyles () {
       return {
         opacity: this.introProgress
       }
     },
-
-    // lines animation
-    linesFadeOutScale () {
-      return scaleLinear()
-        .domain([
-          this.breakpoints.introEnd,
-          this.breakpoints.firstStepEnd
-        ])
-        .range([1, 0])
-        .clamp(true)
-    },
-    linesFadeOut () {
-      return this.linesFadeOutScale(this.trimmedScrollPosition)
-    },
-
-    // grid animations
-    gridFadeOutScale () {
-      return scaleLinear()
-        .domain([
-          this.breakpoints.firstStepEnd,
-          this.breakpoints.secondStepEnd
-        ])
-        .range([1, 0])
-        .clamp(true)
-    },
-    gridFadeOut () {
-      return this.gridFadeOutScale(this.trimmedScrollPosition)
-    },
-
-    // text animation
-    textScale () {
-      return scaleLinear()
-        .domain([
-          this.breakpoints.secondStepEnd,
-          this.breakpoints.outroEnd
-        ])
-        .range([1, 0])
-        .clamp(true)
-    },
-    textOpacity () {
-      return this.textScale(this.trimmedScrollPosition)
-    },
-
-    // text styles
-    shape1TextPositionStyles () {
-      const styles = {}
-
-      if (this.active) {
-        const rect = this.$refs.shape1.$el.getBoundingClientRect()
-        const parentRect = this.$el.getBoundingClientRect()
-
-        const horizontalPadding = 0.1
-        const top = rect.top - parentRect.top
-        const left = rect.left - parentRect.left
-
-        styles.left = (left + horizontalPadding * rect.width) + 'px'
-        styles.width = ((1 - 2 * horizontalPadding) * rect.width) + 'px'
-        styles.top = top + 'px'
-        styles.height = rect.height + 'px'
+    gridStyles () {
+      return {
+        opacity: 1 - this.secondStepProgress
       }
+    },
 
-      return styles
+    // shape1 styles
+    shape1LinesStyles () {
+      return {
+        opacity: 1 - this.firstStepProgress
+      }
     },
     shape1TextStyles () {
-      return { opacity: this.textOpacity, ...this.shape1TextPositionStyles }
+      return { opacity: 1 - this.outroProgress, ...this.shape1TextPositionStyles }
     },
-    shape2TextPositionRawStyles () {
-      const styles = {}
 
-      if (this.active) {
-        const rect = this.$refs.shape2.$el.getBoundingClientRect()
-        const parentRect = this.$el.getBoundingClientRect()
-
-        const horizontalPadding = 0.1
-        const top = rect.top - parentRect.top
-        const left = rect.left - parentRect.left
-
-        styles.left = (left + horizontalPadding * rect.width)
-        styles.width = ((1 - 2 * horizontalPadding) * rect.width)
-        styles.top = top
-        styles.height = rect.height
-      }
-
-      return styles
-    },
-    shape2TextPositionStyles () {
-      const styles = {}
-      for (const [key, value] of Object.entries(this.shape2TextPositionRawStyles)) {
-        styles[key] = value + 'px'
-      }
-      return styles
-    },
+    // shape2 styles
     shape2TextStyles () {
-      return { opacity: this.gridFadeOut, ...this.shape2TextPositionStyles }
+      return { opacity: 1 - this.secondStepProgress, ...this.shape2TextPositionStyles }
     },
     shape2UnclippedTextStyles () {
-      const styles = { opacity: 1 - this.gridFadeOut, ...this.shape2TextPositionStyles }
+      const offsetX = this.outroProgress * this.shape2Rect.left
+      const offsetY = this.outroProgress * this.shape2Rect.top
+      const ratio = 1 + this.outroProgress * (this.shape2TextRatio - 1)
 
-      const transformations = {}
-      if ('top' in styles) {
-        const rect = this.shape2TextPositionRawStyles
-        const domain = [this.breakpoints.secondStepEnd, this.breakpoints.outroEnd]
-
-        // scale
-        const ratioX = this.viewport.width / rect.width
-        const ratioY = this.viewport.height / rect.height
-        const ratio = Math.min(ratioX, ratioY)
-
-        const scale = scaleLinear()
-          .domain(domain).range([1, ratio]).clamp(true)(this.trimmedScrollPosition)
-
-        // translate
-        const widthOffset = (this.viewport.width - ratio * rect.width) / 2
-        const translateX = scaleLinear()
-          .domain(domain).range([0, rect.left - widthOffset]).clamp(true)(this.trimmedScrollPosition)
-
-        const heightOffset = (this.viewport.height - ratio * rect.height) / 2
-        const translateY = scaleLinear()
-          .domain(domain).range([0, rect.top - heightOffset]).clamp(true)(this.trimmedScrollPosition)
-
-        transformations.transform = `translate(${-translateX}px, ${-translateY}px) scale(${scale})`
+      return {
+        ...this.shape2TextPositionStyles,
+        opacity: this.secondStepProgress,
+        transform: `translate(${-offsetX}px, ${-offsetY}px) scale(${ratio})`
       }
-      return { ...styles, ...transformations }
     },
 
     // scales
@@ -218,6 +135,33 @@ export default {
         .domain([
           this.breakpoints.introStart,
           this.breakpoints.introEnd
+        ])
+        .range([0, 1])
+        .clamp(true)
+    },
+    firstStepProgressScale () {
+      return scaleLinear()
+        .domain([
+          this.breakpoints.introEnd,
+          this.breakpoints.firstStepEnd
+        ])
+        .range([0, 1])
+        .clamp(true)
+    },
+    secondStepProgressScale () {
+      return scaleLinear()
+        .domain([
+          this.breakpoints.firstStepEnd,
+          this.breakpoints.secondStepEnd
+        ])
+        .range([0, 1])
+        .clamp(true)
+    },
+    outroProgressScale () {
+      return scaleLinear()
+        .domain([
+          this.breakpoints.secondStepEnd,
+          this.breakpoints.outroEnd
         ])
         .range([0, 1])
         .clamp(true)
@@ -235,6 +179,24 @@ export default {
         : verticalScrollPosition > this.breakpoints.introEnd
           ? 1
           : this.introProgressScale(verticalScrollPosition)
+
+      this.firstStepProgress = verticalScrollPosition < this.breakpoints.introEnd
+        ? 0
+        : verticalScrollPosition > this.breakpoints.firstStepEnd
+          ? 1
+          : this.firstStepProgressScale(verticalScrollPosition)
+
+      this.secondStepProgress = verticalScrollPosition < this.breakpoints.firstStepEnd
+        ? 0
+        : verticalScrollPosition > this.breakpoints.secondStepEnd
+          ? 1
+          : this.secondStepProgressScale(verticalScrollPosition)
+
+      this.outroProgress = verticalScrollPosition < this.breakpoints.secondStepEnd
+        ? 0
+        : verticalScrollPosition > this.breakpoints.outroEnd
+          ? 1
+          : this.outroProgressScale(verticalScrollPosition)
     }
   },
   mounted () {
@@ -245,6 +207,13 @@ export default {
       if (this.active) {
         this.updateShapeRects()
       }
+    },
+    getStylesFromRect (rect) {
+      const styles = {}
+      for (const [key, value] of Object.entries(rect)) {
+        styles[key] = value + 'px'
+      }
+      return styles
     },
     updateShapeRects () {
       const parentRect = this.$el.getBoundingClientRect()
@@ -260,55 +229,60 @@ export default {
         height: childRect.height
       }
 
-      let valueChanged = false
-      for (const key in this[rectKey]) {
-        if (this[rectKey][key] !== rectData[key]) {
-          valueChanged = true
-          continue
-        }
-      }
-
-      if (valueChanged) {
+      if (!this.rectsAreEqual(this[rectKey], rectData)) {
         this[rectKey] = rectData
       }
+    },
+    rectsAreEqual (rect1, rect2) {
+      for (const key in rect1) {
+        if (rect1[key] !== rect2[key]) {
+          return false
+        }
+      }
+      return true
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-  @import "../../styles/_variables";
+@import "../../styles/_variables";
 
-  .measures-animation {
-    .visual {
-      overflow: visible;
-    }
+.measures-animation {
+  .visual {
+    overflow: visible;
 
-    .visual.top-left {
-      .background {
+    .background {
+      position: absolute;
+
+      .grid, .lines {
         position: absolute;
-
-        .grid, .lines {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-
-          &.grid {
-            background: url('~assets/grid/dark_gray.png');
-            background-size: cover;
-          }
-          &.lines {
-            background: url('~assets/grid/chapter2_frontlayer_shape2.png');
-            background-size: cover;
-            z-index: 10;
-        }
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
       }
       .text {
         position: absolute;
-        z-index: 5;
       }
+    }
+  }
+
+  .visual.top-left .background {
+    .grid {
+      background: url('~assets/grid/dark_gray.png');
+      background-size: cover;
+    }
+    .lines {
+      background: url('~assets/grid/chapter2_frontlayer_shape2.png');
+      background-size: cover;
+      z-index: 10;
+    }
+
+    .text {
+      z-index: 5;
+      transform-origin: center;
+      transform: scale(0.8);
     }
   }
 
@@ -319,30 +293,27 @@ export default {
     }
 
     .background {
-      position: absolute;
-
       .grid {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-
         background: url('~assets/grid/chapter4_shape2.png');
         background-size: cover;
-
         z-index: 20;
       }
 
       .text {
-        position: absolute;
         z-index: 10;
+        transform-origin: center;
+        transform: scale(0.8);
       }
     }
 
     .unclipped-text {
       position: absolute;
       transform-origin: left top;
+
+      & > .inside {
+        transform-origin: center;
+        transform: scale(0.8);
+      }
     }
   }
 }
