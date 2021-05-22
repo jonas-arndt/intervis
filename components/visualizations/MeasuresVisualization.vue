@@ -87,7 +87,6 @@ export default {
   .interactive-visualization {
     display: none;
   }
-
 }
 
 .page.js .measures-visualization {
