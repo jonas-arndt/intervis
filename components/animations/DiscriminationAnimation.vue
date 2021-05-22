@@ -112,17 +112,17 @@ export default {
         height: childRect.height
       }
 
-      let valueChanged = false
-      for (const key in this[rectKey]) {
-        if (this[rectKey][key] !== rectData[key]) {
-          valueChanged = true
-          continue
-        }
-      }
-
-      if (valueChanged) {
+      if (!this.rectsAreEqual(this[rectKey], rectData)) {
         this[rectKey] = rectData
       }
+    },
+    rectsAreEqual (rect1, rect2) {
+      for (const key in rect1) {
+        if (rect1[key] !== rect2[key]) {
+          return false
+        }
+      }
+      return true
     }
   }
 }
