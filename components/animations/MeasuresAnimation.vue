@@ -1,13 +1,12 @@
 <template>
-  <div class="measures-animation">
+  <div class="measures-animation" :style="componentStyles">
     <Blob
       ref="shape1"
       :shape="shapes['chapter4_1.svg']"
       clip-path-id="clip-path-4-1"
       class="visual top-left"
       :rect="shape1Rect"
-      :style="{ opacity: blobFadeIn }"
-      :scale="blobFadeIn"
+      :scale="introProgress"
     >
       <div class="background">
         <div class="lines" :style="{ opacity: linesFadeOut }" />
@@ -23,8 +22,7 @@
       clip-path-id="clip-path-4-2"
       class="visual bottom-right"
       :rect="shape2Rect"
-      :style="{ opacity: blobFadeIn }"
-      :scale="blobFadeIn"
+      :scale="introProgress"
     >
       <div class="background">
         <div class="grid" :style="{ opacity: gridFadeOut }" />
@@ -62,8 +60,11 @@ export default {
   data () {
     return {
       shapes,
+
       shape1Rect: { top: 0, left: 0, width: 0, height: 0 },
-      shape2Rect: { top: 0, left: 0, width: 0, height: 0 }
+      shape2Rect: { top: 0, left: 0, width: 0, height: 0 },
+
+      introProgress: 0
     }
   },
   computed: {
@@ -80,18 +81,11 @@ export default {
       return this.verticalScrollPosition
     },
 
-    // blob animation
-    blobFadeInScale () {
-      return scaleLinear()
-        .domain([
-          this.breakpoints.introStart,
-          this.breakpoints.introEnd
-        ])
-        .range([0, 1])
-        .clamp(true)
-    },
-    blobFadeIn () {
-      return this.blobFadeInScale(this.trimmedScrollPosition)
+    // style aggregations
+    componentStyles () {
+      return {
+        opacity: this.introProgress
+      }
     },
 
     // lines animation
@@ -216,6 +210,17 @@ export default {
         transformations.transform = `translate(${-translateX}px, ${-translateY}px) scale(${scale})`
       }
       return { ...styles, ...transformations }
+    },
+
+    // scales
+    introProgressScale () {
+      return scaleLinear()
+        .domain([
+          this.breakpoints.introStart,
+          this.breakpoints.introEnd
+        ])
+        .range([0, 1])
+        .clamp(true)
     }
   },
   watch: {
@@ -223,6 +228,13 @@ export default {
       if (active) {
         this.updateShapeRects()
       }
+    },
+    verticalScrollPosition (verticalScrollPosition) {
+      this.introProgress = verticalScrollPosition < this.breakpoints.introStart
+        ? 0
+        : verticalScrollPosition > this.breakpoints.introEnd
+          ? 1
+          : this.introProgressScale(verticalScrollPosition)
     }
   },
   mounted () {
