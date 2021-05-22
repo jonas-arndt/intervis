@@ -112,9 +112,10 @@ export default {
   }
 
   .background-visualization {
-    z-index: -100;
-    position: sticky;
+    position: absolute;
     top: 0;
+    z-index: -100;
+    height: 100%;
   }
 
   @media (min-width: $media-breakpoint-min-m) {
