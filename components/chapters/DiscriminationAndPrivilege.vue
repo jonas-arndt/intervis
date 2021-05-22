@@ -6,14 +6,14 @@
 
     <DiscriminationVisualization class="background-visualization" :active="active" />
     <div class="narrative">
-      <div class="step">
+      <div class="step step1">
         <h2 class="chapter-title" v-html="$t('chapter2-title')" />
         <p v-html="$t('chapter2-text1')" />
       </div>
-      <div class="step">
+      <div class="step step2">
         <p v-html="$t('chapter2-text2')" />
       </div>
-      <div class="step">
+      <div class="step step3">
         <p v-html="$t('chapter2-text3')" />
         <p class="detour">
           <RedBorderedButton :action="showDiscriminationDimensions">
@@ -90,11 +90,21 @@ export default {
 
 .chapter.discrimination_and_privilege {
   .narrative {
-    padding-top: 50vh;
-    padding-bottom: 50vh;
+    position: relative;
+    height: 550vh;
 
     .step {
-      margin-bottom: 100vh;
+      position: absolute;
+
+      &.step1 {
+        top: 200vh;
+      }
+      &.step2 {
+        top: 325vh;
+      }
+      &.step3 {
+        top: 450vh;
+      }
     }
   }
 
@@ -116,14 +126,6 @@ export default {
     top: 0;
     z-index: -100;
     height: 100%;
-  }
-
-  @media (min-width: $media-breakpoint-min-m) {
-    .narrative {
-      .step {
-        margin-bottom: 20vh;
-      }
-    }
   }
 }
 </style>

@@ -37,25 +37,25 @@ export default {
     introHeight () {
       return 0.5 * this.viewport.height
     },
-    animationPauseHeight () {
+    transitionStepHeight () {
       return 0.5 * this.viewport.height
     },
     animationBreakpoints () {
-      const fixedElementsHeight = this.prefixHeight + this.introHeight + 3 * this.animationPauseHeight
-      const transitionStepHeight = (this.totalChapterHeight - fixedElementsHeight) / 2
+      const fixedElementsHeight = this.prefixHeight + this.introHeight + 2 * this.transitionStepHeight
+      const animationPauseHeight = (this.totalChapterHeight - fixedElementsHeight) / 3
 
       const chapterStart = this.discriminationChapterStartPosition
       const prefixEnd = chapterStart + this.prefixHeight
       const introEnd = prefixEnd + this.introHeight
-      const firstStepStart = introEnd + this.animationPauseHeight
-      const firstStepEnd = firstStepStart + transitionStepHeight
+      const firstTransitionStart = introEnd + animationPauseHeight
+      const firstTransitionEnd = firstTransitionStart + this.transitionStepHeight
 
       return [
         chapterStart,
         prefixEnd,
         introEnd,
-        firstStepStart,
-        firstStepEnd
+        firstTransitionStart,
+        firstTransitionEnd
       ]
     }
   }

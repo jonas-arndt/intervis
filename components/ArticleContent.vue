@@ -31,6 +31,7 @@ export default {
       observer: undefined,
       chapterActiveState: {},
       scrollArticleChapterOffsets: {
+        chapter2: 1.75,
         chapter4: 1.5
       }
     }
