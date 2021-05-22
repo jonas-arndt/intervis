@@ -9,7 +9,12 @@
             :rect="shape1Rect"
             clip-path-id="clip-path-2-1"
           >
-            <div class="background" />
+            <div class="background">
+              <div class="text" :style="shape1TextStyles">
+                <Words />
+              </div>
+              <div class="grid" />
+            </div>
           </Blob>
         </div>
       </div>
@@ -29,6 +34,9 @@
           >
             <div class="background">
               <div class="lines" />
+              <div class="text" :style="shape2TextStyles">
+                <Words />
+              </div>
               <div class="grid" />
             </div>
           </Blob>
@@ -50,6 +58,9 @@
           >
             <div class="background">
               <div class="lines" />
+              <div class="text" :style="shape3TextStyles">
+                <Words />
+              </div>
               <div class="grid" />
             </div>
           </Blob>
@@ -81,6 +92,18 @@ export default {
       shape3Rect: { top: 0, left: 0, width: 0, height: 0 }
     }
   },
+  computed: {
+    ...mapState(['verticalScrollPosition']),
+    shape1TextStyles () {
+      return this.getStylesFromRect(this.shape1Rect)
+    },
+    shape2TextStyles () {
+      return this.getStylesFromRect(this.shape2Rect)
+    },
+    shape3TextStyles () {
+      return this.getStylesFromRect(this.shape3Rect)
+    }
+  },
   watch: {
     active (active) {
       if (active) {
@@ -96,6 +119,13 @@ export default {
       if (this.active) {
         this.updateShapeRects()
       }
+    },
+    getStylesFromRect (rect) {
+      const styles = {}
+      for (const [key, value] of Object.entries(rect)) {
+        styles[key] = value + 'px'
+      }
+      return styles
     },
     updateShapeRects () {
       const parentRect = this.$el.getBoundingClientRect()
@@ -132,50 +162,56 @@ export default {
 @import "../../styles/_variables";
 
 .discrimination-animation {
-  .shape1 .background {
+  .background {
+    position: absolute;
+
+    .grid, .lines {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      &.grid {
+        z-index: 10;
+      }
+      &.lines {
+        z-index: 30;
+      }
+    }
+    .text {
+      position: absolute;
+      z-index: 20;
+
+      transform-origin: center;
+      transform: scale(0.7);
+    }
+  }
+
+  // specific form definitions
+
+  .shape1 .grid {
     background: url('~assets/grid/dark_gray.png');
     background-size: cover;
   }
-  .shape2 .background {
-    position: absolute;
-
-    .grid, .lines {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-
-      &.grid {
-        background: url('~assets/grid/dark_gray.png');
-        background-size: cover;
-      }
-      &.lines {
-        background: url('~assets/grid/chapter2_frontlayer_shape2.png');
-        background-size: cover;
-        z-index: 10;
-      }
+  .shape2 {
+    .grid {
+      background: url('~assets/grid/dark_gray.png');
+      background-size: cover;
+    }
+    .lines {
+      background: url('~assets/grid/chapter2_frontlayer_shape2.png');
+      background-size: cover;
     }
   }
-  .shape3 .background {
-    position: absolute;
-
-    .grid, .lines {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-
-      &.grid {
-        background: url('~assets/grid/dark_gray.png');
-        background-size: cover;
-      }
-      &.lines {
-        background: url('~assets/grid/chapter2_frontlayer_shape3.png');
-        background-size: cover;
-        z-index: 10;
-      }
+  .shape3 {
+    .grid {
+      background: url('~assets/grid/dark_gray.png');
+      background-size: cover;
+    }
+    .lines {
+      background: url('~assets/grid/chapter2_frontlayer_shape3.png');
+      background-size: cover;
     }
   }
 }
