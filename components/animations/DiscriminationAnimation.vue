@@ -134,7 +134,7 @@ export default {
     },
 
     // scales
-    introProgressScale () {
+    shapeScaleScale () {
       return scaleLinear()
         .domain([
           this.breakpoints.introStart,
@@ -175,7 +175,7 @@ export default {
         ? 0
         : verticalScrollPosition > this.breakpoints.introEnd
           ? 1
-          : this.introProgressScale(verticalScrollPosition)
+          : this.shapeScaleScale(verticalScrollPosition)
 
       this.descriptionOpacity = verticalScrollPosition < this.breakpoints.firstTransitionStart
         ? 0
