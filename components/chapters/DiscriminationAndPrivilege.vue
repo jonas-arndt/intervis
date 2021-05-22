@@ -100,10 +100,10 @@ export default {
         top: 200vh;
       }
       &.step2 {
-        top: 325vh;
+        top: 300vh;
       }
       &.step3 {
-        top: 450vh;
+        top: 400vh;
       }
     }
   }

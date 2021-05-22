@@ -7,7 +7,7 @@
             ref="shape1"
             :shape="shapes['chapter2_1.svg']"
             :rect="shape1Rect"
-            :scale="introProgress"
+            :scale="shapeScale"
             clip-path-id="clip-path-2-1"
           >
             <div class="background">
@@ -31,7 +31,7 @@
             ref="shape2"
             :shape="shapes['chapter2_2.svg']"
             :rect="shape2Rect"
-            :scale="introProgress"
+            :scale="shapeScale"
             clip-path-id="clip-path-2-2"
           >
             <div class="background">
@@ -56,7 +56,7 @@
             ref="shape3"
             :shape="shapes['chapter2_3.svg']"
             :rect="shape3Rect"
-            :scale="introProgress"
+            :scale="shapeScale"
             clip-path-id="clip-path-2-3"
           >
             <div class="background">
@@ -89,9 +89,9 @@ export default {
       default: false
     },
     breakpoints: {
-      type: Array,
+      type: Object,
       required: true,
-      default: () => []
+      default: () => { return {} }
     }
   },
   data () {
@@ -102,7 +102,8 @@ export default {
       shape2Rect: { top: 0, left: 0, width: 0, height: 0 },
       shape3Rect: { top: 0, left: 0, width: 0, height: 0 },
 
-      introProgress: 0,
+      componentOpacity: 0,
+      shapeScale: 0,
       descriptionOpacity: 0
     }
   },
@@ -123,7 +124,7 @@ export default {
     // style aggregations
     componentStyles () {
       return {
-        opacity: this.introProgress
+        opacity: this.componentOpacity
       }
     },
     descriptionStyles () {
@@ -136,8 +137,8 @@ export default {
     introProgressScale () {
       return scaleLinear()
         .domain([
-          this.breakpoints[1],
-          this.breakpoints[2]
+          this.breakpoints.introStart,
+          this.breakpoints.introEnd
         ])
         .range([0, 1])
         .clamp(true)
@@ -145,10 +146,21 @@ export default {
     descriptionOpacityScale () {
       return scaleLinear()
         .domain([
-          this.breakpoints[3],
-          this.breakpoints[4]
+          this.breakpoints.firstTransitionStart,
+          this.breakpoints.firstTransitionEnd
         ])
         .range([0, 1])
+        .clamp(true)
+    },
+    componentOpacityScale () {
+      return scaleLinear()
+        .domain([
+          this.breakpoints.introStart,
+          this.breakpoints.introEnd,
+          this.breakpoints.outroStart,
+          this.breakpoints.outroEnd
+        ])
+        .range([0, 1, 1, 0])
         .clamp(true)
     }
   },
@@ -159,17 +171,21 @@ export default {
       }
     },
     verticalScrollPosition (verticalScrollPosition) {
-      this.introProgress = verticalScrollPosition < this.breakpoints[1]
+      this.shapeScale = verticalScrollPosition < this.breakpoints.introStart
         ? 0
-        : verticalScrollPosition > this.breakpoints[2]
+        : verticalScrollPosition > this.breakpoints.introEnd
           ? 1
           : this.introProgressScale(verticalScrollPosition)
 
-      this.descriptionOpacity = verticalScrollPosition < this.breakpoints[3]
+      this.descriptionOpacity = verticalScrollPosition < this.breakpoints.firstTransitionStart
         ? 0
-        : verticalScrollPosition > this.breakpoints[4]
+        : verticalScrollPosition > this.breakpoints.firstTransitionEnd
           ? 1
           : this.descriptionOpacityScale(verticalScrollPosition)
+
+      this.componentOpacity = verticalScrollPosition > this.breakpoints.introStart && verticalScrollPosition < this.breakpoints.outroEnd
+        ? this.componentOpacityScale(verticalScrollPosition)
+        : 0
     }
   },
   mounted () {

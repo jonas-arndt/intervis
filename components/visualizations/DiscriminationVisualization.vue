@@ -40,23 +40,31 @@ export default {
     transitionStepHeight () {
       return 0.5 * this.viewport.height
     },
+    outroHeight () {
+      return 0.5 * this.viewport.height
+    },
+    suffixHeight () {
+      return this.viewport.height
+    },
     animationBreakpoints () {
-      const fixedElementsHeight = this.prefixHeight + this.introHeight + 2 * this.transitionStepHeight
+      const fixedElementsHeight = this.prefixHeight + this.introHeight + 2 * this.transitionStepHeight + this.outroHeight + this.suffixHeight
       const animationPauseHeight = (this.totalChapterHeight - fixedElementsHeight) / 3
 
-      const chapterStart = this.discriminationChapterStartPosition
-      const prefixEnd = chapterStart + this.prefixHeight
-      const introEnd = prefixEnd + this.introHeight
+      const introStart = this.discriminationChapterStartPosition + this.prefixHeight
+      const introEnd = introStart + this.introHeight
       const firstTransitionStart = introEnd + animationPauseHeight
       const firstTransitionEnd = firstTransitionStart + this.transitionStepHeight
+      const outroStart = firstTransitionEnd + 2 * animationPauseHeight + this.transitionStepHeight
+      const outroEnd = outroStart + this.outroHeight
 
-      return [
-        chapterStart,
-        prefixEnd,
+      return {
+        introStart,
         introEnd,
         firstTransitionStart,
-        firstTransitionEnd
-      ]
+        firstTransitionEnd,
+        outroStart,
+        outroEnd
+      }
     }
   }
 }
