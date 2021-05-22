@@ -1,5 +1,5 @@
 <template>
-  <div class="discrimination-animation">
+  <div class="discrimination-animation" :style="componentStyles">
     <div class="case-container">
       <div class="visual shape1">
         <div class="inside">
@@ -7,6 +7,7 @@
             ref="shape1"
             :shape="shapes['chapter2_1.svg']"
             :rect="shape1Rect"
+            :scale="introProgress"
             clip-path-id="clip-path-2-1"
           >
             <div class="background">
@@ -18,7 +19,7 @@
           </Blob>
         </div>
       </div>
-      <div class="description">
+      <div class="description" :style="descriptionStyles">
         <span class="title" v-html="$t('chapter2-vis2-title1')" />
         <span class="examples" v-html="$t('chapter2-vis2-examples1')" />
       </div>
@@ -30,6 +31,7 @@
             ref="shape2"
             :shape="shapes['chapter2_2.svg']"
             :rect="shape2Rect"
+            :scale="introProgress"
             clip-path-id="clip-path-2-2"
           >
             <div class="background">
@@ -42,7 +44,7 @@
           </Blob>
         </div>
       </div>
-      <div class="description">
+      <div class="description" :style="descriptionStyles">
         <span class="title" v-html="$t('chapter2-vis2-title2')" />
         <span class="examples" v-html="$t('chapter2-vis2-examples2')" />
       </div>
@@ -54,6 +56,7 @@
             ref="shape3"
             :shape="shapes['chapter2_3.svg']"
             :rect="shape3Rect"
+            :scale="introProgress"
             clip-path-id="clip-path-2-3"
           >
             <div class="background">
@@ -66,7 +69,7 @@
           </Blob>
         </div>
       </div>
-      <div class="description">
+      <div class="description" :style="descriptionStyles">
         <span class="title" v-html="$t('chapter2-vis2-title3')" />
         <span class="examples" v-html="$t('chapter2-vis2-examples3')" />
       </div>
@@ -75,6 +78,8 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
+import { scaleLinear } from 'd3-scale'
 import shapes from '~/data/shapes.json'
 
 export default {
@@ -82,18 +87,29 @@ export default {
     active: {
       type: Boolean,
       default: false
+    },
+    breakpoints: {
+      type: Array,
+      required: true,
+      default: () => []
     }
   },
   data () {
     return {
       shapes,
+
       shape1Rect: { top: 0, left: 0, width: 0, height: 0 },
       shape2Rect: { top: 0, left: 0, width: 0, height: 0 },
-      shape3Rect: { top: 0, left: 0, width: 0, height: 0 }
+      shape3Rect: { top: 0, left: 0, width: 0, height: 0 },
+
+      introProgress: 0,
+      descriptionOpacity: 0
     }
   },
   computed: {
     ...mapState(['verticalScrollPosition']),
+
+    // text positions
     shape1TextStyles () {
       return this.getStylesFromRect(this.shape1Rect)
     },
@@ -102,6 +118,38 @@ export default {
     },
     shape3TextStyles () {
       return this.getStylesFromRect(this.shape3Rect)
+    },
+
+    // style aggregations
+    componentStyles () {
+      return {
+        opacity: this.introProgress
+      }
+    },
+    descriptionStyles () {
+      return {
+        opacity: this.descriptionOpacity
+      }
+    },
+
+    // scales
+    introProgressScale () {
+      return scaleLinear()
+        .domain([
+          this.breakpoints[1],
+          this.breakpoints[2]
+        ])
+        .range([0, 1])
+        .clamp(true)
+    },
+    descriptionOpacityScale () {
+      return scaleLinear()
+        .domain([
+          this.breakpoints[3],
+          this.breakpoints[4]
+        ])
+        .range([0, 1])
+        .clamp(true)
     }
   },
   watch: {
@@ -109,6 +157,19 @@ export default {
       if (active) {
         this.updateShapeRects()
       }
+    },
+    verticalScrollPosition (verticalScrollPosition) {
+      this.introProgress = verticalScrollPosition < this.breakpoints[1]
+        ? 0
+        : verticalScrollPosition > this.breakpoints[2]
+          ? 1
+          : this.introProgressScale(verticalScrollPosition)
+
+      this.descriptionOpacity = verticalScrollPosition < this.breakpoints[3]
+        ? 0
+        : verticalScrollPosition > this.breakpoints[4]
+          ? 1
+          : this.descriptionOpacityScale(verticalScrollPosition)
     }
   },
   mounted () {
@@ -162,6 +223,8 @@ export default {
 @import "../../styles/_variables";
 
 .discrimination-animation {
+  opacity: 0;
+
   .background {
     position: absolute;
 

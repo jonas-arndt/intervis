@@ -4,17 +4,59 @@
       <Chapter2Visualization />
     </div>
     <div class="interactive-visualization">
-      <DiscriminationAnimation :active="active" />
+      <DiscriminationAnimation
+        :active="active"
+        :breakpoints="animationBreakpoints"
+      />
     </div>
   </div>
 </template>
 
 <script>
+import { mapState } from 'vuex'
+
 export default {
   props: {
     active: {
       type: Boolean,
       default: false
+    }
+  },
+  computed: {
+    ...mapState([
+      'viewport',
+      'discriminationChapterStartPosition',
+      'caseStudyChapterStartPosition'
+    ]),
+    totalChapterHeight () {
+      return this.caseStudyChapterStartPosition - this.discriminationChapterStartPosition
+    },
+    prefixHeight () {
+      return this.viewport.height
+    },
+    introHeight () {
+      return 0.5 * this.viewport.height
+    },
+    animationPauseHeight () {
+      return 0.5 * this.viewport.height
+    },
+    animationBreakpoints () {
+      const fixedElementsHeight = this.prefixHeight + this.introHeight + 3 * this.animationPauseHeight
+      const transitionStepHeight = (this.totalChapterHeight - fixedElementsHeight) / 2
+
+      const chapterStart = this.discriminationChapterStartPosition
+      const prefixEnd = chapterStart + this.prefixHeight
+      const introEnd = prefixEnd + this.introHeight
+      const firstStepStart = introEnd + this.animationPauseHeight
+      const firstStepEnd = firstStepStart + transitionStepHeight
+
+      return [
+        chapterStart,
+        prefixEnd,
+        introEnd,
+        firstStepStart,
+        firstStepEnd
+      ]
     }
   }
 }
