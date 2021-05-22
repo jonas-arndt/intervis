@@ -12,8 +12,7 @@
       <div class="background">
         <div class="lines" :style="{ opacity: linesFadeOut }" />
         <div class="text" :style="shape1TextStyles">
-          <img v-if="$i18n.locale == 'en'" src="~/assets/teaser/teaser-text-en.svg" alt="Access, Inclusion, Participation, Acknowledgment">
-          <img v-if="$i18n.locale == 'de'" src="~/assets/teaser/teaser-text-de.svg" alt="Zugang, Integration, Teilhabe, Anerkennung">
+          <Words />
         </div>
         <div class="grid" :style="{ opacity: gridFadeOut }" />
       </div>
@@ -30,15 +29,13 @@
       <div class="background">
         <div class="grid" :style="{ opacity: gridFadeOut }" />
         <div class="text" :style="shape2TextStyles">
-          <img v-if="$i18n.locale == 'en'" src="~/assets/teaser/teaser-text-en.svg" alt="Access, Inclusion, Participation, Acknowledgment">
-          <img v-if="$i18n.locale == 'de'" src="~/assets/teaser/teaser-text-de.svg" alt="Zugang, Integration, Teilhabe, Anerkennung">
+          <Words />
         </div>
       </div>
 
       <template v-slot:unclipped>
         <div class="unclipped-text" :style="shape2UnclippedTextStyles">
-          <img v-if="$i18n.locale == 'en'" src="~/assets/teaser/teaser-text-en.svg" alt="Access, Inclusion, Participation, Acknowledgment">
-          <img v-if="$i18n.locale == 'de'" src="~/assets/teaser/teaser-text-de.svg" alt="Zugang, Integration, Teilhabe, Anerkennung">
+          <Words />
         </div>
       </template>
     </Blob>
@@ -273,14 +270,6 @@ export default {
   .measures-animation {
     .visual {
       overflow: visible;
-    }
-
-    .text, .unclipped-text {
-      img {
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-      }
     }
 
     .visual.top-left {

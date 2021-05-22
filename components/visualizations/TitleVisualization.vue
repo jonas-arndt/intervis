@@ -1,8 +1,7 @@
 <template>
   <div class="title-visualization" :style="{ opacity }">
     <div class="text">
-      <img v-if="$i18n.locale == 'en'" src="~/assets/teaser/teaser-text-en.svg" alt="Access, Inclusion, Participation, Acknowledgment">
-      <img v-if="$i18n.locale == 'de'" src="~/assets/teaser/teaser-text-de.svg" alt="Zugang, Integration, Teilhabe, Anerkennung">
+      <Words />
     </div>
     <div class="single-lines" :style="singleLinesStyles">
       <div class="horizontal-lines" />
@@ -173,16 +172,11 @@ export default {
     position: relative;
     z-index: 20;
 
-    img {
-      position: relative;
-      display: inline-block;
-      vertical-align: middle;
-      height: 100%;
-      top: 5vh;
-      left: 1rem;
-      max-width: 90%;
-      max-height: 90vh;
-    }
+    height: 100%;
+    top: 5vh;
+    left: 1rem;
+    max-width: 90%;
+    max-height: 90vh;
   }
 
   .label {
