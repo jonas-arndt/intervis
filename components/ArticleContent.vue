@@ -118,18 +118,6 @@ export default {
           this.setCaseStudyChapterStartPosition(y)
           break
         }
-        case 'case1': {
-          this.setCase1ChapterStartPosition(y)
-          break
-        }
-        case 'case2': {
-          this.setCase2ChapterStartPosition(y)
-          break
-        }
-        case 'case3': {
-          this.setCase3ChapterStartPosition(y)
-          break
-        }
         case 'chapter4': {
           this.setMeasuresChapterStartPosition(y)
           break
