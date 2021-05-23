@@ -13,11 +13,62 @@
         </div>
       </div>
     </div>
+    <div class="interactive-visualization">
+      <DisabilitiesAnimation :breakpoints="animationBreakpoints" :active="active" />
+    </div>
   </div>
 </template>
 
+<script>
+import { mapState } from 'vuex'
+
+export default {
+  props: {
+    active: {
+      type: Boolean,
+      default: false
+    }
+  },
+  computed: {
+    ...mapState([
+      'viewport',
+      'case3ChapterStartPosition',
+      'measuresChapterStartPosition'
+    ]),
+    chapterStart () {
+      return this.case2ChapterStartPosition
+    },
+    chapterEnd () {
+      return this.case3ChapterStartPosition
+    },
+    animationBreakpoints () {
+      return {}
+    }
+  }
+}
+</script>
+
 <style scoped lang="scss">
 @import "../../styles/_variables";
+
+.working-handicapped-visualization {
+  .interactive-visualization {
+    display: none;
+  }
+}
+
+.page.js .working-handicapped-visualization {
+  .fallback {
+    display: none;
+  }
+
+  .interactive-visualization {
+    position: sticky;
+    display: block;
+    top: 0;
+    height: 100vh;
+  }
+}
 
 .working-handicapped-visualization {
   .step-1, .step-2 {

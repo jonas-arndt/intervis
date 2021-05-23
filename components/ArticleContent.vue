@@ -4,7 +4,7 @@
     <Introduction id="introduction" ref="introduction" class="intersecting" @hook:mounted="updateChapterDimensions('introduction')" />
     <Intersectionality id="chapter1" ref="chapter1" class="intersecting" @hook:mounted="updateChapterDimensions('chapter1')" />
     <DiscriminationAndPrivilege id="chapter2" ref="chapter2" class="intersecting" :active="'chapter2' in chapterActiveState && chapterActiveState.chapter2" @hook:mounted="updateChapterDimensions('chapter2')" />
-    <CaseStudies id="chapter3" ref="chapter3" class="intersecting" @hook:mounted="updateChapterDimensions('chapter3')" />
+    <CaseStudies id="chapter3" ref="chapter3" class="intersecting" :chapter-active-state="chapterActiveState" @hook:mounted="updateChapterDimensions('chapter3')" />
     <Measures id="chapter4" ref="chapter4" class="intersecting" :active="'chapter4' in chapterActiveState && chapterActiveState.chapter4" @hook:mounted="updateChapterDimensions('chapter4')" />
     <NextSteps id="chapter5" ref="chapter5" class="intersecting" @hook:mounted="updateChapterDimensions('chapter5')" />
     <ProjectInformation id="project-information" class="intersecting" />
@@ -116,6 +116,18 @@ export default {
         }
         case 'chapter3': {
           this.setCaseStudyChapterStartPosition(y)
+          break
+        }
+        case 'case1': {
+          this.setCase1ChapterStartPosition(y)
+          break
+        }
+        case 'case2': {
+          this.setCase2ChapterStartPosition(y)
+          break
+        }
+        case 'case3': {
+          this.setCase3ChapterStartPosition(y)
           break
         }
         case 'chapter4': {

@@ -11,9 +11,9 @@
       </div>
     </div>
 
-    <CaseStudy1 id="case-study-1" class="intersecting" />
-    <CaseStudy2 id="case-study-2" class="intersecting" />
-    <CaseStudy3 id="case-study-3" class="intersecting" />
+    <CaseStudy1 id="case1" class="intersecting" :active="'case1' in chapterActiveState && chapterActiveState.case1" />
+    <CaseStudy2 id="case2" class="intersecting" :active="'case1' in chapterActiveState && chapterActiveState.case2" />
+    <CaseStudy3 id="case3" class="intersecting" :active="'case1' in chapterActiveState && chapterActiveState.case3" />
 
     <SliderContent>
       <DesignDecisions3 />
@@ -26,6 +26,12 @@ import { mapState } from 'vuex'
 import { scaleLinear } from 'd3-scale'
 
 export default {
+  props: {
+    chapterActiveState: {
+      type: Object,
+      default: () => { return {} }
+    }
+  },
   data () {
     return {
       slideInButtonOpacity: 0

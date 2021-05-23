@@ -17,11 +17,62 @@
         </div>
       </div>
     </div>
+    <div class="interactive-visualization">
+      <SchoolAnimation :breakpoints="animationBreakpoints" :active="active" />
+    </div>
   </div>
 </template>
 
+<script>
+import { mapState } from 'vuex'
+
+export default {
+  props: {
+    active: {
+      type: Boolean,
+      default: false
+    }
+  },
+  computed: {
+    ...mapState([
+      'viewport',
+      'case2ChapterStartPosition',
+      'case3ChapterStartPosition'
+    ]),
+    chapterStart () {
+      return this.case2ChapterStartPosition
+    },
+    chapterEnd () {
+      return this.case3ChapterStartPosition
+    },
+    animationBreakpoints () {
+      return {}
+    }
+  }
+}
+</script>
+
 <style scoped lang="scss">
 @import "../../styles/_variables";
+
+.school-visualization {
+  .interactive-visualization {
+    display: none;
+  }
+}
+
+.page.js .school-visualization {
+  .fallback {
+    display: none;
+  }
+
+  .interactive-visualization {
+    position: sticky;
+    display: block;
+    top: 0;
+    height: 100vh;
+  }
+}
 
 .school-visualization .fallback {
   .step-1, .step-2, .step-3 {

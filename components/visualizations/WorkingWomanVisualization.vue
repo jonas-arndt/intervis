@@ -12,11 +12,62 @@
         </div>
       </div>
     </div>
+    <div class="interactive-visualization">
+      <HijabAnimation :breakpoints="animationBreakpoints" :active="active" />
+    </div>
   </div>
 </template>
 
+<script>
+import { mapState } from 'vuex'
+
+export default {
+  props: {
+    active: {
+      type: Boolean,
+      default: false
+    }
+  },
+  computed: {
+    ...mapState([
+      'viewport',
+      'case1ChapterStartPosition',
+      'case2ChapterStartPosition'
+    ]),
+    chapterStart () {
+      return this.case2ChapterStartPosition
+    },
+    chapterEnd () {
+      return this.case3ChapterStartPosition
+    },
+    animationBreakpoints () {
+      return {}
+    }
+  }
+}
+</script>
+
 <style scoped lang="scss">
 @import "../../styles/_variables";
+
+.working-woman-visualization {
+  .interactive-visualization {
+    display: none;
+  }
+}
+
+.page.js .working-woman-visualization {
+  .fallback {
+    display: none;
+  }
+
+  .interactive-visualization {
+    position: sticky;
+    display: block;
+    top: 0;
+    height: 100vh;
+  }
+}
 
 .working-woman-visualization .fallback {
   .step-1, .step-2 {

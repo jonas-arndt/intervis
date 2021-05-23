@@ -2,7 +2,7 @@
   <div>
     <CaseStudyContainer class="case-study working-women">
       <template v-slot:background-visualization>
-        <WorkingWomanVisualization />
+        <WorkingWomanVisualization :active="active" />
       </template>
 
       <template v-slot:content>
@@ -28,6 +28,17 @@
     </CaseStudyContainer>
   </div>
 </template>
+
+<script>
+export default {
+  props: {
+    active: {
+      type: Boolean,
+      default: false
+    }
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 @import "../../styles/_variables";

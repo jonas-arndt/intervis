@@ -42,6 +42,11 @@
     z-index: -100;
     height: 100%;
     width: 100%;
+
+    & > * {
+      position: relative;
+      height: 100%;
+    }
   }
 
   @media (min-width: $media-breakpoint-min-m) {
