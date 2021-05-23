@@ -60,6 +60,49 @@ body,
   }
 }
 
+.case-study-visalization {
+  .quote {
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    margin: 0;
+
+    font-size: $font-size-subtitle;
+    font-weight: bold;
+    font-style: italic;
+
+    .text {
+      display: table-cell;
+      height: 100vh;
+      vertical-align: middle;
+    }
+  }
+
+  .legend {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    span {
+      display: block;
+    }
+
+    .digit {
+      font-size: $font-size-title;
+      font-style: italic;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .details {
+      font-family: $font-family-signika;
+      font-size: $font-size-small;
+    }
+  }
+}
+
 .chapter-4-visualization {
   .visual {
     position: absolute;
