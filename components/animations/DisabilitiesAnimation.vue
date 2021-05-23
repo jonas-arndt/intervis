@@ -1,10 +1,11 @@
 <template>
-  <div class="disabilities-animation">
+  <div class="disabilities-animation" :style="componentStyles">
     <Blob
       ref="shape1"
       class="shape1"
       :shape="shapes['chapter3_example3_frauen*mitbehinderung_gewalt.svg']"
       :rect="shape1Rect"
+      :scale="shapeScale"
       clip-path-id="chapter3_example3_shape1"
     >
       <div class="background">
@@ -17,6 +18,7 @@
       class="shape2"
       :shape="shapes['chapter3_example3_frauen*ohnebehinderung_gewalt.svg']"
       :rect="shape2Rect"
+      :scale="shapeScale"
       clip-path-id="chapter3_example3_shape2"
     >
       <div class="background">
@@ -25,25 +27,31 @@
       </div>
     </Blob>
 
-    <div class="legend legend-shape1">
-      <span class="digit" v-html="$t('chapter3-example3-vis3')" />
-      <span class="details step1" v-html="$t('chapter3-example3-vis1')" />
-      <span class="details step2" v-html="$t('chapter3-example3-vis4')" />
+    <div class="statistic1" :style="statistic1Styles">
+      <div class="legend legend-shape1">
+        <span class="details" v-html="$t('chapter3-example3-vis1')" />
+      </div>
+      <div class="legend legend-shape2">
+        <span class="details" v-html="$t('chapter3-example3-vis2')" />
+      </div>
     </div>
 
-    <div class="legend legend-shape2">
-      <span class="digit" v-html="$t('chapter3-example3-vis5')" />
-      <span class="details step1" v-html="$t('chapter3-example3-vis1')" />
-      <span class="details step2" v-html="$t('chapter3-example3-vis6')" />
-    </div>
-
-    <div class="quote">
-      <p class="text" v-html="$t('chapter3-example1-quote')" />
+    <div class="statistic2" :style="statistic2Styles">
+      <div class="legend legend-shape1">
+        <span class="digit" v-html="$t('chapter3-example3-vis3')" />
+        <span class="details" v-html="$t('chapter3-example3-vis4')" />
+      </div>
+      <div class="legend legend-shape2">
+        <span class="digit" v-html="$t('chapter3-example3-vis5')" />
+        <span class="details" v-html="$t('chapter3-example3-vis6')" />
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import { mapState } from 'vuex'
+import { scaleLinear } from 'd3-scale'
 import shapes from '~/data/shapes.json'
 
 export default {
@@ -63,7 +71,72 @@ export default {
       shapes,
 
       shape1Rect: { top: 0, left: 0, width: 0, height: 0 },
-      shape2Rect: { top: 0, left: 0, width: 0, height: 0 }
+      shape2Rect: { top: 0, left: 0, width: 0, height: 0 },
+
+      componentOpacity: 0,
+      shapeVisibility: 0,
+      statistic1Opacity: 0,
+      statistic2Opacity: 0
+    }
+  },
+  computed: {
+    ...mapState(['verticalScrollPosition']),
+
+    // style aggregations
+    componentStyles () {
+      return {
+        opacity: this.componentOpacity
+      }
+    },
+    shapeScale () {
+      return this.shapeVisibility
+    },
+    statistic1Styles () {
+      return {
+        opacity: this.statistic1Opacity
+      }
+    },
+    statistic2Styles () {
+      return {
+        opacity: this.statistic2Opacity
+      }
+    },
+
+    // scales
+    componentVisibilityScale () {
+      return scaleLinear()
+        .domain([
+          this.breakpoints.startScreen,
+          this.breakpoints.statistic1ScreenStart,
+          this.breakpoints.statistic1ScreenEnd,
+          this.breakpoints.blankScreenStart,
+          this.breakpoints.blankScreenEnd,
+          this.breakpoints.statistic2ScreenStart,
+          this.breakpoints.statistic2ScreenEnd,
+          this.breakpoints.endScreen
+        ])
+        .range([0, 1, 1, 0, 0, 1, 1, 0])
+        .clamp(true)
+    },
+    statistic1OpacityScale () {
+      return scaleLinear()
+        .domain([
+          this.breakpoints.statistic1LegendTextAppearanceStart,
+          this.breakpoints.statistic1ScreenStart,
+          this.breakpoints.statistic1ScreenEnd,
+          this.breakpoints.statistic1LegendTextDisappearanceEnd
+        ])
+        .range([0, 1, 1, 0])
+        .clamp(true)
+    },
+    statistic2OpacityScale () {
+      return scaleLinear()
+        .domain([
+          this.breakpoints.statistic2LegendTextAppearanceStart,
+          this.breakpoints.statistic2ScreenStart
+        ])
+        .range([0, 1])
+        .clamp(true)
     }
   },
   watch: {
@@ -71,6 +144,27 @@ export default {
       if (active) {
         this.updateShapeRects()
       }
+    },
+    verticalScrollPosition (verticalScrollPosition) {
+      this.componentOpacity = verticalScrollPosition < this.breakpoints.startScreen && verticalScrollPosition > this.breakpoints.endScreen
+        ? 0
+        : this.componentVisibilityScale(verticalScrollPosition)
+
+      this.shapeVisibility = verticalScrollPosition < this.breakpoints.startScreen
+        ? 0
+        : verticalScrollPosition > this.breakpoints.statistic2ScreenStart
+          ? 1
+          : this.componentVisibilityScale(verticalScrollPosition)
+
+      this.statistic1Opacity = verticalScrollPosition < this.breakpoints.statistic1LegendTextAppearanceStart && verticalScrollPosition > this.breakpoints.statistic1LegendTextDisappearanceEnd
+        ? 0
+        : this.statistic1OpacityScale(verticalScrollPosition)
+
+      this.statistic2Opacity = verticalScrollPosition < this.breakpoints.statistic2LegendTextAppearanceStart
+        ? 0
+        : verticalScrollPosition > this.breakpoints.statistic2ScreenStart
+          ? 1
+          : this.statistic2OpacityScale(verticalScrollPosition)
     }
   },
   mounted () {
@@ -123,6 +217,8 @@ export default {
 @import "../../styles/_variables";
 
 .disabilities-animation {
+  opacity: 0;
+
   .background {
     position: absolute;
 
