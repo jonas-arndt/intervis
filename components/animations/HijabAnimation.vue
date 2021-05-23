@@ -21,6 +21,7 @@
       :shape="shapes['chapter3_example1_meyremoeztuerk.svg']"
       :rect="shape2Rect"
       :scale="shape2Scale"
+      :style="shape2Styles"
       clip-path-id="chapter3_example1_shape2"
     >
       <div class="background">
@@ -74,7 +75,10 @@ export default {
       quoteOpacity: 0,
       shape1Scale: 0,
       shape1Opacity: 1,
-      shape2Scale: 0
+      shape2Scale: 0,
+      shape2Opacity: 1,
+
+      defaultTransparentShapeOpacity: 0.5
     }
   },
   computed: {
@@ -89,6 +93,11 @@ export default {
     shape1Styles () {
       return {
         opacity: this.shape1Opacity
+      }
+    },
+    shape2Styles () {
+      return {
+        opacity: this.shape2Opacity
       }
     },
     legendStyles () {
@@ -123,6 +132,20 @@ export default {
           this.breakpoints.shapeScreenStart
         ])
         .range([0, 1, 1, 0])
+        .clamp(true)
+    },
+    shape2OpacityScale () {
+      return scaleLinear()
+        .domain([
+          this.breakpoints.shapeScreenEnd,
+          this.breakpoints.quoteAppearanceStart,
+          this.breakpoints.quoteScreenStart
+        ])
+        .range([
+          1,
+          1 - (1 - this.defaultTransparentShapeOpacity) * 0.8,
+          this.defaultTransparentShapeOpacity
+        ])
         .clamp(true)
     },
     legendOpacityScale () {
@@ -172,6 +195,12 @@ export default {
         : verticalScrollPosition > this.breakpoints.statisticScreenStart
           ? 1
           : this.shapeScaleScale(verticalScrollPosition)
+
+      this.shape2Opacity = verticalScrollPosition < this.breakpoints.shapeScreenEnd
+        ? 1
+        : verticalScrollPosition > this.breakpoints.quoteScreenStart
+          ? this.defaultTransparentShapeOpacity
+          : this.shape2OpacityScale(verticalScrollPosition)
 
       this.legendOpacity = verticalScrollPosition < this.breakpoints.legendAppearanceStart && verticalScrollPosition > this.breakpoints.legendDisappearanceEnd
         ? 0
