@@ -30,11 +30,35 @@
 </template>
 
 <script>
+import { mapMutations, mapState } from 'vuex'
+
 export default {
   props: {
     active: {
       type: Boolean,
       default: false
+    }
+  },
+  computed: {
+    ...mapState(['verticalScrollPosition'])
+  },
+  watch: {
+    active (active) {
+      if (active) {
+        this.updateChapterDimensions()
+      }
+    }
+  },
+  mounted () {
+    this.$nuxt.$on('windowResized', this.updateChapterDimensions)
+    this.updateChapterDimensions()
+  },
+  methods: {
+    ...mapMutations(['setCase1ChapterStartPosition']),
+    updateChapterDimensions () {
+      const rect = this.$el.getBoundingClientRect()
+      const y = this.verticalScrollPosition + Math.round(rect.top)
+      this.setCase1ChapterStartPosition(y)
     }
   }
 }
