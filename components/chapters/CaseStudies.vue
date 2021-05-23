@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapMutations, mapState } from 'vuex'
 import { scaleLinear } from 'd3-scale'
 
 export default {
@@ -34,7 +34,8 @@ export default {
   },
   data () {
     return {
-      slideInButtonOpacity: 0
+      slideInButtonOpacity: 0,
+      triggeredSlideIn: false
     }
   },
   computed: {
@@ -42,7 +43,8 @@ export default {
       'verticalScrollPosition',
       'viewport',
       'caseStudyChapterStartPosition',
-      'measuresChapterStartPosition'
+      'measuresChapterStartPosition',
+      'designDecisionsAreVisible'
     ]),
     slideInButtonStyles () {
       return {
@@ -69,7 +71,15 @@ export default {
       if (scrollPosition >= this.caseStudyChapterStartPosition && scrollPosition <= this.measuresChapterStartPosition) {
         this.slideInButtonOpacity = this.slideInButtonOpacityScale(scrollPosition)
       }
+
+      if (!this.triggeredSlideIn && !this.designDecisionsAreVisible && this.slideInButtonOpacity === 1) {
+        this.toggleDesignDecisionsVisibility()
+        this.triggeredSlideIn = true
+      }
     }
+  },
+  methods: {
+    ...mapMutations(['toggleDesignDecisionsVisibility'])
   }
 }
 </script>

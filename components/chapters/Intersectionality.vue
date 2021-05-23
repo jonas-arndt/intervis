@@ -32,8 +32,7 @@ import { scaleLinear } from 'd3-scale'
 export default {
   data () {
     return {
-      slideInButtonOpacity: 0,
-      triggeredSlideIn: false
+      slideInButtonOpacity: 0
     }
   },
   computed: {
@@ -41,8 +40,7 @@ export default {
       'verticalScrollPosition',
       'viewport',
       'intersectionalityChapterStartPosition',
-      'discriminationChapterStartPosition',
-      'designDecisionsAreVisible'
+      'discriminationChapterStartPosition'
     ]),
     slideInButtonStyles () {
       return {
@@ -68,16 +66,11 @@ export default {
     verticalScrollPosition (scrollPosition) {
       if (scrollPosition >= this.intersectionalityChapterStartPosition && scrollPosition <= this.discriminationChapterStartPosition) {
         this.slideInButtonOpacity = this.slideInButtonOpacityScale(scrollPosition)
-
-        if (!this.triggeredSlideIn && !this.designDecisionsAreVisible && this.slideInButtonOpacity === 1) {
-          this.toggleDesignDecisionsVisibility()
-          this.triggeredSlideIn = true
-        }
       }
     }
   },
   methods: {
-    ...mapMutations(['showConceptDevelopment', 'toggleDesignDecisionsVisibility'])
+    ...mapMutations(['showConceptDevelopment'])
   }
 }
 </script>
