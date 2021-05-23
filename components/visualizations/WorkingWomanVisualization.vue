@@ -88,8 +88,7 @@ export default {
         endScreen,
 
         legendAppearanceStart: statisticScreenStart - this.textAppearanceHeight,
-        legendDisappearanceEnd: statisticScreenEnd + this.textAppearanceHeight,
-        quoteAppearanceStart: quoteScreenStart - this.textAppearanceHeight
+        legendDisappearanceEnd: statisticScreenEnd + this.textAppearanceHeight
       }
     }
   }

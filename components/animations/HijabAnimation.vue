@@ -138,14 +138,9 @@ export default {
       return scaleLinear()
         .domain([
           this.breakpoints.shapeScreenEnd,
-          this.breakpoints.quoteAppearanceStart,
           this.breakpoints.quoteScreenStart
         ])
-        .range([
-          1,
-          1 - (1 - this.defaultTransparentShapeOpacity) * 0.8,
-          this.defaultTransparentShapeOpacity
-        ])
+        .range([1, this.defaultTransparentShapeOpacity])
         .clamp(true)
     },
     legendOpacityScale () {
@@ -162,7 +157,7 @@ export default {
     quoteOpacityScale () {
       return scaleLinear()
         .domain([
-          this.breakpoints.quoteAppearanceStart,
+          this.breakpoints.shapeScreenEnd,
           this.breakpoints.quoteScreenStart
         ])
         .range([0, 1])
@@ -176,6 +171,10 @@ export default {
       }
     },
     verticalScrollPosition (verticalScrollPosition) {
+      if (!this.active) {
+        return
+      }
+
       this.componentOpacity = verticalScrollPosition < this.breakpoints.startScreen && verticalScrollPosition > this.breakpoints.endScreen
         ? 0
         : this.componentOpacityScale(verticalScrollPosition)
