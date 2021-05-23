@@ -6,6 +6,7 @@
       :shape="shapes['chapter3_example1_sandrabauer.svg']"
       :rect="shape1Rect"
       :scale="shape1Scale"
+      :style="shape1Styles"
       clip-path-id="chapter3_example1_shape1"
     >
       <div class="background">
@@ -72,6 +73,7 @@ export default {
       legendOpacity: 0,
       quoteOpacity: 0,
       shape1Scale: 0,
+      shape1Opacity: 1,
       shape2Scale: 0
     }
   },
@@ -82,6 +84,11 @@ export default {
     componentStyles () {
       return {
         opacity: this.componentOpacity
+      }
+    },
+    shape1Styles () {
+      return {
+        opacity: this.shape1Opacity
       }
     },
     legendStyles () {
@@ -153,6 +160,12 @@ export default {
       this.shape1Scale = verticalScrollPosition < this.breakpoints.startScreen && verticalScrollPosition > this.breakpoints.shapeScreenStart
         ? 0
         : this.shapeScaleScale(verticalScrollPosition)
+
+      this.shape1Opacity = verticalScrollPosition < this.breakpoints.statisticScreenEnd
+        ? 1
+        : verticalScrollPosition > this.breakpoints.shapeScreenStart
+          ? 0
+          : this.shapeScaleScale(verticalScrollPosition)
 
       this.shape2Scale = verticalScrollPosition < this.breakpoints.startScreen
         ? 0
