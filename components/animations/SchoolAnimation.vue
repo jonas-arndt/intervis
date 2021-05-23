@@ -25,20 +25,18 @@
       </div>
     </Blob>
 
-    <div class="statistic">
-      <div class="legend">
-        <span class="digit step1" v-html="$t('chapter3-example2-vis1')" />
-        <span class="digit step2" v-html="$t('chapter3-example2-vis5')" />
-        <span class="details step1" v-html="$t('chapter3-example2-vis2')" />
-        <span class="details step2" v-html="$t('chapter3-example2-vis6')" />
-      </div>
+    <div class="legend legend-shape1">
+      <span class="digit step1">{{ statisticValues.shape1.step1.toFixed(2) }}%</span>
+      <span class="digit step2" v-html="$t('chapter3-example2-vis5')" />
+      <span class="details step1" v-html="$t('chapter3-example2-vis2')" />
+      <span class="details step2" v-html="$t('chapter3-example2-vis6')" />
+    </div>
 
-      <div class="legend">
-        <span class="digit step1" v-html="$t('chapter3-example2-vis3')" />
-        <span class="digit step2" v-html="$t('chapter3-example2-vis7')" />
-        <span class="details step1" v-html="$t('chapter3-example2-vis4')" />
-        <span class="details step2" v-html="$t('chapter3-example2-vis8')" />
-      </div>
+    <div class="legend legend-shape2">
+      <span class="digit step1" v-html="$t('chapter3-example2-vis3')" />
+      <span class="digit step2" v-html="$t('chapter3-example2-vis7')" />
+      <span class="details step1" v-html="$t('chapter3-example2-vis4')" />
+      <span class="details step2" v-html="$t('chapter3-example2-vis8')" />
     </div>
 
     <div class="quote">

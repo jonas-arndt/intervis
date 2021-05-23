@@ -25,18 +25,16 @@
       </div>
     </Blob>
 
-    <div class="statistic">
-      <div class="legend">
-        <span class="digit" v-html="$t('chapter3-example3-vis3')" />
-        <span class="details step1" v-html="$t('chapter3-example3-vis1')" />
-        <span class="details step2" v-html="$t('chapter3-example3-vis4')" />
-      </div>
+    <div class="legend legend-shape1">
+      <span class="digit" v-html="$t('chapter3-example3-vis3')" />
+      <span class="details step1" v-html="$t('chapter3-example3-vis1')" />
+      <span class="details step2" v-html="$t('chapter3-example3-vis4')" />
+    </div>
 
-      <div class="legend">
-        <span class="digit" v-html="$t('chapter3-example3-vis5')" />
-        <span class="details step1" v-html="$t('chapter3-example3-vis1')" />
-        <span class="details step2" v-html="$t('chapter3-example3-vis6')" />
-      </div>
+    <div class="legend legend-shape2">
+      <span class="digit" v-html="$t('chapter3-example3-vis5')" />
+      <span class="details step1" v-html="$t('chapter3-example3-vis1')" />
+      <span class="details step2" v-html="$t('chapter3-example3-vis6')" />
     </div>
 
     <div class="quote">
