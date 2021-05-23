@@ -1,19 +1,16 @@
 <template>
   <div class="article-content">
-    <div id="introduction" class="intersecting">
-      <Title ref="title" />
-      <Introduction ref="introduction" @hook:mounted="updateChapterDimensions('introduction')" />
-    </div>
+    <Title id="title" ref="title" class="intersecting" />
+    <Introduction id="introduction" ref="introduction" class="intersecting" @hook:mounted="updateChapterDimensions('introduction')" />
     <Intersectionality id="chapter1" ref="chapter1" class="intersecting" @hook:mounted="updateChapterDimensions('chapter1')" />
     <DiscriminationAndPrivilege id="chapter2" ref="chapter2" class="intersecting" :active="'chapter2' in chapterActiveState && chapterActiveState.chapter2" @hook:mounted="updateChapterDimensions('chapter2')" />
     <CaseStudies id="chapter3" ref="chapter3" class="intersecting" @hook:mounted="updateChapterDimensions('chapter3')" />
     <Measures id="chapter4" ref="chapter4" class="intersecting" :active="'chapter4' in chapterActiveState && chapterActiveState.chapter4" @hook:mounted="updateChapterDimensions('chapter4')" />
-    <div id="chapter5" class="intersecting">
-      <NextSteps ref="chapter5" @hook:mounted="updateChapterDimensions('chapter5')" />
-      <ProjectInformation />
-      <References />
-      <Imprint />
-    </div>
+    <NextSteps id="chapter5" ref="chapter5" class="intersecting" @hook:mounted="updateChapterDimensions('chapter5')" />
+    <ProjectInformation id="project-information" class="intersecting" />
+    <References id="references" class="intersecting" />
+    <Imprint id="imprint" class="intersecting" />
+  </div>
   </div>
 </template>
 

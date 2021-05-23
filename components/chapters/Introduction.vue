@@ -19,6 +19,8 @@
 @import "../../styles/_variables";
 
 .chapter.grid-visualization {
+  margin-top: 1rem; // add small offset to prevent chapter activation on page load
+
   .narrative {
     padding-top: 30vh;
     padding-bottom: 150vh;

@@ -1,10 +1,10 @@
 <template>
   <nav class="quick-navigation">
     <ul>
-      <li v-for="entry, index of entries" :key="entry.id" :class="{ 'entry': true, 'active': entry.id == activeArticleChapterId }" @click="$nuxt.$emit('scrollToChapter', entry.id)">
+      <li v-for="entry, index of entries" :key="entry.id" :class="{ 'entry': true, 'active': entry.keys.includes(activeArticleChapterId) }" @click="$nuxt.$emit('scrollToChapter', entry.id)">
         <div class="inside">
-          <span v-if="entry.id != activeArticleChapterId" class="index">{{ index }}</span>
-          <span v-else class="index">&bull;</span>
+          <span class="index passive">{{ index }}</span>
+          <span class="index active">&bull;</span>
           <span class="title" v-html="$t(entry.labelKey)" />
         </div>
       </li>
@@ -19,12 +19,12 @@ export default {
   data () {
     return {
       entries: [
-        { id: 'introduction', labelKey: 'chapter0-bar' },
-        { id: 'chapter1', labelKey: 'chapter1-bar' },
-        { id: 'chapter2', labelKey: 'chapter2-bar' },
-        { id: 'chapter3', labelKey: 'chapter3-bar' },
-        { id: 'chapter4', labelKey: 'chapter4-bar' },
-        { id: 'chapter5', labelKey: 'chapter5-bar' }
+        { id: 'title', labelKey: 'chapter0-bar', keys: ['title', 'introduction'] },
+        { id: 'chapter1', labelKey: 'chapter1-bar', keys: ['chapter1'] },
+        { id: 'chapter2', labelKey: 'chapter2-bar', keys: ['chapter2'] },
+        { id: 'chapter3', labelKey: 'chapter3-bar', keys: ['chapter3', 'case-study-1', 'case-study-2', 'case-study-3'] },
+        { id: 'chapter4', labelKey: 'chapter4-bar', keys: ['chapter4'] },
+        { id: 'chapter5', labelKey: 'chapter5-bar', keys: ['chapter5', 'project-information', 'references', 'imprint'] }
       ]
     }
   },
@@ -50,6 +50,10 @@ export default {
       position: relative;
       display: inline-block;
       width: 0.6em;
+
+      &.active {
+        display: none;
+      }
     }
 
     .title {
@@ -64,6 +68,17 @@ export default {
 
       padding: 0.5em;
       padding-right: 0.75em;
+    }
+
+    &.active {
+      .index {
+        &.active {
+          display: inherit;
+        }
+        &.passive {
+          display: none;
+        }
+      }
     }
 
     &:hover {

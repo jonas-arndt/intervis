@@ -11,9 +11,9 @@
       </div>
     </div>
 
-    <CaseStudy1 />
-    <CaseStudy2 />
-    <CaseStudy3 />
+    <CaseStudy1 id="case-study-1" class="intersecting" />
+    <CaseStudy2 id="case-study-2" class="intersecting" />
+    <CaseStudy3 id="case-study-3" class="intersecting" />
 
     <SliderContent>
       <DesignDecisions3 />
