@@ -1,5 +1,5 @@
 <template>
-  <div class="working-woman-visualization">
+  <div class="case-study-visalization working-woman-visualization">
     <div class="fallback">
       <div class="step-1">
         <div class="inside">

@@ -55,22 +55,6 @@
     position: absolute;
     bottom: 0;
     right: 0;
-
-    span {
-      display: block;
-    }
-
-    .digit {
-      font-size: $font-size-title;
-      font-style: italic;
-      font-weight: 600;
-      margin-bottom: 1rem;
-    }
-
-    .details {
-      font-family: $font-family-signika;
-      font-size: $font-size-small;
-    }
   }
 }
 </style>

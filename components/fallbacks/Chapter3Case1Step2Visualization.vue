@@ -27,23 +27,5 @@
       bottom: 10%;
     }
   }
-
-  .quote {
-    position: absolute;
-    display: block;
-    height: 100vh;
-    top: 0;
-    margin: 0;
-
-    font-size: $font-size-subtitle;
-    font-weight: bold;
-    font-style: italic;
-
-    .text {
-      display: table-cell;
-      height: 100vh;
-      vertical-align: middle;
-    }
-  }
 }
 </style>

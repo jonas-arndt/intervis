@@ -1,5 +1,5 @@
 <template>
-  <div class="working-handicapped-visualization">
+  <div class="case-study-visalization working-handicapped-visualization">
     <div class="fallback">
       <div class="step-1">
         <div class="inside">
