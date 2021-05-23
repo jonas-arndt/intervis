@@ -1,10 +1,11 @@
 <template>
-  <div class="hijab-animation">
+  <div class="hijab-animation" :style="componentStyles">
     <Blob
       ref="shape1"
       class="shape1"
       :shape="shapes['chapter3_example1_sandrabauer.svg']"
       :rect="shape1Rect"
+      :scale="shape1Scale"
       clip-path-id="chapter3_example1_shape1"
     >
       <div class="background">
@@ -18,6 +19,7 @@
       class="shape2"
       :shape="shapes['chapter3_example1_meyremoeztuerk.svg']"
       :rect="shape2Rect"
+      :scale="shape2Scale"
       clip-path-id="chapter3_example1_shape2"
     >
       <div class="background">
@@ -26,25 +28,25 @@
       </div>
     </Blob>
 
-    <div class="statistic">
-      <div class="legend">
-        <span class="digit" v-html="$t('chapter3-exampl1-vis1')" />
-        <span class="details" v-html="$t('chapter3-exampl1-vis2')" />
-      </div>
-
-      <div class="legend">
-        <span class="digit" v-html="$t('chapter3-exampl1-vis3')" />
-        <span class="details" v-html="$t('chapter3-exampl1-vis4')" />
-      </div>
+    <div class="legend legend-shape1" :style="legendStyles">
+      <span class="digit" v-html="$t('chapter3-exampl1-vis1')" />
+      <span class="details" v-html="$t('chapter3-exampl1-vis2')" />
     </div>
 
-    <div class="quote">
+    <div class="legend legend-shape2" :style="legendStyles">
+      <span class="digit" v-html="$t('chapter3-exampl1-vis3')" />
+      <span class="details" v-html="$t('chapter3-exampl1-vis4')" />
+    </div>
+
+    <div class="quote" :style="quoteStyles">
       <p class="text" v-html="$t('chapter3-example1-quote')" />
     </div>
   </div>
 </template>
 
 <script>
+import { mapState } from 'vuex'
+import { scaleLinear } from 'd3-scale'
 import shapes from '~/data/shapes.json'
 
 export default {
@@ -64,7 +66,77 @@ export default {
       shapes,
 
       shape1Rect: { top: 0, left: 0, width: 0, height: 0 },
-      shape2Rect: { top: 0, left: 0, width: 0, height: 0 }
+      shape2Rect: { top: 0, left: 0, width: 0, height: 0 },
+
+      componentOpacity: 0,
+      legendOpacity: 0,
+      quoteOpacity: 0,
+      shape1Scale: 0,
+      shape2Scale: 0
+    }
+  },
+  computed: {
+    ...mapState(['verticalScrollPosition']),
+
+    // style aggregations
+    componentStyles () {
+      return {
+        opacity: this.componentOpacity
+      }
+    },
+    legendStyles () {
+      return {
+        opacity: this.legendOpacity
+      }
+    },
+    quoteStyles () {
+      return {
+        opacity: this.quoteOpacity
+      }
+    },
+
+    // scales
+    componentOpacityScale () {
+      return scaleLinear()
+        .domain([
+          this.breakpoints.startScreen,
+          this.breakpoints.statisticScreenStart,
+          this.breakpoints.quoteScreenEnd,
+          this.breakpoints.endScreen
+        ])
+        .range([0, 1, 1, 0])
+        .clamp(true)
+    },
+    shapeScaleScale () {
+      return scaleLinear()
+        .domain([
+          this.breakpoints.startScreen,
+          this.breakpoints.statisticScreenStart,
+          this.breakpoints.statisticScreenEnd,
+          this.breakpoints.shapeScreenStart
+        ])
+        .range([0, 1, 1, 0])
+        .clamp(true)
+    },
+    legendOpacityScale () {
+      return scaleLinear()
+        .domain([
+          this.breakpoints.legendAppearanceStart,
+          this.breakpoints.statisticScreenStart,
+          this.breakpoints.statisticScreenEnd,
+          this.breakpoints.legendDisappearanceEnd
+        ])
+        .range([0, 1, 1, 0])
+        .clamp(true)
+    },
+    quoteOpacityScale () {
+      return scaleLinear()
+        .domain([
+          this.breakpoints.quoteAppearanceStart,
+          this.breakpoints.quoteScreenStart
+        ])
+        .range([0, 1])
+        .clamp(true)
     }
   },
   watch: {
@@ -72,6 +144,31 @@ export default {
       if (active) {
         this.updateShapeRects()
       }
+    },
+    verticalScrollPosition (verticalScrollPosition) {
+      this.componentOpacity = verticalScrollPosition < this.breakpoints.startScreen && verticalScrollPosition > this.breakpoints.endScreen
+        ? 0
+        : this.componentOpacityScale(verticalScrollPosition)
+
+      this.shape1Scale = verticalScrollPosition < this.breakpoints.startScreen && verticalScrollPosition > this.breakpoints.shapeScreenStart
+        ? 0
+        : this.shapeScaleScale(verticalScrollPosition)
+
+      this.shape2Scale = verticalScrollPosition < this.breakpoints.startScreen
+        ? 0
+        : verticalScrollPosition > this.breakpoints.statisticScreenStart
+          ? 1
+          : this.shapeScaleScale(verticalScrollPosition)
+
+      this.legendOpacity = verticalScrollPosition < this.breakpoints.legendAppearanceStart && verticalScrollPosition > this.breakpoints.legendDisappearanceEnd
+        ? 0
+        : this.legendOpacityScale(verticalScrollPosition)
+
+      this.quoteOpacity = verticalScrollPosition < this.breakpoints.quoteAppearanceStart
+        ? 0
+        : verticalScrollPosition > this.breakpoints.quoteScreenStart
+          ? 1
+          : this.quoteOpacityScale(verticalScrollPosition)
     }
   },
   mounted () {
@@ -124,6 +221,8 @@ export default {
 @import "../../styles/_variables";
 
 .hijab-animation {
+  opacity: 0;
+
   .background {
     position: absolute;
 
@@ -164,6 +263,19 @@ export default {
     .grid {
       background: url('~assets/grid/chapter3_frauenmithijab.png');
       background-size: cover;
+    }
+  }
+
+  .quote {
+    opacity: 0;
+  }
+
+  .legend-shape1, .legend-shape2 {
+    opacity: 0;
+
+    &.legend-shape1 {
+      right: inherit;
+      left: 0;
     }
   }
 }

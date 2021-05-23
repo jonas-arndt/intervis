@@ -34,14 +34,63 @@ export default {
       'case1ChapterStartPosition',
       'case2ChapterStartPosition'
     ]),
+
+    // breakpoints
     chapterStart () {
-      return this.case2ChapterStartPosition
+      return this.case1ChapterStartPosition
     },
     chapterEnd () {
-      return this.case3ChapterStartPosition
+      return this.case2ChapterStartPosition
     },
+
+    // transition heights
+    prefixHeight () {
+      return this.viewport.height
+    },
+    shapeAppearanceHeight () {
+      return 0.5 * this.viewport.height
+    },
+    textAppearanceHeight () {
+      return 0.25 * this.viewport.height
+    },
+    shapeTransitionHeight () {
+      return 0.5 * this.viewport.height
+    },
+    outroHeight () {
+      return 0.5 * this.viewport.height
+    },
+    suffixHeight () {
+      return this.viewport.height
+    },
+
+    // breakpoint aggregation
     animationBreakpoints () {
-      return {}
+      const fixedElementsHeight = this.prefixHeight + this.shapeAppearanceHeight + 2 * this.shapeTransitionHeight + this.outroHeight + this.suffixHeight
+      const animationPauseHeight = (this.chapterEnd - this.chapterStart - fixedElementsHeight) / 4
+
+      const startScreen = this.chapterStart + this.prefixHeight + animationPauseHeight
+      const statisticScreenStart = startScreen + this.shapeTransitionHeight
+      const statisticScreenEnd = statisticScreenStart + animationPauseHeight
+      const shapeScreenStart = statisticScreenEnd + this.shapeTransitionHeight
+      const shapeScreenEnd = shapeScreenStart + animationPauseHeight
+      const quoteScreenStart = shapeScreenEnd + this.shapeTransitionHeight
+      const quoteScreenEnd = quoteScreenStart + animationPauseHeight
+      const endScreen = quoteScreenEnd + this.outroHeight
+
+      return {
+        startScreen,
+        statisticScreenStart,
+        statisticScreenEnd,
+        shapeScreenStart,
+        shapeScreenEnd,
+        quoteScreenStart,
+        quoteScreenEnd,
+        endScreen,
+
+        legendAppearanceStart: statisticScreenStart - this.textAppearanceHeight,
+        legendDisappearanceEnd: statisticScreenEnd + this.textAppearanceHeight,
+        quoteAppearanceStart: quoteScreenStart - this.textAppearanceHeight
+      }
     }
   }
 }
