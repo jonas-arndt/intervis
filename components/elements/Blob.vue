@@ -105,13 +105,13 @@ export default {
     horizontalAlignBasedTranslateY () {
       switch (this.horizontalAlign) {
         case 'left': {
-          return this.shapeWidth / 2
+          return (this.shapeWidth - this.rect.width) / 2
         }
         case 'center': {
           return 0
         }
         case 'right': {
-          return -this.shapeWidth / 2
+          return (this.shapeWidth - this.rect.width) / -2
         }
       }
 
@@ -129,13 +129,13 @@ export default {
     verticalAlignBasedTranslateY () {
       switch (this.verticalAlign) {
         case 'top': {
-          return this.shapeHeight / 2
+          return (this.shapeHeight - this.rect.height) / 2
         }
         case 'center': {
           return 0
         }
         case 'bottom': {
-          return -this.shapeHeight / 2
+          return (this.shapeHeight - this.rect.height) / -2
         }
       }
 
