@@ -1,9 +1,9 @@
 <template>
   <nav class="quick-navigation">
     <ul>
-      <li v-for="entry, index of entries" :key="entry.id" :class="{ 'entry': true, 'active': entry.keys.includes(activeArticleChapterId) }" @click="$nuxt.$emit('scrollToChapter', entry.id)">
+      <li v-for="entry in entries" :key="entry.id" :class="{ 'entry': true, 'active': entry.keys.includes(activeArticleChapterId) }" @click="$nuxt.$emit('scrollToChapter', entry.id)">
         <div class="inside">
-          <span class="index passive">{{ index }}</span>
+          <span class="index passive">{{ entry.num }}</span>
           <span class="index active">&bull;</span>
           <span class="title" v-html="$t(entry.labelKey)" />
         </div>
@@ -19,12 +19,11 @@ export default {
   data () {
     return {
       entries: [
-        { id: 'title', labelKey: 'chapter0-bar', keys: ['title', 'introduction'] },
-        { id: 'chapter1', labelKey: 'chapter1-bar', keys: ['chapter1'] },
-        { id: 'chapter2', labelKey: 'chapter2-bar', keys: ['chapter2'] },
-        { id: 'chapter3', labelKey: 'chapter3-bar', keys: ['chapter3', 'case1', 'case2', 'case3'] },
-        { id: 'chapter4', labelKey: 'chapter4-bar', keys: ['chapter4'] },
-        { id: 'chapter5', labelKey: 'chapter5-bar', keys: ['chapter5', 'project-information', 'references', 'imprint'] }
+        { id: 'chapter1', num: 1, labelKey: 'chapter1-bar', keys: ['chapter1'] },
+        { id: 'chapter2', num: 2, labelKey: 'chapter2-bar', keys: ['chapter2'] },
+        { id: 'chapter3', num: 3, labelKey: 'chapter3-bar', keys: ['chapter3', 'case1', 'case2', 'case3'] },
+        { id: 'chapter4', num: 4, labelKey: 'chapter4-bar', keys: ['chapter4'] },
+        { id: 'chapter5', num: 5, labelKey: 'chapter5-bar', keys: ['chapter5', 'project-information', 'references', 'imprint'] }
       ]
     }
   },
