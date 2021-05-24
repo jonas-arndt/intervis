@@ -205,7 +205,7 @@ export default {
         ? 0
         : this.legendOpacityScale(verticalScrollPosition)
 
-      this.quoteOpacity = verticalScrollPosition < this.breakpoints.quoteAppearanceStart
+      this.quoteOpacity = verticalScrollPosition < this.breakpoints.shapeScreenEnd
         ? 0
         : verticalScrollPosition > this.breakpoints.quoteScreenStart
           ? 1
