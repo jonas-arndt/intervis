@@ -55,6 +55,9 @@ export default {
     viewBox () {
       return `0 0 ${this.rect.width} ${this.rect.height}`
     },
+    shapeWidth () {
+      return this.shape.rect.width * this.clipPathScale
+    },
     shapeHeight () {
       return this.shape.rect.height * this.clipPathScale
     },
@@ -93,7 +96,7 @@ export default {
       return Number.isNaN(translateX) ? 0 : translateX
     },
     scaleBasedTranslateX () {
-      return (1 - this.scale) * (this.rect.width / 2)
+      return (this.rect.width - this.shapeWidth) / 2
     },
 
     // translate y
@@ -102,18 +105,18 @@ export default {
       return Number.isNaN(translateY) ? 0 : translateY
     },
     scaleBasedTranslateY () {
-      return (1 - this.scale) * (this.shapeHeight / 2)
+      return (this.rect.height - this.shapeHeight) / 2
     },
     verticalAlignBasedTranslateY () {
       switch (this.verticalAlign) {
         case 'top': {
-          return 0
+          return this.shapeHeight / 2
         }
         case 'center': {
-          return (this.rect.height - this.shapeHeight) / 2
+          return 0
         }
         case 'bottom': {
-          return this.rect.height - this.shapeHeight
+          return -this.shapeHeight / 2
         }
       }
 
