@@ -174,6 +174,10 @@ export default {
       }
     },
     verticalScrollPosition (verticalScrollPosition) {
+      if (!this.active) {
+        return
+      }
+
       this.introProgress = verticalScrollPosition < this.breakpoints.introStart
         ? 0
         : verticalScrollPosition > this.breakpoints.introEnd

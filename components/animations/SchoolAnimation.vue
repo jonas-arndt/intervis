@@ -239,6 +239,10 @@ export default {
       }
     },
     verticalScrollPosition (verticalScrollPosition) {
+      if (!this.active) {
+        return
+      }
+
       this.componentOpacity = verticalScrollPosition < this.breakpoints.startScreen && verticalScrollPosition > this.breakpoints.endScreen
         ? 0
         : this.componentVisibilityScale(verticalScrollPosition)
