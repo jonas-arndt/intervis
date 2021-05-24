@@ -75,7 +75,7 @@ export default {
       availableDimensions: { width: 0, height: 0 },
       shape1Rect: { top: 0, left: 0, width: 0, height: 0 },
       shape2Rect: { top: 0, left: 0, width: 0, height: 0 },
-      windowSizeScale: 0.5,
+      windowSizeScale: 0.8,
 
       componentOpacity: 0,
       statistic1Opacity: 0,
@@ -264,7 +264,7 @@ export default {
   .shape1 {
     position: absolute;
     top: 10%;
-    left: 10%;
+    left: 30%;
     width: 80%;
     height: 40%;
 
@@ -291,5 +291,17 @@ export default {
       z-index: 10;
     }
   }
+
+  .legend-shape1, .legend-shape2 {
+    &.legend-shape1 {
+      bottom: 50%;
+      right: 10%;
+    }
+    &.legend-shape2 {
+      right: 5%;
+      bottom: 15%;
+    }
+  }
+
 }
 </style>

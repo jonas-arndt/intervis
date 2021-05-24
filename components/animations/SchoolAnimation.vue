@@ -23,6 +23,7 @@
       :scale="shape2Scale"
       :style="shape2Styles"
       :disable-auto-scale="true"
+      horizontal-align="left"
       clip-path-id="chapter3_example2_shape2"
     >
       <div class="background">
@@ -77,7 +78,7 @@ export default {
       availableDimensions: { width: 0, height: 0 },
       shape1Rect: { top: 0, left: 0, width: 0, height: 0 },
       shape2Rect: { top: 0, left: 0, width: 0, height: 0 },
-      windowSizeScale: 0.5,
+      windowSizeScale: 0.8,
 
       componentOpacity: 0,
 
@@ -471,7 +472,7 @@ export default {
 
   .shape2 {
     position: absolute;
-    top: 60%;
+    bottom: 10%;
     left: 10%;
     width: 80%;
     height: 30%;
@@ -479,6 +480,17 @@ export default {
     .grid {
       background: url('~assets/grid/chapter3_sintiundroma.png');
       background-size: cover;
+    }
+  }
+
+  .legend-shape1, .legend-shape2 {
+    &.legend-shape1 {
+      bottom: 50%;
+    }
+    &.legend-shape2 {
+      bottom: 20%;
+      right: inherit;
+      left: 60%;
     }
   }
 }
