@@ -74,22 +74,21 @@ export default {
       shape2Rect: { top: 0, left: 0, width: 0, height: 0 },
 
       componentOpacity: 0,
-      shapeVisibility: 0,
       statistic1Opacity: 0,
       statistic2Opacity: 0
     }
   },
   computed: {
     ...mapState(['verticalScrollPosition']),
+    shapeScale () {
+      return this.componentOpacity
+    },
 
     // style aggregations
     componentStyles () {
       return {
         opacity: this.componentOpacity
       }
-    },
-    shapeScale () {
-      return this.shapeVisibility
     },
     statistic1Styles () {
       return {
@@ -133,9 +132,11 @@ export default {
       return scaleLinear()
         .domain([
           this.breakpoints.statistic2LegendTextAppearanceStart,
-          this.breakpoints.statistic2ScreenStart
+          this.breakpoints.statistic2ScreenStart,
+          this.breakpoints.statistic2ScreenEnd,
+          this.breakpoints.statistic2LegendTextDisappearanceEnd
         ])
-        .range([0, 1])
+        .range([0, 1, 1, 0])
         .clamp(true)
     }
   },
@@ -154,21 +155,13 @@ export default {
         ? 0
         : this.componentVisibilityScale(verticalScrollPosition)
 
-      this.shapeVisibility = verticalScrollPosition < this.breakpoints.startScreen
-        ? 0
-        : verticalScrollPosition > this.breakpoints.statistic2ScreenStart
-          ? 1
-          : this.componentVisibilityScale(verticalScrollPosition)
-
       this.statistic1Opacity = verticalScrollPosition < this.breakpoints.statistic1LegendTextAppearanceStart && verticalScrollPosition > this.breakpoints.statistic1LegendTextDisappearanceEnd
         ? 0
         : this.statistic1OpacityScale(verticalScrollPosition)
 
-      this.statistic2Opacity = verticalScrollPosition < this.breakpoints.statistic2LegendTextAppearanceStart
+      this.statistic2Opacity = verticalScrollPosition < this.breakpoints.statistic2LegendTextAppearanceStart && verticalScrollPosition > this.breakpoints.statistic2LegendTextDisappearanceEnd
         ? 0
-        : verticalScrollPosition > this.breakpoints.statistic2ScreenStart
-          ? 1
-          : this.statistic2OpacityScale(verticalScrollPosition)
+        : this.statistic2OpacityScale(verticalScrollPosition)
     }
   },
   mounted () {

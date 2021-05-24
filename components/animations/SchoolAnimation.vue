@@ -5,7 +5,7 @@
       class="shape1"
       :shape="shapes['chapter3_example2_mehrheitsbevoelkerung_gymnasium.svg']"
       :rect="shape1Rect"
-      :scale="shape1Visibility"
+      :scale="shape1Scale"
       :style="shape1Styles"
       clip-path-id="chapter3_example2_shape1"
     >
@@ -19,7 +19,7 @@
       class="shape2"
       :shape="shapes['chapter3_example2_sinti*zze_rom*nja_gymnasium.svg']"
       :rect="shape2Rect"
-      :scale="shape2Visibility"
+      :scale="shape2Scale"
       :style="shape2Styles"
       clip-path-id="chapter3_example2_shape2"
     >
@@ -76,8 +76,9 @@ export default {
       shape2Rect: { top: 0, left: 0, width: 0, height: 0 },
 
       componentOpacity: 0,
-      shape1Visibility: 0,
-      shape2Visibility: 0,
+      shape1Scale: 0,
+      shape1Opacity: 0,
+      shape2Scale: 0,
       shape2Opacity: 0.5,
       quoteOpacity: 0,
       legendOpacity: 0,
@@ -115,7 +116,7 @@ export default {
     },
     shape1Styles () {
       return {
-        opacity: this.shape1Visibility
+        opacity: this.shape1Opacity
       }
     },
     shape2Styles () {
@@ -151,7 +152,18 @@ export default {
         .range([0, 1, 1, 0])
         .clamp(true)
     },
-    shape1VisibilityScale () {
+    shape1ScaleScale () {
+      return scaleLinear()
+        .domain([
+          this.breakpoints.quoteDisappearanceEnd,
+          this.breakpoints.statistic1ScreenStart,
+          this.breakpoints.statistic2ScreenEnd,
+          this.breakpoints.endScreen
+        ])
+        .range([0, 1, 1, 0])
+        .clamp(true)
+    },
+    shape1OpacityScale () {
       return scaleLinear()
         .domain([
           this.breakpoints.quoteDisappearanceEnd,
@@ -182,9 +194,11 @@ export default {
       return scaleLinear()
         .domain([
           this.breakpoints.statistic1LegendTextAppearanceStart,
-          this.breakpoints.statistic1ScreenStart
+          this.breakpoints.statistic1ScreenStart,
+          this.breakpoints.statistic2ScreenEnd,
+          this.breakpoints.statistic2LegendTextDisappearanceEnd
         ])
-        .range([0, 1])
+        .range([0, 1, 1, 0])
         .clamp(true)
     },
     legendDescriptionOpacityScale () {
@@ -247,17 +261,19 @@ export default {
         ? 0
         : this.componentVisibilityScale(verticalScrollPosition)
 
-      this.shape1Visibility = verticalScrollPosition < this.breakpoints.quoteDisappearanceEnd
+      this.shape1Scale = verticalScrollPosition < this.breakpoints.quoteDisappearanceEnd && verticalScrollPosition > this.breakpoints.endScreen
+        ? 0
+        : this.shape1ScaleScale(verticalScrollPosition)
+
+      this.shape1Opacity = verticalScrollPosition < this.breakpoints.quoteDisappearanceEnd
         ? 0
         : verticalScrollPosition > this.breakpoints.statistic1ScreenStart
           ? 1
-          : this.shape1VisibilityScale(verticalScrollPosition)
+          : this.shape1OpacityScale(verticalScrollPosition)
 
-      this.shape2Visibility = verticalScrollPosition < this.breakpoints.startScreen
+      this.shape2Scale = verticalScrollPosition < this.breakpoints.startScreen && verticalScrollPosition > this.breakpoints.endScreen
         ? 0
-        : verticalScrollPosition > this.breakpoints.quoteScreenStart
-          ? 1
-          : this.componentVisibilityScale(verticalScrollPosition)
+        : this.componentVisibilityScale(verticalScrollPosition)
 
       this.shape2Opacity = verticalScrollPosition < this.breakpoints.quoteScreenEnd
         ? this.defaultTransparentShapeOpacity
@@ -271,11 +287,9 @@ export default {
           ? 0
           : this.quoteOpacityScale(verticalScrollPosition)
 
-      this.legendOpacity = verticalScrollPosition < this.breakpoints.statistic1LegendTextAppearanceStart
+      this.legendOpacity = verticalScrollPosition < this.breakpoints.statistic1LegendTextAppearanceStart && verticalScrollPosition > this.breakpoints.statistic2LegendTextDisappearanceEnd
         ? 0
-        : verticalScrollPosition > this.breakpoints.statistic1ScreenStart
-          ? 1
-          : this.legendOpacityScale(verticalScrollPosition)
+        : this.legendOpacityScale(verticalScrollPosition)
 
       this.legendDescriptionOpacity = verticalScrollPosition < this.breakpoints.statistic1ScreenEnd && verticalScrollPosition > this.breakpoints.statistic2ScreenStart
         ? 1

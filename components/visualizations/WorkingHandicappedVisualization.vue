@@ -87,7 +87,8 @@ export default {
 
         statistic1LegendTextAppearanceStart: statistic1ScreenStart - this.textAppearanceHeight,
         statistic1LegendTextDisappearanceEnd: statistic1ScreenEnd + this.textAppearanceHeight,
-        statistic2LegendTextAppearanceStart: statistic2ScreenStart - this.textAppearanceHeight
+        statistic2LegendTextAppearanceStart: statistic2ScreenStart - this.textAppearanceHeight,
+        statistic2LegendTextDisappearanceEnd: statistic2ScreenStart + this.textAppearanceHeight
       }
     }
   }
