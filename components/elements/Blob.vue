@@ -55,14 +55,24 @@ export default {
     viewBox () {
       return `0 0 ${this.rect.width} ${this.rect.height}`
     },
-    clipPathTranslateX () {
-      const translateX = this.scaleBasedTranslateX
-      return Number.isNaN(translateX) ? 0 : translateX
+    shapeHeight () {
+      return this.shape.rect.height * this.clipPathScale
     },
-    clipPathTranslateY () {
-      const translateY = this.scaleBasedTranslateY + this.verticalAlignBasedTranslateY
-      return Number.isNaN(translateY) ? 0 : translateY
+
+    // style aggregations
+    backgroundWrapperStyles () {
+      return {
+        top: -this.rect.top + 'px',
+        left: -this.rect.left + 'px'
+      }
     },
+    insideStyles () {
+      return {
+        clipPath: `url("#${this.clipPathId}")`
+      }
+    },
+
+    // scale
     clipPathScale () {
       let scale = this.scale
       if (!this.disableAutoScale) {
@@ -76,22 +86,20 @@ export default {
         this.rect.height / this.shape.rect.height
       )
     },
-    backgroundWrapperStyles () {
-      return {
-        top: -this.rect.top + 'px',
-        left: -this.rect.left + 'px'
-      }
-    },
-    insideStyles () {
-      return {
-        clipPath: `url("#${this.clipPathId}")`
-      }
-    },
-    shapeHeight () {
-      return this.shape.rect.height * this.clipPathScale
+
+    // translate x
+    clipPathTranslateX () {
+      const translateX = this.scaleBasedTranslateX
+      return Number.isNaN(translateX) ? 0 : translateX
     },
     scaleBasedTranslateX () {
       return (1 - this.scale) * (this.rect.width / 2)
+    },
+
+    // translate y
+    clipPathTranslateY () {
+      const translateY = this.scaleBasedTranslateY + this.verticalAlignBasedTranslateY
+      return Number.isNaN(translateY) ? 0 : translateY
     },
     scaleBasedTranslateY () {
       return (1 - this.scale) * (this.shapeHeight / 2)
