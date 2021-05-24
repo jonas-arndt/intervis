@@ -5,7 +5,8 @@
       class="shape1"
       :shape="shapes['chapter3_example3_frauen*mitbehinderung_gewalt.svg']"
       :rect="shape1Rect"
-      :scale="shapeScale"
+      :scale="shape1Scale"
+      :disable-auto-scale="true"
       clip-path-id="chapter3_example3_shape1"
     >
       <div class="background">
@@ -18,7 +19,8 @@
       class="shape2"
       :shape="shapes['chapter3_example3_frauen*ohnebehinderung_gewalt.svg']"
       :rect="shape2Rect"
-      :scale="shapeScale"
+      :scale="shape2Scale"
+      :disable-auto-scale="true"
       clip-path-id="chapter3_example3_shape2"
     >
       <div class="background">
@@ -70,18 +72,43 @@ export default {
     return {
       shapes,
 
+      availableDimensions: { width: 0, height: 0 },
       shape1Rect: { top: 0, left: 0, width: 0, height: 0 },
       shape2Rect: { top: 0, left: 0, width: 0, height: 0 },
+      windowSizeScale: 0.5,
 
       componentOpacity: 0,
       statistic1Opacity: 0,
-      statistic2Opacity: 0
+      statistic2Opacity: 0,
+
+      statistic1IsActive: true
     }
   },
   computed: {
     ...mapState(['verticalScrollPosition']),
-    shapeScale () {
+    statistic2IsActive () {
+      return !this.statistic1IsActive
+    },
+    shapeVisibilityScale () {
       return this.componentOpacity
+    },
+    shape1Scale () {
+      return this.shapeVisibilityScale * this.shape1StatisticScale * this.windowSizeScale
+    },
+    shape1StatisticScale () {
+      const statistic1ShapeWidth = shapes['chapter3_example3_frauen*mitbehinderung_gewalt.svg'].rect.width
+      const statistic2ShapeWidth = shapes['chapter3_example3_frauen*mitbehinderung_erwerbstaetigkeit.svg'].rect.width
+
+      return this.statistic1IsActive ? 1 : statistic2ShapeWidth / statistic1ShapeWidth
+    },
+    shape2Scale () {
+      return this.shapeVisibilityScale * this.shape2StatisticScale * this.windowSizeScale
+    },
+    shape2StatisticScale () {
+      const statistic1ShapeWidth = shapes['chapter3_example3_frauen*ohnebehinderung_gewalt.svg'].rect.width
+      const statistic2ShapeWidth = shapes['chapter3_example3_frauen*ohnebehinderung_erwerbstaetigkeit.svg'].rect.width
+
+      return this.statistic1IsActive ? 1 : statistic2ShapeWidth / statistic1ShapeWidth
     },
 
     // style aggregations
@@ -162,6 +189,8 @@ export default {
       this.statistic2Opacity = verticalScrollPosition < this.breakpoints.statistic2LegendTextAppearanceStart && verticalScrollPosition > this.breakpoints.statistic2LegendTextDisappearanceEnd
         ? 0
         : this.statistic2OpacityScale(verticalScrollPosition)
+
+      this.statistic1IsActive = verticalScrollPosition < (this.breakpoints.statistic1ScreenEnd + this.breakpoints.statistic2ScreenStart) / 2
     }
   },
   mounted () {
@@ -182,8 +211,12 @@ export default {
     },
     updateShapeRects () {
       const parentRect = this.$el.getBoundingClientRect()
+      this.updateAvailableDimensions(parentRect)
       this.updateShapeRect(parentRect, 'shape1Rect', 'shape1')
       this.updateShapeRect(parentRect, 'shape2Rect', 'shape2')
+    },
+    updateAvailableDimensions (rect) {
+      this.availableDimensions = { width: rect.width, height: rect.height }
     },
     updateShapeRect (parentRect, rectKey, shapeKey) {
       const childRect = this.$refs[shapeKey].$el.getBoundingClientRect()

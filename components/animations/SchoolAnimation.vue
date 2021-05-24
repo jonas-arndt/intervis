@@ -7,6 +7,7 @@
       :rect="shape1Rect"
       :scale="shape1Scale"
       :style="shape1Styles"
+      :disable-auto-scale="true"
       clip-path-id="chapter3_example2_shape1"
     >
       <div class="background">
@@ -21,6 +22,7 @@
       :rect="shape2Rect"
       :scale="shape2Scale"
       :style="shape2Styles"
+      :disable-auto-scale="true"
       clip-path-id="chapter3_example2_shape2"
     >
       <div class="background">
@@ -32,16 +34,16 @@
     <div class="legend legend-shape1" :style="legendStyles">
       <span class="digit step1">{{ shape1Value.toFixed(2) }}%</span>
       <div :style="legendDescriptionStyles">
-        <span v-if="showStatistic1" class="details statistic1" v-html="$t('chapter3-example2-vis2')" />
-        <span v-if="showStatistic2" class="details statistic2" v-html="$t('chapter3-example2-vis6')" />
+        <span v-if="statistic1IsActive" class="details statistic1" v-html="$t('chapter3-example2-vis2')" />
+        <span v-if="statistic2IsActive" class="details statistic2" v-html="$t('chapter3-example2-vis6')" />
       </div>
     </div>
 
     <div class="legend legend-shape2" :style="legendStyles">
       <span class="digit step1">{{ shape2Value.toFixed(2) }}%</span>
       <div :style="legendDescriptionStyles">
-        <span v-if="showStatistic1" class="details statistic1" v-html="$t('chapter3-example2-vis4')" />
-        <span v-if="showStatistic2" class="details statistic2" v-html="$t('chapter3-example2-vis8')" />
+        <span v-if="statistic1IsActive" class="details statistic1" v-html="$t('chapter3-example2-vis4')" />
+        <span v-if="statistic2IsActive" class="details statistic2" v-html="$t('chapter3-example2-vis8')" />
       </div>
     </div>
 
@@ -72,18 +74,26 @@ export default {
     return {
       shapes,
 
+      availableDimensions: { width: 0, height: 0 },
       shape1Rect: { top: 0, left: 0, width: 0, height: 0 },
       shape2Rect: { top: 0, left: 0, width: 0, height: 0 },
+      windowSizeScale: 0.5,
 
       componentOpacity: 0,
-      shape1Scale: 0,
+
+      shape1VisibilityScale: 0,
+      shape1StatisticScale: 1,
       shape1Opacity: 0,
-      shape2Scale: 0,
+
+      shape2VisibilityScale: 0,
+      shape2StatisticScale: 1,
+      shape2QuoteResizeScale: 1,
       shape2Opacity: 0.5,
+
       quoteOpacity: 0,
       legendOpacity: 0,
       legendDescriptionOpacity: 1,
-      showStatistic1: true,
+      statistic1IsActive: true,
 
       shape1Value: 24.4,
       shape2Value: 2.3,
@@ -104,8 +114,36 @@ export default {
   },
   computed: {
     ...mapState(['verticalScrollPosition']),
-    showStatistic2 () {
-      return !this.showStatistic1
+    shape1Scale () {
+      return this.shape1VisibilityScale * this.shape1StatisticScale * this.windowSizeScale
+    },
+    shape2Scale () {
+      return this.shape2VisibilityScale * this.shape2StatisticScale * this.shape2QuoteResizeScale * this.windowSizeScale
+    },
+    statistic2IsActive () {
+      return !this.statistic1IsActive
+    },
+    shape2FitWindowRatio () {
+      const maxWidth = 0.8
+
+      const shapeRect = this.shapes['chapter3_example2_sinti*zze_rom*nja_gymnasium.svg'].rect
+      const windowRect = this.availableDimensions
+
+      return (windowRect.width * maxWidth) / (shapeRect.width * this.windowSizeScale)
+    },
+
+    // statistic scales
+    shape1StatisticRatio () {
+      const statistic1ShapeWidth = this.shapes['chapter3_example2_mehrheitsbevoelkerung_gymnasium.svg'].rect.width
+      const statistic2ShapeWidth = this.shapes['chapter3_example2_mehrheitsbevoelkerung_foerderschule.svg'].rect.width
+
+      return statistic2ShapeWidth / statistic1ShapeWidth
+    },
+    shape2StatisticRatio () {
+      const statistic1ShapeWidth = this.shapes['chapter3_example2_sinti*zze_rom*nja_gymnasium.svg'].rect.width
+      const statistic2ShapeWidth = this.shapes['chapter3_example2_sinti*zze_rom*nja_foerderschule.svg'].rect.width
+
+      return statistic2ShapeWidth / statistic1ShapeWidth
     },
 
     // style aggregations
@@ -152,7 +190,7 @@ export default {
         .range([0, 1, 1, 0])
         .clamp(true)
     },
-    shape1ScaleScale () {
+    shape1VisibilityScaleScale () {
       return scaleLinear()
         .domain([
           this.breakpoints.quoteDisappearanceEnd,
@@ -181,7 +219,7 @@ export default {
         .range([1, 0])
         .clamp(true)
     },
-    showStatistic1Scale () {
+    statistic1IsActiveScale () {
       return scaleLinear()
         .domain([
           this.breakpoints.statistic1ScreenEnd,
@@ -244,6 +282,33 @@ export default {
           this.statisticValues.shape2.step2
         ])
         .clamp(true)
+    },
+    shape1StatisticScaleScale () {
+      return scaleLinear()
+        .domain([
+          this.breakpoints.statistic1ScreenEnd,
+          this.breakpoints.statistic2ScreenStart
+        ])
+        .range([1, this.shape1StatisticRatio])
+        .clamp(true)
+    },
+    shape2StatisticScaleScale () {
+      return scaleLinear()
+        .domain([
+          this.breakpoints.statistic1ScreenEnd,
+          this.breakpoints.statistic2ScreenStart
+        ])
+        .range([1, this.shape2StatisticRatio])
+        .clamp(true)
+    },
+    shape2QuoteResizeScaleScale () {
+      return scaleLinear()
+        .domain([
+          this.breakpoints.quoteScreenEnd,
+          this.breakpoints.statistic1ScreenStart
+        ])
+        .range([this.shape2FitWindowRatio, 1])
+        .clamp(true)
     }
   },
   watch: {
@@ -261,9 +326,9 @@ export default {
         ? 0
         : this.componentVisibilityScale(verticalScrollPosition)
 
-      this.shape1Scale = verticalScrollPosition < this.breakpoints.quoteDisappearanceEnd && verticalScrollPosition > this.breakpoints.endScreen
+      this.shape1VisibilityScale = verticalScrollPosition < this.breakpoints.quoteDisappearanceEnd && verticalScrollPosition > this.breakpoints.endScreen
         ? 0
-        : this.shape1ScaleScale(verticalScrollPosition)
+        : this.shape1VisibilityScaleScale(verticalScrollPosition)
 
       this.shape1Opacity = verticalScrollPosition < this.breakpoints.quoteDisappearanceEnd
         ? 0
@@ -271,7 +336,7 @@ export default {
           ? 1
           : this.shape1OpacityScale(verticalScrollPosition)
 
-      this.shape2Scale = verticalScrollPosition < this.breakpoints.startScreen && verticalScrollPosition > this.breakpoints.endScreen
+      this.shape2VisibilityScale = verticalScrollPosition < this.breakpoints.startScreen && verticalScrollPosition > this.breakpoints.endScreen
         ? 0
         : this.componentVisibilityScale(verticalScrollPosition)
 
@@ -295,19 +360,31 @@ export default {
         ? 1
         : this.legendDescriptionOpacityScale(verticalScrollPosition)
 
+      this.shape2QuoteResizeScale = verticalScrollPosition < this.breakpoints.quoteScreenEnd
+        ? this.shape2FitWindowRatio
+        : verticalScrollPosition > this.breakpoints.statistic1ScreenStart
+          ? 1
+          : this.shape2QuoteResizeScaleScale(verticalScrollPosition)
+
       // shape values
       if (verticalScrollPosition < this.breakpoints.statistic1ScreenEnd) {
-        this.showStatistic1 = true
+        this.statistic1IsActive = true
         this.shape1Value = this.statisticValues.shape1.step1
         this.shape2Value = this.statisticValues.shape2.step1
+        this.shape1StatisticScale = 1
+        this.shape2StatisticScale = 1
       } else if (verticalScrollPosition > this.breakpoints.statistic2ScreenStart) {
-        this.showStatistic1 = false
+        this.statistic1IsActive = false
         this.shape1Value = this.statisticValues.shape1.step2
         this.shape2Value = this.statisticValues.shape2.step2
+        this.shape1StatisticScale = this.shape1StatisticRatio
+        this.shape2StatisticScale = this.shape2StatisticRatio
       } else {
-        this.showStatistic1 = this.statisticTransitionProgressScale(verticalScrollPosition) < 0.5
+        this.statistic1IsActive = this.statisticTransitionProgressScale(verticalScrollPosition) < 0.5
         this.shape1Value = this.shape1ValueScale(verticalScrollPosition)
         this.shape2Value = this.shape2ValueScale(verticalScrollPosition)
+        this.shape1StatisticScale = this.shape1StatisticScaleScale(verticalScrollPosition)
+        this.shape2StatisticScale = this.shape2StatisticScaleScale(verticalScrollPosition)
       }
     }
   },
@@ -329,8 +406,12 @@ export default {
     },
     updateShapeRects () {
       const parentRect = this.$el.getBoundingClientRect()
+      this.updateAvailableDimensions(parentRect)
       this.updateShapeRect(parentRect, 'shape1Rect', 'shape1')
       this.updateShapeRect(parentRect, 'shape2Rect', 'shape2')
+    },
+    updateAvailableDimensions (rect) {
+      this.availableDimensions = { width: rect.width, height: rect.height }
     },
     updateShapeRect (parentRect, rectKey, shapeKey) {
       const childRect = this.$refs[shapeKey].$el.getBoundingClientRect()

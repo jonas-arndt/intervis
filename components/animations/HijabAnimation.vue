@@ -7,6 +7,7 @@
       :rect="shape1Rect"
       :scale="shape1Scale"
       :style="shape1Styles"
+      :disable-auto-scale="true"
       clip-path-id="chapter3_example1_shape1"
     >
       <div class="background">
@@ -22,6 +23,7 @@
       :rect="shape2Rect"
       :scale="shape2Scale"
       :style="shape2Styles"
+      :disable-auto-scale="true"
       clip-path-id="chapter3_example1_shape2"
     >
       <div class="background">
@@ -67,15 +69,18 @@ export default {
     return {
       shapes,
 
+      availableDimensions: { width: 0, height: 0 },
       shape1Rect: { top: 0, left: 0, width: 0, height: 0 },
       shape2Rect: { top: 0, left: 0, width: 0, height: 0 },
+      windowSizeScale: 0.5,
 
       componentOpacity: 0,
       legendOpacity: 0,
       quoteOpacity: 0,
-      shape1Scale: 0,
+      shape1VisibilityScale: 0,
       shape1Opacity: 1,
-      shape2Scale: 0,
+      shape2VisibilityScale: 0,
+      shape2QuoteResizeScale: 1,
       shape2Opacity: 1,
 
       defaultTransparentShapeOpacity: 0.5
@@ -83,6 +88,20 @@ export default {
   },
   computed: {
     ...mapState(['verticalScrollPosition']),
+    shape1Scale () {
+      return this.shape1VisibilityScale * this.windowSizeScale
+    },
+    shape2Scale () {
+      return this.shape2QuoteResizeScale * this.shape2VisibilityScale * this.windowSizeScale
+    },
+    shape2FitWindowRatio () {
+      const maxWidth = 0.8
+
+      const shapeRect = this.shapes['chapter3_example1_meyremoeztuerk.svg'].rect
+      const windowRect = this.availableDimensions
+
+      return (windowRect.width * maxWidth) / (shapeRect.width * this.windowSizeScale)
+    },
 
     // style aggregations
     componentStyles () {
@@ -162,6 +181,15 @@ export default {
         ])
         .range([0, 1])
         .clamp(true)
+    },
+    shape2QuoteResizeScaleScale () {
+      return scaleLinear()
+        .domain([
+          this.breakpoints.statisticScreenEnd,
+          this.breakpoints.shapeScreenStart
+        ])
+        .range([1, this.shape2FitWindowRatio])
+        .clamp(true)
     }
   },
   watch: {
@@ -179,7 +207,7 @@ export default {
         ? 0
         : this.componentOpacityScale(verticalScrollPosition)
 
-      this.shape1Scale = verticalScrollPosition < this.breakpoints.startScreen && verticalScrollPosition > this.breakpoints.shapeScreenStart
+      this.shape1VisibilityScale = verticalScrollPosition < this.breakpoints.startScreen && verticalScrollPosition > this.breakpoints.shapeScreenStart
         ? 0
         : this.shapeScaleScale(verticalScrollPosition)
 
@@ -189,11 +217,17 @@ export default {
           ? 0
           : this.shapeScaleScale(verticalScrollPosition)
 
-      this.shape2Scale = verticalScrollPosition < this.breakpoints.startScreen
+      this.shape2VisibilityScale = verticalScrollPosition < this.breakpoints.startScreen
         ? 0
         : verticalScrollPosition > this.breakpoints.statisticScreenStart
           ? 1
           : this.shapeScaleScale(verticalScrollPosition)
+
+      this.shape2QuoteResizeScale = verticalScrollPosition < this.breakpoints.statisticScreenEnd
+        ? 1
+        : verticalScrollPosition > this.breakpoints.shapeScreenStart
+          ? this.shape2FitWindowRatio
+          : this.shape2QuoteResizeScaleScale(verticalScrollPosition)
 
       this.shape2Opacity = verticalScrollPosition < this.breakpoints.shapeScreenEnd
         ? 1
@@ -230,8 +264,12 @@ export default {
     },
     updateShapeRects () {
       const parentRect = this.$el.getBoundingClientRect()
+      this.updateAvailableDimensions(parentRect)
       this.updateShapeRect(parentRect, 'shape1Rect', 'shape1')
       this.updateShapeRect(parentRect, 'shape2Rect', 'shape2')
+    },
+    updateAvailableDimensions (rect) {
+      this.availableDimensions = { width: rect.width, height: rect.height }
     },
     updateShapeRect (parentRect, rectKey, shapeKey) {
       const childRect = this.$refs[shapeKey].$el.getBoundingClientRect()

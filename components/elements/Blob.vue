@@ -42,6 +42,10 @@ export default {
       required: true,
       default: () => { return { top: 0, left: 0, width: 0, height: 0 } }
     },
+    disableAutoScale: {
+      type: Boolean,
+      default: () => false
+    },
     verticalAlign: {
       type: String,
       default: () => 'center'
@@ -60,7 +64,10 @@ export default {
       return Number.isNaN(translateY) ? 0 : translateY
     },
     clipPathScale () {
-      const scale = this.containBasedScale * this.scale
+      let scale = this.scale
+      if (!this.disableAutoScale) {
+        scale *= this.containBasedScale
+      }
       return Number.isNaN(scale) ? 1 : scale
     },
     containBasedScale () {
