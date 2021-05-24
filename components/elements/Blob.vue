@@ -49,6 +49,10 @@ export default {
     verticalAlign: {
       type: String,
       default: () => 'center'
+    },
+    horizontalAlign: {
+      type: String,
+      default: () => 'center'
     }
   },
   computed: {
@@ -92,11 +96,26 @@ export default {
 
     // translate x
     clipPathTranslateX () {
-      const translateX = this.scaleBasedTranslateX
+      const translateX = this.scaleBasedTranslateX + this.horizontalAlignBasedTranslateY
       return Number.isNaN(translateX) ? 0 : translateX
     },
     scaleBasedTranslateX () {
       return (this.rect.width - this.shapeWidth) / 2
+    },
+    horizontalAlignBasedTranslateY () {
+      switch (this.horizontalAlign) {
+        case 'left': {
+          return this.shapeWidth / 2
+        }
+        case 'center': {
+          return 0
+        }
+        case 'right': {
+          return -this.shapeWidth / 2
+        }
+      }
+
+      return 0
     },
 
     // translate y
