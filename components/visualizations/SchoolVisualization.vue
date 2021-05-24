@@ -39,14 +39,71 @@ export default {
       'case2ChapterStartPosition',
       'case3ChapterStartPosition'
     ]),
+
+    // breakpoints
     chapterStart () {
       return this.case2ChapterStartPosition
     },
     chapterEnd () {
       return this.case3ChapterStartPosition
     },
+
+    // transition heights
+    prefixHeight () {
+      return this.viewport.height
+    },
+    shapeAppearanceHeight () {
+      return 0.5 * this.viewport.height
+    },
+    quoteAppearanceHeight () {
+      return 0.5 * this.viewport.height
+    },
+    shapeTransitionHeight () {
+      return 0.5 * this.viewport.height
+    },
+    statisticTransitionHeight () {
+      return 0.75 * this.viewport.height
+    },
+    textAppearanceHeight () {
+      return 0.25 * this.viewport.height
+    },
+    outroHeight () {
+      return 0.5 * this.viewport.height
+    },
+    suffixHeight () {
+      return this.viewport.height
+    },
+
+    // breakpoint aggregation
     animationBreakpoints () {
-      return {}
+      const fixedElementsHeight = this.prefixHeight + this.shapeAppearanceHeight + this.quoteAppearanceHeight + this.shapeTransitionHeight + this.statisticTransitionHeight + this.outroHeight + this.suffixHeight
+      const animationPauseHeight = (this.chapterEnd - this.chapterStart - fixedElementsHeight) / 4
+
+      const startScreen = this.chapterStart + this.prefixHeight + animationPauseHeight
+      const quoteScreenStart = startScreen + this.shapeAppearanceHeight
+      const quoteScreenEnd = quoteScreenStart + animationPauseHeight
+      const quoteDisappearanceEnd = quoteScreenEnd + this.quoteAppearanceHeight
+      const statistic1ScreenStart = quoteDisappearanceEnd + this.shapeTransitionHeight
+      const statistic1ScreenEnd = statistic1ScreenStart + animationPauseHeight
+      const statistic2ScreenStart = statistic1ScreenEnd + this.statisticTransitionHeight
+      const statistic2ScreenEnd = statistic2ScreenStart + animationPauseHeight
+      const endScreen = statistic2ScreenEnd + this.outroHeight
+
+      return {
+        startScreen,
+        quoteScreenStart,
+        quoteScreenEnd,
+        quoteDisappearanceEnd,
+        statistic1ScreenStart,
+        statistic1ScreenEnd,
+        statistic2ScreenStart,
+        statistic2ScreenEnd,
+        endScreen,
+
+        statistic1LegendTextAppearanceStart: statistic1ScreenStart - this.textAppearanceHeight,
+        statistic1LegendTextDisappearanceEnd: statistic1ScreenEnd + this.textAppearanceHeight,
+        statistic2LegendTextAppearanceStart: statistic2ScreenStart - this.textAppearanceHeight
+      }
     }
   }
 }
