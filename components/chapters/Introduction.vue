@@ -2,13 +2,13 @@
   <div class="chapter grid-visualization">
     <TitleVisualization class="background-visualization" />
     <div class="narrative with-background">
-      <div class="step">
+      <div class="step step1">
         <p v-html="$t('teaser-text1')" />
       </div>
-      <div class="step">
+      <div class="step step2">
         <p v-html="$t('teaser-text2')" />
       </div>
-      <div class="step">
+      <div class="step step3">
         <p v-html="$t('teaser-text3')" />
       </div>
     </div>
@@ -22,14 +22,19 @@
   margin-top: 1rem; // add small offset to prevent chapter activation on page load
 
   .narrative {
-    padding-top: 30vh;
-    padding-bottom: 150vh;
+    height: 600vh;
 
     .step {
-      margin-bottom: 150vh;
+      position: absolute;
 
-      &:last-child {
-        margin-bottom: inherit;
+      &.step1 {
+        top: 50vh;
+      }
+      &.step2 {
+        top: 200vh;
+      }
+      &.step3 {
+        top: 350vh;
       }
     }
   }
