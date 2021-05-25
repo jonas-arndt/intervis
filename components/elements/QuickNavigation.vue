@@ -19,6 +19,7 @@ export default {
   data () {
     return {
       entries: [
+        { id: 'title', num: 0, labelKey: 'chapter0-bar', keys: ['title', 'introduction'] },
         { id: 'chapter1', num: 1, labelKey: 'chapter1-bar', keys: ['chapter1'] },
         { id: 'chapter2', num: 2, labelKey: 'chapter2-bar', keys: ['chapter2'] },
         { id: 'chapter3', num: 3, labelKey: 'chapter3-bar', keys: ['chapter3', 'case1', 'case2', 'case3'] },

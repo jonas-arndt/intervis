@@ -41,7 +41,7 @@
       </template>
     </PopupOverlay>
 
-    <QuickNavigation v-if="!projectDisclosureIsVisible" class="article-navigation" :style="quickNavigationStyles" />
+    <QuickNavigation v-if="!projectDisclosureIsVisible" class="article-navigation" />
     <GoogleLink v-show="questionnaireLinkIsVisible" class="google-link" />
     <Logger @logSendErrorOccured="handleLogSendError" @loggingIdDefined="handleDefinedLoggingId" />
   </div>
@@ -49,7 +49,6 @@
 
 <script>
 import { mapState, mapMutations } from 'vuex'
-import { scaleLinear } from 'd3-scale'
 
 export default {
   data () {
@@ -69,33 +68,8 @@ export default {
       'questionnaireLinkIsVisible',
       'verticalScrollPosition',
       'nextStepsChapterStartPosition',
-      'intersectionalityChapterStartPosition',
       'viewport'
-    ]),
-    quickNavigationStyles () {
-      return {
-        opacity: this.quickNavigationOpacity
-      }
-    },
-    quickNavigationOpacityScaleDomain () {
-      return [
-        // 0 > 1
-        this.intersectionalityChapterStartPosition + this.viewport.height,
-        this.intersectionalityChapterStartPosition + 1.5 * this.viewport.height
-      ]
-    },
-    quickNavigationOpacityScaleDomainMin () {
-      return Math.min(...this.quickNavigationOpacityScaleDomain)
-    },
-    quickNavigationOpacityScaleDomainMax () {
-      return Math.max(...this.quickNavigationOpacityScaleDomain)
-    },
-    quickNavigationOpacityScale () {
-      return scaleLinear()
-        .domain(this.quickNavigationOpacityScaleDomain)
-        .range([0, 1])
-        .clamp(true)
-    }
+    ])
   },
   watch: {
     verticalScrollPosition (scrollPosition) {
