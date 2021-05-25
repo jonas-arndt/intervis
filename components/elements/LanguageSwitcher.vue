@@ -36,7 +36,7 @@ export default {
       // set new messages from new locale file
       this.$i18n.setLocaleMessage(locale, locale === 'de' ? deModule : enModule)
       // update url to point to new path, without reloading the page
-      window.history.replaceState('', '', this.switchLocalePath(locale))
+      window.history.replaceState('', '', process.env.parentDirname + this.switchLocalePath(locale))
     }
   }
 }

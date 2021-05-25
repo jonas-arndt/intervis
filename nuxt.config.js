@@ -1,4 +1,4 @@
-const routerBase = process.env.DEPLOY_ENV === 'UCLAB' ? '/intervis/' : '/'
+const parentDirname = process.env.DEPLOY_ENV === 'UCLAB' ? '/intervis' : ''
 
 export default {
   /*
@@ -19,15 +19,15 @@ export default {
       { name: 'msapplication-TileColor', content: '#f9faff' },
       { name: 'msapplication-config', content: './browserconfig.xml' },
       { name: 'theme-color', content: '#ffffff' },
-			
+
 			// preview
 			{ property: 'og:type', content:'website' },
-			{ property: 'og:url', content:'https://uclab.fh-potsdam.de/intervis/' },
+			{ property: 'og:url', content:`https://uclab.fh-potsdam.de${parentDirname}/` },
 			{ property: 'og:title', content:'Inter...what? Intersectionality! A visual Introduction' },
 			{ property: 'og:description', content:'With this article we aim to accessibly explain the topics of intersectionality, discrimination and privilege using visual elements. Intersectional perspectives have not yet arrived in everyday vocabulary and social discourse in Germany. We would like to change that, and this article can be a beginning for that.' },
-			{ property: 'og:image', content:'https://uclab.fh-potsdam.de/intervis/preview.png' },
-			{ name: 'twitter:card', content:'summary_large_image' },			
-			
+			{ property: 'og:image', content: `https://uclab.fh-potsdam.de${parentDirname}/preview.png` },
+			{ name: 'twitter:card', content:'summary_large_image' },
+
     ],
     link: [
       // favicon
@@ -97,6 +97,10 @@ export default {
     ]
   },
 
+  env: {
+    parentDirname
+  },
+
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
     extend(config, ctx) {
@@ -114,6 +118,6 @@ export default {
     }
   },
   router: {
-    base: routerBase
+    base: `${parentDirname}/`
   }
 }
