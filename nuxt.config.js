@@ -25,7 +25,7 @@ export default {
 			{ property: 'og:url', content:'https://uclab.fh-potsdam.de/intervis/' },
 			{ property: 'og:title', content:'Inter...what? Intersectionality! A visual Introduction' },
 			{ property: 'og:description', content:'With this article we aim to accessibly explain the topics of intersectionality, discrimination and privilege using visual elements. Intersectional perspectives have not yet arrived in everyday vocabulary and social discourse in Germany. We would like to change that, and this article can be a beginning for that.' },
-			{ property: 'og:image', content:'./preview.png' },
+			{ property: 'og:image', content:'https://uclab.fh-potsdam.de/intervis/preview.png' },
 			{ name: 'twitter:card', content:'summary_large_image' },			
 			
     ],
