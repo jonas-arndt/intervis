@@ -3,8 +3,8 @@
     <h2 v-html="$t('backside-process-subtitle1')" />
     <p v-html="$t('backside-process-intro1')" />
 
-    <img v-if="$i18n.locale == 'de'" src="~/assets/intervis_disclosure_figures/process1_de.png">
-    <img v-if="$i18n.locale == 'en'" src="~/assets/intervis_disclosure_figures/process1_en.png">
+    <img v-if="$i18n.locale == 'de'" src="~/assets/disclosure/process1_de.png">
+    <img v-if="$i18n.locale == 'en'" src="~/assets/disclosure/process1_en.png">
 
     <h3 v-html="$t('backside-process-heading1')" />
     <p v-html="$t('backside-process-text1')" />
@@ -13,7 +13,7 @@
     <p v-html="$t('backside-process-text2')" />
 
     <h3 v-html="$t('backside-process-heading3')" />
-    <img src="~/assets/intervis_disclosure_figures/designdrafts.png">
+    <img src="~/assets/disclosure/designdrafts.png">
     <p v-html="$t('backside-process-text3')" />
 
     <h3 v-html="$t('backside-process-heading4')" />
@@ -22,8 +22,8 @@
     <h2 v-html="$t('backside-process-subtitle2')" />
     <p v-html="$t('backside-process-intro2')" />
 
-    <img v-if="$i18n.locale == 'de'" src="~/assets/intervis_disclosure_figures/process2_de.png">
-    <img v-if="$i18n.locale == 'en'" src="~/assets/intervis_disclosure_figures/process2_en.png">
+    <img v-if="$i18n.locale == 'de'" src="~/assets/disclosure/process2_de.png">
+    <img v-if="$i18n.locale == 'en'" src="~/assets/disclosure/process2_en.png">
 
     <h3 v-html="$t('backside-process-heading5')" />
     <p v-html="$t('backside-process-text5')" />
