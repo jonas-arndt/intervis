@@ -48,13 +48,14 @@ export default {
   .label {
     display: block;
     position: relative;
+    top: 50%;
 
-    top: 0.5rem;
     padding-left: 2.75rem;
 
     font-size: $font-size-small;
     font-family: $font-family-signika;
     line-height: 1.4em;
+    transform: translateY(-50%);
   }
 }
 
