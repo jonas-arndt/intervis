@@ -87,13 +87,13 @@
         "ID": "genderstar",
         "language": "German",
         "title": "Genderstar\n",
-        "description": "Der englische Begriff \u00bbGender\u00ab bezeichnet im Unterschied zum englischen Begriff \u00bbSex\u00ab nicht das biologische Geschlecht, sondern die soziale, gesellschaftlich konstruierte Geschlechtsidentit\u00e4t. Der Genderstar erm\u00f6glicht es, Identit\u00e4ten und Selbstpositionierungen jenseits eines bin\u00e4ren Systems \u2013 die Einteilung der Menschen in zwei Geschlechter (Mann/Frau) \u2013 sichtbar zu machen. Der Genderstar hinter dem Begriff \u00bbFrauen\u00ab soll, \u00fcber cisgeschlechtliche Frauen hinaus, alle Arten weiblicher Selbstidentifikation einschlie\u00dfen."
+        "description": "Der englische Begriff \u00bbGender\u00ab bezeichnet im Unterschied zum englischen Begriff \u00bbSex\u00ab nicht das biologische Geschlecht, sondern die soziale, gesellschaftlich konstruierte Geschlechtsidentit\u00e4t. Der Genderstar erm\u00f6glicht es, Identit\u00e4ten und Selbstpositionierungen jenseits eines bin\u00e4ren Systems \u2013 die Einteilung der Menschen in zwei Geschlechter (Mann/Frau) \u2013 sichtbar zu machen."
     },
     {
         "ID": "genderstar",
         "language": "English",
         "title": "Genderstar\n",
-        "description": "The English term \u00bbgender\u00ab, in contrast to the English term \u00bbsex\u00ab, does not refer to the biological sex, but to the socially constructed gender identity. The genderstar allows to make identities and self-positionings beyond a binary system (classification of gender into male/female) visible. The genderstar behind the term \u00bbwomen\u00ab is meant to include all kinds of female self-identification that go beyond cisgender women."
+        "description": "The English term \u00bbgender\u00ab, in contrast to the English term \u00bbsex\u00ab, does not refer to the biological sex, but to the socially constructed gender identity. The genderstar allows to make identities and self-positionings beyond a binary system (classification of gender into male/female) visible."
     },
     {
         "ID": "klassismus",
@@ -130,6 +130,18 @@
         "language": "English",
         "title": "People of Color",
         "description": "The terms \u00bbPeople of Color\u00ab and \u00bbWomen of Color\u00ab have their origins in the U.S. and are a political self-identification and collective positioning of people who experience structural racism in a society where being white is considered the norm."
+    },
+    {
+        "ID": "porajmos",
+        "language": "German",
+        "title": "Porajmos",
+        "description": "Bezeichnet den V\u00f6lkermord an Sinti*zze und Rom*nja w\u00e4hrend des Nationalsozialismus."
+    },
+    {
+        "ID": "porajmos",
+        "language": "English",
+        "title": "Porajmos",
+        "description": "Refers to the genocide of Sinti*zze and Rom*nja during National Socialism."
     },
     {
         "ID": "queer",
