@@ -16,8 +16,8 @@
     },
     {
         "ID": "startscreen-date",
-        "German": "25.05.2021",
-        "English": "25.05.2021"
+        "German": "31.05.2021",
+        "English": "31.05.2021"
     },
     {
         "ID": "startscreen-title",
@@ -681,8 +681,8 @@
     },
     {
         "ID": "alt-tag-chapter4-text3",
-        "German": "Das gesamte Hintergrundnetz und die Formen verschwinden, sodass nur noch die W\u00f6rter Zugang, Einbeziehung, Teilhabe und Anerkennung zu sehen sind.",
-        "English": "The entire background grid and the shapes disappear, so that only the words Access, Inclusion, Participation, and Recognition are visible."
+        "German": "Das gesamte Hintergrundnetz und die Formen verschwinden, sodass nur noch die W\u00f6rter Zugang, Einbeziehung, Teilhabe und Anerkennung zu sehen sind. Diese werden beim Weiterscrollen gr\u00f6\u00dfer skaliert.",
+        "English": "The entire background grid and the shapes disappear, so that only the words Access, Inclusion, Participation, and Recognition are visible. When scrolling further, these are scaled larger."
     },
     {
         "ID": "chapter5-bar",
