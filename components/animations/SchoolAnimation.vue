@@ -465,7 +465,7 @@ export default {
     height: 40%;
 
     .grid {
-      background: url('~assets/grid/dark_gray.png');
+      background: url('~assets/grid/dark_gray.jpg');
       background-size: cover;
     }
   }
@@ -478,7 +478,7 @@ export default {
     height: 30%;
 
     .grid {
-      background: url('~assets/grid/chapter3_sintiundroma.png');
+      background: url('~assets/grid/chapter3_sintiundroma.jpg');
       background-size: cover;
     }
   }

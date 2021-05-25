@@ -269,7 +269,7 @@ export default {
     height: 40%;
 
     .grid {
-      background: url('~assets/grid/chapter3_frauenmitbehinderung.png');
+      background: url('~assets/grid/chapter3_frauenmitbehinderung.jpg');
       background-size: cover;
     }
   }
@@ -282,7 +282,7 @@ export default {
     height: 30%;
 
     .grid {
-      background: url('~assets/grid/dark_gray.png');
+      background: url('~assets/grid/dark_gray.jpg');
       background-size: cover;
     }
     .lines {

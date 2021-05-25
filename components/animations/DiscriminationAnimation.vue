@@ -274,12 +274,12 @@ export default {
   // specific form definitions
 
   .shape1 .grid {
-    background: url('~assets/grid/dark_gray.png');
+    background: url('~assets/grid/dark_gray.jpg');
     background-size: cover;
   }
   .shape2 {
     .grid {
-      background: url('~assets/grid/dark_gray.png');
+      background: url('~assets/grid/dark_gray.jpg');
       background-size: cover;
     }
     .lines {
@@ -289,7 +289,7 @@ export default {
   }
   .shape3 {
     .grid {
-      background: url('~assets/grid/dark_gray.png');
+      background: url('~assets/grid/dark_gray.jpg');
       background-size: cover;
     }
     .lines {

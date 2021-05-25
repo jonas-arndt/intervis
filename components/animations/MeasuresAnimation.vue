@@ -274,7 +274,7 @@ export default {
 
   .visual.top-left .background {
     .grid {
-      background: url('~assets/grid/dark_gray.png');
+      background: url('~assets/grid/dark_gray.jpg');
       background-size: cover;
     }
     .lines {
@@ -298,7 +298,7 @@ export default {
 
     .background {
       .grid {
-        background: url('~assets/grid/chapter4_shape2.png');
+        background: url('~assets/grid/chapter4_shape2.jpg');
         background-size: cover;
         z-index: 20;
       }
