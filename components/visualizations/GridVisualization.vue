@@ -126,7 +126,7 @@ export default {
     }
 
     &.red-grid {
-      background: url('~assets/grid/chapter4_shape2.jpg');
+      background: url('~assets/grid/chapter4_shape2.png');
       background-size: cover;
       z-index: 20;
       opacity: 0;
