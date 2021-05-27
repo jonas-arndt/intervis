@@ -62,6 +62,7 @@
 
     &.germany {
       height: 4.5rem;
+      width: 100%;
       background: url('~assets/icons/states/deutschland.svg') no-repeat;
       background-size: contain;
 
@@ -73,6 +74,7 @@
     }
     &.usa {
       height: 3.3rem;
+      width: 100%;
       background: url('~assets/icons/states/usa.svg') no-repeat;
       background-size: contain;
 
