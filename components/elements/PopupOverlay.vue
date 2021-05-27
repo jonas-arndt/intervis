@@ -84,6 +84,8 @@
       width: 100%;
       overflow-y: hidden;
       overflow-x: scroll;
+
+      font-size: $font-size-small;
     }
   }
 }

@@ -56,6 +56,7 @@
 
   .title {
     font-size: $font-size-subtitle;
+    font-family: $font-family-pt-serif;
     font-weight: normal;
     margin-top: 2em;
     margin-bottom: 1em;
@@ -97,7 +98,7 @@
 
       // popup overlay padding 1rem
       // content padding: 2rem
-      width: 42vw;
+      width: 56vw;
       margin-right: 5vw;
 
       &:first-child {
@@ -124,19 +125,19 @@
 
     .block-title {
       position: absolute;
-      top: 6rem;
+      top: 6.5rem;
     }
 
     .text {
       position: absolute;
-      top: 6.5rem;
+      top: 7.5rem;
       padding-top: 1rem;
     }
   }
 
   @media (min-width: $media-breakpoint-min-l) {
     .block {
-      width: 28vw;
+      width: 34vw;
       margin-right: 4vw;
     }
   }

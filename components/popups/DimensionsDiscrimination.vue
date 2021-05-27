@@ -64,7 +64,7 @@
 
       // popup overlay padding 1rem
       // content padding: 2rem
-      width: 42vw;
+      width: 56vw;
       margin-right: 5vw;
 
       &:first-child {
@@ -78,13 +78,13 @@
 
     .icon {
       position: absolute;
-      top: 0.5rem;
+      top: 0rem;
       width: 3rem;
     }
 
     .block-title {
       position: absolute;
-      top: 6rem;
+      top: 5.5rem;
     }
 
     .text {
@@ -96,7 +96,7 @@
 
   @media (min-width: $media-breakpoint-min-l) {
     .block {
-      width: 28vw;
+      width: 34vw;
       margin-right: 4vw;
     }
   }
