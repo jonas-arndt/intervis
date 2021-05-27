@@ -31,6 +31,7 @@
 
     <div class="statistic1" :style="statistic1Styles">
       <div class="legend legend-shape1">
+        <span class="digit" v-html="$t('chapter3-example3-vis0')" />
         <span class="details" v-html="$t('chapter3-example3-vis1')" />
       </div>
       <div class="legend legend-shape2">
@@ -295,10 +296,10 @@ export default {
   .legend-shape1, .legend-shape2 {
     &.legend-shape1 {
       bottom: 50%;
-      right: 10%;
+      right: 0;
     }
     &.legend-shape2 {
-      right: 5%;
+      right: 15%;
       bottom: 15%;
     }
   }
