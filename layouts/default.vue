@@ -166,10 +166,11 @@ a {
 }
 
 .tooltip {
-  font-weight: 800;
-  color: $color-black;
-  cursor: help;
-  border-bottom: 1px dotted $color-black;
+  @media (min-width: $media-breakpoint-min-m) {
+    font-weight: 800;
+    color: $color-black;
+    border-bottom: 1px dotted $color-black;
+  }
 }
 
 .red-bordered-text, .grey-bordered-text {
