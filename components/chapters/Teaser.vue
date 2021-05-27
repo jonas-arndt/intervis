@@ -54,11 +54,14 @@ export default {
   }
 
   .button-line {
+    margin-bottom: -1.25em;
+
     button {
       margin-right: 0.75em;
+      margin-bottom: 1.25em;
 
       &:last-child {
-        margin-right: auto;
+        margin-right: inherit;
       }
     }
   }
