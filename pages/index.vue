@@ -41,7 +41,7 @@
       </template>
     </PopupOverlay>
 
-    <QuickNavigation v-if="!projectDisclosureIsVisible" class="article-navigation" />
+    <QuickNavigation v-if="quickNavigationIsVisible" class="article-navigation" />
     <GoogleLink v-show="questionnaireLinkIsVisible" class="google-link" />
     <Logger @logSendErrorOccured="handleLogSendError" @loggingIdDefined="handleDefinedLoggingId" />
   </div>
@@ -69,7 +69,13 @@ export default {
       'verticalScrollPosition',
       'nextStepsChapterStartPosition',
       'viewport'
-    ])
+    ]),
+    quickNavigationIsVisible () {
+      return !this.projectDisclosureIsVisible &&
+        !this.designDecisionsAreVisible &&
+        !this.discriminationDimensionsAreVisible &&
+        !this.conceptDevelopmentIsVisible
+    }
   },
   watch: {
     verticalScrollPosition (scrollPosition) {
