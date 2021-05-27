@@ -98,6 +98,12 @@ export default {
     return {
       shapes,
 
+      shapeKeys: {
+        shape1: 'chapter2_1.svg',
+        shape2: 'chapter2_2.svg',
+        shape3: 'chapter2_3.svg'
+      },
+
       shape1Rect: { top: 0, left: 0, width: 0, height: 0 },
       shape2Rect: { top: 0, left: 0, width: 0, height: 0 },
       shape3Rect: { top: 0, left: 0, width: 0, height: 0 },
@@ -112,13 +118,13 @@ export default {
 
     // text positions
     shape1TextStyles () {
-      return this.getStylesFromRect(this.shape1Rect)
+      return this.getStylesFromRect(this.shape1Rect, this.shapeKeys.shape1)
     },
     shape2TextStyles () {
-      return this.getStylesFromRect(this.shape2Rect)
+      return this.getStylesFromRect(this.shape2Rect, this.shapeKeys.shape2)
     },
     shape3TextStyles () {
-      return this.getStylesFromRect(this.shape3Rect)
+      return this.getStylesFromRect(this.shape3Rect, this.shapeKeys.shape3)
     },
 
     // style aggregations
@@ -201,11 +207,19 @@ export default {
         this.updateShapeRects()
       }
     },
-    getStylesFromRect (rect) {
+    getStylesFromRect (containerRect, shapeKey) {
+      const shapeRect = this.shapes[shapeKey].rect
+      const shapeRatio = Math.min(containerRect.width / shapeRect.width, containerRect.height / shapeRect.height)
+
+      const width = shapeRatio * shapeRect.width
+      const height = shapeRatio * shapeRect.height
+
       const styles = {}
-      for (const [key, value] of Object.entries(rect)) {
-        styles[key] = value + 'px'
-      }
+      styles.width = width + 'px'
+      styles.height = height + 'px'
+      styles.top = containerRect.top + (containerRect.height - height) / 2 + 'px'
+      styles.left = containerRect.left + (containerRect.width - width) / 2 + 'px'
+
       return styles
     },
     updateShapeRects () {

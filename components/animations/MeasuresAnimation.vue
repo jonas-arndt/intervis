@@ -63,6 +63,11 @@ export default {
     return {
       shapes,
 
+      shapeKeys: {
+        shape1: 'chapter4_1.svg',
+        shape2: 'chapter4_2.svg'
+      },
+
       shape1Rect: { top: 0, left: 0, width: 0, height: 0 },
       shape2Rect: { top: 0, left: 0, width: 0, height: 0 },
 
@@ -77,10 +82,10 @@ export default {
 
     // text positions
     shape1TextPositionStyles () {
-      return this.getStylesFromRect(this.shape1Rect)
+      return this.getStylesFromRect(this.shape1Rect, this.shapeKeys.shape1)
     },
     shape2TextPositionStyles () {
-      return this.getStylesFromRect(this.shape2Rect)
+      return this.getStylesFromRect(this.shape2Rect, this.shapeKeys.shape2)
     },
 
     // text scale ratios
@@ -212,11 +217,19 @@ export default {
         this.updateShapeRects()
       }
     },
-    getStylesFromRect (rect) {
+    getStylesFromRect (containerRect, shapeKey) {
+      const shapeRect = this.shapes[shapeKey].rect
+      const shapeRatio = Math.min(containerRect.width / shapeRect.width, containerRect.height / shapeRect.height)
+
+      const width = shapeRatio * shapeRect.width
+      const height = shapeRatio * shapeRect.height
+
       const styles = {}
-      for (const [key, value] of Object.entries(rect)) {
-        styles[key] = value + 'px'
-      }
+      styles.width = width + 'px'
+      styles.height = height + 'px'
+      styles.top = containerRect.top + (containerRect.height - height) / 2 + 'px'
+      styles.left = containerRect.left + (containerRect.width - width) / 2 + 'px'
+
       return styles
     },
     updateShapeRects () {
@@ -286,7 +299,7 @@ export default {
     .text {
       z-index: 5;
       transform-origin: center;
-      transform: scale(0.8);
+      transform: scale(0.7);
     }
   }
 
@@ -306,7 +319,7 @@ export default {
       .text {
         z-index: 10;
         transform-origin: center;
-        transform: scale(0.8);
+        transform: scale(0.7);
       }
     }
 
@@ -319,7 +332,7 @@ export default {
         height: 100%;
         width: 100%;
         transform-origin: center;
-        transform: scale(0.8);
+        transform: scale(0.7);
       }
     }
   }
