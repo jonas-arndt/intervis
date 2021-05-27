@@ -75,9 +75,7 @@ export default {
       }
     },
     insideStyles () {
-      return {
-        clipPath: `url("#${this.clipPathId}")`
-      }
+      return `-webkit-clip-path:url(#${this.clipPathId}); clip-path:url(#${this.clipPathId});`
     },
 
     // scale
