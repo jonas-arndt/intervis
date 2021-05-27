@@ -6,8 +6,8 @@
     },
     {
         "ID": "evaluation-link",
-        "German": "Bitte nimm an unserer Evaluation teil",
-        "English": "Please participate in our evaluation"
+        "German": "Hilf unserer Forschung",
+        "English": "Help our research"
     },
     {
         "ID": "",
@@ -96,13 +96,13 @@
     },
     {
         "ID": "teaser-text2",
-        "German": "F\u00e4llt Dir etwas auf?\nDie Begriffe werden immer weniger gut lesbar und sind aus der Sicht dieser Person nur noch schwer zu erkennen.",
-        "English": "Do you notice anything?\nThe terms become less and less legible and are difficult to read from this person\u2019s point of view."
+        "German": "F\u00e4llt Dir etwas auf?",
+        "English": "Do you notice anything?"
     },
     {
         "ID": "teaser-text3",
-        "German": "Verschiedene Personen haben ungleiche Bedingungen, wenn es um Zugang, Teilhabe, Einbeziehung und Anerkennung geht. Sie werden unterschiedlich benachteiligt und bevorteilt.\n\nUm das genauer verstehen zu k\u00f6nnen, werfen wir einen Blick darauf, was unter Intersektionalit\u00e4t, Diskriminierung und Privilegierung verstanden wird.",
-        "English": "Different people face unequal conditions when it comes to access, participation, inclusion and recognition. They are disadvantaged and advantaged differently.\n\nTo better understand this, let\u2019s take a look at what intersectionality, discrimination, and privilege mean."
+        "German": "Die Begriffe sind aus der Sicht dieser Person schwieriger zu erkennen.\n\nVerschiedene Personen haben ungleiche Bedingungen, wenn es um Zugang, Teilhabe, Einbeziehung und Anerkennung geht. Sie werden unterschiedlich benachteiligt und bevorteilt.\n\nUm das genauer verstehen zu k\u00f6nnen, werfen wir einen Blick darauf, was unter Intersektionalit\u00e4t, Diskriminierung und Privilegierung verstanden wird.",
+        "English": "The terms are more difficult to read from this person\u2019s point of view.\n\nDifferent people face unequal conditions when it comes to access, participation, inclusion and recognition. They are disadvantaged and advantaged differently.\n\nTo better understand this, let\u2019s take a look at what intersectionality, discrimination, and privilege mean."
     },
     {
         "ID": "mail-hint",
@@ -421,7 +421,7 @@
     },
     {
         "ID": "chapter3-example1-text4",
-        "German": "Ein Beispiel f\u00fcr indirekte intersektionale Diskriminierung von Frauen mit Hidschab auf dem deutschen Arbeitsmarkt ist das sogenannte \u00bbNeutralit\u00e4tsgesetz\u00ab in Berlin, das in erster Linie ein Kopftuchverbot f\u00fcr beispielsweise muslimische Richter*innen, Lehrer*innen und Erzieher*innen zur Folge haben kann. Solche rechtlich legitimierten, religi\u00f6sen Kleidungsbeschr\u00e4nkungen richten sich nicht direkt gegen eine bestimmte Glaubensgemeinschaft, allerdings liegt der Schluss nahe, dass der Hidschab das implizite Ziel ist. Gerechtfertigt werden sie mit der Argumentation der Aufrechterhaltung der \u00bbNeutralit\u00e4t\u00ab von staatlichen Institutionen.",
+        "German": "Ein Beispiel f\u00fcr indirekte intersektionale Diskriminierung von Frauen mit Hidschab auf dem deutschen Arbeitsmarkt ist das sogenannte \u00bbNeutralit\u00e4tsgesetz\u00ab in Berlin, das in erster Linie ein Kopftuchverbot f\u00fcr beispielsweise muslimische Richterinnen, Lehrerinnen und Erzieherinnen zur Folge haben kann. Solche rechtlich legitimierten, religi\u00f6sen Kleidungsbeschr\u00e4nkungen richten sich nicht direkt gegen eine bestimmte Glaubensgemeinschaft, allerdings liegt der Schluss nahe, dass der Hidschab das implizite Ziel ist. Gerechtfertigt werden sie mit der Argumentation der Aufrechterhaltung der \u00bbNeutralit\u00e4t\u00ab von staatlichen Institutionen.",
         "English": "An example of indirect intersectional discrimination against women with hijab in the German labor market is the so-called \u00bbNeutrality Act\u00ab in Berlin, which primarily can result in a headscarf ban for Muslim judges, teachers, educators, etc. Such legally legitimized, religious dress restrictions are not directly directed against a specific religious community, but it is reasonable to conclude that the hijab is the implicit target. They are justified with the argumentation of maintaining the \u00bbneutrality\u00ab of state institutions.\n"
     },
     {
@@ -656,8 +656,8 @@
     },
     {
         "ID": "chapter4-text1",
-        "German": "Die zuvor betrachteten Beispiele zeigen: Es braucht besondere Ma\u00dfnahmen, um Diskriminierung und Privilegierung auszugleichen und somit gleiche Ausgangsbedingungen zu schaffen. Diese m\u00fcssen intersektional gedacht sein und nicht nur die individuelle Dimension, sondern vor allem die strukturelle und institutionelle Dimension von Diskriminierung einbeziehen.\nAntidiskriminierungsma\u00dfnahmen, die beispielsweise ausschlie\u00dflich sexistische Diskriminierung bek\u00e4mpfen, und somit eindimensional und nicht intersektional sind, richten sich tendenziell eher an Frauen, die <i>wei\u00df</i>, heterosexuell, cis-geschlechtlich, jung, nicht arm, ohne Behinderung etc. sind \u2013 die Privilegiertesten der marginalisierten Gruppe. Ihre gelebten Erfahrungen und Interessen stehen im Vordergrund.",
-        "English": "The examples discussed above show: Special measures are needed to compensate for discrimination and privilege and thus create equal conditions. These must be intersectional and include not only the individual dimension, but above all the structural and institutional dimension of discrimination.\nAnti-discrimination measures that, for example, exclusively address sexist discrimination and are thus one-dimensional and not intersectional, tend to target women who are <i>white</i>, heterosexual, cisgender, young, middle-class, without disabilities, etc. \u2013 the most privileged of the marginalized group. Their lived experiences and interests are foregrounded."
+        "German": "Die zuvor betrachteten Beispiele zeigen: Es braucht besondere Ma\u00dfnahmen, um Diskriminierung und Privilegierung auszugleichen und somit gleiche Ausgangsbedingungen zu schaffen. Diese m\u00fcssen intersektional gedacht sein und nicht nur die individuelle Dimension, sondern vor allem die strukturelle und institutionelle Dimension von Diskriminierung einbeziehen.\nAntidiskriminierungsma\u00dfnahmen, die beispielsweise ausschlie\u00dflich sexistische Diskriminierung bek\u00e4mpfen, und somit eindimensional und nicht intersektional sind, richten sich tendenziell eher an <i>wei\u00dfe</i>, heterosexuelle, cis-geschlechtliche, junge, nicht arme Frauen ohne Behinderung \u2013 die Privilegiertesten der marginalisierten Gruppe. Ihre gelebten Erfahrungen und Interessen stehen im Vordergrund.",
+        "English": "The examples discussed above show: Special measures are needed to compensate for discrimination and privilege and thus create equal conditions. These must be intersectional and include not only the individual dimension, but above all the structural and institutional dimension of discrimination.\nAnti-discrimination measures that, for example, exclusively address sexist discrimination and are thus one-dimensional and not intersectional, tend to target <i>white</i>, heterosexual, cisgender, young, middle-class women without disabilities \u2013 the most privileged of the marginalized group. Their lived experiences and interests are foregrounded."
     },
     {
         "ID": "alt-tag-chapter4-text1",
@@ -816,7 +816,7 @@
     },
     {
         "ID": "imprint_text1",
-        "German": "Sende uns bei inhaltlichen Anmerkungen bitte eine <a href=\"mailto:hannah.schwan@fh-potsdam.de\">E-Mail</a>.",
+        "German": "Sende uns bitte eine <a href=\"mailto:hannah.schwan@fh-potsdam.de\">E-Mail</a> bei inhaltlichen Anmerkungen. ",
         "English": "Please send us an <a href=\"mailto:hannah.schwan@fh-potsdam.de\">email</a> in case of content-related comments\u2028."
     },
     {

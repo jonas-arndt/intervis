@@ -63,25 +63,25 @@
         "ID": "cis-geschlechtlich",
         "language": "German",
         "title": "Cis-geschlechtlich\n",
-        "description": "Personen, deren biologisches Geschlecht \u2013 das Geschlecht, das ihnen bei der Geburt zugewiesen wurde \u2013 ihrer Geschlechtsidentit\u00e4t entspricht."
+        "description": "Personen, deren Geschlecht, das ihnen bei der Geburt zugewiesen wurde, ihrer Geschlechtsidentit\u00e4t entspricht."
     },
     {
         "ID": "cisgender",
         "language": "English",
         "title": "Cisgender",
-        "description": "Individuals whose biological sex \u2013 the sex they were assigned at birth \u2013 corresponds to their gender identity."
+        "description": "Individuals whose sex assigned at birth corresponds to their gender identity."
     },
     {
         "ID": "cis-und-heterosexismus",
         "language": "German",
         "title": "Cis- und Heterosexismus\n",
-        "description": "Beschreibt die Diskriminierung von Menschen aufgrund ihrer Geschlechtsidentit\u00e4t und sexuellen Orientierung. Nicht-cisgeschlechtliche (transgender, genderqueer, nicht-bin\u00e4r etc.) und nicht-heterosexuelle Menschen (lesbisch, schwul, bisexuell, asexuell, queer, pansexuell etc.) sind Cis- und Heterosexismus ausgesetzt."
+        "description": "Cissexismus beschreibt die Diskriminierung von Menschen aufgrund ihrer Geschlechtsidentit\u00e4t. Nicht-cisgeschlechtliche Menschen (transgender, genderqueer, nicht-bin\u00e4r etc.) sind Cissexismus ausgesetzt. Heterosexismus beschreibt die Diskriminierung von Menschen aufgrund ihrer sexuellen Orientierung. Nicht-heterosexuelle Menschen (lesbisch, schwul, bisexuell, asexuell, queer, pansexuell etc.) sind Heterosexismus ausgesetzt."
     },
     {
         "ID": "cis-and-heterosexism",
         "language": "English",
         "title": "Cis- and heterosexism",
-        "description": "Describes discrimination against people based on their gender identity and sexual orientation. Non-cisgender (transgender, genderqueer, non-binary, etc.) and non-heterosexual people (lesbian, gay, bisexual, asexual, queer, pansexual, etc.) are exposed to cis- and heterosexism."
+        "description": "Cissexism describes discrimination against people based on their gender identity. Non-cisgender people (transgender, genderqueer, non-binary, etc.) are exposed to cissexism. Heterosexism describes discrimination against people based on their sexual orientation. Non-heterosexual people (lesbian, gay, bisexual, asexual, queer, pansexual, etc.) are exposed to heterosexism."
     },
     {
         "ID": "genderstar",
