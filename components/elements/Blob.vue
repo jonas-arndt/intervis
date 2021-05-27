@@ -31,7 +31,8 @@ export default {
     },
     clipPathId: {
       type: String,
-      default: () => 'shape-' + Math.floor(Math.random() * 1000) + '-clip-path'
+      required: true,
+      default: () => 'shape-clip-path'
     },
     scale: {
       type: Number,
