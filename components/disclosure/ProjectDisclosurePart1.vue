@@ -1,10 +1,10 @@
 <template>
-  <DisclosureContent>
+  <DisclosureContent class="project-disclosure-part1">
     <h2 v-html="$t('backside-process-subtitle1')" />
     <p v-html="$t('backside-process-intro1')" />
 
-    <img v-if="$i18n.locale == 'de'" src="~/assets/disclosure/process1_de.jpg">
-    <img v-if="$i18n.locale == 'en'" src="~/assets/disclosure/process1_en.jpg">
+    <img v-if="$i18n.locale == 'de'" src="~/assets/disclosure/process1_de.svg">
+    <img v-if="$i18n.locale == 'en'" src="~/assets/disclosure/process1_en.svg">
 
     <h3 v-html="$t('backside-process-heading1')" />
     <p v-html="$t('backside-process-text1')" />
@@ -22,8 +22,8 @@
     <h2 v-html="$t('backside-process-subtitle2')" />
     <p v-html="$t('backside-process-intro2')" />
 
-    <img v-if="$i18n.locale == 'de'" src="~/assets/disclosure/process2_de.jpg">
-    <img v-if="$i18n.locale == 'en'" src="~/assets/disclosure/process2_en.jpg">
+    <img v-if="$i18n.locale == 'de'" src="~/assets/disclosure/process2_de.svg">
+    <img v-if="$i18n.locale == 'en'" src="~/assets/disclosure/process2_en.svg">
 
     <h3 v-html="$t('backside-process-heading5')" />
     <p v-html="$t('backside-process-text5')" />
@@ -38,3 +38,12 @@
     <p v-html="$t('backside-process-text8')" />
   </DisclosureContent>
 </template>
+
+<style lang="scss" scoped>
+.project-disclosure-part1 {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
