@@ -32,7 +32,7 @@
   background: $color-white;
 
   font-family: $font-family-signika;
-  font-size: $font-size-small;
+  font-size: $font-size-smaller;
 
   .call-for-feedback {
     font-size: $font-size-default;

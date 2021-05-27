@@ -98,7 +98,7 @@ body,
 
     .details {
       font-family: $font-family-signika;
-      font-size: $font-size-small;
+      font-size: $font-size-smaller;
     }
   }
 }

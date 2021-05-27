@@ -96,7 +96,7 @@ export default {
 
   ul {
     font-family: $font-family-signika;
-    font-size: $font-size-small;
+    font-size: $font-size-smaller;
     line-height: 1.4em;
   }
 
@@ -148,7 +148,7 @@ export default {
 
   .toggle-button {
     display: block;
-    font-size: $font-size-small;
+    font-size: $font-size-smaller;
     font-family: $font-family-signika;
     color: $color-red;
     cursor: pointer;

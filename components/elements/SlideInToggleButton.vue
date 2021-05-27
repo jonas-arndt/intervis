@@ -50,7 +50,7 @@ export default {
       margin-left: 40px;
       margin-right: 10px;
 
-      font-size: $font-size-small;
+      font-size: $font-size-smaller;
       color: $color-white;
       font-family: $font-family-signika;
       line-height: 1.4em;

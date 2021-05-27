@@ -39,7 +39,7 @@ export default {
 
 .quick-navigation {
   font-family: $font-family-signika;
-  font-size: $font-size-small;
+  font-size: $font-size-smaller;
   color: $color-white;
   font-weight: 600;
 

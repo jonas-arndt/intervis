@@ -52,7 +52,7 @@ export default {
 
     padding-left: 2.75rem;
 
-    font-size: $font-size-small;
+    font-size: $font-size-smaller;
     font-family: $font-family-signika;
     line-height: 1.4em;
     transform: translateY(-50%);
