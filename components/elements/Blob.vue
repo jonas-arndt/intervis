@@ -1,14 +1,13 @@
 <template>
   <div class="blob">
-    <div ref="inside" class="inside" :style="insideStyles">
-      <div
-        :style="backgroundWrapperStyles"
-        class="shape-background-wrapper"
-      >
-        <slot />
+    <div class="frame" :style="frameStyles">
+      <div class="shape" :style="shapeStyles">
+        <div class="shape-background-wrapper">
+          <slot />
+        </div>
       </div>
     </div>
-    <div class="outside" :style="backgroundWrapperStyles">
+    <div v-if="$slots.unclipped" class="outside" :style="frameStyles">
       <slot name="unclipped" />
     </div>
     <svg :viewBox="viewBox">
@@ -68,13 +67,13 @@ export default {
     },
 
     // style aggregations
-    backgroundWrapperStyles () {
+    frameStyles () {
       return {
         top: -this.rect.top + 'px',
         left: -this.rect.left + 'px'
       }
     },
-    insideStyles () {
+    shapeStyles () {
       return `-webkit-clip-path:url(#${this.clipPathId}); clip-path:url(#${this.clipPathId});`
     },
 
@@ -95,7 +94,7 @@ export default {
 
     // translate x
     clipPathTranslateX () {
-      const translateX = this.scaleBasedTranslateX + this.horizontalAlignBasedTranslateY
+      const translateX = this.rect.left + this.scaleBasedTranslateX + this.horizontalAlignBasedTranslateY
       return Number.isNaN(translateX) ? 0 : translateX
     },
     scaleBasedTranslateX () {
@@ -119,7 +118,7 @@ export default {
 
     // translate y
     clipPathTranslateY () {
-      const translateY = this.scaleBasedTranslateY + this.verticalAlignBasedTranslateY
+      const translateY = this.rect.top + this.scaleBasedTranslateY + this.verticalAlignBasedTranslateY
       return Number.isNaN(translateY) ? 0 : translateY
     },
     scaleBasedTranslateY () {
@@ -146,17 +145,19 @@ export default {
 
 <style lang="scss" scoped>
 .blob {
-  .inside {
+  .frame {
     position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
     width: 100%;
+    height: 100%;
+  }
+
+  .shape {
+    position: absolute;
+    width: 100%;
+    height: 100%;
   }
 
   .shape-background-wrapper {
-    position: absolute;
-
     & > * {
       width: 100vw;
       height: 100vh;

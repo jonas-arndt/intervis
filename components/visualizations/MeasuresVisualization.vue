@@ -99,6 +99,12 @@ export default {
     display: block;
     top: 0;
     height: 100vh;
+
+    & > * {
+      position: relative;
+      height: 100%;
+      width: 100%;
+    }
   }
 }
 

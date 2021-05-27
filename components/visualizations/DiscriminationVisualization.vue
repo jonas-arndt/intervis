@@ -98,7 +98,6 @@ export default {
       vertical-align: middle;
       margin-right: 5%;
       height: 90%;
-      overflow: hidden;
 
       & > .inside {
         position: relative;

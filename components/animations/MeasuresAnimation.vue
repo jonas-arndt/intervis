@@ -315,6 +315,9 @@ export default {
       transform-origin: left top;
 
       & > .inside {
+        position: relative;
+        height: 100%;
+        width: 100%;
         transform-origin: center;
         transform: scale(0.8);
       }
