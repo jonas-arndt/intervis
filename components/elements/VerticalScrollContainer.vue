@@ -1,5 +1,5 @@
 <template>
-  <div ref="scroller" class="scroll-container" @scroll="setVerticalScrollPosition($refs.scroller.scrollTop)">
+  <div ref="scroller" class="scroll-container" :style="style" @scroll="setVerticalScrollPosition($refs.scroller.scrollTop)">
     <slot />
   </div>
 </template>
@@ -8,6 +8,17 @@
 import { mapMutations } from 'vuex'
 
 export default {
+  props: {
+    disabled: {
+      type: Boolean,
+      default: false
+    }
+  },
+  computed: {
+    style () {
+      return this.disabled ? { overflow: 'hidden' } : {}
+    }
+  },
   mounted () {
     this.initEventListener()
     this.updateVerticalViewportCenter()

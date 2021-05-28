@@ -8,7 +8,7 @@
       <!-- FlipContainer: front content start -->
       <template v-slot:front>
         <GridVisualization class="article-background" />
-        <VerticalScrollContainer>
+        <VerticalScrollContainer :disabled="designDecisionsAreVisible">
           <SliderContainer :slided-in="designDecisionsAreVisible" class="design-decisions-container">
             <ArticleContent />
           </SliderContainer>
