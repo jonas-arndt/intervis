@@ -139,6 +139,27 @@ export default {
       }
     },
 
+    // text ratio
+    textRatio () {
+      const shapeRectKeys = {
+        shape1: { containerRectKey: 'shape1Rect', shapeRectKey: this.shapeKeys.shape1 },
+        shape2: { containerRectKey: 'shape2Rect', shapeRectKey: this.shapeKeys.shape2 },
+        shape3: { containerRectKey: 'shape3Rect', shapeRectKey: this.shapeKeys.shape3 }
+      }
+
+      let textRatio
+      for (const [, keys] of Object.entries(shapeRectKeys)) {
+        const containerRect = this[keys.containerRectKey]
+        const shapeRect = this.shapes[keys.shapeRectKey].rect
+        const ratio = Math.min(containerRect.width / shapeRect.width, containerRect.height / shapeRect.height)
+
+        if (textRatio === undefined || textRatio > ratio) {
+          textRatio = ratio
+        }
+      }
+      return textRatio
+    },
+
     // scales
     shapeScaleScale () {
       return scaleLinear()
@@ -209,7 +230,7 @@ export default {
     },
     getStylesFromRect (containerRect, shapeKey) {
       const shapeRect = this.shapes[shapeKey].rect
-      const shapeRatio = Math.min(containerRect.width / shapeRect.width, containerRect.height / shapeRect.height)
+      const shapeRatio = this.textRatio
 
       const width = shapeRatio * shapeRect.width
       const height = shapeRatio * shapeRect.height
