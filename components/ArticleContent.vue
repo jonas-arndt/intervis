@@ -11,7 +11,6 @@
     <References id="references" class="intersecting" />
     <Imprint id="imprint" class="intersecting" />
   </div>
-  </div>
 </template>
 
 <script>
