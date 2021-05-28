@@ -1,8 +1,22 @@
 <template>
   <div class="disclosure content">
     <slot />
+
+    <RedBorderedButton class="return-button" :action="toggleDisclosureVisibility">
+      <span v-html="$t('backside-button')" />
+    </RedBorderedButton>
   </div>
 </template>
+
+<script>
+import { mapMutations } from 'vuex'
+
+export default {
+  methods: {
+    ...mapMutations(['toggleDisclosureVisibility'])
+  }
+}
+</script>
 
 <style lang="scss">
 @import "../../styles/_variables";
@@ -33,6 +47,19 @@
 
   img {
     max-width: 100%;
+  }
+
+  .return-button {
+    position: relative;
+    margin-top: 1.5em;
+    background-color: $color-white;
+    width: 100%;
+  }
+
+  @media (min-width: $media-breakpoint-min-m) {
+    .return-button {
+      display: none;
+    }
   }
 }
 </style>

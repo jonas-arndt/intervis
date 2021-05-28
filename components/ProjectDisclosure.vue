@@ -13,24 +13,22 @@
       <ProjectDisclosurePart5 v-if="activeDisclosureChapterId == 4" />
     </div>
 
-    <RedBorderedButton class="return-button" :action="toggleVisibility">
+    <RedBorderedButton class="return-button" :action="toggleDisclosureVisibility">
       <span v-html="$t('backside-button')" />
     </RedBorderedButton>
   </div>
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapMutations, mapState } from 'vuex'
+
 export default {
   computed: {
     ...mapState(['activeDisclosureChapterId'])
   },
   methods: {
-    toggleVisibility () {
-      this.$store.commit('toggleDisclosureVisibility')
-    }
+    ...mapMutations(['toggleDisclosureVisibility'])
   }
-
 }
 </script>
 
@@ -69,11 +67,7 @@ export default {
   }
 
   .return-button {
-    position: fixed;
-    width: 94%;
-    left: 3%;
-    bottom: 3%;
-    background-color: $color-white;
+    display: none;
   }
 
   @media (min-width: $media-breakpoint-min-m) {
@@ -91,10 +85,12 @@ export default {
     }
 
     .return-button {
-      width: auto;
+      display: block;
+
+      position: fixed;
       top: 1rem;
       left: 1rem;
-      bottom: auto;
+      background-color: $color-white;
     }
   }
 }
