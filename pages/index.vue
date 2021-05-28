@@ -42,7 +42,7 @@
     </PopupOverlay>
 
     <QuickNavigation v-if="quickNavigationIsVisible" class="article-navigation" />
-    <GoogleLink v-show="questionnaireLinkIsVisible" class="google-link" />
+    <GoogleLink v-show="questionnaireLinkIsVisible && !projectDisclosureIsVisible && !designDecisionsAreVisible" class="google-link" />
     <Logger @logSendErrorOccured="handleLogSendError" @loggingIdDefined="handleDefinedLoggingId" />
   </div>
 </template>
