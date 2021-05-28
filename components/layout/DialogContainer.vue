@@ -22,7 +22,7 @@
     position: relative;
     background-color: $color-light-grey;
 
-    padding: 2rem;
+    padding: 1rem;
   }
 
   @media (min-width: $media-breakpoint-min-m) {
@@ -31,6 +31,7 @@
       top: 20%;
       left: 20%;
       transform: translate(-10%, -10%);
+      padding: 2rem;
     }
   }
 
