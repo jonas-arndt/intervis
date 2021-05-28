@@ -53,6 +53,13 @@
   }
 
   @media (min-width: $media-breakpoint-min-m) {
+    .background-visualization {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: $media-breakpoint-min-m) {
     .step {
       margin-bottom: 30vh;
       background: none;

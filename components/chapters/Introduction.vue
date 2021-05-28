@@ -25,7 +25,7 @@
     height: 600vh;
 
     .step {
-      position: absolute;
+      position: relative;
 
       &.step1 {
         top: 50vh;

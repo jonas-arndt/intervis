@@ -36,6 +36,16 @@ body,
     top: 0;
   }
 
+  @media (min-width: $media-breakpoint-min-s) {
+    .step {
+      position: relative;
+      width: $media-breakpoint-min-s;
+      background: rgb(249, 250, 255, 0.95);
+      padding: 1rem;
+      margin: 0 auto;
+    }
+  }
+
   @media (min-width: $media-breakpoint-min-m) {
     .narrative {
       position: relative;

@@ -70,6 +70,15 @@
     }
   }
 
+  @media (min-width: $media-breakpoint-min-s) {
+    padding: 2rem;
+
+    .instruction {
+      left: 2rem;
+      bottom: 2rem;
+    }
+  }
+
   @media (min-width: $media-breakpoint-min-m) {
     padding: 10%;
     padding-top: 3rem;

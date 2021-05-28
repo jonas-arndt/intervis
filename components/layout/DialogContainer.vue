@@ -25,6 +25,12 @@
     padding: 1rem;
   }
 
+  @media (min-width: $media-breakpoint-min-s) {
+    .content-container {
+      padding: 1.5rem;
+    }
+  }
+
   @media (min-width: $media-breakpoint-min-m) {
     .content-container {
       position: absolute;

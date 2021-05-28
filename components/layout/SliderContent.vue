@@ -76,8 +76,18 @@ export default {
     }
   }
 
+  @media (min-width: $media-breakpoint-min-s) {
+    .inside .scroll-container {
+      padding: 2.5rem 2rem 2.5rem 2rem;
+    }
+  }
+
   @media (min-width: $media-breakpoint-min-m) {
     width: $media-breakpoint-min-s;
+
+    .inside .scroll-container {
+      padding: 2rem 1.5rem 2rem 1.5rem;
+    }
 
     .close-button {
       display: none;

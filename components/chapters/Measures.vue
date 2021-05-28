@@ -42,7 +42,7 @@ export default {
     height: 600vh;
 
     .step {
-      position: absolute;
+      position: relative;
 
       &.step-1 {
         top: 125vh;

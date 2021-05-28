@@ -39,6 +39,11 @@
     font-weight: 400;
   }
 
+  @media (min-width: $media-breakpoint-min-s) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
   @media (min-width: $media-breakpoint-min-m) {
     padding-top: 3rem;
     padding-bottom: 5rem;
