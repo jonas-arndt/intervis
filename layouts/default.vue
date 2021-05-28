@@ -179,10 +179,6 @@ i {
 a {
   font-weight: 800;
   color: $color-red;
-
-  &:hover {
-    color: $color-black;
-  }
 }
 
 .tooltip {

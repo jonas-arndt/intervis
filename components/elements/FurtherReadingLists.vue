@@ -67,10 +67,6 @@ export default {
   a {
     color: $color-black;
     font-weight: inherit;
-
-    &:hover {
-      color: $color-red;
-    }
   }
 
   h4 {

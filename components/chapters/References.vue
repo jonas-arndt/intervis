@@ -54,10 +54,6 @@ export default {
   a {
     font-weight: normal;
     color: $color-black;
-
-    &:hover {
-      color: $color-red;
-    }
   }
 
   .reference-list {

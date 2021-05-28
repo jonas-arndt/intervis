@@ -46,10 +46,6 @@ export default {
     a {
       margin-left: 0.3rem;
       color: $color-black;
-
-      &:hover {
-        color: $color-red;
-      }
     }
 
     &.active {
