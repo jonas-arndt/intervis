@@ -26,7 +26,13 @@ export default {
   transition: 1s;
 
   &.slided-in {
-    left: -50%;
+    left: -100%;
+  }
+
+  @media (min-width: $media-breakpoint-min-m) {
+    &.slided-in {
+      left: -$media-breakpoint-min-s;
+    }
   }
 }
 
