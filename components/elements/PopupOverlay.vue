@@ -55,11 +55,7 @@
     z-index: 10;
     cursor: pointer;
 
-    button {
-      outline: none;
-      background: none;
-      border: none;
-    }
+    background-color: $color-light-grey;
   }
 
   @media (min-width: $media-breakpoint-min-m) {
