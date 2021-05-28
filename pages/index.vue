@@ -194,12 +194,14 @@ export default {
 }
 
 .page.js {
-  .article-navigation {
+  .google-link {
     display: block;
   }
 
-  .google-link {
-    display: block;
+  @media (min-width: $media-breakpoint-min-m) {
+    .article-navigation {
+      display: block;
+    }
   }
 }
 </style>
