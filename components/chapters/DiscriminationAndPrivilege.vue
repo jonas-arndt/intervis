@@ -126,6 +126,15 @@ export default {
     top: 0;
     z-index: -100;
     height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  @media (min-width: $media-breakpoint-min-m) {
+    .background-visualization {
+      padding-left: inherit;
+      padding-right: inherit;
+    }
   }
 }
 </style>

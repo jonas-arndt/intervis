@@ -43,6 +43,9 @@
     height: 100%;
     width: 100%;
 
+    padding-left: 1rem;
+    padding-right: 1rem;
+
     & > * {
       position: relative;
       height: 100%;
@@ -65,6 +68,8 @@
     .background-visualization {
       left: 45%;
       width: 50%;
+      padding-left: inherit;
+      padding-right: inherit;
     }
   }
 }

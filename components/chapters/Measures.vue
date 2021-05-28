@@ -74,6 +74,9 @@ export default {
     z-index: -100;
     height: 100%;
     width: 100%;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   @media (min-width: $media-breakpoint-min-m) {
@@ -84,6 +87,11 @@ export default {
       .step {
         margin-top: 50vh;
       }
+    }
+
+    .background-visualization {
+      padding-left: inherit;
+      padding-right: inherit;
     }
   }
 }
