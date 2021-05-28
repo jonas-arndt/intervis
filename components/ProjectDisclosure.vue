@@ -73,6 +73,7 @@ export default {
     width: 94%;
     left: 3%;
     bottom: 3%;
+    background-color: $color-white;
   }
 
   @media (min-width: $media-breakpoint-min-m) {
