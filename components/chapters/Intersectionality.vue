@@ -1,5 +1,9 @@
 <template>
   <div class="chapter what-is-intersectionality">
+    <div class="screen-reader">
+      <p v-html="$t('alt-tag-chapter1')" />
+    </div>
+
     <SlideInToggleButton class="slide-in-toggle-button" :style="slideInButtonStyles">
       <span v-html="$t('disclosure-hint1')" />
     </SlideInToggleButton>

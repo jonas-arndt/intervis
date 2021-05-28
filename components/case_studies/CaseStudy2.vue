@@ -6,6 +6,10 @@
       </template>
 
       <template v-slot:content>
+        <div class="screen-reader">
+          <p v-html="$t('alt-tag-chapter3-example2-1')" />
+        </div>
+
         <div class="step">
           <h3 class="case-study-title" v-html="$t('chapter3-example2-title')" />
           <p v-html="$t('chapter3-example2-text1')" />
@@ -15,8 +19,16 @@
           <p v-html="$t('chapter3-example2-text2')" />
         </div>
 
+        <div class="screen-reader">
+          <p v-html="$t('alt-tag-chapter3-example2-2')" />
+        </div>
+
         <div class="step">
           <p v-html="$t('chapter3-example2-text3')" />
+        </div>
+
+        <div class="screen-reader">
+          <p v-html="$t('alt-tag-chapter3-example2-3')" />
         </div>
 
         <div class="step">

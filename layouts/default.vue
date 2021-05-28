@@ -17,6 +17,10 @@ body,
     height: 100%;
 }
 
+.screen-reader {
+  display: none;
+}
+
 .chapter {
   position: relative;
 

@@ -7,12 +7,24 @@
         <p v-html="$t('chapter4-text1')" />
       </div>
 
+      <div class="screen-reader">
+        <p v-html="$t('alt-tag-chapter4-text1')" />
+      </div>
+
       <div class="step step-2">
         <p v-html="$t('chapter4-text2')" />
       </div>
 
+      <div class="screen-reader">
+        <p v-html="$t('alt-tag-chapter4-text2')" />
+      </div>
+
       <div class="step step-3">
         <p v-html="$t('chapter4-text3')" />
+      </div>
+
+      <div class="screen-reader">
+        <p v-html="$t('alt-tag-chapter4-text3')" />
       </div>
     </div>
   </div>

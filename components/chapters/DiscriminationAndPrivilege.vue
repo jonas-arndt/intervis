@@ -1,5 +1,9 @@
 <template>
   <div class="chapter discrimination_and_privilege">
+    <div class="screen-reader">
+      <p v-html="$t('alt-tag-chapter2')" />
+    </div>
+
     <SlideInToggleButton class="slide-in-toggle-button" :style="slideInButtonStyles">
       <span v-html="$t('disclosure-hint2')" />
     </SlideInToggleButton>

@@ -29,7 +29,7 @@
         <span v-html="$t('backside-decision-button3')" />
       </template>
       <template v-slot:answer>
-        <img src="~/assets/disclosure/alternative1.jpg">
+        <img src="~/assets/disclosure/alternative1.jpg" :alt="$t('alt-tag-alternative1')">
         <p v-html="$t('backside-decision-text3')" />
       </template>
     </QuestionWithHiddenAnswer>
@@ -72,7 +72,7 @@
         <span v-html="$t('backside-decision-button7')" />
       </template>
       <template v-slot:answer>
-        <img src="~/assets/disclosure/alternative2.jpg">
+        <img src="~/assets/disclosure/alternative2.jpg" :alt="$t('alt-tag-alternative2')">
         <p v-html="$t('backside-decision-text7')" />
       </template>
     </QuestionWithHiddenAnswer>

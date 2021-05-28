@@ -29,7 +29,7 @@
         <span v-html="$t('slidein1-button3')" />
       </template>
       <template v-slot:answer>
-        <img src="~/assets/disclosure/alternative1.jpg">
+        <img src="~/assets/disclosure/alternative1.jpg" :alt="$t('alt-tag-alternative1')">
         <p v-html="$t('slidein1-text3')" />
       </template>
     </QuestionWithHiddenAnswer>

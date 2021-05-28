@@ -1,5 +1,9 @@
 <template>
   <div class="title-visualization" :style="{ opacity }">
+    <div class="screen-reader">
+      <p v-html="$t('alt-tag-teaser-text1')" />
+      <p v-html="$t('alt-tag-teaser-text2')" />
+    </div>
     <div class="text">
       <Words />
     </div>
