@@ -1,6 +1,6 @@
 export default {
   'page-title': 'Inter\u2026was? Intersektionalit\u00E4t! \u2013 Eine visuelle Einf\u00FChrung',
-  'evaluation-link': 'Hilf unserer Forschung',
+  'evaluation-link': 'Hilf unserer Forschung und<br/>nimm an unserer Evaluation teil',
   '': 'https://docs.google.com/forms/d/e/1FAIpQLSd9kykOGH0PTMdTi5de8w3Oz17lMRH-IjS0JNmIGfgBNdBp5w/viewform?usp=sf_link',
   'startscreen-date': '31.05.2021',
   'startscreen-title': 'Inter\u2026was?<br/>Intersektionalit\u00E4t!',
@@ -158,7 +158,7 @@ export default {
   'chapter5-button1': 'Mehr',
   'chapter5-button2': 'Weniger',
   'projectinfo-title': 'Projektinformationen',
-  'projectinfo-text1': 'Dieses Projekt versucht, Intersektionalit\u00E4t zug\u00E4nglicher zu machen, das zentrale Anliegen zu kommunizieren und einen Einstieg zu erm\u00F6glichen. Im Rahmen dieses Projektes ist es nicht m\u00F6glich, Intersektionalit\u00E4t vollst\u00E4ndig in ihren detaillierten Methoden, theoretischen Ans\u00E4tzen, Analyseebenen etc. zu behandeln. Auch sind die genannten Beispiele lediglich ein kleiner Ausschnitt der zahlreichen, intersektionalen Diskriminierungsformen und -erfahrungen.<br/>Dieses Projekt ist gepr\u00E4gt von den subjektiven und partiellen Perspektiven des Projektteams. In dem Teil \u00BBEinblicke in das Projekt\u00AB werden bestimmte Visualisierungsentscheidungen transparent und involvierte Personen sichtbar gemacht. Der Projektprozess wird offengelegt, die Perspektiven und Positionen der Autor*innen werden kommuniziert und die Projektergebnisse reflektiert.',
+  'projectinfo-text1': 'Dieses Projekt versucht, Intersektionalit\u00E4t zug\u00E4nglicher zu machen, das zentrale Anliegen zu kommunizieren und einen Einstieg zu erm\u00F6glichen. Im Rahmen dieses Projektes ist es nicht m\u00F6glich, Intersektionalit\u00E4t vollst\u00E4ndig in ihren detaillierten Methoden, theoretischen Ans\u00E4tzen, Analyseebenen etc. zu behandeln. Auch sind die genannten Beispiele lediglich ein kleiner Ausschnitt der zahlreichen, intersektionalen Diskriminierungsformen und -erfahrungen.<br/>Dieses Projekt ist gepr\u00E4gt von den subjektiven und partiellen Perspektiven des Projektteams. In dem Teil \u00BBEinblicke in das Projekt\u00AB werden bestimmte Visualisierungsentscheidungen transparent und involvierte Personen sichtbar gemacht. Der Projektprozess wird offengelegt, die Perspektiven und Positionen der Autor*innen werden kommuniziert und die Projektergebnisse kritisch reflektiert.',
   'projectinfo-button': 'Einblicke in das Projekt',
   'references-title': 'Quellen',
   'references-downloaded': 'Abgerufen von',
@@ -210,7 +210,7 @@ export default {
   'backside-title': 'Einblicke in das Projekt',
   'backside-button': 'Zur\u00FCck zum Artikel',
   'backside-menu1': 'Projektprozess &amp; Methoden',
-  'backside-menu2': 'Visualisierungsentscheidungen\u2028 &amp; Datenkontext',
+  'backside-menu2': 'Visualisierungsentscheidungen &amp; Datenkontext',
   'backside-menu3': 'Involvierte Personen',
   'backside-menu4': 'Unsere Positionen',
   'backside-menu5': 'Projektreflexion',
@@ -292,5 +292,5 @@ export default {
   'backside-reflection-heading2': 'Sprache',
   'backside-reflection-text2': 'Es ist es wichtig anzuerkennen, dass der entwickelte Scrollytelling Artikel trotz bereits umgesetzter Kriterien zu Ausschl\u00FCssen f\u00FChren kann. Ein Beispiel daf\u00FCr ist die verwendete Sprache. Der Artikel ist zur Zeit in deutscher und englischer Sprache verf\u00FCgbar, die \u00DCbersetzung in weitere Sprachen ist w\u00FCnschenswert. Wir haben versucht den Text, trotz der Schwierigkeit und Komplexit\u00E4t des Themas, anschaulich und verst\u00E4ndlich zu formulieren. Vor allem die unmittelbaren Erkl\u00E4rungen von bestimmten Fachbegriffen helfen dabei. Ein weiterf\u00FChrender Schritt muss es sein, den Text auch in Leichter Sprache zur Verf\u00FCgung zu stellen.',
   'backside-reflection-heading3': 'Barrierefreiheit',
-  'backside-reflection-text3': 'Zun\u00E4chst gibt es die grundlegende Problematik, dass visuelle Elemente prinzipiell bestimmte Personen ausschlie\u00DFen. Beispielsweise k\u00F6nnen sie von Screenreadern, die Menschen mit Sehbeeintr\u00E4chtigung Webseiten vorlesen, nicht gelesen werden. Hier ist eine M\u00F6glichkeit, visuelle Elemente mit Texten zu beschreiben, was wir in diesem Projekt umgesetzt haben.<br/>Aufgrund zeitlicher Kapazit\u00E4t und mangelnder Expertise wurden in diesem Projekt einige Aspekte der Barrierefreiheit nicht umgesetzt und es fand keine detaillierte Besch\u00E4ftigung mit diesem Thema statt. Der Scrollytelling Artikel weist folglich diesbez\u00FCglich einige M\u00E4ngel auf.<br/>Weitere, notwendige Schritte sind der Einbezug von Expert*innen zu diesem Thema und die detaillierte Untersuchung, was bez\u00FCglich Barrierefreiheit innerhalb dieses Scrollytelling Artikels umgesetzt werden sollte, beispielsweise Tastatur-Navigation, von Leser*innen ver\u00E4nderbare Parameter wie zum Beispiel Kontrast, Schriftgr\u00F6\u00DFe, Farbe etc.'
+  'backside-reflection-text3': 'Zun\u00E4chst gibt es die grundlegende Problematik, dass visuelle Elemente prinzipiell bestimmte Personen ausschlie\u00DFen. Beispielsweise k\u00F6nnen sie von Screenreadern, die Menschen mit Sehbeeintr\u00E4chtigung Webseiten vorlesen, nicht gelesen werden. Hier ist eine M\u00F6glichkeit, visuelle Elemente mit Texten zu beschreiben, was ein n\u00E4chster Implementierungsschritt in diesem Projekt sein muss.<br/>Aufgrund zeitlicher Kapazit\u00E4t und mangelnder Expertise wurden in diesem Projekt einige Aspekte der Barrierefreiheit nicht umgesetzt und es fand keine detaillierte Besch\u00E4ftigung mit diesem Thema statt. Der Scrollytelling Artikel weist folglich diesbez\u00FCglich einige M\u00E4ngel auf.<br/>Weitere, notwendige Schritte sind der Einbezug von Expert*innen zu diesem Thema und die detaillierte Untersuchung, was bez\u00FCglich Barrierefreiheit innerhalb dieses Scrollytelling Artikels umgesetzt werden sollte, beispielsweise Tastatur-Navigation, von Leser*innen ver\u00E4nderbare Parameter wie zum Beispiel Kontrast, Schriftgr\u00F6\u00DFe, Farbe etc.'
 }

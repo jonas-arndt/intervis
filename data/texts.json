@@ -6,8 +6,8 @@
     },
     {
         "ID": "evaluation-link",
-        "German": "Hilf unserer Forschung",
-        "English": "Help our research"
+        "German": "Hilf unserer Forschung und\nnimm an unserer Evaluation teil",
+        "English": "Help our research and\nparticipate in our evaluation"
     },
     {
         "ID": "",
@@ -796,8 +796,8 @@
     },
     {
         "ID": "projectinfo-text1",
-        "German": "Dieses Projekt versucht, Intersektionalit\u00e4t zug\u00e4nglicher zu machen, das zentrale Anliegen zu kommunizieren und einen Einstieg zu erm\u00f6glichen. Im Rahmen dieses Projektes ist es nicht m\u00f6glich, Intersektionalit\u00e4t vollst\u00e4ndig in ihren detaillierten Methoden, theoretischen Ans\u00e4tzen, Analyseebenen etc. zu behandeln. Auch sind die genannten Beispiele lediglich ein kleiner Ausschnitt der zahlreichen, intersektionalen Diskriminierungsformen und -erfahrungen.\nDieses Projekt ist gepr\u00e4gt von den subjektiven und partiellen Perspektiven des Projektteams. In dem Teil \u00bbEinblicke in das Projekt\u00ab werden bestimmte Visualisierungsentscheidungen transparent und involvierte Personen sichtbar gemacht. Der Projektprozess wird offengelegt, die Perspektiven und Positionen der Autor*innen werden kommuniziert und die Projektergebnisse reflektiert.",
-        "English": "This project attempts to make intersectionality more accessible, to communicate its central concern and to provide an introduction. Within the context of this project, it is not possible to illustrate intersectionality in its detailed methods, theoretical approaches, levels of analysis, etc. Also, the examples given are only a small sample of the numerous, intersectional forms and experiences of discrimination.\nThis project is shaped by the subjective and partial perspectives of the project team. In the \u00bbInsights into the project\u00ab part, we make certain visualization decisions transparent and people involved visible. We disclose the project process, communicate the perspectives and positions of the authors and reflect on the project outcomes.\n"
+        "German": "Dieses Projekt versucht, Intersektionalit\u00e4t zug\u00e4nglicher zu machen, das zentrale Anliegen zu kommunizieren und einen Einstieg zu erm\u00f6glichen. Im Rahmen dieses Projektes ist es nicht m\u00f6glich, Intersektionalit\u00e4t vollst\u00e4ndig in ihren detaillierten Methoden, theoretischen Ans\u00e4tzen, Analyseebenen etc. zu behandeln. Auch sind die genannten Beispiele lediglich ein kleiner Ausschnitt der zahlreichen, intersektionalen Diskriminierungsformen und -erfahrungen.\nDieses Projekt ist gepr\u00e4gt von den subjektiven und partiellen Perspektiven des Projektteams. In dem Teil \u00bbEinblicke in das Projekt\u00ab werden bestimmte Visualisierungsentscheidungen transparent und involvierte Personen sichtbar gemacht. Der Projektprozess wird offengelegt, die Perspektiven und Positionen der Autor*innen werden kommuniziert und die Projektergebnisse kritisch reflektiert.",
+        "English": "This project attempts to make intersectionality more accessible, to communicate its central concern and to provide an introduction. Within the context of this project, it is not possible to illustrate intersectionality in its detailed methods, theoretical approaches, levels of analysis, etc. Also, the examples given are only a small sample of the numerous, intersectional forms and experiences of discrimination.\nThis project is shaped by the subjective and partial perspectives of the project team. In the \u00bbInsights into the project\u00ab part, we make certain visualization decisions transparent and people involved visible. We disclose the project process, communicate the perspectives and positions of the authors and critical reflect on the project outcomes.\n"
     },
     {
         "ID": "projectinfo-button",
