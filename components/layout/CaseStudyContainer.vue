@@ -52,7 +52,7 @@
     }
   }
 
-  @media (min-width: $media-breakpoint-min-m) {
+  @media (min-width: $media-breakpoint-min-s) {
     .background-visualization {
       padding-left: 1.5rem;
       padding-right: 1.5rem;
@@ -62,7 +62,6 @@
   @media (min-width: $media-breakpoint-min-m) {
     .step {
       margin-bottom: 30vh;
-      background: none;
 
       blockquote {
         text-align: right;
@@ -73,10 +72,16 @@
     }
 
     .background-visualization {
-      left: 45%;
-      width: 50%;
+      left: 55%;
+      width: 35%;
       padding-left: inherit;
       padding-right: inherit;
+    }
+  }
+
+  @media (min-width: $media-breakpoint-min-l) {
+    .step {
+      background: none;
     }
   }
 }

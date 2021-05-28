@@ -53,6 +53,12 @@
       padding-bottom: 180vh;
     }
   }
+
+  @media (min-width: $media-breakpoint-min-l) {
+    .narrative .step {
+      width: $media-breakpoint-min-s;
+    }
+  }
 }
 
 </style>

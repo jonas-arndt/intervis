@@ -49,20 +49,26 @@ body,
   @media (min-width: $media-breakpoint-min-m) {
     .narrative {
       position: relative;
-      padding-left: 10%;
-      padding-right: 10%;
-
-      width: 50%;
 
       .step {
-        background: none;
         padding: 0.8em 1em 0.8em 1em;
       }
+    }
+  }
+
+  @media (min-width: $media-breakpoint-min-l) {
+    .narrative {
+      width: 50%;
+      padding-left: 10%;
 
       &.right {
-        left: 50%;
+        left: 40%;
       }
 
+      .step {
+        width: auto;
+        background: none;
+      }
       &.with-background .step {
         background: rgb(249, 250, 255, 0.95);
       }

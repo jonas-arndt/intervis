@@ -236,8 +236,12 @@ export default {
   }
 
   @media (min-width: $media-breakpoint-min-m) {
-    .text img {
-      left: 10%;
+    .text {
+    max-width: 80%;
+      & > * {
+        left: 10%;
+      }
+
     }
   }
 }

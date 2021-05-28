@@ -111,6 +111,12 @@ export default {
       }
     }
   }
+
+  @media (min-width: $media-breakpoint-min-l) {
+    .narrative .step {
+      width: $media-breakpoint-min-s;
+    }
+  }
 }
 
 </style>
