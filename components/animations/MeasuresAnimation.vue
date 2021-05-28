@@ -88,30 +88,34 @@ export default {
       return this.getStylesFromRect(this.shape2Rect, this.shapeKeys.shape2)
     },
 
-    // text scale ratios
+    // text size and scale ratio
     shape2TextRatio () {
       return Math.min(
         this.viewport.width / this.shape2Rect.width,
         this.viewport.height / this.shape2Rect.height
       )
     },
-    textRatio () {
+    textSize () {
       const shapeRectKeys = {
         shape1: { containerRectKey: 'shape1Rect', shapeRectKey: this.shapeKeys.shape1 },
         shape2: { containerRectKey: 'shape2Rect', shapeRectKey: this.shapeKeys.shape2 }
       }
 
-      let textRatio
+      let textSize
       for (const [, keys] of Object.entries(shapeRectKeys)) {
         const containerRect = this[keys.containerRectKey]
         const shapeRect = this.shapes[keys.shapeRectKey].rect
         const ratio = Math.min(containerRect.width / shapeRect.width, containerRect.height / shapeRect.height)
+        const size = {
+          width: shapeRect.width * ratio,
+          height: shapeRect.height * ratio
+        }
 
-        if (textRatio === undefined || textRatio > ratio) {
-          textRatio = ratio
+        if (textSize === undefined || textSize.width > size.width) {
+          textSize = size
         }
       }
-      return textRatio
+      return textSize
     },
 
     // general styles
@@ -236,11 +240,7 @@ export default {
       }
     },
     getStylesFromRect (containerRect, shapeKey) {
-      const shapeRect = this.shapes[shapeKey].rect
-      const shapeRatio = this.textRatio
-
-      const width = shapeRatio * shapeRect.width
-      const height = shapeRatio * shapeRect.height
+      const { width, height } = this.textSize
 
       const styles = {}
       styles.width = width + 'px'
