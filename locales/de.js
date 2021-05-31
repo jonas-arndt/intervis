@@ -1,6 +1,6 @@
 export default {
   'page-title': 'Inter\u2026was? Intersektionalit\u00E4t! \u2013 Eine visuelle Einf\u00FChrung',
-  'evaluation-link': 'Hilf unserer Forschung und<br/>nimm an unserer Evaluation teil',
+  'evaluation-link': 'Hilf unserer Forschung und<br/>nimm an der Evaluation teil',
   '': 'https://docs.google.com/forms/d/e/1FAIpQLSd9kykOGH0PTMdTi5de8w3Oz17lMRH-IjS0JNmIGfgBNdBp5w/viewform?usp=sf_link',
   'startscreen-date': '31.05.2021',
   'startscreen-title': 'Inter\u2026was?<br/>Intersektionalit\u00E4t!',

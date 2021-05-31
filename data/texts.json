@@ -6,8 +6,8 @@
     },
     {
         "ID": "evaluation-link",
-        "German": "Hilf unserer Forschung und\nnimm an unserer Evaluation teil",
-        "English": "Help our research and\nparticipate in our evaluation"
+        "German": "Hilf unserer Forschung und\nnimm an der Evaluation teil",
+        "English": "Help our research and\nparticipate in the evaluation"
     },
     {
         "ID": "",
@@ -687,12 +687,12 @@
     {
         "ID": "chapter5-bar",
         "German": "Und jetzt?",
-        "English": "And Now What?"
+        "English": "And now what?"
     },
     {
         "ID": "chapter5-title",
         "German": "Und jetzt?",
-        "English": "And Now What?"
+        "English": "And now what?"
     },
     {
         "ID": "chapter5-text1",

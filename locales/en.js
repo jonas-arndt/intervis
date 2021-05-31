@@ -1,6 +1,6 @@
 export default {
   'page-title': 'Inter...what? Intersectionality! \u2013 A visual Introduction',
-  'evaluation-link': 'Help our research and<br/>participate in our evaluation',
+  'evaluation-link': 'Help our research and<br/>participate in the evaluation',
   '': 'https://docs.google.com/forms/d/e/1FAIpQLSeynkCObZU11Vxb9PIy6e58I-US1x4FR_bl7oeX3MpGxowZpA/viewform?usp=sf_link',
   'startscreen-date': '31.05.2021',
   'startscreen-title': 'Inter...what?<br/>Intersectionality!',
@@ -136,8 +136,8 @@ export default {
   'alt-tag-chapter4-text2': 'Within the upper shape, the horizontal strokes now move behind the words and their outlines become gray. So within this shape, all stroke outlines are now gray and all strokes are positioned behind the words. In the lower shape nothing changes, all strokes have an orange outline and are placed in front of the words.',
   'chapter4-text3': 'Only when the rights, interests, and needs of the structurally most marginalized individuals and groups are taken into account and implemented will all people be liberated from social inequality and asymmetrical power relations. Unequal conditions in access to resources, in social and political participation, in social inclusion and recognition, etc. can be overcome.',
   'alt-tag-chapter4-text3': 'The entire background net and the shapes disappear, so that only the words Access, Inclusion, Participation, and Recognition are visible. When scrolling further, these are scaled larger.',
-  'chapter5-bar': 'And Now What?',
-  'chapter5-title': 'And Now What?',
+  'chapter5-bar': 'And now what?',
+  'chapter5-title': 'And now what?',
   'chapter5-text1': 'Intersectionality has hardly been the subject of social discourse, nor has the term found its way into everyday vocabulary in Germany. The political and transformative potential that some authors see in an intersectional perspective is thus still untapped. \u2028\u00BBThis is to be regretted, because it is desirable that intersectionality as a critical perspective on power relations prevails in general social discourse and is included in a natural way whenever power, inequality, and discursive exclusions are at stake.\u00AB (Meyer, 2017, p.155, translated)\u2028<br/>Intersectional perspectives focus not only on the individual dimension of discrimination, but equally on institutional, structural, and historical discrimination. This broadens the spectrum of measures that can counter discrimination.<br/>European legal and political frameworks tend to conceptualize discrimination from a one-dimensional perspective. Intersectional perspectives offer the potential to include individuals and groups that remain invisible in traditional, one-dimensional approaches. The Center for Intersectional Justice in Berlin provides some <a href="https://www.intersectionaljustice.org/publication/2020-09-14-intersectional-discrimination-in-europe-relevance-challenges-and-ways-forward" target="_blank">\u2192 recommendations</a> to integrate the necessary intersectional perspective into European anti-discrimination work.<br/>',
   'chapter5-subtitle2': 'And what can I do now?',
   'chapter5-text2': 'To make it easier for you to continue tackling the topic, we have listed some initial, possible To Do\u2019s that you can start with right away. This list is by no means complete or final.',
