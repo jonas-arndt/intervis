@@ -11,16 +11,16 @@
             <p v-html="$t('alt-tag-chapter3-example3-1')" />
           </div>
 
-          <div class="step">
+          <div class="step step1">
             <h3 class="case-study-title" v-html="$t('chapter3-example3-title')" />
             <p v-html="$t('chapter3-example3-text1')" />
           </div>
 
-          <div class="step">
+          <div class="step step2">
             <p v-html="$t('chapter3-example3-text2')" />
           </div>
 
-          <div class="step">
+          <div class="step step3">
             <p v-html="$t('chapter3-example3-text3')" />
           </div>
 
@@ -28,7 +28,7 @@
             <p v-html="$t('alt-tag-chapter3-example3-2')" />
           </div>
 
-          <div class="step">
+          <div class="step step4">
             <p v-html="$t('chapter3-example3-text4')" />
             <blockquote v-html="$t('chapter3-example3-trend')" />
             <p v-html="$t('chapter3-example3-text5')" />
@@ -78,6 +78,7 @@ export default {
 @import "../../styles/_variables";
 
 .case-study.working-women {
+
   .case-study-title {
     font-size: $font-size-subtitle;
     margin-bottom: 0.6em;
@@ -85,7 +86,21 @@ export default {
 
   .step-container {
     position: relative;
-    height: 800vh;
+    height: 600vh;
+  }
+
+  .step {
+    position: relative;
+
+    &.step2 {
+      top: 125vh;
+    }
+    &.step3 {
+      top: 200vh;
+    }
+    &.step4 {
+      top: 250vh;
+    }
   }
 }
 </style>

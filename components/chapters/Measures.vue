@@ -57,13 +57,13 @@ export default {
       position: relative;
 
       &.step-1 {
-        top: 125vh;
+        top: 175vh;
       }
       &.step-2 {
-        top: 225vh;
+        top: 175vh;
       }
       &.step-3 {
-        top: 325vh;
+        top: 225vh;
       }
     }
 
