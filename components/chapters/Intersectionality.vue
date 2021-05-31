@@ -55,12 +55,12 @@ export default {
       return scaleLinear()
         .domain([
           // 0 > 1
-          this.intersectionalityChapterStartPosition + this.viewport.height,
-          this.intersectionalityChapterStartPosition + 1.5 * this.viewport.height,
+          this.intersectionalityChapterStartPosition + 0.25 * this.viewport.height,
+          this.intersectionalityChapterStartPosition + 0.75 * this.viewport.height,
 
           // 1 > 0
-          this.discriminationChapterStartPosition - 1.5 * this.viewport.height,
-          this.discriminationChapterStartPosition - this.viewport.height
+          this.discriminationChapterStartPosition - 0.75 * this.viewport.height,
+          this.discriminationChapterStartPosition - 0.25 * this.viewport.height
         ])
         .range([0, 1, 1, 0])
         .clamp(true)
