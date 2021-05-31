@@ -110,6 +110,7 @@ export default {
   }
 
   .interactive-visualization {
+    position: -webkit-sticky;
     position: sticky;
     display: block;
     top: 0;
@@ -124,6 +125,7 @@ export default {
     min-height: 100vh;
 
     & > .inside {
+      position: -webkit-sticky;
       position: sticky;
       top: 0;
       height: 100vh;

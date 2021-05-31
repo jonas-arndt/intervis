@@ -21,6 +21,7 @@ export default {
 /* Rectangle */
 
 .slide-in-toggle-button-wrapper {
+  position: -webkit-sticky;
   position: sticky;
   width: 100%;
 

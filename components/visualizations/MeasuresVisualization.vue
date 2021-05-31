@@ -95,6 +95,7 @@ export default {
   }
 
   .interactive-visualization {
+    position: -webkit-sticky;
     position: sticky;
     display: block;
     top: 0;
@@ -125,6 +126,7 @@ export default {
     }
 
     & > .inside {
+      position: -webkit-sticky;
       position: sticky;
       top: 0;
       width: 100%;

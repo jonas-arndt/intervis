@@ -75,6 +75,7 @@ export default {
 
 .discrimination-visualization {
   .fallback, .interactive-visualization {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     width: 100%;
