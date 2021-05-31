@@ -65,8 +65,8 @@ export default {
       return scaleLinear()
         .domain([
           // 0 > 1
-          this.discriminationChapterStartPosition + this.viewport.height,
           this.discriminationChapterStartPosition + 1.5 * this.viewport.height,
+          this.discriminationChapterStartPosition + 1.75 * this.viewport.height,
 
           // 1 > 0
           this.caseStudyChapterStartPosition - 1.5 * this.viewport.height,

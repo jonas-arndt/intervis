@@ -55,11 +55,11 @@ export default {
       return scaleLinear()
         .domain([
           // 0 > 1
-          this.caseStudyChapterStartPosition + 1.5 * this.viewport.height,
-          this.caseStudyChapterStartPosition + 2 * this.viewport.height,
+          this.caseStudyChapterStartPosition + 2.75 * this.viewport.height,
+          this.caseStudyChapterStartPosition + 3 * this.viewport.height,
 
           // 1 > 0
-          this.measuresChapterStartPosition - 1.5 * this.viewport.height,
+          this.measuresChapterStartPosition - 1.25 * this.viewport.height,
           this.measuresChapterStartPosition - this.viewport.height
         ])
         .range([0, 1, 1, 0])
