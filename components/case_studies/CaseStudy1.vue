@@ -6,31 +6,33 @@
       </template>
 
       <template v-slot:content>
-        <div class="screen-reader">
-          <p v-html="$t('alt-tag-chapter3-example1-1')" />
-        </div>
+        <div class="step-container">
+          <div class="screen-reader">
+            <p v-html="$t('alt-tag-chapter3-example1-1')" />
+          </div>
 
-        <div class="step">
-          <h3 class="case-study-title" v-html="$t('chapter3-example1-title')" />
-          <p v-html="$t('chapter3-example1-text1')" />
-        </div>
+          <div class="step">
+            <h3 class="case-study-title" v-html="$t('chapter3-example1-title')" />
+            <p v-html="$t('chapter3-example1-text1')" />
+          </div>
 
-        <div class="step">
-          <p v-html="$t('chapter3-example1-text2')" />
-          <blockquote v-html="$t('chapter3-example1-trend')" />
-          <p v-html="$t('chapter3-example1-text3')" />
-        </div>
+          <div class="step">
+            <p v-html="$t('chapter3-example1-text2')" />
+            <blockquote v-html="$t('chapter3-example1-trend')" />
+            <p v-html="$t('chapter3-example1-text3')" />
+          </div>
 
-        <div class="step">
-          <p v-html="$t('chapter3-example1-text4')" />
-        </div>
+          <div class="step">
+            <p v-html="$t('chapter3-example1-text4')" />
+          </div>
 
-        <div class="screen-reader">
-          <p v-html="$t('alt-tag-chapter3-example1-2')" />
-        </div>
+          <div class="screen-reader">
+            <p v-html="$t('alt-tag-chapter3-example1-2')" />
+          </div>
 
-        <div class="step">
-          <p v-html="$t('chapter3-example1-text5')" />
+          <div class="step">
+            <p v-html="$t('chapter3-example1-text5')" />
+          </div>
         </div>
       </template>
     </CaseStudyContainer>
@@ -79,6 +81,11 @@ export default {
   .case-study-title {
     font-size: $font-size-subtitle;
     margin-bottom: 0.6em;
+  }
+
+  .step-container {
+    position: relative;
+    height: 800vh;
   }
 }
 </style>

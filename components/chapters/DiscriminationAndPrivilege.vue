@@ -95,7 +95,7 @@ export default {
 .chapter.discrimination_and_privilege {
   .narrative {
     position: relative;
-    height: 550vh;
+    height: 800vh;
 
     .step {
       position: relative;
