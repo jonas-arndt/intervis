@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import { mapMutations } from 'vuex'
+import { mapState, mapMutations } from 'vuex'
 
 export default {
   props: {
@@ -14,9 +14,25 @@ export default {
       default: false
     }
   },
+  data () {
+    return {
+      previousScrollPosition: 0
+    }
+  },
   computed: {
+    ...mapState(['designDecisionsAreVisible', 'verticalScrollPosition']),
     style () {
       return this.disabled ? { overflow: 'hidden' } : {}
+    }
+  },
+  watch: {
+    // work around for unintended story jump issue
+    verticalScrollPosition (verticalScrollPosition) {
+      if (!this.designDecisionsAreVisible) {
+        this.previousScrollPosition = verticalScrollPosition
+      } else if (this.designDecisionsAreVisible && this.previousScrollPosition !== verticalScrollPosition) {
+        this.$refs.scroller.scrollTo(0, this.previousScrollPosition)
+      }
     }
   },
   mounted () {
