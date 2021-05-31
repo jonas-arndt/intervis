@@ -270,7 +270,7 @@ export default {
     height: 40%;
 
     .grid {
-      background: url('~assets/grid/chapter3_frauenmitbehinderung.jpg');
+      background: url('~assets/grid/chapter3_frauenmitbehinderung.png');
       background-size: cover;
     }
   }

@@ -478,7 +478,7 @@ export default {
     height: 30%;
 
     .grid {
-      background: url('~assets/grid/chapter3_sintiundroma.jpg');
+      background: url('~assets/grid/chapter3_sintiundroma.png');
       background-size: cover;
     }
   }

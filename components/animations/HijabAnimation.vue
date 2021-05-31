@@ -345,7 +345,7 @@ export default {
     height: 30%;
 
     .grid {
-      background: url('~assets/grid/chapter3_frauenmithijab.jpg');
+      background: url('~assets/grid/chapter3_frauenmithijab.png');
       background-size: cover;
     }
   }
