@@ -36,8 +36,8 @@
     },
     {
         "ID": "startscreen-intro",
-        "German": "Identische Qualifikationen.\nIdentischer Lebenslauf.\nIdentische Bewerbung.\nDer einzige Unterschied: Name und Foto.\nWarum wird Sandra zum\nVorstellungsgespr\u00e4ch eingeladen,\nMeyrem aber nicht?",
-        "English": "Same qualification.\nSame resume.\nSame application.\nThe only difference: name and photo.\nWhy is Sandra invited for the job interview\nbut Meyrem is not?"
+        "German": "Identische Qualifikationen.\nIdentischer Lebenslauf.\nIdentische Bewerbung.\nDer einzige Unterschied: Name und Foto.\nWarum wird Sandra zum\nVorstellungsgespr\u00e4ch eingeladen,\nMeryem aber nicht?",
+        "English": "Same qualification.\nSame resume.\nSame application.\nThe only difference: name and photo.\nWhy is Sandra invited for the job interview\nbut Meryem is not?"
     },
     {
         "ID": "startscreen-hint",
@@ -376,8 +376,8 @@
     },
     {
         "ID": "chapter3-example1-text1",
-        "German": "Frauen mit Hidschab (muslimisches Kopftuch) erfahren intersektionale Diskriminierung \u2013 Sexismus und anti-muslimischen Rassismus \u2013 in diversen Bereichen in Deutschland. Nicht nur auf individueller Ebene, sondern auch strukturell und institutionell. So erleben sie zum Beispiel direkte Diskriminierung beim Zugang zum Arbeitsmarkt, was ein <a href=\"https://www.iza.org/publications/dp/10217/discrimination-against-female-migrants-wearing-headscarves\">\u2192 Experiment</a> von Doris Weichselbaumer aus dem Jahr 2016 (S. 12ff) deutlich macht:\n\n1474 Bewerbungen wurden an Unternehmen in Deutschland verschickt, in allen Punkten identisch, mit Ausnahme des Namens und des Bewerbungsfotos. Drei verschiedene Identit\u00e4ten sollten in diesem Experiment getestet werden: Eine Frau mit einem \u00bbdeutsch klingenden\u00ab Namen (Sandra Bauer), eine Frau mit einem \u00bbt\u00fcrkisch klingenden\u00ab Namen (Meyrem \u00d6zt\u00fcrk) und eine Frau mit einem \u00bbt\u00fcrkisch klingenden\u00ab Namen (Meyrem \u00d6zt\u00fcrk), die auf dem Bewerbungsfoto ein Hidschab tr\u00e4gt. Auf allen drei Bewerbungsfotos war die gleiche Frau zu sehen, auf einem tr\u00e4gt sie einen Hidschab.",
-        "English": "Women with hijab (Muslim headscarf) experience intersectional discrimination \u2013 sexism and anti-Muslim racism \u2013 in various areas in Germany. Not only on an individual level, but structurally and institutionally. For example, they experience direct discrimination in accessing the labor market as illustrated by an <a href=\"https://www.iza.org/publications/dp/10217/discrimination-against-female-migrants-wearing-headscarves\">\u2192 experiment</a> by Doris Weichselbaumer from 2016 (p. 12 ff):\n\n1474 applications were sent to companies in Germany, identical in all points except name and application photo. Three different identities were to be tested in this experiment: A woman with a \u00bbGerman sounding\u00ab name (Sandra Bauer), a woman with a \u00bbTurkish sounding\u00ab name (Meyrem \u00d6zt\u00fcrk) and a woman with a \u00bbTurkish sounding\u00ab name (Meyrem \u00d6zt\u00fcrk) wearing a hijab in the application photo. All three application photos show the same woman, in one of them she is wearing a hijab.\n"
+        "German": "Frauen mit Hidschab (muslimisches Kopftuch) erfahren intersektionale Diskriminierung \u2013 Sexismus und anti-muslimischen Rassismus \u2013 in diversen Bereichen in Deutschland. Nicht nur auf individueller Ebene, sondern auch strukturell und institutionell. So erleben sie zum Beispiel direkte Diskriminierung beim Zugang zum Arbeitsmarkt, was ein <a href=\"https://www.iza.org/publications/dp/10217/discrimination-against-female-migrants-wearing-headscarves\">\u2192 Experiment</a> von Doris Weichselbaumer aus dem Jahr 2016 (S. 12ff) deutlich macht:\n\n1474 Bewerbungen wurden an Unternehmen in Deutschland verschickt, in allen Punkten identisch, mit Ausnahme des Namens und des Bewerbungsfotos. Drei verschiedene Identit\u00e4ten sollten in diesem Experiment getestet werden: Eine Frau mit einem \u00bbdeutsch klingenden\u00ab Namen (Sandra Bauer), eine Frau mit einem \u00bbt\u00fcrkisch klingenden\u00ab Namen (Meryem \u00d6zt\u00fcrk) und eine Frau mit einem \u00bbt\u00fcrkisch klingenden\u00ab Namen (Meryem \u00d6zt\u00fcrk), die auf dem Bewerbungsfoto ein Hidschab tr\u00e4gt. Auf allen drei Bewerbungsfotos war die gleiche Frau zu sehen, auf einem tr\u00e4gt sie einen Hidschab.",
+        "English": "Women with hijab (Muslim headscarf) experience intersectional discrimination \u2013 sexism and anti-Muslim racism \u2013 in various areas in Germany. Not only on an individual level, but structurally and institutionally. For example, they experience direct discrimination in accessing the labor market as illustrated by an <a href=\"https://www.iza.org/publications/dp/10217/discrimination-against-female-migrants-wearing-headscarves\">\u2192 experiment</a> by Doris Weichselbaumer from 2016 (p. 12 ff):\n\n1474 applications were sent to companies in Germany, identical in all points except name and application photo. Three different identities were to be tested in this experiment: A woman with a \u00bbGerman sounding\u00ab name (Sandra Bauer), a woman with a \u00bbTurkish sounding\u00ab name (Meryem \u00d6zt\u00fcrk) and a woman with a \u00bbTurkish sounding\u00ab name (Meryem \u00d6zt\u00fcrk) wearing a hijab in the application photo. All three application photos show the same woman, in one of them she is wearing a hijab.\n"
     },
     {
         "ID": "alt-tag-chapter3-example1-1",
@@ -401,13 +401,13 @@
     },
     {
         "ID": "chapter3-exampl1-vis4",
-        "German": "<b>Meyrem \u00d6zt\u00fcrk mit Hidschab</b>\nEinladungen zum Vorstellungsgespr\u00e4ch",
-        "English": "<b>Meyrem \u00d6zt\u00fcrk with hijab</b>\nInvitations to job interview"
+        "German": "<b>Meryem \u00d6zt\u00fcrk mit Hidschab</b>\nEinladungen zum Vorstellungsgespr\u00e4ch",
+        "English": "<b>Meryem \u00d6zt\u00fcrk with hijab</b>\nInvitations to job interview"
     },
     {
         "ID": "chapter3-example1-text2",
-        "German": "Sandra Bauer war die erfolgreichste Kandidatin: Von 18,8% aller Unternehmen, bei denen sie sich bewarb, wurde sie zum Vorstellungsgespr\u00e4ch eingeladen. Meyrem \u00d6zt\u00fcrk ohne Hidschab von 13,5%. Meyrem \u00d6zt\u00fcrk, die auf dem Bewerbungsfoto einen Hidschab tr\u00e4gt, wurde lediglich von 4,2% aller Unternehmen, die sie kontaktierte, zu einem Vorstellungsgespr\u00e4ch eingeladen.",
-        "English": "Sandra Bauer was the most successful candidate: She was invited for a job interview by 18.8% of all companies to which she applied. Meyrem \u00d6zt\u00fcrk without a hijab by 13.5%. Meyrem \u00d6zt\u00fcrk, who wears a hijab in the application photo, was invited to an interview by only 4.2% of all companies she contacted."
+        "German": "Sandra Bauer war die erfolgreichste Kandidatin: Von 18,8% aller Unternehmen, bei denen sie sich bewarb, wurde sie zum Vorstellungsgespr\u00e4ch eingeladen. Meryem \u00d6zt\u00fcrk ohne Hidschab von 13,5%. Meryem \u00d6zt\u00fcrk, die auf dem Bewerbungsfoto einen Hidschab tr\u00e4gt, wurde lediglich von 4,2% aller Unternehmen, die sie kontaktierte, zu einem Vorstellungsgespr\u00e4ch eingeladen.",
+        "English": "Sandra Bauer was the most successful candidate: She was invited for a job interview by 18.8% of all companies to which she applied. Meryem \u00d6zt\u00fcrk without a hijab by 13.5%. Meryem \u00d6zt\u00fcrk, who wears a hijab in the application photo, was invited to an interview by only 4.2% of all companies she contacted."
     },
     {
         "ID": "chapter3-example1-trend",
