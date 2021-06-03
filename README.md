@@ -22,10 +22,10 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 ## Update content and deploy new version to UCLAB server
 
-The following steps needs to be taken to update the content:
-- Start dev environment if you want to use auto-fixing eslint issues (npm run dev, see Build Setup)
+Update content:
+- Start dev environment if you want to use auto-fixing eslint issues ($ npm run dev, see Build Setup above)
 - Run juypter notebook _data-processing.ipynb in ./data directory to download current content version and create the language files
 
-To deploy the current version to the UCLAB server:
+Deploy current version to UCLAB server:
 - Run $ npm run generate:uclab
-- Upload content of ./dist directory to /public/intervis but make sure, you do not replace the instrumentation dir holding the collected log files
+- Upload content of ./dist directory to /public/intervis. Make sure, you do not replace the instrumentation dir holding the log files
