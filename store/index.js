@@ -2,7 +2,6 @@ export const state = () => ({
   projectDisclosureIsVisible: false,
   designDecisionsAreVisible: false,
   teaserIsVisible: true,
-  questionnaireLinkIsVisible: false,
 
   conceptDevelopmentIsVisible: false,
   discriminationDimensionsAreVisible: false,
@@ -71,9 +70,6 @@ export const mutations = {
   },
   setActiveArticleChapterId (state, chapterId) {
     state.activeArticleChapterId = chapterId
-  },
-  setQuestionnaireLinkIsVisible (state, visibility) {
-    state.questionnaireLinkIsVisible = visibility
   },
 
   // logging

@@ -32,7 +32,6 @@ export default {
       'projectDisclosureIsVisible',
       'designDecisionsAreVisible',
       'teaserIsVisible',
-      'questionnaireLinkIsVisible',
 
       'conceptDevelopmentIsVisible',
       'discriminationDimensionsAreVisible',
@@ -55,9 +54,6 @@ export default {
     },
     teaserIsVisible (newValue) {
       this.handleStateChange('teaserIsVisible', newValue)
-    },
-    questionnaireLinkIsVisible (newValue) {
-      this.handleStateChange('questionnaireLinkIsVisible', newValue)
     },
     conceptDevelopmentIsVisible (newValue) {
       this.handleStateChange('conceptDevelopmentIsVisible', newValue)
@@ -82,10 +78,6 @@ export default {
     if (window.location.href.includes(this.hostUrl)) {
       this.$nuxt.$on('windowResized', () => {
         this.handleWindowResize()
-      })
-
-      this.$nuxt.$on('questionnaireLinkWasClicked', () => {
-        this.handleQuestionnaireClick()
       })
 
       this.initLogging()
@@ -113,9 +105,6 @@ export default {
     handleWindowResize () {
       this.logEvent(this.eventType.windowResize, this.getWindowSize())
     },
-    handleQuestionnaireClick () {
-      this.logEvent(this.eventType.linkClick, 'questionnaire')
-    },
     handleScrollPositionChange (scrollPosition) {
       this.logEvent(this.eventType.scrollPosition, scrollPosition)
     },
@@ -133,7 +122,6 @@ export default {
         projectDisclosureIsVisible: this.projectDisclosureIsVisible,
         designDecisionsAreVisible: this.designDecisionsAreVisible,
         teaserIsVisible: this.teaserIsVisible,
-        questionnaireLinkIsVisible: this.questionnaireLinkIsVisible,
         conceptDevelopmentIsVisible: this.conceptDevelopmentIsVisible,
         discriminationDimensionsAreVisible: this.discriminationDimensionsAreVisible,
         activeDisclosureChapterId: this.activeDisclosureChapterId,
