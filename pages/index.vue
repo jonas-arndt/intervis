@@ -91,8 +91,6 @@ export default {
     this.addJsClass()
     this.updateViewport()
     window.addEventListener('resize', this.handleResize)
-
-    this.questionnaireLinkTimeout = setTimeout(this.showQuestionnaireLink, 300000) // 5 min => 5 * 60 * 1000
   },
   destroyed () {
     window.removeEventListener('resize', this.handleResize)
