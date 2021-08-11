@@ -34,8 +34,7 @@ export default {
   },
   data () {
     return {
-      slideInButtonOpacity: 0,
-      triggeredSlideIn: false
+      slideInButtonOpacity: 0
     }
   },
   computed: {
@@ -70,11 +69,6 @@ export default {
     verticalScrollPosition (scrollPosition) {
       if (scrollPosition >= this.caseStudyChapterStartPosition && scrollPosition <= this.measuresChapterStartPosition) {
         this.slideInButtonOpacity = this.slideInButtonOpacityScale(scrollPosition)
-      }
-
-      if (!this.triggeredSlideIn && !this.designDecisionsAreVisible && this.slideInButtonOpacity === 1) {
-        this.toggleDesignDecisionsVisibility()
-        this.triggeredSlideIn = true
       }
     }
   },
