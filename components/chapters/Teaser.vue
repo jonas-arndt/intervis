@@ -3,7 +3,8 @@
     <LanguageSwitcher class="language-switcher" />
     <h1 class="title" v-html="$t('startscreen-title')" />
     <p class="subtitle" v-html="$t('startscreen-subtitle')" />
-    <p class="description" v-html="$t('startscreen-preamble')" />
+    <p class="description" v-html="$t('startscreen-preamble-intro')" />
+    <p class="description" v-html="$t('startscreen-preamble-evaluation')" />
     <div class="button-line">
       <RedButton :action="hideTeaser">
         <span v-html="$t('startscreen-preamble-button1')" />
