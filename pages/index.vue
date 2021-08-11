@@ -42,8 +42,6 @@
     </PopupOverlay>
 
     <QuickNavigation v-if="quickNavigationIsVisible" class="article-navigation" />
-    <GoogleLink v-show="questionnaireLinkIsVisible && !projectDisclosureIsVisible && !designDecisionsAreVisible" class="google-link" />
-    <Logger @logSendErrorOccured="handleLogSendError" @loggingIdDefined="handleDefinedLoggingId" />
   </div>
 </template>
 
@@ -65,7 +63,6 @@ export default {
       'projectDisclosureIsVisible',
       'designDecisionsAreVisible',
       'teaserIsVisible',
-      'questionnaireLinkIsVisible',
       'verticalScrollPosition',
       'nextStepsChapterStartPosition',
       'viewport'
@@ -79,10 +76,6 @@ export default {
   },
   watch: {
     verticalScrollPosition (scrollPosition) {
-      if (!this.questionnaireLinkIsVisible && scrollPosition > this.nextStepsChapterStartPosition) {
-        this.showQuestionnaireLink()
-      }
-
       if (scrollPosition > this.quickNavigationOpacityScaleDomainMin) {
         if (scrollPosition < this.quickNavigationOpacityScaleDomainMax) {
           this.quickNavigationOpacity = this.quickNavigationOpacityScale(scrollPosition)
@@ -109,8 +102,6 @@ export default {
     ...mapMutations([
       'hideConceptDevelopment',
       'hideDiscriminationDimensions',
-      'setQuestionnaireLinkIsVisible',
-      'setLoggingId',
       'setViewport'
     ]),
     addJsClass () {
@@ -124,17 +115,6 @@ export default {
       const width = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
       const height = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
       this.setViewport({ width, height })
-    },
-    handleDefinedLoggingId (loggingId) {
-      this.setLoggingId(loggingId)
-    },
-    showQuestionnaireLink () {
-      if (!this.questionnaireLinkIsVisible) {
-        this.setQuestionnaireLinkIsVisible(true)
-      }
-    },
-    handleLogSendError (error) {
-      console.log('LogSendError:', error)
     }
   },
   head () {

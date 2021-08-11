@@ -13,9 +13,6 @@ export const state = () => ({
   verticalViewportCenter: 0,
   viewport: { width: 1, height: 1 },
 
-  // logging
-  loggingId: '0',
-
   // article break points
   introductionStartPosition: undefined,
   intersectionalityChapterStartPosition: undefined,
@@ -70,11 +67,6 @@ export const mutations = {
   },
   setActiveArticleChapterId (state, chapterId) {
     state.activeArticleChapterId = chapterId
-  },
-
-  // logging
-  setLoggingId (state, loggingId) {
-    state.loggingId = loggingId.toString()
   },
 
   // article break points
