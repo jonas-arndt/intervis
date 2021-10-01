@@ -59,7 +59,6 @@ export default {
       '~/components/disclosure',
       '~/components/elements',
       '~/components/fallbacks',
-      '~/components/instrumentation',
       '~/components/layout',
       '~/components/popups',
       '~/components/visualizations',
